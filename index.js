@@ -13,7 +13,7 @@ function createWindow() {
 		backgroundColor: "#1f262d",
 		width: 1200,
 		height: 800,
-		title: "Blooket Code Spoofer",
+		title: "Blooket Emulator",
 		webSecurity: false,
 		webPreferences: {
 			sandbox: false,
