@@ -25,7 +25,7 @@
         },
         "7X13": function(e, t, a) {
             "use strict";
-            t.a = {
+            t.a = window.GameMetadata = {
                 Toy: {
                     name: "Santa's Workshop",
                     img: "https://media.blooket.com/image/upload/v1607057672/Media/santasWorkshop.jpg",

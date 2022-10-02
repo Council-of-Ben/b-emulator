@@ -1,5 +1,5 @@
 (window.webpackJsonp = window.webpackJsonp || []).push([
-    [2], {
+    [1], {
         "+C1j": function(e, t, a) {
             (t = e.exports = a("JPst")(!1)).push([e.i, ".styles__header___22Ne2-camelCase{background-color:#9a49aa;width:100%;height:55px;padding-bottom:6px;box-shadow:inset 0 -6px rgba(0,0,0,.2);box-sizing:border-box;display:flex;flex-direction:row;justify-content:space-between;z-index:10;overflow:hidden;position:absolute;top:0;left:0}.styles__blooketText___1pMBG-camelCase{font-size:40px;text-align:left;margin-left:40px;font-family:Titan One,sans-serif;-webkit-user-select:none;-moz-user-select:none;user-select:none;text-decoration:none}.styles__blooketText___1pMBG-camelCase,.styles__headerRight___nPb83-camelCase{color:#fff;line-height:49px;outline:none;cursor:pointer}.styles__headerRight___nPb83-camelCase{font-size:24px;font-weight:700;font-family:Nunito,sans-serif;text-align:right;text-decoration:underline;padding-right:40px}.styles__expandIcon___ipwig-camelCase{font-size:22px;line-height:49px;margin-right:15px;cursor:pointer;outline:none}.styles__headerLeft___JPD7G-camelCase{font-size:28px;color:#fff;text-align:left;line-height:49px;padding-left:20px;font-family:Nunito,sans-serif;-webkit-user-select:none;-moz-user-select:none;user-select:none}", ""]), t.locals = {
                 header: "styles__header___22Ne2-camelCase",
@@ -2218,7 +2218,7 @@
                 })(e)
             }
             Object(_.addStyles)();
-            var E = {
+            var E = window.ThemeColors = {
                     default: {
                         background: "#fff",
                         text: "#3a3a3a",

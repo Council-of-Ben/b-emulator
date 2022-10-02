@@ -1,5 +1,5 @@
 (window.webpackJsonp = window.webpackJsonp || []).push([
-    [18], {
+    [19], {
         "/+s7": function(e, t, r) {
             (t = e.exports = r("JPst")(!1)).push([e.i, ".tourSteps__centered___3uhxe-camelCase{top:50%;left:50%;transform:translate(-50%,-50%)}.tourSteps__card1___3KwCn-camelCase{left:calc(50% - 15vw)}.tourSteps__card1___3KwCn-camelCase,.tourSteps__card2___11s6f-camelCase{top:60%;transform:translateY(-50%)}.tourSteps__card2___11s6f-camelCase{left:calc(50% + 15vw)}@media only screen and (max-width:800px){.tourSteps__card1___3KwCn-camelCase,.tourSteps__card2___11s6f-camelCase{left:50%;top:calc(50% + 23vw);transform:translateX(-50%)}}", ""]), t.locals = {
                 centered: "tourSteps__centered___3uhxe-camelCase",
@@ -38,7 +38,7 @@
                 s = r("/MKj"),
                 i = r("17x9"),
                 c = r.n(i),
-                l = r("Ty5D"),
+                l = r("55Ip"),
                 u = r("H1WH"),
                 f = r("TSYQ"),
                 h = r.n(f),
@@ -866,7 +866,7 @@
                 setTowerLife: c.a.func.isRequired,
                 user: c.a.object
             };
-            t.a = Object(b.c)(Object(l.g)(Object(s.b)((function(e) {
+            t.a = Object(b.c)(Object(l.f)(Object(s.b)((function(e) {
                 return {
                     tower: e.towers.tower
                 }
@@ -888,7 +888,7 @@
                 s = r("/MKj"),
                 i = r("17x9"),
                 c = r.n(i),
-                l = r("Ty5D"),
+                l = r("55Ip"),
                 u = r("H1WH"),
                 f = r("TSYQ"),
                 h = r.n(f),
@@ -1772,7 +1772,7 @@
                 setTowerLife: c.a.func.isRequired,
                 user: c.a.object
             };
-            t.a = Object(E.c)(Object(l.g)(Object(s.b)((function(e) {
+            t.a = Object(E.c)(Object(l.f)(Object(s.b)((function(e) {
                 return {
                     tower: e.towers.tower
                 }
@@ -1806,7 +1806,7 @@
                 s = r("/MKj"),
                 i = r("17x9"),
                 c = r.n(i),
-                l = r("Ty5D"),
+                l = r("55Ip"),
                 u = r("H1WH"),
                 f = r("FKJl"),
                 h = r("ZTK6"),
@@ -2309,7 +2309,7 @@
                 tower: c.a.object,
                 setTowerStage: c.a.func.isRequired
             };
-            t.a = Object(g.c)(Object(l.g)(Object(s.b)((function(e) {
+            t.a = Object(g.c)(Object(l.f)(Object(s.b)((function(e) {
                 return {
                     tower: e.towers.tower,
                     client: e.clients.client
@@ -2462,7 +2462,7 @@
                 s = r("/MKj"),
                 i = r("17x9"),
                 c = r.n(i),
-                l = r("Ty5D"),
+                l = r("55Ip"),
                 u = r("H1WH"),
                 f = r("FKJl"),
                 h = r("ZTK6"),
@@ -3070,7 +3070,7 @@
                 setTowerLife: c.a.func.isRequired,
                 user: c.a.object
             };
-            t.a = Object(v.c)(Object(l.g)(Object(s.b)((function(e) {
+            t.a = Object(v.c)(Object(l.f)(Object(s.b)((function(e) {
                 return {
                     tower: e.towers.tower
                 }
@@ -3103,7 +3103,7 @@
                 s = r("/MKj"),
                 i = r("17x9"),
                 c = r.n(i),
-                l = r("Ty5D"),
+                l = r("55Ip"),
                 u = r("H1WH"),
                 f = r("FKJl"),
                 h = r("uyiU"),
@@ -3878,7 +3878,7 @@
                 setTowerInstruct: c.a.func.isRequired,
                 user: c.a.object
             };
-            t.a = Object(x.c)(Object(l.g)(Object(s.b)((function(e) {
+            t.a = Object(x.c)(Object(l.f)(Object(s.b)((function(e) {
                 return {
                     tower: e.towers.tower
                 }

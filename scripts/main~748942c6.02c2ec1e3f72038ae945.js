@@ -2225,7 +2225,7 @@
                 })(e)
             }
             Object(p.addStyles)();
-            var B = {
+            var B = window.ThemeColors = {
                     default: {
                         background: "#fff",
                         text: "#3a3a3a",

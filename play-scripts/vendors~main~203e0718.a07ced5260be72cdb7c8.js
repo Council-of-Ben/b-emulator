@@ -1,5 +1,5 @@
 (window.webpackJsonp = window.webpackJsonp || []).push([
-    [25], {
+    [26], {
         "2mql": function(t, e, r) {
             "use strict";
             var n = r("TOwV"),
@@ -755,7 +755,7 @@
             var n = r("wx14"),
                 i = r("lCFh"),
                 o = r("xhmd"),
-                u = r("9R94");
+                u = (r("LUQC"), r("9R94"));
 
             function a(t) {
                 return "/" === t.charAt(0) ? t : "/" + t

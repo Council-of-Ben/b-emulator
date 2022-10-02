@@ -593,8 +593,6 @@
                             className: w.a.infoHeader
                         }, "Profile")), r.a.createElement("div", {
                             className: w.a.text
-                        }, r.a.createElement("b", null, "Blooket Emulator v1.0.0"), " ", " "), r.a.createElement("div", {
-                            className: w.a.text,
                         }, r.a.createElement("b", null, "Username:"), " ", this.state.user.name), r.a.createElement("div", {
                             className: w.a.text
                         }, r.a.createElement("b", null, "Email:"), " ", this.state.user.email), r.a.createElement("div", {
@@ -602,7 +600,7 @@
                         }, r.a.createElement("b", null, "Role:"), " ", this.state.role), r.a.createElement("div", {
                             className: w.a.text
                         }, r.a.createElement("b", null, "Joined:"), " ", this.state.date)), r.a.createElement("div", {
-                            className: w.a.infoContainer,
+                            className: w.a.infoContainer
                         }, r.a.createElement("div", {
                             className: w.a.headerRow
                         }, r.a.createElement("i", {
