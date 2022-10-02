@@ -18,3 +18,11 @@ Lastly, you can start the project and run the emulator with npm.<br>
 
 # Contributing
 If you want your featured utilities that run hooks, fetch webpack data, or simply use the available window variable data to modify things, please only modify and add a file into the `/mods/` directory which matches the `TEMPLATE.js` formatting. Any pull requests which modify files outside of the mods directory will not be merged unless certain exceptions. You may not reupload and obfuscate my code claiming it as your own if you choose to contribute to this project, even though it is merely a hobby which I do not devote months to.
+
+# Links
+https://www.python.org/
+https://nodejs.org/en/
+https://www.electronjs.org/
+https://github.com/UndercoverGoose
+https://code.visualstudio.com/
+https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer
