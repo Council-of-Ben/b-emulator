@@ -20,7 +20,7 @@ Lastly, you can start the project and run the emulator with npm.<br>
 Prerequisites: computer, vscode. <br>
 Step 1: Install vscode on device if not already installed.<br>
 Step 2: Install python 3.9+ and nodejs. (if not as admin extract the zipped node installation into any folder and then add that folder to the `PATH` environmental variable; simple google if you dont know how)<br>
-Step 3: Launch vscode and open the extensions library. Install the reccomended python extension and one named `Live Server` (link below).<br>
+Step 3: Launch vscode and open the extensions library. Install the recommended python extension and one named `Live Server` (link below).<br>
 Step 4: Download a zip file of this repository and extract it to any folder. Open this folder inside of vscode (you should see the same files you see on this page in there)<br>
 Step 5: Inside of vscode in the bottom bar, click the "Go Live" button. This will start a http server on port `5500` for the emulator.<br>
 Step 6: Right click on any file inside of that folder (inside of vscode) and click the button that says "Open in integrated terminal".
