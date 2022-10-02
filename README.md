@@ -8,6 +8,11 @@ First, create a directory and cd to there.<br>
 `mkdir b-emulator` -> `cd b-emulator`<br>
 Next, install the required packages and refresh all installed scripts.<br>
 `npm i` && `python3 fetchlatest.py`<br>
+After that, you have a couple options. <br>
+1. Install the `Live Server` vscode plugin and run. This will automatically host on port 5500.
+2. Host a python http server with `python3 -m http.server 5500`
+3. Use any other http serving application/tool to host a server on port `5500` or change the port inside of `view/preload.js` to be yours.
+
 Lastly, you can start the project and run the emulator with npm.<br>
 `npm start` || `electron .`
 
