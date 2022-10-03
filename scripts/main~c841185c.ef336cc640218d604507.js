@@ -1488,7 +1488,7 @@
                     return e.__proto__ || Object.getPrototypeOf(e)
                 })(e)
             }
-            var L = [{
+            var L = window.ShopData = [{
                     id: "blooket-firewall",
                     title: "Firewall check on *.blooket.com",
                     desc: "Used to join games, view images, and access the site",

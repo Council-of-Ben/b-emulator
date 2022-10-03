@@ -409,7 +409,7 @@
                     n.enumerable = n.enumerable || !1, n.configurable = !0, "value" in n && (n.writable = !0), Object.defineProperty(e, n.key, n)
                 }
             }
-            var _ = {
+            var _ = window.FirebaseApiDetails = {
                     apiKey: "AIzaSyCA-cTOnX19f6LFnDVVsHXya3k6ByP_MnU",
                     authDomain: "blooket-2020.firebaseapp.com",
                     projectId: "blooket-2020",

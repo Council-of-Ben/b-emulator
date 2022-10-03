@@ -2434,7 +2434,7 @@
                     return e.__proto__ || Object.getPrototypeOf(e)
                 })(e)
             }
-            var V = [{
+            var V = window.SantasWorkshopValues = [{
                     type: "toys",
                     val: 10,
                     rate: .1,

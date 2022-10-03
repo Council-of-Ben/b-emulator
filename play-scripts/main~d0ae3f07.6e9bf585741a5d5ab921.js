@@ -1140,7 +1140,7 @@
             })), t.d(a, "b", (function() {
                 return o
             }));
-            var s = [{
+            var s = window.ClassPassItems = [{
                     xp: 5,
                     partType: "glasses",
                     part: 9

@@ -7,7 +7,7 @@
             })), a.d(t, "a", (function() {
                 return o
             }));
-            var r = {
+            var r = window.CafeValues = {
                     Toast: {
                         type: "food",
                         profits: [0, 1, 30, 300, 1e3, 2e3],

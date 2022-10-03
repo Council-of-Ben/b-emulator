@@ -2128,7 +2128,7 @@
                         if (!(e instanceof t)) throw new TypeError("Cannot call a class as a function")
                     }(this, e), this.scene = null, this.particles = null, this.rarity = null
                 }))),
-                G = {
+                G = window.MarketBlookParticles = {
                     "uncommon-1": {
                         url: "https://media.blooket.com/image/upload/v1658567787/Media/market/particles/square_green.svg",
                         width: 25,
@@ -3092,7 +3092,7 @@
                     return e.__proto__ || Object.getPrototypeOf(e)
                 })(e)
             }
-            var he = [{
+            var he = window.ShopData = [{
                     id: "chalkboard",
                     type: "banner",
                     data: te.a.chalkboard
