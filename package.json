@@ -1,5 +1,5 @@
 {
-  "name": "blooket-code-viewspoofer",
+  "name": "blooket-emulator",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -7,7 +7,6 @@
     "start": "electron ."
   },
   "author": "",
-  "license": "ISC",
   "dependencies": {
     "electron": "^20.0.3"
   }

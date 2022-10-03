@@ -3274,7 +3274,7 @@
                     writable: !0
                 }) : e[t] = a, e
             }
-            var l = {
+            var l = window.TowerBlookStats = {
                     Chick: {
                         strength: 1,
                         charisma: 16,
@@ -3696,7 +3696,7 @@
                         class: "🏰"
                     }
                 },
-                i = {
+                i = window.TowerBlooks = {
                     common: ["Chick", "Chicken", "Cow", "Goat", "Horse", "Pig", "Sheep", "Duck", "Dog", "Cat", "Rabbit", "Goldfish", "Hamster", "Turtle", "Kitten", "Puppy", "Bear", "Moose", "Fox", "Raccoon", "Squirrel", "Owl", "Hedgehog", "Baby Penguin", "Penguin", "Arctic Fox", "Snowy Owl", "Polar Bear", "Arctic Hare", "Seal", "Walrus", "Tiger", "Panther", "Cockatoo", "Orangutan", "Anaconda", "Macaw", "Jaguar", "Capuchin", "Toucan", "Parrot"],
                     uncommon: ["Elf", "Witch", "Wizard", "Fairy", "Slime Monster", "Snow Globe", "Holiday Gift", "Hot Chocolate", "Holiday Wreath", "Two of Spades", "Eat Me", "Drink Me", "Alice", "Queen of Hearts"],
                     rare: ["Jester", "Dragon", "Queen", "Gingerbread Man", "Gingerbread House", "Dormouse", "White Rabbit", "Cheshire Cat"],
@@ -3873,7 +3873,7 @@
                         rarity: "Common"
                     }
                 },
-                _ = {
+                _ = window.TowerArtifacts = {
                     common: ["Fury Relic", "Steel Socks", "Piggy Bank", "Tasty Egg", "Training Weights", "Cursed Hourglass", "Farm Tractor", "Just A Bone", "King's Crown", "Sacred Scroll"],
                     uncommon: ["Lucky Feather", "Coupon", "Lifeline Totem", "Band-Aid", "Chess Pieces"],
                     rare: ["Medical Kit", "Survival Guide", "Cheese", "Magic Seedling", "Cozy Igloo"],
