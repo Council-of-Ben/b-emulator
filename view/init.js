@@ -11,8 +11,9 @@ function getBuildId() {
 	)[0];
 };
 
-function getWebpackCache() {
-	return webpackJsonp.push([[], { ['']: (_, a, b) => { a.cache = b.c }, }, [['']],]).cache;
+function getWebpackCache(id=null) {
+	const c = webpackJsonp.push([[], { ['']: (_, a, b) => { a.cache = b.c }, }, [['']],]).cache;
+	return !id?c:c[id];
 };
 
 function searchWebpackFunctionCache(query="") {
@@ -38,6 +39,17 @@ function searchWebpackObjectCache(key="a", nestedKey=null) {
 	);
 };
 
+function getWebpackArrayCache() {
+	return Object.values(getWebpackCache()).filter(x=>x.exports?.a instanceof Array);
+};
+
+function getWebpackStringCache() {
+	return Object.values(getWebpackCache()).filter(x=>typeof x.exports==="string");
+};
+
+function searchWebpackCache(cache, q="") {
+	return cache.filter(x=>x.exports.toString().includes(q));
+};
 
 function getBlookRarity(blook="") {
 	return searchWebpackFunctionCache(`return "Common"`)[0].exports.a(blook);
