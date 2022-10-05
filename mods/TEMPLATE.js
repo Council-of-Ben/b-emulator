@@ -1,6 +1,9 @@
-// Creator: GooseterV
-// Title: Monster Brawl Speed Changer
-// Description: modifies the monster brawl 
-
-const player = window.MonsterBrawlPlayerVariable;
-player.abilities.energy.dmg = 20; // increases the damage of your dark energy powerup whilst in a game of monster brawl
+// Author: GooseterV
+// Description: A template mod.
+// Title: Template Mod
+module.exports = {
+    dependencies:[], // required mods needed for run
+    run: () => {
+        console.log("RUNNING FROM MOD: TEMPLATE");
+    }, // your run script, this will happen on eval
+};

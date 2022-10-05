@@ -1,15 +1,24 @@
 const fs = require('fs');
 const init = fs.readFileSync('./view/init.js', 'utf8');
-
+const mods = JSON.parse(fs.readFileSync("./mods.json", "utf8"));
 let e = setInterval(() => {
 	if (document.body) {
 		if (Array.from(document.body.children).filter(e=>e.localName==="script").length < 35 
 			&& document.location.toString().includes("dashboard")) return;
 		clearInterval(e);
+		window.MODS = [];
 		let scriptBase = document.location.toString().includes("https://dashboard.blooket.com") ? 
 			`http://localhost:5500/scripts/` : (document.location.toString().includes("https://play.blooket.com") ?
 			`http://localhost:5500/play-scripts/`: `http://localhost:5500/id-scripts/`);
 		const locScript = document.createElement("script");
+		const customStyles = document.createElement("stye");
+		for (let mod of mods) {
+			let m = require(`../mods/${mod}`);
+			m.run();
+			window.MODS.push(m);
+		};
+		customStyles.id = "b-emulator-styles";
+		customStyles.innerHTML = "hi";
 		locScript.id = "locScript";
 		
 		window.open = function () {
