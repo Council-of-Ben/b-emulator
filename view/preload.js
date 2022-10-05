@@ -7,18 +7,20 @@ let e = setInterval(() => {
 			&& document.location.toString().includes("dashboard")) return;
 		clearInterval(e);
 		window.MODS = [];
+		const styles = document.createElement("style");
+		styles.id = "b-emulator-styles";
+		styles.innerHTML = "";
 		let scriptBase = document.location.toString().includes("https://dashboard.blooket.com") ? 
 			`http://localhost:5500/scripts/` : (document.location.toString().includes("https://play.blooket.com") ?
 			`http://localhost:5500/play-scripts/`: `http://localhost:5500/id-scripts/`);
 		const locScript = document.createElement("script");
-		const customStyles = document.createElement("stye");
 		for (let mod of mods) {
 			let m = require(`../mods/${mod}`);
-			m.run();
 			window.MODS.push(m);
+			if (m.styles) styles.innerHTML += fs.accessSync(`./mods/${mod}.css`, fs.R_OK) ? fs.readFileSync(`./mods/${mod}.css`, "utf8") : "";
+			m.run();
 		};
-		customStyles.id = "b-emulator-styles";
-		customStyles.innerHTML = "hi";
+		document.head.insertBefore(styles, document.head.children[1]);
 		locScript.id = "locScript";
 		
 		window.open = function () {
