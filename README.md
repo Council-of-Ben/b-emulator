@@ -33,8 +33,26 @@ Step 7: Run the following commands in that terminal, **IN SEQUENTIAL ORDER.**<br
 Once you have done that you are good to go. Remember to only run scripts from people you trust and sources you can verify the validity of.
 
 
-# Contributing
-If you want your featured utilities that run hooks, fetch webpack data, or simply use the available window variable data to modify things, please only modify and add a file into the `/mods/` directory which matches the `TEMPLATE.js` formatting. Any pull requests which modify files outside of the mods directory will not be merged unless certain exceptions. You may not reupload and obfuscate my code claiming it as your own if you choose to contribute to this project, even though it is merely a hobby which I do not devote months to.
+# Contributing & Modding
+If you want your featured utilities that run hooks, fetch webpack data, or simply use the available window variable data to modify things, please only modify and add a file into the `/mods/` directory which matches the `TEMPLATE.js` formatting. Any pull requests which modify files outside of the mods directory will not be merged unless certain exceptions. You may not reupload and obfuscate my code claiming it as your own if you choose to contribute to this project, even though it is merely a hobby which I do not devote months to. 
+
+# Where am I?
+- `./mods/` - your mods folder, you add mods here for them to be loaded
+- `./node_modules/` - your node modules folder, when you install packages they will go here
+- `./play-scripts/` - the scripts used for the base `play.blooket.com`
+- `./scripts/` - the scripts used for the base `dashboard.blooket.com`
+- `./id-scripts/` - the scripts used for the base `id.blooket.com`
+- `./view/` - the folder used for housing html and emulator related js files
+- `./view/id.html` - the file used for storing the html for `id.blooket.com`
+- `./view/index.html` - the file used for storing the html for `dashboard.blooket.com`
+- `./view/play.html` - the file used for storing the html for `play.blooket.com`
+- `./view/init.js` - code in this file is injected into blooket for use
+- `./view/preload.js` - this file will run before the page loads in electron, modifying things here is useful for modifying data before load
+- `./index.js` - the initiating file for the emulator
+- `./fetchlatest.py` - run this file to update all scripts in the 3 script directories
+- `./mods.json` - this file houses the names of each mod you want to load
+- `./mods/*.css` - the css file for any specified mod; shares the name of the mod file
+- `./mods/*.js` - the js file for the mod; this file will contain the start code for the mod and other data
 
 # Links
 https://www.python.org/ <br>
@@ -43,3 +61,4 @@ https://www.electronjs.org/ <br>
 https://github.com/UndercoverGoose <br>
 https://code.visualstudio.com/ <br>
 https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer <br>
+
