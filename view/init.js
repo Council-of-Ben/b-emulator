@@ -12,7 +12,7 @@ function getBuildId() {
 };
 
 function getWebpackCache(id=null) {
-	const c = webpackJsonp.push([[], { ['']: (_, a, b) => { a.cache = b.c }, }, [['']],]).cache;
+	const c = window.webpackJsonp.push([[], { ['']: (_, a, b) => { a.cache = b.c }, }, [['']],]).cache;
 	return !id?c:c[id];
 };
 
@@ -75,4 +75,55 @@ function getClassLocals() {
 	return searchWebpackObjectCache("locals").flatMap(
 		h=>h.exports.locals
 	);
+};
+
+const axios = () => Object.values(getWebpackCache()).filter(x=>x.exports?.a?.get)[1].exports.a;
+
+function reactHandler(path="#app > div > div") {
+	return Object.values(document.querySelector(path))[1].children[1]._owner;
+};
+
+function reactEventHandler() {
+	let react = Object.values(document.querySelector("#body"))[0].stateNode;
+	return react[Object.keys(react).filter(x => x.includes("reactInternalInstance"))].return.stateNode;
+};
+
+function setState(path="#app > div > div", state={}) {
+	return reactHandler(path).stateNode.setState(state);
+};
+
+
+function Hook(objectName, dataLink, thisLink, data) {
+	Object.defineProperty(Object.prototype, objectName, {
+		get: function () {
+			Reflect.defineProperty(this, objectName, {
+				get: function () {
+					return data[dataLink];
+				},
+				set: function (d) {
+					data[dataLink] = d;
+				},
+				enumerable: true
+			});
+			if (thisLink) {
+				data[thisLink] = this;
+			}
+			return data[dataLink];
+		},
+		set: function (d) {
+			Reflect.defineProperty(this, objectName, {
+				get: function () {
+					return data[dataLink];
+				},
+				set: function (d) {
+					data[dataLink] = d;
+				},
+				enumerable: true
+			});
+			if (thisLink) {
+				data[thisLink] = this;
+			}
+			data[dataLink] = d;
+		}
+	});
 };
