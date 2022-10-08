@@ -7,5 +7,7 @@ module.exports = {
 	run: () => {
 		console.log("RUNNING FROM MOD: TEMPLATE");
 	}, // your run script, this will happen on eval
-	
+	clear: () => {
+		console.log("CLEANING FROM TEMPLATE MOD");
+	}, // the cleanup function 
 };
