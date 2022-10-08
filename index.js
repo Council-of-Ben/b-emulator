@@ -6,8 +6,6 @@ const {
 } = require('electron');
 const path = require('path');
 
-app.commandLine.appendSwitch('disable-site-isolation-trials');
-
 function createWindow() {
 	const mainWindow = new BrowserWindow({
 		backgroundColor: "#1f262d",
@@ -33,7 +31,7 @@ function createWindow() {
 
 		const headers = Object.fromEntries(Object.entries(details.responseHeaders).filter(header => {
 			const status = !/(cross\-origin)|(content\-security)/gi.test(header[0]);
-			if (!status) console.log("blocked " + header[0]);
+			//if (!status) console.log("blocked " + header[0]);
 			return status;
 		}));
 		if (details.url.includes("dashboard") || details.url.includes("github")) 

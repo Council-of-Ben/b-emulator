@@ -5491,8 +5491,8 @@
                                 className: l.isMobile ? Ie.a.mBody : Ie.a.body,
                                 id: "body"
                             }, a.a.createElement(Pe.a, {
-                                title: "Test Blooket",
-                                desc: "Pls don't come here."
+                                title: "Play Monster Brawl | Blooket",
+                                desc: "Answer questions to fight off waves of enemies and become the ultimate Monster Brawler."
                             }), "question" === this.state.stage || "feedback" === this.state.stage ? a.a.createElement("div", {
                                 className: Ee.a.questionContainer
                             }, a.a.createElement(Ae.a, {

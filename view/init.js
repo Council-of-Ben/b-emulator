@@ -4,11 +4,7 @@ function log(str, n1, n2) {
 };
 
 function getBuildId() {
-	return Array.from(document.head.children).map(
-		c => c.getAttribute("data-build-id")
-	).filter(
-		c => c
-	)[0];
+	return document.head.querySelector("[data-build-id]").getAttribute("data-build-id");
 };
 
 function getWebpackCache(id=null) {
@@ -80,7 +76,7 @@ function getClassLocals() {
 const axios = () => Object.values(getWebpackCache()).filter(x=>x.exports?.a?.get)[1].exports.a;
 
 function reactHandler(path="#app > div > div") {
-	return Object.values(document.querySelector(path))[1].children[1]._owner;
+	return Object.values(document.querySelector(path))[1].children[0]._owner;
 };
 
 function reactEventHandler() {
