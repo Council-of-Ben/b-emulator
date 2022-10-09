@@ -14,13 +14,6 @@ let e = setInterval(() => {
 			`http://localhost:5500/scripts/` : (document.location.toString().includes("https://play.blooket.com") ?
 			`http://localhost:5500/play-scripts/`: `http://localhost:5500/id-scripts/`);
 		const locScript = document.createElement("script");
-		for (let mod of mods) {
-			let m = require(`../mods/${mod}`);
-			window.MODS.push(m);
-			if (m.styles) styles.innerHTML += fs.accessSync(`./mods/${mod}.css`, fs.R_OK) ? fs.readFileSync(`./mods/${mod}.css`, "utf8") : "";
-			m.run();
-		};
-		document.head.insertBefore(styles, document.head.children[1]);
 		locScript.id = "locScript";
 		
 		window.open = function () {
@@ -39,5 +32,12 @@ let e = setInterval(() => {
 			};
 		};
 		document.body.appendChild(locScript);
+		for (let mod of mods) {
+			let m = require(`../mods/${mod}`);
+			window.MODS.push(m);
+			if (m.styles) styles.innerHTML += fs.accessSync(`./mods/${mod}.css`, fs.R_OK) ? fs.readFileSync(`./mods/${mod}.css`, "utf8") : "";
+			m.run();
+		};
+		document.head.insertBefore(styles, document.head.children[1]);
 	};
 }, 0);

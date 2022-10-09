@@ -4,16 +4,16 @@
 module.exports = {
 	dependencies: [],
 	styles: false,
-	open: XMLHttpRequest.prototype.open,
+	opens: XMLHttpRequest.prototype.open,
 	run: () => {
 		console.log("Running anti-suspend script");
-		let non_proxied = this.open;
+		let non_proxied = this.opens;
 		XMLHttpRequest.prototype.open = () => {
 			arguments[1].includes("suspend-me") ? false : non_proxied.apply(this, arguments);
 		};
 	},
 	clear: () => {
 		console.log("Cleaning up and removing anti-suspend");
-		XMLHttpRequest.prototype.open = this.open;
+		XMLHttpRequest.prototype.open = this.opens;
 	}
 };
