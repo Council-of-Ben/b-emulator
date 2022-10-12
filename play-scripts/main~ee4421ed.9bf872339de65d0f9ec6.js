@@ -2165,7 +2165,7 @@
                 return i
             }));
             var o = a("LAIx"),
-                s = window.FactoryBlookEarnings[{
+                s = window.FactoryBlookEarnings = [{
                     name: "Chick",
                     color: Object(o.a)("Chick"),
                     class: "🌽",

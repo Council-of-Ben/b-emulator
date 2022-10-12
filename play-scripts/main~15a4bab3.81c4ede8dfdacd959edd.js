@@ -2927,7 +2927,7 @@
                     writable: !1
                 }), e
             }
-            var _ = new(y((function e() {
+            var _ = window.MonsterBrawlPlayerVariable = new(y((function e() {
                     ! function(e, t) {
                         if (!(e instanceof t)) throw new TypeError("Cannot call a class as a function")
                     }(this, e), this.player = null, this.scene = null, this.hp = 100, this.hpBar = null, this.playerDmgTimeout = null, this.abilities = {}, this.projectiles = {}, this.drops = {}, this.dmgCounts = {}, this.obstacles = null, this.enemies = null, this.allXP = null, this.texts = null, this.dir = {

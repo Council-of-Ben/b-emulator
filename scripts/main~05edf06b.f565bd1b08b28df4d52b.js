@@ -29,8 +29,8 @@
                 j = a.n(E),
                 B = a("74sb"),
                 I = a("qnYv"),
-                N = a("i4/Q"),
-                S = a("lmLo");
+                S = a("i4/Q"),
+                N = a("lmLo");
 
             function P(e) {
                 return (P = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function(e) {
@@ -411,7 +411,7 @@
 
             function z(e) {
                 return function(e) {
-                    if (Array.isArray(e)) return A(e)
+                    if (Array.isArray(e)) return R(e)
                 }(e) || function(e) {
                     if ("undefined" != typeof Symbol && null != e[Symbol.iterator] || null != e["@@iterator"]) return Array.from(e)
                 }(e) || G(e) || function() {
@@ -421,19 +421,19 @@
 
             function G(e, t) {
                 if (e) {
-                    if ("string" == typeof e) return A(e, t);
+                    if ("string" == typeof e) return R(e, t);
                     var a = Object.prototype.toString.call(e).slice(8, -1);
-                    return "Object" === a && e.constructor && (a = e.constructor.name), "Map" === a || "Set" === a ? Array.from(e) : "Arguments" === a || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(a) ? A(e, t) : void 0
+                    return "Object" === a && e.constructor && (a = e.constructor.name), "Map" === a || "Set" === a ? Array.from(e) : "Arguments" === a || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(a) ? R(e, t) : void 0
                 }
             }
 
-            function A(e, t) {
+            function R(e, t) {
                 (null == t || t > e.length) && (t = e.length);
                 for (var a = 0, n = new Array(t); a < t; a++) n[a] = e[a];
                 return n
             }
 
-            function R(e, t, a, n, o, r, i) {
+            function A(e, t, a, n, o, r, i) {
                 try {
                     var s = e[r](i),
                         l = s.value
@@ -451,11 +451,11 @@
                         var r = e.apply(t, a);
 
                         function i(e) {
-                            R(r, n, o, i, s, "next", e)
+                            A(r, n, o, i, s, "next", e)
                         }
 
                         function s(e) {
-                            R(r, n, o, i, s, "throw", e)
+                            A(r, n, o, i, s, "throw", e)
                         }
                         i(void 0)
                     }))
@@ -475,7 +475,7 @@
                 })(e, t)
             }
 
-            function Y(e) {
+            function U(e) {
                 var t = function() {
                     if ("undefined" == typeof Reflect || !Reflect.construct) return !1;
                     if (Reflect.construct.sham) return !1;
@@ -492,11 +492,11 @@
                         var o = J(this).constructor;
                         a = Reflect.construct(n, arguments, o)
                     } else a = n.apply(this, arguments);
-                    return U(this, a)
+                    return Y(this, a)
                 }
             }
 
-            function U(e, t) {
+            function Y(e, t) {
                 if (t && ("object" === P(t) || "function" == typeof t)) return t;
                 if (void 0 !== t) throw new TypeError("Derived constructors may only return object or undefined");
                 return W(e)
@@ -527,14 +527,14 @@
                         }), Object.defineProperty(e, "prototype", {
                             writable: !1
                         }), t && q(e, t)
-                    }(d, e);
-                    var t, a, n, r, i, s, l, u = Y(d);
+                    }(m, e);
+                    var t, a, n, r, i, s, l, u, d = U(m);
 
-                    function d(e) {
+                    function m(e) {
                         var t;
                         return function(e, t) {
                             if (!(e instanceof t)) throw new TypeError("Cannot call a class as a function")
-                        }(this, d), (t = u.call(this, e)).state = {
+                        }(this, m), (t = d.call(this, e)).state = {
                             allGames: [],
                             games: [],
                             folders: {},
@@ -563,9 +563,9 @@
                             showNews: !1
                         }, t.loading = !1, t.gotPlus = !1, t.plus = !1, t.here = !0, t.onEdit = t.onEdit.bind(W(t)), t.onDelete = t.onDelete.bind(W(t)), t.onDeleteConfirm = t.onDeleteConfirm.bind(W(t)), t.onCopy = t.onCopy.bind(W(t)), t.onCopyConfirm = t.onCopyConfirm.bind(W(t)), t.onMerge = t.onMerge.bind(W(t)), t.onMergeConfirm = t.onMergeConfirm.bind(W(t)), t.onHost = t.onHost.bind(W(t)), t.onSolo = t.onSolo.bind(W(t)), t.getIsPlus = t.getIsPlus.bind(W(t)), t.setDisplay = t.setDisplay.bind(W(t)), t.setRole = t.setRole.bind(W(t)), t.openFolder = t.openFolder.bind(W(t)), t.newFolder = t.newFolder.bind(W(t)), t.createFolder = t.createFolder.bind(W(t)), t.editFolder = t.editFolder.bind(W(t)), t.addToFolder = t.addToFolder.bind(W(t)), t.removeFromFolder = t.removeFromFolder.bind(W(t)), t.deleteFolder = t.deleteFolder.bind(W(t)), t.shouldShowFolder = t.shouldShowFolder.bind(W(t)), t.copyToClipboard = t.copyToClipboard.bind(W(t)), t.endTour = t.endTour.bind(W(t)), t
                     }
-                    return t = d, (a = [{
+                    return t = m, (a = [{
                         key: "componentDidMount",
-                        value: (l = H(F().mark((function e() {
+                        value: (u = H(F().mark((function e() {
                             var t, a = this;
                             return F().wrap((function(e) {
                                 for (;;) switch (e.prev = e.next) {
@@ -619,7 +619,7 @@
                                 }
                             }), e, this)
                         }))), function() {
-                            return l.apply(this, arguments)
+                            return u.apply(this, arguments)
                         })
                     }, {
                         key: "componentWillUnmount",
@@ -674,7 +674,7 @@
                         }
                     }, {
                         key: "onCopy",
-                        value: (s = H(F().mark((function e(t) {
+                        value: (l = H(F().mark((function e(t) {
                             var a = this;
                             return F().wrap((function(e) {
                                 for (;;) switch (e.prev = e.next) {
@@ -705,7 +705,7 @@
                                 }
                             }), e, this)
                         }))), function(e) {
-                            return s.apply(this, arguments)
+                            return l.apply(this, arguments)
                         })
                     }, {
                         key: "onCopyConfirm",
@@ -728,7 +728,7 @@
                         }
                     }, {
                         key: "onMerge",
-                        value: (i = H(F().mark((function e(t) {
+                        value: (s = H(F().mark((function e(t) {
                             var a = this;
                             return F().wrap((function(e) {
                                 for (;;) switch (e.prev = e.next) {
@@ -758,7 +758,7 @@
                                 }
                             }), e, this)
                         }))), function(e) {
-                            return i.apply(this, arguments)
+                            return s.apply(this, arguments)
                         })
                     }, {
                         key: "onMergeConfirm",
@@ -864,7 +864,7 @@
                         }
                     }, {
                         key: "newFolder",
-                        value: (r = H(F().mark((function e() {
+                        value: (i = H(F().mark((function e() {
                             var t = this;
                             return F().wrap((function(e) {
                                 for (;;) switch (e.prev = e.next) {
@@ -896,7 +896,7 @@
                                 }
                             }), e, this)
                         }))), function() {
-                            return r.apply(this, arguments)
+                            return i.apply(this, arguments)
                         })
                     }, {
                         key: "createFolder",
@@ -961,24 +961,51 @@
                         }
                     }, {
                         key: "addToFolder",
-                        value: function() {
-                            var e = this;
-                            this.loading || (this.loading = !0, I.a.put("/api/users/folders/addsets", {
-                                folderName: this.state.moveLocation,
-                                sets: [this.state.movingGame._id]
-                            }).then((function(t) {
-                                if (e.here) {
-                                    var a = t.data || e.state.folders;
-                                    e.setDisplay(a), e.setState({
-                                        movingGame: ""
-                                    }), e.loading = !1
+                        value: (r = H(F().mark((function e() {
+                            var t = this;
+                            return F().wrap((function(e) {
+                                for (;;) switch (e.prev = e.next) {
+                                    case 0:
+                                        if (!this.loading) {
+                                            e.next = 2;
+                                            break
+                                        }
+                                        return e.abrupt("return");
+                                    case 2:
+                                        if (this.loading = !0, !this.state.inFolder || !this.state.folderName) {
+                                            e.next = 6;
+                                            break
+                                        }
+                                        return e.next = 6, I.a.put("/api/users/folders/removeset", {
+                                            folderName: this.state.folderName,
+                                            setId: this.state.movingGame._id
+                                        }).then().catch((function(e) {
+                                            Object(b.b)(e)
+                                        }));
+                                    case 6:
+                                        I.a.put("/api/users/folders/addsets", {
+                                            folderName: this.state.moveLocation,
+                                            sets: [this.state.movingGame._id]
+                                        }).then((function(e) {
+                                            if (t.here) {
+                                                var a = e.data || t.state.folders;
+                                                t.setDisplay(a), t.setState({
+                                                    movingGame: ""
+                                                }), t.loading = !1
+                                            }
+                                        })).catch((function(e) {
+                                            t.here && (Object(b.b)(e), t.loading = !1, t.setState({
+                                                movingGame: ""
+                                            }))
+                                        }));
+                                    case 7:
+                                    case "end":
+                                        return e.stop()
                                 }
-                            })).catch((function(t) {
-                                e.here && (Object(b.b)(t), e.loading = !1, e.setState({
-                                    movingGame: ""
-                                }))
-                            })))
-                        }
+                            }), e, this)
+                        }))), function() {
+                            return r.apply(this, arguments)
+                        })
                     }, {
                         key: "removeFromFolder",
                         value: function(e) {
@@ -1071,7 +1098,7 @@
                             }, o.a.createElement(w.a, {
                                 title: "Dashboard | Blooket",
                                 desc: "The Dashboard allows you to access your question sets, favorites, game history, and news about Blooket events!"
-                            }), o.a.createElement(N.a, {
+                            }), o.a.createElement(S.a, {
                                 user: this.state.user,
                                 page: "My Sets",
                                 newNews: this.state.showNews,
@@ -1116,7 +1143,7 @@
                                 className: O.a.nothingHeader
                             }, "You'll Need a Question Set to Host!"), o.a.createElement("div", {
                                 className: O.a.nothingButtonsRow
-                            }, o.a.createElement(S.a, {
+                            }, o.a.createElement(N.a, {
                                 color: "#9a49aa",
                                 onClick: function() {
                                     return e.props.history.push("/create")
@@ -1126,7 +1153,7 @@
                                 className: O.a.nothingButtonInside
                             }, o.a.createElement("i", {
                                 className: p()("fas fa-edit", O.a.nothingIcon)
-                            }), "Create a Set")), o.a.createElement(S.a, {
+                            }), "Create a Set")), o.a.createElement(N.a, {
                                 color: "#0bc2cf",
                                 onClick: function() {
                                     return e.props.history.push("/discover")
@@ -1143,7 +1170,7 @@
                                 className: O.a.nothingLink
                             }, "Getting Started Tutorial"))) : null, this.state.allGames.length > 0 ? o.a.createElement("div", {
                                 className: O.a.folderHolder
-                            }, this.state.inFolder ? o.a.createElement(S.a, {
+                            }, this.state.inFolder ? o.a.createElement(N.a, {
                                 outsideClass: O.a.folderButton,
                                 color: "#0bc2cf",
                                 onClick: function() {
@@ -1160,7 +1187,7 @@
                                 var n = T(t, 2),
                                     r = n[0],
                                     i = n[1];
-                                return e.shouldShowFolder(r, i) ? o.a.createElement(S.a, {
+                                return e.shouldShowFolder(r, i) ? o.a.createElement(N.a, {
                                     outsideClass: O.a.folderButton,
                                     color: i.color,
                                     style: {
@@ -1356,7 +1383,7 @@
                                     style: {
                                         height: 50
                                     }
-                                }), o.a.createElement(S.a, {
+                                }), o.a.createElement(N.a, {
                                     outsideClass: O.a.hostButton,
                                     color: "#0bc2cf",
                                     onClick: function() {
@@ -1565,7 +1592,7 @@
                                     var a = T(t, 2),
                                         n = a[0],
                                         r = a[1];
-                                    return o.a.createElement(S.a, {
+                                    return o.a.createElement(N.a, {
                                         outsideClass: O.a.locationFolderButton,
                                         color: r.color,
                                         key: n,
@@ -1607,7 +1634,7 @@
                         }
                     }]) && V(t.prototype, a), n && V(t, n), Object.defineProperty(t, "prototype", {
                         writable: !1
-                    }), d
+                    }), m
                 }(o.a.Component);
             Z.propTypes = {
                 history: l.a.object,
@@ -1756,6 +1783,26 @@
                 },
                 lineLeader: {
                     name: "Line Leader",
+                    price: 250,
+                    rarity: "Uncommon"
+                },
+                studious: {
+                    name: "Studious",
+                    price: 100,
+                    rarity: "Uncommon"
+                },
+                smartyPants: {
+                    name: "Smarty Pants",
+                    price: 250,
+                    rarity: "Uncommon"
+                },
+                thoughtful: {
+                    name: "Thoughtful",
+                    price: 100,
+                    rarity: "Uncommon"
+                },
+                starStudent: {
+                    name: "Star Student",
                     price: 250,
                     rarity: "Uncommon"
                 }
@@ -2104,8 +2151,8 @@
                 j = a("XTAU"),
                 B = a("ca/f"),
                 I = a("MDrD"),
-                N = a("74sb"),
-                S = a("qnYv"),
+                S = a("74sb"),
+                N = a("qnYv"),
                 P = a("i4/Q"),
                 T = a("xP+p"),
                 F = a("1O+K"),
@@ -2305,7 +2352,7 @@
                         height: 25
                     }
                 },
-                A = new D.a.Class({
+                R = new D.a.Class({
                     Extends: D.a.GameObjects.Image,
                     initialize: function() {
                         D.a.GameObjects.Image.call(this, z.scene, 0, 0, "uncommon-1"), this.setDepth(3), this.lifespan = 0
@@ -2318,8 +2365,8 @@
                     }
                 });
 
-            function R(e) {
-                return (R = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function(e) {
+            function A(e) {
+                return (A = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function(e) {
                     return typeof e
                 } : function(e) {
                     return e && "function" == typeof Symbol && e.constructor === Symbol && e !== Symbol.prototype ? "symbol" : typeof e
@@ -2328,7 +2375,7 @@
 
             function H(e) {
                 return function(e) {
-                    if (Array.isArray(e)) return Y(e)
+                    if (Array.isArray(e)) return U(e)
                 }(e) || function(e) {
                     if ("undefined" != typeof Symbol && null != e[Symbol.iterator] || null != e["@@iterator"]) return Array.from(e)
                 }(e) || q(e) || function() {
@@ -2364,19 +2411,19 @@
 
             function q(e, t) {
                 if (e) {
-                    if ("string" == typeof e) return Y(e, t);
+                    if ("string" == typeof e) return U(e, t);
                     var a = Object.prototype.toString.call(e).slice(8, -1);
-                    return "Object" === a && e.constructor && (a = e.constructor.name), "Map" === a || "Set" === a ? Array.from(e) : "Arguments" === a || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(a) ? Y(e, t) : void 0
+                    return "Object" === a && e.constructor && (a = e.constructor.name), "Map" === a || "Set" === a ? Array.from(e) : "Arguments" === a || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(a) ? U(e, t) : void 0
                 }
             }
 
-            function Y(e, t) {
+            function U(e, t) {
                 (null == t || t > e.length) && (t = e.length);
                 for (var a = 0, n = new Array(t); a < t; a++) n[a] = e[a];
                 return n
             }
 
-            function U(e, t) {
+            function Y(e, t) {
                 for (var a = 0; a < t.length; a++) {
                     var n = t[a];
                     n.enumerable = n.enumerable || !1, n.configurable = !0, "value" in n && (n.writable = !0), Object.defineProperty(e, n.key, n)
@@ -2411,7 +2458,7 @@
             }
 
             function X(e, t) {
-                if (t && ("object" === R(t) || "function" == typeof t)) return t;
+                if (t && ("object" === A(t) || "function" == typeof t)) return t;
                 if (void 0 !== t) throw new TypeError("Derived constructors may only return object or undefined");
                 return function(e) {
                     if (void 0 === e) throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
@@ -2426,122 +2473,122 @@
             }
             var Q = function(e) {
                     if ("center" === e) {
-                        var t = Object(N.m)(-115, -65);
+                        var t = Object(S.m)(-115, -65);
                         return {
                             x: z.scene.cameras.main.worldView.width / 2,
                             y: z.scene.cameras.main.worldView.height / 2,
-                            scale: Object(N.m)(.7, 1),
+                            scale: Object(S.m)(.7, 1),
                             angle: t,
-                            velocity: Object(N.m)(600, 750),
+                            velocity: Object(S.m)(600, 750),
                             gravity: 700,
-                            angVelocity: (t > -90 ? 1 : -1) * Object(N.m)(125, 175),
+                            angVelocity: (t > -90 ? 1 : -1) * Object(S.m)(125, 175),
                             lifespan: 2500
                         }
                     }
                     if ("right" === e) return {
                         x: z.scene.cameras.main.worldView.width,
-                        y: Object(N.m)(0, z.scene.cameras.main.worldView.height),
-                        scale: Object(N.m)(.7, 1),
+                        y: Object(S.m)(0, z.scene.cameras.main.worldView.height),
+                        scale: Object(S.m)(.7, 1),
                         angle: -180,
-                        velocity: Object(N.m)(600, 750),
+                        velocity: Object(S.m)(600, 750),
                         gravity: 0,
-                        angVelocity: Object(N.m)(-175, -125),
+                        angVelocity: Object(S.m)(-175, -125),
                         lifespan: 2500
                     };
                     if ("left" === e) return {
                         x: 0,
-                        y: Object(N.m)(0, z.scene.cameras.main.worldView.height),
-                        scale: Object(N.m)(.7, 1),
+                        y: Object(S.m)(0, z.scene.cameras.main.worldView.height),
+                        scale: Object(S.m)(.7, 1),
                         angle: 0,
-                        velocity: Object(N.m)(600, 750),
+                        velocity: Object(S.m)(600, 750),
                         gravity: 0,
-                        angVelocity: Object(N.m)(125, 175),
+                        angVelocity: Object(S.m)(125, 175),
                         lifespan: 2500
                     };
                     if ("right-bottom" === e) return {
                         x: z.scene.cameras.main.worldView.width,
                         y: z.scene.cameras.main.worldView.height,
-                        scale: Object(N.m)(.7, 1),
-                        angle: Object(N.m)(-160, -110),
-                        velocity: Object(N.m)(600, 750),
+                        scale: Object(S.m)(.7, 1),
+                        angle: Object(S.m)(-160, -110),
+                        velocity: Object(S.m)(600, 750),
                         gravity: 500,
-                        angVelocity: Object(N.m)(-175, -125),
+                        angVelocity: Object(S.m)(-175, -125),
                         lifespan: 2500
                     };
                     if ("left-bottom" === e) return {
                         x: 0,
                         y: z.scene.cameras.main.worldView.height,
-                        scale: Object(N.m)(.7, 1),
-                        angle: Object(N.m)(-70, -20),
-                        velocity: Object(N.m)(600, 750),
+                        scale: Object(S.m)(.7, 1),
+                        angle: Object(S.m)(-70, -20),
+                        velocity: Object(S.m)(600, 750),
                         gravity: 500,
-                        angVelocity: Object(N.m)(125, 175),
+                        angVelocity: Object(S.m)(125, 175),
                         lifespan: 2500
                     };
                     if ("top" === e) return {
-                        x: Object(N.m)(0, z.scene.cameras.main.worldView.width),
+                        x: Object(S.m)(0, z.scene.cameras.main.worldView.width),
                         y: -50,
-                        scale: Object(N.m)(.7, 1),
+                        scale: Object(S.m)(.7, 1),
                         angle: 90,
-                        velocity: Object(N.m)(0, 50),
+                        velocity: Object(S.m)(0, 50),
                         gravity: 700,
-                        angVelocity: Object(N.m)(-150, 150),
+                        angVelocity: Object(S.m)(-150, 150),
                         lifespan: 2500
                     };
                     if ("right-shower" === e) return {
                         x: z.scene.cameras.main.worldView.width,
-                        y: Object(N.m)(0, z.scene.cameras.main.worldView.height),
-                        scale: Object(N.m)(.7, 1),
-                        angle: Object(N.m)(-180, -130),
-                        velocity: Object(N.m)(600, 750),
+                        y: Object(S.m)(0, z.scene.cameras.main.worldView.height),
+                        scale: Object(S.m)(.7, 1),
+                        angle: Object(S.m)(-180, -130),
+                        velocity: Object(S.m)(600, 750),
                         gravity: 500,
-                        angVelocity: Object(N.m)(-175, -125),
+                        angVelocity: Object(S.m)(-175, -125),
                         lifespan: 2500
                     };
                     if ("left-shower" === e) return {
                         x: 0,
-                        y: Object(N.m)(0, z.scene.cameras.main.worldView.height),
-                        scale: Object(N.m)(.7, 1),
-                        angle: Object(N.m)(-50, 0),
-                        velocity: Object(N.m)(600, 750),
+                        y: Object(S.m)(0, z.scene.cameras.main.worldView.height),
+                        scale: Object(S.m)(.7, 1),
+                        angle: Object(S.m)(-50, 0),
+                        velocity: Object(S.m)(600, 750),
                         gravity: 500,
-                        angVelocity: Object(N.m)(125, 175),
+                        angVelocity: Object(S.m)(125, 175),
                         lifespan: 2500
                     };
                     if ("right-diamond" === e) {
-                        var a = Object(N.m)(0, z.scene.cameras.main.worldView.height);
+                        var a = Object(S.m)(0, z.scene.cameras.main.worldView.height);
                         return {
                             x: z.scene.cameras.main.worldView.width,
                             y: a,
-                            scale: Object(N.m)(.7, 1),
+                            scale: Object(S.m)(.7, 1),
                             angle: a > z.scene.cameras.main.worldView.height / 2 ? -150 : -210,
-                            velocity: Object(N.m)(600, 750),
+                            velocity: Object(S.m)(600, 750),
                             gravity: 0,
-                            angVelocity: Object(N.m)(-175, -125),
+                            angVelocity: Object(S.m)(-175, -125),
                             lifespan: 2500
                         }
                     }
                     if ("left-diamond" === e) {
-                        var n = Object(N.m)(0, z.scene.cameras.main.worldView.height);
+                        var n = Object(S.m)(0, z.scene.cameras.main.worldView.height);
                         return {
                             x: 0,
                             y: n,
-                            scale: Object(N.m)(.7, 1),
+                            scale: Object(S.m)(.7, 1),
                             angle: n > z.scene.cameras.main.worldView.height / 2 ? -30 : 30,
-                            velocity: Object(N.m)(600, 750),
+                            velocity: Object(S.m)(600, 750),
                             gravity: 0,
-                            angVelocity: Object(N.m)(125, 175),
+                            angVelocity: Object(S.m)(125, 175),
                             lifespan: 2500
                         }
                     }
                     return "center-spread" === e ? {
                         x: z.scene.cameras.main.worldView.width / 2,
                         y: z.scene.cameras.main.worldView.height / 2,
-                        scale: Object(N.m)(.7, 1),
-                        angle: Object(N.m)(0, 360),
-                        velocity: Object(N.m)(600, 750),
+                        scale: Object(S.m)(.7, 1),
+                        angle: Object(S.m)(0, 360),
+                        velocity: Object(S.m)(600, 750),
                         gravity: 0,
-                        angVelocity: Object(N.m)(-175, 175),
+                        angVelocity: Object(S.m)(-175, 175),
                         lifespan: 2500
                     } : {}
                 },
@@ -2587,7 +2634,7 @@
                         value: function() {
                             var e = this;
                             z.scene = this, z.rarity = "", z.particles = this.physics.add.group({
-                                classType: A,
+                                classType: R,
                                 runChildUpdate: !0
                             }), this.nextParticle = 0, this.numExplosions = 0, this.game.events.on("start-particles", (function(t) {
                                 z.rarity = t, e.numExplosions = "Uncommon" === t ? 75 : "Rare" === t ? 100 : -1
@@ -2600,28 +2647,28 @@
                                 if ("Uncommon" === z.rarity)
                                     for (var a = 0; a < 2; a++) {
                                         var n = z.particles.get();
-                                        n && n.spawn.apply(n, H(Object.values(Q("center"))).concat(["uncommon-".concat(Object(N.n)(1, 8))]))
+                                        n && n.spawn.apply(n, H(Object.values(Q("center"))).concat(["uncommon-".concat(Object(S.n)(1, 8))]))
                                     } else if ("Rare" === z.rarity)
                                         for (var o = 0; o < 2; o++) {
                                             var r = z.particles.get();
-                                            r && r.spawn.apply(r, H(Object.values(Q(o % 2 == 0 ? "left-bottom" : "right-bottom"))).concat(["rare-".concat(Object(N.n)(1, 8))]))
+                                            r && r.spawn.apply(r, H(Object.values(Q(o % 2 == 0 ? "left-bottom" : "right-bottom"))).concat(["rare-".concat(Object(S.n)(1, 8))]))
                                         } else if ("Epic" === z.rarity)
                                             for (var i = 0; i < 2; i++) {
                                                 var s = z.particles.get();
-                                                s && s.spawn.apply(s, H(Object.values(Q(i % 2 == 0 ? "left-shower" : "right-shower"))).concat(["epic-".concat(Object(N.n)(1, 8))]))
+                                                s && s.spawn.apply(s, H(Object.values(Q(i % 2 == 0 ? "left-shower" : "right-shower"))).concat(["epic-".concat(Object(S.n)(1, 8))]))
                                             } else if ("Legendary" === z.rarity)
                                                 for (var l = 0; l < 3; l++) {
                                                     var c = z.particles.get();
-                                                    c && c.spawn.apply(c, H(Object.values(Q("top"))).concat(["legendary-".concat(Object(N.n)(1, 8))]))
+                                                    c && c.spawn.apply(c, H(Object.values(Q("top"))).concat(["legendary-".concat(Object(S.n)(1, 8))]))
                                                 } else if ("Chroma" === z.rarity)
                                                     for (var u = 0; u < 3; u++) {
                                                         var d = z.particles.get();
-                                                        d && d.spawn.apply(d, H(Object.values(Q(u % 2 == 0 ? "left-diamond" : "right-diamond"))).concat(["chroma-".concat(Object(N.n)(1, 8))]))
+                                                        d && d.spawn.apply(d, H(Object.values(Q(u % 2 == 0 ? "left-diamond" : "right-diamond"))).concat(["chroma-".concat(Object(S.n)(1, 8))]))
                                                     }
                                 this.nextParticle = 20, this.numExplosions > 0 && (this.numExplosions = Math.max(this.numExplosions - 1, 0))
                             }
                         }
-                    }]) && U(t.prototype, a), n && U(t, n), Object.defineProperty(t, "prototype", {
+                    }]) && Y(t.prototype, a), n && Y(t, n), Object.defineProperty(t, "prototype", {
                         writable: !1
                     }), r
                 }(D.a.Scene),
@@ -3093,21 +3140,21 @@
                 })(e)
             }
             var he = window.ShopData = [{
-                    id: "chalkboard",
+                    id: "theater",
                     type: "banner",
-                    data: te.a.chalkboard
+                    data: te.a.theater
                 }, {
-                    id: "slime",
+                    id: "sushi",
                     type: "banner",
-                    data: te.a.slime
+                    data: te.a.sushi
                 }, {
-                    id: "earlyBird",
+                    id: "thoughtful",
                     type: "title",
-                    data: ae.a.earlyBird
+                    data: ae.a.thoughtful
                 }, {
-                    id: "lineLeader",
+                    id: "starStudent",
                     type: "title",
-                    data: ae.a.lineLeader
+                    data: ae.a.starStudent
                 }],
                 ye = {
                     "Ice Monster": {
@@ -3210,7 +3257,7 @@
                                     case 7:
                                         this.setState({
                                             user: t
-                                        }), S.a.get("/api/users/market").then((function(e) {
+                                        }), N.a.get("/api/users/market").then((function(e) {
                                             a.here && a.setState({
                                                 tokens: e.data.tokens,
                                                 banners: e.data.banners || [],
@@ -3260,7 +3307,7 @@
                             this.state.tokens < v.a[t] || this.state.loadingPack || (this.setState({
                                 loadingPack: !0,
                                 tokens: this.state.tokens - v.a[t]
-                            }), S.a.put("/api/users/unlockblook", {
+                            }), N.a.put("/api/users/unlockblook", {
                                 name: this.state.user.name,
                                 box: t
                             }).then((function(e) {
@@ -3332,7 +3379,7 @@
                             this.state.loadingItem || this.state.tokens < this.state.currentItem.data.price || (this.setState({
                                 loadingItem: !0,
                                 tokens: this.state.tokens - this.state.currentItem.data.price
-                            }), S.a.put("/api/users/buy/".concat(this.state.currentItem.type), {
+                            }), N.a.put("/api/users/buy/".concat(this.state.currentItem.type), {
                                 id: this.state.currentItem.id
                             }).then((function(t) {
                                 e.setState({
@@ -3367,7 +3414,7 @@
                                     alt: "Token",
                                     className: E.a.tokenBalanceIcon,
                                     draggable: !1
-                                }), Object(N.k)(this.state.tokens))
+                                }), Object(S.k)(this.state.tokens))
                             }), o.a.createElement("div", {
                                 className: C.a.profileBody
                             }, o.a.createElement("div", {
@@ -3379,7 +3426,7 @@
                                 alt: "Token",
                                 className: E.a.tokenBalanceIcon,
                                 draggable: !1
-                            }), Object(N.k)(this.state.tokens)), o.a.createElement("div", {
+                            }), Object(S.k)(this.state.tokens)), o.a.createElement("div", {
                                 style: {
                                     display: "flex"
                                 }
@@ -3437,12 +3484,12 @@
                                 }, o.a.createElement("div", {
                                     className: E.a.packImgContainer
                                 }, o.a.createElement("img", {
-                                    src: Object(N.d)(n.url),
+                                    src: Object(S.d)(n.url),
                                     alt: a,
                                     className: E.a.packShadow,
                                     draggable: !1
                                 }), o.a.createElement("img", {
-                                    src: Object(N.d)(n.url),
+                                    src: Object(S.d)(n.url),
                                     alt: a,
                                     className: E.a.packImg,
                                     draggable: !1
@@ -3487,10 +3534,10 @@
                                     alt: "Token",
                                     className: E.a.packPriceImg,
                                     draggable: !1
-                                }), Object(N.k)(e.data.price)), o.a.createElement("div", {
+                                }), Object(S.k)(e.data.price)), o.a.createElement("div", {
                                     className: E.a.weeklyRarity,
                                     style: {
-                                        backgroundColor: N.o[e.data.rarity]
+                                        backgroundColor: S.o[e.data.rarity]
                                     }
                                 }, e.data.rarity))
                             }))))), this.state.currentPack ? o.a.createElement(B.a, {
@@ -3508,7 +3555,7 @@
                                             key: e[0]
                                         }, "".concat(e[0], ": ").concat(e[1], "%"))
                                     }))))
-                                }), "for ".concat(Object(N.k)(v.a[this.state.currentPack]), " tokens?")),
+                                }), "for ".concat(Object(S.k)(v.a[this.state.currentPack]), " tokens?")),
                                 loading: this.state.loadingPack,
                                 buttonOne: this.state.tokens >= v.a[this.state.currentPack] ? {
                                     text: "Yes",
@@ -3531,7 +3578,7 @@
                                     color: "blue"
                                 } : null
                             }) : this.state.currentItem ? o.a.createElement(B.a, {
-                                text: "Purchase the ".concat(this.state.currentItem.data.name, " ").concat(this.state.currentItem.type, " for ").concat(Object(N.k)(this.state.currentItem.data.price), " tokens?"),
+                                text: "Purchase the ".concat(this.state.currentItem.data.name, " ").concat(this.state.currentItem.type, " for ").concat(Object(S.k)(this.state.currentItem.data.price), " tokens?"),
                                 loading: this.state.loadingItem,
                                 buttonOne: this.state.tokens >= this.state.currentItem.data.price ? {
                                     text: "Yes",
@@ -3573,7 +3620,7 @@
                             }), o.a.createElement("div", {
                                 className: f()(E.a.openContainer, (e = {}, oe(e, E.a.openingContainer, this.state.opening), oe(e, E.a.openingContainerEpic, this.state.opening && "Epic" === Object(x.a)(this.state.unlockedBlook)), oe(e, E.a.openingContainerLegendary, this.state.opening && "Legendary" === Object(x.a)(this.state.unlockedBlook)), oe(e, E.a.openingContainerChroma, this.state.opening && "Chroma" === Object(x.a)(this.state.unlockedBlook)), e))
                             }, o.a.createElement("img", {
-                                src: Object(N.d)(T.b[I.a[this.state.unlockedBlook].set]),
+                                src: Object(S.d)(T.b[I.a[this.state.unlockedBlook].set]),
                                 alt: "Background",
                                 className: E.a.blookBackground,
                                 draggable: !1
@@ -3591,7 +3638,7 @@
                             }, this.state.unlockedBlook), o.a.createElement("div", {
                                 className: E.a.rarityText,
                                 style: {
-                                    color: N.o[Object(x.a)(this.state.unlockedBlook)]
+                                    color: S.o[Object(x.a)(this.state.unlockedBlook)]
                                 }
                             }, Object(x.a)(this.state.unlockedBlook))), o.a.createElement("div", {
                                 className: E.a.bottomText
@@ -3607,7 +3654,7 @@
                             }, o.a.createElement("div", {
                                 className: f()(E.a.openPack, oe({}, E.a.isOpeningPack, this.state.opening)),
                                 style: {
-                                    backgroundImage: "url(".concat(Object(N.d)(ye[I.a[this.state.unlockedBlook].set].animUrl), ")")
+                                    backgroundImage: "url(".concat(Object(S.d)(ye[I.a[this.state.unlockedBlook].set].animUrl), ")")
                                 }
                             })), o.a.createElement("div", {
                                 className: f()(E.a.openBigButton, oe({}, E.a.canOpen, !this.state.opening && this.state.canOpen || this.state.opening && this.state.doneOpening)),
@@ -4118,6 +4165,30 @@
                 slime: {
                     name: "Slime",
                     url: "https://media.blooket.com/image/upload/v1664260480/Banners/slime.svg",
+                    price: 500,
+                    rarity: "Rare"
+                },
+                bookshelf: {
+                    name: "Bookshelf",
+                    url: "https://media.blooket.com/image/upload/v1664874204/Banners/bookshelf.svg",
+                    price: 100,
+                    rarity: "Uncommon"
+                },
+                toasterPastry: {
+                    name: "Toaster Pastry",
+                    url: "https://media.blooket.com/image/upload/v1664874204/Banners/toasterPastry.svg",
+                    price: 500,
+                    rarity: "Rare"
+                },
+                theater: {
+                    name: "Theater",
+                    url: "https://media.blooket.com/image/upload/v1665549438/Banners/theater.svg",
+                    price: 100,
+                    rarity: "Uncommon"
+                },
+                sushi: {
+                    name: "Sushi",
+                    url: "https://media.blooket.com/image/upload/v1665549438/Banners/sushi.svg",
                     price: 500,
                     rarity: "Rare"
                 }
