@@ -6,6 +6,7 @@ let e = setInterval(() => {
 		if (Array.from(document.body.children).filter(e => e.localName === "script").length < 35 &&
 			document.location.toString().includes("dashboard")) return;
 		clearInterval(e);
+		console.log("t")
 		window.MODS = [];
 		const styles = document.createElement("style");
 		const EMLGUI = document.createElement("div");
@@ -16,17 +17,15 @@ let e = setInterval(() => {
 		
 		EMLGUI.id = "EML-GUI";
 		EMLGUI.style = stylesToString({
+			top: (window.innerHeight - 600) / 2 + 'px',
+			left: (window.innerWidth - 1000) / 2 + 'px',
+			position: 'fixed',
+			height: '80%',
+			width: '80%',
+			maxHeight: '600px',
+			maxWidth: '1000px',
+			zIndex: '999',
 			display: 'block',
-			top: '0',
-			left: '0',
-			height: '100%',
-			overflowY: 'hidden',
-			overflowX: 'hidden',
-			position: 'absolute',
-			width: '100%',
-			backgroundColor: 'rgb(11, 194, 207)',
-			visibility: 'visible',
-			"z-index": 999,
 		});
 		let container = document.createElement("div");
 		container.style = stylesToString({
