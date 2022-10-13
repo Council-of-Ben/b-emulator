@@ -2924,7 +2924,7 @@
 
             function y(e, t, i) {
                 return t && b(e.prototype, t), i && b(e, i), Object.defineProperty(e, "prototype", {
-                    writable: !1
+                    writable: !0 
                 }), e
             }
             var _ = window.MonsterBrawlPlayerVariable = new(y((function e() {

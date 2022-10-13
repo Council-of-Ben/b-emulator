@@ -1,3 +1,5 @@
+window.hooked = {}; // hook function accesser
+
 function log(str, n1, n2) {
 	if (n1 && n2) console.log(`%c[${n1}/${n2}] ${str}`, "color: #7799ff");
 	else console.log("%c[LOG] " + str, "color: #7799ff;");
@@ -89,37 +91,37 @@ function setState(path="#app > div > div", state={}) {
 };
 
 
-function Hook(objectName, dataLink, thisLink, data) {
+function Hook(objectName, dataLink, thisLink) {
 	Object.defineProperty(Object.prototype, objectName, {
 		get: function () {
 			Reflect.defineProperty(this, objectName, {
 				get: function () {
-					return data[dataLink];
+					return window.hooked[dataLink];
 				},
 				set: function (d) {
-					data[dataLink] = d;
+					window.hooked[dataLink] = d;
 				},
 				enumerable: true
 			});
 			if (thisLink) {
-				data[thisLink] = this;
+				window.hooked[thisLink] = this;
 			}
-			return data[dataLink];
+			return window.hooked[dataLink];
 		},
 		set: function (d) {
 			Reflect.defineProperty(this, objectName, {
 				get: function () {
-					return data[dataLink];
+					return window.hooked[dataLink];
 				},
 				set: function (d) {
-					data[dataLink] = d;
+					window.hooked[dataLink] = d;
 				},
 				enumerable: true
 			});
 			if (thisLink) {
-				data[thisLink] = this;
+				window.hooked[thisLink] = this;
 			}
-			data[dataLink] = d;
+			window.hooked[dataLink] = d;
 		}
 	});
 };
