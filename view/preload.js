@@ -1,12 +1,12 @@
 const fs = require('fs');
 const init = fs.readFileSync('./view/init.js', 'utf8');
 const mods = JSON.parse(fs.readFileSync("./mods.json", "utf8"));
+console.log("loading preload")
 let e = setInterval(() => {
 	if (document.body) {
-		if (Array.from(document.body.children).filter(e => e.localName === "script").length < 35 &&
+		if (Array.from(document.body.children).filter(e => e.localName === "script").length < 31 &&
 			document.location.toString().includes("dashboard")) return;
 		clearInterval(e);
-		console.log("t")
 		window.MODS = [];
 		const styles = document.createElement("style");
 		const EMLGUI = document.createElement("div");
@@ -27,7 +27,7 @@ let e = setInterval(() => {
 			maxHeight: '600px',
 			maxWidth: '1000px',
 			zIndex: '999',
-			display: 'block',
+			display: 'none',
 		});
 		let container = document.createElement("div");
 		stylesToString(container, {
@@ -89,7 +89,61 @@ let e = setInterval(() => {
 			fontWeight: '700',
 			userSelect: 'text',
 		});
-		infobox.innerHTML = `Ctrl + H to hide | Ctrl + X for quick disable<br>Click and drag here`;
+		infobox.innerHTML = `Ctrl + H to toggle<br>Click and drag here.`;
+		let active = false;
+		let currentX;
+		let currentY;
+		let initialX;
+		let initialY;
+		let xOffset = 0;
+		let yOffset = 0;
+		function dragStart(e) {
+			if (e.type === "touchstart") {
+				initialX = e.touches[0].clientX - xOffset;
+				initialY = e.touches[0].clientY - yOffset;
+			} else {
+				initialX = e.clientX - xOffset;
+				initialY = e.clientY - yOffset;
+			};
+
+			if (e.target === infobox) {
+				active = true;
+			};
+		};
+
+		function dragEnd(e) {
+			initialX = currentX;
+			initialY = currentY;
+
+			active = false;
+		};
+
+		function drag(e) {
+			if (active) {
+
+				e.preventDefault();
+
+				if (e.type === "touchmove") {
+					currentX = e.touches[0].clientX - initialX;
+					currentY = e.touches[0].clientY - initialY;
+				} else {
+					currentX = e.clientX - initialX;
+					currentY = e.clientY - initialY;
+				};
+
+				xOffset = currentX;
+				yOffset = currentY;
+
+				setTranslate(currentX, currentY, EMLGUI);
+			};
+		};
+
+		function setTranslate(xPos, yPos, el) {
+			el.style.transform = "translate3d(" + xPos + "px, " + yPos + "px, 0)";
+		};
+		infobox.addEventListener("mousedown", dragStart, false);
+		infobox.addEventListener("mouseup", dragEnd, false);
+		infobox.addEventListener("mousemove", drag, false);
 		let modList = document.createElement("div");
 		modList.classList.add("modList");
 		stylesToString(modList, {
@@ -147,11 +201,19 @@ let e = setInterval(() => {
 			// backgroundColor: "#8000ff"
 		});
 
+		container.appendChild(content);
+		modList.appendChild(bigButton1);
+		container.appendChild(modList);
+		container.appendChild(infobox);
+		background.appendChild(background2);
+		container.appendChild(background);
+		EMLGUI.appendChild(container);
+
 		function addMod(mod, img, mods) {
 			const button = document.createElement("div");
 			button.classList.add("modButton");
 			button.innerHTML = (typeof img == "string" ? `<img style="height: 30px; margin-right: 5px" src="${img}">` : img) + mod;
-			cheatContainer.appendChild(button);
+			modList.appendChild(button);
 			button.onclick = () => setMods(button.innerText, mods);
 			return button.onclick;
 		};
@@ -159,7 +221,7 @@ let e = setInterval(() => {
 		async function setMods(mod, scripts) {
 			currentMod = [mod, scripts];
 			const header = document.createElement("div");
-			addStyles(header, {
+			stylesToString(header, {
 				boxSizing: "border-box",
 				display: "block",
 				height: "45px",
@@ -173,7 +235,7 @@ let e = setInterval(() => {
 			});
 
 			const headerText = document.createElement("div");
-			addStyles(headerText, {
+			stylesToString(headerText, {
 				alignItems: "center",
 				boxSizing: "border-box",
 				display: "flex",
@@ -191,7 +253,7 @@ let e = setInterval(() => {
 			});
 
 			const mods = document.createElement("div");
-			addStyles(mods, {
+			stylesToString(mods, {
 				alignItems: "center",
 				boxSizing: "border-box",
 				display: "flex",
@@ -222,7 +284,7 @@ let e = setInterval(() => {
 				} = scripts[i];
 				const button = document.createElement("div");
 				button.classList.add("scriptButton");
-				addStyles(button, {
+				stylesToString(button, {
 					alignItems: "center",
 					boxSizing: "border-box",
 					display: "flex",
@@ -258,13 +320,13 @@ let e = setInterval(() => {
 							min,
 							max
 						} = inputs[i];
-						const options = await (typeof opts == "function"? opts?.().catch(console.warn) : opts);
+						const options = await (typeof opts == "function" ? opts?.().catch(console.warn) : opts);
 						if (type == "options" && options?.length) {
 							const select = document.createElement("select");
 							options.forEach(opt => {
 								const option = document.createElement("option");
-								option.value = opt ?.value || opt;
-								option.innerHTML = opt ?.value || opt;
+								option.value = opt?.value || opt;
+								option.innerHTML = opt?.value || opt;
 								select.appendChild(option);
 							});
 							button.appendChild(select);
@@ -321,11 +383,13 @@ let e = setInterval(() => {
 		let scripts = [{
 			name: "test",
 			description: "test",
-			image:"/asinsagingias.png",
+			image: "/asinsagingias.png",
 			type: "toggle",
 			inputs: null,
 			enabled: true,
-			run: function () {console.log("hi")}
+			run: function () {
+				console.log("hi")
+			}
 		}];
 		for (let s of scripts) {
 			addMod(s.name, s.image, scripts);
@@ -341,6 +405,14 @@ let e = setInterval(() => {
 			location.href = arguments[0];
 			return;
 		};
+		document.addEventListener("keydown", (event) => {
+			if (event.ctrlKey) {
+				//event.preventDefault();
+				if (event.key.toLowerCase() === "h") {
+					EMLGUI.style.display = EMLGUI.style.display === "block" ? "none" : "block";
+				};
+			};
+		})
 		locScript.innerHTML = init;
 		for (let script of Array.from(document.body.children).filter(e => e.localName === "script")) {
 			if (script.outerHTML.includes("main~")) {

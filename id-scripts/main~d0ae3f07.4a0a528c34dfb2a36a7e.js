@@ -44,7 +44,7 @@
                 var n, i = document.createElement("script");
                 i.charset = "utf-8", i.timeout = 120, s.nc && i.setAttribute("nonce", s.nc), i.src = function(t) {
                     return s.p + "" + ({} [t] || t) + "." + {
-                        15: "37cb71e2d23f80acecbe"
+                        15: "c113a7c8d87c694c0e01"
                     } [t] + ".js"
                 }(t);
                 var l = new Error;
@@ -1131,26 +1131,25 @@
             G = o.n(F),
             U = o("+ipE"),
             Y = o.n(U),
-            H = o("uFVl"),
-            W = o.n(H),
-            Q = o("vDqi"),
-            K = o.n(Q),
-            X = (K.a.create({}), K.a.create({
+            H = o("N8Vf"),
+            W = o("vDqi"),
+            Q = o.n(W),
+            K = (Q.a.create({}), Q.a.create({
                 baseURL: "",
                 withCredentials: !0
             }));
 
-        function Z(t) {
-            return (Z = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function(t) {
+        function X(t) {
+            return (X = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function(t) {
                 return typeof t
             } : function(t) {
                 return t && "function" == typeof Symbol && t.constructor === Symbol && t !== Symbol.prototype ? "symbol" : typeof t
             })(t)
         }
 
-        function J() {
+        function Z() {
             /*! regenerator-runtime -- Copyright (c) 2014-present, Facebook, Inc. -- license (MIT): https://github.com/facebook/regenerator/blob/main/LICENSE */
-            J = function() {
+            Z = function() {
                 return t
             };
             var t = {},
@@ -1266,7 +1265,7 @@
                                 if ("throw" !== l.type) {
                                     var u = l.arg,
                                         p = u.value;
-                                    return p && "object" == Z(p) && o.call(p, "__await") ? e.resolve(p.__await).then((function(t) {
+                                    return p && "object" == X(p) && o.call(p, "__await") ? e.resolve(p.__await).then((function(t) {
                                         r("next", t, s, i)
                                     }), (function(t) {
                                         r("throw", t, s, i)
@@ -1459,7 +1458,7 @@
             }, t
         }
 
-        function q(t, e, o, r, a, n, s) {
+        function J(t, e, o, r, a, n, s) {
             try {
                 var i = t[n](s),
                     l = i.value
@@ -1469,7 +1468,7 @@
             i.done ? e(l) : Promise.resolve(l).then(r, a)
         }
 
-        function V(t) {
+        function q(t) {
             return function() {
                 var e = this,
                     o = arguments;
@@ -1477,30 +1476,30 @@
                     var n = t.apply(e, o);
 
                     function s(t) {
-                        q(n, r, a, s, i, "next", t)
+                        J(n, r, a, s, i, "next", t)
                     }
 
                     function i(t) {
-                        q(n, r, a, s, i, "throw", t)
+                        J(n, r, a, s, i, "throw", t)
                     }
                     s(void 0)
                 }))
             }
         }
-        var $ = function() {
+        var V = function() {
                 var t = window.document;
                 return !!(t.fullscreenElement || t.mozFullScreenElement || t.webkitFullscreenElement || t.msFullscreenElement || window.screen.width === window.innerWidth && window.screen.height === window.innerHeight)
             },
-            tt = function(t) {
+            $ = function(t) {
                 var e = t || window.event;
                 return e && (e.returnValue = "Are you sure you want to leave?"), "Are you sure you want to leave?"
             },
-            et = function(t) {
+            tt = function(t) {
                 return t ? t.indexOf('"') >= 0 ? "Emails can't have quotations." : function(t) {
                     return /^(([^<>()\[\]\.,;:\s@\"]+(\.[^<>()\[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i.test(String(t).toLowerCase())
                 }(t) ? t.length > 50 ? "Ok, that email is a little too long." : null : "That's not a real email, silly." : "Where's the email?"
             },
-            ot = function() {
+            et = function() {
                 var t = function(t) {
                     for (var e = window.location.search.substring(1).split("&"), o = 0; o < e.length; o++) {
                         var r = e[o].split("=");
@@ -1513,10 +1512,10 @@
                     localStorage.setItem("blooketRedirectURL", e)
                 }
             },
-            rt = function() {
-                var t = V(J().mark((function t() {
+            ot = function() {
+                var t = q(Z().mark((function t() {
                     var e, o, r, a;
-                    return J().wrap((function(t) {
+                    return Z().wrap((function(t) {
                         for (;;) switch (t.prev = t.next) {
                             case 0:
                                 if (!(e = localStorage.getItem("blooketRedirectURL"))) {
@@ -1525,7 +1524,7 @@
                                 }
                                 return localStorage.removeItem("blooketRedirectURL"), t.abrupt("return", e);
                             case 4:
-                                return t.next = 6, X.get("/api/config");
+                                return t.next = 6, K.get("/api/config");
                             case 6:
                                 if (o = t.sent, !(r = o.data).isDev) {
                                     t.next = 10;
@@ -1550,14 +1549,14 @@
                     return t.apply(this, arguments)
                 }
             }(),
-            at = function() {
+            rt = function() {
                 var t = new URLSearchParams(window.location.search).get("w");
                 if (t) {
                     var e = decodeURIComponent(t);
                     localStorage.setItem("blooketAuthInWindow", e)
                 }
             },
-            nt = function() {
+            at = function() {
                 var t = localStorage.getItem("blooketAuthInWindow");
                 if (!t) return !1;
                 localStorage.removeItem("blooketAuthInWindow");
@@ -1565,28 +1564,28 @@
                 return window.opener.postMessage("blooketauthcomplete", e), !0
             };
 
-        function st(t) {
-            return (st = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function(t) {
+        function nt(t) {
+            return (nt = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function(t) {
                 return typeof t
             } : function(t) {
                 return t && "function" == typeof Symbol && t.constructor === Symbol && t !== Symbol.prototype ? "symbol" : typeof t
             })(t)
         }
 
-        function it(t, e) {
+        function st(t, e) {
             for (var o = 0; o < e.length; o++) {
                 var r = e[o];
                 r.enumerable = r.enumerable || !1, r.configurable = !0, "value" in r && (r.writable = !0), Object.defineProperty(t, r.key, r)
             }
         }
 
-        function lt(t, e) {
-            return (lt = Object.setPrototypeOf ? Object.setPrototypeOf.bind() : function(t, e) {
+        function it(t, e) {
+            return (it = Object.setPrototypeOf ? Object.setPrototypeOf.bind() : function(t, e) {
                 return t.__proto__ = e, t
             })(t, e)
         }
 
-        function ct(t) {
+        function lt(t) {
             var e = function() {
                 if ("undefined" == typeof Reflect || !Reflect.construct) return !1;
                 if (Reflect.construct.sham) return !1;
@@ -1598,32 +1597,32 @@
                 }
             }();
             return function() {
-                var o, r = ft(t);
+                var o, r = pt(t);
                 if (e) {
-                    var a = ft(this).constructor;
+                    var a = pt(this).constructor;
                     o = Reflect.construct(r, arguments, a)
                 } else o = r.apply(this, arguments);
-                return ut(this, o)
+                return ct(this, o)
             }
         }
 
-        function ut(t, e) {
-            if (e && ("object" === st(e) || "function" == typeof e)) return e;
+        function ct(t, e) {
+            if (e && ("object" === nt(e) || "function" == typeof e)) return e;
             if (void 0 !== e) throw new TypeError("Derived constructors may only return object or undefined");
-            return pt(t)
+            return ut(t)
         }
 
-        function pt(t) {
+        function ut(t) {
             if (void 0 === t) throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
             return t
         }
 
-        function ft(t) {
-            return (ft = Object.setPrototypeOf ? Object.getPrototypeOf.bind() : function(t) {
+        function pt(t) {
+            return (pt = Object.setPrototypeOf ? Object.getPrototypeOf.bind() : function(t) {
                 return t.__proto__ || Object.getPrototypeOf(t)
             })(t)
         }
-        var ht = function(t) {
+        var ft = function(t) {
             ! function(t, e) {
                 if ("function" != typeof e && null !== e) throw new TypeError("Super expression must either be null or a function");
                 t.prototype = Object.create(e && e.prototype, {
@@ -1634,9 +1633,9 @@
                     }
                 }), Object.defineProperty(t, "prototype", {
                     writable: !1
-                }), e && lt(t, e)
+                }), e && it(t, e)
             }(s, t);
-            var e, o, r, n = ct(s);
+            var e, o, r, n = lt(s);
 
             function s(t) {
                 var e;
@@ -1646,13 +1645,13 @@
                     leftText: t.leftText,
                     rightText: t.rightText,
                     rightLink: t.rightLink,
-                    full: $(),
+                    full: V(),
                     wwwBase: null
-                }, X.get("/api/config").then((function(t) {
+                }, K.get("/api/config").then((function(t) {
                     e.setState({
                         wwwBase: t.data.wwwBase
                     })
-                })), e.checkResize = e.checkResize.bind(pt(e)), e
+                })), e.checkResize = e.checkResize.bind(ut(e)), e
             }
             return e = s, (o = [{
                 key: "componentDidMount",
@@ -1668,7 +1667,7 @@
                 key: "checkResize",
                 value: function() {
                     this.setState({
-                        full: $()
+                        full: V()
                     })
                 }
             }, {
@@ -1697,28 +1696,28 @@
                         to: this.state.rightLink
                     }, this.state.rightText) : null)
                 }
-            }]) && it(e.prototype, o), r && it(e, r), Object.defineProperty(e, "prototype", {
+            }]) && st(e.prototype, o), r && st(e, r), Object.defineProperty(e, "prototype", {
                 writable: !1
             }), s
         }(a.a.Component);
-        ht.propTypes = {
+        ft.propTypes = {
             leftText: I.a.string,
             rightText: I.a.string,
             rightLink: I.a.string,
             wwwBase: I.a.string
         };
-        var mt = ht,
-            dt = o("qhky"),
-            _t = o("VXYz"),
-            gt = o.n(_t),
-            yt = o("48wA"),
-            bt = o.n(yt),
-            vt = o("9hp4"),
-            wt = o.n(vt),
-            kt = function(t) {
+        var ht = ft,
+            mt = o("qhky"),
+            dt = o("VXYz"),
+            _t = o.n(dt),
+            gt = o("48wA"),
+            yt = o.n(gt),
+            bt = o("9hp4"),
+            vt = o.n(bt),
+            wt = function(t) {
                 var e = t.title,
                     o = t.desc;
-                return a.a.createElement(dt.a, null, a.a.createElement("title", null, e), a.a.createElement("meta", {
+                return a.a.createElement(mt.a, null, a.a.createElement("title", null, e), a.a.createElement("meta", {
                     name: "description",
                     content: o
                 }), a.a.createElement("meta", {
@@ -1726,37 +1725,37 @@
                     content: "width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"
                 }), a.a.createElement("link", {
                     rel: "apple-touch-icon",
-                    href: wt.a,
+                    href: vt.a,
                     sizes: "180x180"
                 }), a.a.createElement("link", {
                     rel: "icon",
                     type: "image/png",
-                    href: bt.a,
+                    href: yt.a,
                     sizes: "32x32"
                 }), a.a.createElement("link", {
                     rel: "icon",
                     type: "image/png",
-                    href: gt.a,
+                    href: _t.a,
                     sizes: "16x16"
                 }))
             };
-        kt.propTypes = {
+        wt.propTypes = {
             title: I.a.string,
             desc: I.a.string
         };
-        var xt = kt,
-            Et = o("3HZZ");
+        var kt = wt,
+            xt = o("3HZZ");
 
-        function Ct(t) {
-            return (Ct = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function(t) {
+        function Et(t) {
+            return (Et = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function(t) {
                 return typeof t
             } : function(t) {
                 return t && "function" == typeof Symbol && t.constructor === Symbol && t !== Symbol.prototype ? "symbol" : typeof t
             })(t)
         }
 
-        function jt() {
-            return (jt = Object.assign ? Object.assign.bind() : function(t) {
+        function Ct() {
+            return (Ct = Object.assign ? Object.assign.bind() : function(t) {
                 for (var e = 1; e < arguments.length; e++) {
                     var o = arguments[e];
                     for (var r in o) Object.prototype.hasOwnProperty.call(o, r) && (t[r] = o[r])
@@ -1765,9 +1764,9 @@
             }).apply(this, arguments)
         }
 
-        function Ot() {
+        function jt() {
             /*! regenerator-runtime -- Copyright (c) 2014-present, Facebook, Inc. -- license (MIT): https://github.com/facebook/regenerator/blob/main/LICENSE */
-            Ot = function() {
+            jt = function() {
                 return t
             };
             var t = {},
@@ -1883,7 +1882,7 @@
                                 if ("throw" !== l.type) {
                                     var u = l.arg,
                                         p = u.value;
-                                    return p && "object" == Ct(p) && o.call(p, "__await") ? e.resolve(p.__await).then((function(t) {
+                                    return p && "object" == Et(p) && o.call(p, "__await") ? e.resolve(p.__await).then((function(t) {
                                         r("next", t, s, i)
                                     }), (function(t) {
                                         r("throw", t, s, i)
@@ -2076,7 +2075,7 @@
             }, t
         }
 
-        function Lt(t, e, o, r, a, n, s) {
+        function Ot(t, e, o, r, a, n, s) {
             try {
                 var i = t[n](s),
                     l = i.value
@@ -2086,7 +2085,7 @@
             i.done ? e(l) : Promise.resolve(l).then(r, a)
         }
 
-        function At(t) {
+        function Lt(t) {
             return function() {
                 var e = this,
                     o = arguments;
@@ -2094,24 +2093,24 @@
                     var n = t.apply(e, o);
 
                     function s(t) {
-                        Lt(n, r, a, s, i, "next", t)
+                        Ot(n, r, a, s, i, "next", t)
                     }
 
                     function i(t) {
-                        Lt(n, r, a, s, i, "throw", t)
+                        Ot(n, r, a, s, i, "throw", t)
                     }
                     s(void 0)
                 }))
             }
         }
 
-        function zt(t, e) {
+        function At(t, e) {
             for (var o = 0; o < e.length; o++) {
                 var r = e[o];
                 r.enumerable = r.enumerable || !1, r.configurable = !0, "value" in r && (r.writable = !0), Object.defineProperty(t, r.key, r)
             }
         }
-        var Pt = function() {
+        var zt = function() {
                 function t() {
                     ! function(t, e) {
                         if (!(t instanceof e)) throw new TypeError("Cannot call a class as a function")
@@ -2120,8 +2119,8 @@
                 var e, o, r, a, n;
                 return e = t, (o = [{
                     key: "getData",
-                    value: (n = At(Ot().mark((function t() {
-                        return Ot().wrap((function(t) {
+                    value: (n = Lt(jt().mark((function t() {
+                        return jt().wrap((function(t) {
                             for (;;) switch (t.prev = t.next) {
                                 case 0:
                                     if (!this.loading) {
@@ -2141,16 +2140,16 @@
                     })
                 }, {
                     key: "getLoggedIn",
-                    value: (a = At(Ot().mark((function t() {
+                    value: (a = Lt(jt().mark((function t() {
                         var e = this;
-                        return Ot().wrap((function(t) {
+                        return jt().wrap((function(t) {
                             for (;;) switch (t.prev = t.next) {
                                 case 0:
                                     if (this.loading = !0, "undefined" == typeof window) {
                                         t.next = 3;
                                         break
                                     }
-                                    return t.abrupt("return", X.get("/api/users/verify-session").then((function(t) {
+                                    return t.abrupt("return", K.get("/api/users/verify-session").then((function(t) {
                                         e.data = t.data, e.loading = !1
                                     })).catch((function(t) {
                                         Object(p.b)(t), e.data = null, e.loading = !1
@@ -2165,24 +2164,24 @@
                     }))), function() {
                         return a.apply(this, arguments)
                     })
-                }]) && zt(e.prototype, o), r && zt(e, r), Object.defineProperty(e, "prototype", {
+                }]) && At(e.prototype, o), r && At(e, r), Object.defineProperty(e, "prototype", {
                     writable: !1
                 }), t
             }(),
-            St = Object(r.createContext)(null),
-            Nt = function(t) {
+            Pt = Object(r.createContext)(null),
+            St = function(t) {
                 return function(e) {
-                    return a.a.createElement(St.Consumer, null, (function(o) {
-                        return a.a.createElement(t, jt({}, e, {
+                    return a.a.createElement(Pt.Consumer, null, (function(o) {
+                        return a.a.createElement(t, Ct({}, e, {
                             user: o
                         }))
                     }))
                 }
             },
-            Bt = Pt,
-            Tt = o("LsG3"),
-            It = o.n(Tt),
-            Mt = {
+            Nt = zt,
+            Bt = o("LsG3"),
+            Tt = o.n(Bt),
+            It = {
                 Dog: "https://blooket.s3.us-east-2.amazonaws.com/blooks/pets/dog.svg",
                 Cat: "https://blooket.s3.us-east-2.amazonaws.com/blooks/pets/cat.svg",
                 Rabbit: "https://blooket.s3.us-east-2.amazonaws.com/blooks/pets/rabbit.svg",
@@ -2192,7 +2191,7 @@
                 Kitten: "https://blooket.s3.us-east-2.amazonaws.com/blooks/pets/kitten.svg",
                 Puppy: "https://blooket.s3.us-east-2.amazonaws.com/blooks/pets/puppy.svg"
             },
-            Rt = {
+            Mt = {
                 Bear: "https://blooket.s3.us-east-2.amazonaws.com/blooks/forestAnimals/bear.svg",
                 Moose: "https://blooket.s3.us-east-2.amazonaws.com/blooks/forestAnimals/moose.svg",
                 Fox: "https://blooket.s3.us-east-2.amazonaws.com/blooks/forestAnimals/fox.svg",
@@ -2201,7 +2200,7 @@
                 Owl: "https://blooket.s3.us-east-2.amazonaws.com/blooks/forestAnimals/owl.svg",
                 Hedgehog: "https://blooket.s3.us-east-2.amazonaws.com/blooks/forestAnimals/hedgehog.svg"
             },
-            Dt = {
+            Rt = {
                 Tiger: "https://blooket.s3.us-east-2.amazonaws.com/blooks/tropicalAnimals/tiger.svg",
                 Orangutan: "https://blooket.s3.us-east-2.amazonaws.com/blooks/tropicalAnimals/orangutan.svg",
                 Cockatoo: "https://blooket.s3.us-east-2.amazonaws.com/blooks/tropicalAnimals/cockatoo.svg",
@@ -2213,7 +2212,7 @@
                 Panther: "https://blooket.s3.us-east-2.amazonaws.com/blooks/tropicalAnimals/panther.svg",
                 Capuchin: "https://blooket.s3.us-east-2.amazonaws.com/blooks/tropicalAnimals/capuchin.svg"
             },
-            Ft = {
+            Dt = {
                 "Snowy Owl": "https://blooket.s3.us-east-2.amazonaws.com/blooks/arcticAnimals/snowyOwl.svg",
                 "Polar Bear": "https://blooket.s3.us-east-2.amazonaws.com/blooks/arcticAnimals/polarBear.svg",
                 "Arctic Fox": "https://blooket.s3.us-east-2.amazonaws.com/blooks/arcticAnimals/arcticFox.svg",
@@ -2223,7 +2222,7 @@
                 Seal: "https://blooket.s3.us-east-2.amazonaws.com/blooks/arcticAnimals/seal.svg",
                 Walrus: "https://blooket.s3.us-east-2.amazonaws.com/blooks/arcticAnimals/walrus.svg"
             },
-            Gt = {
+            Ft = {
                 Witch: "https://blooket.s3.us-east-2.amazonaws.com/blooks/medieval/witch.svg",
                 Wizard: "https://blooket.s3.us-east-2.amazonaws.com/blooks/medieval/wizard.svg",
                 Elf: "https://blooket.s3.us-east-2.amazonaws.com/blooks/medieval/elf.svg",
@@ -2235,7 +2234,7 @@
                 Unicorn: "https://blooket.s3.us-east-2.amazonaws.com/blooks/medieval/unicorn.svg",
                 King: "https://blooket.s3.us-east-2.amazonaws.com/blooks/medieval/king.svg"
             },
-            Ut = {
+            Gt = {
                 "Snow Globe": "https://blooket.s3.us-east-2.amazonaws.com/blooks/winterHoliday/snowGlobe.svg",
                 "Holiday Gift": "https://blooket.s3.us-east-2.amazonaws.com/blooks/winterHoliday/holidayGift.svg",
                 "Hot Chocolate": "https://blooket.s3.us-east-2.amazonaws.com/blooks/winterHoliday/hotChocolate.svg",
@@ -2245,7 +2244,7 @@
                 Snowman: "https://blooket.s3.us-east-2.amazonaws.com/blooks/winterHoliday/snowman.svg",
                 "Santa Claus": "https://blooket.s3.us-east-2.amazonaws.com/blooks/winterHoliday/santaClaus.svg"
             },
-            Yt = {
+            Ut = {
                 "Two of Spades": "https://blooket.s3.us-east-2.amazonaws.com/blooks/wonderland/twoOfSpades.svg",
                 "Eat Me": "https://blooket.s3.us-east-2.amazonaws.com/blooks/wonderland/eat.svg",
                 "Drink Me": "https://blooket.s3.us-east-2.amazonaws.com/blooks/wonderland/drink.svg",
@@ -2258,7 +2257,7 @@
                 "Mad Hatter": "https://blooket.s3.us-east-2.amazonaws.com/blooks/wonderland/madHatter.svg",
                 "King of Hearts": "https://blooket.s3.us-east-2.amazonaws.com/blooks/wonderland/kingOfHearts.svg"
             },
-            Ht = {
+            Yt = {
                 Toast: "https://blooket.s3.us-east-2.amazonaws.com/blooks/breakfast/toast.svg",
                 Cereal: "https://blooket.s3.us-east-2.amazonaws.com/blooks/breakfast/cereal.svg",
                 Yogurt: "https://blooket.s3.us-east-2.amazonaws.com/blooks/breakfast/yogurt.svg",
@@ -2269,11 +2268,11 @@
                 Pancakes: "https://blooket.s3.us-east-2.amazonaws.com/blooks/breakfast/pancakes.svg",
                 "French Toast": "https://blooket.s3.us-east-2.amazonaws.com/blooks/breakfast/frenchToast.svg"
             },
-            Wt = {
+            Ht = {
                 Pizza: "https://blooket.s3.us-east-2.amazonaws.com/blooks/foods/pizza.svg",
                 Sandwich: "https://blooket.s3.us-east-2.amazonaws.com/blooks/foods/sandwich.svg"
             },
-            Qt = {
+            Wt = {
                 Earth: "https://blooket.s3.us-east-2.amazonaws.com/blooks/space/earth.svg",
                 Meteor: "https://blooket.s3.us-east-2.amazonaws.com/blooks/space/meteor.svg",
                 Stars: "https://blooket.s3.us-east-2.amazonaws.com/blooks/space/stars.svg",
@@ -2283,7 +2282,7 @@
                 Spaceship: "https://blooket.s3.us-east-2.amazonaws.com/blooks/space/spaceship.svg",
                 Astronaut: "https://blooket.s3.us-east-2.amazonaws.com/blooks/space/astronaut.svg"
             },
-            Kt = {
+            Qt = {
                 "Lil Bot": "https://blooket.s3.us-east-2.amazonaws.com/blooks/bots/lilBot.svg",
                 "Lovely Bot": "https://blooket.s3.us-east-2.amazonaws.com/blooks/bots/lovelyBot.svg",
                 "Angry Bot": "https://blooket.s3.us-east-2.amazonaws.com/blooks/bots/angryBot.svg",
@@ -2293,7 +2292,7 @@
                 "Brainy Bot": "https://blooket.s3.us-east-2.amazonaws.com/blooks/bots/brainyBot.svg",
                 "Mega Bot": "https://blooket.s3.us-east-2.amazonaws.com/blooks/bots/megaBot.svg"
             },
-            Xt = {
+            Kt = {
                 "Old Boot": "https://blooket.s3.us-east-2.amazonaws.com/blooks/aquatic/oldBoot.svg",
                 Jellyfish: "https://blooket.s3.us-east-2.amazonaws.com/blooks/aquatic/jellyfish.svg",
                 Clownfish: "https://blooket.s3.us-east-2.amazonaws.com/blooks/aquatic/clownfish.svg",
@@ -2306,7 +2305,7 @@
                 "Baby Shark": "https://blooket.s3.us-east-2.amazonaws.com/blooks/aquatic/babyShark.svg",
                 Megalodon: "https://blooket.s3.us-east-2.amazonaws.com/blooks/aquatic/megalodon.svg"
             },
-            Zt = {
+            Xt = {
                 Panda: "https://blooket.s3.us-east-2.amazonaws.com/blooks/safari/panda.svg",
                 Sloth: "https://blooket.s3.us-east-2.amazonaws.com/blooks/safari/sloth.svg",
                 Tenrec: "https://blooket.s3.us-east-2.amazonaws.com/blooks/safari/tenrec.svg",
@@ -2319,7 +2318,7 @@
                 Lion: "https://blooket.s3.us-east-2.amazonaws.com/blooks/safari/lion.svg",
                 "Rainbow Panda": "https://blooket.s3.us-east-2.amazonaws.com/blooks/safari/rainbowPanda.svg"
             },
-            Jt = {
+            Zt = {
                 Amber: "https://blooket.s3.us-east-2.amazonaws.com/blooks/dinos/amber.svg",
                 "Dino Egg": "https://blooket.s3.us-east-2.amazonaws.com/blooks/dinos/dinoEgg.svg",
                 "Dino Fossil": "https://blooket.s3.us-east-2.amazonaws.com/blooks/dinos/dinoFossil.svg",
@@ -2329,7 +2328,7 @@
                 Triceratops: "https://blooket.s3.us-east-2.amazonaws.com/blooks/dinos/triceratops.svg",
                 "Tyrannosaurus Rex": "https://blooket.s3.us-east-2.amazonaws.com/blooks/dinos/tyrannosaurusRex.svg"
             },
-            qt = {
+            Jt = {
                 "Light Blue": "https://blooket.s3.us-east-2.amazonaws.com/blooks/colors/lightBlueBlook.svg",
                 Black: "https://blooket.s3.us-east-2.amazonaws.com/blooks/colors/blackBlook.svg",
                 Red: "https://blooket.s3.us-east-2.amazonaws.com/blooks/colors/redBlook.svg",
@@ -2352,7 +2351,7 @@
                 Yellow: "https://blooket.s3.us-east-2.amazonaws.com/blooks/colors/yellowBlook.svg",
                 Blue: "https://blooket.s3.us-east-2.amazonaws.com/blooks/colors/blueBlook.svg"
             },
-            Vt = {
+            qt = {
                 Pumpkin: "https://blooket.s3.us-east-2.amazonaws.com/blooks/halloween/pumpkin.svg",
                 "Swamp Monster": "https://blooket.s3.us-east-2.amazonaws.com/blooks/halloween/swampMonster.svg",
                 Frankenstein: "https://blooket.s3.us-east-2.amazonaws.com/blooks/halloween/frankenstein.svg",
@@ -2362,7 +2361,7 @@
                 Werewolf: "https://blooket.s3.us-east-2.amazonaws.com/blooks/halloween/werewolf.svg",
                 Ghost: "https://blooket.s3.us-east-2.amazonaws.com/blooks/halloween/ghost.svg"
             },
-            $t = {
+            Vt = {
                 "Red Astronaut": "https://blooket.s3.us-east-2.amazonaws.com/blooks/bonus/space/redAstronaut.svg",
                 "Blue Astronaut": "https://blooket.s3.us-east-2.amazonaws.com/blooks/bonus/space/blueAstronaut.svg",
                 "Green Astronaut": "https://blooket.s3.us-east-2.amazonaws.com/blooks/bonus/space/greenAstronaut.svg",
@@ -2400,7 +2399,7 @@
                 "Rainbow Astronaut": "https://blooket.s3.us-east-2.amazonaws.com/blooks/bonus/space/purpleAstronaut.svg"
             };
 
-        function te(t, e) {
+        function $t(t, e) {
             var o = Object.keys(t);
             if (Object.getOwnPropertySymbols) {
                 var r = Object.getOwnPropertySymbols(t);
@@ -2411,19 +2410,19 @@
             return o
         }
 
-        function ee(t) {
+        function te(t) {
             for (var e = 1; e < arguments.length; e++) {
                 var o = null != arguments[e] ? arguments[e] : {};
-                e % 2 ? te(Object(o), !0).forEach((function(e) {
-                    oe(t, e, o[e])
-                })) : Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(o)) : te(Object(o)).forEach((function(e) {
+                e % 2 ? $t(Object(o), !0).forEach((function(e) {
+                    ee(t, e, o[e])
+                })) : Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(o)) : $t(Object(o)).forEach((function(e) {
                     Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(o, e))
                 }))
             }
             return t
         }
 
-        function oe(t, e, o) {
+        function ee(t, e, o) {
             return e in t ? Object.defineProperty(t, e, {
                 value: o,
                 enumerable: !0,
@@ -2431,7 +2430,7 @@
                 writable: !0
             }) : t[e] = o, t
         }
-        var re = ee(ee(ee(ee(ee(ee(ee(ee(ee(ee(ee(ee(ee(ee(ee(ee(ee(ee({}, {
+        var oe = te(te(te(te(te(te(te(te(te(te(te(te(te(te(te(te(te(te({}, {
                 Chick: "https://blooket.s3.us-east-2.amazonaws.com/blooks/farmAnimals/chick.svg",
                 Chicken: "https://blooket.s3.us-east-2.amazonaws.com/blooks/farmAnimals/chicken.svg",
                 Cow: "https://blooket.s3.us-east-2.amazonaws.com/blooks/farmAnimals/cow.svg",
@@ -2440,11 +2439,11 @@
                 Pig: "https://blooket.s3.us-east-2.amazonaws.com/blooks/farmAnimals/pig.svg",
                 Sheep: "https://blooket.s3.us-east-2.amazonaws.com/blooks/farmAnimals/sheep.svg",
                 Duck: "https://blooket.s3.us-east-2.amazonaws.com/blooks/farmAnimals/duck.svg"
-            }), Mt), Rt), Dt), Ft), Gt), Yt), Ht), Wt), Qt), Kt), Xt), Zt), Jt), Ut), qt), Vt), $t),
-            ae = o("AwEm"),
-            ne = o("rPUr"),
-            se = o.n(ne),
-            ie = {
+            }), It), Mt), Rt), Dt), Ft), Ut), Yt), Ht), Wt), Qt), Kt), Xt), Zt), Gt), Jt), qt), Vt),
+            re = o("AwEm"),
+            ae = o("rPUr"),
+            ne = o.n(ae),
+            se = {
                 base: [{
                     url: "https://media.blooket.com/image/upload/v1634087683/BlookParts/base0.svg",
                     tones: ["#ffcc05", "#fabc2e", "#cd8e2a"]
@@ -2771,7 +2770,7 @@
                 }]
             };
 
-        function le(t, e) {
+        function ie(t, e) {
             return function(t) {
                 if (Array.isArray(t)) return t
             }(t) || function(t, e) {
@@ -2794,22 +2793,22 @@
                 return n
             }(t, e) || function(t, e) {
                 if (!t) return;
-                if ("string" == typeof t) return ce(t, e);
+                if ("string" == typeof t) return le(t, e);
                 var o = Object.prototype.toString.call(t).slice(8, -1);
                 "Object" === o && t.constructor && (o = t.constructor.name);
                 if ("Map" === o || "Set" === o) return Array.from(t);
-                if ("Arguments" === o || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(o)) return ce(t, e)
+                if ("Arguments" === o || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(o)) return le(t, e)
             }(t, e) || function() {
                 throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.")
             }()
         }
 
-        function ce(t, e) {
+        function le(t, e) {
             (null == e || e > t.length) && (e = t.length);
             for (var o = 0, r = new Array(e); o < e; o++) r[o] = t[o];
             return r
         }
-        var ue = [
+        var ce = [
                 ["#3f1c12", "#592a1e"],
                 ["#fff0a3", "#fff5cc"],
                 ["#ce1f3d", "#e24466"],
@@ -2820,7 +2819,7 @@
                 ["#8c68a2", "#a185b5"],
                 ["#b16a28", "#cd8029"]
             ],
-            pe = function(t) {
+            ue = function(t) {
                 var e = t.code,
                     o = t.className,
                     r = t.blookClassName,
@@ -2830,163 +2829,163 @@
                 if (! function(t) {
                         var e = t.split("#");
                         if (11 !== e.length) return !1;
-                        if (!ie.base[e[0]]) return !1;
-                        if (!ie.clothing[e[1]]) return !1;
-                        if (!ie.eyes[e[2]]) return !1;
-                        if (!ie.glasses[e[3]]) return !1;
+                        if (!se.base[e[0]]) return !1;
+                        if (!se.clothing[e[1]]) return !1;
+                        if (!se.eyes[e[2]]) return !1;
+                        if (!se.glasses[e[3]]) return !1;
                         var o = e[4].split("$");
                         if (2 !== o.length) return !1;
-                        if (!ie.hair[o[0]]) return !1;
-                        if (!ue[o[1]]) return !1;
-                        if (!ie.hat[e[5]]) return !1;
-                        if (!ie.item[e[6]]) return !1;
-                        if (!ie.mouth[e[7]]) return !1;
-                        if (!ie.nose[e[8]]) return !1;
-                        if (!ie.cheeks[e[9]]) return !1;
+                        if (!se.hair[o[0]]) return !1;
+                        if (!ce[o[1]]) return !1;
+                        if (!se.hat[e[5]]) return !1;
+                        if (!se.item[e[6]]) return !1;
+                        if (!se.mouth[e[7]]) return !1;
+                        if (!se.nose[e[8]]) return !1;
+                        if (!se.cheeks[e[9]]) return !1;
                         var r = e[10].split("$");
-                        return 2 === r.length && (!!ie.eyebrows[r[0]] && !!ue[r[1]])
+                        return 2 === r.length && (!!se.eyebrows[r[0]] && !!ce[r[1]])
                     }(e)) return a.a.createElement("div", {
-                    className: G()(se.a.blookContainer, o),
+                    className: G()(ne.a.blookContainer, o),
                     style: n,
                     "data-tip": s || null
                 }, a.a.createElement("img", {
                     src: "https://blooket.s3.us-east-2.amazonaws.com/blooks/colors/lightBlueBlook.svg",
                     alt: "Blook",
                     draggable: !1,
-                    className: G()(se.a.blook, r)
+                    className: G()(ne.a.blook, r)
                 }));
-                var l = ie.base[i[0]],
+                var l = se.base[i[0]],
                     c = l.tones,
-                    u = ie.eyes[i[2]],
+                    u = se.eyes[i[2]],
                     p = i[4].split("$"),
-                    f = ie.hair[p[0]],
-                    h = ue[p[1]][0],
-                    m = ue[p[1]][1],
-                    d = ie.nose[i[8]],
-                    _ = ie.cheeks[i[9]],
+                    f = se.hair[p[0]],
+                    h = ce[p[1]][0],
+                    m = ce[p[1]][1],
+                    d = se.nose[i[8]],
+                    _ = se.cheeks[i[9]],
                     g = i[10].split("$"),
-                    y = ie.eyebrows[g[0]],
-                    b = ue[g[1]][0];
+                    y = se.eyebrows[g[0]],
+                    b = ce[g[1]][0];
                 return a.a.createElement("div", {
-                    className: G()(se.a.blookContainer, o),
+                    className: G()(ne.a.blookContainer, o),
                     style: n,
                     "data-tip": s || null
                 }, a.a.createElement("img", {
                     src: l.url,
                     alt: "Custom Blook",
                     draggable: !1,
-                    className: G()(se.a.blook, r)
-                }), f.url ? a.a.createElement(ae.a, {
+                    className: G()(ne.a.blook, r)
+                }), f.url ? a.a.createElement(re.a, {
                     src: f.url,
                     title: "Blook Hair",
-                    className: se.a.part,
+                    className: ne.a.part,
                     preProcessor: function(t) {
                         var e = t;
                         return f.changes && Object.entries(f.changes).forEach((function(t) {
-                            var o = le(t, 2),
+                            var o = ie(t, 2),
                                 r = o[0],
                                 a = o[1];
                             e = e.replaceAll(r, c[a])
                         })), e = e.replaceAll("#3f1c12", h), f.hasHighlight && (e = e.replaceAll("#592a1e", m)), e
                     }
                 }) : null, a.a.createElement("img", {
-                    src: ie.mouth[i[7]].url,
+                    src: se.mouth[i[7]].url,
                     alt: "Blook Mouth",
                     draggable: !1,
-                    className: se.a.part
-                }), d.url ? a.a.createElement(ae.a, {
+                    className: ne.a.part
+                }), d.url ? a.a.createElement(re.a, {
                     src: d.url,
                     title: "Blook Nose",
-                    className: se.a.part,
+                    className: ne.a.part,
                     preProcessor: function(t) {
                         var e = t;
                         return d.changes && Object.entries(d.changes).forEach((function(t) {
-                            var o = le(t, 2),
+                            var o = ie(t, 2),
                                 r = o[0],
                                 a = o[1];
                             e = e.replaceAll(r, c[a])
                         })), e
                     }
-                }) : null, _.url ? a.a.createElement(ae.a, {
+                }) : null, _.url ? a.a.createElement(re.a, {
                     src: _.url,
                     title: "Blook Cheeks",
-                    className: se.a.part,
+                    className: ne.a.part,
                     preProcessor: function(t) {
                         var e = t;
                         return _.changes && Object.entries(_.changes).forEach((function(t) {
-                            var o = le(t, 2),
+                            var o = ie(t, 2),
                                 r = o[0],
                                 a = o[1];
                             e = e.replaceAll(r, c[a])
                         })), e
                     }
-                }) : null, a.a.createElement(ae.a, {
+                }) : null, a.a.createElement(re.a, {
                     src: u.url,
                     title: "Blook Eyes",
-                    className: se.a.part,
+                    className: ne.a.part,
                     preProcessor: function(t) {
                         var e = t;
                         return u.changes && Object.entries(u.changes).forEach((function(t) {
-                            var o = le(t, 2),
+                            var o = ie(t, 2),
                                 r = o[0],
                                 a = o[1];
                             e = e.replaceAll(r, c[a])
                         })), e
                     }
-                }), y.url ? a.a.createElement(ae.a, {
+                }), y.url ? a.a.createElement(re.a, {
                     src: y.url,
                     title: "Blook Eyebrows",
-                    className: se.a.part,
+                    className: ne.a.part,
                     preProcessor: function(t) {
                         var e = t;
                         return e = e.replaceAll("#3f1c12", b)
                     }
-                }) : null, ie.clothing[i[1]].url ? a.a.createElement("img", {
-                    src: ie.clothing[i[1]].url,
+                }) : null, se.clothing[i[1]].url ? a.a.createElement("img", {
+                    src: se.clothing[i[1]].url,
                     alt: "Blook Clothing",
                     draggable: !1,
-                    className: se.a.part
-                }) : null, ie.glasses[i[3]].url ? a.a.createElement("img", {
-                    src: ie.glasses[i[3]].url,
+                    className: ne.a.part
+                }) : null, se.glasses[i[3]].url ? a.a.createElement("img", {
+                    src: se.glasses[i[3]].url,
                     alt: "Blook Glasses",
                     draggable: !1,
-                    className: se.a.part
-                }) : null, ie.hat[i[5]].url ? a.a.createElement("img", {
-                    src: ie.hat[i[5]].url,
+                    className: ne.a.part
+                }) : null, se.hat[i[5]].url ? a.a.createElement("img", {
+                    src: se.hat[i[5]].url,
                     alt: "Blook Hat",
                     draggable: !1,
-                    className: se.a.part
-                }) : null, ie.item[i[6]].url ? a.a.createElement("img", {
-                    src: ie.item[i[6]].url,
+                    className: ne.a.part
+                }) : null, se.item[i[6]].url ? a.a.createElement("img", {
+                    src: se.item[i[6]].url,
                     alt: "Blook Item",
                     draggable: !1,
-                    className: se.a.part
+                    className: ne.a.part
                 }) : null)
             };
-        pe.propTypes = {
+        ue.propTypes = {
             code: I.a.string,
             className: I.a.string,
             blookClassName: I.a.string,
             style: I.a.object,
             tip: I.a.string
         };
-        var fe = pe,
-            he = o("mXOY"),
-            me = o.n(he);
-        var de = function(t) {
+        var pe = ue,
+            fe = o("mXOY"),
+            he = o.n(fe);
+        var me = function(t) {
             var e, o, r, n = t.name,
                 s = t.className,
                 i = t.blookClassName,
                 l = t.style,
                 c = t.tip;
-            return n && ("string" == typeof n || n instanceof String) && n.includes("#") ? a.a.createElement(fe, {
+            return n && ("string" == typeof n || n instanceof String) && n.includes("#") ? a.a.createElement(pe, {
                 code: n,
                 className: s,
                 blookClassName: i,
                 style: l,
                 tip: c
             }) : a.a.createElement("div", {
-                className: G()(me.a.blookContainer, s, (e = {}, o = me.a.spookyGhost, r = "Spooky Ghost" === n, o in e ? Object.defineProperty(e, o, {
+                className: G()(he.a.blookContainer, s, (e = {}, o = he.a.spookyGhost, r = "Spooky Ghost" === n, o in e ? Object.defineProperty(e, o, {
                     value: r,
                     enumerable: !0,
                     configurable: !0,
@@ -2995,97 +2994,97 @@
                 style: l,
                 "data-tip": c || null
             }, "Rainbow Astronaut" === n ? a.a.createElement(a.a.Fragment, null, a.a.createElement("img", {
-                src: re["Pink Astronaut"],
+                src: oe["Pink Astronaut"],
                 alt: "Pink Astronaut Blook",
                 draggable: !1,
-                className: G()(me.a.blook, i)
+                className: G()(he.a.blook, i)
             }), a.a.createElement("img", {
-                src: re["Purple Astronaut"],
+                src: oe["Purple Astronaut"],
                 alt: "Purple Astronaut Blook",
                 draggable: !1,
-                className: G()(me.a.blook, me.a.astro6, i)
+                className: G()(he.a.blook, he.a.astro6, i)
             }), a.a.createElement("img", {
-                src: re["Blue Astronaut"],
+                src: oe["Blue Astronaut"],
                 alt: "Blue Astronaut Blook",
                 draggable: !1,
-                className: G()(me.a.blook, me.a.astro5, i)
+                className: G()(he.a.blook, he.a.astro5, i)
             }), a.a.createElement("img", {
-                src: re["Green Astronaut"],
+                src: oe["Green Astronaut"],
                 alt: "Green Astronaut Blook",
                 draggable: !1,
-                className: G()(me.a.blook, me.a.astro4, i)
+                className: G()(he.a.blook, he.a.astro4, i)
             }), a.a.createElement("img", {
-                src: re["Yellow Astronaut"],
+                src: oe["Yellow Astronaut"],
                 alt: "Yellow Astronaut Blook",
                 draggable: !1,
-                className: G()(me.a.blook, me.a.astro3, i)
+                className: G()(he.a.blook, he.a.astro3, i)
             }), a.a.createElement("img", {
-                src: re["Orange Astronaut"],
+                src: oe["Orange Astronaut"],
                 alt: "Orange Astronaut Blook",
                 draggable: !1,
-                className: G()(me.a.blook, me.a.astro2, i)
+                className: G()(he.a.blook, he.a.astro2, i)
             }), a.a.createElement("img", {
-                src: re["Red Astronaut"],
+                src: oe["Red Astronaut"],
                 alt: "Red Astronaut Blook",
                 draggable: !1,
-                className: G()(me.a.blook, me.a.astro1, i)
+                className: G()(he.a.blook, he.a.astro1, i)
             })) : a.a.createElement("img", {
-                src: re[n],
+                src: oe[n],
                 alt: "".concat(n, " Blook"),
                 draggable: !1,
-                className: G()(me.a.blook, i)
+                className: G()(he.a.blook, i)
             }), null, "Tim the Alien" === n ? a.a.createElement("img", {
-                src: re.Cow,
+                src: oe.Cow,
                 alt: "Cow Blook",
                 draggable: !1,
-                className: me.a.timsCow
+                className: he.a.timsCow
             }) : "Phantom King" === n ? a.a.createElement("img", {
                 src: "https://media.blooket.com/image/upload/v1593095358/Media/defense/phantomSword.svg",
                 alt: "Phantom Sword",
                 draggable: !1,
-                className: me.a.phantomSword
+                className: he.a.phantomSword
             }) : null)
         };
-        de.propTypes = {
+        me.propTypes = {
             name: I.a.string,
             className: I.a.string,
             blookClassName: I.a.string,
             style: I.a.object,
             tip: I.a.string
         };
-        var _e = de,
-            ge = o("GEXq"),
-            ye = o.n(ge),
-            be = function(t) {
+        var de = me,
+            _e = o("GEXq"),
+            ge = o.n(_e),
+            ye = function(t) {
                 var e = t.blook;
                 return a.a.createElement("div", {
-                    className: ye.a.container
+                    className: ge.a.container
                 }, a.a.createElement("div", {
-                    className: ye.a.loader
-                }, a.a.createElement(_e, {
+                    className: ge.a.loader
+                }, a.a.createElement(de, {
                     name: e && !e.includes("#") ? e : "Light Blue",
-                    className: ye.a.loaderBox
+                    className: ge.a.loaderBox
                 }), a.a.createElement("div", {
-                    className: ye.a.shadow
+                    className: ge.a.shadow
                 })))
             };
-        be.propTypes = {
+        ye.propTypes = {
             blook: I.a.string
         };
-        var ve = be;
-        var we = "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+CjxzdmcKICAgeG1sbnM6ZGM9Imh0dHA6Ly9wdXJsLm9yZy9kYy9lbGVtZW50cy8xLjEvIgogICB4bWxuczpjYz0iaHR0cDovL2NyZWF0aXZlY29tbW9ucy5vcmcvbnMjIgogICB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiCiAgIHhtbG5zOnN2Zz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciCiAgIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIKICAgaGVpZ2h0PSIyNSIKICAgd2lkdGg9IjI1IgogICBpZD0ic3ZnODM5IgogICB2ZXJzaW9uPSIxLjEiCiAgIHZpZXdCb3g9IjAgMCAyNSAyNS4wMDAwMDEiPgogIDxtZXRhZGF0YQogICAgIGlkPSJtZXRhZGF0YTg0NSI+CiAgICA8cmRmOlJERj4KICAgICAgPGNjOldvcmsKICAgICAgICAgcmRmOmFib3V0PSIiPgogICAgICAgIDxkYzpmb3JtYXQ+aW1hZ2Uvc3ZnK3htbDwvZGM6Zm9ybWF0PgogICAgICAgIDxkYzp0eXBlCiAgICAgICAgICAgcmRmOnJlc291cmNlPSJodHRwOi8vcHVybC5vcmcvZGMvZGNtaXR5cGUvU3RpbGxJbWFnZSIgLz4KICAgICAgICA8ZGM6dGl0bGU+PC9kYzp0aXRsZT4KICAgICAgPC9jYzpXb3JrPgogICAgPC9yZGY6UkRGPgogIDwvbWV0YWRhdGE+CiAgPGRlZnMKICAgICBpZD0iZGVmczg0MyIgLz4KICA8ZwogICAgIHRyYW5zZm9ybT0ibWF0cml4KDEuMjI1MjcxMSwwLDAsMS4yMjUyNzExLDAuMzA4NTUyNTYsLTY0MS45MTUwNikiCiAgICAgaWQ9Imc4NTEiPgogICAgPHBhdGgKICAgICAgIGQ9Im0gMTkuOTUsNTM0LjMzMjggYyAwLC0wLjY5MzQ3IC0wLjA1NjIzLC0xLjM5MDY5IC0wLjE3NjE3OCwtMi4wNzI5MSBoIC05LjYyMjM0MSB2IDMuOTI4NDEgaCA1LjUxMDI2MSBjIC0wLjIyODY1NywxLjI2Njk4IC0wLjk2MzM1OSwyLjM4Nzc4IC0yLjAzOTE3MSwzLjA5OTk5IHYgMi41NDg5NiBoIDMuMjg3NDE0IEMgMTguODQwNDUxLDU0MC4wNjA0NyAxOS45NSw1MzcuNDM2NTQgMTkuOTUsNTM0LjMzMjggWiIKICAgICAgIGlkPSJwYXRoODMxIgogICAgICAgc3R5bGU9ImZpbGw6IzQyODVmNDtzdHJva2Utd2lkdGg6MC4wMzc0ODQ3NyIgLz4KICAgIDxwYXRoCiAgICAgICBkPSJtIDEwLjE1MTQ4MSw1NDQuMyBjIDIuNzUxMzgyLDAgNS4wNzE2ODksLTAuOTAzMzggNi43NjIyNTIsLTIuNDYyNzUgbCAtMy4yODc0MTQsLTIuNTQ4OTYgYyAtMC45MTQ2MjgsMC42MjIyNCAtMi4wOTUzOTksMC45NzQ2IC0zLjQ3MTA5LDAuOTc0NiAtMi42NjE0MTg3LDAgLTQuOTE4MDAxOSwtMS43OTU1MiAtNS43Mjc2NzMsLTQuMjA5NTQgSCAxLjAzNTE4NDEgdiAyLjYyNzY4IEMgMi43NjY5ODA2LDU0Mi4xMjU4OCA2LjI5NDI5NzYsNTQ0LjMgMTAuMTUxNDgxLDU0NC4zIFoiCiAgICAgICBpZD0icGF0aDgzMyIKICAgICAgIHN0eWxlPSJmaWxsOiMzNGE4NTM7c3Ryb2tlLXdpZHRoOjAuMDM3NDg0NzciIC8+CiAgICA8cGF0aAogICAgICAgZD0ibSA0LjQyMzgwNzUsNTM2LjA1MzM1IGMgLTAuNDI3MzI2NCwtMS4yNjY5OSAtMC40MjczMjY0LC0yLjYzODkzIDAsLTMuOTA1OTEgdiAtMi42Mjc2OSBIIDEuMDM1MTg0MSBjIC0xLjQ0NjkxMjE1LDIuODgyNTggLTEuNDQ2OTEyMTUsNi4yNzg3IDAsOS4xNjEyOCB6IgogICAgICAgaWQ9InBhdGg4MzUiCiAgICAgICBzdHlsZT0iZmlsbDojZmJiYzA0O3N0cm9rZS13aWR0aDowLjAzNzQ4NDc3IiAvPgogICAgPHBhdGgKICAgICAgIGQ9Im0gMTAuMTUxNDgxLDUyNy45MzQxNSBjIDEuNDU0NDA5LC0wLjAyMjUgMi44NjAwODgsMC41MjQ3OSAzLjkxMzQxLDEuNTI5MzggbCAyLjkxMjU2NywtMi45MTI1NyBjIC0xLjg0NDI1MSwtMS43MzE4IC00LjI5MjAwNywtMi42ODM5MSAtNi44MjU5NzcsLTIuNjUzOTIgLTMuODU3MTgzNCwwIC03LjM4NDUwMDQsMi4xNzQxMiAtOS4xMTYyOTY5LDUuNjIyNzEgbCAzLjM4ODYyMzQsMi42Mjc2OSBjIDAuODA1OTIyNiwtMi40MTc3NyAzLjA2NjI1NDMsLTQuMjEzMjkgNS43Mjc2NzM1LC00LjIxMzI5IHoiCiAgICAgICBpZD0icGF0aDgzNyIKICAgICAgIHN0eWxlPSJmaWxsOiNlYTQzMzU7c3Ryb2tlLXdpZHRoOjAuMDM3NDg0NzciIC8+CiAgPC9nPgo8L3N2Zz4K";
+        var be = ye;
+        var ve = "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+CjxzdmcKICAgeG1sbnM6ZGM9Imh0dHA6Ly9wdXJsLm9yZy9kYy9lbGVtZW50cy8xLjEvIgogICB4bWxuczpjYz0iaHR0cDovL2NyZWF0aXZlY29tbW9ucy5vcmcvbnMjIgogICB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiCiAgIHhtbG5zOnN2Zz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciCiAgIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIKICAgaGVpZ2h0PSIyNSIKICAgd2lkdGg9IjI1IgogICBpZD0ic3ZnODM5IgogICB2ZXJzaW9uPSIxLjEiCiAgIHZpZXdCb3g9IjAgMCAyNSAyNS4wMDAwMDEiPgogIDxtZXRhZGF0YQogICAgIGlkPSJtZXRhZGF0YTg0NSI+CiAgICA8cmRmOlJERj4KICAgICAgPGNjOldvcmsKICAgICAgICAgcmRmOmFib3V0PSIiPgogICAgICAgIDxkYzpmb3JtYXQ+aW1hZ2Uvc3ZnK3htbDwvZGM6Zm9ybWF0PgogICAgICAgIDxkYzp0eXBlCiAgICAgICAgICAgcmRmOnJlc291cmNlPSJodHRwOi8vcHVybC5vcmcvZGMvZGNtaXR5cGUvU3RpbGxJbWFnZSIgLz4KICAgICAgICA8ZGM6dGl0bGU+PC9kYzp0aXRsZT4KICAgICAgPC9jYzpXb3JrPgogICAgPC9yZGY6UkRGPgogIDwvbWV0YWRhdGE+CiAgPGRlZnMKICAgICBpZD0iZGVmczg0MyIgLz4KICA8ZwogICAgIHRyYW5zZm9ybT0ibWF0cml4KDEuMjI1MjcxMSwwLDAsMS4yMjUyNzExLDAuMzA4NTUyNTYsLTY0MS45MTUwNikiCiAgICAgaWQ9Imc4NTEiPgogICAgPHBhdGgKICAgICAgIGQ9Im0gMTkuOTUsNTM0LjMzMjggYyAwLC0wLjY5MzQ3IC0wLjA1NjIzLC0xLjM5MDY5IC0wLjE3NjE3OCwtMi4wNzI5MSBoIC05LjYyMjM0MSB2IDMuOTI4NDEgaCA1LjUxMDI2MSBjIC0wLjIyODY1NywxLjI2Njk4IC0wLjk2MzM1OSwyLjM4Nzc4IC0yLjAzOTE3MSwzLjA5OTk5IHYgMi41NDg5NiBoIDMuMjg3NDE0IEMgMTguODQwNDUxLDU0MC4wNjA0NyAxOS45NSw1MzcuNDM2NTQgMTkuOTUsNTM0LjMzMjggWiIKICAgICAgIGlkPSJwYXRoODMxIgogICAgICAgc3R5bGU9ImZpbGw6IzQyODVmNDtzdHJva2Utd2lkdGg6MC4wMzc0ODQ3NyIgLz4KICAgIDxwYXRoCiAgICAgICBkPSJtIDEwLjE1MTQ4MSw1NDQuMyBjIDIuNzUxMzgyLDAgNS4wNzE2ODksLTAuOTAzMzggNi43NjIyNTIsLTIuNDYyNzUgbCAtMy4yODc0MTQsLTIuNTQ4OTYgYyAtMC45MTQ2MjgsMC42MjIyNCAtMi4wOTUzOTksMC45NzQ2IC0zLjQ3MTA5LDAuOTc0NiAtMi42NjE0MTg3LDAgLTQuOTE4MDAxOSwtMS43OTU1MiAtNS43Mjc2NzMsLTQuMjA5NTQgSCAxLjAzNTE4NDEgdiAyLjYyNzY4IEMgMi43NjY5ODA2LDU0Mi4xMjU4OCA2LjI5NDI5NzYsNTQ0LjMgMTAuMTUxNDgxLDU0NC4zIFoiCiAgICAgICBpZD0icGF0aDgzMyIKICAgICAgIHN0eWxlPSJmaWxsOiMzNGE4NTM7c3Ryb2tlLXdpZHRoOjAuMDM3NDg0NzciIC8+CiAgICA8cGF0aAogICAgICAgZD0ibSA0LjQyMzgwNzUsNTM2LjA1MzM1IGMgLTAuNDI3MzI2NCwtMS4yNjY5OSAtMC40MjczMjY0LC0yLjYzODkzIDAsLTMuOTA1OTEgdiAtMi42Mjc2OSBIIDEuMDM1MTg0MSBjIC0xLjQ0NjkxMjE1LDIuODgyNTggLTEuNDQ2OTEyMTUsNi4yNzg3IDAsOS4xNjEyOCB6IgogICAgICAgaWQ9InBhdGg4MzUiCiAgICAgICBzdHlsZT0iZmlsbDojZmJiYzA0O3N0cm9rZS13aWR0aDowLjAzNzQ4NDc3IiAvPgogICAgPHBhdGgKICAgICAgIGQ9Im0gMTAuMTUxNDgxLDUyNy45MzQxNSBjIDEuNDU0NDA5LC0wLjAyMjUgMi44NjAwODgsMC41MjQ3OSAzLjkxMzQxLDEuNTI5MzggbCAyLjkxMjU2NywtMi45MTI1NyBjIC0xLjg0NDI1MSwtMS43MzE4IC00LjI5MjAwNywtMi42ODM5MSAtNi44MjU5NzcsLTIuNjUzOTIgLTMuODU3MTgzNCwwIC03LjM4NDUwMDQsMi4xNzQxMiAtOS4xMTYyOTY5LDUuNjIyNzEgbCAzLjM4ODYyMzQsMi42Mjc2OSBjIDAuODA1OTIyNiwtMi40MTc3NyAzLjA2NjI1NDMsLTQuMjEzMjkgNS43Mjc2NzM1LC00LjIxMzI5IHoiCiAgICAgICBpZD0icGF0aDgzNyIKICAgICAgIHN0eWxlPSJmaWxsOiNlYTQzMzU7c3Ryb2tlLXdpZHRoOjAuMDM3NDg0NzciIC8+CiAgPC9nPgo8L3N2Zz4K";
 
-        function ke(t) {
-            return (ke = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function(t) {
+        function we(t) {
+            return (we = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function(t) {
                 return typeof t
             } : function(t) {
                 return t && "function" == typeof Symbol && t.constructor === Symbol && t !== Symbol.prototype ? "symbol" : typeof t
             })(t)
         }
 
-        function xe() {
+        function ke() {
             /*! regenerator-runtime -- Copyright (c) 2014-present, Facebook, Inc. -- license (MIT): https://github.com/facebook/regenerator/blob/main/LICENSE */
-            xe = function() {
+            ke = function() {
                 return t
             };
             var t = {},
@@ -3201,7 +3200,7 @@
                                 if ("throw" !== l.type) {
                                     var u = l.arg,
                                         p = u.value;
-                                    return p && "object" == ke(p) && o.call(p, "__await") ? e.resolve(p.__await).then((function(t) {
+                                    return p && "object" == we(p) && o.call(p, "__await") ? e.resolve(p.__await).then((function(t) {
                                         r("next", t, s, i)
                                     }), (function(t) {
                                         r("throw", t, s, i)
@@ -3394,7 +3393,7 @@
             }, t
         }
 
-        function Ee(t, e, o, r, a, n, s) {
+        function xe(t, e, o, r, a, n, s) {
             try {
                 var i = t[n](s),
                     l = i.value
@@ -3403,10 +3402,10 @@
             }
             i.done ? e(l) : Promise.resolve(l).then(r, a)
         }
-        var Ce = function() {
-            var t, e = (t = xe().mark((function t(e, o) {
+        var Ee = function() {
+            var t, e = (t = ke().mark((function t(e, o) {
                 var r;
-                return xe().wrap((function(t) {
+                return ke().wrap((function(t) {
                     for (;;) switch (t.prev = t.next) {
                         case 0:
                             return r = new Promise((function(t, r) {
@@ -3435,11 +3434,11 @@
                     var n = t.apply(e, o);
 
                     function s(t) {
-                        Ee(n, r, a, s, i, "next", t)
+                        xe(n, r, a, s, i, "next", t)
                     }
 
                     function i(t) {
-                        Ee(n, r, a, s, i, "throw", t)
+                        xe(n, r, a, s, i, "throw", t)
                     }
                     s(void 0)
                 }))
@@ -3449,17 +3448,17 @@
             }
         }();
 
-        function je(t) {
-            return (je = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function(t) {
+        function Ce(t) {
+            return (Ce = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function(t) {
                 return typeof t
             } : function(t) {
                 return t && "function" == typeof Symbol && t.constructor === Symbol && t !== Symbol.prototype ? "symbol" : typeof t
             })(t)
         }
 
-        function Oe() {
+        function je() {
             /*! regenerator-runtime -- Copyright (c) 2014-present, Facebook, Inc. -- license (MIT): https://github.com/facebook/regenerator/blob/main/LICENSE */
-            Oe = function() {
+            je = function() {
                 return t
             };
             var t = {},
@@ -3575,7 +3574,7 @@
                                 if ("throw" !== l.type) {
                                     var u = l.arg,
                                         p = u.value;
-                                    return p && "object" == je(p) && o.call(p, "__await") ? e.resolve(p.__await).then((function(t) {
+                                    return p && "object" == Ce(p) && o.call(p, "__await") ? e.resolve(p.__await).then((function(t) {
                                         r("next", t, s, i)
                                     }), (function(t) {
                                         r("throw", t, s, i)
@@ -3768,7 +3767,7 @@
             }, t
         }
 
-        function Le(t, e) {
+        function Oe(t, e) {
             var o = Object.keys(t);
             if (Object.getOwnPropertySymbols) {
                 var r = Object.getOwnPropertySymbols(t);
@@ -3779,19 +3778,19 @@
             return o
         }
 
-        function Ae(t) {
+        function Le(t) {
             for (var e = 1; e < arguments.length; e++) {
                 var o = null != arguments[e] ? arguments[e] : {};
-                e % 2 ? Le(Object(o), !0).forEach((function(e) {
-                    ze(t, e, o[e])
-                })) : Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(o)) : Le(Object(o)).forEach((function(e) {
+                e % 2 ? Oe(Object(o), !0).forEach((function(e) {
+                    Ae(t, e, o[e])
+                })) : Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(o)) : Oe(Object(o)).forEach((function(e) {
                     Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(o, e))
                 }))
             }
             return t
         }
 
-        function ze(t, e, o) {
+        function Ae(t, e, o) {
             return e in t ? Object.defineProperty(t, e, {
                 value: o,
                 enumerable: !0,
@@ -3800,7 +3799,7 @@
             }) : t[e] = o, t
         }
 
-        function Pe(t, e, o, r, a, n, s) {
+        function ze(t, e, o, r, a, n, s) {
             try {
                 var i = t[n](s),
                     l = i.value
@@ -3810,7 +3809,7 @@
             i.done ? e(l) : Promise.resolve(l).then(r, a)
         }
 
-        function Se(t) {
+        function Pe(t) {
             return function() {
                 var e = this,
                     o = arguments;
@@ -3818,31 +3817,31 @@
                     var n = t.apply(e, o);
 
                     function s(t) {
-                        Pe(n, r, a, s, i, "next", t)
+                        ze(n, r, a, s, i, "next", t)
                     }
 
                     function i(t) {
-                        Pe(n, r, a, s, i, "throw", t)
+                        ze(n, r, a, s, i, "throw", t)
                     }
                     s(void 0)
                 }))
             }
         }
 
-        function Ne(t, e) {
+        function Se(t, e) {
             for (var o = 0; o < e.length; o++) {
                 var r = e[o];
                 r.enumerable = r.enumerable || !1, r.configurable = !0, "value" in r && (r.writable = !0), Object.defineProperty(t, r.key, r)
             }
         }
 
-        function Be(t, e) {
-            return (Be = Object.setPrototypeOf ? Object.setPrototypeOf.bind() : function(t, e) {
+        function Ne(t, e) {
+            return (Ne = Object.setPrototypeOf ? Object.setPrototypeOf.bind() : function(t, e) {
                 return t.__proto__ = e, t
             })(t, e)
         }
 
-        function Te(t) {
+        function Be(t) {
             var e = function() {
                 if ("undefined" == typeof Reflect || !Reflect.construct) return !1;
                 if (Reflect.construct.sham) return !1;
@@ -3854,32 +3853,32 @@
                 }
             }();
             return function() {
-                var o, r = Re(t);
+                var o, r = Me(t);
                 if (e) {
-                    var a = Re(this).constructor;
+                    var a = Me(this).constructor;
                     o = Reflect.construct(r, arguments, a)
                 } else o = r.apply(this, arguments);
-                return Ie(this, o)
+                return Te(this, o)
             }
         }
 
-        function Ie(t, e) {
-            if (e && ("object" === je(e) || "function" == typeof e)) return e;
+        function Te(t, e) {
+            if (e && ("object" === Ce(e) || "function" == typeof e)) return e;
             if (void 0 !== e) throw new TypeError("Derived constructors may only return object or undefined");
-            return Me(t)
+            return Ie(t)
         }
 
-        function Me(t) {
+        function Ie(t) {
             if (void 0 === t) throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
             return t
         }
 
-        function Re(t) {
-            return (Re = Object.setPrototypeOf ? Object.getPrototypeOf.bind() : function(t) {
+        function Me(t) {
+            return (Me = Object.setPrototypeOf ? Object.getPrototypeOf.bind() : function(t) {
                 return t.__proto__ || Object.getPrototypeOf(t)
             })(t)
         }
-        var De = function(t) {
+        var Re = function(t) {
             ! function(t, e) {
                 if ("function" != typeof e && null !== e) throw new TypeError("Super expression must either be null or a function");
                 t.prototype = Object.create(e && e.prototype, {
@@ -3890,9 +3889,9 @@
                     }
                 }), Object.defineProperty(t, "prototype", {
                     writable: !1
-                }), e && Be(t, e)
+                }), e && Ne(t, e)
             }(i, t);
-            var e, o, r, n, s = Te(i);
+            var e, o, r, n, s = Be(i);
 
             function i(t) {
                 var e;
@@ -3916,17 +3915,17 @@
                     recaptchaSiteKey: "",
                     isDev: !1,
                     wwwBase: ""
-                }, e.here = !0, e.googleAccessToken = "", e.googleEmail = "", e.onSignUp = e.onSignUp.bind(Me(e)), e.onNameTextUpdate = e.onNameTextUpdate.bind(Me(e)), e.onEmailTextUpdate = e.onEmailTextUpdate.bind(Me(e)), e.onPasswordTextUpdate = e.onPasswordTextUpdate.bind(Me(e)), e.onPassword2TextUpdate = e.onPassword2TextUpdate.bind(Me(e)), e.googleSuccess = e.googleSuccess.bind(Me(e)), e.googleFailure = e.googleFailure.bind(Me(e)), e
+                }, e.here = !0, e.googleAccessToken = "", e.googleEmail = "", e.onSignUp = e.onSignUp.bind(Ie(e)), e.onNameTextUpdate = e.onNameTextUpdate.bind(Ie(e)), e.onEmailTextUpdate = e.onEmailTextUpdate.bind(Ie(e)), e.onPasswordTextUpdate = e.onPasswordTextUpdate.bind(Ie(e)), e.onPassword2TextUpdate = e.onPassword2TextUpdate.bind(Ie(e)), e.googleSuccess = e.googleSuccess.bind(Ie(e)), e.googleFailure = e.googleFailure.bind(Ie(e)), e
             }
             return e = i, (o = [{
                 key: "componentDidMount",
                 value: function() {
                     var t = this;
-                    X.get("/api/users/check-auth").then((function() {
-                        X.get("/api/config").then(function() {
-                            var e = Se(Oe().mark((function e(o) {
+                    K.get("/api/users/check-auth").then((function() {
+                        K.get("/api/config").then(function() {
+                            var e = Pe(je().mark((function e(o) {
                                 var r;
-                                return Oe().wrap((function(e) {
+                                return je().wrap((function(e) {
                                     for (;;) switch (e.prev = e.next) {
                                         case 0:
                                             o.data && o.data.googleClientId ? (r = {
@@ -3934,7 +3933,7 @@
                                                 recaptchaSiteKey: o.data.recaptchaSiteKey,
                                                 isDev: o.data.isDev,
                                                 wwwBase: o.data.wwwBase
-                                            }, r = Ae(Ae({}, t.state), r), t.setState(r)) : Object(p.b)(new Error("could not get googleClientId from backend, sign up with google disabled"));
+                                            }, r = Le(Le({}, t.state), r), t.setState(r)) : Object(p.b)(new Error("could not get googleClientId from backend, sign up with google disabled"));
                                         case 1:
                                         case "end":
                                             return e.stop()
@@ -3954,9 +3953,9 @@
                 }
             }, {
                 key: "onSignUp",
-                value: (n = Se(Oe().mark((function t(e) {
+                value: (n = Pe(je().mark((function t(e) {
                     var o, r, a, n, s, i, l = this;
-                    return Oe().wrap((function(t) {
+                    return je().wrap((function(t) {
                         for (;;) switch (t.prev = t.next) {
                             case 0:
                                 if (e.preventDefault(), !this.state.loading && "choose" !== this.state.phase) {
@@ -3969,7 +3968,7 @@
                                     loading: !0
                                 }), o = "", r = "", a = "", n = "", s = "", c = this.state.name, o = c ? c.indexOf(" ") >= 0 ? "Usernames can't have spaces." : c.indexOf("\t") >= 0 ? "Usernames can't have tabs." : c.indexOf('"') >= 0 ? "Usernames can't have quotations." : function(t) {
                                     return /[^-\]_.~!*'();:@&+$,/%#[A-z0-9]/.test(t)
-                                }(c) ? "Usernames can't have extra special characters." : W()().test(c) ? "Sorry, no emojis allowed." : c.length > 15 ? "Sorry, that name is too long." : null : "Where's The Name?", "email" === this.state.phase && (r = et(this.state.email), this.state.password ? this.state.password.length < 8 ? a = "Password must have at least 8 characters." : this.state.password.length > 72 ? a = "Password is too long (trouble encrypting)." : /(?=.*[A-Z])/.test(this.state.password) ? /(?=.*[a-z])/.test(this.state.password) ? /(?=.*[0-9])/.test(this.state.password) || (a = "Password must have at least 1 number digit.") : a = "Password must have at least 1 lowercase letter." : a = "Password must have at least 1 uppercase letter." : a = "Where's The Password?", this.state.password !== this.state.password2 && (n = "The passwords don't match."), this.state.password2 || (n = "Where's The Confirming Password?")), this.state.check || (s = "You must agree to get an account."), i = null, t.prev = 13, t.next = 16, Ce(this.state.recaptchaSiteKey, "signup");
+                                }(c) ? "Usernames can't have extra special characters." : Object(H.a)().test(c) ? "Sorry, no emojis allowed." : c.length > 15 ? "Sorry, that name is too long." : null : "Where's The Name?", "email" === this.state.phase && (r = tt(this.state.email), this.state.password ? this.state.password.length < 8 ? a = "Password must have at least 8 characters." : this.state.password.length > 72 ? a = "Password is too long (trouble encrypting)." : /(?=.*[A-Z])/.test(this.state.password) ? /(?=.*[a-z])/.test(this.state.password) ? /(?=.*[0-9])/.test(this.state.password) || (a = "Password must have at least 1 number digit.") : a = "Password must have at least 1 lowercase letter." : a = "Password must have at least 1 uppercase letter." : a = "Where's The Password?", this.state.password !== this.state.password2 && (n = "The passwords don't match."), this.state.password2 || (n = "Where's The Confirming Password?")), this.state.check || (s = "You must agree to get an account."), i = null, t.prev = 13, t.next = 16, Ee(this.state.recaptchaSiteKey, "signup");
                             case 16:
                                 (i = t.sent) || (o = "Your sessions failed the reCAPTCHA. Please try again or contact us."), t.next = 24;
                                 break;
@@ -3990,15 +3989,15 @@
                                     else if ("google" === l.state.phase) {
                                         var t = {};
                                         if (!l.state.recaptchaToken) throw new Error("cannot check recaptcha without token");
-                                        t["X-Recaptcha-Token"] = l.state.recaptchaToken, X.post("/api/users/signup/google", {
+                                        t["X-Recaptcha-Token"] = l.state.recaptchaToken, K.post("/api/users/signup/google", {
                                             name: l.state.name,
                                             email: l.googleEmail,
                                             access_token: l.googleAccessToken
                                         }, {
                                             headers: t
                                         }).then(function() {
-                                            var t = Se(Oe().mark((function t(e) {
-                                                return Oe().wrap((function(t) {
+                                            var t = Pe(je().mark((function t(e) {
+                                                return je().wrap((function(t) {
                                                     for (;;) switch (t.prev = t.next) {
                                                         case 0:
                                                             if (l.here) {
@@ -4033,9 +4032,9 @@
                                                 return t.apply(this, arguments)
                                             }
                                         }()).catch(function() {
-                                            var t = Se(Oe().mark((function t(e) {
+                                            var t = Pe(je().mark((function t(e) {
                                                 var o, r, a;
-                                                return Oe().wrap((function(t) {
+                                                return je().wrap((function(t) {
                                                     for (;;) switch (t.prev = t.next) {
                                                         case 0:
                                                             if (!(e && e.response && 400 === e.response.status && e.response.data && e.response.data.msg)) {
@@ -4077,15 +4076,15 @@
                                     } else {
                                         var e = {};
                                         if (!l.state.recaptchaToken) throw new Error("cannot check recaptcha without token");
-                                        e["X-Recaptcha-Token"] = l.state.recaptchaToken, X.post("/api/users/signup", {
+                                        e["X-Recaptcha-Token"] = l.state.recaptchaToken, K.post("/api/users/signup", {
                                             name: l.state.name,
                                             email: l.state.email,
                                             password: l.state.password
                                         }, {
                                             headers: e
                                         }).then(function() {
-                                            var t = Se(Oe().mark((function t(e) {
-                                                return Oe().wrap((function(t) {
+                                            var t = Pe(je().mark((function t(e) {
+                                                return je().wrap((function(t) {
                                                     for (;;) switch (t.prev = t.next) {
                                                         case 0:
                                                             if (l.here) {
@@ -4123,9 +4122,9 @@
                                                 return t.apply(this, arguments)
                                             }
                                         }()).catch(function() {
-                                            var t = Se(Oe().mark((function t(e) {
+                                            var t = Pe(je().mark((function t(e) {
                                                 var o, r, a;
-                                                return Oe().wrap((function(t) {
+                                                return je().wrap((function(t) {
                                                     for (;;) switch (t.prev = t.next) {
                                                         case 0:
                                                             if (!(e && e.response && 400 === e.response.status && e.response.data && e.response.data.msg)) {
@@ -4217,7 +4216,7 @@
                 key: "googleSuccess",
                 value: function(t) {
                     var e = this;
-                    X.get("/api/users/byemail", {
+                    K.get("/api/users/byemail", {
                         params: {
                             email: t.profileObj.email
                         }
@@ -4247,10 +4246,10 @@
                     var t, e, o, r, n, s, i, l, c, u, p = this;
                     return a.a.createElement("form", {
                         onSubmit: this.onSignUp,
-                        className: It.a.container
+                        className: Tt.a.container
                     }, a.a.createElement("div", {
-                        className: It.a.containerHeader
-                    }, "Sign Up"), "choose" === this.state.phase ? a.a.createElement(a.a.Fragment, null, this.state.googleClientId && a.a.createElement(Et.GoogleLogin, {
+                        className: Tt.a.containerHeader
+                    }, "Sign Up"), "choose" === this.state.phase ? a.a.createElement(a.a.Fragment, null, this.state.googleClientId && a.a.createElement(xt.GoogleLogin, {
                         clientId: this.state.googleClientId,
                         onSuccess: this.googleSuccess,
                         onFailure: this.googleFailure,
@@ -4267,7 +4266,7 @@
                                     margin: "15px auto 12px auto"
                                 }
                             }, a.a.createElement("img", {
-                                src: we,
+                                src: ve,
                                 alt: "Google Logo",
                                 className: D.a.googleLogo,
                                 draggable: !1
@@ -4289,13 +4288,13 @@
                             margin: "12px auto 35px auto"
                         }
                     }, a.a.createElement("i", {
-                        className: G()(It.a.buttonIcon, "fas fa-envelope")
+                        className: G()(Tt.a.buttonIcon, "fas fa-envelope")
                     }), "Sign Up with Email")) : "google" === this.state.phase ? a.a.createElement("div", {
-                        className: G()(It.a.inputContainer, (t = {}, ze(t, It.a.inputFilled, this.state.name), ze(t, It.a.inputError, this.state.nameError), t))
+                        className: G()(Tt.a.inputContainer, (t = {}, Ae(t, Tt.a.inputFilled, this.state.name), Ae(t, Tt.a.inputError, this.state.nameError), t))
                     }, a.a.createElement("i", {
-                        className: G()(It.a.icon, "fas fa-user", (e = {}, ze(e, It.a.iconFilled, this.state.name), ze(e, It.a.iconError, this.state.nameError), e))
+                        className: G()(Tt.a.icon, "fas fa-user", (e = {}, Ae(e, Tt.a.iconFilled, this.state.name), Ae(e, Tt.a.iconError, this.state.nameError), e))
                     }), a.a.createElement("input", {
-                        className: G()(It.a.input, ze({}, It.a.inputError, this.state.nameError)),
+                        className: G()(Tt.a.input, Ae({}, Tt.a.inputError, this.state.nameError)),
                         placeholder: "Username",
                         value: this.state.name,
                         onChange: this.onNameTextUpdate,
@@ -4303,11 +4302,11 @@
                         autoFocus: M.isMobile ? "" : "autofocus",
                         maxLength: "15"
                     })) : a.a.createElement(a.a.Fragment, null, a.a.createElement("div", {
-                        className: G()(It.a.inputContainer, (o = {}, ze(o, It.a.inputFilled, this.state.name), ze(o, It.a.inputError, this.state.nameError), o))
+                        className: G()(Tt.a.inputContainer, (o = {}, Ae(o, Tt.a.inputFilled, this.state.name), Ae(o, Tt.a.inputError, this.state.nameError), o))
                     }, a.a.createElement("i", {
-                        className: G()(It.a.icon, "fas fa-user", (r = {}, ze(r, It.a.iconFilled, this.state.name), ze(r, It.a.iconError, this.state.nameError), r))
+                        className: G()(Tt.a.icon, "fas fa-user", (r = {}, Ae(r, Tt.a.iconFilled, this.state.name), Ae(r, Tt.a.iconError, this.state.nameError), r))
                     }), a.a.createElement("input", {
-                        className: G()(It.a.input, ze({}, It.a.inputError, this.state.nameError)),
+                        className: G()(Tt.a.input, Ae({}, Tt.a.inputError, this.state.nameError)),
                         placeholder: "Username",
                         value: this.state.name,
                         onChange: this.onNameTextUpdate,
@@ -4315,45 +4314,45 @@
                         autoFocus: M.isMobile ? "" : "autofocus",
                         maxLength: "15"
                     })), a.a.createElement("div", {
-                        className: G()(It.a.inputContainer, (n = {}, ze(n, It.a.inputFilled, this.state.email), ze(n, It.a.inputError, this.state.emailError), n))
+                        className: G()(Tt.a.inputContainer, (n = {}, Ae(n, Tt.a.inputFilled, this.state.email), Ae(n, Tt.a.inputError, this.state.emailError), n))
                     }, a.a.createElement("i", {
-                        className: G()(It.a.icon, "fas fa-envelope", (s = {}, ze(s, It.a.iconFilled, this.state.email), ze(s, It.a.iconError, this.state.emailError), s))
+                        className: G()(Tt.a.icon, "fas fa-envelope", (s = {}, Ae(s, Tt.a.iconFilled, this.state.email), Ae(s, Tt.a.iconError, this.state.emailError), s))
                     }), a.a.createElement("input", {
-                        className: G()(It.a.input, ze({}, It.a.inputError, this.state.emailError)),
+                        className: G()(Tt.a.input, Ae({}, Tt.a.inputError, this.state.emailError)),
                         placeholder: "Email",
                         value: this.state.email,
                         onChange: this.onEmailTextUpdate,
                         type: "text"
                     })), a.a.createElement("div", {
-                        className: G()(It.a.inputContainer, (i = {}, ze(i, It.a.inputFilled, this.state.password), ze(i, It.a.inputError, this.state.passwordError), i))
+                        className: G()(Tt.a.inputContainer, (i = {}, Ae(i, Tt.a.inputFilled, this.state.password), Ae(i, Tt.a.inputError, this.state.passwordError), i))
                     }, a.a.createElement("i", {
-                        className: G()(It.a.icon, "fas fa-lock", (l = {}, ze(l, It.a.iconFilled, this.state.password), ze(l, It.a.iconError, this.state.passwordError), l)),
+                        className: G()(Tt.a.icon, "fas fa-lock", (l = {}, Ae(l, Tt.a.iconFilled, this.state.password), Ae(l, Tt.a.iconError, this.state.passwordError), l)),
                         style: {
                             fontSize: 23
                         }
                     }), a.a.createElement("input", {
-                        className: G()(It.a.input, ze({}, It.a.inputError, this.state.passwordError)),
+                        className: G()(Tt.a.input, Ae({}, Tt.a.inputError, this.state.passwordError)),
                         placeholder: "Password",
                         value: this.state.password,
                         onChange: this.onPasswordTextUpdate,
                         type: "password"
                     })), a.a.createElement("div", {
-                        className: G()(It.a.inputContainer, (c = {}, ze(c, It.a.inputFilled, this.state.password2), ze(c, It.a.inputError, this.state.password2Error), c))
+                        className: G()(Tt.a.inputContainer, (c = {}, Ae(c, Tt.a.inputFilled, this.state.password2), Ae(c, Tt.a.inputError, this.state.password2Error), c))
                     }, a.a.createElement("i", {
-                        className: G()(It.a.icon, "fas fa-lock", (u = {}, ze(u, It.a.iconFilled, this.state.password2), ze(u, It.a.iconError, this.state.password2Error), u)),
+                        className: G()(Tt.a.icon, "fas fa-lock", (u = {}, Ae(u, Tt.a.iconFilled, this.state.password2), Ae(u, Tt.a.iconError, this.state.password2Error), u)),
                         style: {
                             fontSize: 23
                         }
                     }), a.a.createElement("input", {
-                        className: G()(It.a.input, ze({}, It.a.inputError, this.state.password2Error)),
+                        className: G()(Tt.a.input, Ae({}, Tt.a.inputError, this.state.password2Error)),
                         placeholder: "Confirm Password",
                         value: this.state.password2,
                         onChange: this.onPassword2TextUpdate,
                         type: "password"
                     }))), "choose" !== this.state.phase ? a.a.createElement(a.a.Fragment, null, a.a.createElement("div", {
-                        className: It.a.agreeHolder
+                        className: Tt.a.agreeHolder
                     }, a.a.createElement("div", {
-                        className: G()(It.a.checkBox, this.state.checkError ? It.a.checkError : this.state.check ? It.a.checkYes : It.a.checkNo),
+                        className: G()(Tt.a.checkBox, this.state.checkError ? Tt.a.checkError : this.state.check ? Tt.a.checkYes : Tt.a.checkNo),
                         role: "button",
                         tabIndex: 0,
                         onClick: function() {
@@ -4363,53 +4362,53 @@
                             })
                         }
                     }, a.a.createElement("i", {
-                        className: G()(It.a.checkIcon, "fas fa-check")
+                        className: G()(Tt.a.checkIcon, "fas fa-check")
                     })), a.a.createElement("div", {
-                        className: It.a.agreeText
+                        className: Tt.a.agreeText
                     }, "I am at least 13 years old (or at least 16 outside of the U.S.) and I agree to the ", a.a.createElement("a", {
                         href: "".concat(this.state.wwwBase, "/privacy"),
-                        className: It.a.link,
+                        className: Tt.a.link,
                         target: "_blank",
                         rel: "noopener noreferrer"
                     }, "Privacy Policy"), " & ", a.a.createElement("a", {
                         href: "".concat(this.state.wwwBase, "/terms"),
-                        className: It.a.link,
+                        className: Tt.a.link,
                         target: "_blank",
                         rel: "noopener noreferrer"
-                    }, "Terms of Service."))), this.state.loading ? a.a.createElement(ve, null) : a.a.createElement("input", {
+                    }, "Terms of Service."))), this.state.loading ? a.a.createElement(be, null) : a.a.createElement("input", {
                         type: "submit",
                         value: "Sign Up",
-                        className: G()(It.a.button, ze({}, It.a.buttonFilled, this.state.name && this.state.email && this.state.password && this.state.password2 && this.state.check), ze({}, It.a.buttonError, this.state.nameError || this.state.emailError || this.state.passwordError || this.state.password2Error || this.state.checkError)),
+                        className: G()(Tt.a.button, Ae({}, Tt.a.buttonFilled, this.state.name && this.state.email && this.state.password && this.state.password2 && this.state.check), Ae({}, Tt.a.buttonError, this.state.nameError || this.state.emailError || this.state.passwordError || this.state.password2Error || this.state.checkError)),
                         tabIndex: 0
                     })) : null, this.state.nameError || this.state.emailError || this.state.passwordError || this.state.password2Error || this.state.checkError ? a.a.createElement("div", {
-                        className: It.a.errorContainer
+                        className: Tt.a.errorContainer
                     }, a.a.createElement("i", {
-                        className: G()(It.a.errorIcon, "fas fa-times-circle")
+                        className: G()(Tt.a.errorIcon, "fas fa-times-circle")
                     }), a.a.createElement("div", {
-                        className: It.a.errorText
+                        className: Tt.a.errorText
                     }, this.state.nameError || this.state.emailError || this.state.passwordError || this.state.password2Error || this.state.checkError)) : null)
                 }
-            }]) && Ne(e.prototype, o), r && Ne(e, r), Object.defineProperty(e, "prototype", {
+            }]) && Se(e.prototype, o), r && Se(e, r), Object.defineProperty(e, "prototype", {
                 writable: !1
             }), i
         }(a.a.Component);
-        De.propTypes = {
+        Re.propTypes = {
             done: I.a.func.isRequired,
             user: I.a.object
         };
-        var Fe = Nt(De);
+        var De = St(Re);
 
-        function Ge(t) {
-            return (Ge = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function(t) {
+        function Fe(t) {
+            return (Fe = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function(t) {
                 return typeof t
             } : function(t) {
                 return t && "function" == typeof Symbol && t.constructor === Symbol && t !== Symbol.prototype ? "symbol" : typeof t
             })(t)
         }
 
-        function Ue() {
+        function Ge() {
             /*! regenerator-runtime -- Copyright (c) 2014-present, Facebook, Inc. -- license (MIT): https://github.com/facebook/regenerator/blob/main/LICENSE */
-            Ue = function() {
+            Ge = function() {
                 return t
             };
             var t = {},
@@ -4525,7 +4524,7 @@
                                 if ("throw" !== l.type) {
                                     var u = l.arg,
                                         p = u.value;
-                                    return p && "object" == Ge(p) && o.call(p, "__await") ? e.resolve(p.__await).then((function(t) {
+                                    return p && "object" == Fe(p) && o.call(p, "__await") ? e.resolve(p.__await).then((function(t) {
                                         r("next", t, s, i)
                                     }), (function(t) {
                                         r("throw", t, s, i)
@@ -4718,7 +4717,7 @@
             }, t
         }
 
-        function Ye(t, e, o, r, a, n, s) {
+        function Ue(t, e, o, r, a, n, s) {
             try {
                 var i = t[n](s),
                     l = i.value
@@ -4728,7 +4727,7 @@
             i.done ? e(l) : Promise.resolve(l).then(r, a)
         }
 
-        function He(t) {
+        function Ye(t) {
             return function() {
                 var e = this,
                     o = arguments;
@@ -4736,31 +4735,31 @@
                     var n = t.apply(e, o);
 
                     function s(t) {
-                        Ye(n, r, a, s, i, "next", t)
+                        Ue(n, r, a, s, i, "next", t)
                     }
 
                     function i(t) {
-                        Ye(n, r, a, s, i, "throw", t)
+                        Ue(n, r, a, s, i, "throw", t)
                     }
                     s(void 0)
                 }))
             }
         }
 
-        function We(t, e) {
+        function He(t, e) {
             for (var o = 0; o < e.length; o++) {
                 var r = e[o];
                 r.enumerable = r.enumerable || !1, r.configurable = !0, "value" in r && (r.writable = !0), Object.defineProperty(t, r.key, r)
             }
         }
 
-        function Qe(t, e) {
-            return (Qe = Object.setPrototypeOf ? Object.setPrototypeOf.bind() : function(t, e) {
+        function We(t, e) {
+            return (We = Object.setPrototypeOf ? Object.setPrototypeOf.bind() : function(t, e) {
                 return t.__proto__ = e, t
             })(t, e)
         }
 
-        function Ke(t) {
+        function Qe(t) {
             var e = function() {
                 if ("undefined" == typeof Reflect || !Reflect.construct) return !1;
                 if (Reflect.construct.sham) return !1;
@@ -4772,32 +4771,32 @@
                 }
             }();
             return function() {
-                var o, r = Je(t);
+                var o, r = Ze(t);
                 if (e) {
-                    var a = Je(this).constructor;
+                    var a = Ze(this).constructor;
                     o = Reflect.construct(r, arguments, a)
                 } else o = r.apply(this, arguments);
-                return Xe(this, o)
+                return Ke(this, o)
             }
         }
 
-        function Xe(t, e) {
-            if (e && ("object" === Ge(e) || "function" == typeof e)) return e;
+        function Ke(t, e) {
+            if (e && ("object" === Fe(e) || "function" == typeof e)) return e;
             if (void 0 !== e) throw new TypeError("Derived constructors may only return object or undefined");
-            return Ze(t)
+            return Xe(t)
         }
 
-        function Ze(t) {
+        function Xe(t) {
             if (void 0 === t) throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
             return t
         }
 
-        function Je(t) {
-            return (Je = Object.setPrototypeOf ? Object.getPrototypeOf.bind() : function(t) {
+        function Ze(t) {
+            return (Ze = Object.setPrototypeOf ? Object.getPrototypeOf.bind() : function(t) {
                 return t.__proto__ || Object.getPrototypeOf(t)
             })(t)
         }
-        var qe = function(t) {
+        var Je = function(t) {
             ! function(t, e) {
                 if ("function" != typeof e && null !== e) throw new TypeError("Super expression must either be null or a function");
                 t.prototype = Object.create(e && e.prototype, {
@@ -4808,33 +4807,33 @@
                     }
                 }), Object.defineProperty(t, "prototype", {
                     writable: !1
-                }), e && Qe(t, e)
+                }), e && We(t, e)
             }(l, t);
-            var e, o, r, n, s, i = Ke(l);
+            var e, o, r, n, s, i = Qe(l);
 
             function l(t) {
                 var e;
                 return function(t, e) {
                     if (!(t instanceof e)) throw new TypeError("Cannot call a class as a function")
-                }(this, l), (e = i.call(this, t)).state = {}, e.done = e.done.bind(Ze(e)), e
+                }(this, l), (e = i.call(this, t)).state = {}, e.done = e.done.bind(Xe(e)), e
             }
             return e = l, (o = [{
                 key: "componentDidMount",
-                value: (s = He(Ue().mark((function t() {
-                    return Ue().wrap((function(t) {
+                value: (s = Ye(Ge().mark((function t() {
+                    return Ge().wrap((function(t) {
                         for (;;) switch (t.prev = t.next) {
                             case 0:
-                                return ot(), t.next = 3, this.props.user.getData();
+                                return et(), t.next = 3, this.props.user.getData();
                             case 3:
                                 if (!t.sent) {
                                     t.next = 8;
                                     break
                                 }
-                                return t.next = 7, rt();
+                                return t.next = 7, ot();
                             case 7:
                                 window.location.href = t.sent;
                             case 8:
-                                at();
+                                rt();
                             case 9:
                             case "end":
                                 return t.stop()
@@ -4845,18 +4844,18 @@
                 })
             }, {
                 key: "done",
-                value: (n = He(Ue().mark((function t() {
+                value: (n = Ye(Ge().mark((function t() {
                     var e;
-                    return Ue().wrap((function(t) {
+                    return Ge().wrap((function(t) {
                         for (;;) switch (t.prev = t.next) {
                             case 0:
-                                if (!nt()) {
+                                if (!at()) {
                                     t.next = 3;
                                     break
                                 }
                                 return window.close(), t.abrupt("return");
                             case 3:
-                                return t.next = 5, rt();
+                                return t.next = 5, ot();
                             case 5:
                                 e = t.sent, window.location.href = e;
                             case 7:
@@ -4875,46 +4874,46 @@
                         style: {
                             backgroundColor: "#0bc2cf"
                         }
-                    }, a.a.createElement(xt, {
+                    }, a.a.createElement(kt, {
                         title: "Sign Up | Blooket",
                         desc: "Sign Up for a Blooket account to create sets, host games, discover new sets, unlock Blooks, view stats, update your account, and manage your Blooks."
-                    }), a.a.createElement(mt, {
+                    }), a.a.createElement(ht, {
                         rightLink: "/login",
                         rightText: "Login"
                     }), a.a.createElement("div", {
                         className: D.a.regularBody
-                    }, a.a.createElement(Fe, {
+                    }, a.a.createElement(De, {
                         done: this.done
                     })))
                 }
-            }]) && We(e.prototype, o), r && We(e, r), Object.defineProperty(e, "prototype", {
+            }]) && He(e.prototype, o), r && He(e, r), Object.defineProperty(e, "prototype", {
                 writable: !1
             }), l
         }(a.a.Component);
-        qe.propTypes = {
+        Je.propTypes = {
             user: I.a.object
         };
-        var Ve = Nt(Object(c.g)(Object(i.b)((function(t) {
+        var qe = St(Object(c.g)(Object(i.b)((function(t) {
                 return {}
             }), (function(t) {
                 return Object(f.b)({}, t)
-            }))(qe))),
-            $e = o("wd/R"),
-            to = o.n($e),
-            eo = o("kYN1"),
-            oo = o.n(eo);
+            }))(Je))),
+            Ve = o("wd/R"),
+            $e = o.n(Ve),
+            to = o("kYN1"),
+            eo = o.n(to);
 
-        function ro(t) {
-            return (ro = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function(t) {
+        function oo(t) {
+            return (oo = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function(t) {
                 return typeof t
             } : function(t) {
                 return t && "function" == typeof Symbol && t.constructor === Symbol && t !== Symbol.prototype ? "symbol" : typeof t
             })(t)
         }
 
-        function ao() {
+        function ro() {
             /*! regenerator-runtime -- Copyright (c) 2014-present, Facebook, Inc. -- license (MIT): https://github.com/facebook/regenerator/blob/main/LICENSE */
-            ao = function() {
+            ro = function() {
                 return t
             };
             var t = {},
@@ -5030,7 +5029,7 @@
                                 if ("throw" !== l.type) {
                                     var u = l.arg,
                                         p = u.value;
-                                    return p && "object" == ro(p) && o.call(p, "__await") ? e.resolve(p.__await).then((function(t) {
+                                    return p && "object" == oo(p) && o.call(p, "__await") ? e.resolve(p.__await).then((function(t) {
                                         r("next", t, s, i)
                                     }), (function(t) {
                                         r("throw", t, s, i)
@@ -5223,7 +5222,7 @@
             }, t
         }
 
-        function no(t, e) {
+        function ao(t, e) {
             var o = Object.keys(t);
             if (Object.getOwnPropertySymbols) {
                 var r = Object.getOwnPropertySymbols(t);
@@ -5234,19 +5233,19 @@
             return o
         }
 
-        function so(t) {
+        function no(t) {
             for (var e = 1; e < arguments.length; e++) {
                 var o = null != arguments[e] ? arguments[e] : {};
-                e % 2 ? no(Object(o), !0).forEach((function(e) {
-                    io(t, e, o[e])
-                })) : Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(o)) : no(Object(o)).forEach((function(e) {
+                e % 2 ? ao(Object(o), !0).forEach((function(e) {
+                    so(t, e, o[e])
+                })) : Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(o)) : ao(Object(o)).forEach((function(e) {
                     Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(o, e))
                 }))
             }
             return t
         }
 
-        function io(t, e, o) {
+        function so(t, e, o) {
             return e in t ? Object.defineProperty(t, e, {
                 value: o,
                 enumerable: !0,
@@ -5255,7 +5254,7 @@
             }) : t[e] = o, t
         }
 
-        function lo(t, e, o, r, a, n, s) {
+        function io(t, e, o, r, a, n, s) {
             try {
                 var i = t[n](s),
                     l = i.value
@@ -5265,7 +5264,7 @@
             i.done ? e(l) : Promise.resolve(l).then(r, a)
         }
 
-        function co(t) {
+        function lo(t) {
             return function() {
                 var e = this,
                     o = arguments;
@@ -5273,31 +5272,31 @@
                     var n = t.apply(e, o);
 
                     function s(t) {
-                        lo(n, r, a, s, i, "next", t)
+                        io(n, r, a, s, i, "next", t)
                     }
 
                     function i(t) {
-                        lo(n, r, a, s, i, "throw", t)
+                        io(n, r, a, s, i, "throw", t)
                     }
                     s(void 0)
                 }))
             }
         }
 
-        function uo(t, e) {
+        function co(t, e) {
             for (var o = 0; o < e.length; o++) {
                 var r = e[o];
                 r.enumerable = r.enumerable || !1, r.configurable = !0, "value" in r && (r.writable = !0), Object.defineProperty(t, r.key, r)
             }
         }
 
-        function po(t, e) {
-            return (po = Object.setPrototypeOf ? Object.setPrototypeOf.bind() : function(t, e) {
+        function uo(t, e) {
+            return (uo = Object.setPrototypeOf ? Object.setPrototypeOf.bind() : function(t, e) {
                 return t.__proto__ = e, t
             })(t, e)
         }
 
-        function fo(t) {
+        function po(t) {
             var e = function() {
                 if ("undefined" == typeof Reflect || !Reflect.construct) return !1;
                 if (Reflect.construct.sham) return !1;
@@ -5309,32 +5308,32 @@
                 }
             }();
             return function() {
-                var o, r = _o(t);
+                var o, r = mo(t);
                 if (e) {
-                    var a = _o(this).constructor;
+                    var a = mo(this).constructor;
                     o = Reflect.construct(r, arguments, a)
                 } else o = r.apply(this, arguments);
-                return ho(this, o)
+                return fo(this, o)
             }
         }
 
-        function ho(t, e) {
-            if (e && ("object" === ro(e) || "function" == typeof e)) return e;
+        function fo(t, e) {
+            if (e && ("object" === oo(e) || "function" == typeof e)) return e;
             if (void 0 !== e) throw new TypeError("Derived constructors may only return object or undefined");
-            return mo(t)
+            return ho(t)
         }
 
-        function mo(t) {
+        function ho(t) {
             if (void 0 === t) throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
             return t
         }
 
-        function _o(t) {
-            return (_o = Object.setPrototypeOf ? Object.getPrototypeOf.bind() : function(t) {
+        function mo(t) {
+            return (mo = Object.setPrototypeOf ? Object.getPrototypeOf.bind() : function(t) {
                 return t.__proto__ || Object.getPrototypeOf(t)
             })(t)
         }
-        var go = function(t) {
+        var _o = function(t) {
             ! function(t, e) {
                 if ("function" != typeof e && null !== e) throw new TypeError("Super expression must either be null or a function");
                 t.prototype = Object.create(e && e.prototype, {
@@ -5345,9 +5344,9 @@
                     }
                 }), Object.defineProperty(t, "prototype", {
                     writable: !1
-                }), e && po(t, e)
+                }), e && uo(t, e)
             }(i, t);
-            var e, o, r, n, s = fo(i);
+            var e, o, r, n, s = po(i);
 
             function i(t) {
                 var e;
@@ -5365,17 +5364,17 @@
                     recaptchaSiteKey: null,
                     recaptchaRequired: null,
                     recaptchaToken: null
-                }, e.here = !0, e.onLogin = e.onLogin.bind(mo(e)), e.onNameTextUpdate = e.onNameTextUpdate.bind(mo(e)), e.onPasswordTextUpdate = e.onPasswordTextUpdate.bind(mo(e)), e.googleSuccess = e.googleSuccess.bind(mo(e)), e.googleFailure = e.googleFailure.bind(mo(e)), e
+                }, e.here = !0, e.onLogin = e.onLogin.bind(ho(e)), e.onNameTextUpdate = e.onNameTextUpdate.bind(ho(e)), e.onPasswordTextUpdate = e.onPasswordTextUpdate.bind(ho(e)), e.googleSuccess = e.googleSuccess.bind(ho(e)), e.googleFailure = e.googleFailure.bind(ho(e)), e
             }
             return e = i, (o = [{
                 key: "componentDidMount",
                 value: function() {
                     var t = this;
-                    X.get("/api/users/check-auth").then((function() {
-                        X.get("/api/config").then(function() {
-                            var e = co(ao().mark((function e(o) {
+                    K.get("/api/users/check-auth").then((function() {
+                        K.get("/api/config").then(function() {
+                            var e = lo(ro().mark((function e(o) {
                                 var r;
-                                return ao().wrap((function(e) {
+                                return ro().wrap((function(e) {
                                     for (;;) switch (e.prev = e.next) {
                                         case 0:
                                             o.data && o.data.googleClientId ? (r = {
@@ -5383,7 +5382,7 @@
                                                 recaptchaRequired: o.data.recaptchaRequired,
                                                 recaptchaSiteKey: o.data.recaptchaSiteKey,
                                                 isDev: o.data.isDev
-                                            }, r = so(so({}, t.state), r), t.setState(r)) : Object(p.b)(new Error("could not get googleClientId from backend, login with google will be disabled"));
+                                            }, r = no(no({}, t.state), r), t.setState(r)) : Object(p.b)(new Error("could not get googleClientId from backend, login with google will be disabled"));
                                         case 1:
                                         case "end":
                                             return e.stop()
@@ -5403,9 +5402,9 @@
                 }
             }, {
                 key: "onLogin",
-                value: (n = co(ao().mark((function t(e) {
+                value: (n = lo(ro().mark((function t(e) {
                     var o, r, a, n = this;
-                    return ao().wrap((function(t) {
+                    return ro().wrap((function(t) {
                         for (;;) switch (t.prev = t.next) {
                             case 0:
                                 if (e.preventDefault(), this.setState({
@@ -5414,7 +5413,7 @@
                                     t.next = 19;
                                     break
                                 }
-                                return t.prev = 8, t.next = 11, Ce(this.state.recaptchaSiteKey, "login");
+                                return t.prev = 8, t.next = 11, Ee(this.state.recaptchaSiteKey, "login");
                             case 11:
                                 (a = t.sent) || (o = "Your sessions failed the reCAPTCHA. Please try again or contact us."), t.next = 19;
                                 break;
@@ -5439,12 +5438,12 @@
                                             if (!n.state.recaptchaToken) throw new Error("cannot check recaptcha without token");
                                             e["X-Recaptcha-Token"] = n.state.recaptchaToken
                                         }
-                                        X.post("/api/users/login", t, {
+                                        K.post("/api/users/login", t, {
                                             headers: e
                                         }).then(function() {
-                                            var t = co(ao().mark((function t(e) {
+                                            var t = lo(ro().mark((function t(e) {
                                                 var o;
-                                                return ao().wrap((function(t) {
+                                                return ro().wrap((function(t) {
                                                     for (;;) switch (t.prev = t.next) {
                                                         case 0:
                                                             if (n.here) {
@@ -5457,7 +5456,7 @@
                                                                 t.next = 6;
                                                                 break
                                                             }
-                                                            "name" === e.data.errType ? (o = e.data.msg, e.data.suspensionEnd && (o = "".concat(o, " Suspension ends: ").concat(to()(e.data.suspensionEnd).format("MM-DD-YYYY hh:mm:ss"), " UTC")), e.data.suspendedReason && e.data.suspendedReason.includes("District") && (o = "".concat(o, " Reason: ").concat(e.data.suspendedReason, " ")), n.setState({
+                                                            "name" === e.data.errType ? (o = e.data.msg, e.data.suspensionEnd && (o = "".concat(o, " Suspension ends: ").concat($e()(e.data.suspensionEnd).format("MM-DD-YYYY hh:mm:ss"), " UTC")), e.data.suspendedReason && e.data.suspendedReason.includes("District") && (o = "".concat(o, " Reason: ").concat(e.data.suspendedReason, " ")), n.setState({
                                                                 loading: !1,
                                                                 nameError: o
                                                             })) : n.setState({
@@ -5526,14 +5525,14 @@
                         if (!this.state.recaptchaToken) throw new Error("cannot check recaptcha without token");
                         o["X-Recaptcha-Token"] = this.state.recaptchaToken
                     }
-                    X.post("/api/users/login/google", {
+                    K.post("/api/users/login/google", {
                         access_token: t.accessToken
                     }, {
                         headers: o
                     }).then(function() {
-                        var t = co(ao().mark((function t(o) {
+                        var t = lo(ro().mark((function t(o) {
                             var r;
-                            return ao().wrap((function(t) {
+                            return ro().wrap((function(t) {
                                 for (;;) switch (t.prev = t.next) {
                                     case 0:
                                         if (e.here) {
@@ -5551,7 +5550,7 @@
                                         e.props.done(o.data), t.next = 11;
                                         break;
                                     case 8:
-                                        r = "", o.data.msg ? (r = o.data.msg, o.data.suspensionEnd && (r = "".concat(r, " Suspension ends: ").concat(to()(o.data.suspensionEnd).format("MM-DD-YYYY hh:mm:ss"), " UTC")), o.data.suspendedReason && o.data.suspendedReason.includes("District") && (r = "".concat(r, " Reason: ").concat(o.data.suspendedReason, " "))) : r = "There isn't a Blooket account for that Google email.", e.setState({
+                                        r = "", o.data.msg ? (r = o.data.msg, o.data.suspensionEnd && (r = "".concat(r, " Suspension ends: ").concat($e()(o.data.suspensionEnd).format("MM-DD-YYYY hh:mm:ss"), " UTC")), o.data.suspendedReason && o.data.suspendedReason.includes("District") && (r = "".concat(r, " Reason: ").concat(o.data.suspendedReason, " "))) : r = "There isn't a Blooket account for that Google email.", e.setState({
                                             googleError: r,
                                             loading: !1
                                         });
@@ -5586,10 +5585,10 @@
                     var t, e, o, r, n, s = this;
                     return a.a.createElement("form", {
                         onSubmit: this.onLogin,
-                        className: oo.a.container
+                        className: eo.a.container
                     }, a.a.createElement("div", {
-                        className: oo.a.containerHeader
-                    }, "Login"), this.state.googleClientId ? a.a.createElement(a.a.Fragment, null, a.a.createElement(Et.GoogleLogin, {
+                        className: eo.a.containerHeader
+                    }, "Login"), this.state.googleClientId ? a.a.createElement(a.a.Fragment, null, a.a.createElement(xt.GoogleLogin, {
                         clientId: this.state.googleClientId,
                         onSuccess: this.googleSuccess,
                         onFailure: this.googleFailure,
@@ -5601,30 +5600,30 @@
                                 tabIndex: 0,
                                 onClick: t.onClick
                             }, a.a.createElement("img", {
-                                src: we,
+                                src: ve,
                                 alt: "Google Logo",
                                 className: D.a.googleLogo,
                                 draggable: !1
                             }), "Login with Google")
                         }
                     }), a.a.createElement("div", {
-                        className: oo.a.orRow
+                        className: eo.a.orRow
                     }, a.a.createElement("div", {
-                        className: oo.a.orBar,
+                        className: eo.a.orBar,
                         style: {
                             marginRight: 7
                         }
                     }), "or", a.a.createElement("div", {
-                        className: oo.a.orBar,
+                        className: eo.a.orBar,
                         style: {
                             marginLeft: 7
                         }
-                    }))) : a.a.createElement(ve, null), a.a.createElement("div", {
-                        className: G()(oo.a.inputContainer, (t = {}, io(t, oo.a.inputFilled, this.state.name), io(t, oo.a.inputError, this.state.nameError), t))
+                    }))) : a.a.createElement(be, null), a.a.createElement("div", {
+                        className: G()(eo.a.inputContainer, (t = {}, so(t, eo.a.inputFilled, this.state.name), so(t, eo.a.inputError, this.state.nameError), t))
                     }, a.a.createElement("i", {
-                        className: G()(oo.a.icon, "fas fa-user", (e = {}, io(e, oo.a.iconFilled, this.state.name), io(e, oo.a.iconError, this.state.nameError), e))
+                        className: G()(eo.a.icon, "fas fa-user", (e = {}, so(e, eo.a.iconFilled, this.state.name), so(e, eo.a.iconError, this.state.nameError), e))
                     }), a.a.createElement("input", {
-                        className: G()(oo.a.input, io({}, oo.a.inputError, this.state.nameError)),
+                        className: G()(eo.a.input, so({}, eo.a.inputError, this.state.nameError)),
                         placeholder: "Username/Email",
                         onChange: this.onNameTextUpdate,
                         value: this.state.name,
@@ -5632,64 +5631,64 @@
                         autoComplete: "username",
                         autoFocus: M.isMobile ? "" : "autofocus"
                     })), a.a.createElement("div", {
-                        className: G()(oo.a.inputContainer, (o = {}, io(o, oo.a.inputFilled, this.state.password), io(o, oo.a.inputError, this.state.passwordError), o))
+                        className: G()(eo.a.inputContainer, (o = {}, so(o, eo.a.inputFilled, this.state.password), so(o, eo.a.inputError, this.state.passwordError), o))
                     }, a.a.createElement("i", {
-                        className: G()(oo.a.icon, "fas fa-lock", (r = {}, io(r, oo.a.iconFilled, this.state.password), io(r, oo.a.iconError, this.state.passwordError), r)),
+                        className: G()(eo.a.icon, "fas fa-lock", (r = {}, so(r, eo.a.iconFilled, this.state.password), so(r, eo.a.iconError, this.state.passwordError), r)),
                         style: {
                             fontSize: 23
                         }
                     }), a.a.createElement("input", {
-                        className: G()(oo.a.input, io({}, oo.a.inputError, this.state.passwordError)),
+                        className: G()(eo.a.input, so({}, eo.a.inputError, this.state.passwordError)),
                         placeholder: "Password",
                         onChange: this.onPasswordTextUpdate,
                         value: this.state.password,
                         type: "password",
                         autoComplete: "current-password"
-                    })), this.state.loading ? a.a.createElement(ve, null) : a.a.createElement("input", {
+                    })), this.state.loading ? a.a.createElement(be, null) : a.a.createElement("input", {
                         type: "submit",
                         value: "Let's Go!",
-                        className: G()(oo.a.button, (n = {}, io(n, oo.a.buttonFilled, this.state.password && this.state.name), io(n, oo.a.buttonError, this.state.passwordError || this.state.nameError || this.state.googleError), n)),
+                        className: G()(eo.a.button, (n = {}, so(n, eo.a.buttonFilled, this.state.password && this.state.name), so(n, eo.a.buttonError, this.state.passwordError || this.state.nameError || this.state.googleError), n)),
                         tabIndex: 0
                     }), this.state.nameError || this.state.passwordError || this.state.googleError ? a.a.createElement("div", {
-                        className: oo.a.errorContainer
+                        className: eo.a.errorContainer
                     }, a.a.createElement("i", {
-                        className: G()(oo.a.errorIcon, "fas fa-times-circle")
+                        className: G()(eo.a.errorIcon, "fas fa-times-circle")
                     }), a.a.createElement("div", {
-                        className: oo.a.errorText
+                        className: eo.a.errorText
                     }, this.state.nameError || this.state.passwordError || this.state.googleError)) : null, void 0 !== this.props.onLink ? a.a.createElement("div", {
-                        className: oo.a.forgotLink,
+                        className: eo.a.forgotLink,
                         role: "button",
                         tabIndex: 0,
                         onClick: function(t) {
                             return s.props.onLink(t, "/forgot")
                         }
                     }, "Forgot Password?") : a.a.createElement(l.b, {
-                        className: oo.a.forgotLink,
+                        className: eo.a.forgotLink,
                         to: "/forgot"
                     }, "Forgot Password?"))
                 }
-            }]) && uo(e.prototype, o), r && uo(e, r), Object.defineProperty(e, "prototype", {
+            }]) && co(e.prototype, o), r && co(e, r), Object.defineProperty(e, "prototype", {
                 writable: !1
             }), i
         }(a.a.Component);
-        go.propTypes = {
+        _o.propTypes = {
             done: I.a.func.isRequired,
             onLink: I.a.func,
             user: I.a.object
         };
-        var yo = Nt(go);
+        var go = St(_o);
 
-        function bo(t) {
-            return (bo = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function(t) {
+        function yo(t) {
+            return (yo = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function(t) {
                 return typeof t
             } : function(t) {
                 return t && "function" == typeof Symbol && t.constructor === Symbol && t !== Symbol.prototype ? "symbol" : typeof t
             })(t)
         }
 
-        function vo() {
+        function bo() {
             /*! regenerator-runtime -- Copyright (c) 2014-present, Facebook, Inc. -- license (MIT): https://github.com/facebook/regenerator/blob/main/LICENSE */
-            vo = function() {
+            bo = function() {
                 return t
             };
             var t = {},
@@ -5805,7 +5804,7 @@
                                 if ("throw" !== l.type) {
                                     var u = l.arg,
                                         p = u.value;
-                                    return p && "object" == bo(p) && o.call(p, "__await") ? e.resolve(p.__await).then((function(t) {
+                                    return p && "object" == yo(p) && o.call(p, "__await") ? e.resolve(p.__await).then((function(t) {
                                         r("next", t, s, i)
                                     }), (function(t) {
                                         r("throw", t, s, i)
@@ -5998,7 +5997,7 @@
             }, t
         }
 
-        function wo(t, e, o, r, a, n, s) {
+        function vo(t, e, o, r, a, n, s) {
             try {
                 var i = t[n](s),
                     l = i.value
@@ -6008,7 +6007,7 @@
             i.done ? e(l) : Promise.resolve(l).then(r, a)
         }
 
-        function ko(t) {
+        function wo(t) {
             return function() {
                 var e = this,
                     o = arguments;
@@ -6016,31 +6015,31 @@
                     var n = t.apply(e, o);
 
                     function s(t) {
-                        wo(n, r, a, s, i, "next", t)
+                        vo(n, r, a, s, i, "next", t)
                     }
 
                     function i(t) {
-                        wo(n, r, a, s, i, "throw", t)
+                        vo(n, r, a, s, i, "throw", t)
                     }
                     s(void 0)
                 }))
             }
         }
 
-        function xo(t, e) {
+        function ko(t, e) {
             for (var o = 0; o < e.length; o++) {
                 var r = e[o];
                 r.enumerable = r.enumerable || !1, r.configurable = !0, "value" in r && (r.writable = !0), Object.defineProperty(t, r.key, r)
             }
         }
 
-        function Eo(t, e) {
-            return (Eo = Object.setPrototypeOf ? Object.setPrototypeOf.bind() : function(t, e) {
+        function xo(t, e) {
+            return (xo = Object.setPrototypeOf ? Object.setPrototypeOf.bind() : function(t, e) {
                 return t.__proto__ = e, t
             })(t, e)
         }
 
-        function Co(t) {
+        function Eo(t) {
             var e = function() {
                 if ("undefined" == typeof Reflect || !Reflect.construct) return !1;
                 if (Reflect.construct.sham) return !1;
@@ -6052,32 +6051,32 @@
                 }
             }();
             return function() {
-                var o, r = Lo(t);
+                var o, r = Oo(t);
                 if (e) {
-                    var a = Lo(this).constructor;
+                    var a = Oo(this).constructor;
                     o = Reflect.construct(r, arguments, a)
                 } else o = r.apply(this, arguments);
-                return jo(this, o)
+                return Co(this, o)
             }
         }
 
-        function jo(t, e) {
-            if (e && ("object" === bo(e) || "function" == typeof e)) return e;
+        function Co(t, e) {
+            if (e && ("object" === yo(e) || "function" == typeof e)) return e;
             if (void 0 !== e) throw new TypeError("Derived constructors may only return object or undefined");
-            return Oo(t)
+            return jo(t)
         }
 
-        function Oo(t) {
+        function jo(t) {
             if (void 0 === t) throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
             return t
         }
 
-        function Lo(t) {
-            return (Lo = Object.setPrototypeOf ? Object.getPrototypeOf.bind() : function(t) {
+        function Oo(t) {
+            return (Oo = Object.setPrototypeOf ? Object.getPrototypeOf.bind() : function(t) {
                 return t.__proto__ || Object.getPrototypeOf(t)
             })(t)
         }
-        var Ao = function(t) {
+        var Lo = function(t) {
             ! function(t, e) {
                 if ("function" != typeof e && null !== e) throw new TypeError("Super expression must either be null or a function");
                 t.prototype = Object.create(e && e.prototype, {
@@ -6088,33 +6087,33 @@
                     }
                 }), Object.defineProperty(t, "prototype", {
                     writable: !1
-                }), e && Eo(t, e)
+                }), e && xo(t, e)
             }(l, t);
-            var e, o, r, n, s, i = Co(l);
+            var e, o, r, n, s, i = Eo(l);
 
             function l(t) {
                 var e;
                 return function(t, e) {
                     if (!(t instanceof e)) throw new TypeError("Cannot call a class as a function")
-                }(this, l), (e = i.call(this, t)).state = {}, e.done = e.done.bind(Oo(e)), e
+                }(this, l), (e = i.call(this, t)).state = {}, e.done = e.done.bind(jo(e)), e
             }
             return e = l, (o = [{
                 key: "componentDidMount",
-                value: (s = ko(vo().mark((function t() {
-                    return vo().wrap((function(t) {
+                value: (s = wo(bo().mark((function t() {
+                    return bo().wrap((function(t) {
                         for (;;) switch (t.prev = t.next) {
                             case 0:
-                                return ot(), t.next = 3, this.props.user.getData();
+                                return et(), t.next = 3, this.props.user.getData();
                             case 3:
                                 if (!t.sent) {
                                     t.next = 8;
                                     break
                                 }
-                                return t.next = 7, rt();
+                                return t.next = 7, ot();
                             case 7:
                                 window.location.href = t.sent;
                             case 8:
-                                at();
+                                rt();
                             case 9:
                             case "end":
                                 return t.stop()
@@ -6125,18 +6124,18 @@
                 })
             }, {
                 key: "done",
-                value: (n = ko(vo().mark((function t(e) {
+                value: (n = wo(bo().mark((function t(e) {
                     var o;
-                    return vo().wrap((function(t) {
+                    return bo().wrap((function(t) {
                         for (;;) switch (t.prev = t.next) {
                             case 0:
-                                if (!nt()) {
+                                if (!at()) {
                                     t.next = 3;
                                     break
                                 }
                                 return window.close(), t.abrupt("return");
                             case 3:
-                                return t.next = 5, rt();
+                                return t.next = 5, ot();
                             case 5:
                                 o = t.sent, window.location.href = o;
                             case 7:
@@ -6155,53 +6154,53 @@
                         style: {
                             backgroundColor: "#0bc2cf"
                         }
-                    }, a.a.createElement(xt, {
+                    }, a.a.createElement(kt, {
                         title: "Login | Blooket",
                         desc: "Login to your Blooket account to create sets, host games, discover new sets, unlock Blooks, view stats, update your account, and manage your Blooks."
-                    }), a.a.createElement(mt, {
+                    }), a.a.createElement(ht, {
                         rightLink: "/signup",
                         rightText: "Sign Up"
                     }), a.a.createElement("div", {
                         className: D.a.regularBody
-                    }, a.a.createElement(yo, {
+                    }, a.a.createElement(go, {
                         done: this.done
                     })))
                 }
-            }]) && xo(e.prototype, o), r && xo(e, r), Object.defineProperty(e, "prototype", {
+            }]) && ko(e.prototype, o), r && ko(e, r), Object.defineProperty(e, "prototype", {
                 writable: !1
             }), l
         }(a.a.Component);
-        Ao.propTypes = {
+        Lo.propTypes = {
             user: I.a.object
         };
-        var zo = Nt(Object(c.g)(Object(i.b)((function(t) {
+        var Ao = St(Object(c.g)(Object(i.b)((function(t) {
             return {}
         }), (function(t) {
             return Object(f.b)({}, t)
-        }))(Ao)));
+        }))(Lo)));
 
-        function Po(t) {
-            return (Po = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function(t) {
+        function zo(t) {
+            return (zo = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function(t) {
                 return typeof t
             } : function(t) {
                 return t && "function" == typeof Symbol && t.constructor === Symbol && t !== Symbol.prototype ? "symbol" : typeof t
             })(t)
         }
 
-        function So(t, e) {
+        function Po(t, e) {
             for (var o = 0; o < e.length; o++) {
                 var r = e[o];
                 r.enumerable = r.enumerable || !1, r.configurable = !0, "value" in r && (r.writable = !0), Object.defineProperty(t, r.key, r)
             }
         }
 
-        function No(t, e) {
-            return (No = Object.setPrototypeOf ? Object.setPrototypeOf.bind() : function(t, e) {
+        function So(t, e) {
+            return (So = Object.setPrototypeOf ? Object.setPrototypeOf.bind() : function(t, e) {
                 return t.__proto__ = e, t
             })(t, e)
         }
 
-        function Bo(t) {
+        function No(t) {
             var e = function() {
                 if ("undefined" == typeof Reflect || !Reflect.construct) return !1;
                 if (Reflect.construct.sham) return !1;
@@ -6213,17 +6212,17 @@
                 }
             }();
             return function() {
-                var o, r = Io(t);
+                var o, r = To(t);
                 if (e) {
-                    var a = Io(this).constructor;
+                    var a = To(this).constructor;
                     o = Reflect.construct(r, arguments, a)
                 } else o = r.apply(this, arguments);
-                return To(this, o)
+                return Bo(this, o)
             }
         }
 
-        function To(t, e) {
-            if (e && ("object" === Po(e) || "function" == typeof e)) return e;
+        function Bo(t, e) {
+            if (e && ("object" === zo(e) || "function" == typeof e)) return e;
             if (void 0 !== e) throw new TypeError("Derived constructors may only return object or undefined");
             return function(t) {
                 if (void 0 === t) throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
@@ -6231,15 +6230,15 @@
             }(t)
         }
 
-        function Io(t) {
-            return (Io = Object.setPrototypeOf ? Object.getPrototypeOf.bind() : function(t) {
+        function To(t) {
+            return (To = Object.setPrototypeOf ? Object.getPrototypeOf.bind() : function(t) {
                 return t.__proto__ || Object.getPrototypeOf(t)
             })(t)
         }
 
-        function Mo() {
+        function Io() {
             /*! regenerator-runtime -- Copyright (c) 2014-present, Facebook, Inc. -- license (MIT): https://github.com/facebook/regenerator/blob/main/LICENSE */
-            Mo = function() {
+            Io = function() {
                 return t
             };
             var t = {},
@@ -6355,7 +6354,7 @@
                                 if ("throw" !== l.type) {
                                     var u = l.arg,
                                         p = u.value;
-                                    return p && "object" == Po(p) && o.call(p, "__await") ? e.resolve(p.__await).then((function(t) {
+                                    return p && "object" == zo(p) && o.call(p, "__await") ? e.resolve(p.__await).then((function(t) {
                                         r("next", t, s, i)
                                     }), (function(t) {
                                         r("throw", t, s, i)
@@ -6548,7 +6547,7 @@
             }, t
         }
 
-        function Ro(t, e, o, r, a, n, s) {
+        function Mo(t, e, o, r, a, n, s) {
             try {
                 var i = t[n](s),
                     l = i.value
@@ -6558,7 +6557,7 @@
             i.done ? e(l) : Promise.resolve(l).then(r, a)
         }
 
-        function Do(t) {
+        function Ro(t) {
             return function() {
                 var e = this,
                     o = arguments;
@@ -6566,22 +6565,22 @@
                     var n = t.apply(e, o);
 
                     function s(t) {
-                        Ro(n, r, a, s, i, "next", t)
+                        Mo(n, r, a, s, i, "next", t)
                     }
 
                     function i(t) {
-                        Ro(n, r, a, s, i, "throw", t)
+                        Mo(n, r, a, s, i, "throw", t)
                     }
                     s(void 0)
                 }))
             }
         }
-        var Fo = function() {
-                var t = Do(Mo().mark((function t(e) {
-                    return Mo().wrap((function(t) {
+        var Do = function() {
+                var t = Ro(Io().mark((function t(e) {
+                    return Io().wrap((function(t) {
                         for (;;) switch (t.prev = t.next) {
                             case 0:
-                                return t.prev = 0, t.next = 3, X.post("/api/users/logout", {});
+                                return t.prev = 0, t.next = 3, K.post("/api/users/logout", {});
                             case 3:
                                 t.next = 8;
                                 break;
@@ -6605,7 +6604,7 @@
                     return t.apply(this, arguments)
                 }
             }(),
-            Go = function(t) {
+            Fo = function(t) {
                 ! function(t, e) {
                     if ("function" != typeof e && null !== e) throw new TypeError("Super expression must either be null or a function");
                     t.prototype = Object.create(e && e.prototype, {
@@ -6616,9 +6615,9 @@
                         }
                     }), Object.defineProperty(t, "prototype", {
                         writable: !1
-                    }), e && No(t, e)
+                    }), e && So(t, e)
                 }(i, t);
-                var e, o, r, n, s = Bo(i);
+                var e, o, r, n, s = No(i);
 
                 function i(t) {
                     var e;
@@ -6630,11 +6629,11 @@
                 }
                 return e = i, (o = [{
                     key: "componentDidMount",
-                    value: (n = Do(Mo().mark((function t() {
-                        return Mo().wrap((function(t) {
+                    value: (n = Ro(Io().mark((function t() {
+                        return Io().wrap((function(t) {
                             for (;;) switch (t.prev = t.next) {
                                 case 0:
-                                    return t.next = 2, Fo(this.props.user);
+                                    return t.next = 2, Do(this.props.user);
                                 case 2:
                                     this.setState({
                                         loggedOut: !0
@@ -6654,28 +6653,28 @@
                             to: "/login"
                         }) : null
                     }
-                }]) && So(e.prototype, o), r && So(e, r), Object.defineProperty(e, "prototype", {
+                }]) && Po(e.prototype, o), r && Po(e, r), Object.defineProperty(e, "prototype", {
                     writable: !1
                 }), i
             }(a.a.Component);
-        Go.propTypes = {
+        Fo.propTypes = {
             user: I.a.object
         };
-        var Uo = Nt(Object(c.g)(Go)),
-            Yo = o("fv3p"),
-            Ho = o.n(Yo);
+        var Go = St(Object(c.g)(Fo)),
+            Uo = o("fv3p"),
+            Yo = o.n(Uo);
 
-        function Wo(t) {
-            return (Wo = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function(t) {
+        function Ho(t) {
+            return (Ho = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function(t) {
                 return typeof t
             } : function(t) {
                 return t && "function" == typeof Symbol && t.constructor === Symbol && t !== Symbol.prototype ? "symbol" : typeof t
             })(t)
         }
 
-        function Qo() {
+        function Wo() {
             /*! regenerator-runtime -- Copyright (c) 2014-present, Facebook, Inc. -- license (MIT): https://github.com/facebook/regenerator/blob/main/LICENSE */
-            Qo = function() {
+            Wo = function() {
                 return t
             };
             var t = {},
@@ -6791,7 +6790,7 @@
                                 if ("throw" !== l.type) {
                                     var u = l.arg,
                                         p = u.value;
-                                    return p && "object" == Wo(p) && o.call(p, "__await") ? e.resolve(p.__await).then((function(t) {
+                                    return p && "object" == Ho(p) && o.call(p, "__await") ? e.resolve(p.__await).then((function(t) {
                                         r("next", t, s, i)
                                     }), (function(t) {
                                         r("throw", t, s, i)
@@ -6984,7 +6983,7 @@
             }, t
         }
 
-        function Ko(t, e) {
+        function Qo(t, e) {
             var o = Object.keys(t);
             if (Object.getOwnPropertySymbols) {
                 var r = Object.getOwnPropertySymbols(t);
@@ -6995,19 +6994,19 @@
             return o
         }
 
-        function Xo(t) {
+        function Ko(t) {
             for (var e = 1; e < arguments.length; e++) {
                 var o = null != arguments[e] ? arguments[e] : {};
-                e % 2 ? Ko(Object(o), !0).forEach((function(e) {
-                    Zo(t, e, o[e])
-                })) : Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(o)) : Ko(Object(o)).forEach((function(e) {
+                e % 2 ? Qo(Object(o), !0).forEach((function(e) {
+                    Xo(t, e, o[e])
+                })) : Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(o)) : Qo(Object(o)).forEach((function(e) {
                     Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(o, e))
                 }))
             }
             return t
         }
 
-        function Zo(t, e, o) {
+        function Xo(t, e, o) {
             return e in t ? Object.defineProperty(t, e, {
                 value: o,
                 enumerable: !0,
@@ -7016,7 +7015,7 @@
             }) : t[e] = o, t
         }
 
-        function Jo(t, e, o, r, a, n, s) {
+        function Zo(t, e, o, r, a, n, s) {
             try {
                 var i = t[n](s),
                     l = i.value
@@ -7026,7 +7025,7 @@
             i.done ? e(l) : Promise.resolve(l).then(r, a)
         }
 
-        function qo(t) {
+        function Jo(t) {
             return function() {
                 var e = this,
                     o = arguments;
@@ -7034,31 +7033,31 @@
                     var n = t.apply(e, o);
 
                     function s(t) {
-                        Jo(n, r, a, s, i, "next", t)
+                        Zo(n, r, a, s, i, "next", t)
                     }
 
                     function i(t) {
-                        Jo(n, r, a, s, i, "throw", t)
+                        Zo(n, r, a, s, i, "throw", t)
                     }
                     s(void 0)
                 }))
             }
         }
 
-        function Vo(t, e) {
+        function qo(t, e) {
             for (var o = 0; o < e.length; o++) {
                 var r = e[o];
                 r.enumerable = r.enumerable || !1, r.configurable = !0, "value" in r && (r.writable = !0), Object.defineProperty(t, r.key, r)
             }
         }
 
-        function $o(t, e) {
-            return ($o = Object.setPrototypeOf ? Object.setPrototypeOf.bind() : function(t, e) {
+        function Vo(t, e) {
+            return (Vo = Object.setPrototypeOf ? Object.setPrototypeOf.bind() : function(t, e) {
                 return t.__proto__ = e, t
             })(t, e)
         }
 
-        function tr(t) {
+        function $o(t) {
             var e = function() {
                 if ("undefined" == typeof Reflect || !Reflect.construct) return !1;
                 if (Reflect.construct.sham) return !1;
@@ -7070,32 +7069,32 @@
                 }
             }();
             return function() {
-                var o, r = rr(t);
+                var o, r = or(t);
                 if (e) {
-                    var a = rr(this).constructor;
+                    var a = or(this).constructor;
                     o = Reflect.construct(r, arguments, a)
                 } else o = r.apply(this, arguments);
-                return er(this, o)
+                return tr(this, o)
             }
         }
 
-        function er(t, e) {
-            if (e && ("object" === Wo(e) || "function" == typeof e)) return e;
+        function tr(t, e) {
+            if (e && ("object" === Ho(e) || "function" == typeof e)) return e;
             if (void 0 !== e) throw new TypeError("Derived constructors may only return object or undefined");
-            return or(t)
+            return er(t)
         }
 
-        function or(t) {
+        function er(t) {
             if (void 0 === t) throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
             return t
         }
 
-        function rr(t) {
-            return (rr = Object.setPrototypeOf ? Object.getPrototypeOf.bind() : function(t) {
+        function or(t) {
+            return (or = Object.setPrototypeOf ? Object.getPrototypeOf.bind() : function(t) {
                 return t.__proto__ || Object.getPrototypeOf(t)
             })(t)
         }
-        var ar = function(t) {
+        var rr = function(t) {
             ! function(t, e) {
                 if ("function" != typeof e && null !== e) throw new TypeError("Super expression must either be null or a function");
                 t.prototype = Object.create(e && e.prototype, {
@@ -7106,9 +7105,9 @@
                     }
                 }), Object.defineProperty(t, "prototype", {
                     writable: !1
-                }), e && $o(t, e)
+                }), e && Vo(t, e)
             }(i, t);
-            var e, o, r, n, s = tr(i);
+            var e, o, r, n, s = $o(i);
 
             function i(t) {
                 var e;
@@ -7122,23 +7121,23 @@
                     recaptchaToken: "",
                     recaptchaSiteKey: "",
                     isDev: !1
-                }, e.loading = !1, e.onForget = e.onForget.bind(or(e)), e.onEmailTextUpdate = e.onEmailTextUpdate.bind(or(e)), e
+                }, e.loading = !1, e.onForget = e.onForget.bind(er(e)), e.onEmailTextUpdate = e.onEmailTextUpdate.bind(er(e)), e
             }
             return e = i, (o = [{
                 key: "componentDidMount",
                 value: function() {
                     var t = this;
-                    X.get("/api/users/check-auth").then((function() {
-                        X.get("/api/config").then(function() {
-                            var e = qo(Qo().mark((function e(o) {
+                    K.get("/api/users/check-auth").then((function() {
+                        K.get("/api/config").then(function() {
+                            var e = Jo(Wo().mark((function e(o) {
                                 var r;
-                                return Qo().wrap((function(e) {
+                                return Wo().wrap((function(e) {
                                     for (;;) switch (e.prev = e.next) {
                                         case 0:
                                             o.data && o.data.googleClientId ? (r = {
                                                 isDev: o.data.isDev,
                                                 recaptchaSiteKey: o.data.recaptchaSiteKey
-                                            }, r = Xo(Xo({}, t.state), r), t.setState(r)) : Object(p.b)(new Error("could not get googleClientId from backend, sign up with google disabled"));
+                                            }, r = Ko(Ko({}, t.state), r), t.setState(r)) : Object(p.b)(new Error("could not get googleClientId from backend, sign up with google disabled"));
                                         case 1:
                                         case "end":
                                             return e.stop()
@@ -7153,9 +7152,9 @@
                 }
             }, {
                 key: "onForget",
-                value: (n = qo(Qo().mark((function t(e) {
+                value: (n = Jo(Wo().mark((function t(e) {
                     var o, r, a = this;
-                    return Qo().wrap((function(t) {
+                    return Wo().wrap((function(t) {
                         for (;;) switch (t.prev = t.next) {
                             case 0:
                                 if (e.preventDefault(), !this.loading) {
@@ -7172,7 +7171,7 @@
                                 }
                                 return t.abrupt("return");
                             case 8:
-                                return this.state.email || (o = "Where's The Email?"), r = null, t.prev = 10, t.next = 13, Ce(this.state.recaptchaSiteKey, "forgot");
+                                return this.state.email || (o = "Where's The Email?"), r = null, t.prev = 10, t.next = 13, Ee(this.state.recaptchaSiteKey, "forgot");
                             case 13:
                                 (r = t.sent) || (o = "Your sessions failed the reCAPTCHA. Please try again or contact us."), t.next = 21;
                                 break;
@@ -7189,7 +7188,7 @@
                                     else {
                                         var t = {};
                                         if (!a.state.recaptchaToken) throw new Error("cannot check recaptcha without token");
-                                        t["X-Recaptcha-Token"] = a.state.recaptchaToken, X.post("/api/users/forgot", {
+                                        t["X-Recaptcha-Token"] = a.state.recaptchaToken, K.post("/api/users/forgot", {
                                             email: a.state.email.toLowerCase()
                                         }, {
                                             headers: t
@@ -7202,9 +7201,9 @@
                                                 emailError: t.data.msg
                                             })
                                         })).catch(function() {
-                                            var t = qo(Qo().mark((function t(e) {
+                                            var t = Jo(Wo().mark((function t(e) {
                                                 var o, r, n;
-                                                return Qo().wrap((function(t) {
+                                                return Wo().wrap((function(t) {
                                                     for (;;) switch (t.prev = t.next) {
                                                         case 0:
                                                             if (!(e && e.response && 400 === e.response.status && e.response.data && e.response.data.msg)) {
@@ -7268,10 +7267,10 @@
                 value: function() {
                     return a.a.createElement("div", {
                         className: M.isMobile ? D.a.mBody : D.a.body
-                    }, a.a.createElement(xt, {
+                    }, a.a.createElement(kt, {
                         title: "Request a Password Reset | Blooket",
                         desc: "Request an email to reset your password if you have lost or forgotten it. An email will then be sent with instructions on how to reset your password."
-                    }), a.a.createElement(mt, {
+                    }), a.a.createElement(ht, {
                         rightText: "Login",
                         rightLink: "/login"
                     }), a.a.createElement("div", {
@@ -7280,54 +7279,54 @@
                         className: D.a.regularBody
                     }, a.a.createElement("form", {
                         onSubmit: this.onForget,
-                        className: Ho.a.container
+                        className: Yo.a.container
                     }, a.a.createElement("div", {
-                        className: Ho.a.containerHeader
+                        className: Yo.a.containerHeader
                     }, this.state.success ? "Reset Email Sent!" : "Request Password Reset"), this.state.success ? null : a.a.createElement("div", null, a.a.createElement("div", {
-                        className: G()(M.isMobile ? Ho.a.mInputContainer : Ho.a.inputContainer, Zo({}, Ho.a.inputFilled, this.state.email), Zo({}, Ho.a.inputError, this.state.emailError))
+                        className: G()(M.isMobile ? Yo.a.mInputContainer : Yo.a.inputContainer, Xo({}, Yo.a.inputFilled, this.state.email), Xo({}, Yo.a.inputError, this.state.emailError))
                     }, a.a.createElement("i", {
-                        className: G()(Ho.a.icon, "fas fa-envelope", Zo({}, Ho.a.iconFilled, this.state.email), Zo({}, Ho.a.iconError, this.state.emailError))
+                        className: G()(Yo.a.icon, "fas fa-envelope", Xo({}, Yo.a.iconFilled, this.state.email), Xo({}, Yo.a.iconError, this.state.emailError))
                     }), a.a.createElement("input", {
-                        className: G()(M.isMobile ? Ho.a.mInput : Ho.a.input, Zo({}, Ho.a.inputError, this.state.emailError)),
+                        className: G()(M.isMobile ? Yo.a.mInput : Yo.a.input, Xo({}, Yo.a.inputError, this.state.emailError)),
                         placeholder: "Email",
                         onChange: this.onEmailTextUpdate,
                         type: "text",
                         autoFocus: M.isMobile ? "" : "autofocus"
-                    })), this.state.loading ? a.a.createElement(ve, null) : a.a.createElement("input", {
+                    })), this.state.loading ? a.a.createElement(be, null) : a.a.createElement("input", {
                         type: "submit",
                         value: "Send Email",
-                        className: G()(Ho.a.button, Zo({}, Ho.a.buttonFilled, this.state.email), Zo({}, Ho.a.buttonError, this.state.emailError)),
+                        className: G()(Yo.a.button, Xo({}, Yo.a.buttonFilled, this.state.email), Xo({}, Yo.a.buttonError, this.state.emailError)),
                         tabIndex: 0
                     })), this.state.emailError ? a.a.createElement("div", {
-                        className: Ho.a.errorContainer
+                        className: Yo.a.errorContainer
                     }, a.a.createElement("i", {
-                        className: G()(Ho.a.errorIcon, "fas fa-times-circle")
+                        className: G()(Yo.a.errorIcon, "fas fa-times-circle")
                     }), a.a.createElement("div", {
-                        className: Ho.a.errorText
+                        className: Yo.a.errorText
                     }, this.state.emailError)) : null)))
                 }
-            }]) && Vo(e.prototype, o), r && Vo(e, r), Object.defineProperty(e, "prototype", {
+            }]) && qo(e.prototype, o), r && qo(e, r), Object.defineProperty(e, "prototype", {
                 writable: !1
             }), i
         }(a.a.Component);
-        ar.propTypes = {};
-        var nr = Object(c.g)(Object(i.b)((function() {
+        rr.propTypes = {};
+        var ar = Object(c.g)(Object(i.b)((function() {
                 return {}
             }), (function(t) {
                 return Object(f.b)({}, t)
-            }))(ar)),
-            sr = o("mZRi"),
-            ir = o.n(sr);
+            }))(rr)),
+            nr = o("mZRi"),
+            sr = o.n(nr);
 
-        function lr(t) {
-            return (lr = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function(t) {
+        function ir(t) {
+            return (ir = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function(t) {
                 return typeof t
             } : function(t) {
                 return t && "function" == typeof Symbol && t.constructor === Symbol && t !== Symbol.prototype ? "symbol" : typeof t
             })(t)
         }
 
-        function cr(t, e, o) {
+        function lr(t, e, o) {
             return e in t ? Object.defineProperty(t, e, {
                 value: o,
                 enumerable: !0,
@@ -7336,20 +7335,20 @@
             }) : t[e] = o, t
         }
 
-        function ur(t, e) {
+        function cr(t, e) {
             for (var o = 0; o < e.length; o++) {
                 var r = e[o];
                 r.enumerable = r.enumerable || !1, r.configurable = !0, "value" in r && (r.writable = !0), Object.defineProperty(t, r.key, r)
             }
         }
 
-        function pr(t, e) {
-            return (pr = Object.setPrototypeOf ? Object.setPrototypeOf.bind() : function(t, e) {
+        function ur(t, e) {
+            return (ur = Object.setPrototypeOf ? Object.setPrototypeOf.bind() : function(t, e) {
                 return t.__proto__ = e, t
             })(t, e)
         }
 
-        function fr(t) {
+        function pr(t) {
             var e = function() {
                 if ("undefined" == typeof Reflect || !Reflect.construct) return !1;
                 if (Reflect.construct.sham) return !1;
@@ -7361,32 +7360,32 @@
                 }
             }();
             return function() {
-                var o, r = dr(t);
+                var o, r = mr(t);
                 if (e) {
-                    var a = dr(this).constructor;
+                    var a = mr(this).constructor;
                     o = Reflect.construct(r, arguments, a)
                 } else o = r.apply(this, arguments);
-                return hr(this, o)
+                return fr(this, o)
             }
         }
 
-        function hr(t, e) {
-            if (e && ("object" === lr(e) || "function" == typeof e)) return e;
+        function fr(t, e) {
+            if (e && ("object" === ir(e) || "function" == typeof e)) return e;
             if (void 0 !== e) throw new TypeError("Derived constructors may only return object or undefined");
-            return mr(t)
+            return hr(t)
         }
 
-        function mr(t) {
+        function hr(t) {
             if (void 0 === t) throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
             return t
         }
 
-        function dr(t) {
-            return (dr = Object.setPrototypeOf ? Object.getPrototypeOf.bind() : function(t) {
+        function mr(t) {
+            return (mr = Object.setPrototypeOf ? Object.getPrototypeOf.bind() : function(t) {
                 return t.__proto__ || Object.getPrototypeOf(t)
             })(t)
         }
-        var _r = function(t) {
+        var dr = function(t) {
             ! function(t, e) {
                 if ("function" != typeof e && null !== e) throw new TypeError("Super expression must either be null or a function");
                 t.prototype = Object.create(e && e.prototype, {
@@ -7397,9 +7396,9 @@
                     }
                 }), Object.defineProperty(t, "prototype", {
                     writable: !1
-                }), e && pr(t, e)
+                }), e && ur(t, e)
             }(s, t);
-            var e, o, r, n = fr(s);
+            var e, o, r, n = pr(s);
 
             function s(t) {
                 var e;
@@ -7415,7 +7414,7 @@
                     token: "",
                     success: !1,
                     loading: !1
-                }, e.onReset = e.onReset.bind(mr(e)), e.onPasswordTextUpdate = e.onPasswordTextUpdate.bind(mr(e)), e.onPassword2TextUpdate = e.onPassword2TextUpdate.bind(mr(e)), e
+                }, e.onReset = e.onReset.bind(hr(e)), e.onPasswordTextUpdate = e.onPasswordTextUpdate.bind(hr(e)), e.onPassword2TextUpdate = e.onPassword2TextUpdate.bind(hr(e)), e
             }
             return e = s, (o = [{
                 key: "componentDidMount",
@@ -7441,7 +7440,7 @@
                     }, (function() {
                         e.state.emailError || e.state.passwordError || e.state.password2Error ? e.setState({
                             loading: !1
-                        }) : X.put("/api/users/resetpass", {
+                        }) : K.put("/api/users/resetpass", {
                             email: e.state.email.toLowerCase(),
                             token: e.state.token,
                             password: e.state.password
@@ -7484,27 +7483,27 @@
                     var t = this;
                     return this.props.match.params ? a.a.createElement("div", {
                         className: M.isMobile ? D.a.mBody : D.a.body
-                    }, a.a.createElement(xt, {
+                    }, a.a.createElement(kt, {
                         title: "Reset Password | Blooket",
                         desc: "Reset your Blooket password. You must have a valid token received from an email to access this page."
-                    }), a.a.createElement(mt, null), a.a.createElement("div", {
+                    }), a.a.createElement(ht, null), a.a.createElement("div", {
                         className: D.a.slantBackground
                     }), a.a.createElement("div", {
                         className: D.a.regularBody
                     }, a.a.createElement("form", {
                         onSubmit: this.onReset,
-                        className: ir.a.container
+                        className: sr.a.container
                     }, a.a.createElement("div", {
-                        className: ir.a.containerHeader
+                        className: sr.a.containerHeader
                     }, this.state.success ? "Password Successfully Reset!" : "Reset Password"), this.state.success ? a.a.createElement(l.b, {
-                        className: ir.a.link,
+                        className: sr.a.link,
                         to: "/login"
                     }, "Login") : a.a.createElement("div", null, a.a.createElement("div", {
-                        className: G()(ir.a.inputContainer, cr({}, ir.a.inputFilled, this.state.email), cr({}, ir.a.inputError, this.state.emailError))
+                        className: G()(sr.a.inputContainer, lr({}, sr.a.inputFilled, this.state.email), lr({}, sr.a.inputError, this.state.emailError))
                     }, a.a.createElement("i", {
-                        className: G()(ir.a.icon, "fas fa-envelope", cr({}, ir.a.iconFilled, this.state.email), cr({}, ir.a.iconError, this.state.emailError))
+                        className: G()(sr.a.icon, "fas fa-envelope", lr({}, sr.a.iconFilled, this.state.email), lr({}, sr.a.iconError, this.state.emailError))
                     }), a.a.createElement("input", {
-                        className: G()(ir.a.input, cr({}, ir.a.inputError, this.state.emailError)),
+                        className: G()(sr.a.input, lr({}, sr.a.inputError, this.state.emailError)),
                         placeholder: "Email",
                         onChange: function(e) {
                             return t.setState({
@@ -7515,73 +7514,73 @@
                         type: "text",
                         autoFocus: M.isMobile ? "" : "autofocus"
                     })), a.a.createElement("div", {
-                        className: G()(ir.a.inputContainer, cr({}, ir.a.inputFilled, this.state.password), cr({}, ir.a.inputError, this.state.passwordError))
+                        className: G()(sr.a.inputContainer, lr({}, sr.a.inputFilled, this.state.password), lr({}, sr.a.inputError, this.state.passwordError))
                     }, a.a.createElement("i", {
-                        className: G()(ir.a.icon, "fas fa-lock", cr({}, ir.a.iconFilled, this.state.password), cr({}, ir.a.iconError, this.state.passwordError))
+                        className: G()(sr.a.icon, "fas fa-lock", lr({}, sr.a.iconFilled, this.state.password), lr({}, sr.a.iconError, this.state.passwordError))
                     }), a.a.createElement("input", {
-                        className: G()(ir.a.input, cr({}, ir.a.inputError, this.state.passwordError)),
+                        className: G()(sr.a.input, lr({}, sr.a.inputError, this.state.passwordError)),
                         placeholder: "Password",
                         onChange: this.onPasswordTextUpdate,
                         type: "password"
                     })), a.a.createElement("div", {
-                        className: G()(ir.a.inputContainer, cr({}, ir.a.inputFilled, this.state.password2), cr({}, ir.a.inputError, this.state.password2Error))
+                        className: G()(sr.a.inputContainer, lr({}, sr.a.inputFilled, this.state.password2), lr({}, sr.a.inputError, this.state.password2Error))
                     }, a.a.createElement("i", {
-                        className: G()(ir.a.icon, "fas fa-lock", cr({}, ir.a.iconFilled, this.state.password2), cr({}, ir.a.iconError, this.state.password2Error))
+                        className: G()(sr.a.icon, "fas fa-lock", lr({}, sr.a.iconFilled, this.state.password2), lr({}, sr.a.iconError, this.state.password2Error))
                     }), a.a.createElement("input", {
-                        className: G()(ir.a.input, cr({}, ir.a.inputError, this.state.password2Error)),
+                        className: G()(sr.a.input, lr({}, sr.a.inputError, this.state.password2Error)),
                         placeholder: "Confirm Password",
                         onChange: this.onPassword2TextUpdate,
                         type: "password"
-                    })), this.state.loading ? a.a.createElement(ve, null) : a.a.createElement("input", {
+                    })), this.state.loading ? a.a.createElement(be, null) : a.a.createElement("input", {
                         type: "submit",
                         value: "Reset",
-                        className: G()(ir.a.button, cr({}, ir.a.buttonFilled, this.state.password && this.state.password2 && this.state.email), cr({}, ir.a.buttonError, this.state.passwordError || this.state.password2Error || this.state.emailError)),
+                        className: G()(sr.a.button, lr({}, sr.a.buttonFilled, this.state.password && this.state.password2 && this.state.email), lr({}, sr.a.buttonError, this.state.passwordError || this.state.password2Error || this.state.emailError)),
                         tabIndex: 0
                     })), this.state.passwordError || this.state.password2Error || this.state.emailError ? a.a.createElement("div", {
-                        className: ir.a.errorContainer
+                        className: sr.a.errorContainer
                     }, a.a.createElement("i", {
-                        className: G()(ir.a.errorIcon, "fas fa-times-circle")
+                        className: G()(sr.a.errorIcon, "fas fa-times-circle")
                     }), a.a.createElement("div", {
-                        className: ir.a.errorText
+                        className: sr.a.errorText
                     }, this.state.emailError || this.state.passwordError || this.state.password2Error)) : null))) : a.a.createElement(c.a, {
                         to: "/forgot"
                     })
                 }
-            }]) && ur(e.prototype, o), r && ur(e, r), Object.defineProperty(e, "prototype", {
+            }]) && cr(e.prototype, o), r && cr(e, r), Object.defineProperty(e, "prototype", {
                 writable: !1
             }), s
         }(a.a.Component);
-        _r.propTypes = {
+        dr.propTypes = {
             match: I.a.object
         };
-        var gr = Object(c.g)(Object(i.b)((function() {
+        var _r = Object(c.g)(Object(i.b)((function() {
             return {}
         }), (function(t) {
             return Object(f.b)({}, t)
-        }))(_r));
+        }))(dr));
 
-        function yr(t) {
-            return (yr = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function(t) {
+        function gr(t) {
+            return (gr = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function(t) {
                 return typeof t
             } : function(t) {
                 return t && "function" == typeof Symbol && t.constructor === Symbol && t !== Symbol.prototype ? "symbol" : typeof t
             })(t)
         }
 
-        function br(t, e) {
+        function yr(t, e) {
             for (var o = 0; o < e.length; o++) {
                 var r = e[o];
                 r.enumerable = r.enumerable || !1, r.configurable = !0, "value" in r && (r.writable = !0), Object.defineProperty(t, r.key, r)
             }
         }
 
-        function vr(t, e) {
-            return (vr = Object.setPrototypeOf ? Object.setPrototypeOf.bind() : function(t, e) {
+        function br(t, e) {
+            return (br = Object.setPrototypeOf ? Object.setPrototypeOf.bind() : function(t, e) {
                 return t.__proto__ = e, t
             })(t, e)
         }
 
-        function wr(t) {
+        function vr(t) {
             var e = function() {
                 if ("undefined" == typeof Reflect || !Reflect.construct) return !1;
                 if (Reflect.construct.sham) return !1;
@@ -7593,17 +7592,17 @@
                 }
             }();
             return function() {
-                var o, r = xr(t);
+                var o, r = kr(t);
                 if (e) {
-                    var a = xr(this).constructor;
+                    var a = kr(this).constructor;
                     o = Reflect.construct(r, arguments, a)
                 } else o = r.apply(this, arguments);
-                return kr(this, o)
+                return wr(this, o)
             }
         }
 
-        function kr(t, e) {
-            if (e && ("object" === yr(e) || "function" == typeof e)) return e;
+        function wr(t, e) {
+            if (e && ("object" === gr(e) || "function" == typeof e)) return e;
             if (void 0 !== e) throw new TypeError("Derived constructors may only return object or undefined");
             return function(t) {
                 if (void 0 === t) throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
@@ -7611,12 +7610,12 @@
             }(t)
         }
 
-        function xr(t) {
-            return (xr = Object.setPrototypeOf ? Object.getPrototypeOf.bind() : function(t) {
+        function kr(t) {
+            return (kr = Object.setPrototypeOf ? Object.getPrototypeOf.bind() : function(t) {
                 return t.__proto__ || Object.getPrototypeOf(t)
             })(t)
         }
-        var Er = function(t) {
+        var xr = function(t) {
             ! function(t, e) {
                 if ("function" != typeof e && null !== e) throw new TypeError("Super expression must either be null or a function");
                 t.prototype = Object.create(e && e.prototype, {
@@ -7627,9 +7626,9 @@
                     }
                 }), Object.defineProperty(t, "prototype", {
                     writable: !1
-                }), e && vr(t, e)
+                }), e && br(t, e)
             }(s, t);
-            var e, o, r, n = wr(s);
+            var e, o, r, n = vr(s);
 
             function s(t) {
                 var e;
@@ -7641,7 +7640,7 @@
                 key: "componentDidMount",
                 value: function() {
                     var t = this;
-                    X.get("/api/users/dev").then((function(e) {
+                    K.get("/api/users/dev").then((function(e) {
                         t.setState({
                             user: e.data
                         })
@@ -7656,45 +7655,45 @@
                         to: "/logout"
                     }, "Sign Out"))
                 }
-            }]) && br(e.prototype, o), r && br(e, r), Object.defineProperty(e, "prototype", {
+            }]) && yr(e.prototype, o), r && yr(e, r), Object.defineProperty(e, "prototype", {
                 writable: !1
             }), s
         }(a.a.Component);
-        Er.propTypes = {};
-        Nt(Object(c.g)(Object(i.b)((function() {
+        xr.propTypes = {};
+        St(Object(c.g)(Object(i.b)((function() {
             return {
                 user: I.a.object
             }
         }), (function(t) {
             return Object(f.b)({}, t)
-        }))(Er)));
-        var Cr = o("tMKq"),
-            jr = o.n(Cr),
-            Or = o("J+dS"),
-            Lr = o.n(Or);
+        }))(xr)));
+        var Er = o("tMKq"),
+            Cr = o.n(Er),
+            jr = o("J+dS"),
+            Or = o.n(jr);
 
-        function Ar(t) {
-            return (Ar = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function(t) {
+        function Lr(t) {
+            return (Lr = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function(t) {
                 return typeof t
             } : function(t) {
                 return t && "function" == typeof Symbol && t.constructor === Symbol && t !== Symbol.prototype ? "symbol" : typeof t
             })(t)
         }
 
-        function zr(t, e) {
+        function Ar(t, e) {
             for (var o = 0; o < e.length; o++) {
                 var r = e[o];
                 r.enumerable = r.enumerable || !1, r.configurable = !0, "value" in r && (r.writable = !0), Object.defineProperty(t, r.key, r)
             }
         }
 
-        function Pr(t, e) {
-            return (Pr = Object.setPrototypeOf ? Object.setPrototypeOf.bind() : function(t, e) {
+        function zr(t, e) {
+            return (zr = Object.setPrototypeOf ? Object.setPrototypeOf.bind() : function(t, e) {
                 return t.__proto__ = e, t
             })(t, e)
         }
 
-        function Sr(t) {
+        function Pr(t) {
             var e = function() {
                 if ("undefined" == typeof Reflect || !Reflect.construct) return !1;
                 if (Reflect.construct.sham) return !1;
@@ -7706,17 +7705,17 @@
                 }
             }();
             return function() {
-                var o, r = Br(t);
+                var o, r = Nr(t);
                 if (e) {
-                    var a = Br(this).constructor;
+                    var a = Nr(this).constructor;
                     o = Reflect.construct(r, arguments, a)
                 } else o = r.apply(this, arguments);
-                return Nr(this, o)
+                return Sr(this, o)
             }
         }
 
-        function Nr(t, e) {
-            if (e && ("object" === Ar(e) || "function" == typeof e)) return e;
+        function Sr(t, e) {
+            if (e && ("object" === Lr(e) || "function" == typeof e)) return e;
             if (void 0 !== e) throw new TypeError("Derived constructors may only return object or undefined");
             return function(t) {
                 if (void 0 === t) throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
@@ -7724,12 +7723,12 @@
             }(t)
         }
 
-        function Br(t) {
-            return (Br = Object.setPrototypeOf ? Object.getPrototypeOf.bind() : function(t) {
+        function Nr(t) {
+            return (Nr = Object.setPrototypeOf ? Object.getPrototypeOf.bind() : function(t) {
                 return t.__proto__ || Object.getPrototypeOf(t)
             })(t)
         }
-        var Tr = function(t) {
+        var Br = function(t) {
             ! function(t, e) {
                 if ("function" != typeof e && null !== e) throw new TypeError("Super expression must either be null or a function");
                 t.prototype = Object.create(e && e.prototype, {
@@ -7740,9 +7739,9 @@
                     }
                 }), Object.defineProperty(t, "prototype", {
                     writable: !1
-                }), e && Pr(t, e)
+                }), e && zr(t, e)
             }(s, t);
-            var e, o, r, n = Sr(s);
+            var e, o, r, n = Pr(s);
 
             function s(t) {
                 var e;
@@ -7758,19 +7757,19 @@
                         style: {
                             backgroundColor: "#0bc2cf"
                         }
-                    }, a.a.createElement(xt, {
+                    }, a.a.createElement(kt, {
                         title: "404 | Blooket",
                         desc: "I don't know what is, but this ain't it chief."
-                    }), a.a.createElement(mt, null), a.a.createElement("div", {
+                    }), a.a.createElement(ht, null), a.a.createElement("div", {
                         className: D.a.regularBody
-                    }, a.a.createElement(jr.a, {
+                    }, a.a.createElement(Cr.a, {
                         height: "calc(100vh - 61px)",
                         width: "100vw",
                         style: {
                             padding: 0,
                             margin: 0
                         },
-                        className: Lr.a.particles,
+                        className: Or.a.particles,
                         params: {
                             particles: {
                                 number: {
@@ -7858,40 +7857,40 @@
                             retina_detect: !0
                         }
                     }), a.a.createElement("div", {
-                        className: Lr.a.container
+                        className: Or.a.container
                     }, a.a.createElement("div", {
-                        className: Lr.a.containerHeader
-                    }, "4", a.a.createElement(_e, {
+                        className: Or.a.containerHeader
+                    }, "4", a.a.createElement(de, {
                         name: "Blobfish",
-                        className: Lr.a.blook
+                        className: Or.a.blook
                     }), "4"), a.a.createElement("div", {
-                        className: Lr.a.containerText
+                        className: Or.a.containerText
                     }, "I don't know what you were looking for,", a.a.createElement("br", null), "but it's not this.")))) : a.a.createElement(c.a, {
                         to: "/login"
                     })
                 }
-            }]) && zr(e.prototype, o), r && zr(e, r), Object.defineProperty(e, "prototype", {
+            }]) && Ar(e.prototype, o), r && Ar(e, r), Object.defineProperty(e, "prototype", {
                 writable: !1
             }), s
         }(a.a.Component);
-        Tr.propTypes = {
+        Br.propTypes = {
             match: I.a.object
         };
-        var Ir, Mr, Rr = Object(c.g)(Object(i.b)((function() {
+        var Tr, Ir, Mr = Object(c.g)(Object(i.b)((function() {
                 return {}
             }), (function(t) {
                 return Object(f.b)({}, t)
-            }))(Tr)),
-            Dr = (o("35eG"), ["basil", "gold", "crypto"]),
-            Fr = function(t) {
+            }))(Br)),
+            Rr = (o("35eG"), ["basil", "gold", "crypto"]),
+            Dr = function(t) {
                 var e = !1;
-                Dr.forEach((function(o) {
+                Rr.forEach((function(o) {
                     t.toLowerCase().includes(o) && (e = !0)
-                })), e && (window.removeEventListener("beforeunload", tt), window.location.href = "https://www.blooket.com/")
+                })), e && (window.removeEventListener("beforeunload", $), window.location.href = "https://www.blooket.com/")
             };
-        window.alert = Fr, window.prompt = Fr, window.confirm = Fr, Ir = new URL(window.location.href).hostname, Mr = !1, ["blooket.com", "packcomputing.com", "localhost", "127.0.0.1"].forEach((function(t) {
-                Ir.endsWith(t) && (Mr = !0)
-            })), Mr || (window.location.href = "https://www.blooket.com/terms"),
+        window.alert = Dr, window.prompt = Dr, window.confirm = Dr, Tr = new URL(window.location.href).hostname, Ir = !1, ["blooket.com", "packcomputing.com", "localhost", "127.0.0.1"].forEach((function(t) {
+                Tr.endsWith(t) && (Ir = !0)
+            })), Ir || (window.location.href = "https://www.blooket.com/terms"),
             function() {
                 var t = !1;
                 window.blooketUtility && (t = !0), localStorage.getItem("blooket-utility") && (t = !0), localStorage.removeItem("blooket-utility"), t && (window.location.href = "https://www.blooket.com/terms"), delete window.blooketUtility, delete window._fetch;
@@ -7900,7 +7899,7 @@
                 var o = e.contentWindow;
                 window.fetch = o.fetch, XMLHttpRequest.prototype.open = o.XMLHttpRequest.prototype.open, XMLHttpRequest.prototype.send = o.XMLHttpRequest.prototype.send, String.prototype.concat = o.String.prototype.concat, window.ontouchstart = null, window.onkeydown = null
             }();
-        X.get("/api/config").then((function(t) {
+        K.get("/api/config").then((function(t) {
             var e = t.data.securityBase;
             if (u.a.securityBaseURL = e, t.data.recaptchaSiteKey) {
                 var o = document.createElement("script");
@@ -7909,33 +7908,33 @@
                 r.parentNode.insertBefore(o, r)
             }
         }));
-        var Gr, Ur, Yr, Hr, Wr = (Ur = [N, m()()], Yr = [f.a.apply(void 0, Ur), B()], (Hr = Object(f.e)(O, Gr, f.d.apply(void 0, Yr))).runSaga = N.run(S), Hr);
+        var Fr, Gr, Ur, Yr, Hr = (Gr = [N, m()()], Ur = [f.a.apply(void 0, Gr), B()], (Yr = Object(f.e)(O, Fr, f.d.apply(void 0, Ur))).runSaga = N.run(S), Yr);
         s.a.render(a.a.createElement(p.a, null, a.a.createElement(i.a, {
-            store: Wr
-        }, a.a.createElement(St.Provider, {
-            value: new Bt
+            store: Hr
+        }, a.a.createElement(Pt.Provider, {
+            value: new Nt
         }, a.a.createElement(l.a, null, a.a.createElement("div", null, a.a.createElement(c.d, null, a.a.createElement(c.b, {
             exact: !0,
             path: "/signup",
-            component: Ve
+            component: qe
         }), a.a.createElement(c.b, {
             exact: !0,
             path: "/login",
-            component: zo
+            component: Ao
         }), a.a.createElement(c.b, {
             exact: !0,
             path: "/logout",
-            component: Uo
+            component: Go
         }), a.a.createElement(c.b, {
             exact: !0,
             path: "/forgot",
-            component: nr
+            component: ar
         }), a.a.createElement(c.b, {
             exact: !0,
             path: "/reset/:token",
-            component: gr
+            component: _r
         }), !1, a.a.createElement(c.b, {
-            component: Rr
+            component: Mr
         }))))))), document.getElementById("app"))
     }
 });

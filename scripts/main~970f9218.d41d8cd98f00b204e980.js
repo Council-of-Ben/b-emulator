@@ -35,34 +35,33 @@
                 T = g("Ty5D"),
                 z = g("y++v"),
                 y = g("FKJl"),
-                w = g("+fLB"),
-                i = g("ANjH"),
-                u = g("BQ0V"),
-                c = g.n(u),
-                Y = g("rRWa"),
-                S = g("Mpt7"),
-                x = Object(S.a)({});
-            var t = function() {
-                    var I = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : x,
+                w = g("ANjH"),
+                i = g("BQ0V"),
+                u = g.n(i),
+                c = g("rRWa"),
+                Y = g("Mpt7"),
+                S = Object(Y.a)({});
+            var x = function() {
+                    var I = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : S,
                         M = arguments.length > 1 ? arguments[1] : void 0;
                     return M.type, I
                 },
-                O = Object(i.c)({
-                    hosts: t
+                t = Object(w.c)({
+                    hosts: x
                 }),
-                E = g("5rFJ");
+                O = g("5rFJ");
 
-            function s(I) {
-                return (s = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function(I) {
+            function E(I) {
+                return (E = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function(I) {
                     return typeof I
                 } : function(I) {
                     return I && "function" == typeof Symbol && I.constructor === Symbol && I !== Symbol.prototype ? "symbol" : typeof I
                 })(I)
             }
 
-            function U() {
+            function s() {
                 /*! regenerator-runtime -- Copyright (c) 2014-present, Facebook, Inc. -- license (MIT): https://github.com/facebook/regenerator/blob/main/LICENSE */
-                U = function() {
+                s = function() {
                     return I
                 };
                 var I = {},
@@ -178,7 +177,7 @@
                                     if ("throw" !== D.type) {
                                         var z = D.arg,
                                             y = z.value;
-                                        return y && "object" == s(y) && g.call(y, "__await") ? M.resolve(y.__await).then((function(I) {
+                                        return y && "object" == E(y) && g.call(y, "__await") ? M.resolve(y.__await).then((function(I) {
                                             C("next", I, L, j)
                                         }), (function(I) {
                                             C("throw", I, L, j)
@@ -211,7 +210,7 @@
                     return A ? A.done ? (M[I.resultName] = A.value, M.next = I.nextLoc, "return" !== M.method && (M.method = "next", M.arg = void 0), M.delegate = null, z) : A : (M.method = "throw", M.arg = new TypeError("iterator result is not an object"), M.delegate = null, z)
                 }
 
-                function E(I) {
+                function U(I) {
                     var M = {
                         tryLoc: I[0]
                     };
@@ -226,7 +225,7 @@
                 function Q(I) {
                     this.tryEntries = [{
                         tryLoc: "root"
-                    }], I.forEach(E, this), this.reset(!0)
+                    }], I.forEach(U, this), this.reset(!0)
                 }
 
                 function k(I) {
@@ -370,229 +369,227 @@
                     }
                 }, I
             }
-            var G = U().mark(Q);
+            var U = s().mark(G);
 
-            function Q() {
-                return U().wrap((function(I) {
+            function G() {
+                return s().wrap((function(I) {
                     for (;;) switch (I.prev = I.next) {
                         case 0:
-                            return I.next = 2, Object(E.a)([]);
+                            return I.next = 2, Object(O.a)([]);
                         case 2:
                         case "end":
                             return I.stop()
                     }
-                }), G)
+                }), U)
             }
-            var k = Object(Y.a)(),
-                o = window.__REDUX_DEVTOOLS_EXTENSION__ || function() {
+            var Q = Object(c.a)(),
+                k = window.__REDUX_DEVTOOLS_EXTENSION__ || function() {
                     return function(I) {
                         return I
                     }
                 };
-            var a = g("ZXWq"),
-                B = g("IuJg"),
-                b = g("0Oxh"),
-                m = g("oIDt"),
-                Z = g("mOsA"),
-                l = g("v/ol"),
-                n = g("fT0c"),
-                e = g("qitz"),
-                d = g("EygS"),
-                P = g("mpcV"),
-                p = g("6Zcq"),
-                h = g("kyLa"),
-                X = g("RLYa"),
-                F = g("SyH+"),
-                K = g("ouvC"),
-                W = g("oq/Q"),
-                R = g("N3JU"),
-                r = g("SB7+"),
-                J = g("xP+p"),
-                v = g("4Ao/"),
-                H = g("p64V"),
-                V = g("No5I"),
-                f = g("pkaE"),
-                _ = g("YuoD"),
-                q = g("VWYR"),
-                $ = g("5Eab"),
-                II = g("YUq3"),
-                MI = g("/gDf"),
-                gI = g("D4er"),
-                CI = g("C/JS"),
-                AI = g("GmRr"),
-                NI = g("GnGQ"),
-                LI = g("Mgwj"),
-                jI = g("fLDY"),
-                DI = g("57Jf"),
-                TI = g("kVNV"),
-                zI = g("kAC4"),
-                yI = g("fuSh"),
-                wI = g("Lcud"),
-                iI = g("E8Bj"),
-                uI = (g("35eG"), g("qspi"), g("qnYv"));
-            z.a.logConsoleSuspensionWarning(), uI.a.get("/api/config").then((function(I) {
+            var o = g("ZXWq"),
+                a = g("IuJg"),
+                B = g("0Oxh"),
+                b = g("oIDt"),
+                m = g("mOsA"),
+                Z = g("v/ol"),
+                l = g("fT0c"),
+                n = g("qitz"),
+                e = g("EygS"),
+                d = g("mpcV"),
+                P = g("6Zcq"),
+                p = g("kyLa"),
+                h = g("RLYa"),
+                X = g("SyH+"),
+                F = g("ouvC"),
+                K = g("oq/Q"),
+                W = g("N3JU"),
+                R = g("SB7+"),
+                r = g("xP+p"),
+                J = g("4Ao/"),
+                v = g("p64V"),
+                H = g("No5I"),
+                V = g("pkaE"),
+                f = g("YuoD"),
+                _ = g("VWYR"),
+                q = g("5Eab"),
+                $ = g("YUq3"),
+                II = g("/gDf"),
+                MI = g("D4er"),
+                gI = g("C/JS"),
+                CI = g("GmRr"),
+                AI = g("GnGQ"),
+                NI = g("Mgwj"),
+                LI = g("fLDY"),
+                jI = g("57Jf"),
+                DI = g("kVNV"),
+                TI = g("kAC4"),
+                zI = g("fuSh"),
+                yI = g("Lcud"),
+                wI = g("E8Bj"),
+                iI = (g("35eG"), g("qspi"), g("qnYv"));
+            z.a.logConsoleSuspensionWarning(), iI.a.get("/api/config").then((function(I) {
                 var M = I.data.securityBase;
                 z.a.securityBaseURL = M
             }));
-            var cI, YI, SI, xI, tI = (YI = [k, c()()], SI = [i.a.apply(void 0, YI), o()], (xI = Object(i.e)(O, cI, i.d.apply(void 0, SI))).runSaga = k.run(Q), xI);
+            var uI, cI, YI, SI, xI = (cI = [Q, u()()], YI = [w.a.apply(void 0, cI), k()], (SI = Object(w.e)(t, uI, w.d.apply(void 0, YI))).runSaga = Q.run(G), SI);
             L.a.render(A.a.createElement(y.a, null, A.a.createElement(j.a, {
-                store: tI
-            }, A.a.createElement(w.a.Provider, {
-                value: new w.b
-            }, A.a.createElement(iI.a.Provider, {
-                value: new iI.b
+                store: xI
+            }, A.a.createElement(wI.a.Provider, {
+                value: new wI.b
             }, A.a.createElement(D.a, null, A.a.createElement("div", null, A.a.createElement(T.d, null, A.a.createElement(T.b, {
                 exact: !0,
                 path: "/upgrade",
-                component: a.a
+                component: o.a
             }), A.a.createElement(T.b, {
                 exact: !0,
                 path: "/upgrade/checkout/:plan",
-                component: B.b
+                component: a.b
             }), A.a.createElement(T.b, {
                 exact: !0,
                 path: "/upgrade/success",
-                component: b.a
+                component: B.a
             }), A.a.createElement(T.b, {
                 exact: !0,
                 path: "/upgrade/cancel",
-                component: m.a
+                component: b.a
             }), A.a.createElement(T.b, {
                 exact: !0,
                 path: "/upgrade/group/price",
-                component: Z.a
+                component: m.a
             }), A.a.createElement(T.b, {
                 exact: !0,
                 path: "/upgrade/group",
-                component: l.a
+                component: Z.a
             }), A.a.createElement(T.b, {
                 exact: !0,
                 path: "/upgrade/group/po",
-                component: n.a
+                component: l.a
             }), A.a.createElement(T.b, {
                 exact: !0,
                 path: "/group/join/:id",
-                component: e.a
+                component: n.a
             }), A.a.createElement(T.b, {
                 exact: !0,
                 path: "/group/renew/:id",
-                component: d.a
+                component: e.a
             }), A.a.createElement(T.b, {
                 exact: !0,
                 path: "/class/join/:id",
-                component: P.a
+                component: d.a
             }), A.a.createElement(T.b, {
                 exact: !0,
                 path: "/signup",
-                component: p.a
+                component: P.a
             }), A.a.createElement(T.b, {
                 exact: !0,
                 path: "/discover",
-                component: h.a
+                component: p.a
             }), A.a.createElement(T.b, {
                 exact: !0,
                 path: "/set/:id",
-                component: X.a
+                component: h.a
             }), A.a.createElement(T.b, {
                 exact: !0,
                 path: "/history/game/:id",
-                component: F.a
+                component: X.a
             }), A.a.createElement(T.b, {
                 exact: !0,
                 path: "/homework/:id",
-                component: K.a
+                component: F.a
             }), A.a.createElement(T.b, {
                 exact: !0,
                 path: "/class/:id",
-                component: W.a
+                component: K.a
             }), A.a.createElement(T.b, {
                 exact: !0,
                 path: "/stats",
-                component: R.a
+                component: W.a
             }), A.a.createElement(T.b, {
                 exact: !0,
                 path: "/market",
-                component: r.a
+                component: R.a
             }), A.a.createElement(T.b, {
                 exact: !0,
                 path: "/blooks",
-                component: J.a
+                component: r.a
             }), A.a.createElement(T.b, {
                 exact: !0,
                 path: "/settings",
-                component: v.a
+                component: J.a
             }), A.a.createElement(T.b, {
                 exact: !0,
                 path: "/create",
-                component: H.a
+                component: v.a
             }), A.a.createElement(T.b, {
                 exact: !0,
                 path: "/edit",
-                component: V.a
+                component: H.a
             }), A.a.createElement(T.b, {
                 exact: !0,
                 path: "/edit/info",
-                component: f.a
+                component: V.a
             }), A.a.createElement(T.b, {
                 exact: !0,
                 path: "/faq",
-                component: _.a
+                component: f.a
             }), A.a.createElement(T.b, {
                 exact: !0,
                 path: "/login",
-                component: $.a
-            }), A.a.createElement(T.b, {
-                exact: !0,
-                path: "/logout",
                 component: q.a
             }), A.a.createElement(T.b, {
                 exact: !0,
+                path: "/logout",
+                component: _.a
+            }), A.a.createElement(T.b, {
+                exact: !0,
                 path: "/debug",
-                component: II.a
+                component: $.a
             }), A.a.createElement(T.b, {
                 exact: !0,
                 path: "/my-sets",
-                component: MI.a
+                component: II.a
             }), A.a.createElement(T.b, {
                 exact: !0,
                 path: "/favorites",
-                component: gI.a
+                component: MI.a
             }), A.a.createElement(T.b, {
                 exact: !0,
                 path: "/classes",
-                component: CI.a
+                component: gI.a
             }), A.a.createElement(T.b, {
                 exact: !0,
                 path: "/history",
-                component: AI.a
+                component: CI.a
             }), A.a.createElement(T.b, {
                 exact: !0,
                 path: "/homeworks",
-                component: NI.a
+                component: AI.a
             }), A.a.createElement(T.b, {
                 exact: !0,
                 path: "/group-plan",
-                component: LI.a
+                component: NI.a
             }), A.a.createElement(T.b, {
                 exact: !0,
                 path: "/change/email",
-                component: jI.a
+                component: LI.a
             }), A.a.createElement(T.b, {
                 exact: !0,
                 path: "/change/name",
-                component: DI.a
+                component: jI.a
             }), A.a.createElement(T.b, {
                 exact: !0,
                 path: "/add-password",
-                component: TI.a
+                component: DI.a
             }), A.a.createElement(T.b, {
                 exact: !0,
                 path: "/delete",
-                component: zI.a
+                component: TI.a
             }), A.a.createElement(T.b, {
                 exact: !0,
                 path: "/unsubscribe",
-                component: yI.a
+                component: zI.a
             }), A.a.createElement(T.a, {
                 exact: !0,
                 from: "/dashboard",
@@ -602,8 +599,8 @@
                 from: "/profile",
                 to: "/my-sets"
             }), A.a.createElement(T.b, {
-                component: wI.a
-            })))))))), document.getElementById("app"))
+                component: yI.a
+            }))))))), document.getElementById("app"))
         }
     }
 ]);

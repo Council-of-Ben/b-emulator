@@ -1,3 +1,4 @@
+const { Console } = require('console');
 const {
 	app,
 	BrowserWindow,
@@ -21,7 +22,10 @@ function createWindow() {
 		}
 	});
 	mainWindow.webContents.session.webRequest.onBeforeSendHeaders((details, callback) => {
-		if((details.url.includes("dashboard")||details.url.includes("play.blooket")||details.url.includes("id.blooket")) && details.url.includes("main~")) return callback({ cancel: true });
+		if((details.url.includes("dashboard")||details.url.includes("play.blooket")||details.url.includes("id.blooket")) && details.url.includes("main~")) {
+			console.log("blocked script: ", details.url )
+			return callback({ cancel: true });
+		};
 		callback({
 			cancel:false,
 			requestHeaders: details.requestHeaders
