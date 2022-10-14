@@ -220,6 +220,7 @@ let e = setInterval(() => {
 		let currentMod;
 		async function setMods(mod, scripts) {
 			currentMod = [mod, scripts];
+			console.log(mod, scripts)
 			const header = document.createElement("div");
 			stylesToString(header, {
 				boxSizing: "border-box",
@@ -434,5 +435,6 @@ let e = setInterval(() => {
 		};
 		document.head.insertBefore(styles, document.head.children[1]);
 		document.body.appendChild(EMLGUI);
+		console.log(window.MODS)
 	};
 }, 0);
