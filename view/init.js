@@ -1,4 +1,4 @@
-window.hooked = {}; // hook function accesser
+window.hooked = {}; // hook function accessor
 
 function log(str, n1, n2) {
 	if (n1 && n2) console.log(`%c[${n1}/${n2}] ${str}`, "color: #7799ff");
