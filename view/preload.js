@@ -1,12 +1,17 @@
 const fs = require('fs');
 const init = fs.readFileSync('./view/init.js', 'utf8');
 const mods = JSON.parse(fs.readFileSync("./mods.json", "utf8"));
-console.log("loading preload")
 let e = setInterval(() => {
 	if (document.body) {
 		if (Array.from(document.body.children).filter(e => e.localName === "script").length < 31 &&
 			document.location.toString().includes("dashboard")) return;
 		clearInterval(e);
+		function log(str, time=new Date(), place) {
+			const tag = time ? `[${time.getHours()}:${time.getMinutes()}:${time.getSeconds()}:${time.getMilliseconds()}]` :
+				`[${"preload.js:"+ place}]`
+			console.log(`%c\r${tag} ${str}\t`, "color: #4cbee0; font-weight:bolder; font-size:12px; font-family:'Roboto Mono';");
+		};
+		
 		window.MODS = [];
 		const styles = document.createElement("style");
 		const EMLGUI = document.createElement("div");
@@ -15,6 +20,7 @@ let e = setInterval(() => {
 		);
 		styles.id = "b-emulator-styles";
 		styles.innerHTML = "";
+		styles.innerHTML += `@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap');`;
 		styles.innerHTML += ".modButton{position:relative;display:flex;flex-direction:row;align-items:center;min-height:40px;width:190px;margin:4px 0;padding-left:30px;box-sizing:border-box;cursor:pointer;user-select:none;text-decoration:none;border-top-right-radius:5px;border-bottom-right-radius:5px;background-color:transparent;color:#fff;transition:.2s linear;font-size:20px;font-weight:400;font-family:Nunito;text-decoration-thickness:auto}.modButton:hover{background-color:#fff;color:#9a49aa}.modInput,select{min-width:200px;padding-block:5px;font-family:Nunito,sans-serif;font-weight:400;font-size:16px;background-color:#7a039d;box-shadow:inset 0 6px rgb(0 0 0 / 20%);margin:3px;color:#fff}.bigButton:hover{filter:brightness(110%);transform:translateY(-2px)}.bigButton:active{transform:translateY(2px)}.modList::-webkit-scrollbar{width:10px}.modList::-webkit-scrollbar-track{background:#9a49aa}.modList::-webkit-scrollbar-thumb{background:#7b3a88}.modList::-webkit-scrollbar-thumb:hover{background:#700087}.scriptButton:hover{filter:brightness(120%)}.modInput{max-width:200px;border:none;border-radius:7px;caret-color:white}.modInput::placeholder{color:#fff}.modInput:focus,select:focus{outline:0}.modInput::-webkit-inner-spin-button,.modInput::-webkit-outer-spin-button{-webkit-appearance:none;margin:0}.modInput[type=number]{-moz-appearance:textfield}select{border:none;border-radius:7px;text-align:center}";
 
 		EMLGUI.id = "EML-GUI";
@@ -302,7 +308,8 @@ let e = setInterval(() => {
 					boxShadow: "inset 0 -6px rgb(0 0 0 / 20%)",
 					borderRadius: "7px",
 					cursor: "pointer",
-					transition: "filter .25s"
+					transition: "filter .25s",
+					zIndex: "1000"
 				});
 				// button.innerHTML = `${inputs?.length ? (await Promise.all(
 				//     inputs.map(async ({ name, type, options: opts, min, max }) => {
@@ -361,40 +368,8 @@ let e = setInterval(() => {
 			[...content.children].forEach(x => x.remove());
 			content.appendChild(mods);
 
-			/*  scripts
-				{
-					name: "",
-					description: "",
-					type: (null | "toggle"),
-					inputs: type == null && [{
-						name: "",
-						type: ("number" | "string" | "options"),
-						options: type == "options" && [
-							{
-								name: "",
-								value: undefined
-							}
-						]
-					}],
-					enabled: type == "toggle" && Boolean,
-					run: function () {}
-				}
-			*/
 		};
-		let scripts = [{
-			name: "test",
-			description: "test",
-			image: "/asinsagingias.png",
-			type: "toggle",
-			inputs: null,
-			enabled: true,
-			run: function () {
-				console.log("hi")
-			}
-		}];
-		for (let s of scripts) {
-			addMod(s.name, s.image, scripts);
-		};
+
 		let scriptBase = document.location.toString().includes("https://dashboard.blooket.com") ?
 			`http://localhost:5500/scripts/` : (document.location.toString().includes("https://play.blooket.com") ?
 				`http://localhost:5500/play-scripts/` : `http://localhost:5500/id-scripts/`);
@@ -402,7 +377,6 @@ let e = setInterval(() => {
 		locScript.id = "locScript";
 
 		window.open = function () {
-			console.log(arguments[0])
 			location.href = arguments[0];
 			return;
 		};
@@ -418,7 +392,7 @@ let e = setInterval(() => {
 		for (let script of Array.from(document.body.children).filter(e => e.localName === "script")) {
 			if (script.outerHTML.includes("main~")) {
 				let src = `${scriptBase}${script.src.replace('https://dashboard.blooket.com/', '').replace('https://id.blooket.com/', '').replace('https://play.blooket.com/', '').split('?')[0]}`;
-				console.log(`Loaded script: ${script.src}`);
+				//log(`Loaded script: ${script.src}`);
 				script.src = src;
 				script.remove();
 				fetch(src, {
@@ -427,11 +401,26 @@ let e = setInterval(() => {
 			};
 		};
 		document.body.appendChild(locScript);
+		
 		for (let mod of mods) {
 			let m = require(`../mods/${mod}`);
+			!m?.dependencies?.map(x=>mods.includes(x)).every(x=>x===true) ? log(`MISSING DEPENDENCIES FOR MOD "${mod}"`) : "";
 			window.MODS.push(m);
 			if (m.styles) styles.innerHTML += fs.accessSync(`./mods/${mod}.css`, fs.R_OK) ? fs.readFileSync(`./mods/${mod}.css`, "utf8") : "";
-			m.run();
+			//m.run();
+		};
+		
+		const scripts = window.MODS.map(m=>({
+			name:m.name,
+			image:m.image,
+			type:"toggle",
+			descriptione:m.description,
+			run:m.run,
+			inputs:m.inputs,
+			
+		}));
+		for (let s of scripts) {
+			addMod(s.name, s.image, scripts);
 		};
 		document.head.insertBefore(styles, document.head.children[1]);
 		document.body.appendChild(EMLGUI);
