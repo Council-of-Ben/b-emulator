@@ -90,8 +90,8 @@ function reactEventHandler() {
 	return react[Object.keys(react).filter(x => x.includes("reactInternalInstance"))].return.stateNode;
 };
 
-function setState(path="#app > div > div", state={}) {
-	return reactHandler(path).stateNode.setState(state);
+function setState(state={}) {
+	return reactHandler().stateNode.setState(state);
 };
 
 

@@ -1851,17 +1851,17 @@
                         var o = W(this).constructor;
                         a = Reflect.construct(s, arguments, o)
                     } else a = s.apply(this, arguments);
-                    return L(this, a)
+                    return Y(this, a)
                 }
             }
 
-            function L(e, t) {
+            function Y(e, t) {
                 if (t && ("object" === M(t) || "function" == typeof t)) return t;
                 if (void 0 !== t) throw new TypeError("Derived constructors may only return object or undefined");
-                return Y(e)
+                return L(e)
             }
 
-            function Y(e) {
+            function L(e) {
                 if (void 0 === e) throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
                 return e
             }
@@ -1890,7 +1890,7 @@
                     var t;
                     return function(e, t) {
                         if (!(e instanceof t)) throw new TypeError("Cannot call a class as a function")
-                    }(this, r), (t = n.call(this, e)).state = {}, t.p5 = null, t.canvasParentRef = null, t.blooks = [], t.setup = t.setup.bind(Y(t)), t.draw = t.draw.bind(Y(t)), t
+                    }(this, r), (t = n.call(this, e)).state = {}, t.p5 = null, t.canvasParentRef = null, t.blooks = [], t.setup = t.setup.bind(L(t)), t.draw = t.draw.bind(L(t)), t
                 }
                 return t = r, (a = [{
                     key: "setup",
@@ -2493,7 +2493,7 @@
             }, t.a = m
         },
         Veel: function(e, t, a) {
-            (t = e.exports = a("JPst")(!1)).push([e.i, ".styles__background___2doOd-camelCase{position:absolute;width:100%;height:100%;background-color:#2705ab;overflow:hidden}.styles__resultsOverlay___3ARXU-camelCase,.styles__winnerOverlay___2R4HG-camelCase{width:130%;position:absolute;top:50%;left:50%;mix-blend-mode:overlay;transform:translate(-50%,-50%)}.styles__winnerBackground___2jJ6Q-camelCase,.styles__winnerOverlay___2R4HG-camelCase{opacity:0;animation:styles__fadeIn___3PNPp-camelCase .5s linear 4.5s forwards}.styles__winnerBackground___2jJ6Q-camelCase{position:absolute;width:100%;height:100%;top:0;left:0;background-color:#fe6f45}.styles__resultsOverlay___3ARXU-camelCase{opacity:0;animation:styles__fadeInFadeOut___3pl9--camelCase 2.3s linear forwards}.styles__loserOverlay___IiaoT-camelCase{position:absolute;top:-5%;width:100%;transform:translateY(-100%);mix-blend-mode:multiply;animation:styles__slideIn___2GCai-camelCase 1s linear 4.5s forwards}@keyframes styles__slideIn___2GCai-camelCase{0%{transform:translateY(-100%)}to{transform:translateY(0)}}.styles__loserOverlay2___1pUAf-camelCase{position:absolute;bottom:0;width:100%;opacity:0;mix-blend-mode:overlay;animation:styles__fadeIn___3PNPp-camelCase .5s linear 5s forwards}.styles__resultsText___3W8kq-camelCase{color:#fff;font-family:Titan One,sans-serif;text-shadow:2px 2px 8px grey;font-size:8vw;width:40vw;position:absolute;left:30vw;top:50%;transform:translateY(-50%);text-align:center;opacity:0;animation:styles__fadeInFadeOut___3pl9--camelCase 2.3s linear forwards}@keyframes styles__fadeInFadeOut___3pl9--camelCase{0%{opacity:0}20%{opacity:1}80%{opacity:1}to{opacity:0}}.styles__victoryTextBg___1u4Xy-camelCase{width:60%}.styles__victoryText___yCjyX-camelCase,.styles__victoryTextBg___1u4Xy-camelCase{position:absolute;top:20%;left:28%;transform:translate(-50%,-50%) rotate(-5deg);opacity:0;animation:styles__fadeIn___3PNPp-camelCase .25s linear 4.5s forwards}.styles__victoryText___yCjyX-camelCase{width:34%}.styles__winnerBlookContainer___GpQg7-camelCase,.styles__winnerBlookShadow3___gza0m-camelCase{width:22%;position:absolute;top:50%;left:30%;opacity:0;animation:styles__fadeIn___3PNPp-camelCase .25s linear 4.5s forwards}.styles__winnerBlook___2oTx7-camelCase,.styles__winnerBlookShadow1___3Yc41-camelCase,.styles__winnerBlookShadow2___2CFEk-camelCase{position:absolute;width:100%}.styles__winnerBlook___2oTx7-camelCase{transform:translate(-50%,-50%) rotate(-10deg)}.styles__winnerBlookShadow1___3Yc41-camelCase{transform:translate(-50%,-50%) translateY(7px) rotate(-10deg);filter:brightness(0) invert(17%) sepia(54%) saturate(7152%) hue-rotate(313deg) brightness(101%) contrast(111%)}.styles__winnerBlookShadow2___2CFEk-camelCase{transform:translate(-50%,-50%) translateY(35px) rotate(-10deg);filter:brightness(0) invert(8%) sepia(26%) saturate(6422%) hue-rotate(248deg) brightness(85%) contrast(115%)}.styles__winnerBlookShadow3___gza0m-camelCase{transform:translate(-55%,-60%) rotate(5deg) scale(1.4);filter:brightness(0) invert(63%) sepia(97%) saturate(1894%) hue-rotate(134deg) brightness(107%) contrast(92%)}.styles__winnerNameplate___2eL5d-camelCase{width:22%;left:30%}.styles__winnerName___2C6ZT-camelCase,.styles__winnerNameplate___2eL5d-camelCase{position:absolute;bottom:9%;transform:translate(-50%,50%);opacity:0;animation:styles__fadeIn___3PNPp-camelCase .25s linear 4.5s forwards}.styles__winnerName___2C6ZT-camelCase{left:29%;width:18%;height:7vh;color:#fff;font-family:Titan One,sans-serif;text-shadow:2px 2px rgba(0,0,0,.25)}.styles__winnerCorrectContainer___29dKA-camelCase,.styles__winnerName___2C6ZT-camelCase{display:flex;justify-content:center;align-items:center}.styles__winnerCorrectContainer___29dKA-camelCase{flex-direction:row;position:absolute;right:145%;width:70%;top:1vw;transform:rotate(-10deg)}.styles__winnerCorrectBg___2dlJ_-camelCase{position:absolute;width:100%;z-index:-1}.styles__winnerCheck___2yjvC-camelCase{width:30%;margin-right:5%;padding-bottom:.5vw}.styles__winnerTime___3nbp1-camelCase{font-family:Titan One,sans-serif;font-size:1.8vw;text-shadow:2px 2px rgba(0,0,0,.2);padding-bottom:.5vw}.styles__winnerEnergyContainer___28lLt-camelCase{display:flex;flex-direction:row;align-items:center;justify-content:center;position:absolute;right:120%;width:70%;top:5vw;transform:rotate(-10deg)}.styles__winnerEnergy___3xBsk-camelCase{font-family:Titan One,sans-serif;font-size:2.2vw;text-shadow:2px 2px rgba(0,0,0,.2);color:#ff490f;padding-bottom:.5vw}.styles__winnerEnergyIcon___27N-T-camelCase{width:14%;margin-right:17%;margin-left:5%;padding-bottom:.5vw}.styles__defeatTextBg___kd38G-camelCase{width:30%}.styles__defeatText___3VwUK-camelCase,.styles__defeatTextBg___kd38G-camelCase{position:absolute;top:45%;right:20%;transform:translate(50%,-50%) rotate(5deg);opacity:0;animation:styles__fadeIn___3PNPp-camelCase .25s linear 5s forwards}.styles__defeatText___3VwUK-camelCase{width:22%}.styles__loserBlookContainer___3rpaH-camelCase,.styles__loserBlookShadow3___2jhmn-camelCase{width:12%;position:absolute;top:65%;right:22%;opacity:0;animation:styles__fadeIn___3PNPp-camelCase .25s linear 5s forwards}.styles__loserBlook___3K4Yz-camelCase,.styles__loserBlookShadow1___3FQLc-camelCase,.styles__loserBlookShadow2___2FbUp-camelCase{position:absolute;width:100%}.styles__loserBlook___3K4Yz-camelCase{transform:translate(50%,-50%) rotate(-10deg);filter:grayscale(1)}.styles__loserBlookShadow1___3FQLc-camelCase{transform:translate(50%,-50%) translateY(5px) rotate(-10deg);filter:brightness(0) invert(17%) sepia(54%) saturate(7152%) hue-rotate(313deg) brightness(101%) contrast(111%)}.styles__loserBlookShadow2___2FbUp-camelCase{transform:translate(50%,-50%) translateY(25px) rotate(-10deg);filter:brightness(0) invert(8%) sepia(26%) saturate(6422%) hue-rotate(248deg) brightness(85%) contrast(115%)}.styles__loserBlookShadow3___2jhmn-camelCase{transform:translate(55%,-60%) rotate(5deg) scale(1.4);filter:brightness(0) invert(63%) sepia(97%) saturate(1894%) hue-rotate(134deg) brightness(107%) contrast(92%)}.styles__loserNameplate___OBayt-camelCase{width:16%}.styles__loserName___3x34A-camelCase,.styles__loserNameplate___OBayt-camelCase{position:absolute;bottom:9%;right:22%;transform:translate(50%,50%);opacity:0;animation:styles__fadeIn___3PNPp-camelCase .25s linear 5s forwards}.styles__loserName___3x34A-camelCase{width:12%;height:4vh;color:#fff;font-family:Titan One,sans-serif;text-shadow:2px 2px rgba(0,0,0,.25)}.styles__loserCorrectContainer___2guae-camelCase,.styles__loserName___3x34A-camelCase{display:flex;justify-content:center;align-items:center}.styles__loserCorrectContainer___2guae-camelCase{flex-direction:row;position:absolute;right:45%;width:100%;top:0;transform:rotate(-10deg)}.styles__loserCorrectBg___261VT-camelCase{position:absolute;width:100%;z-index:-1}.styles__loserCheck___1MS9e-camelCase{width:25%;margin-right:5%;padding-bottom:.5vw}.styles__loserTime___LNWNT-camelCase{font-family:Titan One,sans-serif;font-size:1.3vw;text-shadow:2px 2px rgba(0,0,0,.2);padding-bottom:.5vw}.styles__loserEnergyContainer___3GzYk-camelCase{display:flex;flex-direction:row;align-items:center;justify-content:center;position:absolute;right:10%;width:90%;top:3vw;transform:rotate(-10deg)}.styles__loserEnergy___Ol4FK-camelCase{font-family:Titan One,sans-serif;font-size:1.6vw;text-shadow:2px 2px rgba(0,0,0,.2);color:#324cff;padding-bottom:.5vw}.styles__loserEnergyIcon___3bVUA-camelCase{width:14%;margin-right:12%;margin-left:5%;padding-bottom:.5vw}.styles__rightText___1wBm5-camelCase{position:absolute;top:5%;right:5%;width:25%;font-family:Titan One,sans-serif;font-size:3.5vw;text-shadow:2px 2px rgba(0,0,0,.2);color:#fff;text-align:center;opacity:0;animation:styles__fadeIn___3PNPp-camelCase .25s linear 5.5s forwards}@keyframes styles__fadeIn___3PNPp-camelCase{0%{opacity:0}to{opacity:1}}@media only screen and (max-width:900px){.styles__resultsOverlay___3ARXU-camelCase,.styles__winnerOverlay___2R4HG-camelCase{height:130%;width:unset}.styles__resultsText___3W8kq-camelCase{font-size:12vw;width:60vw;left:20vw}.styles__rightText___1wBm5-camelCase{top:unset;bottom:2%;right:5%;width:90%;font-size:6vw}.styles__victoryTextBg___1u4Xy-camelCase{width:80%}.styles__victoryText___yCjyX-camelCase,.styles__victoryTextBg___1u4Xy-camelCase{top:9%;left:50%;transform:translate(-50%,-50%) rotate(-5deg)}.styles__victoryText___yCjyX-camelCase{width:54%}.styles__winnerBlookContainer___GpQg7-camelCase,.styles__winnerBlookShadow3___gza0m-camelCase{width:35%;top:22%;left:50%}.styles__winnerBlookShadow1___3Yc41-camelCase{transform:translate(-50%,-50%) translateY(3px) rotate(-10deg)}.styles__winnerBlookShadow2___2CFEk-camelCase{transform:translate(-50%,-50%) translateY(10px) rotate(-10deg)}.styles__winnerBlookShadow3___gza0m-camelCase{transform:translate(-55%,-60%) rotate(5deg) scale(1.4)}.styles__winnerNameplate___2eL5d-camelCase{width:50%;left:50%}.styles__winnerName___2C6ZT-camelCase,.styles__winnerNameplate___2eL5d-camelCase{bottom:unset;top:42%;transform:translate(-50%,-50%)}.styles__winnerName___2C6ZT-camelCase{left:48%;width:38%;height:5vh}.styles__winnerCorrectContainer___29dKA-camelCase{right:145%;width:90%;top:2vw}.styles__winnerCheck___2yjvC-camelCase{width:30%;margin-right:5%;padding-bottom:1.5vw}.styles__winnerTime___3nbp1-camelCase{font-size:4vw;padding-bottom:1.5vw}.styles__winnerEnergyContainer___28lLt-camelCase{right:120%;width:80%;top:9vw}.styles__winnerEnergy___3xBsk-camelCase{font-size:5vw;padding-bottom:1.5vw}.styles__winnerEnergyIcon___27N-T-camelCase{width:18%;margin-right:15%;margin-left:5%;padding-bottom:1.5vw}.styles__defeatTextBg___kd38G-camelCase{width:50%;top:62%;right:50%}.styles__defeatText___3VwUK-camelCase{width:32%;top:62%;right:50%}.styles__loserBlookContainer___3rpaH-camelCase,.styles__loserBlookShadow3___2jhmn-camelCase{width:25%;top:73%;right:50%}.styles__loserBlookShadow1___3FQLc-camelCase{transform:translate(50%,-50%) translateY(2px) rotate(-10deg)}.styles__loserBlookShadow2___2FbUp-camelCase{transform:translate(50%,-50%) translateY(7px) rotate(-10deg)}.styles__loserBlookShadow3___2jhmn-camelCase{transform:translate(55%,-60%) rotate(5deg) scale(1.4)}.styles__loserNameplate___OBayt-camelCase{width:40%;bottom:12%;right:50%}.styles__loserName___3x34A-camelCase{bottom:12%;right:52%;width:32%;height:3.5vh}.styles__loserCorrectContainer___2guae-camelCase{right:45%;width:110%;top:0}.styles__loserCheck___1MS9e-camelCase{width:25%;margin-right:5%;padding-bottom:1.5vw}.styles__loserTime___LNWNT-camelCase{font-size:3vw;padding-bottom:1.5vw}.styles__loserEnergyContainer___3GzYk-camelCase{right:10%;width:90%;top:6vw}.styles__loserEnergy___Ol4FK-camelCase{font-size:4vw;padding-bottom:1.5vw}.styles__loserEnergyIcon___3bVUA-camelCase{width:18%;margin-right:12%;margin-left:5%;padding-bottom:1.5vw}}", ""]), t.locals = {
+            (t = e.exports = a("JPst")(!1)).push([e.i, ".styles__background___2doOd-camelCase{position:absolute;width:100%;height:100%;background-color:#2705ab;overflow:hidden}.styles__resultsOverlay___3ARXU-camelCase,.styles__winnerOverlay___2R4HG-camelCase{width:130%;position:absolute;top:50%;left:50%;mix-blend-mode:overlay;transform:translate(-50%,-50%)}.styles__winnerBackground___2jJ6Q-camelCase,.styles__winnerOverlay___2R4HG-camelCase{opacity:0;animation:styles__fadeIn___3PNPp-camelCase .5s linear 4.5s forwards}.styles__winnerBackground___2jJ6Q-camelCase{position:absolute;width:100%;height:100%;top:0;left:0;background-color:#fe6f45}.styles__resultsOverlay___3ARXU-camelCase{opacity:0;animation:styles__fadeInFadeOut___3pl9--camelCase 2.3s linear forwards}.styles__loserOverlay___IiaoT-camelCase{position:absolute;top:-5%;width:100%;transform:translateY(-100%);mix-blend-mode:multiply;animation:styles__slideIn___2GCai-camelCase 1s linear 4.5s forwards}@keyframes styles__slideIn___2GCai-camelCase{0%{transform:translateY(-100%)}to{transform:translateY(0)}}.styles__loserOverlay2___1pUAf-camelCase{position:absolute;bottom:0;width:100%;opacity:0;mix-blend-mode:overlay;animation:styles__fadeIn___3PNPp-camelCase .5s linear 5s forwards}.styles__resultsText___3W8kq-camelCase{color:#fff;font-family:Titan One,sans-serif;text-shadow:2px 2px 8px grey;font-size:8vw;width:40vw;position:absolute;left:30vw;top:50%;transform:translateY(-50%);text-align:center;opacity:0;animation:styles__fadeInFadeOut___3pl9--camelCase 2.3s linear forwards}@keyframes styles__fadeInFadeOut___3pl9--camelCase{0%{opacity:0}20%{opacity:1}80%{opacity:1}to{opacity:0}}.styles__victoryTextBg___1u4Xy-camelCase{width:60%}.styles__victoryText___yCjyX-camelCase,.styles__victoryTextBg___1u4Xy-camelCase{position:absolute;top:20%;left:28%;transform:translate(-50%,-50%) rotate(-5deg);opacity:0;animation:styles__fadeIn___3PNPp-camelCase .25s linear 4.5s forwards}.styles__victoryText___yCjyX-camelCase{width:34%}.styles__winnerBlookContainer___GpQg7-camelCase,.styles__winnerBlookShadow3___gza0m-camelCase{width:22%;position:absolute;top:50%;left:30%;opacity:0;animation:styles__fadeIn___3PNPp-camelCase .25s linear 4.5s forwards}.styles__winnerBlook___2oTx7-camelCase,.styles__winnerBlookShadow1___3Yc41-camelCase,.styles__winnerBlookShadow2___2CFEk-camelCase{position:absolute;width:100%}.styles__winnerBlook___2oTx7-camelCase{transform:translate(-50%,-50%) rotate(-10deg)}.styles__winnerBlookShadow1___3Yc41-camelCase{transform:translate(-50%,-50%) translateY(7px) rotate(-10deg);filter:brightness(0) invert(17%) sepia(54%) saturate(7152%) hue-rotate(313deg) brightness(101%) contrast(111%)}.styles__winnerBlookShadow2___2CFEk-camelCase{transform:translate(-50%,-50%) translateY(35px) rotate(-10deg);filter:brightness(0) invert(8%) sepia(26%) saturate(6422%) hue-rotate(248deg) brightness(85%) contrast(115%)}.styles__winnerBlookShadow3___gza0m-camelCase{transform:translate(-55%,-60%) rotate(5deg) scale(1.4);filter:brightness(0) invert(63%) sepia(97%) saturate(1894%) hue-rotate(134deg) brightness(107%) contrast(92%)}.styles__winnerNameplate___2eL5d-camelCase{width:22%;left:30%}.styles__winnerName___2C6ZT-camelCase,.styles__winnerNameplate___2eL5d-camelCase{position:absolute;bottom:9%;transform:translate(-50%,50%);opacity:0;animation:styles__fadeIn___3PNPp-camelCase .25s linear 4.5s forwards}.styles__winnerName___2C6ZT-camelCase{left:29%;width:18%;height:7vh;color:#fff;font-family:Titan One,sans-serif;text-shadow:2px 2px rgba(0,0,0,.25)}.styles__winnerCorrectContainer___29dKA-camelCase,.styles__winnerName___2C6ZT-camelCase{display:flex;justify-content:center;align-items:center}.styles__winnerCorrectContainer___29dKA-camelCase{flex-direction:row;position:absolute;right:145%;width:70%;top:1vw;transform:rotate(-10deg)}.styles__winnerCorrectBg___2dlJ_-camelCase{position:absolute;width:100%;z-index:-1}.styles__winnerCheck___2yjvC-camelCase{width:30%;margin-right:5%;padding-bottom:.5vw}.styles__winnerTime___3nbp1-camelCase{font-family:Titan One,sans-serif;font-size:1.8vw;text-shadow:2px 2px rgba(0,0,0,.2);padding-bottom:.5vw}.styles__winnerEnergyContainer___28lLt-camelCase{display:flex;flex-direction:row;align-items:center;justify-content:center;position:absolute;right:120%;width:70%;top:5vw;transform:rotate(-10deg)}.styles__winnerEnergy___3xBsk-camelCase{font-family:Titan One,sans-serif;font-size:2.2vw;text-shadow:2px 2px rgba(0,0,0,.2);color:#ff490f;padding-bottom:.5vw}.styles__winnerEnergyIcon___27N-T-camelCase{width:14%;margin-right:17%;margin-left:5%;padding-bottom:.5vw}.styles__defeatTextBg___kd38G-camelCase{width:30%}.styles__defeatText___3VwUK-camelCase,.styles__defeatTextBg___kd38G-camelCase{position:absolute;top:45%;right:20%;transform:translate(50%,-50%) rotate(5deg);opacity:0;animation:styles__fadeIn___3PNPp-camelCase .25s linear 5s forwards}.styles__defeatText___3VwUK-camelCase{width:22%}.styles__loserBlookContainer___3rpaH-camelCase,.styles__loserBlookShadow3___2jhmn-camelCase{width:12%;position:absolute;top:65%;right:22%;opacity:0;animation:styles__fadeIn___3PNPp-camelCase .25s linear 5s forwards}.styles__loserBlook___3K4Yz-camelCase,.styles__loserBlookShadow1___3FQLc-camelCase,.styles__loserBlookShadow2___2FbUp-camelCase{position:absolute;width:100%}.styles__loserBlook___3K4Yz-camelCase{transform:translate(50%,-50%) rotate(-10deg)}.styles__loserBlookShadow1___3FQLc-camelCase{transform:translate(50%,-50%) translateY(5px) rotate(-10deg);filter:brightness(0) invert(17%) sepia(54%) saturate(7152%) hue-rotate(313deg) brightness(101%) contrast(111%)}.styles__loserBlookShadow2___2FbUp-camelCase{transform:translate(50%,-50%) translateY(25px) rotate(-10deg);filter:brightness(0) invert(8%) sepia(26%) saturate(6422%) hue-rotate(248deg) brightness(85%) contrast(115%)}.styles__loserBlookShadow3___2jhmn-camelCase{transform:translate(55%,-60%) rotate(5deg) scale(1.4);filter:brightness(0) invert(63%) sepia(97%) saturate(1894%) hue-rotate(134deg) brightness(107%) contrast(92%)}.styles__grayBlook___HnAYs-camelCase{filter:grayscale(1)}.styles__loserNameplate___OBayt-camelCase{width:16%}.styles__loserName___3x34A-camelCase,.styles__loserNameplate___OBayt-camelCase{position:absolute;bottom:9%;right:22%;transform:translate(50%,50%);opacity:0;animation:styles__fadeIn___3PNPp-camelCase .25s linear 5s forwards}.styles__loserName___3x34A-camelCase{width:12%;height:4vh;color:#fff;font-family:Titan One,sans-serif;text-shadow:2px 2px rgba(0,0,0,.25)}.styles__loserCorrectContainer___2guae-camelCase,.styles__loserName___3x34A-camelCase{display:flex;justify-content:center;align-items:center}.styles__loserCorrectContainer___2guae-camelCase{flex-direction:row;position:absolute;right:45%;width:100%;top:0;transform:rotate(-10deg)}.styles__loserCorrectBg___261VT-camelCase{position:absolute;width:100%;z-index:-1}.styles__loserCheck___1MS9e-camelCase{width:25%;margin-right:5%;padding-bottom:.5vw}.styles__loserTime___LNWNT-camelCase{font-family:Titan One,sans-serif;font-size:1.3vw;text-shadow:2px 2px rgba(0,0,0,.2);padding-bottom:.5vw}.styles__loserEnergyContainer___3GzYk-camelCase{display:flex;flex-direction:row;align-items:center;justify-content:center;position:absolute;right:10%;width:90%;top:3vw;transform:rotate(-10deg)}.styles__loserEnergy___Ol4FK-camelCase{font-family:Titan One,sans-serif;font-size:1.6vw;text-shadow:2px 2px rgba(0,0,0,.2);color:#324cff;padding-bottom:.5vw}.styles__loserEnergyIcon___3bVUA-camelCase{width:14%;margin-right:12%;margin-left:5%;padding-bottom:.5vw}.styles__rightText___1wBm5-camelCase{position:absolute;top:5%;right:5%;width:25%;font-family:Titan One,sans-serif;font-size:3.5vw;text-shadow:2px 2px rgba(0,0,0,.2);color:#fff;text-align:center;opacity:0;animation:styles__fadeIn___3PNPp-camelCase .25s linear 5.5s forwards}@keyframes styles__fadeIn___3PNPp-camelCase{0%{opacity:0}to{opacity:1}}@media only screen and (max-width:900px){.styles__resultsOverlay___3ARXU-camelCase,.styles__winnerOverlay___2R4HG-camelCase{height:130%;width:unset}.styles__resultsText___3W8kq-camelCase{font-size:12vw;width:60vw;left:20vw}.styles__rightText___1wBm5-camelCase{top:unset;bottom:2%;right:5%;width:90%;font-size:6vw}.styles__victoryTextBg___1u4Xy-camelCase{width:80%}.styles__victoryText___yCjyX-camelCase,.styles__victoryTextBg___1u4Xy-camelCase{top:9%;left:50%;transform:translate(-50%,-50%) rotate(-5deg)}.styles__victoryText___yCjyX-camelCase{width:54%}.styles__winnerBlookContainer___GpQg7-camelCase,.styles__winnerBlookShadow3___gza0m-camelCase{width:35%;top:22%;left:50%}.styles__winnerBlookShadow1___3Yc41-camelCase{transform:translate(-50%,-50%) translateY(3px) rotate(-10deg)}.styles__winnerBlookShadow2___2CFEk-camelCase{transform:translate(-50%,-50%) translateY(10px) rotate(-10deg)}.styles__winnerBlookShadow3___gza0m-camelCase{transform:translate(-55%,-60%) rotate(5deg) scale(1.4)}.styles__winnerNameplate___2eL5d-camelCase{width:50%;left:50%}.styles__winnerName___2C6ZT-camelCase,.styles__winnerNameplate___2eL5d-camelCase{bottom:unset;top:42%;transform:translate(-50%,-50%)}.styles__winnerName___2C6ZT-camelCase{left:48%;width:38%;height:5vh}.styles__winnerCorrectContainer___29dKA-camelCase{right:145%;width:90%;top:2vw}.styles__winnerCheck___2yjvC-camelCase{width:30%;margin-right:5%;padding-bottom:1.5vw}.styles__winnerTime___3nbp1-camelCase{font-size:4vw;padding-bottom:1.5vw}.styles__winnerEnergyContainer___28lLt-camelCase{right:120%;width:80%;top:9vw}.styles__winnerEnergy___3xBsk-camelCase{font-size:5vw;padding-bottom:1.5vw}.styles__winnerEnergyIcon___27N-T-camelCase{width:18%;margin-right:15%;margin-left:5%;padding-bottom:1.5vw}.styles__defeatTextBg___kd38G-camelCase{width:50%;top:62%;right:50%}.styles__defeatText___3VwUK-camelCase{width:32%;top:62%;right:50%}.styles__loserBlookContainer___3rpaH-camelCase,.styles__loserBlookShadow3___2jhmn-camelCase{width:25%;top:73%;right:50%}.styles__loserBlookShadow1___3FQLc-camelCase{transform:translate(50%,-50%) translateY(2px) rotate(-10deg)}.styles__loserBlookShadow2___2FbUp-camelCase{transform:translate(50%,-50%) translateY(7px) rotate(-10deg)}.styles__loserBlookShadow3___2jhmn-camelCase{transform:translate(55%,-60%) rotate(5deg) scale(1.4)}.styles__loserNameplate___OBayt-camelCase{width:40%;bottom:12%;right:50%}.styles__loserName___3x34A-camelCase{bottom:12%;right:52%;width:32%;height:3.5vh}.styles__loserCorrectContainer___2guae-camelCase{right:45%;width:110%;top:0}.styles__loserCheck___1MS9e-camelCase{width:25%;margin-right:5%;padding-bottom:1.5vw}.styles__loserTime___LNWNT-camelCase{font-size:3vw;padding-bottom:1.5vw}.styles__loserEnergyContainer___3GzYk-camelCase{right:10%;width:90%;top:6vw}.styles__loserEnergy___Ol4FK-camelCase{font-size:4vw;padding-bottom:1.5vw}.styles__loserEnergyIcon___3bVUA-camelCase{width:18%;margin-right:12%;margin-left:5%;padding-bottom:1.5vw}}", ""]), t.locals = {
                 background: "styles__background___2doOd-camelCase",
                 resultsOverlay: "styles__resultsOverlay___3ARXU-camelCase",
                 winnerOverlay: "styles__winnerOverlay___2R4HG-camelCase",
@@ -2527,6 +2527,7 @@
                 loserBlook: "styles__loserBlook___3K4Yz-camelCase",
                 loserBlookShadow1: "styles__loserBlookShadow1___3FQLc-camelCase",
                 loserBlookShadow2: "styles__loserBlookShadow2___2FbUp-camelCase",
+                grayBlook: "styles__grayBlook___HnAYs-camelCase",
                 loserNameplate: "styles__loserNameplate___OBayt-camelCase",
                 loserName: "styles__loserName___3x34A-camelCase",
                 loserCorrectContainer: "styles__loserCorrectContainer___2guae-camelCase",
@@ -4597,169 +4598,184 @@
                 n = a("17x9"),
                 r = a.n(n),
                 l = a("4HzQ"),
-                i = a("T7Yb"),
+                i = a("TSYQ"),
                 c = a.n(i),
-                _ = a("0oXL"),
-                m = a("74sb"),
-                d = function(e) {
-                    var t = e.winner,
-                        a = e.loser,
-                        s = e.bothWin,
-                        n = e.bothLose,
-                        r = e.win,
-                        i = e.safe;
-                    return o.a.createElement("div", {
-                        className: c.a.background
-                    }, r ? o.a.createElement(o.a.Fragment, null, o.a.createElement("div", {
-                        className: c.a.winnerBackground
-                    }), o.a.createElement("img", {
-                        src: "https://media.blooket.com/image/upload/v1662148586/Media/br/BG_Overlay2.svg",
-                        alt: "Background",
-                        className: c.a.winnerOverlay
-                    })) : o.a.createElement(o.a.Fragment, null, o.a.createElement("img", {
-                        src: "https://media.blooket.com/image/upload/v1662759696/Media/br/Defeat_BG_Line_Overlay_V2.svg",
-                        alt: "Sadness",
-                        className: c.a.loserOverlay
-                    }), o.a.createElement("img", {
-                        src: "https://media.blooket.com/image/upload/v1662764457/Media/br/Wavy_BG_Overlay_V2.svg",
-                        alt: "Waves",
-                        className: c.a.loserOverlay2
-                    })), o.a.createElement("img", {
-                        src: "https://media.blooket.com/image/upload/v1662148586/Media/br/BG_Overlay2.svg",
-                        alt: "Background",
-                        className: c.a.resultsOverlay
-                    }), o.a.createElement("div", {
-                        className: c.a.resultsText
-                    }, "Match Results"), o.a.createElement(_.a, {
-                        name: t.blook,
-                        className: c.a.winnerBlookShadow3
-                    }), o.a.createElement("img", {
-                        src: "https://media.blooket.com/image/upload/v1662400412/Media/br/Main_Victor_or_Defeat_Title_BG.svg",
-                        alt: "Nameplate",
-                        className: c.a.victoryTextBg
-                    }), o.a.createElement("img", {
-                        src: r ? "https://media.blooket.com/image/upload/v1663059931/Media/br/Victory_Text.png" : "https://media.blooket.com/image/upload/v1662400412/Media/br/Defeated_Text.svg",
-                        alt: r ? "Victory" : "Defeat",
-                        className: c.a.victoryText
-                    }), o.a.createElement("div", {
-                        className: c.a.winnerBlookContainer
-                    }, o.a.createElement("div", {
-                        className: c.a.winnerCorrectContainer
-                    }, o.a.createElement("img", {
-                        src: "https://media.blooket.com/image/upload/v1662400414/Media/br/Energy-Time_BG_No_Tilt.svg",
-                        alt: "Nameplate",
-                        className: c.a.winnerCorrectBg
-                    }), o.a.createElement("img", {
-                        src: t.correct ? "https://media.blooket.com/image/upload/v1662400414/Media/br/Green_Check.svg" : "https://media.blooket.com/image/upload/v1662400412/Media/br/Red_X.svg",
-                        alt: t.correct ? "Correct" : "Incorrect",
-                        className: c.a.winnerCheck
-                    }), o.a.createElement("div", {
-                        className: c.a.winnerTime,
-                        style: {
-                            color: t.correct ? "#4fcb11" : "#ff1700"
-                        }
-                    }, "".concat((t.time / 1e3 || 0).toFixed(3), "s"))), o.a.createElement("div", {
-                        className: c.a.winnerEnergyContainer
-                    }, o.a.createElement("img", {
-                        src: "https://media.blooket.com/image/upload/v1662400414/Media/br/Energy-Time_BG_No_Tilt.svg",
-                        alt: "Nameplate",
-                        className: c.a.winnerCorrectBg
-                    }), o.a.createElement("div", {
-                        className: c.a.winnerEnergy
-                    }, t.energy), o.a.createElement("img", {
-                        src: "https://media.blooket.com/image/upload/v1655936179/Media/br/Energy_Bolt_Orange.svg",
-                        alt: "Energy",
-                        className: c.a.winnerEnergyIcon
-                    })), o.a.createElement(_.a, {
-                        name: t.blook,
-                        className: c.a.winnerBlookShadow2
-                    }), o.a.createElement(_.a, {
-                        name: t.blook,
-                        className: c.a.winnerBlookShadow1
-                    }), o.a.createElement(_.a, {
-                        name: t.blook,
-                        className: c.a.winnerBlook
-                    })), o.a.createElement("img", {
-                        src: "https://media.blooket.com/image/upload/v1662148586/Media/br/Orange_Nameplate_No_Tilt.svg",
-                        alt: "Nameplate",
-                        className: c.a.winnerNameplate
-                    }), o.a.createElement(l.Textfit, {
-                        className: c.a.winnerName,
-                        mode: "single",
-                        min: 1,
-                        max: Object(m.v)("8vw"),
-                        forceSingleModeWidth: !1
-                    }, t.clone ? "".concat(t.name, " 👾") : t.name), o.a.createElement(_.a, {
-                        name: a.blook,
-                        className: c.a.loserBlookShadow3
-                    }), o.a.createElement("img", {
-                        src: "https://media.blooket.com/image/upload/v1662400412/Media/br/Side_Victor_or_Defeat_Title_BG.svg",
-                        alt: "Nameplate",
-                        className: c.a.defeatTextBg
-                    }), o.a.createElement("img", {
-                        src: s ? "https://media.blooket.com/image/upload/v1663059931/Media/br/Victory_Text.png" : "https://media.blooket.com/image/upload/v1662400412/Media/br/Defeated_Text.svg",
-                        alt: s ? "Victory" : "Defeat",
-                        className: c.a.defeatText
-                    }), o.a.createElement("div", {
-                        className: c.a.loserBlookContainer
-                    }, o.a.createElement("div", {
-                        className: c.a.loserCorrectContainer
-                    }, o.a.createElement("img", {
-                        src: "https://media.blooket.com/image/upload/v1662400414/Media/br/Energy-Time_BG_No_Tilt.svg",
-                        alt: "Nameplate",
-                        className: c.a.loserCorrectBg
-                    }), o.a.createElement("img", {
-                        src: a.correct ? "https://media.blooket.com/image/upload/v1662400414/Media/br/Green_Check.svg" : "https://media.blooket.com/image/upload/v1662400412/Media/br/Red_X.svg",
-                        alt: a.correct ? "Correct" : "Incorrect",
-                        className: c.a.loserCheck
-                    }), o.a.createElement("div", {
-                        className: c.a.loserTime,
-                        style: {
-                            color: a.correct ? "#4fcb11" : "#ff1700"
-                        }
-                    }, "".concat((a.time / 1e3 || 0).toFixed(3), "s"))), o.a.createElement("div", {
-                        className: c.a.loserEnergyContainer
-                    }, o.a.createElement("img", {
-                        src: "https://media.blooket.com/image/upload/v1662400414/Media/br/Energy-Time_BG_No_Tilt.svg",
-                        alt: "Nameplate",
-                        className: c.a.loserCorrectBg
-                    }), o.a.createElement("div", {
-                        className: c.a.loserEnergy
-                    }, a.energy), o.a.createElement("img", {
-                        src: "https://media.blooket.com/image/upload/v1655936179/Media/br/Energy_Bolt_Blue.svg",
-                        alt: "Energy",
-                        className: c.a.loserEnergyIcon
-                    })), o.a.createElement(_.a, {
-                        name: a.blook,
-                        className: c.a.loserBlookShadow2
-                    }), o.a.createElement(_.a, {
-                        name: a.blook,
-                        className: c.a.loserBlookShadow1
-                    }), o.a.createElement(_.a, {
-                        name: a.blook,
-                        className: c.a.loserBlook
-                    })), o.a.createElement("img", {
-                        src: "https://media.blooket.com/image/upload/v1655936180/Media/br/Blue_Nameplate.svg",
-                        alt: "Nameplate",
-                        className: c.a.loserNameplate
-                    }), o.a.createElement(l.Textfit, {
-                        className: c.a.loserName,
-                        mode: "single",
-                        min: 1,
-                        max: Object(m.v)("8vw"),
-                        forceSingleModeWidth: !1
-                    }, a.clone ? "".concat(a.name, " 👾") : a.name), n || s ? o.a.createElement("div", {
-                        className: c.a.rightText
-                    }, i ? "You Can't All Lose" : n ? "You Both Lose" : s ? "You Both Win" : "") : null)
-                };
-            d.propTypes = {
+                _ = a("T7Yb"),
+                m = a.n(_),
+                d = a("0oXL"),
+                f = a("74sb");
+
+            function y(e, t, a) {
+                return t in e ? Object.defineProperty(e, t, {
+                    value: a,
+                    enumerable: !0,
+                    configurable: !0,
+                    writable: !0
+                }) : e[t] = a, e
+            }
+            var p = function(e) {
+                var t = e.winner,
+                    a = e.loser,
+                    s = e.bothWin,
+                    n = e.bothLose,
+                    r = e.win,
+                    i = e.safe,
+                    _ = e.isPlayer,
+                    p = !r && _ ? a : t,
+                    u = !r && _ ? t : a;
+                return o.a.createElement("div", {
+                    className: m.a.background
+                }, r ? o.a.createElement(o.a.Fragment, null, o.a.createElement("div", {
+                    className: m.a.winnerBackground
+                }), o.a.createElement("img", {
+                    src: "https://media.blooket.com/image/upload/v1662148586/Media/br/BG_Overlay2.svg",
+                    alt: "Background",
+                    className: m.a.winnerOverlay
+                })) : o.a.createElement(o.a.Fragment, null, o.a.createElement("img", {
+                    src: "https://media.blooket.com/image/upload/v1662759696/Media/br/Defeat_BG_Line_Overlay_V2.svg",
+                    alt: "Sadness",
+                    className: m.a.loserOverlay
+                }), o.a.createElement("img", {
+                    src: "https://media.blooket.com/image/upload/v1662764457/Media/br/Wavy_BG_Overlay_V2.svg",
+                    alt: "Waves",
+                    className: m.a.loserOverlay2
+                })), o.a.createElement("img", {
+                    src: "https://media.blooket.com/image/upload/v1662148586/Media/br/BG_Overlay2.svg",
+                    alt: "Background",
+                    className: m.a.resultsOverlay
+                }), o.a.createElement("div", {
+                    className: m.a.resultsText
+                }, "Match Results"), o.a.createElement(d.a, {
+                    name: p.blook,
+                    className: m.a.winnerBlookShadow3
+                }), o.a.createElement("img", {
+                    src: "https://media.blooket.com/image/upload/v1662400412/Media/br/Main_Victor_or_Defeat_Title_BG.svg",
+                    alt: "Nameplate",
+                    className: m.a.victoryTextBg
+                }), o.a.createElement("img", {
+                    src: r ? "https://media.blooket.com/image/upload/v1663059931/Media/br/Victory_Text.png" : "https://media.blooket.com/image/upload/v1662400412/Media/br/Defeated_Text.svg",
+                    alt: r ? "Victory" : "Defeat",
+                    className: m.a.victoryText
+                }), o.a.createElement("div", {
+                    className: m.a.winnerBlookContainer
+                }, o.a.createElement("div", {
+                    className: m.a.winnerCorrectContainer
+                }, o.a.createElement("img", {
+                    src: "https://media.blooket.com/image/upload/v1662400414/Media/br/Energy-Time_BG_No_Tilt.svg",
+                    alt: "Nameplate",
+                    className: m.a.winnerCorrectBg
+                }), o.a.createElement("img", {
+                    src: p.correct ? "https://media.blooket.com/image/upload/v1662400414/Media/br/Green_Check.svg" : "https://media.blooket.com/image/upload/v1662400412/Media/br/Red_X.svg",
+                    alt: p.correct ? "Correct" : "Incorrect",
+                    className: m.a.winnerCheck
+                }), o.a.createElement("div", {
+                    className: m.a.winnerTime,
+                    style: {
+                        color: p.correct ? "#4fcb11" : "#ff1700"
+                    }
+                }, "".concat((p.time / 1e3 || 0).toFixed(3), "s"))), o.a.createElement("div", {
+                    className: m.a.winnerEnergyContainer
+                }, o.a.createElement("img", {
+                    src: "https://media.blooket.com/image/upload/v1662400414/Media/br/Energy-Time_BG_No_Tilt.svg",
+                    alt: "Nameplate",
+                    className: m.a.winnerCorrectBg
+                }), o.a.createElement("div", {
+                    className: m.a.winnerEnergy
+                }, p.energy), o.a.createElement("img", {
+                    src: "https://media.blooket.com/image/upload/v1655936179/Media/br/Energy_Bolt_Orange.svg",
+                    alt: "Energy",
+                    className: m.a.winnerEnergyIcon
+                })), o.a.createElement(d.a, {
+                    name: p.blook,
+                    className: m.a.winnerBlookShadow2
+                }), o.a.createElement(d.a, {
+                    name: p.blook,
+                    className: m.a.winnerBlookShadow1
+                }), o.a.createElement(d.a, {
+                    name: p.blook,
+                    className: c()(m.a.winnerBlook, y({}, m.a.grayBlook, s || !r && _))
+                })), o.a.createElement("img", {
+                    src: "https://media.blooket.com/image/upload/v1662148586/Media/br/Orange_Nameplate_No_Tilt.svg",
+                    alt: "Nameplate",
+                    className: m.a.winnerNameplate
+                }), o.a.createElement(l.Textfit, {
+                    className: m.a.winnerName,
+                    mode: "single",
+                    min: 1,
+                    max: Object(f.v)("8vw"),
+                    forceSingleModeWidth: !1
+                }, p.clone ? "".concat(p.name, " 👾") : p.name), o.a.createElement(d.a, {
+                    name: u.blook,
+                    className: m.a.loserBlookShadow3
+                }), o.a.createElement("img", {
+                    src: "https://media.blooket.com/image/upload/v1662400412/Media/br/Side_Victor_or_Defeat_Title_BG.svg",
+                    alt: "Nameplate",
+                    className: m.a.defeatTextBg
+                }), o.a.createElement("img", {
+                    src: (s || !r && _) && !n ? "https://media.blooket.com/image/upload/v1663059931/Media/br/Victory_Text.png" : "https://media.blooket.com/image/upload/v1662400412/Media/br/Defeated_Text.svg",
+                    alt: (s || !r && _) && !n ? "Victory" : "Defeat",
+                    className: m.a.defeatText
+                }), o.a.createElement("div", {
+                    className: m.a.loserBlookContainer
+                }, o.a.createElement("div", {
+                    className: m.a.loserCorrectContainer
+                }, o.a.createElement("img", {
+                    src: "https://media.blooket.com/image/upload/v1662400414/Media/br/Energy-Time_BG_No_Tilt.svg",
+                    alt: "Nameplate",
+                    className: m.a.loserCorrectBg
+                }), o.a.createElement("img", {
+                    src: u.correct ? "https://media.blooket.com/image/upload/v1662400414/Media/br/Green_Check.svg" : "https://media.blooket.com/image/upload/v1662400412/Media/br/Red_X.svg",
+                    alt: u.correct ? "Correct" : "Incorrect",
+                    className: m.a.loserCheck
+                }), o.a.createElement("div", {
+                    className: m.a.loserTime,
+                    style: {
+                        color: u.correct ? "#4fcb11" : "#ff1700"
+                    }
+                }, "".concat((u.time / 1e3 || 0).toFixed(3), "s"))), o.a.createElement("div", {
+                    className: m.a.loserEnergyContainer
+                }, o.a.createElement("img", {
+                    src: "https://media.blooket.com/image/upload/v1662400414/Media/br/Energy-Time_BG_No_Tilt.svg",
+                    alt: "Nameplate",
+                    className: m.a.loserCorrectBg
+                }), o.a.createElement("div", {
+                    className: m.a.loserEnergy
+                }, u.energy), o.a.createElement("img", {
+                    src: "https://media.blooket.com/image/upload/v1655936179/Media/br/Energy_Bolt_Blue.svg",
+                    alt: "Energy",
+                    className: m.a.loserEnergyIcon
+                })), o.a.createElement(d.a, {
+                    name: u.blook,
+                    className: m.a.loserBlookShadow2
+                }), o.a.createElement(d.a, {
+                    name: u.blook,
+                    className: m.a.loserBlookShadow1
+                }), o.a.createElement(d.a, {
+                    name: u.blook,
+                    className: c()(m.a.loserBlook, y({}, m.a.grayBlook, n || !(s || !r && _)))
+                })), o.a.createElement("img", {
+                    src: "https://media.blooket.com/image/upload/v1655936180/Media/br/Blue_Nameplate.svg",
+                    alt: "Nameplate",
+                    className: m.a.loserNameplate
+                }), o.a.createElement(l.Textfit, {
+                    className: m.a.loserName,
+                    mode: "single",
+                    min: 1,
+                    max: Object(f.v)("8vw"),
+                    forceSingleModeWidth: !1
+                }, u.clone ? "".concat(u.name, " 👾") : u.name), n || s ? o.a.createElement("div", {
+                    className: m.a.rightText
+                }, i ? "You Can't All Lose" : n ? "You Both Lose" : s ? "You Both Win" : "") : null)
+            };
+            p.propTypes = {
                 winner: r.a.object,
                 loser: r.a.object,
                 bothWin: r.a.bool,
                 bothLose: r.a.bool,
                 win: r.a.bool,
-                safe: r.a.bool
-            }, t.a = d
+                safe: r.a.bool,
+                isPlayer: r.a.bool
+            }, t.a = p
         },
         zogk: function(e, t, a) {
             (t = e.exports = a("JPst")(!1)).push([e.i, ".styles__amountContainer___3IhWu-camelCase{width:80%;height:70px;display:flex;flex-direction:row;align-items:center;background-color:rgba(0,0,0,.05);border-radius:6px;margin:35px auto 10px}.styles__amountIcon___14sEA-camelCase{font-size:32px;line-height:70px;color:#3a3a3a;margin:0 5px 0 20px}.styles__amountHeader___3leCN-camelCase{font-size:28px;line-height:70px;margin:0 5px 0 10px;flex-grow:1;text-align:left}.styles__amountHeader___3leCN-camelCase,.styles__amountInput___3nmO--camelCase{font-family:Nunito,sans-serif;font-weight:700;color:#3a3a3a}.styles__amountInput___3nmO--camelCase{border:2px solid rgba(0,0,0,.17);border-radius:6px;margin:auto 20px;padding:5px 15px;width:200px;height:35px;line-height:35px;font-size:26px;text-align:center;outline:none}.styles__amountInput___3nmO--camelCase:focus{border-color:#0bc2cf}", ""]), t.locals = {

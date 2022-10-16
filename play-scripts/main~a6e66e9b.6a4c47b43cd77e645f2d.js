@@ -643,7 +643,8 @@
                                 bothLose: this.state.bothLose,
                                 win: this.state.win,
                                 safe: this.props.client.safe,
-                                team: Boolean(this.props.client.team)
+                                team: Boolean(this.props.client.team),
+                                isPlayer: !0
                             }))) : o.a.createElement(u.a, {
                                 to: "/play"
                             })
@@ -6593,7 +6594,6 @@
                             bothWin: !1,
                             bothLose: !1,
                             ready: !1,
-                            matches: [],
                             muted: !!t.host && t.host.muted
                         }, e.ok = !1, e.changeMuted = e.changeMuted.bind(P(e)), e.audio = new Audio(x.a), e.audio.muted = e.state.muted, e
                     }
@@ -6604,12 +6604,13 @@
                             if (this.props.host && this.props.host.round && this.props.host.matches) {
                                 var e = this.props.host,
                                     r = Math.max(10500, 6e3 + 500 * e.matches.length);
-                                1 !== e.matches.length && u.animateScroll.scrollToBottom({
-                                    duration: .3 * r,
-                                    delay: .4 * r,
-                                    smooth: "linear",
-                                    containerId: "matches"
-                                }), this.readyTimeout = setTimeout((function() {
+                                1 !== e.matches.length && (this.scrollTimeout = setTimeout((function() {
+                                    u.animateScroll.scrollToBottom({
+                                        duration: .3 * r,
+                                        smooth: "linear",
+                                        containerId: "matches"
+                                    })
+                                }), .4 * r)), this.readyTimeout = setTimeout((function() {
                                     t.audio.play(), t.setState({
                                         ready: !0
                                     })
@@ -6622,8 +6623,7 @@
                                     winner: i ? n : o,
                                     loser: i ? o : n,
                                     bothLose: !i && !a,
-                                    bothWin: i && a,
-                                    matches: JSON.parse(JSON.stringify(this.props.host.matches))
+                                    bothWin: i && a
                                 }), this.timeout = setTimeout((function() {
                                     if (1 === t.props.host.players.length) {
                                         var e = [],
@@ -6703,7 +6703,7 @@
                     }, {
                         key: "componentWillUnmount",
                         value: function() {
-                            clearTimeout(this.readyTimeout), clearTimeout(this.timeout), !this.ok && this.props.host && this.props.host.id && (this.props.liveGameController.removeHostAndDeleteGame(), this.props.deleteHost())
+                            clearTimeout(this.readyTimeout), clearTimeout(this.scrollTimeout), clearTimeout(this.timeout), !this.ok && this.props.host && this.props.host.id && (this.props.liveGameController.removeHostAndDeleteGame(), this.props.deleteHost())
                         }
                     }, {
                         key: "changeMuted",
@@ -6745,10 +6745,10 @@
                                 }, "Match Results"), o.a.createElement(u.Element, {
                                     className: b.a.matchArray,
                                     id: "matches"
-                                }, this.state.matches.map((function(r) {
+                                }, e.matches.map((function(r, n) {
                                     return o.a.createElement(w.a, {
                                         match: r,
-                                        key: r[0].name,
+                                        key: n,
                                         ready: t.state.ready,
                                         safe: e.safe
                                     })
@@ -7037,7 +7037,7 @@
             }))(Object(v.d)(k)))
         },
         grrT: function(t, e, r) {
-            (e = t.exports = r("JPst")(!1)).push([t.i, ".styles__wavesBg___2URcc-camelCase{position:absolute;bottom:0;left:0;width:100%;mix-blend-mode:overlay}.styles__header___2zco1-camelCase{color:#fff;font-family:Titan One,sans-serif;text-shadow:2px 2px 8px grey;font-size:5vw;opacity:0;margin:4vh auto;width:100%;text-align:center;animation:styles__fadeInPop___2O_Zq-camelCase .3s linear .5s forwards}@keyframes styles__fadeInPop___2O_Zq-camelCase{0%{opacity:0;transform:scale(.8)}80%{transform:scale(1.1)}to{opacity:1;transform:scale(1)}}.styles__matchArray___2iZVn-camelCase{overflow:hidden;width:92vw;height:calc(75vh - 65px);margin:3vh auto 0;padding:1vh 0;box-sizing:border-box;display:flex;flex-direction:column;align-content:flex-start;opacity:0;animation:styles__fadeIn___1lPIs-camelCase .3s linear .75s forwards}@keyframes styles__fadeIn___1lPIs-camelCase{0%{opacity:0}to{opacity:1}}.styles__invisible___3zprf-camelCase{opacity:0;transition:opacity .5s linear}", ""]), e.locals = {
+            (e = t.exports = r("JPst")(!1)).push([t.i, ".styles__wavesBg___2URcc-camelCase{position:absolute;bottom:0;left:0;width:100%;mix-blend-mode:overlay}.styles__header___2zco1-camelCase{color:#fff;font-family:Titan One,sans-serif;text-shadow:2px 2px 8px grey;font-size:5vw;opacity:0;margin:4vh auto;width:100%;text-align:center;animation:styles__fadeInPop___2O_Zq-camelCase .3s linear .5s forwards}@keyframes styles__fadeInPop___2O_Zq-camelCase{0%{opacity:0;transform:scale(.8)}80%{transform:scale(1.1)}to{opacity:1;transform:scale(1)}}.styles__matchArray___2iZVn-camelCase{overflow-x:hidden;overflow-y:scroll;width:92vw;height:calc(75vh - 65px);margin:3vh auto 0;padding:1vh 0;box-sizing:border-box;display:flex;flex-direction:column;align-content:flex-start;opacity:0;animation:styles__fadeIn___1lPIs-camelCase .3s linear .75s forwards}@keyframes styles__fadeIn___1lPIs-camelCase{0%{opacity:0}to{opacity:1}}.styles__matchArray___2iZVn-camelCase::-webkit-scrollbar{display:none}.styles__invisible___3zprf-camelCase{opacity:0;transition:opacity .5s linear}", ""]), e.locals = {
                 wavesBg: "styles__wavesBg___2URcc-camelCase",
                 header: "styles__header___2zco1-camelCase",
                 fadeInPop: "styles__fadeInPop___2O_Zq-camelCase",
@@ -8652,12 +8652,13 @@
                     value: function() {
                         var t = this;
                         if (this.props.host && this.props.host.round && this.props.host.matches) {
-                            u.animateScroll.scrollToBottom({
-                                duration: 3e3,
-                                delay: 2e3,
-                                smooth: "linear",
-                                containerId: "matches"
-                            });
+                            1 !== this.props.host.matches.length && (this.scrollTimeout = setTimeout((function() {
+                                u.animateScroll.scrollToBottom({
+                                    duration: 3e3,
+                                    smooth: "linear",
+                                    containerId: "matches"
+                                })
+                            }), 2e3));
                             var e = 8;
                             this.timerInterval = setInterval((function() {
                                 e -= 1, t.setState({
@@ -8674,7 +8675,7 @@
                 }, {
                     key: "componentWillUnmount",
                     value: function() {
-                        clearInterval(this.timerInterval), !this.ok && this.props.host && this.props.host.id && (this.props.liveGameController.removeHostAndDeleteGame(), this.props.deleteHost())
+                        clearInterval(this.timerInterval), clearTimeout(this.scrollTimeout), !this.ok && this.props.host && this.props.host.id && (this.props.liveGameController.removeHostAndDeleteGame(), this.props.deleteHost())
                     }
                 }, {
                     key: "changeMuted",
@@ -8719,10 +8720,10 @@
                             }, "Starting In ".concat(this.state.timer)), o.a.createElement(u.Element, {
                                 className: v.a.matchArray,
                                 id: "matches"
-                            }, t.matches.map((function(t) {
+                            }, t.matches.map((function(t, e) {
                                 return o.a.createElement(g.a, {
                                     match: t,
-                                    key: t[0].name
+                                    key: e
                                 })
                             })))) : o.a.createElement("div", {
                                 className: m.a.hostRegularBody
@@ -9539,7 +9540,7 @@
             n.locals && (t.exports = n.locals)
         },
         vypJ: function(t, e, r) {
-            (e = t.exports = r("JPst")(!1)).push([t.i, ".styles__wavesBg___3LFvY-camelCase{position:absolute;bottom:0;left:0;width:100%;mix-blend-mode:overlay}.styles__header___3sxWE-camelCase{color:#fff;font-family:Titan One,sans-serif;text-shadow:2px 2px 8px grey;font-size:5vw;opacity:0;margin:4vh auto;width:100%;text-align:center;animation:styles__fadeInPop___30zIC-camelCase .3s linear .5s forwards}@keyframes styles__fadeInPop___30zIC-camelCase{0%{opacity:0;transform:scale(.8)}80%{transform:scale(1.1)}to{opacity:1;transform:scale(1)}}.styles__matchArray___1EXkh-camelCase{overflow:hidden;width:92vw;height:calc(75vh - 65px);margin:3vh auto 0;padding:1vh 0;box-sizing:border-box;display:flex;flex-direction:column;align-content:flex-start;opacity:0;animation:styles__fadeIn___R7i1h-camelCase .3s linear .75s forwards}@keyframes styles__fadeIn___R7i1h-camelCase{0%{opacity:0}to{opacity:1}}.styles__invisible___24KJJ-camelCase{opacity:0;transition:opacity .5s linear}", ""]), e.locals = {
+            (e = t.exports = r("JPst")(!1)).push([t.i, ".styles__wavesBg___3LFvY-camelCase{position:absolute;bottom:0;left:0;width:100%;mix-blend-mode:overlay}.styles__header___3sxWE-camelCase{color:#fff;font-family:Titan One,sans-serif;text-shadow:2px 2px 8px grey;font-size:5vw;opacity:0;margin:4vh auto;width:100%;text-align:center;animation:styles__fadeInPop___30zIC-camelCase .3s linear .5s forwards}@keyframes styles__fadeInPop___30zIC-camelCase{0%{opacity:0;transform:scale(.8)}80%{transform:scale(1.1)}to{opacity:1;transform:scale(1)}}.styles__matchArray___1EXkh-camelCase{overflow-x:hidden;overflow-y:scroll;width:92vw;height:calc(75vh - 65px);margin:3vh auto 0;padding:1vh 0;box-sizing:border-box;display:flex;flex-direction:column;align-content:flex-start;opacity:0;animation:styles__fadeIn___R7i1h-camelCase .3s linear .75s forwards}@keyframes styles__fadeIn___R7i1h-camelCase{0%{opacity:0}to{opacity:1}}.styles__matchArray___1EXkh-camelCase::-webkit-scrollbar{display:none}.styles__invisible___24KJJ-camelCase{opacity:0;transition:opacity .5s linear}", ""]), e.locals = {
                 wavesBg: "styles__wavesBg___3LFvY-camelCase",
                 header: "styles__header___3sxWE-camelCase",
                 fadeInPop: "styles__fadeInPop___30zIC-camelCase",

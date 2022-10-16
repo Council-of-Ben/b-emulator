@@ -2428,10 +2428,10 @@
                                 case 10:
                                     n = ["Bot", "test"].includes(t.name), this.setState({
                                         isBen: n,
-                                        canHost: !1,
+                                        canHost: !0,
                                         canPlusHost: !0,
                                         settings: {
-                                            type: "Brawl",
+                                            type: "Gold",
                                             method: "",
                                             transition: !1
                                         }
