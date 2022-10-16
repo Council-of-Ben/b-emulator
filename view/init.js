@@ -14,7 +14,7 @@ function getWebpackBrain() {
 };
 
 function getWebpackCache(id=null) {
-	const c = window.webpackJsonp.push([[], { ['']: (_, a, b) => { a.cache = b.c }, }, [['']],]).cache;
+	const { c } = getWebpackBrain();
 	return !id?c:c[id];
 };
 
