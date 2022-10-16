@@ -5,7 +5,7 @@ module.exports = {
 	dependencies: [],
 	styles: false,
 	author: "Goose V",
-	name: "Blook Viewer",
+	name: "View Blooks",
 	description: "This mod can show you other peoples blooks.",
 	image: "https://media.blooket.com/image/upload/v1661496296/Media/uiTest/Blooks_Unlocked.svg",
 	inputs: [{
