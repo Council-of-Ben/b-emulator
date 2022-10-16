@@ -409,8 +409,8 @@ let e = setInterval(() => {
 			if (m.styles) styles.innerHTML += fs.accessSync(`./mods/${mod}.css`, fs.R_OK) ? fs.readFileSync(`./mods/${mod}.css`, "utf8") : "";
 			//m.run();
 		};
-		
-		const scripts = window.MODS.map(m=>({
+		let sc = {};
+		const scripts = window.MODS.map(m=>{return sc[m.name] = {
 			name:m.name,
 			image:m.image,
 			type:"toggle",
@@ -418,9 +418,9 @@ let e = setInterval(() => {
 			run:m.run,
 			inputs:m.inputs,
 			
-		}));
+		};});
 		for (let s of scripts) {
-			addMod(s.name, s.image, scripts);
+			addMod(s.name, s.image, [sc[s.name]]);
 		};
 		document.head.insertBefore(styles, document.head.children[1]);
 		document.body.appendChild(EMLGUI);

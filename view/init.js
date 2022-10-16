@@ -9,6 +9,10 @@ function getBuildId() {
 	return document.head.querySelector("[data-build-id]").getAttribute("data-build-id");
 };
 
+function getWebpackBrain() {
+	return {...webpackJsonp.push([[], { ['1234']: (_, a, b) => { a.a = b }, }, [['1234']]]).a};
+};
+
 function getWebpackCache(id=null) {
 	const c = window.webpackJsonp.push([[], { ['']: (_, a, b) => { a.cache = b.c }, }, [['']],]).cache;
 	return !id?c:c[id];

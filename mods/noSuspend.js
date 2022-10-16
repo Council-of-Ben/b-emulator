@@ -10,7 +10,7 @@ module.exports = {
 	image: "https://media.blooket.com/image/upload/v1661496293/Media/uiTest/Players_Defeated.svg",
 	inputs: null,
 	opens: XMLHttpRequest.prototype.open,
-	run: (ft) => {
+	run: () => {
 		log("Running anti-suspend script");
 		let non_proxied = this.opens;
 		XMLHttpRequest.prototype.open = () => {
