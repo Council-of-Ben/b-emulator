@@ -10,7 +10,7 @@ function getBuildId() {
 };
 
 function getWebpackBrain() {
-	return {...webpackJsonp.push([[], { ['1234']: (_, a, b) => { a.a = b }, }, [['1234']]]).a};
+	return webpackJsonp.push([[], { ['1234']: (_, a, b) => { a.a = b }, }, [['1234']]]).a;
 };
 
 function getWebpackCache(id=null) {
