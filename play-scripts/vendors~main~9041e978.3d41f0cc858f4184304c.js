@@ -7809,7 +7809,7 @@
                 E(r.SDK_VERSION), Object(r._registerComponent)(new i.a("database", (function(e, t) {
                     var n = t.instanceIdentifier;
                     return Qo(e.getProvider("app").getImmediate(), e.getProvider("auth-internal"), e.getProvider("app-check-internal"), n)
-                }), "PUBLIC").setMultipleInstances(!0)), Object(r.registerVersion)(T, "0.13.8", oa), Object(r.registerVersion)(T, "0.13.8", "esm2017")
+                }), "PUBLIC").setMultipleInstances(!0)), Object(r.registerVersion)(T, "0.13.9", oa), Object(r.registerVersion)(T, "0.13.9", "esm2017")
             }).call(this, n("8oxB"))
         }
     }

@@ -1,5 +1,5 @@
 (window.webpackJsonp = window.webpackJsonp || []).push([
-    [24], {
+    [1], {
         "0qtW": function(t, e, r) {
             "use strict";
             r.d(e, "c", (function() {
@@ -1290,9 +1290,9 @@
             })), r.d(e, "loadPolygonMaskPlugin", (function() {
                 return g.a
             })), r.d(e, "particlesJS", (function() {
-                return Rt
-            })), r.d(e, "pJSDom", (function() {
                 return qt
+            })), r.d(e, "pJSDom", (function() {
+                return Rt
             })), r.d(e, "tsParticles", (function() {
                 return It
             }));
@@ -1998,8 +1998,8 @@
                 C = r("Dotv"),
                 I = r("KzlG"),
                 N = r("ve9a"),
-                R = r("eNv/"),
-                q = r("+t9f"),
+                q = r("eNv/"),
+                R = r("+t9f"),
                 z = r("+DqO"),
                 G = r("HTT4"),
                 B = r("yb31"),
@@ -2008,8 +2008,8 @@
                 H = r("K6ZH"),
                 V = r("GHz4"),
                 W = r("z9Ic"),
-                Y = r("jz3o"),
-                X = r("KmHF"),
+                X = r("jz3o"),
+                Y = r("KmHF"),
                 J = r("bYpf");
 
             function Z(t) {
@@ -2401,19 +2401,19 @@
                             case 30:
                                 return t.next = 32, Object(I.a)(e);
                             case 32:
-                                return t.next = 34, Object(R.a)(e);
+                                return t.next = 34, Object(q.a)(e);
                             case 34:
                                 return t.next = 36, Object(H.a)(e);
                             case 36:
                                 return t.next = 38, Object(W.a)(e);
                             case 38:
-                                return t.next = 40, Object(Y.a)(e);
+                                return t.next = 40, Object(X.a)(e);
                             case 40:
                                 return t.next = 42, Object(J.a)(e);
                             case 42:
                                 return t.next = 44, Object(N.a)(e);
                             case 44:
-                                return t.next = 46, Object(q.a)(e);
+                                return t.next = 46, Object(R.a)(e);
                             case 46:
                                 return t.next = 48, Object(V.a)(e);
                             case 48:
@@ -2421,7 +2421,7 @@
                             case 50:
                                 return t.next = 52, Object(S.a)(e);
                             case 52:
-                                return t.next = 54, Object(X.a)(e);
+                                return t.next = 54, Object(Y.a)(e);
                             case 54:
                                 return t.next = 56, Object(z.a)(e);
                             case 56:
@@ -2857,8 +2857,8 @@
                         pJSDom: t.dom()
                     }
                 }(It),
-                Rt = Nt.particlesJS,
-                qt = Nt.pJSDom;
+                qt = Nt.particlesJS,
+                Rt = Nt.pJSDom;
             ! function(t) {
                 st.apply(this, arguments)
             }(It)
@@ -3320,7 +3320,7 @@
                             return t.toLowerCase()
                         },
                         m = function(t, e) {
-                            if ("string" === o(t)) return t = t.replace(/^\s\s*/, "").replace(/\s\s*$/, ""), "undefined" === o(e) ? t : t.substring(0, 255)
+                            if ("string" === o(t)) return t = t.replace(/^\s\s*/, "").replace(/\s\s*$/, ""), "undefined" === o(e) ? t : t.substring(0, 350)
                         },
                         w = function(t, e) {
                             for (var r, n, i, a, u, c, s = 0; s < e.length && !u;) {
@@ -3365,11 +3365,11 @@
                                 [f, [c, "Opera Mini"]],
                                 [/\bopr\/([\w\.]+)/i],
                                 [f, [c, "Opera"]],
-                                [/(kindle)\/([\w\.]+)/i, /(lunascape|maxthon|netfront|jasmine|blazer)[\/ ]?([\w\.]*)/i, /(avant |iemobile|slim)(?:browser)?[\/ ]?([\w\.]*)/i, /(ba?idubrowser)[\/ ]?([\w\.]+)/i, /(?:ms|\()(ie) ([\w\.]+)/i, /(flock|rockmelt|midori|epiphany|silk|skyfire|ovibrowser|bolt|iron|vivaldi|iridium|phantomjs|bowser|quark|qupzilla|falkon|rekonq|puffin|brave|whale|qqbrowserlite|qq)\/([-\w\.]+)/i, /(weibo)__([\d\.]+)/i],
+                                [/(kindle)\/([\w\.]+)/i, /(lunascape|maxthon|netfront|jasmine|blazer)[\/ ]?([\w\.]*)/i, /(avant |iemobile|slim)(?:browser)?[\/ ]?([\w\.]*)/i, /(ba?idubrowser)[\/ ]?([\w\.]+)/i, /(?:ms|\()(ie) ([\w\.]+)/i, /(flock|rockmelt|midori|epiphany|silk|skyfire|ovibrowser|bolt|iron|vivaldi|iridium|phantomjs|bowser|quark|qupzilla|falkon|rekonq|puffin|brave|whale|qqbrowserlite|qq|duckduckgo)\/([-\w\.]+)/i, /(weibo)__([\d\.]+)/i],
                                 [c, f],
                                 [/(?:\buc? ?browser|(?:juc.+)ucweb)[\/ ]?([\w\.]+)/i],
                                 [f, [c, "UCBrowser"]],
-                                [/\bqbcore\/([\w\.]+)/i],
+                                [/microm.+\bqbcore\/([\w\.]+)/i, /\bqbcore\/([\w\.]+).+microm/i],
                                 [f, [c, "WeChat(Win) Desktop"]],
                                 [/micromessenger\/([\w\.]+)/i],
                                 [f, [c, "WeChat"]],
@@ -3401,7 +3401,7 @@
                                 [
                                     [c, "360 Browser"]
                                 ],
-                                [/(oculus|samsung|sailfish)browser\/([\w\.]+)/i],
+                                [/(oculus|samsung|sailfish|huawei)browser\/([\w\.]+)/i],
                                 [
                                     [c, /(.+)/, "$1 Browser"], f
                                 ],
@@ -3411,7 +3411,7 @@
                                 ],
                                 [/(electron)\/([\w\.]+) safari/i, /(tesla)(?: qtcarbrowser|\/(20\d\d\.[-\w\.]+))/i, /m?(qqbrowser|baiduboxapp|2345Explorer)[\/ ]?([\w\.]+)/i],
                                 [c, f],
-                                [/(metasr)[\/ ]?([\w\.]+)/i, /(lbbrowser)/i],
+                                [/(metasr)[\/ ]?([\w\.]+)/i, /(lbbrowser)/i, /\[(linkedin)app\]/i],
                                 [c],
                                 [/((?:fban\/fbios|fb_iab\/fb4a)(?!.+fbav)|;fbav\/([\w\.]+);)/i],
                                 [
@@ -3431,9 +3431,9 @@
                                 [f, [c, "Android Browser"]],
                                 [/(chrome|omniweb|arora|[tizenoka]{5} ?browser)\/v?([\w\.]+)/i],
                                 [c, f],
-                                [/version\/([\w\.]+) .*mobile\/\w+ (safari)/i],
+                                [/version\/([\w\.\,]+) .*mobile\/\w+ (safari)/i],
                                 [f, [c, "Mobile Safari"]],
-                                [/version\/([\w\.]+) .*(mobile ?safari|safari)/i],
+                                [/version\/([\w(\.|\,)]+) .*(mobile ?safari|safari)/i],
                                 [f, c],
                                 [/webkit.+?(mobile ?safari|safari)(\/[\w\.]+)/i],
                                 [c, [f, g, {
@@ -3496,7 +3496,7 @@
                                 ]
                             ],
                             device: [
-                                [/\b(sch-i[89]0\d|shw-m380s|sm-[pt]\w{2,4}|gt-[pn]\d{2,4}|sgh-t8[56]9|nexus 10)/i],
+                                [/\b(sch-i[89]0\d|shw-m380s|sm-[ptx]\w{2,4}|gt-[pn]\d{2,4}|sgh-t8[56]9|nexus 10)/i],
                                 [u, [l, "Samsung"],
                                     [s, h]
                                 ],
@@ -3516,11 +3516,11 @@
                                 [u, [l, "Huawei"],
                                     [s, h]
                                 ],
-                                [/(?:huawei|honor)([-\w ]+)[;\)]/i, /\b(nexus 6p|\w{2,4}-[atu]?[ln][01259x][012359][an]?)\b(?!.+d\/s)/i],
+                                [/(?:huawei|honor)([-\w ]+)[;\)]/i, /\b(nexus 6p|\w{2,4}e?-[atu]?[ln][\dx][012359c][adn]?)\b(?!.+d\/s)/i],
                                 [u, [l, "Huawei"],
                                     [s, d]
                                 ],
-                                [/\b(poco[\w ]+)(?: bui|\))/i, /\b; (\w+) build\/hm\1/i, /\b(hm[-_ ]?note?[_ ]?(?:\d\w)?) bui/i, /\b(redmi[\-_ ]?(?:note|k)?[\w_ ]+)(?: bui|\))/i, /\b(mi[-_ ]?(?:a\d|one|one[_ ]plus|note lte|max)?[_ ]?(?:\d?\w?)[_ ]?(?:plus|se|lite)?)(?: bui|\))/i],
+                                [/\b(poco[\w ]+)(?: bui|\))/i, /\b; (\w+) build\/hm\1/i, /\b(hm[-_ ]?note?[_ ]?(?:\d\w)?) bui/i, /\b(redmi[\-_ ]?(?:note|k)?[\w_ ]+)(?: bui|\))/i, /\b(mi[-_ ]?(?:a\d|one|one[_ ]plus|note lte|max|cc)?[_ ]?(?:\d?\w?)[_ ]?(?:plus|se|lite)?)(?: bui|\))/i],
                                 [
                                     [u, /_/g, " "],
                                     [l, "Xiaomi"],
@@ -3578,7 +3578,7 @@
                                 [u, [l, "Google"],
                                     [s, d]
                                 ],
-                                [/droid.+ ([c-g]\d{4}|so[-gl]\w+|xq-a\w[4-7][12])(?= bui|\).+chrome\/(?![1-6]{0,1}\d\.))/i],
+                                [/droid.+ (a?\d[0-2]{2}so|[c-g]\d{4}|so[-gl]\w+|xq-a\w[4-7][12])(?= bui|\).+chrome\/(?![1-6]{0,1}\d\.))/i],
                                 [u, [l, "Sony"],
                                     [s, d]
                                 ],
@@ -3620,7 +3620,7 @@
                                 [u, [l, "HTC"],
                                     [s, h]
                                 ],
-                                [/(htc)[-;_ ]{1,2}([\w ]+(?=\)| bui)|\w+)/i, /(zte)[- ]([\w ]+?)(?: bui|\/|\))/i, /(alcatel|geeksphone|nexian|panasonic|sony)[-_ ]?([-\w]*)/i],
+                                [/(htc)[-;_ ]{1,2}([\w ]+(?=\)| bui)|\w+)/i, /(zte)[- ]([\w ]+?)(?: bui|\/|\))/i, /(alcatel|geeksphone|nexian|panasonic|sony(?!-bra))[-_ ]?([-\w]*)/i],
                                 [l, [u, /_/g, " "],
                                     [s, d]
                                 ],
@@ -3793,8 +3793,16 @@
                                 [u, [l, "Amazon"],
                                     [s, p]
                                 ],
-                                [/\(dtv[\);].+(aquos)/i],
+                                [/\(dtv[\);].+(aquos)/i, /(aquos-tv[\w ]+)\)/i],
                                 [u, [l, "Sharp"],
+                                    [s, p]
+                                ],
+                                [/(bravia[\w ]+)( bui|\))/i],
+                                [u, [l, "Sony"],
+                                    [s, p]
+                                ],
+                                [/(mitv-\w{5}) bui/i],
+                                [u, [l, "Xiaomi"],
                                     [s, p]
                                 ],
                                 [/\b(roku)[\dx]*[\)\/]((?:dvp-)?[\d\.]*)/i, /hbbtv\/\d+\.\d+\.\d+ +\([\w ]*; *(\w[^;]*);([^;]*)/i],
@@ -3831,7 +3839,7 @@
                                 [
                                     [s, h]
                                 ],
-                                [/(phone|mobile(?:[;\/]| safari)|pda(?=.+windows ce))/i],
+                                [/(phone|mobile(?:[;\/]| [ \w\/\.]*safari)|pda(?=.+windows ce))/i],
                                 [
                                     [s, d]
                                 ],
@@ -3868,7 +3876,7 @@
                                     [c, "Mac OS"],
                                     [f, /_/g, "."]
                                 ],
-                                [/droid ([\w\.]+)\b.+(android[- ]x86)/i],
+                                [/droid ([\w\.]+)\b.+(android[- ]x86|harmonyos)/i],
                                 [f, c],
                                 [/(android|webos|qnx|bada|rim tablet os|maemo|meego|sailfish)[-\/ ]?([\w\.]*)/i, /(blackberry)\w*\/([\w\.]*)/i, /(tizen|kaios)[\/ ]([\w\.]+)/i, /\((series40);/i],
                                 [c, f],
@@ -3943,10 +3951,10 @@
                             }, this.getUA = function() {
                                 return n
                             }, this.setUA = function(t) {
-                                return n = "string" === o(t) && t.length > 255 ? m(t, 255) : t, this
+                                return n = "string" === o(t) && t.length > 350 ? m(t, 350) : t, this
                             }, this.setUA(n), this
                         };
-                    O.VERSION = "1.0.2", O.BROWSER = v([c, f, "major"]), O.CPU = v(["architecture"]), O.DEVICE = v([u, l, s, "console", d, p, h, "wearable", "embedded"]), O.ENGINE = O.OS = v([c, f]), "undefined" !== o(e) ? ("undefined" !== o(t) && t.exports && (e = t.exports = O), e.UAParser = O) : "function" === o(r("B9Yq")) && r("PDX0") ? void 0 === (n = function() {
+                    O.VERSION = "1.0.32", O.BROWSER = v([c, f, "major"]), O.CPU = v(["architecture"]), O.DEVICE = v([u, l, s, "console", d, p, h, "wearable", "embedded"]), O.ENGINE = O.OS = v([c, f]), "undefined" !== o(e) ? ("undefined" !== o(t) && t.exports && (e = t.exports = O), e.UAParser = O) : "function" === o(r("B9Yq")) && r("PDX0") ? void 0 === (n = function() {
                         return O
                     }.call(e, r, e, t)) || (t.exports = n) : "undefined" !== o(i) && (i.UAParser = O);
                     var j = "undefined" !== o(i) && (i.jQuery || i.Zepto);

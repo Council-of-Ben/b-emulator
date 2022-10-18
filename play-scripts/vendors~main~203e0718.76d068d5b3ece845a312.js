@@ -4053,7 +4053,7 @@
              * See the License for the specific language governing permissions and
              * limitations under the License.
              */
-            n.a.registerVersion("firebase", "9.12.0", "app-compat")
+            n.a.registerVersion("firebase", "9.12.1", "app-compat")
         },
         nkPT: function(t, e, r) {
             "use strict";
