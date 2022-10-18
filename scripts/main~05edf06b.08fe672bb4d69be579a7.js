@@ -1805,6 +1805,16 @@
                     name: "Star Student",
                     price: 250,
                     rarity: "Uncommon"
+                },
+                creative: {
+                    name: "Creative",
+                    price: 100,
+                    rarity: "Uncommon"
+                },
+                pumpkinSpice: {
+                    name: "Pumpkin Spice",
+                    price: 500,
+                    rarity: "Rare"
                 }
             }
         },
@@ -3140,21 +3150,21 @@
                 })(e)
             }
             var he = window.ShopData = [{
-                    id: "theater",
+                    id: "workbench",
                     type: "banner",
-                    data: te.a.theater
+                    data: te.a.workbench
                 }, {
-                    id: "sushi",
+                    id: "slime",
                     type: "banner",
-                    data: te.a.sushi
+                    data: te.a.slime
                 }, {
-                    id: "thoughtful",
+                    id: "creative",
                     type: "title",
-                    data: ae.a.thoughtful
+                    data: ae.a.creative
                 }, {
-                    id: "starStudent",
+                    id: "pumpkinSpice",
                     type: "title",
-                    data: ae.a.starStudent
+                    data: ae.a.pumpkinSpice
                 }],
                 ye = {
                     "Ice Monster": {
@@ -4191,6 +4201,12 @@
                     url: "https://media.blooket.com/image/upload/v1665549438/Banners/sushi.svg",
                     price: 500,
                     rarity: "Rare"
+                },
+                workbench: {
+                    name: "Workbench",
+                    url: "https://media.blooket.com/image/upload/v1666065519/Banners/workbench.svg",
+                    price: 100,
+                    rarity: "Uncommon"
                 }
             }
         },

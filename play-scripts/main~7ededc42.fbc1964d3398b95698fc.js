@@ -875,7 +875,7 @@
                     },
                     theater: {
                         name: "Theater",
-                        url: "https://media.blooket.com/image/upload/v1665549438/Banners/theater.svgg",
+                        url: "https://media.blooket.com/image/upload/v1665549438/Banners/theater.svg",
                         price: 100,
                         rarity: "Uncommon"
                     },
@@ -884,6 +884,12 @@
                         url: "https://media.blooket.com/image/upload/v1665549438/Banners/sushi.svg",
                         price: 500,
                         rarity: "Rare"
+                    },
+                    workbench: {
+                        name: "Workbench",
+                        url: "https://media.blooket.com/image/upload/v1666065519/Banners/workbench.svg",
+                        price: 100,
+                        rarity: "Uncommon"
                     }
                 };
 
