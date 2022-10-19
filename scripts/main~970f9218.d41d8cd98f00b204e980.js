@@ -1,5 +1,5 @@
 (window.webpackJsonp = window.webpackJsonp || []).push([
-    [7], {
+    [6], {
         "46vQ": function(I, M, g) {
             "use strict";
             g("q1tI");
@@ -396,8 +396,8 @@
                 Z = g("v/ol"),
                 l = g("fT0c"),
                 n = g("qitz"),
-                e = g("EygS"),
-                d = g("mpcV"),
+                d = g("EygS"),
+                e = g("mpcV"),
                 P = g("6Zcq"),
                 p = g("kyLa"),
                 h = g("RLYa"),
@@ -406,38 +406,37 @@
                 K = g("oq/Q"),
                 W = g("N3JU"),
                 R = g("SB7+"),
-                r = g("xP+p"),
-                J = g("4Ao/"),
+                J = g("xP+p"),
+                r = g("4Ao/"),
                 v = g("p64V"),
                 H = g("No5I"),
                 V = g("pkaE"),
                 f = g("YuoD"),
                 _ = g("VWYR"),
                 q = g("5Eab"),
-                $ = g("YUq3"),
-                II = g("/gDf"),
-                MI = g("D4er"),
-                gI = g("C/JS"),
-                CI = g("GmRr"),
-                AI = g("GnGQ"),
-                NI = g("Mgwj"),
-                LI = g("fLDY"),
-                jI = g("57Jf"),
-                DI = g("kVNV"),
-                TI = g("kAC4"),
-                zI = g("fuSh"),
-                yI = g("Lcud"),
-                wI = g("E8Bj"),
-                iI = (g("35eG"), g("qspi"), g("qnYv"));
-            z.a.logConsoleSuspensionWarning(), iI.a.get("/api/config").then((function(I) {
+                $ = g("/gDf"),
+                II = g("D4er"),
+                MI = g("C/JS"),
+                gI = g("GmRr"),
+                CI = g("GnGQ"),
+                AI = g("Mgwj"),
+                NI = g("fLDY"),
+                LI = g("57Jf"),
+                jI = g("kVNV"),
+                DI = g("kAC4"),
+                TI = g("fuSh"),
+                zI = g("Lcud"),
+                yI = g("E8Bj"),
+                wI = (g("35eG"), g("qspi"), g("qnYv"));
+            z.a.logConsoleSuspensionWarning(), wI.a.get("/api/config").then((function(I) {
                 var M = I.data.securityBase;
                 z.a.securityBaseURL = M
             }));
-            var uI, cI, YI, SI, xI = (cI = [Q, u()()], YI = [w.a.apply(void 0, cI), k()], (SI = Object(w.e)(t, uI, w.d.apply(void 0, YI))).runSaga = Q.run(G), SI);
+            var iI, uI, cI, YI, SI = (uI = [Q, u()()], cI = [w.a.apply(void 0, uI), k()], (YI = Object(w.e)(t, iI, w.d.apply(void 0, cI))).runSaga = Q.run(G), YI);
             L.a.render(A.a.createElement(y.a, null, A.a.createElement(j.a, {
-                store: xI
-            }, A.a.createElement(wI.a.Provider, {
-                value: new wI.b
+                store: SI
+            }, A.a.createElement(yI.a.Provider, {
+                value: new yI.b
             }, A.a.createElement(D.a, null, A.a.createElement("div", null, A.a.createElement(T.d, null, A.a.createElement(T.b, {
                 exact: !0,
                 path: "/upgrade",
@@ -473,11 +472,11 @@
             }), A.a.createElement(T.b, {
                 exact: !0,
                 path: "/group/renew/:id",
-                component: e.a
+                component: d.a
             }), A.a.createElement(T.b, {
                 exact: !0,
                 path: "/class/join/:id",
-                component: d.a
+                component: e.a
             }), A.a.createElement(T.b, {
                 exact: !0,
                 path: "/signup",
@@ -513,11 +512,11 @@
             }), A.a.createElement(T.b, {
                 exact: !0,
                 path: "/blooks",
-                component: r.a
+                component: J.a
             }), A.a.createElement(T.b, {
                 exact: !0,
                 path: "/settings",
-                component: J.a
+                component: r.a
             }), A.a.createElement(T.b, {
                 exact: !0,
                 path: "/create",
@@ -544,52 +543,48 @@
                 component: _.a
             }), A.a.createElement(T.b, {
                 exact: !0,
-                path: "/debug",
+                path: "/my-sets",
                 component: $.a
             }), A.a.createElement(T.b, {
                 exact: !0,
-                path: "/my-sets",
+                path: "/favorites",
                 component: II.a
             }), A.a.createElement(T.b, {
                 exact: !0,
-                path: "/favorites",
+                path: "/classes",
                 component: MI.a
             }), A.a.createElement(T.b, {
                 exact: !0,
-                path: "/classes",
+                path: "/history",
                 component: gI.a
             }), A.a.createElement(T.b, {
                 exact: !0,
-                path: "/history",
+                path: "/homeworks",
                 component: CI.a
             }), A.a.createElement(T.b, {
                 exact: !0,
-                path: "/homeworks",
+                path: "/group-plan",
                 component: AI.a
             }), A.a.createElement(T.b, {
                 exact: !0,
-                path: "/group-plan",
+                path: "/change/email",
                 component: NI.a
             }), A.a.createElement(T.b, {
                 exact: !0,
-                path: "/change/email",
+                path: "/change/name",
                 component: LI.a
             }), A.a.createElement(T.b, {
                 exact: !0,
-                path: "/change/name",
+                path: "/add-password",
                 component: jI.a
             }), A.a.createElement(T.b, {
                 exact: !0,
-                path: "/add-password",
+                path: "/delete",
                 component: DI.a
             }), A.a.createElement(T.b, {
                 exact: !0,
-                path: "/delete",
-                component: TI.a
-            }), A.a.createElement(T.b, {
-                exact: !0,
                 path: "/unsubscribe",
-                component: zI.a
+                component: TI.a
             }), A.a.createElement(T.a, {
                 exact: !0,
                 from: "/dashboard",
@@ -599,7 +594,7 @@
                 from: "/profile",
                 to: "/my-sets"
             }), A.a.createElement(T.b, {
-                component: yI.a
+                component: zI.a
             }))))))), document.getElementById("app"))
         }
     }

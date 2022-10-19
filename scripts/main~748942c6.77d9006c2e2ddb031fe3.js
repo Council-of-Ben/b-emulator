@@ -194,7 +194,7 @@
                             if ("executing" === o) throw new Error("Generator is already running");
                             if ("completed" === o) {
                                 if ("throw" === r) throw n;
-                                return P()
+                                return E()
                             }
                             for (a.method = r, a.arg = n;;) {
                                 var s = a.delegate;
@@ -251,7 +251,7 @@
                     return this
                 }));
                 var g = Object.getPrototypeOf,
-                    y = g && g(g(E([])));
+                    y = g && g(g(P([])));
                 y && y !== t && a.call(y, s) && (h = y);
                 var b = f.prototype = _.prototype = Object.create(h);
 
@@ -324,7 +324,7 @@
                     }], e.forEach(w, this), this.reset(!0)
                 }
 
-                function E(e) {
+                function P(e) {
                     if (e) {
                         var t = e[s];
                         if (t) return t.call(e);
@@ -340,11 +340,11 @@
                         }
                     }
                     return {
-                        next: P
+                        next: E
                     }
                 }
 
-                function P() {
+                function E() {
                     return {
                         value: void 0,
                         done: !0
@@ -382,7 +382,7 @@
                             }
                             return a.done = !0, a
                         }
-                }, e.values = E, B.prototype = {
+                }, e.values = P, B.prototype = {
                     constructor: B,
                     reset: function(e) {
                         if (this.prev = 0, this.next = 0, this.sent = this._sent = void 0, this.done = !1, this.delegate = null, this.method = "next", this.arg = void 0, this.tryEntries.forEach(C), !e)
@@ -458,7 +458,7 @@
                     },
                     delegateYield: function(e, t, a) {
                         return this.delegate = {
-                            iterator: E(e),
+                            iterator: P(e),
                             resultName: t,
                             nextLoc: a
                         }, "next" === this.method && (this.arg = void 0), m
@@ -485,7 +485,7 @@
                 return c
             }));
             var s = !0,
-                i = "e4b74232-fe9f-42db-af6a-66694ec774d0",
+                i = "09a539ca-b9b9-4a9f-9ecf-62ba718af2da",
                 l = {
                     headers: {
                         "Content-Type": "text/plain"
@@ -497,7 +497,7 @@
                         return r().wrap((function(e) {
                             for (;;) switch (e.prev = e.next) {
                                 case 0:
-                                    return a = JSON.stringify(t), o = (new TextEncoder).encode(a), n = (new TextEncoder).encode("z05qU0kCSIFSj5rofuGdNwVxthkv9sl2"), e.next = 5, window.crypto.subtle.digest("SHA-256", n);
+                                    return a = JSON.stringify(t), o = (new TextEncoder).encode(a), n = (new TextEncoder).encode("6l6iP1ek0uZ4x0NMRzlk9ibaV9eoMxeq"), e.next = 5, window.crypto.subtle.digest("SHA-256", n);
                                 case 5:
                                     return s = e.sent, e.next = 8, window.crypto.subtle.importKey("raw", s, {
                                         name: "AES-GCM"
@@ -671,7 +671,7 @@
         A92q: function(e, t, a) {
             "use strict";
             a.d(t, "a", (function() {
-                return E
+                return P
             }));
             var o = a("q1tI"),
                 r = a.n(o),
@@ -735,7 +735,7 @@
                             if ("executing" === o) throw new Error("Generator is already running");
                             if ("completed" === o) {
                                 if ("throw" === r) throw n;
-                                return P()
+                                return E()
                             }
                             for (a.method = r, a.arg = n;;) {
                                 var s = a.delegate;
@@ -792,7 +792,7 @@
                     return this
                 }));
                 var f = Object.getPrototypeOf,
-                    h = f && f(f(E([])));
+                    h = f && f(f(P([])));
                 h && h !== t && a.call(h, r) && (d = h);
                 var b = _.prototype = p.prototype = Object.create(d);
 
@@ -865,7 +865,7 @@
                     }], e.forEach(w, this), this.reset(!0)
                 }
 
-                function E(e) {
+                function P(e) {
                     if (e) {
                         var t = e[r];
                         if (t) return t.call(e);
@@ -881,11 +881,11 @@
                         }
                     }
                     return {
-                        next: P
+                        next: E
                     }
                 }
 
-                function P() {
+                function E() {
                     return {
                         value: void 0,
                         done: !0
@@ -923,7 +923,7 @@
                             }
                             return a.done = !0, a
                         }
-                }, e.values = E, B.prototype = {
+                }, e.values = P, B.prototype = {
                     constructor: B,
                     reset: function(e) {
                         if (this.prev = 0, this.next = 0, this.sent = this._sent = void 0, this.done = !1, this.delegate = null, this.method = "next", this.arg = void 0, this.tryEntries.forEach(C), !e)
@@ -999,7 +999,7 @@
                     },
                     delegateYield: function(e, t, a) {
                         return this.delegate = {
-                            iterator: E(e),
+                            iterator: P(e),
                             resultName: t,
                             nextLoc: a
                         }, "next" === this.method && (this.arg = void 0), u
@@ -1067,8 +1067,8 @@
                     return e.__proto__ || Object.getPrototypeOf(e)
                 })(e)
             }
-            var E = 60,
-                P = function(e) {
+            var P = 60,
+                E = function(e) {
                     ! function(e, t) {
                         if ("function" != typeof t && null !== t) throw new TypeError("Super expression must either be null or a function");
                         e.prototype = Object.create(t && t.prototype, {
@@ -1250,7 +1250,7 @@
                                 stringValue: this.state.className,
                                 stringChange: function(t) {
                                     return e.setState({
-                                        className: t.target.value.slice(0, E),
+                                        className: t.target.value.slice(0, P),
                                         classError: ""
                                     })
                                 },
@@ -1282,11 +1282,11 @@
                         writable: !1
                     }), u
                 }(r.a.Component);
-            P.propTypes = {
+            E.propTypes = {
                 user: s.a.object,
                 history: s.a.object
             };
-            Object(u.g)(Object(m.c)(P))
+            Object(u.g)(Object(m.c)(E))
         },
         Cc5n: function(e, t, a) {
             "use strict";
@@ -1593,9 +1593,9 @@
                         w = f[v[1]][1],
                         C = m.a.nose[i[8]],
                         B = m.a.cheeks[i[9]],
-                        E = i[10].split("$"),
-                        P = m.a.eyebrows[E[0]],
-                        j = f[E[1]][0];
+                        P = i[10].split("$"),
+                        E = m.a.eyebrows[P[0]],
+                        j = f[P[1]][0];
                     return r.a.createElement("div", {
                         className: l()(p.a.blookContainer, a),
                         style: n,
@@ -1662,8 +1662,8 @@
                                 t = t.replaceAll(o, d[r])
                             })), t
                         }
-                    }), P.url ? r.a.createElement(c.a, {
-                        src: P.url,
+                    }), E.url ? r.a.createElement(c.a, {
+                        src: E.url,
                         title: "Blook Eyebrows",
                         className: p.a.part,
                         preProcessor: function(e) {
@@ -1703,7 +1703,7 @@
         FVRk: function(e, t, a) {
             "use strict";
             a.d(t, "a", (function() {
-                return E
+                return P
             }));
             var o = a("q1tI"),
                 r = a.n(o),
@@ -1789,7 +1789,7 @@
                 })(e)
             }
             Object(p.addStyles)();
-            var E = window.ThemeColors = {
+            var P = window.ThemeColors = {
                     default: {
                         background: "#fff",
                         text: "#3a3a3a",
@@ -1961,7 +1961,7 @@
                         }]
                     }
                 },
-                P = function(e) {
+                E = function(e) {
                     ! function(e, t) {
                         if ("function" != typeof t && null !== t) throw new TypeError("Super expression must either be null or a function");
                         e.prototype = Object.create(t && t.prototype, {
@@ -2010,7 +2010,7 @@
                             return r.a.createElement("div", {
                                 className: u()(f.a.regularBody, this.props.className),
                                 style: {
-                                    backgroundColor: E[t].background,
+                                    backgroundColor: P[t].background,
                                     overflow: "none",
                                     zIndex: 11
                                 }
@@ -2019,12 +2019,12 @@
                             }) : null, r.a.createElement("div", {
                                 className: _.a.questionContainer,
                                 style: {
-                                    backgroundColor: E[t].background
+                                    backgroundColor: P[t].background
                                 }
                             }, this.props.audio ? r.a.createElement("div", {
                                 className: _.a.imageContainer,
                                 style: {
-                                    backgroundColor: E[t].background
+                                    backgroundColor: P[t].background
                                 }
                             }, r.a.createElement(g.a, {
                                 audioUrl: this.props.audio,
@@ -2033,7 +2033,7 @@
                             })) : this.props.image ? r.a.createElement("div", {
                                 className: _.a.imageContainer,
                                 style: {
-                                    backgroundColor: E[t].background
+                                    backgroundColor: P[t].background
                                 },
                                 role: "button",
                                 tabIndex: 0,
@@ -2050,7 +2050,7 @@
                             })) : this.props.text.includes("`*`") ? r.a.createElement("div", {
                                 className: u()(_.a.imageContainer, _.a.funcContainer),
                                 style: {
-                                    backgroundColor: E[t].background
+                                    backgroundColor: P[t].background
                                 },
                                 role: "button",
                                 tabIndex: 0,
@@ -2062,13 +2062,13 @@
                             }, r.a.createElement(p.StaticMathField, {
                                 className: _.a.qMathField,
                                 style: {
-                                    color: E[t].text,
-                                    borderColor: E[t].text
+                                    color: P[t].text,
+                                    borderColor: P[t].text
                                 }
                             }, this.props.text.slice(this.props.text.indexOf("`*`") + 3, this.props.text.length - 3))) : null, r.a.createElement(l.Textfit, {
                                 className: u()(_.a.questionText, b({}, f.a.underline, "qText" === this.props.readId)),
                                 style: {
-                                    color: E[t].text
+                                    color: P[t].text
                                 },
                                 mode: "multi",
                                 min: 1,
@@ -2082,7 +2082,7 @@
                                 }, r.a.createElement("div", {
                                     className: _.a.answerContainer,
                                     style: {
-                                        backgroundColor: E[t].answers[o].background
+                                        backgroundColor: P[t].answers[o].background
                                     },
                                     onClick: function() {
                                         return e.props.onAnswer(a)
@@ -2103,8 +2103,8 @@
                                 }, r.a.createElement(p.StaticMathField, {
                                     className: _.a.mathField,
                                     style: {
-                                        color: E[t].answers[o].text,
-                                        borderColor: E[t].answers[o].text
+                                        color: P[t].answers[o].text,
+                                        borderColor: P[t].answers[o].text
                                     }
                                 }, a.slice(3, a.length - 3))) : r.a.createElement(l.Textfit, {
                                     className: u()(_.a.answerText, b({}, f.a.underline, e.props.readId === "q".concat(o + 1))),
@@ -2112,7 +2112,7 @@
                                     min: 1,
                                     max: i.isMobile ? 22 : 36,
                                     style: {
-                                        color: E[t].answers[o].text
+                                        color: P[t].answers[o].text
                                     }
                                 }, a))))
                             }))), this.state.isZoomed ? r.a.createElement("div", {
@@ -2132,9 +2132,9 @@
                             }) : r.a.createElement(p.StaticMathField, {
                                 className: _.a.zoomMathField,
                                 style: {
-                                    color: E[t].text,
-                                    borderColor: E[t].text,
-                                    backgroundColor: E[t].background
+                                    color: P[t].text,
+                                    borderColor: P[t].text,
+                                    backgroundColor: P[t].background
                                 }
                             }, this.props.text.slice(this.props.text.indexOf("`*`") + 3, this.props.text.length - 3))) : null)
                         }
@@ -2142,7 +2142,7 @@
                         writable: !1
                     }), s
                 }(r.a.Component);
-            P.propTypes = {
+            E.propTypes = {
                 onAnswer: s.a.func,
                 text: s.a.string,
                 answers: s.a.array,
@@ -3797,7 +3797,7 @@
                             if ("executing" === o) throw new Error("Generator is already running");
                             if ("completed" === o) {
                                 if ("throw" === r) throw n;
-                                return P()
+                                return E()
                             }
                             for (a.method = r, a.arg = n;;) {
                                 var s = a.delegate;
@@ -3854,7 +3854,7 @@
                     return this
                 }));
                 var g = Object.getPrototypeOf,
-                    y = g && g(g(E([])));
+                    y = g && g(g(P([])));
                 y && y !== t && a.call(y, r) && (h = y);
                 var b = f.prototype = _.prototype = Object.create(h);
 
@@ -3927,7 +3927,7 @@
                     }], e.forEach(w, this), this.reset(!0)
                 }
 
-                function E(e) {
+                function P(e) {
                     if (e) {
                         var t = e[r];
                         if (t) return t.call(e);
@@ -3943,11 +3943,11 @@
                         }
                     }
                     return {
-                        next: P
+                        next: E
                     }
                 }
 
-                function P() {
+                function E() {
                     return {
                         value: void 0,
                         done: !0
@@ -3985,7 +3985,7 @@
                             }
                             return a.done = !0, a
                         }
-                }, e.values = E, B.prototype = {
+                }, e.values = P, B.prototype = {
                     constructor: B,
                     reset: function(e) {
                         if (this.prev = 0, this.next = 0, this.sent = this._sent = void 0, this.done = !1, this.delegate = null, this.method = "next", this.arg = void 0, this.tryEntries.forEach(C), !e)
@@ -4061,7 +4061,7 @@
                     },
                     delegateYield: function(e, t, a) {
                         return this.delegate = {
-                            iterator: E(e),
+                            iterator: P(e),
                             resultName: t,
                             nextLoc: a
                         }, "next" === this.method && (this.arg = void 0), m
@@ -4540,7 +4540,7 @@
                             if ("executing" === o) throw new Error("Generator is already running");
                             if ("completed" === o) {
                                 if ("throw" === r) throw n;
-                                return P()
+                                return E()
                             }
                             for (a.method = r, a.arg = n;;) {
                                 var s = a.delegate;
@@ -4597,7 +4597,7 @@
                     return this
                 }));
                 var g = Object.getPrototypeOf,
-                    y = g && g(g(E([])));
+                    y = g && g(g(P([])));
                 y && y !== t && a.call(y, r) && (h = y);
                 var b = f.prototype = _.prototype = Object.create(h);
 
@@ -4670,7 +4670,7 @@
                     }], e.forEach(w, this), this.reset(!0)
                 }
 
-                function E(e) {
+                function P(e) {
                     if (e) {
                         var t = e[r];
                         if (t) return t.call(e);
@@ -4686,11 +4686,11 @@
                         }
                     }
                     return {
-                        next: P
+                        next: E
                     }
                 }
 
-                function P() {
+                function E() {
                     return {
                         value: void 0,
                         done: !0
@@ -4728,7 +4728,7 @@
                             }
                             return a.done = !0, a
                         }
-                }, e.values = E, B.prototype = {
+                }, e.values = P, B.prototype = {
                     constructor: B,
                     reset: function(e) {
                         if (this.prev = 0, this.next = 0, this.sent = this._sent = void 0, this.done = !1, this.delegate = null, this.method = "next", this.arg = void 0, this.tryEntries.forEach(C), !e)
@@ -4804,7 +4804,7 @@
                     },
                     delegateYield: function(e, t, a) {
                         return this.delegate = {
-                            iterator: E(e),
+                            iterator: P(e),
                             resultName: t,
                             nextLoc: a
                         }, "next" === this.method && (this.arg = void 0), m
@@ -5322,9 +5322,9 @@
                     }
                 }();
                 return function() {
-                    var a, o = P(e);
+                    var a, o = E(e);
                     if (t) {
-                        var r = P(this).constructor;
+                        var r = E(this).constructor;
                         a = Reflect.construct(o, arguments, r)
                     } else a = o.apply(this, arguments);
                     return B(this, a)
@@ -5334,16 +5334,16 @@
             function B(e, t) {
                 if (t && ("object" === y(t) || "function" == typeof t)) return t;
                 if (void 0 !== t) throw new TypeError("Derived constructors may only return object or undefined");
-                return E(e)
+                return P(e)
             }
 
-            function E(e) {
+            function P(e) {
                 if (void 0 === e) throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
                 return e
             }
 
-            function P(e) {
-                return (P = Object.setPrototypeOf ? Object.getPrototypeOf.bind() : function(e) {
+            function E(e) {
+                return (E = Object.setPrototypeOf ? Object.getPrototypeOf.bind() : function(e) {
                     return e.__proto__ || Object.getPrototypeOf(e)
                 })(e)
             }
@@ -5384,7 +5384,7 @@
                             eyebrowsColor: 0,
                             partSelected: "",
                             unlocks: []
-                        }, t.randomBlook = t.randomBlook.bind(E(t)), t
+                        }, t.randomBlook = t.randomBlook.bind(P(t)), t
                     }
                     return t = i, (a = [{
                         key: "componentDidMount",
@@ -5470,7 +5470,7 @@
                                 w = t.eyebrows,
                                 C = t.eyebrowsColor,
                                 B = "".concat(a, "#").concat(o, "#").concat(n, "#").concat(i, "#").concat(l, "$").concat(u, "#").concat(m, "#").concat(h, "#").concat(y, "#").concat(x, "#").concat(k, "#").concat(w, "$").concat(C),
-                                E = g.a.filter((function(e) {
+                                P = g.a.filter((function(e) {
                                     return e.partType
                                 })).map((function(e) {
                                     return "".concat(e.partType, "-").concat(e.part)
@@ -5553,7 +5553,7 @@
                                 className: s()(_.a.choicesContainer, b({}, _.a.choiceContainerWithColors, ["hair", "eyebrows"].includes(this.state.partSelected)))
                             }, f.a[this.state.partSelected].map((function(t, a) {
                                 var o;
-                                return "base" === e.state.partSelected || e.state.unlocks[e.state.partSelected].includes(a) || E.includes("".concat(e.state.partSelected, "-").concat(a)) ? r.a.createElement("div", {
+                                return "base" === e.state.partSelected || e.state.unlocks[e.state.partSelected].includes(a) || P.includes("".concat(e.state.partSelected, "-").concat(a)) ? r.a.createElement("div", {
                                     key: a,
                                     className: s()(_.a.partChoice, (o = {}, b(o, _.a.partChosen, e.state[e.state.partSelected] === a), b(o, _.a.partLocked, "base" !== e.state.partSelected && !e.state.unlocks[e.state.partSelected].includes(a)), o)),
                                     role: "button",
@@ -5732,13 +5732,13 @@
                 }
             }
 
-            function E(e, t) {
-                return (E = Object.setPrototypeOf ? Object.setPrototypeOf.bind() : function(e, t) {
+            function P(e, t) {
+                return (P = Object.setPrototypeOf ? Object.setPrototypeOf.bind() : function(e, t) {
                     return e.__proto__ = t, e
                 })(e, t)
             }
 
-            function P(e) {
+            function E(e) {
                 var t = function() {
                     if ("undefined" == typeof Reflect || !Reflect.construct) return !1;
                     if (Reflect.construct.sham) return !1;
@@ -5784,9 +5784,9 @@
                         }
                     }), Object.defineProperty(e, "prototype", {
                         writable: !1
-                    }), t && E(e, t)
+                    }), t && P(e, t)
                 }(s, e);
-                var t, a, o, n = P(s);
+                var t, a, o, n = E(s);
 
                 function s(e) {
                     var t;
