@@ -1,5 +1,5 @@
 (window.webpackJsonp = window.webpackJsonp || []).push([
-    [3], {
+    [1], {
         "/BoV": function(e, t, n) {
             var a = n("Ql8l");
             "string" == typeof a && (a = [
@@ -1815,8 +1815,15 @@
                 return Object(o.b)({}, e)
             }))(v)))
         },
+        "8qja": function(e, t, n) {
+            "use strict";
+            n.d(t, "a", (function() {
+                return a
+            }));
+            var a = !0
+        },
         "9ZgN": function(e, t, n) {
-            (t = e.exports = n("JPst")(!1)).push([e.i, ".styles__background___2J-JA-camelCase{position:fixed;width:100%;height:100%;left:0;top:0;background-color:#0bc2cf;overflow:hidden}.styles__blooksBackground___3oQ7Y-camelCase{position:absolute;width:200%;height:200%;top:50%;left:50%;background-size:550px;background-position:-100px -100px;opacity:.1;transform:translate(-50%,-50%) rotate(15deg)}.styles__fullContainer___3Wl6C-camelCase{display:flex;flex-direction:column;align-items:center;width:90%;margin:10px 5%}.styles__headerRow___3mqZi-camelCase{display:flex;flex-flow:row wrap;width:100%;margin:10px auto 20px}.styles__headerLeft___1Hu3N-camelCase{width:400px;display:flex;flex-direction:column}.styles__headerLeftRow___8vTJL-camelCase{display:flex;flex-direction:row;justify-content:space-between;align-items:flex-end;width:100%}.styles__headerBlookContainer___36zY5-camelCase{width:100px;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;user-select:none;outline:none}.styles__headerBlook___DdSHd-camelCase{width:100%;filter:drop-shadow(0 4px rgba(0,0,0,.2))}.styles__headerBanner___3Uuuk-camelCase,.styles__headerInfo___1oWlb-camelCase{display:flex;flex-direction:column}.styles__headerBanner___3Uuuk-camelCase{width:280px;height:62px;padding-bottom:6px;box-sizing:border-box;color:#fff;text-shadow:1px 1px rgba(0,0,0,.2);margin-bottom:15px;justify-content:center;align-items:center;position:relative;outline:none;cursor:pointer}.styles__headerFiller___iqimf-camelCase{border-radius:10px;background-color:#655dca;box-shadow:inset 0 -6px rgba(0,0,0,.2)}.styles__headerBg___12ogR-camelCase,.styles__headerFiller___iqimf-camelCase{width:100%;height:100%;position:absolute;top:0;left:0;z-index:-1}.styles__headerName___1GBcl-camelCase{font-weight:700;font-size:26px;line-height:26px}.styles__headerTitle___24Ox2-camelCase{font-size:14px;line-height:14px}.styles__editHeaderContainer___2G1ji-camelCase{position:absolute;top:50%;left:50%;min-height:50%;max-height:90%;width:95%;max-width:400px;border-radius:10px;background-color:#9a49aa;box-sizing:border-box;padding:10px 10px 19px;box-shadow:inset 0 -9px rgba(0,0,0,.2),0 5px rgba(0,0,0,.25);transform:translate(-50%,-50%)}.styles__editHeaderRow___2ekWR-camelCase{display:flex;flex-direction:row;align-items:center;justify-content:space-evenly;width:100%;margin-top:10px}.styles__editHeaderButtonInside___23gJo-camelCase{font-size:24px;font-weight:700;width:130px}.styles__editHeaderColumn___2ye6v-camelCase{width:100%;height:100%;margin-top:10px;padding:5px;box-sizing:border-box;overflow-y:auto;display:flex;flex-direction:column;justify-content:center}.styles__editHeaderColumn___2ye6v-camelCase::-webkit-scrollbar{width:12px;background-color:hsla(0,0%,100%,.2);border-radius:10px}.styles__blooksHolder___upfSC-camelCase::-webkit-scrollbar-thumb,.styles__blooksHolder___upfSC-camelCase::-webkit-scrollbar-thumb:hover{background:#fff;border-radius:10px}.styles__editBanner___vkKiZ-camelCase{width:90%;-webkit-user-select:none;-moz-user-select:none;user-select:none;outline:none;cursor:pointer;will-change:transform;margin:5px auto}.styles__editBannerImg___2eCH9-camelCase{width:100%}.styles__editTitle___-J8dv-camelCase{width:90%;height:35px;display:flex;justify-content:center;align-items:center;-webkit-user-select:none;-moz-user-select:none;user-select:none;outline:none;cursor:pointer;will-change:transform;background-color:rgba(0,0,0,.2);font-size:20px;font-weight:700;border-radius:5px;margin:5px auto}.styles__editTitle___-J8dv-camelCase,.styles__noBannersText___1CBfZ-camelCase{text-align:center;color:#fff}.styles__noBannersText___1CBfZ-camelCase{font-size:28px;width:100%;margin:100px auto}.styles__levelBarContainer___1xi-9-camelCase{width:280px;height:18px;position:relative}.styles__levelStarContainer___7ABEf-camelCase{width:40px;height:40px;position:absolute;left:-10px;top:calc(50% - 20px);display:flex;justify-content:center;align-items:center}.styles__levelStar___LHq_y-camelCase{position:absolute;top:0;left:0;width:100%;height:100%}.styles__levelStarText___2Myxg-camelCase{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);color:#fff;font-family:Titan One,sans-serif;-webkit-text-stroke:1px #3a3a3a;font-size:20px}.styles__levelBar___2SU0x-camelCase{width:100%;height:100%;border-radius:10px;overflow:hidden;background-color:#50425b}.styles__levelBarInside___3FLAG-camelCase{background:linear-gradient(#fcd843,#fcd843 50%,#feb31a 50.01%,#feb31a);height:100%;width:100%;transform-origin:left center}.styles__headerLeftButtons___3zGk0-camelCase{width:100%;margin-top:15px;display:flex;flex-flow:row wrap;align-items:center;justify-content:space-between}.styles__headerButtonInside___26e_U-camelCase{width:115px;display:flex;flex-direction:row;align-items:center;justify-content:flex-start;font-size:12px;font-weight:700}.styles__headerButtonIcon___1pOun-camelCase{font-size:12px;margin-right:5px;margin-left:5px}.styles__featuredBlooksContainer___OHnma-camelCase{margin:0 30px;height:156px;width:308px;position:relative}.styles__featuredBlooksBg___M5r9M-camelCase{width:100%;height:100%;position:absolute}.styles__bottomContainer___3kOrb-camelCase{display:flex;flex-flow:row wrap;justify-content:space-between;width:100%;margin:40px auto 10px}.styles__left___a1a11-camelCase{width:320px}.styles__right___13qxc-camelCase{width:calc(100% - 340px)}.styles__customBlookContainer___3wjWt-camelCase{background-color:#40115f;width:100%;padding:5px 5px 11px;box-shadow:inset 0 -6px rgba(0,0,0,.2);display:flex;flex-flow:row wrap;justify-content:space-evenly;align-items:center;color:#fff;position:relative}.styles__containerHeader___3xghM-camelCase,.styles__customBlookContainer___3wjWt-camelCase{border-radius:7px;box-sizing:border-box}.styles__containerHeader___3xghM-camelCase{position:absolute;top:-28px;left:-10px;height:45px;background-color:#ef7426;padding:4px 4px 8px;box-shadow:0 4px rgba(0,0,0,.2),inset 0 -4px rgba(0,0,0,.2)}.styles__containerHeaderInside___2omQm-camelCase{height:100%;width:100%;box-sizing:border-box;background:linear-gradient(#fcd843,#fcd843 50%,#feb31a 50.01%,#feb31a);padding:0 15px;border-radius:5px;text-shadow:-1px -1px 0 #646464,1px -1px 0 #646464,-1px 1px 0 #646464,2px 2px 0 #646464;font-family:Titan One,sans-serif;color:#fff;font-size:26px}.styles__containerHeaderInside___2omQm-camelCase,.styles__noBlookContainer___1azSz-camelCase{display:flex;justify-content:center;align-items:center}.styles__noBlookContainer___1azSz-camelCase{width:18%;height:175px;font-size:16px;font-weight:700;opacity:.6;flex-direction:column;text-align:center;outline:none;-webkit-user-select:none;-moz-user-select:none;user-select:none;cursor:pointer;transition:.2s}.styles__noBlookContainer___1azSz-camelCase:hover{transform:scale(.95)}.styles__noBlookIcon___HAmDA-camelCase{font-size:40px;margin-bottom:10px}.styles__blookContainer___1RJ4W-camelCase{width:18%;height:175px;display:flex;flex-direction:column;justify-content:center;align-items:center}.styles__customBlook___1I-NI-camelCase{width:75%;max-width:110px;margin-bottom:5px}.styles__customIconRow___3FyUU-camelCase{display:flex;flex-direction:row;justify-content:space-evenly;align-items:center;width:80%;margin-top:0;height:0;overflow:hidden;transition:.2s}.styles__blookContainer___1RJ4W-camelCase:hover>.styles__customIconRow___3FyUU-camelCase{height:20px;margin-top:7px}.styles__customIcon___2AL28-camelCase{width:20px;height:20px;display:flex;justify-content:center;align-items:center;font-size:18px;outline:none;-webkit-user-select:none;-moz-user-select:none;user-select:none;cursor:pointer;opacity:.6;transition:.2s}.styles__customIcon___2AL28-camelCase:hover{opacity:1}.styles__blookUsageContainer___1skDN-camelCase{border-radius:7px;background-color:#9a49aa;width:100%;padding:30px 15px 16px;box-shadow:inset 0 -6px rgba(0,0,0,.2);box-sizing:border-box;position:relative}.styles__blookUsageRow___3BmOZ-camelCase{display:flex;flex-direction:row;align-items:center;justify-content:space-between;width:100%;height:45px}.styles__blookUsageBlook___20QoJ-camelCase{width:36px}.styles__blookUsageBarContainer___3he3D-camelCase{width:calc(100% - 50px);height:26px}.styles__blookUsageBar___iYjir-camelCase{width:100%;height:100%;transform-origin:left center;background:linear-gradient(transparent,transparent 50%,rgba(0,0,0,.1) 50.01%,rgba(0,0,0,.1));box-shadow:0 4px rgba(0,0,0,.3)}.styles__blookUsageScale___2g-Ky-camelCase{width:calc(100% - 40px);height:25px;margin-left:auto;display:flex;flex-direction:row;align-items:center;justify-content:space-evenly}.styles__blookUsageNum___1v4U8-camelCase{font-size:12px;color:#fff;width:25px;text-align:center}.styles__blookUsageScaleBar___3w1PT-camelCase{background-color:#fff;height:3px;width:calc(100% - 45px)}.styles__blookUsageText___3s235-camelCase{width:calc(100% - 50px);margin-left:auto;margin-top:-5px;font-size:14px;text-align:center;color:#fff}.styles__historyContainer___kQ6kc-camelCase{background-color:#9a49aa;padding:30px 15px 16px;position:relative;margin:40px 0}.styles__historyContainer___kQ6kc-camelCase,.styles__historyGameContainer___1ncNG-camelCase{border-radius:7px;width:100%;box-shadow:inset 0 -6px rgba(0,0,0,.2);box-sizing:border-box}.styles__historyGameContainer___1ncNG-camelCase{background-color:#7a039d;margin:5px 0;padding:5px 10px 11px;display:flex;flex-direction:row;align-items:center;color:#fff}.styles__historyBlook___3dMsx-camelCase{width:32px}.styles__historyInfo___11Lo0-camelCase{margin:0 7px;display:flex;flex-direction:column;justify-content:center;font-size:14px}.styles__historyName___3REcG-camelCase{font-size:16px;font-weight:700}.styles__historyNothing___3Js4--camelCase{width:100%;text-align:center;font-size:20px;color:#fff;font-weight:700}.styles__gameStatContainer___lqtJn-camelCase{display:flex;flex-direction:row;align-items:center;height:100%;margin-left:auto}.styles__gameStatText___2PxtE-camelCase{font-weight:700;margin-right:5px}.styles__gameStatText___2PxtE-camelCase,.styles__snowIcon___c3oRi-camelCase{font-size:16px}.styles__fossilIcon___3JBcz-camelCase{font-size:14px;transform:rotate(-45deg)}.styles__gameStatImg___205th-camelCase{width:22px;-webkit-user-select:none;-moz-user-select:none;user-select:none}.styles__gameStatBlook___1Y-8C-camelCase{width:26px}.styles__pointsText___2tau--camelCase{font-size:16px;font-weight:700;text-align:right;margin:auto 0 auto auto}.styles__statsContainer___QnrRB-camelCase{border-radius:7px;background-color:#40115f;width:100%;padding:15px 5px 11px;margin:40px 0;box-shadow:inset 0 -6px rgba(0,0,0,.2);box-sizing:border-box;color:#fff;position:relative}.styles__statsWrapper___r9VCh-camelCase,.styles__topStats___3qffP-camelCase{width:100%;display:flex;flex-flow:row wrap;justify-content:space-evenly}.styles__statContainer___QKuOF-camelCase{border-radius:7px;background-color:#9a49aa;margin:10px;width:200px;padding:5px 5px 11px;box-shadow:inset 0 -6px rgba(0,0,0,.2);box-sizing:border-box;position:relative;display:flex;flex-direction:column;align-items:center;justify-content:center}.styles__statTitle___z4wSV-camelCase{color:#fff;font-size:16px}.styles__statNum___5RYSd-camelCase{font-family:Titan One,sans-serif;color:#fff;font-size:28px}.styles__statImg___3DBXt-camelCase{width:50px;transform:translateY(-50%) rotate(-15deg)}.styles__statImg___3DBXt-camelCase,.styles__tokenImg___a08fY-camelCase{position:absolute;top:65%;left:-20px;filter:drop-shadow(0 0 6px rgba(0,0,0,.2))}.styles__tokenImg___a08fY-camelCase{width:44px;-webkit-user-select:none;-moz-user-select:none;user-select:none;transform:translateY(-50%) rotate(-35deg)}@media only screen and (max-width:1150px){.styles__bottomContainer___3kOrb-camelCase{flex-flow:row-reverse wrap}.styles__left___a1a11-camelCase,.styles__right___13qxc-camelCase{width:100%}}@media only screen and (max-width:650px){.styles__noBlookContainer___1azSz-camelCase{width:40%;height:135px;font-size:14px;margin:0 auto}.styles__noBlookIcon___HAmDA-camelCase{font-size:32px;margin-bottom:7px}.styles__blookContainer___1RJ4W-camelCase{width:40%;height:135px;margin:0 auto}.styles__customBlook___1I-NI-camelCase{width:65%;max-width:80px}}@media only screen and (max-width:450px){.styles__headerLeftRow___8vTJL-camelCase{flex-direction:column;align-items:center}.styles__headerBlookContainer___36zY5-camelCase{margin-bottom:15px}.styles__headerLeftButtons___3zGk0-camelCase{margin-top:20px;justify-content:space-evenly}.styles__headerButton___36TRh-camelCase{margin:5px}}", ""]), t.locals = {
+            (t = e.exports = n("JPst")(!1)).push([e.i, ".styles__background___2J-JA-camelCase{position:fixed;width:100%;height:100%;left:0;top:0;background-color:#0bc2cf;overflow:hidden}.styles__blooksBackground___3oQ7Y-camelCase{position:absolute;width:200%;height:200%;top:50%;left:50%;background-size:550px;background-position:-100px -100px;opacity:.1;transform:translate(-50%,-50%) rotate(15deg)}.styles__fullContainer___3Wl6C-camelCase{display:flex;flex-direction:column;align-items:center;width:90%;margin:10px 5%}.styles__headerRow___3mqZi-camelCase{display:flex;flex-flow:row wrap;width:100%;margin:10px auto 20px}.styles__headerLeft___1Hu3N-camelCase{width:400px;display:flex;flex-direction:column}.styles__headerLeftRow___8vTJL-camelCase{display:flex;flex-direction:row;justify-content:space-between;align-items:flex-end;width:100%}.styles__headerBlookContainer___36zY5-camelCase{width:100px;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;user-select:none;outline:none}.styles__headerBlook___DdSHd-camelCase{width:100%;filter:drop-shadow(0 4px rgba(0,0,0,.2))}.styles__headerBanner___3Uuuk-camelCase,.styles__headerInfo___1oWlb-camelCase{display:flex;flex-direction:column}.styles__headerBanner___3Uuuk-camelCase{width:280px;height:62px;padding-bottom:6px;box-sizing:border-box;color:#fff;text-shadow:1px 1px rgba(0,0,0,.2);margin-bottom:15px;justify-content:center;align-items:center;position:relative;outline:none;cursor:pointer}.styles__headerFiller___iqimf-camelCase{border-radius:10px;background-color:#655dca;box-shadow:inset 0 -6px rgba(0,0,0,.2)}.styles__headerBg___12ogR-camelCase,.styles__headerFiller___iqimf-camelCase{width:100%;height:100%;position:absolute;top:0;left:0;z-index:-1}.styles__headerName___1GBcl-camelCase{font-weight:700;font-size:26px;line-height:26px}.styles__headerTitle___24Ox2-camelCase{font-size:14px;line-height:14px}.styles__editHeaderContainer___2G1ji-camelCase{position:absolute;top:50%;left:50%;height:80%;max-height:80%;width:95%;max-width:400px;border-radius:10px;background-color:#9a49aa;box-sizing:border-box;padding:10px 10px 19px;box-shadow:inset 0 -9px rgba(0,0,0,.2),0 5px rgba(0,0,0,.25);transform:translate(-50%,-50%);display:flex;flex-direction:column}.styles__editHeaderRow___2ekWR-camelCase{display:flex;flex-direction:row;align-items:center;justify-content:space-evenly;width:100%;margin-top:10px}.styles__editHeaderButtonInside___23gJo-camelCase{font-size:24px;font-weight:700;width:130px}.styles__editHeaderColumn___2ye6v-camelCase{width:100%;margin-top:10px;padding:5px;box-sizing:border-box;overflow-y:auto;display:flex;flex-direction:column}.styles__editHeaderColumn___2ye6v-camelCase::-webkit-scrollbar{width:12px;background-color:hsla(0,0%,100%,.2);border-radius:10px}.styles__editHeaderColumn___2ye6v-camelCase::-webkit-scrollbar-thumb,.styles__editHeaderColumn___2ye6v-camelCase::-webkit-scrollbar-thumb:hover{background:#fff;border-radius:10px}.styles__editBanner___vkKiZ-camelCase{width:90%;-webkit-user-select:none;-moz-user-select:none;user-select:none;outline:none;cursor:pointer;will-change:transform;margin:5px auto}.styles__editBannerImg___2eCH9-camelCase{width:100%}.styles__editTitle___-J8dv-camelCase{width:90%;height:35px;display:flex;justify-content:center;align-items:center;-webkit-user-select:none;-moz-user-select:none;user-select:none;outline:none;cursor:pointer;will-change:transform;background-color:rgba(0,0,0,.2);font-size:20px;font-weight:700;border-radius:5px;margin:5px auto}.styles__editTitle___-J8dv-camelCase,.styles__noBannersText___1CBfZ-camelCase{text-align:center;color:#fff}.styles__noBannersText___1CBfZ-camelCase{font-size:28px;width:100%;margin:100px auto}.styles__levelBarContainer___1xi-9-camelCase{width:280px;height:18px;position:relative}.styles__levelStarContainer___7ABEf-camelCase{width:40px;height:40px;position:absolute;left:-10px;top:calc(50% - 20px);display:flex;justify-content:center;align-items:center}.styles__levelStar___LHq_y-camelCase{position:absolute;top:0;left:0;width:100%;height:100%}.styles__levelStarText___2Myxg-camelCase{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);color:#fff;font-family:Titan One,sans-serif;-webkit-text-stroke:1px #3a3a3a;font-size:20px}.styles__levelBar___2SU0x-camelCase{width:100%;height:100%;border-radius:10px;overflow:hidden;background-color:#50425b}.styles__levelBarInside___3FLAG-camelCase{background:linear-gradient(#fcd843,#fcd843 50%,#feb31a 50.01%,#feb31a);height:100%;width:100%;transform-origin:left center}.styles__headerLeftButtons___3zGk0-camelCase{width:100%;margin-top:15px;display:flex;flex-flow:row wrap;align-items:center;justify-content:space-between}.styles__headerButtonInside___26e_U-camelCase{width:115px;display:flex;flex-direction:row;align-items:center;justify-content:flex-start;font-size:12px;font-weight:700}.styles__headerButtonIcon___1pOun-camelCase{font-size:12px;margin-right:5px;margin-left:5px}.styles__featuredBlooksContainer___OHnma-camelCase{margin:0 30px;height:156px;width:308px;position:relative}.styles__featuredBlooksBg___M5r9M-camelCase{width:100%;height:100%;position:absolute}.styles__bottomContainer___3kOrb-camelCase{display:flex;flex-flow:row wrap;justify-content:space-between;width:100%;margin:40px auto 10px}.styles__left___a1a11-camelCase{width:320px}.styles__right___13qxc-camelCase{width:calc(100% - 340px)}.styles__customBlookContainer___3wjWt-camelCase{background-color:#40115f;width:100%;padding:5px 5px 11px;box-shadow:inset 0 -6px rgba(0,0,0,.2);display:flex;flex-flow:row wrap;justify-content:space-evenly;align-items:center;color:#fff;position:relative}.styles__containerHeader___3xghM-camelCase,.styles__customBlookContainer___3wjWt-camelCase{border-radius:7px;box-sizing:border-box}.styles__containerHeader___3xghM-camelCase{position:absolute;top:-28px;left:-10px;height:45px;background-color:#ef7426;padding:4px 4px 8px;box-shadow:0 4px rgba(0,0,0,.2),inset 0 -4px rgba(0,0,0,.2)}.styles__containerHeaderInside___2omQm-camelCase{height:100%;width:100%;box-sizing:border-box;background:linear-gradient(#fcd843,#fcd843 50%,#feb31a 50.01%,#feb31a);padding:0 15px;border-radius:5px;text-shadow:-1px -1px 0 #646464,1px -1px 0 #646464,-1px 1px 0 #646464,2px 2px 0 #646464;font-family:Titan One,sans-serif;color:#fff;font-size:26px}.styles__containerHeaderInside___2omQm-camelCase,.styles__noBlookContainer___1azSz-camelCase{display:flex;justify-content:center;align-items:center}.styles__noBlookContainer___1azSz-camelCase{width:18%;height:175px;font-size:16px;font-weight:700;opacity:.6;flex-direction:column;text-align:center;outline:none;-webkit-user-select:none;-moz-user-select:none;user-select:none;cursor:pointer;transition:.2s}.styles__noBlookContainer___1azSz-camelCase:hover{transform:scale(.95)}.styles__noBlookIcon___HAmDA-camelCase{font-size:40px;margin-bottom:10px}.styles__blookContainer___1RJ4W-camelCase{width:18%;height:175px;display:flex;flex-direction:column;justify-content:center;align-items:center}.styles__customBlook___1I-NI-camelCase{width:75%;max-width:110px;margin-bottom:5px}.styles__customIconRow___3FyUU-camelCase{display:flex;flex-direction:row;justify-content:space-evenly;align-items:center;width:80%;margin-top:0;height:0;overflow:hidden;transition:.2s}.styles__blookContainer___1RJ4W-camelCase:hover>.styles__customIconRow___3FyUU-camelCase{height:20px;margin-top:7px}.styles__customIcon___2AL28-camelCase{width:20px;height:20px;display:flex;justify-content:center;align-items:center;font-size:18px;outline:none;-webkit-user-select:none;-moz-user-select:none;user-select:none;cursor:pointer;opacity:.6;transition:.2s}.styles__customIcon___2AL28-camelCase:hover{opacity:1}.styles__blookUsageContainer___1skDN-camelCase{border-radius:7px;background-color:#9a49aa;width:100%;padding:30px 15px 16px;box-shadow:inset 0 -6px rgba(0,0,0,.2);box-sizing:border-box;position:relative}.styles__blookUsageRow___3BmOZ-camelCase{display:flex;flex-direction:row;align-items:center;justify-content:space-between;width:100%;height:45px}.styles__blookUsageBlook___20QoJ-camelCase{width:36px}.styles__blookUsageBarContainer___3he3D-camelCase{width:calc(100% - 50px);height:26px}.styles__blookUsageBar___iYjir-camelCase{width:100%;height:100%;transform-origin:left center;background:linear-gradient(transparent,transparent 50%,rgba(0,0,0,.1) 50.01%,rgba(0,0,0,.1));box-shadow:0 4px rgba(0,0,0,.3)}.styles__blookUsageScale___2g-Ky-camelCase{width:calc(100% - 40px);height:25px;margin-left:auto;display:flex;flex-direction:row;align-items:center;justify-content:space-evenly}.styles__blookUsageNum___1v4U8-camelCase{font-size:12px;color:#fff;width:25px;text-align:center}.styles__blookUsageScaleBar___3w1PT-camelCase{background-color:#fff;height:3px;width:calc(100% - 45px)}.styles__blookUsageText___3s235-camelCase{width:calc(100% - 50px);margin-left:auto;margin-top:-5px;font-size:14px;text-align:center;color:#fff}.styles__historyContainer___kQ6kc-camelCase{background-color:#9a49aa;padding:30px 15px 16px;position:relative;margin:40px 0}.styles__historyContainer___kQ6kc-camelCase,.styles__historyGameContainer___1ncNG-camelCase{border-radius:7px;width:100%;box-shadow:inset 0 -6px rgba(0,0,0,.2);box-sizing:border-box}.styles__historyGameContainer___1ncNG-camelCase{background-color:#7a039d;margin:5px 0;padding:5px 10px 11px;display:flex;flex-direction:row;align-items:center;color:#fff}.styles__historyBlook___3dMsx-camelCase{width:32px}.styles__historyInfo___11Lo0-camelCase{margin:0 7px;display:flex;flex-direction:column;justify-content:center;font-size:14px}.styles__historyName___3REcG-camelCase{font-size:16px;font-weight:700}.styles__historyNothing___3Js4--camelCase{width:100%;text-align:center;font-size:20px;color:#fff;font-weight:700}.styles__gameStatContainer___lqtJn-camelCase{display:flex;flex-direction:row;align-items:center;height:100%;margin-left:auto}.styles__gameStatText___2PxtE-camelCase{font-weight:700;margin-right:5px}.styles__gameStatText___2PxtE-camelCase,.styles__snowIcon___c3oRi-camelCase{font-size:16px}.styles__fossilIcon___3JBcz-camelCase{font-size:14px;transform:rotate(-45deg)}.styles__gameStatImg___205th-camelCase{width:22px;-webkit-user-select:none;-moz-user-select:none;user-select:none}.styles__gameStatBlook___1Y-8C-camelCase{width:26px}.styles__pointsText___2tau--camelCase{font-size:16px;font-weight:700;text-align:right;margin:auto 0 auto auto}.styles__statsContainer___QnrRB-camelCase{border-radius:7px;background-color:#40115f;width:100%;padding:15px 5px 11px;margin:40px 0;box-shadow:inset 0 -6px rgba(0,0,0,.2);box-sizing:border-box;color:#fff;position:relative}.styles__statsWrapper___r9VCh-camelCase,.styles__topStats___3qffP-camelCase{width:100%;display:flex;flex-flow:row wrap;justify-content:space-evenly}.styles__statContainer___QKuOF-camelCase{border-radius:7px;background-color:#9a49aa;margin:10px;width:200px;padding:5px 5px 11px;box-shadow:inset 0 -6px rgba(0,0,0,.2);box-sizing:border-box;position:relative;display:flex;flex-direction:column;align-items:center;justify-content:center}.styles__statTitle___z4wSV-camelCase{color:#fff;font-size:16px}.styles__statNum___5RYSd-camelCase{font-family:Titan One,sans-serif;color:#fff;font-size:28px}.styles__statImg___3DBXt-camelCase{width:50px;transform:translateY(-50%) rotate(-15deg)}.styles__statImg___3DBXt-camelCase,.styles__tokenImg___a08fY-camelCase{position:absolute;top:65%;left:-20px;filter:drop-shadow(0 0 6px rgba(0,0,0,.2))}.styles__tokenImg___a08fY-camelCase{width:44px;-webkit-user-select:none;-moz-user-select:none;user-select:none;transform:translateY(-50%) rotate(-35deg)}@media only screen and (max-width:1150px){.styles__bottomContainer___3kOrb-camelCase{flex-flow:row-reverse wrap}.styles__left___a1a11-camelCase,.styles__right___13qxc-camelCase{width:100%}}@media only screen and (max-width:650px){.styles__noBlookContainer___1azSz-camelCase{width:40%;height:135px;font-size:14px;margin:0 auto}.styles__noBlookIcon___HAmDA-camelCase{font-size:32px;margin-bottom:7px}.styles__blookContainer___1RJ4W-camelCase{width:40%;height:135px;margin:0 auto}.styles__customBlook___1I-NI-camelCase{width:65%;max-width:80px}}@media only screen and (max-width:450px){.styles__headerLeftRow___8vTJL-camelCase{flex-direction:column;align-items:center}.styles__headerBlookContainer___36zY5-camelCase{margin-bottom:15px}.styles__headerLeftButtons___3zGk0-camelCase{margin-top:20px;justify-content:space-evenly}.styles__headerButton___36TRh-camelCase{margin:5px}}", ""]), t.locals = {
                 background: "styles__background___2J-JA-camelCase",
                 blooksBackground: "styles__blooksBackground___3oQ7Y-camelCase",
                 fullContainer: "styles__fullContainer___3Wl6C-camelCase",
@@ -1835,7 +1842,6 @@
                 editHeaderRow: "styles__editHeaderRow___2ekWR-camelCase",
                 editHeaderButtonInside: "styles__editHeaderButtonInside___23gJo-camelCase",
                 editHeaderColumn: "styles__editHeaderColumn___2ye6v-camelCase",
-                blooksHolder: "styles__blooksHolder___upfSC-camelCase",
                 editBanner: "styles__editBanner___vkKiZ-camelCase",
                 editBannerImg: "styles__editBannerImg___2eCH9-camelCase",
                 editTitle: "styles__editTitle___-J8dv-camelCase",
@@ -3387,19 +3393,20 @@
                     nonUser: !0
                 }],
                 q = n("gISs"),
-                F = n("Dzm6");
+                F = n("Dzm6"),
+                H = n("8qja");
 
-            function H(e) {
-                return (H = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function(e) {
+            function D(e) {
+                return (D = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function(e) {
                     return typeof e
                 } : function(e) {
                     return e && "function" == typeof Symbol && e.constructor === Symbol && e !== Symbol.prototype ? "symbol" : typeof e
                 })(e)
             }
 
-            function D() {
+            function A() {
                 /*! regenerator-runtime -- Copyright (c) 2014-present, Facebook, Inc. -- license (MIT): https://github.com/facebook/regenerator/blob/main/LICENSE */
-                D = function() {
+                A = function() {
                     return e
                 };
                 var e = {},
@@ -3515,7 +3522,7 @@
                                     if ("throw" !== l.type) {
                                         var u = l.arg,
                                             f = u.value;
-                                        return f && "object" == H(f) && n.call(f, "__await") ? t.resolve(f.__await).then((function(e) {
+                                        return f && "object" == D(f) && n.call(f, "__await") ? t.resolve(f.__await).then((function(e) {
                                             a("next", e, i, s)
                                         }), (function(e) {
                                             a("throw", e, i, s)
@@ -3708,7 +3715,7 @@
                 }, e
             }
 
-            function A(e, t) {
+            function G(e, t) {
                 var n = Object.keys(e);
                 if (Object.getOwnPropertySymbols) {
                     var a = Object.getOwnPropertySymbols(e);
@@ -3719,19 +3726,19 @@
                 return n
             }
 
-            function G(e) {
+            function z(e) {
                 for (var t = 1; t < arguments.length; t++) {
                     var n = null != arguments[t] ? arguments[t] : {};
-                    t % 2 ? A(Object(n), !0).forEach((function(t) {
-                        z(e, t, n[t])
-                    })) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n)) : A(Object(n)).forEach((function(t) {
+                    t % 2 ? G(Object(n), !0).forEach((function(t) {
+                        U(e, t, n[t])
+                    })) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n)) : G(Object(n)).forEach((function(t) {
                         Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
                     }))
                 }
                 return e
             }
 
-            function z(e, t, n) {
+            function U(e, t, n) {
                 return t in e ? Object.defineProperty(e, t, {
                     value: n,
                     enumerable: !0,
@@ -3740,7 +3747,7 @@
                 }) : e[t] = n, e
             }
 
-            function U(e, t) {
+            function Y(e, t) {
                 return function(e) {
                     if (Array.isArray(e)) return e
                 }(e) || function(e, t) {
@@ -3761,36 +3768,36 @@
                         }
                     }
                     return o
-                }(e, t) || M(e, t) || function() {
+                }(e, t) || W(e, t) || function() {
                     throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.")
                 }()
             }
 
-            function Y(e) {
+            function M(e) {
                 return function(e) {
-                    if (Array.isArray(e)) return W(e)
+                    if (Array.isArray(e)) return J(e)
                 }(e) || function(e) {
                     if ("undefined" != typeof Symbol && null != e[Symbol.iterator] || null != e["@@iterator"]) return Array.from(e)
-                }(e) || M(e) || function() {
+                }(e) || W(e) || function() {
                     throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.")
                 }()
             }
 
-            function M(e, t) {
+            function W(e, t) {
                 if (e) {
-                    if ("string" == typeof e) return W(e, t);
+                    if ("string" == typeof e) return J(e, t);
                     var n = Object.prototype.toString.call(e).slice(8, -1);
-                    return "Object" === n && e.constructor && (n = e.constructor.name), "Map" === n || "Set" === n ? Array.from(e) : "Arguments" === n || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n) ? W(e, t) : void 0
+                    return "Object" === n && e.constructor && (n = e.constructor.name), "Map" === n || "Set" === n ? Array.from(e) : "Arguments" === n || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n) ? J(e, t) : void 0
                 }
             }
 
-            function W(e, t) {
+            function J(e, t) {
                 (null == t || t > e.length) && (t = e.length);
                 for (var n = 0, a = new Array(t); n < t; n++) a[n] = e[n];
                 return a
             }
 
-            function J(e, t, n, a, r, o, i) {
+            function Q(e, t, n, a, r, o, i) {
                 try {
                     var s = e[o](i),
                         l = s.value
@@ -3800,20 +3807,20 @@
                 s.done ? t(l) : Promise.resolve(l).then(a, r)
             }
 
-            function Q(e, t) {
+            function K(e, t) {
                 for (var n = 0; n < t.length; n++) {
                     var a = t[n];
                     a.enumerable = a.enumerable || !1, a.configurable = !0, "value" in a && (a.writable = !0), Object.defineProperty(e, a.key, a)
                 }
             }
 
-            function K(e, t) {
-                return (K = Object.setPrototypeOf ? Object.setPrototypeOf.bind() : function(e, t) {
+            function X(e, t) {
+                return (X = Object.setPrototypeOf ? Object.setPrototypeOf.bind() : function(e, t) {
                     return e.__proto__ = t, e
                 })(e, t)
             }
 
-            function X(e) {
+            function V(e) {
                 var t = function() {
                     if ("undefined" == typeof Reflect || !Reflect.construct) return !1;
                     if (Reflect.construct.sham) return !1;
@@ -3825,32 +3832,32 @@
                     }
                 }();
                 return function() {
-                    var n, a = $(e);
+                    var n, a = ee(e);
                     if (t) {
-                        var r = $(this).constructor;
+                        var r = ee(this).constructor;
                         n = Reflect.construct(a, arguments, r)
                     } else n = a.apply(this, arguments);
-                    return V(this, n)
+                    return Z(this, n)
                 }
             }
 
-            function V(e, t) {
-                if (t && ("object" === H(t) || "function" == typeof t)) return t;
+            function Z(e, t) {
+                if (t && ("object" === D(t) || "function" == typeof t)) return t;
                 if (void 0 !== t) throw new TypeError("Derived constructors may only return object or undefined");
-                return Z(e)
+                return $(e)
             }
 
-            function Z(e) {
+            function $(e) {
                 if (void 0 === e) throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
                 return e
             }
 
-            function $(e) {
-                return ($ = Object.setPrototypeOf ? Object.getPrototypeOf.bind() : function(e) {
+            function ee(e) {
+                return (ee = Object.setPrototypeOf ? Object.getPrototypeOf.bind() : function(e) {
                     return e.__proto__ || Object.getPrototypeOf(e)
                 })(e)
             }
-            var ee = function(e) {
+            var te = function(e) {
                 ! function(e, t) {
                     if ("function" != typeof t && null !== t) throw new TypeError("Super expression must either be null or a function");
                     e.prototype = Object.create(t && t.prototype, {
@@ -3861,9 +3868,9 @@
                         }
                     }), Object.defineProperty(e, "prototype", {
                         writable: !1
-                    }), t && K(e, t)
+                    }), t && X(e, t)
                 }(l, e);
-                var t, n, a, o, i, s = X(l);
+                var t, n, a, o, i, s = V(l);
 
                 function l(e) {
                     var t;
@@ -3882,13 +3889,13 @@
                         customBlooks: ["", "", "", "", ""],
                         editingBlook: -1,
                         editHeader: ""
-                    }, t.here = !0, t.stopEditing = t.stopEditing.bind(Z(t)), t.deleteBlook = t.deleteBlook.bind(Z(t)), t.changeBlook = t.changeBlook.bind(Z(t)), t.changeBanner = t.changeBanner.bind(Z(t)), t.changeTitle = t.changeTitle.bind(Z(t)), t
+                    }, t.here = !0, t.stopEditing = t.stopEditing.bind($(t)), t.deleteBlook = t.deleteBlook.bind($(t)), t.changeBlook = t.changeBlook.bind($(t)), t.changeBanner = t.changeBanner.bind($(t)), t.changeTitle = t.changeTitle.bind($(t)), t
                 }
                 return t = l, (n = [{
                     key: "componentDidMount",
-                    value: (o = D().mark((function e() {
+                    value: (o = A().mark((function e() {
                         var t, n, a, r, o = this;
-                        return D().wrap((function(e) {
+                        return A().wrap((function(e) {
                             for (;;) switch (e.prev = e.next) {
                                 case 0:
                                     return t = Object(L.h)("name"), n = Object(L.h)("id"), e.next = 4, this.props.user.getData();
@@ -3911,11 +3918,11 @@
                                         }
                                     } : null, I.a.get(n ? "/api/users/byid" : "/api/users", r).then((function(e) {
                                         if (e.data) {
-                                            var t = Y(e.data.gameHistory.slice(Math.max(e.data.gameHistory.length - 7, 0), e.data.gameHistory.length));
+                                            var t = M(e.data.gameHistory.slice(Math.max(e.data.gameHistory.length - 7, 0), e.data.gameHistory.length));
                                             t.reverse();
                                             var n = "Light Blue",
-                                                r = Y(Object.entries(e.data.blookUsage).map((function(e) {
-                                                    var t = U(e, 2);
+                                                r = M(Object.entries(e.data.blookUsage).map((function(e) {
+                                                    var t = Y(e, 2);
                                                     return {
                                                         name: t[0],
                                                         uses: t[1]
@@ -3933,7 +3940,7 @@
                                                     level: s.level,
                                                     xp: s.xp,
                                                     mostUsedBlook: n,
-                                                    user: G(G({}, a), e.data),
+                                                    user: z(z({}, a), e.data),
                                                     customBlooks: 5 === e.data.customBlooks.length ? e.data.customBlooks : o.state.customBlooks,
                                                     tokensAvailable: h.a.utc(e.data.lastTokenDay).isSame(h.a.utc(), "d") ? e.data.tokensAvailable : 500,
                                                     timeLeft: "".concat(l.hours(), ":").concat(l.minutes() < 10 ? "0" : "").concat(l.minutes()),
@@ -3964,11 +3971,11 @@
                             var r = o.apply(e, t);
 
                             function i(e) {
-                                J(r, n, a, i, s, "next", e)
+                                Q(r, n, a, i, s, "next", e)
                             }
 
                             function s(e) {
-                                J(r, n, a, i, s, "throw", e)
+                                Q(r, n, a, i, s, "throw", e)
                             }
                             i(void 0)
                         }))
@@ -3987,7 +3994,7 @@
                         if (!e) return this.setState({
                             editingBlook: -1
                         });
-                        var a = Y(this.state.customBlooks);
+                        var a = M(this.state.customBlooks);
                         a[this.state.editingBlook] = "", this.setState({
                             customBlooks: a
                         }, (function() {
@@ -4005,7 +4012,7 @@
                 }, {
                     key: "deleteBlook",
                     value: function(e) {
-                        var t = Y(this.state.customBlooks);
+                        var t = M(this.state.customBlooks);
                         t[e] = "", this.setState({
                             customBlooks: t,
                             editingBlook: -1
@@ -4024,7 +4031,7 @@
                             isChangingBlook: !1
                         });
                         this.setState({
-                            user: G(G({}, this.state.user), {}, {
+                            user: z(z({}, this.state.user), {}, {
                                 blook: e
                             }),
                             isChangingBlook: !1
@@ -4043,7 +4050,7 @@
                             editHeader: ""
                         });
                         this.setState({
-                            user: G(G({}, this.state.user), {}, {
+                            user: z(z({}, this.state.user), {}, {
                                 banner: e
                             }),
                             editHeader: ""
@@ -4060,7 +4067,7 @@
                             editHeader: ""
                         });
                         this.setState({
-                            user: G(G({}, this.state.user), {}, {
+                            user: z(z({}, this.state.user), {}, {
                                 title: e
                             }),
                             editHeader: ""
@@ -4263,7 +4270,7 @@
                             }, r.a.createElement("div", {
                                 className: v.a.gameStatText
                             }, Object(L.q)(e.gold)), r.a.createElement("img", {
-                                src: P.a.basic.gold,
+                                src: H.a ? P.a.basic.candy : P.a.basic.gold,
                                 alt: "Gold",
                                 className: v.a.gameStatImg,
                                 draggable: !1
@@ -4488,10 +4495,10 @@
                         }, "Titles")), r.a.createElement("div", {
                             className: v.a.editHeaderColumn
                         }, "banner" === this.state.editHeader ? this.state.user.banners ? Object.entries(q.a).filter((function(t) {
-                            var n = U(t, 1)[0];
+                            var n = Y(t, 1)[0];
                             return "starter" === n || e.state.user.banners.includes(n)
                         })).map((function(t) {
-                            var n = U(t, 2),
+                            var n = Y(t, 2),
                                 a = n[0],
                                 o = n[1];
                             return r.a.createElement("div", {
@@ -4511,10 +4518,10 @@
                         })) : r.a.createElement("div", {
                             className: v.a.noBannersText
                         }, "No Banners Unlocked Yet") : this.state.user.titles ? Object.entries(F.a).filter((function(t) {
-                            var n = U(t, 1)[0];
+                            var n = Y(t, 1)[0];
                             return "newbie" === n || e.state.user.titles.includes(n)
                         })).map((function(t) {
-                            var n = U(t, 2),
+                            var n = Y(t, 2),
                                 a = n[0],
                                 o = n[1];
                             return r.a.createElement("div", {
@@ -4530,11 +4537,11 @@
                             className: v.a.noBannersText
                         }, "No Titles Unlocked Yet")))) : null)
                     }
-                }]) && Q(t.prototype, n), a && Q(t, a), Object.defineProperty(t, "prototype", {
+                }]) && K(t.prototype, n), a && K(t, a), Object.defineProperty(t, "prototype", {
                     writable: !1
                 }), l
             }(r.a.Component);
-            ee.propTypes = {
+            te.propTypes = {
                 history: l.a.object.isRequired,
                 user: l.a.object
             };
@@ -4542,7 +4549,7 @@
                 return {}
             }), (function(e) {
                 return Object(o.b)({}, e)
-            }))(ee)))
+            }))(te)))
         },
         OoaU: function(e, t, n) {
             var a = n("9ZgN");

@@ -1,5 +1,5 @@
 (window.webpackJsonp = window.webpackJsonp || []).push([
-    [14], {
+    [16], {
         "/8Ke": function(e, t, o) {
             (t = e.exports = o("JPst")(!1)).push([e.i, ".styles__mainBox___16RUM-camelCase{position:absolute;width:420px;top:47.5%;left:50%;text-align:center;display:flex;flex-direction:column;align-items:center;justify-content:center;opacity:0;animation:styles__growIn___1wn_c-camelCase .5s linear .2s forwards}@keyframes styles__growIn___1wn_c-camelCase{0%{transform:translate(-50%,-50%) scale(.5);opacity:0}60%{opacity:1}70%{transform:translate(-50%,-50%) scale(1.2)}to{transform:translate(-50%,-50%) scale(1);opacity:1}}.styles__particles___4xpAd-camelCase{opacity:1;animation:styles__fadeIn___1hkmz-camelCase .2s linear}.styles__titleText___2nfVS-camelCase{font-size:100px;font-family:Titan One,sans-serif;color:#fff;text-shadow:2px 2px 8px grey;-webkit-user-select:none;-moz-user-select:none;user-select:none}.styles__logo___Oq9aL-camelCase{width:400px}@media only screen and (max-width:600px){.styles__titleText___2nfVS-camelCase{font-size:75px}}.styles__buttonRow___2O5tw-camelCase{margin-top:30px;width:285px;display:flex;flex-direction:row;align-items:center;justify-content:space-between}.styles__idInputContainer___3o1Yw-camelCase{width:200px;height:60px;padding-bottom:6px;box-shadow:inset 0 -6px rgba(0,0,0,.2),0 0 4px rgba(0,0,0,.15);background-color:#fff;border-radius:6px}.styles__idInput___1zWUq-camelCase{width:100%;height:100%;background-color:transparent;border:none;padding:5px;box-sizing:border-box;font-size:35px;font-weight:700;text-align:center;font-family:Nunito,sans-serif;outline:none;color:#5f5f5f}.styles__joinButton___xSaJN-camelCase{height:60px;width:60px;cursor:pointer;overflow:hidden;outline:none;background-color:#fff;padding-bottom:6px;box-shadow:inset 0 -6px rgba(0,0,0,.2),0 0 4px rgba(0,0,0,.15);border-radius:5px;display:flex;justify-content:center;align-items:center;transition:.2s}.styles__joinButton___xSaJN-camelCase:hover{transform:scale(.9)}.styles__joinIcon___2GYv5-camelCase{font-size:35px;color:#5f5f5f}.styles__loadingText___B-7jJ-camelCase{font-size:30px;left:50%;transform:translate(-50%,-50px);font-family:Nunito,sans-serif;text-shadow:2px 2px 8px grey;-webkit-user-select:none;-moz-user-select:none;user-select:none;opacity:0;z-index:7;animation:styles__fadeIn___1hkmz-camelCase .2s linear forwards}.styles__errorBar___1NnC5-camelCase,.styles__loadingText___B-7jJ-camelCase{position:absolute;top:100%;color:#fff}.styles__errorBar___1NnC5-camelCase{background-color:#e84135;min-height:55px;width:100%;left:0;padding:11px 5px 5px;box-sizing:border-box;box-shadow:inset 0 6px rgba(0,0,0,.2);overflow:hidden;z-index:10;display:flex;justify-content:center;align-items:center;font-size:20px;transition:.1s}.styles__loadContainer___1Ra_J-camelCase{opacity:0;animation:styles__fadeIn___1hkmz-camelCase .2s linear 2s forwards}.styles__loadGameButton___383pl-camelCase{position:absolute;bottom:10px;left:50%;padding:5px 15px 9px;box-shadow:inset 0 -4px rgba(0,0,0,.2),0 0 4px rgba(0,0,0,.15);font-size:22px;width:185px;background-color:#fff;border-radius:7px;cursor:pointer;text-align:center;text-decoration:none;outline:none;font-family:Nunito,sans-serif;font-weight:700;color:rgba(95,95,95,.9);-webkit-user-select:none;-moz-user-select:none;user-select:none;transform:translateX(-50%);transition:.2s}.styles__loadGameButton___383pl-camelCase:hover{transform:translateX(-50%) scale(.95)}.styles__invisible___1egjf-camelCase{opacity:0;transition:opacity .25s linear}@keyframes styles__fadeIn___1hkmz-camelCase{0%{opacity:0}to{opacity:1}}.styles__blooksBackground___27qPD-camelCase{position:absolute;width:200%;height:200%;top:50%;left:50%;background-size:550px;background-position:-100px -100px;opacity:.1;transform:translate(-50%,-50%) rotate(15deg)}", ""]), t.locals = {
                 mainBox: "styles__mainBox___16RUM-camelCase",
@@ -982,7 +982,7 @@
         MuiJ: function(e, t, o) {
             "use strict";
             o.d(t, "a", (function() {
-                return D
+                return q
             }));
             var n = o("q1tI"),
                 a = o.n(n),
@@ -1011,19 +1011,20 @@
                 E = o("5BnW"),
                 T = o("qnYv"),
                 j = o("WWaO"),
-                S = o("LHn/");
+                S = o("LHn/"),
+                B = o("8qja");
 
-            function B(e) {
-                return (B = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function(e) {
+            function N(e) {
+                return (N = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function(e) {
                     return typeof e
                 } : function(e) {
                     return e && "function" == typeof Symbol && e.constructor === Symbol && e !== Symbol.prototype ? "symbol" : typeof e
                 })(e)
             }
 
-            function N() {
+            function L() {
                 /*! regenerator-runtime -- Copyright (c) 2014-present, Facebook, Inc. -- license (MIT): https://github.com/facebook/regenerator/blob/main/LICENSE */
-                N = function() {
+                L = function() {
                     return e
                 };
                 var e = {},
@@ -1139,7 +1140,7 @@
                                     if ("throw" !== l.type) {
                                         var u = l.arg,
                                             p = u.value;
-                                        return p && "object" == B(p) && o.call(p, "__await") ? t.resolve(p.__await).then((function(e) {
+                                        return p && "object" == N(p) && o.call(p, "__await") ? t.resolve(p.__await).then((function(e) {
                                             n("next", e, s, i)
                                         }), (function(e) {
                                             n("throw", e, s, i)
@@ -1332,7 +1333,7 @@
                 }, e
             }
 
-            function L(e, t, o, n, a, r, s) {
+            function P(e, t, o, n, a, r, s) {
                 try {
                     var i = e[r](s),
                         l = i.value
@@ -1342,7 +1343,7 @@
                 i.done ? t(l) : Promise.resolve(l).then(n, a)
             }
 
-            function P(e) {
+            function R(e) {
                 return function() {
                     var t = this,
                         o = arguments;
@@ -1350,31 +1351,31 @@
                         var r = e.apply(t, o);
 
                         function s(e) {
-                            L(r, n, a, s, i, "next", e)
+                            P(r, n, a, s, i, "next", e)
                         }
 
                         function i(e) {
-                            L(r, n, a, s, i, "throw", e)
+                            P(r, n, a, s, i, "throw", e)
                         }
                         s(void 0)
                     }))
                 }
             }
 
-            function R(e, t) {
+            function G(e, t) {
                 for (var o = 0; o < t.length; o++) {
                     var n = t[o];
                     n.enumerable = n.enumerable || !1, n.configurable = !0, "value" in n && (n.writable = !0), Object.defineProperty(e, n.key, n)
                 }
             }
 
-            function G(e, t) {
-                return (G = Object.setPrototypeOf ? Object.setPrototypeOf.bind() : function(e, t) {
+            function H(e, t) {
+                return (H = Object.setPrototypeOf ? Object.setPrototypeOf.bind() : function(e, t) {
                     return e.__proto__ = t, e
                 })(e, t)
             }
 
-            function H(e) {
+            function A(e) {
                 var t = function() {
                     if ("undefined" == typeof Reflect || !Reflect.construct) return !1;
                     if (Reflect.construct.sham) return !1;
@@ -1386,33 +1387,33 @@
                     }
                 }();
                 return function() {
-                    var o, n = W(e);
+                    var o, n = D(e);
                     if (t) {
-                        var a = W(this).constructor;
+                        var a = D(this).constructor;
                         o = Reflect.construct(n, arguments, a)
                     } else o = n.apply(this, arguments);
-                    return A(this, o)
+                    return M(this, o)
                 }
             }
 
-            function A(e, t) {
-                if (t && ("object" === B(t) || "function" == typeof t)) return t;
+            function M(e, t) {
+                if (t && ("object" === N(t) || "function" == typeof t)) return t;
                 if (void 0 !== t) throw new TypeError("Derived constructors may only return object or undefined");
-                return M(e)
+                return W(e)
             }
 
-            function M(e) {
+            function W(e) {
                 if (void 0 === e) throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
                 return e
             }
 
-            function W(e) {
-                return (W = Object.setPrototypeOf ? Object.getPrototypeOf.bind() : function(e) {
+            function D(e) {
+                return (D = Object.setPrototypeOf ? Object.getPrototypeOf.bind() : function(e) {
                     return e.__proto__ || Object.getPrototypeOf(e)
                 })(e)
             }
-            var D = 60,
-                q = function(e) {
+            var q = 60,
+                F = function(e) {
                     ! function(e, t) {
                         if ("function" != typeof t && null !== t) throw new TypeError("Super expression must either be null or a function");
                         e.prototype = Object.create(t && t.prototype, {
@@ -1423,9 +1424,9 @@
                             }
                         }), Object.defineProperty(e, "prototype", {
                             writable: !1
-                        }), t && G(e, t)
+                        }), t && H(e, t)
                     }(l, e);
-                    var t, o, n, r, s, i = H(l);
+                    var t, o, n, r, s, i = A(l);
 
                     function l(e) {
                         var t;
@@ -1439,13 +1440,13 @@
                             transition: !1,
                             loading: !1,
                             canLoad: !1
-                        }, t.joining = !1, t.here = !0, t.attempts = 0, t.onJoin = t.onJoin.bind(M(t)), t.onJoinHw = t.onJoinHw.bind(M(t)), t.onTextUpdate = t.onTextUpdate.bind(M(t)), t
+                        }, t.joining = !1, t.here = !0, t.attempts = 0, t.onJoin = t.onJoin.bind(W(t)), t.onJoinHw = t.onJoinHw.bind(W(t)), t.onTextUpdate = t.onTextUpdate.bind(W(t)), t
                     }
                     return t = l, (o = [{
                         key: "componentDidMount",
-                        value: (s = P(N().mark((function e() {
+                        value: (s = R(L().mark((function e() {
                             var t, o, n = this;
-                            return N().wrap((function(e) {
+                            return L().wrap((function(e) {
                                 for (;;) switch (e.prev = e.next) {
                                     case 0:
                                         return e.next = 2, T.a.get("/api/users/check-auth");
@@ -1476,9 +1477,9 @@
                         }
                     }, {
                         key: "onJoin",
-                        value: (r = P(N().mark((function e(t) {
+                        value: (r = R(L().mark((function e(t) {
                             var o, n, a, r = this;
-                            return N().wrap((function(e) {
+                            return L().wrap((function(e) {
                                 for (;;) switch (e.prev = e.next) {
                                     case 0:
                                         if (t && t.preventDefault(), !this.joining) {
@@ -1507,7 +1508,7 @@
                                                 r.props.addClient(n, a.isPlus, a.isRandomNames), r.props.history.push("/play/register")
                                             }), 250)
                                         })) : (this.joining = !1, this.setState({
-                                            hostIdError: "full" === a.msg ? "Sorry, that game is full. (".concat(D, " Player Limit)") : "late" === a.msg ? "Sorry, you can't join this game late." : "We couldn't find a game with that ID. Please try again.",
+                                            hostIdError: "full" === a.msg ? "Sorry, that game is full. (".concat(q, " Player Limit)") : "late" === a.msg ? "Sorry, you can't join this game late." : "We couldn't find a game with that ID. Please try again.",
                                             loading: !1
                                         })), e.next = 27;
                                         break;
@@ -1582,7 +1583,7 @@
                             return a.a.createElement("div", {
                                 className: h.isMobile ? x.a.mBody : x.a.body,
                                 style: {
-                                    backgroundColor: "#0bc2cf",
+                                    backgroundColor: B.a ? "#292929" : "#0bc2cf",
                                     overflow: "hidden"
                                 }
                             }, a.a.createElement(v.a, {
@@ -1644,11 +1645,11 @@
                                 }
                             }, this.state.hostIdError))))
                         }
-                    }]) && R(t.prototype, o), n && R(t, n), Object.defineProperty(t, "prototype", {
+                    }]) && G(t.prototype, o), n && G(t, n), Object.defineProperty(t, "prototype", {
                         writable: !1
                     }), l
                 }(a.a.Component);
-            q.propTypes = {
+            F.propTypes = {
                 client: l.a.object,
                 addClient: l.a.func.isRequired,
                 addHwClient: l.a.func.isRequired,
@@ -1673,7 +1674,7 @@
                     setFactoryHw: y.d,
                     setAmountHw: y.c
                 }, e)
-            }))(Object(E.d)(q))))
+            }))(Object(E.d)(F))))
         },
         "P/Hk": function(e, t, o) {
             (t = e.exports = o("JPst")(!1)).push([e.i, ".styles__teamBlook___1yCLZ-camelCase{position:absolute;height:34.5vw;width:30vw;top:50%;left:5vw;transform:translateY(-50%);-webkit-user-select:none;-moz-user-select:none;user-select:none}.styles__rightContainer___3vkuA-camelCase{position:absolute;height:calc(90vh - 55px);width:50vw;top:5vh;left:45vw;display:flex;flex-direction:column;align-content:center;justify-content:center}.styles__teamText___dFlQX-camelCase{font-size:4.2vw;margin-bottom:2vh}.styles__teamText___dFlQX-camelCase,.styles__togetherText___XzKt9-camelCase{color:#3a3a3a;font-family:Nunito,sans-serif;font-weight:700}.styles__togetherText___XzKt9-camelCase{font-size:2.4vw;margin-bottom:3vh}.styles__playerContainer___3QMrS-camelCase{display:flex;flex-direction:row;justify-content:flex-start;align-items:center;margin:1vh 0}.styles__playerBlook___3pJmH-camelCase{height:6.9vw;width:6vw;-webkit-user-select:none;-moz-user-select:none;user-select:none}.styles__playerText___3v2r2-camelCase{color:#3a3a3a;font-family:Nunito,sans-serif;font-weight:700;font-size:3vw;margin-left:2vw}.styles__mobileContainer___3BWTE-camelCase{display:flex;flex-direction:column;align-items:center;justify-content:center;height:80%;margin:10% 0;width:100vw}.styles__mTeamText___1kpa2-camelCase{color:#3a3a3a;font-family:Nunito,sans-serif;font-weight:700;font-size:6.5vh;margin:0 5vw 2vh;text-align:center;line-height:6vh}.styles__mTeamBlook___3t51J-camelCase{height:23vh;width:20vh;margin:0 auto;-webkit-user-select:none;-moz-user-select:none;user-select:none}.styles__mTogetherText___NE9Hc-camelCase{color:#3a3a3a;font-family:Nunito,sans-serif;font-weight:700;font-size:4vh;text-align:center;margin:2vh 5vw 1vh;line-height:5vh}.styles__mPlayerContainer___1SbVU-camelCase{display:flex;flex-direction:row;justify-content:flex-start;align-items:center;margin:.5vh auto;width:85vw}.styles__mPlayerBlook___1c9tE-camelCase{height:5.75vh;width:5vh;-webkit-user-select:none;-moz-user-select:none;user-select:none}.styles__mPlayerText___3hGPg-camelCase{color:#3a3a3a;font-family:Nunito,sans-serif;overflow:hidden;display:flex;justify-content:center;align-content:center;flex-direction:column;margin-left:4vw;height:5.75vh;line-height:5.75vh;width:calc(81vw - 5vh)}", ""]), t.locals = {
@@ -1797,17 +1798,18 @@
                 P = o("xP+p"),
                 R = o("lmLo"),
                 G = o("lCBo"),
-                H = o("LHn/");
+                H = o("LHn/"),
+                A = o("8qja");
 
-            function A(e) {
-                return (A = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function(e) {
+            function M(e) {
+                return (M = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function(e) {
                     return typeof e
                 } : function(e) {
                     return e && "function" == typeof Symbol && e.constructor === Symbol && e !== Symbol.prototype ? "symbol" : typeof e
                 })(e)
             }
 
-            function M(e, t, o) {
+            function W(e, t, o) {
                 return t in e ? Object.defineProperty(e, t, {
                     value: o,
                     enumerable: !0,
@@ -1816,9 +1818,9 @@
                 }) : e[t] = o, e
             }
 
-            function W() {
+            function D() {
                 /*! regenerator-runtime -- Copyright (c) 2014-present, Facebook, Inc. -- license (MIT): https://github.com/facebook/regenerator/blob/main/LICENSE */
-                W = function() {
+                D = function() {
                     return e
                 };
                 var e = {},
@@ -1934,7 +1936,7 @@
                                     if ("throw" !== l.type) {
                                         var u = l.arg,
                                             p = u.value;
-                                        return p && "object" == A(p) && o.call(p, "__await") ? t.resolve(p.__await).then((function(e) {
+                                        return p && "object" == M(p) && o.call(p, "__await") ? t.resolve(p.__await).then((function(e) {
                                             n("next", e, s, i)
                                         }), (function(e) {
                                             n("throw", e, s, i)
@@ -2127,17 +2129,17 @@
                 }, e
             }
 
-            function D(e) {
+            function q(e) {
                 return function(e) {
-                    if (Array.isArray(e)) return Y(e)
+                    if (Array.isArray(e)) return z(e)
                 }(e) || function(e) {
                     if ("undefined" != typeof Symbol && null != e[Symbol.iterator] || null != e["@@iterator"]) return Array.from(e)
-                }(e) || F(e) || function() {
+                }(e) || Y(e) || function() {
                     throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.")
                 }()
             }
 
-            function q(e, t) {
+            function F(e, t) {
                 return function(e) {
                     if (Array.isArray(e)) return e
                 }(e) || function(e, t) {
@@ -2158,26 +2160,26 @@
                         }
                     }
                     return r
-                }(e, t) || F(e, t) || function() {
+                }(e, t) || Y(e, t) || function() {
                     throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.")
                 }()
             }
 
-            function F(e, t) {
+            function Y(e, t) {
                 if (e) {
-                    if ("string" == typeof e) return Y(e, t);
+                    if ("string" == typeof e) return z(e, t);
                     var o = Object.prototype.toString.call(e).slice(8, -1);
-                    return "Object" === o && e.constructor && (o = e.constructor.name), "Map" === o || "Set" === o ? Array.from(e) : "Arguments" === o || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(o) ? Y(e, t) : void 0
+                    return "Object" === o && e.constructor && (o = e.constructor.name), "Map" === o || "Set" === o ? Array.from(e) : "Arguments" === o || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(o) ? z(e, t) : void 0
                 }
             }
 
-            function Y(e, t) {
+            function z(e, t) {
                 (null == t || t > e.length) && (t = e.length);
                 for (var o = 0, n = new Array(t); o < t; o++) n[o] = e[o];
                 return n
             }
 
-            function z(e, t, o, n, a, r, s) {
+            function U(e, t, o, n, a, r, s) {
                 try {
                     var i = e[r](s),
                         l = i.value
@@ -2187,7 +2189,7 @@
                 i.done ? t(l) : Promise.resolve(l).then(n, a)
             }
 
-            function U(e) {
+            function K(e) {
                 return function() {
                     var t = this,
                         o = arguments;
@@ -2195,31 +2197,31 @@
                         var r = e.apply(t, o);
 
                         function s(e) {
-                            z(r, n, a, s, i, "next", e)
+                            U(r, n, a, s, i, "next", e)
                         }
 
                         function i(e) {
-                            z(r, n, a, s, i, "throw", e)
+                            U(r, n, a, s, i, "throw", e)
                         }
                         s(void 0)
                     }))
                 }
             }
 
-            function K(e, t) {
+            function J(e, t) {
                 for (var o = 0; o < t.length; o++) {
                     var n = t[o];
                     n.enumerable = n.enumerable || !1, n.configurable = !0, "value" in n && (n.writable = !0), Object.defineProperty(e, n.key, n)
                 }
             }
 
-            function J(e, t) {
-                return (J = Object.setPrototypeOf ? Object.setPrototypeOf.bind() : function(e, t) {
+            function Q(e, t) {
+                return (Q = Object.setPrototypeOf ? Object.setPrototypeOf.bind() : function(e, t) {
                     return e.__proto__ = t, e
                 })(e, t)
             }
 
-            function Q(e) {
+            function X(e) {
                 var t = function() {
                     if ("undefined" == typeof Reflect || !Reflect.construct) return !1;
                     if (Reflect.construct.sham) return !1;
@@ -2231,32 +2233,32 @@
                     }
                 }();
                 return function() {
-                    var o, n = Z(e);
+                    var o, n = $(e);
                     if (t) {
-                        var a = Z(this).constructor;
+                        var a = $(this).constructor;
                         o = Reflect.construct(n, arguments, a)
                     } else o = n.apply(this, arguments);
-                    return X(this, o)
+                    return V(this, o)
                 }
             }
 
-            function X(e, t) {
-                if (t && ("object" === A(t) || "function" == typeof t)) return t;
+            function V(e, t) {
+                if (t && ("object" === M(t) || "function" == typeof t)) return t;
                 if (void 0 !== t) throw new TypeError("Derived constructors may only return object or undefined");
-                return V(e)
+                return Z(e)
             }
 
-            function V(e) {
+            function Z(e) {
                 if (void 0 === e) throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
                 return e
             }
 
-            function Z(e) {
-                return (Z = Object.setPrototypeOf ? Object.getPrototypeOf.bind() : function(e) {
+            function $(e) {
+                return ($ = Object.setPrototypeOf ? Object.getPrototypeOf.bind() : function(e) {
                     return e.__proto__ || Object.getPrototypeOf(e)
                 })(e)
             }
-            var $ = function(e) {
+            var ee = function(e) {
                 ! function(e, t) {
                     if ("function" != typeof t && null !== t) throw new TypeError("Super expression must either be null or a function");
                     e.prototype = Object.create(t && t.prototype, {
@@ -2267,9 +2269,9 @@
                         }
                     }), Object.defineProperty(e, "prototype", {
                         writable: !1
-                    }), t && J(e, t)
+                    }), t && Q(e, t)
                 }(i, e);
-                var t, o, n, r, s = Q(i);
+                var t, o, n, r, s = X(i);
 
                 function i(e) {
                     var t;
@@ -2286,13 +2288,13 @@
                         rightGame: !1,
                         showMobileBlooks: !1,
                         authWindow: null
-                    }, t.dbRefClients = {}, t.dbRefStage = {}, t.here = !0, t.setBlook = t.setBlook.bind(V(t)), t.onLink = t.onLink.bind(V(t)), t.getUserBlooks = t.getUserBlooks.bind(V(t)), t.startLogin = t.startLogin.bind(V(t)), t.startSignup = t.startSignup.bind(V(t)), t.openAuthWindow = t.openAuthWindow.bind(V(t)), t.onAuthComplete = t.onAuthComplete.bind(V(t)), t
+                    }, t.dbRefClients = {}, t.dbRefStage = {}, t.here = !0, t.setBlook = t.setBlook.bind(Z(t)), t.onLink = t.onLink.bind(Z(t)), t.getUserBlooks = t.getUserBlooks.bind(Z(t)), t.startLogin = t.startLogin.bind(Z(t)), t.startSignup = t.startSignup.bind(Z(t)), t.openAuthWindow = t.openAuthWindow.bind(Z(t)), t.onAuthComplete = t.onAuthComplete.bind(Z(t)), t
                 }
                 return t = i, (o = [{
                     key: "componentDidMount",
-                    value: (r = U(W().mark((function e() {
+                    value: (r = K(D().mark((function e() {
                         var t, o, n = this;
-                        return W().wrap((function(e) {
+                        return D().wrap((function(e) {
                             for (;;) switch (e.prev = e.next) {
                                 case 0:
                                     if (this.props.client && this.props.client.hostId) {
@@ -2302,9 +2304,9 @@
                                     return e.abrupt("return");
                                 case 2:
                                     return this.props.liveGameController.getDatabaseVal("c", function() {
-                                        var e = U(W().mark((function e(t) {
+                                        var e = K(D().mark((function e(t) {
                                             var o, a, r, s, i, l, c, u;
-                                            return W().wrap((function(e) {
+                                            return D().wrap((function(e) {
                                                 for (;;) switch (e.prev = e.next) {
                                                     case 0:
                                                         if (t) {
@@ -2314,9 +2316,9 @@
                                                         return n.props.history.push("/play"), e.abrupt("return");
                                                     case 3:
                                                         return o = Object.entries(t).filter((function(e) {
-                                                            return q(e, 1)[0] !== n.props.client.name
+                                                            return F(e, 1)[0] !== n.props.client.name
                                                         })).map((function(e) {
-                                                            return q(e, 2)[1].b
+                                                            return F(e, 2)[1].b
                                                         })), a = !1, r = [], s = [], i = null, e.next = 10, n.props.user.getData();
                                                     case 10:
                                                         if (!(l = e.sent)) {
@@ -2333,7 +2335,7 @@
                                                             }))
                                                         }));
                                                     case 16:
-                                                        if ((c = n.props.client.blook) || (c = Object(T.m)([].concat(D(r), D(B.b)))), u = {
+                                                        if ((c = n.props.client.blook) || (c = Object(T.m)([].concat(q(r), q(B.b)))), u = {
                                                                 b: c
                                                             }, i && (u.bg = i), n.props.liveGameController.setVal({
                                                                 path: "c/".concat(n.props.client.name),
@@ -2419,8 +2421,8 @@
                         var t = this,
                             o = "https://id.blooket.com",
                             n = window.location.origin;
-                        e.origin === o || e.origin === n ? e.source === this.state.authWindow ? "blooketauthcomplete" === e.data ? setTimeout(U(W().mark((function e() {
-                            return W().wrap((function(e) {
+                        e.origin === o || e.origin === n ? e.source === this.state.authWindow ? "blooketauthcomplete" === e.data ? setTimeout(K(D().mark((function e() {
+                            return D().wrap((function(e) {
                                 for (;;) switch (e.prev = e.next) {
                                     case 0:
                                         t.getUserBlooks();
@@ -2496,7 +2498,7 @@
                         return this.props.client && this.props.client.hostId ? a.a.createElement("div", {
                             className: p.isMobile ? k.a.mBody : k.a.body,
                             style: {
-                                backgroundColor: "#0bc2cf",
+                                backgroundColor: A.a ? "#292929" : "#0bc2cf",
                                 overflow: "hidden"
                             }
                         }, a.a.createElement(w.a, {
@@ -2574,7 +2576,7 @@
                         }))), a.a.createElement("div", {
                             className: C.a.waitingText
                         }, "Waiting for Host"))), a.a.createElement("div", {
-                            className: m()(C.a.left, M({}, C.a.mShowLeft, this.state.showMobileBlooks))
+                            className: m()(C.a.left, W({}, C.a.mShowLeft, this.state.showMobileBlooks))
                         }, a.a.createElement("div", {
                             className: C.a.leftInside
                         }, a.a.createElement("div", {
@@ -2584,7 +2586,7 @@
                         })).map((function(t) {
                             var o;
                             return a.a.createElement("div", {
-                                className: m()(C.a.blookContainer, M({}, C.a.noClick, !e.state.unlocks.includes(t) && !B.b.includes(t) || e.state.takenBlooks.includes(t) && !e.state.isFull && e.state.blook !== t || e.state.blook === t)),
+                                className: m()(C.a.blookContainer, W({}, C.a.noClick, !e.state.unlocks.includes(t) && !B.b.includes(t) || e.state.takenBlooks.includes(t) && !e.state.isFull && e.state.blook !== t || e.state.blook === t)),
                                 key: t,
                                 role: "button",
                                 tabIndex: 0,
@@ -2593,7 +2595,7 @@
                                 }
                             }, a.a.createElement(O.a, {
                                 name: t,
-                                className: m()(C.a.blook, (o = {}, M(o, C.a.lockedBlook, !e.state.unlocks.includes(t) && !B.b.includes(t)), M(o, C.a.fadedBlook, e.state.takenBlooks.includes(t) && !e.state.isFull || e.state.blook === t), o))
+                                className: m()(C.a.blook, (o = {}, W(o, C.a.lockedBlook, !e.state.unlocks.includes(t) && !B.b.includes(t)), W(o, C.a.fadedBlook, e.state.takenBlooks.includes(t) && !e.state.isFull || e.state.blook === t), o))
                             }), e.state.unlocks.includes(t) || B.b.includes(t) ? e.state.blook === t ? a.a.createElement("i", {
                                 className: m()("fas fa-star", C.a.blookLock)
                             }) : e.state.takenBlooks.includes(t) && !e.state.isFull ? a.a.createElement("i", {
@@ -2651,11 +2653,11 @@
                             to: "/play"
                         })
                     }
-                }]) && K(t.prototype, o), n && K(t, n), Object.defineProperty(t, "prototype", {
+                }]) && J(t.prototype, o), n && J(t, n), Object.defineProperty(t, "prototype", {
                     writable: !1
                 }), i
             }(a.a.Component);
-            $.propTypes = {
+            ee.propTypes = {
                 client: l.a.shape({
                     name: l.a.string,
                     hostId: l.a.string,
@@ -2691,7 +2693,7 @@
                     login: f.b,
                     prepareMatch: g.a
                 }, e)
-            }))(Object(j.d)($))))
+            }))(Object(j.d)(ee))))
         },
         ZrUs: function(e, t, o) {
             "use strict";
@@ -7984,19 +7986,20 @@
                 N = o("E8Bj"),
                 L = o("qnYv"),
                 P = o("WWaO"),
-                R = o("LHn/");
+                R = o("LHn/"),
+                G = o("8qja");
 
-            function G(e) {
-                return (G = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function(e) {
+            function H(e) {
+                return (H = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function(e) {
                     return typeof e
                 } : function(e) {
                     return e && "function" == typeof Symbol && e.constructor === Symbol && e !== Symbol.prototype ? "symbol" : typeof e
                 })(e)
             }
 
-            function H() {
+            function A() {
                 /*! regenerator-runtime -- Copyright (c) 2014-present, Facebook, Inc. -- license (MIT): https://github.com/facebook/regenerator/blob/main/LICENSE */
-                H = function() {
+                A = function() {
                     return e
                 };
                 var e = {},
@@ -8112,7 +8115,7 @@
                                     if ("throw" !== l.type) {
                                         var u = l.arg,
                                             p = u.value;
-                                        return p && "object" == G(p) && o.call(p, "__await") ? t.resolve(p.__await).then((function(e) {
+                                        return p && "object" == H(p) && o.call(p, "__await") ? t.resolve(p.__await).then((function(e) {
                                             n("next", e, s, i)
                                         }), (function(e) {
                                             n("throw", e, s, i)
@@ -8305,7 +8308,7 @@
                 }, e
             }
 
-            function A(e, t, o, n, a, r, s) {
+            function M(e, t, o, n, a, r, s) {
                 try {
                     var i = e[r](s),
                         l = i.value
@@ -8315,7 +8318,7 @@
                 i.done ? t(l) : Promise.resolve(l).then(n, a)
             }
 
-            function M(e) {
+            function W(e) {
                 return function() {
                     var t = this,
                         o = arguments;
@@ -8323,31 +8326,31 @@
                         var r = e.apply(t, o);
 
                         function s(e) {
-                            A(r, n, a, s, i, "next", e)
+                            M(r, n, a, s, i, "next", e)
                         }
 
                         function i(e) {
-                            A(r, n, a, s, i, "throw", e)
+                            M(r, n, a, s, i, "throw", e)
                         }
                         s(void 0)
                     }))
                 }
             }
 
-            function W(e, t) {
+            function D(e, t) {
                 for (var o = 0; o < t.length; o++) {
                     var n = t[o];
                     n.enumerable = n.enumerable || !1, n.configurable = !0, "value" in n && (n.writable = !0), Object.defineProperty(e, n.key, n)
                 }
             }
 
-            function D(e, t) {
-                return (D = Object.setPrototypeOf ? Object.setPrototypeOf.bind() : function(e, t) {
+            function q(e, t) {
+                return (q = Object.setPrototypeOf ? Object.setPrototypeOf.bind() : function(e, t) {
                     return e.__proto__ = t, e
                 })(e, t)
             }
 
-            function q(e) {
+            function F(e) {
                 var t = function() {
                     if ("undefined" == typeof Reflect || !Reflect.construct) return !1;
                     if (Reflect.construct.sham) return !1;
@@ -8359,32 +8362,32 @@
                     }
                 }();
                 return function() {
-                    var o, n = z(e);
+                    var o, n = U(e);
                     if (t) {
-                        var a = z(this).constructor;
+                        var a = U(this).constructor;
                         o = Reflect.construct(n, arguments, a)
                     } else o = n.apply(this, arguments);
-                    return F(this, o)
+                    return Y(this, o)
                 }
             }
 
-            function F(e, t) {
-                if (t && ("object" === G(t) || "function" == typeof t)) return t;
+            function Y(e, t) {
+                if (t && ("object" === H(t) || "function" == typeof t)) return t;
                 if (void 0 !== t) throw new TypeError("Derived constructors may only return object or undefined");
-                return Y(e)
+                return z(e)
             }
 
-            function Y(e) {
+            function z(e) {
                 if (void 0 === e) throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
                 return e
             }
 
-            function z(e) {
-                return (z = Object.setPrototypeOf ? Object.getPrototypeOf.bind() : function(e) {
+            function U(e) {
+                return (U = Object.setPrototypeOf ? Object.getPrototypeOf.bind() : function(e) {
                     return e.__proto__ || Object.getPrototypeOf(e)
                 })(e)
             }
-            var U = function(e) {
+            var K = function(e) {
                 ! function(e, t) {
                     if ("function" != typeof t && null !== t) throw new TypeError("Super expression must either be null or a function");
                     e.prototype = Object.create(t && t.prototype, {
@@ -8395,9 +8398,9 @@
                         }
                     }), Object.defineProperty(e, "prototype", {
                         writable: !1
-                    }), t && D(e, t)
+                    }), t && q(e, t)
                 }(l, e);
-                var t, o, n, r, s, i = q(l);
+                var t, o, n, r, s, i = F(l);
 
                 function l(e) {
                     var t;
@@ -8412,13 +8415,13 @@
                         transition: !1,
                         randomTries: 5,
                         isRandom: !1
-                    }, t.loading = !1, t.name = "", t.randomNames = [], t.onName = t.onName.bind(Y(t)), t.onNameUpdate = t.onNameUpdate.bind(Y(t)), t.randomName = t.randomName.bind(Y(t)), t
+                    }, t.loading = !1, t.name = "", t.randomNames = [], t.onName = t.onName.bind(z(t)), t.onNameUpdate = t.onNameUpdate.bind(z(t)), t.randomName = t.randomName.bind(z(t)), t
                 }
                 return t = l, (o = [{
                     key: "componentDidMount",
-                    value: (s = M(H().mark((function e() {
+                    value: (s = W(A().mark((function e() {
                         var t, o;
-                        return H().wrap((function(e) {
+                        return A().wrap((function(e) {
                             for (;;) switch (e.prev = e.next) {
                                 case 0:
                                     return this.props.client && this.props.client.hostId && this.props.client.name && !this.props.client.hwId && this.props.liveGameController.removeVal("c/".concat(this.props.client.name)), this.props.client && this.props.client.randomNames && (t = E([]), this.randomNames.push(t), this.setState({
@@ -8444,9 +8447,9 @@
                     }
                 }, {
                     key: "onName",
-                    value: (r = M(H().mark((function e(t) {
+                    value: (r = W(A().mark((function e(t) {
                         var o, n, a, r, s = this;
-                        return H().wrap((function(e) {
+                        return A().wrap((function(e) {
                             for (;;) switch (e.prev = e.next) {
                                 case 0:
                                     if (t && t.preventDefault(), !this.loading && (this.props.client.hostId || this.props.client.hwId) && !this.state.transition) {
@@ -8586,7 +8589,7 @@
                         return this.props.client ? this.props.client.hostId || this.props.client.hwId ? a.a.createElement("div", {
                             className: m.isMobile ? v.a.mBody : v.a.body,
                             style: {
-                                backgroundColor: "#0bc2cf",
+                                backgroundColor: G.a ? "#292929" : "#0bc2cf",
                                 overflow: "hidden"
                             }
                         }, a.a.createElement(b.a, {
@@ -8651,11 +8654,11 @@
                             to: "/play"
                         }))
                     }
-                }]) && W(t.prototype, o), n && W(t, n), Object.defineProperty(t, "prototype", {
+                }]) && D(t.prototype, o), n && D(t, n), Object.defineProperty(t, "prototype", {
                     writable: !1
                 }), l
             }(a.a.Component);
-            U.propTypes = {
+            K.propTypes = {
                 client: l.a.object,
                 addClientName: l.a.func.isRequired,
                 setBlook: l.a.func.isRequired,
@@ -8688,7 +8691,7 @@
                     setDefense: y.a,
                     login: g.b
                 }, e)
-            }))(Object(j.d)(U))))
+            }))(Object(j.d)(K))))
         },
         lPxx: function(e, t, o) {
             (t = e.exports = o("JPst")(!1)).push([e.i, ".styles__container___1AWco-camelCase{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:520px;background-color:#fff;box-shadow:0 0 8px 3px rgba(0,0,0,.2);border-radius:7px;text-align:center}.styles__containerHeader___246oi-camelCase{text-align:center;font-size:200px;margin:0 20px;font-family:Titan One,sans-serif;color:#3a3a3a;display:flex;flex-direction:row;justify-content:center;align-items:center}.styles__blook___2NK26-camelCase{height:160px;margin:auto 10px}@media only screen and (max-width:600px){.styles__container___1AWco-camelCase{width:320px}.styles__containerHeader___246oi-camelCase{font-size:130px}.styles__blook___2NK26-camelCase{height:100px}}.styles__containerText___2l6Nk-camelCase{text-align:center;font-size:24px;margin:10px 30px 20px;font-family:Nunito,sans-serif;color:#3a3a3a}", ""]), t.locals = {
@@ -8719,19 +8722,20 @@
                 b = o("Xst1"),
                 w = o.n(b),
                 v = o("ozTy"),
-                k = o("5BnW");
+                k = o("5BnW"),
+                x = o("8qja");
 
-            function x(e) {
-                return (x = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function(e) {
+            function C(e) {
+                return (C = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function(e) {
                     return typeof e
                 } : function(e) {
                     return e && "function" == typeof Symbol && e.constructor === Symbol && e !== Symbol.prototype ? "symbol" : typeof e
                 })(e)
             }
 
-            function C() {
+            function I() {
                 /*! regenerator-runtime -- Copyright (c) 2014-present, Facebook, Inc. -- license (MIT): https://github.com/facebook/regenerator/blob/main/LICENSE */
-                C = function() {
+                I = function() {
                     return e
                 };
                 var e = {},
@@ -8761,7 +8765,7 @@
                 function l(e, t, o, n) {
                     var a = t && t.prototype instanceof p ? t : p,
                         r = Object.create(a.prototype),
-                        s = new I(n || []);
+                        s = new x(n || []);
                     return r._invoke = function(e, t, o) {
                         var n = "suspendedStart";
                         return function(a, r) {
@@ -8847,7 +8851,7 @@
                                     if ("throw" !== l.type) {
                                         var u = l.arg,
                                             p = u.value;
-                                        return p && "object" == x(p) && o.call(p, "__await") ? t.resolve(p.__await).then((function(e) {
+                                        return p && "object" == C(p) && o.call(p, "__await") ? t.resolve(p.__await).then((function(e) {
                                             n("next", e, s, i)
                                         }), (function(e) {
                                             n("throw", e, s, i)
@@ -8892,7 +8896,7 @@
                     t.type = "normal", delete t.arg, e.completion = t
                 }
 
-                function I(e) {
+                function x(e) {
                     this.tryEntries = [{
                         tryLoc: "root"
                     }], e.forEach(v, this), this.reset(!0)
@@ -8956,8 +8960,8 @@
                             }
                             return o.done = !0, o
                         }
-                }, e.values = O, I.prototype = {
-                    constructor: I,
+                }, e.values = O, x.prototype = {
+                    constructor: x,
                     reset: function(e) {
                         if (this.prev = 0, this.next = 0, this.sent = this._sent = void 0, this.done = !1, this.delegate = null, this.method = "next", this.arg = void 0, this.tryEntries.forEach(k), !e)
                             for (var t in this) "t" === t.charAt(0) && o.call(this, t) && !isNaN(+t.slice(1)) && (this[t] = void 0)
@@ -9040,7 +9044,7 @@
                 }, e
             }
 
-            function I(e, t, o, n, a, r, s) {
+            function O(e, t, o, n, a, r, s) {
                 try {
                     var i = e[r](s),
                         l = i.value
@@ -9050,20 +9054,20 @@
                 i.done ? t(l) : Promise.resolve(l).then(n, a)
             }
 
-            function O(e, t) {
+            function E(e, t) {
                 for (var o = 0; o < t.length; o++) {
                     var n = t[o];
                     n.enumerable = n.enumerable || !1, n.configurable = !0, "value" in n && (n.writable = !0), Object.defineProperty(e, n.key, n)
                 }
             }
 
-            function E(e, t) {
-                return (E = Object.setPrototypeOf ? Object.setPrototypeOf.bind() : function(e, t) {
+            function T(e, t) {
+                return (T = Object.setPrototypeOf ? Object.setPrototypeOf.bind() : function(e, t) {
                     return e.__proto__ = t, e
                 })(e, t)
             }
 
-            function T(e) {
+            function j(e) {
                 var t = function() {
                     if ("undefined" == typeof Reflect || !Reflect.construct) return !1;
                     if (Reflect.construct.sham) return !1;
@@ -9075,17 +9079,17 @@
                     }
                 }();
                 return function() {
-                    var o, n = S(e);
+                    var o, n = B(e);
                     if (t) {
-                        var a = S(this).constructor;
+                        var a = B(this).constructor;
                         o = Reflect.construct(n, arguments, a)
                     } else o = n.apply(this, arguments);
-                    return j(this, o)
+                    return S(this, o)
                 }
             }
 
-            function j(e, t) {
-                if (t && ("object" === x(t) || "function" == typeof t)) return t;
+            function S(e, t) {
+                if (t && ("object" === C(t) || "function" == typeof t)) return t;
                 if (void 0 !== t) throw new TypeError("Derived constructors may only return object or undefined");
                 return function(e) {
                     if (void 0 === e) throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
@@ -9093,12 +9097,12 @@
                 }(e)
             }
 
-            function S(e) {
-                return (S = Object.setPrototypeOf ? Object.getPrototypeOf.bind() : function(e) {
+            function B(e) {
+                return (B = Object.setPrototypeOf ? Object.getPrototypeOf.bind() : function(e) {
                     return e.__proto__ || Object.getPrototypeOf(e)
                 })(e)
             }
-            var B = function(e) {
+            var N = function(e) {
                 ! function(e, t) {
                     if ("function" != typeof t && null !== t) throw new TypeError("Super expression must either be null or a function");
                     e.prototype = Object.create(t && t.prototype, {
@@ -9109,9 +9113,9 @@
                         }
                     }), Object.defineProperty(e, "prototype", {
                         writable: !1
-                    }), t && E(e, t)
+                    }), t && T(e, t)
                 }(l, e);
-                var t, o, n, r, s, i = T(l);
+                var t, o, n, r, s, i = j(l);
 
                 function l(e) {
                     var t;
@@ -9123,9 +9127,9 @@
                 }
                 return t = l, (o = [{
                     key: "componentDidMount",
-                    value: (r = C().mark((function e() {
+                    value: (r = I().mark((function e() {
                         var t, o, n = this;
-                        return C().wrap((function(e) {
+                        return I().wrap((function(e) {
                             for (;;) switch (e.prev = e.next) {
                                 case 0:
                                     if (this.props.client) {
@@ -9196,11 +9200,11 @@
                             var a = r.apply(e, t);
 
                             function s(e) {
-                                I(a, o, n, s, i, "next", e)
+                                O(a, o, n, s, i, "next", e)
                             }
 
                             function i(e) {
-                                I(a, o, n, s, i, "throw", e)
+                                O(a, o, n, s, i, "throw", e)
                             }
                             s(void 0)
                         }))
@@ -9215,14 +9219,10 @@
                 }, {
                     key: "render",
                     value: function() {
-                        if (!this.props.client) return a.a.createElement(u.a, {
-                            to: "/play"
-                        });
-                        var e = "Candy" === this.props.client.type;
-                        return a.a.createElement("div", {
+                        return this.props.client ? a.a.createElement("div", {
                             className: m.isMobile ? w.a.mBody : w.a.body,
                             style: {
-                                backgroundColor: e ? "#292929" : "#0bc2cf"
+                                backgroundColor: x.a ? "#292929" : "#0bc2cf"
                             }
                         }, a.a.createElement(y.a, {
                             title: "Play Blooket",
@@ -9331,13 +9331,15 @@
                             blook: this.props.client.team ? this.props.client.team.blook : this.props.client.blook
                         }), a.a.createElement("div", {
                             className: w.a.bottomTipText
-                        }, this.state.tip)))
+                        }, this.state.tip))) : a.a.createElement(u.a, {
+                            to: "/play"
+                        })
                     }
-                }]) && O(t.prototype, o), n && O(t, n), Object.defineProperty(t, "prototype", {
+                }]) && E(t.prototype, o), n && E(t, n), Object.defineProperty(t, "prototype", {
                     writable: !1
                 }), l
             }(a.a.Component);
-            B.propTypes = {
+            N.propTypes = {
                 client: l.a.shape({
                     name: l.a.string,
                     hostId: l.a.string,
@@ -9365,7 +9367,7 @@
                     prepareMatch: f.a,
                     deleteClient: d.a
                 }, e)
-            }))(Object(k.d)(B)))
+            }))(Object(k.d)(N)))
         },
         "mPK+": function(e, t, o) {
             "use strict";

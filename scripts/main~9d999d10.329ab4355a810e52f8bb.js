@@ -1,5 +1,5 @@
 (window.webpackJsonp = window.webpackJsonp || []).push([
-    [8], {
+    [7], {
         "7EjP": function(e, t, a) {
             (t = e.exports = a("JPst")(!1)).push([e.i, ".styles__header___1nw_w-camelCase{font-family:Nunito,sans-serif;font-size:44px;font-weight:700;margin:15px 5% 10px;color:#3a3a3a}.styles__nothingContainer___1n7H1-camelCase{display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:20px;background-color:rgba(0,0,0,.1);border:2px solid #3a3a3a;border-radius:7px;margin:50px auto;max-width:80%}.styles__nothingHeader___3fgC9-camelCase{font-size:30px;font-weight:700;color:#3a3a3a}.styles__nothingButtonsRow___JJ9GL-camelCase{display:flex;flex-flow:row wrap;justify-content:center;margin:10px 0}.styles__nothingButton___48ZDJ-camelCase{margin:10px 20px}.styles__nothingButtonInside___2_Fw--camelCase{height:35px;font-size:26px;padding:0 15px;color:#fff;font-weight:700;text-shadow:0 1.5px rgba(0,0,0,.2);display:flex;flex-direction:row;justify-content:center;align-items:center}.styles__nothingIcon___2r0ZY-camelCase{font-size:24px;margin-right:10px}.styles__homeworksContainer___1iE9E-camelCase{display:flex;flex-direction:column;align-items:center;width:90%;margin:0 5% 20px}.styles__gameHolder___EfOCM-camelCase{width:100%;margin:10px 0}.styles__container___11GoR-camelCase,.styles__gameHolder___EfOCM-camelCase{display:flex;flex-direction:row}.styles__container___11GoR-camelCase{min-height:80px;flex-grow:1;background-color:#fff;border-radius:7px;padding-bottom:6px;box-shadow:inset 0 -6px rgba(0,0,0,.2),0 0 4px rgba(0,0,0,.15);outline:none;-webkit-user-select:none;-moz-user-select:none;user-select:none;cursor:pointer;text-decoration:none;overflow:hidden;transition:.2s}.styles__container___11GoR-camelCase:hover{transform:scale(.98)}.styles__hwIcon___3Stfm-camelCase{margin:auto 15px;width:55px;text-align:center;font-size:57px}.styles__textContainer___Rj2a6-camelCase{display:flex;flex-direction:column;width:calc(100% - 125px)}.styles__hwTitle___1fEu7-camelCase{width:100%;font-size:30px;line-height:33px;margin-top:7px;font-weight:700;text-align:left;word-wrap:break-word}.styles__hwTitle___1fEu7-camelCase,.styles__infoRow___oxmIG-camelCase{color:#3a3a3a;font-family:Nunito,sans-serif}.styles__infoRow___oxmIG-camelCase{margin-top:8px;font-size:17px;display:flex;flex-flow:row wrap}.styles__info___hV7Eh-camelCase{display:flex;flex-direction:row;align-items:center;margin:2.5px 10px}.styles__bodyContainer___2-j1R-camelCase,.styles__deleteButton___3Ynb7-camelCase{display:flex;flex-direction:column}.styles__deleteButton___3Ynb7-camelCase{height:80px;width:70px;background-color:#fff;color:#3a3a3a;border-radius:7px;padding-bottom:6px;box-shadow:inset 0 -6px rgba(0,0,0,.2),0 0 4px rgba(0,0,0,.15);margin:auto 0 auto 20px;font-size:15px;justify-content:center;align-items:center;outline:none;-webkit-user-select:none;-moz-user-select:none;user-select:none;cursor:pointer;transition:.2s}.styles__deleteButton___3Ynb7-camelCase:hover{transform:scale(.95);color:#ce1313}.styles__moreButton___1Q-Xq-camelCase{margin:10px auto 20px}.styles__moreButtonInside___1t97F-camelCase{padding:2px 10px;font-weight:700;font-size:22px;text-shadow:0 1.5px rgba(0,0,0,.2)}", ""]), t.locals = {
                 header: "styles__header___1nw_w-camelCase",
@@ -263,8 +263,8 @@
                 u = a("TSYQ"),
                 d = a.n(u),
                 m = a("wd/R"),
-                f = a.n(m),
-                _ = a("cpGi"),
+                _ = a.n(m),
+                f = a("cpGi"),
                 p = a("JeI0"),
                 h = a.n(p),
                 y = a("H1WH"),
@@ -310,7 +310,7 @@
                         }
                     }
                     return r
-                }(e, t) || D(e, t) || function() {
+                }(e, t) || L(e, t) || function() {
                     throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.")
                 }()
             }
@@ -405,15 +405,15 @@
 
                 function m() {}
 
-                function f() {}
-                var _ = {};
-                i(_, o, (function() {
+                function _() {}
+                var f = {};
+                i(f, o, (function() {
                     return this
                 }));
                 var p = Object.getPrototypeOf,
                     h = p && p(p(E([])));
-                h && h !== t && a.call(h, o) && (_ = h);
-                var y = f.prototype = d.prototype = Object.create(_);
+                h && h !== t && a.call(h, o) && (f = h);
+                var y = _.prototype = d.prototype = Object.create(f);
 
                 function g(e) {
                     ["next", "throw", "return"].forEach((function(t) {
@@ -510,11 +510,11 @@
                         done: !0
                     }
                 }
-                return m.prototype = f, i(y, "constructor", f), i(f, "constructor", m), m.displayName = i(f, s, "GeneratorFunction"), e.isGeneratorFunction = function(e) {
+                return m.prototype = _, i(y, "constructor", _), i(_, "constructor", m), m.displayName = i(_, s, "GeneratorFunction"), e.isGeneratorFunction = function(e) {
                     var t = "function" == typeof e && e.constructor;
                     return !!t && (t === m || "GeneratorFunction" === (t.displayName || t.name))
                 }, e.mark = function(e) {
-                    return Object.setPrototypeOf ? Object.setPrototypeOf(e, f) : (e.__proto__ = f, i(e, s, "GeneratorFunction")), e.prototype = Object.create(y), e
+                    return Object.setPrototypeOf ? Object.setPrototypeOf(e, _) : (e.__proto__ = _, i(e, s, "GeneratorFunction")), e.prototype = Object.create(y), e
                 }, e.awrap = function(e) {
                     return {
                         __await: e
@@ -637,11 +637,11 @@
                 return a
             }
 
-            function L(e) {
+            function z(e) {
                 for (var t = 1; t < arguments.length; t++) {
                     var a = null != arguments[t] ? arguments[t] : {};
                     t % 2 ? F(Object(a), !0).forEach((function(t) {
-                        P(e, t, a[t])
+                        D(e, t, a[t])
                     })) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(a)) : F(Object(a)).forEach((function(t) {
                         Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(a, t))
                     }))
@@ -649,7 +649,7 @@
                 return e
             }
 
-            function P(e, t, a) {
+            function D(e, t, a) {
                 return t in e ? Object.defineProperty(e, t, {
                     value: a,
                     enumerable: !0,
@@ -658,17 +658,17 @@
                 }) : e[t] = a, e
             }
 
-            function z(e) {
+            function P(e) {
                 return function(e) {
                     if (Array.isArray(e)) return R(e)
                 }(e) || function(e) {
                     if ("undefined" != typeof Symbol && null != e[Symbol.iterator] || null != e["@@iterator"]) return Array.from(e)
-                }(e) || D(e) || function() {
+                }(e) || L(e) || function() {
                     throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.")
                 }()
             }
 
-            function D(e, t) {
+            function L(e, t) {
                 if (e) {
                     if ("string" == typeof e) return R(e, t);
                     var a = Object.prototype.toString.call(e).slice(8, -1);
@@ -724,7 +724,7 @@
                 })(e, t)
             }
 
-            function G(e) {
+            function Q(e) {
                 var t = function() {
                     if ("undefined" == typeof Reflect || !Reflect.construct) return !1;
                     if (Reflect.construct.sham) return !1;
@@ -741,11 +741,11 @@
                         var o = W(this).constructor;
                         a = Reflect.construct(n, arguments, o)
                     } else a = n.apply(this, arguments);
-                    return Q(this, a)
+                    return G(this, a)
                 }
             }
 
-            function Q(e, t) {
+            function G(e, t) {
                 if (t && ("object" === O(t) || "function" == typeof t)) return t;
                 if (void 0 !== t) throw new TypeError("Derived constructors may only return object or undefined");
                 return Y(e)
@@ -774,7 +774,7 @@
                         writable: !1
                     }), t && A(e, t)
                 }(c, e);
-                var t, a, n, r, s, i, l = G(c);
+                var t, a, n, r, s, i, l = Q(c);
 
                 function c(e) {
                     var t;
@@ -817,16 +817,16 @@
                                     this.setState({
                                         user: t
                                     }), S.a.get("/api/users/favoriteGames").then((function(e) {
-                                        var t = z(e.data.games).map((function(e) {
-                                            return L(L({}, e), {}, {
+                                        var t = P(e.data.games).map((function(e) {
+                                            return z(z({}, e), {}, {
                                                 questions: e.questions || []
                                             })
                                         }));
                                         t.sort((function(e, t) {
                                             return t.playCount - e.playCount
                                         }));
-                                        var n = z(t),
-                                            o = L({}, e.data.folders),
+                                        var n = P(t),
+                                            o = z({}, e.data.folders),
                                             r = t.map((function(e) {
                                                 return e._id
                                             }));
@@ -867,10 +867,10 @@
                             isUnfavoriting: !0
                         }).then((function() {
                             if (t.here) {
-                                var a = z(t.state.favorites.map((function(e) {
+                                var a = P(t.state.favorites.map((function(e) {
                                         return e._id
                                     }))).indexOf(e),
-                                    n = z(t.state.favorites);
+                                    n = P(t.state.favorites);
                                 n.splice(a, 1), t.setState({
                                     favorites: n,
                                     unfavoriting: !1
@@ -909,11 +909,11 @@
                 }, {
                     key: "setDisplay",
                     value: function(e) {
-                        var t = L({}, e),
+                        var t = z({}, e),
                             a = this.state.allFavorites.map((function(e) {
                                 return e._id
                             })),
-                            n = z(this.state.allFavorites);
+                            n = P(this.state.allFavorites);
                         Object.values(t).forEach((function(e) {
                             e.sets.forEach((function(e) {
                                 var t = a.indexOf(e); - 1 !== t && (n.splice(t, 1), a.splice(t, 1))
@@ -1308,11 +1308,11 @@
                                 className: C.a.setPlays
                             }, "".concat(Object(N.k)(t.playCount), " ").concat(1 === t.playCount ? "Play" : "Plays")), o.a.createElement("div", {
                                 className: C.a.setLastEdit
-                            }, "Edited ".concat(f()(t.date).fromNow())), o.a.createElement("div", {
+                            }, "Edited ".concat(_()(t.date).fromNow())), o.a.createElement("div", {
                                 className: C.a.setHorizontalDivider
                             }), o.a.createElement("div", {
                                 className: C.a.setBottomContainer
-                            }, o.a.createElement(_.a, {
+                            }, o.a.createElement(f.a, {
                                 place: "top",
                                 effect: "solid",
                                 className: k.a.tooltip
@@ -1607,9 +1607,9 @@
                 u = a("Ty5D"),
                 d = a("H1WH"),
                 m = a("wd/R"),
-                f = a.n(m),
-                _ = a("TSYQ"),
-                p = a.n(_),
+                _ = a.n(m),
+                f = a("TSYQ"),
+                p = a.n(f),
                 h = a("FKJl"),
                 y = a("E8Bj"),
                 g = a("0oXL"),
@@ -1722,15 +1722,15 @@
 
                 function m() {}
 
-                function f() {}
-                var _ = {};
-                i(_, o, (function() {
+                function _() {}
+                var f = {};
+                i(f, o, (function() {
                     return this
                 }));
                 var p = Object.getPrototypeOf,
                     h = p && p(p(E([])));
-                h && h !== t && a.call(h, o) && (_ = h);
-                var y = f.prototype = d.prototype = Object.create(_);
+                h && h !== t && a.call(h, o) && (f = h);
+                var y = _.prototype = d.prototype = Object.create(f);
 
                 function g(e) {
                     ["next", "throw", "return"].forEach((function(t) {
@@ -1827,11 +1827,11 @@
                         done: !0
                     }
                 }
-                return m.prototype = f, i(y, "constructor", f), i(f, "constructor", m), m.displayName = i(f, s, "GeneratorFunction"), e.isGeneratorFunction = function(e) {
+                return m.prototype = _, i(y, "constructor", _), i(_, "constructor", m), m.displayName = i(_, s, "GeneratorFunction"), e.isGeneratorFunction = function(e) {
                     var t = "function" == typeof e && e.constructor;
                     return !!t && (t === m || "GeneratorFunction" === (t.displayName || t.name))
                 }, e.mark = function(e) {
-                    return Object.setPrototypeOf ? Object.setPrototypeOf(e, f) : (e.__proto__ = f, i(e, s, "GeneratorFunction")), e.prototype = Object.create(y), e
+                    return Object.setPrototypeOf ? Object.setPrototypeOf(e, _) : (e.__proto__ = _, i(e, s, "GeneratorFunction")), e.prototype = Object.create(y), e
                 }, e.awrap = function(e) {
                     return {
                         __await: e
@@ -1976,20 +1976,20 @@
                 i.done ? t(l) : Promise.resolve(l).then(n, o)
             }
 
-            function L(e, t) {
+            function z(e, t) {
                 for (var a = 0; a < t.length; a++) {
                     var n = t[a];
                     n.enumerable = n.enumerable || !1, n.configurable = !0, "value" in n && (n.writable = !0), Object.defineProperty(e, n.key, n)
                 }
             }
 
-            function P(e, t) {
-                return (P = Object.setPrototypeOf ? Object.setPrototypeOf.bind() : function(e, t) {
+            function D(e, t) {
+                return (D = Object.setPrototypeOf ? Object.setPrototypeOf.bind() : function(e, t) {
                     return e.__proto__ = t, e
                 })(e, t)
             }
 
-            function z(e) {
+            function P(e) {
                 var t = function() {
                     if ("undefined" == typeof Reflect || !Reflect.construct) return !1;
                     if (Reflect.construct.sham) return !1;
@@ -2006,11 +2006,11 @@
                         var o = M(this).constructor;
                         a = Reflect.construct(n, arguments, o)
                     } else a = n.apply(this, arguments);
-                    return D(this, a)
+                    return L(this, a)
                 }
             }
 
-            function D(e, t) {
+            function L(e, t) {
                 if (t && ("object" === T(t) || "function" == typeof t)) return t;
                 if (void 0 !== t) throw new TypeError("Derived constructors may only return object or undefined");
                 return R(e)
@@ -2037,9 +2037,9 @@
                         }
                     }), Object.defineProperty(e, "prototype", {
                         writable: !1
-                    }), t && P(e, t)
+                    }), t && D(e, t)
                 }(l, e);
-                var t, a, n, r, s, i = z(l);
+                var t, a, n, r, s, i = P(l);
 
                 function l(e) {
                     var t;
@@ -2079,7 +2079,7 @@
                                     }).then((function(e) {
                                         var t = I(e.data);
                                         t.sort((function(e, t) {
-                                            return f.a.utc(t.date).diff(f.a.utc(e.date))
+                                            return _.a.utc(t.date).diff(_.a.utc(e.date))
                                         })), a.here && a.setState({
                                             games: t,
                                             ready: !0
@@ -2205,7 +2205,7 @@
                                 style: {
                                     marginRight: 7.5
                                 }
-                            }), f()(t.date).format("h:mm a, MM/DD/YY"))))), o.a.createElement("div", {
+                            }), _()(t.date).format("h:mm a, MM/DD/YY"))))), o.a.createElement("div", {
                                 className: w.a.deleteButton,
                                 role: "button",
                                 tabIndex: 0,
@@ -2272,7 +2272,7 @@
                             }
                         }) : null)
                     }
-                }]) && L(t.prototype, a), n && L(t, n), Object.defineProperty(t, "prototype", {
+                }]) && z(t.prototype, a), n && z(t, n), Object.defineProperty(t, "prototype", {
                     writable: !1
                 }), l
             }(o.a.Component);
@@ -2298,9 +2298,9 @@
                 u = a("Ty5D"),
                 d = a("H1WH"),
                 m = a("wd/R"),
-                f = a.n(m),
-                _ = a("TSYQ"),
-                p = a.n(_),
+                _ = a.n(m),
+                f = a("TSYQ"),
+                p = a.n(f),
                 h = a("FKJl"),
                 y = a("E8Bj"),
                 g = a("Xst1"),
@@ -2412,15 +2412,15 @@
 
                 function m() {}
 
-                function f() {}
-                var _ = {};
-                i(_, o, (function() {
+                function _() {}
+                var f = {};
+                i(f, o, (function() {
                     return this
                 }));
                 var p = Object.getPrototypeOf,
                     h = p && p(p(E([])));
-                h && h !== t && a.call(h, o) && (_ = h);
-                var y = f.prototype = d.prototype = Object.create(_);
+                h && h !== t && a.call(h, o) && (f = h);
+                var y = _.prototype = d.prototype = Object.create(f);
 
                 function g(e) {
                     ["next", "throw", "return"].forEach((function(t) {
@@ -2517,11 +2517,11 @@
                         done: !0
                     }
                 }
-                return m.prototype = f, i(y, "constructor", f), i(f, "constructor", m), m.displayName = i(f, s, "GeneratorFunction"), e.isGeneratorFunction = function(e) {
+                return m.prototype = _, i(y, "constructor", _), i(_, "constructor", m), m.displayName = i(_, s, "GeneratorFunction"), e.isGeneratorFunction = function(e) {
                     var t = "function" == typeof e && e.constructor;
                     return !!t && (t === m || "GeneratorFunction" === (t.displayName || t.name))
                 }, e.mark = function(e) {
-                    return Object.setPrototypeOf ? Object.setPrototypeOf(e, f) : (e.__proto__ = f, i(e, s, "GeneratorFunction")), e.prototype = Object.create(y), e
+                    return Object.setPrototypeOf ? Object.setPrototypeOf(e, _) : (e.__proto__ = _, i(e, s, "GeneratorFunction")), e.prototype = Object.create(y), e
                 }, e.awrap = function(e) {
                     return {
                         __await: e
@@ -2667,28 +2667,28 @@
 
             function F(e) {
                 return function(e) {
-                    if (Array.isArray(e)) return L(e)
+                    if (Array.isArray(e)) return z(e)
                 }(e) || function(e) {
                     if ("undefined" != typeof Symbol && null != e[Symbol.iterator] || null != e["@@iterator"]) return Array.from(e)
                 }(e) || function(e, t) {
                     if (!e) return;
-                    if ("string" == typeof e) return L(e, t);
+                    if ("string" == typeof e) return z(e, t);
                     var a = Object.prototype.toString.call(e).slice(8, -1);
                     "Object" === a && e.constructor && (a = e.constructor.name);
                     if ("Map" === a || "Set" === a) return Array.from(e);
-                    if ("Arguments" === a || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(a)) return L(e, t)
+                    if ("Arguments" === a || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(a)) return z(e, t)
                 }(e) || function() {
                     throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.")
                 }()
             }
 
-            function L(e, t) {
+            function z(e, t) {
                 (null == t || t > e.length) && (t = e.length);
                 for (var a = 0, n = new Array(t); a < t; a++) n[a] = e[a];
                 return n
             }
 
-            function P(e, t, a, n, o, r, s) {
+            function D(e, t, a, n, o, r, s) {
                 try {
                     var i = e[r](s),
                         l = i.value
@@ -2698,15 +2698,15 @@
                 i.done ? t(l) : Promise.resolve(l).then(n, o)
             }
 
-            function z(e, t) {
+            function P(e, t) {
                 for (var a = 0; a < t.length; a++) {
                     var n = t[a];
                     n.enumerable = n.enumerable || !1, n.configurable = !0, "value" in n && (n.writable = !0), Object.defineProperty(e, n.key, n)
                 }
             }
 
-            function D(e, t) {
-                return (D = Object.setPrototypeOf ? Object.setPrototypeOf.bind() : function(e, t) {
+            function L(e, t) {
+                return (L = Object.setPrototypeOf ? Object.setPrototypeOf.bind() : function(e, t) {
                     return e.__proto__ = t, e
                 })(e, t)
             }
@@ -2759,7 +2759,7 @@
                         }
                     }), Object.defineProperty(e, "prototype", {
                         writable: !1
-                    }), t && D(e, t)
+                    }), t && L(e, t)
                 }(l, e);
                 var t, a, n, r, s, i = R(l);
 
@@ -2797,11 +2797,11 @@
                                     }), E.a.get("/api/users/homeworks").then((function(e) {
                                         var t = F(e.data.map((function(e) {
                                             return I(I({}, e), {}, {
-                                                isEnded: f()(e.startTime).add(e.duration, "minutes").isBefore()
+                                                isEnded: _()(e.startTime).add(e.duration, "minutes").isBefore()
                                             })
                                         })));
                                         t.sort((function(e, t) {
-                                            return f()(t.startTime).add(t.duration, "minutes").diff(f()(e.startTime).add(e.duration, "minutes"))
+                                            return _()(t.startTime).add(t.duration, "minutes").diff(_()(e.startTime).add(e.duration, "minutes"))
                                         })), a.here && a.setState({
                                             homeworks: t,
                                             ready: !0
@@ -2821,11 +2821,11 @@
                             var o = r.apply(e, t);
 
                             function s(e) {
-                                P(o, a, n, s, i, "next", e)
+                                D(o, a, n, s, i, "next", e)
                             }
 
                             function i(e) {
-                                P(o, a, n, s, i, "throw", e)
+                                D(o, a, n, s, i, "throw", e)
                             }
                             s(void 0)
                         }))
@@ -2929,7 +2929,7 @@
                                 style: {
                                     marginRight: 7.5
                                 }
-                            }), "Due ".concat(f()(t.startTime).add(t.duration, "minutes").fromNow()))))), o.a.createElement("div", {
+                            }), "Due ".concat(_()(t.startTime).add(t.duration, "minutes").fromNow()))))), o.a.createElement("div", {
                                 className: v.a.deleteButton,
                                 role: "button",
                                 tabIndex: 0,
@@ -2996,7 +2996,7 @@
                             }
                         }) : null)
                     }
-                }]) && z(t.prototype, a), n && z(t, n), Object.defineProperty(t, "prototype", {
+                }]) && P(t.prototype, a), n && P(t, n), Object.defineProperty(t, "prototype", {
                     writable: !1
                 }), l
             }(o.a.Component);
@@ -3022,8 +3022,8 @@
                 u = a("Ty5D"),
                 d = a("TSYQ"),
                 m = a.n(d),
-                f = a("wd/R"),
-                _ = a.n(f),
+                _ = a("wd/R"),
+                f = a.n(_),
                 p = a("cpGi"),
                 h = a("G5je"),
                 y = a("H1WH"),
@@ -3160,15 +3160,15 @@
 
                 function m() {}
 
-                function f() {}
-                var _ = {};
-                i(_, o, (function() {
+                function _() {}
+                var f = {};
+                i(f, o, (function() {
                     return this
                 }));
                 var p = Object.getPrototypeOf,
                     h = p && p(p(E([])));
-                h && h !== t && a.call(h, o) && (_ = h);
-                var y = f.prototype = d.prototype = Object.create(_);
+                h && h !== t && a.call(h, o) && (f = h);
+                var y = _.prototype = d.prototype = Object.create(f);
 
                 function g(e) {
                     ["next", "throw", "return"].forEach((function(t) {
@@ -3265,11 +3265,11 @@
                         done: !0
                     }
                 }
-                return m.prototype = f, i(y, "constructor", f), i(f, "constructor", m), m.displayName = i(f, s, "GeneratorFunction"), e.isGeneratorFunction = function(e) {
+                return m.prototype = _, i(y, "constructor", _), i(_, "constructor", m), m.displayName = i(_, s, "GeneratorFunction"), e.isGeneratorFunction = function(e) {
                     var t = "function" == typeof e && e.constructor;
                     return !!t && (t === m || "GeneratorFunction" === (t.displayName || t.name))
                 }, e.mark = function(e) {
-                    return Object.setPrototypeOf ? Object.setPrototypeOf(e, f) : (e.__proto__ = f, i(e, s, "GeneratorFunction")), e.prototype = Object.create(y), e
+                    return Object.setPrototypeOf ? Object.setPrototypeOf(e, _) : (e.__proto__ = _, i(e, s, "GeneratorFunction")), e.prototype = Object.create(y), e
                 }, e.awrap = function(e) {
                     return {
                         __await: e
@@ -3391,7 +3391,7 @@
                 i.done ? t(l) : Promise.resolve(l).then(n, o)
             }
 
-            function L(e) {
+            function z(e) {
                 return function() {
                     var t = this,
                         a = arguments;
@@ -3410,20 +3410,20 @@
                 }
             }
 
-            function P(e, t) {
+            function D(e, t) {
                 for (var a = 0; a < t.length; a++) {
                     var n = t[a];
                     n.enumerable = n.enumerable || !1, n.configurable = !0, "value" in n && (n.writable = !0), Object.defineProperty(e, n.key, n)
                 }
             }
 
-            function z(e, t) {
-                return (z = Object.setPrototypeOf ? Object.setPrototypeOf.bind() : function(e, t) {
+            function P(e, t) {
+                return (P = Object.setPrototypeOf ? Object.setPrototypeOf.bind() : function(e, t) {
                     return e.__proto__ = t, e
                 })(e, t)
             }
 
-            function D(e) {
+            function L(e) {
                 var t = function() {
                     if ("undefined" == typeof Reflect || !Reflect.construct) return !1;
                     if (Reflect.construct.sham) return !1;
@@ -3471,9 +3471,9 @@
                         }
                     }), Object.defineProperty(e, "prototype", {
                         writable: !1
-                    }), t && z(e, t)
+                    }), t && P(e, t)
                 }(l, e);
-                var t, a, n, r, s, i = D(l);
+                var t, a, n, r, s, i = L(l);
 
                 function l(e) {
                     var t;
@@ -3494,7 +3494,7 @@
                 }
                 return t = l, (a = [{
                     key: "componentDidMount",
-                    value: (s = L(B().mark((function e() {
+                    value: (s = z(B().mark((function e() {
                         var t, a = this;
                         return B().wrap((function(e) {
                             for (;;) switch (e.prev = e.next) {
@@ -3609,7 +3609,7 @@
                     }
                 }, {
                     key: "dowloadReport",
-                    value: (r = L(B().mark((function e() {
+                    value: (r = z(B().mark((function e() {
                         var t, a, n, o, r, s = this;
                         return B().wrap((function(e) {
                             for (;;) switch (e.prev = e.next) {
@@ -3710,7 +3710,7 @@
                             className: C.a.infoContainer
                         }, o.a.createElement("i", {
                             className: m()("far fa-clock", C.a.infoIcon)
-                        }), "Plan End: ".concat(_()(this.state.lastDate).add(1, "year").format("MM/DD/YYYY"))), o.a.createElement(p.a, {
+                        }), "Plan End: ".concat(f()(this.state.lastDate).add(1, "year").format("MM/DD/YYYY"))), o.a.createElement(p.a, {
                             place: "left",
                             effect: "solid",
                             className: k.a.tooltip
@@ -3734,7 +3734,7 @@
                             onClick: this.copyToClipboard
                         }, "Invite Link: ", o.a.createElement("u", null, this.state.inviteLink), this.state.justCopied ? o.a.createElement("div", {
                             className: C.a.copiedNotification
-                        }, "Copied!") : null)), _()(this.state.lastDate).add(1, "year").subtract(9, "months").isBefore() ? o.a.createElement("div", {
+                        }, "Copied!") : null)), f()(this.state.lastDate).add(1, "year").subtract(9, "months").isBefore() ? o.a.createElement("div", {
                             className: C.a.smallButtonRow
                         }, this.state.isPO ? o.a.createElement(c.b, {
                             className: C.a.smallButton,
@@ -3827,7 +3827,7 @@
                             loading: this.state.loading
                         }) : null))
                     }
-                }]) && P(t.prototype, a), n && P(t, n), Object.defineProperty(t, "prototype", {
+                }]) && D(t.prototype, a), n && D(t, n), Object.defineProperty(t, "prototype", {
                     writable: !1
                 }), l
             }(o.a.Component);
@@ -3896,8 +3896,8 @@
                 u = a("55Ip"),
                 d = a("wd/R"),
                 m = a.n(d),
-                f = a("JeI0"),
-                _ = a.n(f),
+                _ = a("JeI0"),
+                f = a.n(_),
                 p = a("TSYQ"),
                 h = a.n(p),
                 y = a("H1WH"),
@@ -3917,22 +3917,23 @@
                 I = a("ca/f"),
                 B = a("0oXL"),
                 F = a("E8Bj"),
-                L = a("LHn/"),
-                P = a("qnYv"),
-                z = a("vCpj"),
-                D = a("74sb");
+                z = a("LHn/"),
+                D = a("qnYv"),
+                P = a("vCpj"),
+                L = a("74sb"),
+                R = a("8qja");
 
-            function R(e) {
-                return (R = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function(e) {
+            function M(e) {
+                return (M = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function(e) {
                     return typeof e
                 } : function(e) {
                     return e && "function" == typeof Symbol && e.constructor === Symbol && e !== Symbol.prototype ? "symbol" : typeof e
                 })(e)
             }
 
-            function M() {
+            function q() {
                 /*! regenerator-runtime -- Copyright (c) 2014-present, Facebook, Inc. -- license (MIT): https://github.com/facebook/regenerator/blob/main/LICENSE */
-                M = function() {
+                q = function() {
                     return e
                 };
                 var e = {},
@@ -4020,15 +4021,15 @@
 
                 function m() {}
 
-                function f() {}
-                var _ = {};
-                i(_, o, (function() {
+                function _() {}
+                var f = {};
+                i(f, o, (function() {
                     return this
                 }));
                 var p = Object.getPrototypeOf,
                     h = p && p(p(E([])));
-                h && h !== t && a.call(h, o) && (_ = h);
-                var y = f.prototype = d.prototype = Object.create(_);
+                h && h !== t && a.call(h, o) && (f = h);
+                var y = _.prototype = d.prototype = Object.create(f);
 
                 function g(e) {
                     ["next", "throw", "return"].forEach((function(t) {
@@ -4048,7 +4049,7 @@
                                     if ("throw" !== l.type) {
                                         var u = l.arg,
                                             d = u.value;
-                                        return d && "object" == R(d) && a.call(d, "__await") ? t.resolve(d.__await).then((function(e) {
+                                        return d && "object" == M(d) && a.call(d, "__await") ? t.resolve(d.__await).then((function(e) {
                                             n("next", e, s, i)
                                         }), (function(e) {
                                             n("throw", e, s, i)
@@ -4125,11 +4126,11 @@
                         done: !0
                     }
                 }
-                return m.prototype = f, i(y, "constructor", f), i(f, "constructor", m), m.displayName = i(f, s, "GeneratorFunction"), e.isGeneratorFunction = function(e) {
+                return m.prototype = _, i(y, "constructor", _), i(_, "constructor", m), m.displayName = i(_, s, "GeneratorFunction"), e.isGeneratorFunction = function(e) {
                     var t = "function" == typeof e && e.constructor;
                     return !!t && (t === m || "GeneratorFunction" === (t.displayName || t.name))
                 }, e.mark = function(e) {
-                    return Object.setPrototypeOf ? Object.setPrototypeOf(e, f) : (e.__proto__ = f, i(e, s, "GeneratorFunction")), e.prototype = Object.create(y), e
+                    return Object.setPrototypeOf ? Object.setPrototypeOf(e, _) : (e.__proto__ = _, i(e, s, "GeneratorFunction")), e.prototype = Object.create(y), e
                 }, e.awrap = function(e) {
                     return {
                         __await: e
@@ -4241,7 +4242,7 @@
                 }, e
             }
 
-            function q(e, t) {
+            function H(e, t) {
                 var a = Object.keys(e);
                 if (Object.getOwnPropertySymbols) {
                     var n = Object.getOwnPropertySymbols(e);
@@ -4252,19 +4253,19 @@
                 return a
             }
 
-            function H(e) {
+            function A(e) {
                 for (var t = 1; t < arguments.length; t++) {
                     var a = null != arguments[t] ? arguments[t] : {};
-                    t % 2 ? q(Object(a), !0).forEach((function(t) {
-                        A(e, t, a[t])
-                    })) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(a)) : q(Object(a)).forEach((function(t) {
+                    t % 2 ? H(Object(a), !0).forEach((function(t) {
+                        Q(e, t, a[t])
+                    })) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(a)) : H(Object(a)).forEach((function(t) {
                         Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(a, t))
                     }))
                 }
                 return e
             }
 
-            function A(e, t, a) {
+            function Q(e, t, a) {
                 return t in e ? Object.defineProperty(e, t, {
                     value: a,
                     enumerable: !0,
@@ -4296,23 +4297,23 @@
                     return r
                 }(e, t) || function(e, t) {
                     if (!e) return;
-                    if ("string" == typeof e) return Q(e, t);
+                    if ("string" == typeof e) return Y(e, t);
                     var a = Object.prototype.toString.call(e).slice(8, -1);
                     "Object" === a && e.constructor && (a = e.constructor.name);
                     if ("Map" === a || "Set" === a) return Array.from(e);
-                    if ("Arguments" === a || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(a)) return Q(e, t)
+                    if ("Arguments" === a || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(a)) return Y(e, t)
                 }(e, t) || function() {
                     throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.")
                 }()
             }
 
-            function Q(e, t) {
+            function Y(e, t) {
                 (null == t || t > e.length) && (t = e.length);
                 for (var a = 0, n = new Array(t); a < t; a++) n[a] = e[a];
                 return n
             }
 
-            function Y(e, t, a, n, o, r, s) {
+            function W(e, t, a, n, o, r, s) {
                 try {
                     var i = e[r](s),
                         l = i.value
@@ -4322,20 +4323,20 @@
                 i.done ? t(l) : Promise.resolve(l).then(n, o)
             }
 
-            function W(e, t) {
+            function U(e, t) {
                 for (var a = 0; a < t.length; a++) {
                     var n = t[a];
                     n.enumerable = n.enumerable || !1, n.configurable = !0, "value" in n && (n.writable = !0), Object.defineProperty(e, n.key, n)
                 }
             }
 
-            function U(e, t) {
-                return (U = Object.setPrototypeOf ? Object.setPrototypeOf.bind() : function(e, t) {
+            function J(e, t) {
+                return (J = Object.setPrototypeOf ? Object.setPrototypeOf.bind() : function(e, t) {
                     return e.__proto__ = t, e
                 })(e, t)
             }
 
-            function J(e) {
+            function X(e) {
                 var t = function() {
                     if ("undefined" == typeof Reflect || !Reflect.construct) return !1;
                     if (Reflect.construct.sham) return !1;
@@ -4347,33 +4348,33 @@
                     }
                 }();
                 return function() {
-                    var a, n = V(e);
+                    var a, n = Z(e);
                     if (t) {
-                        var o = V(this).constructor;
+                        var o = Z(this).constructor;
                         a = Reflect.construct(n, arguments, o)
                     } else a = n.apply(this, arguments);
-                    return X(this, a)
+                    return K(this, a)
                 }
             }
 
-            function X(e, t) {
-                if (t && ("object" === R(t) || "function" == typeof t)) return t;
+            function K(e, t) {
+                if (t && ("object" === M(t) || "function" == typeof t)) return t;
                 if (void 0 !== t) throw new TypeError("Derived constructors may only return object or undefined");
-                return K(e)
+                return V(e)
             }
 
-            function K(e) {
+            function V(e) {
                 if (void 0 === e) throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
                 return e
             }
 
-            function V(e) {
-                return (V = Object.setPrototypeOf ? Object.getPrototypeOf.bind() : function(e) {
+            function Z(e) {
+                return (Z = Object.setPrototypeOf ? Object.getPrototypeOf.bind() : function(e) {
                     return e.__proto__ || Object.getPrototypeOf(e)
                 })(e)
             }
             Object(C.addStyles)(), x.d.register(x.a);
-            var Z = function(e, t) {
+            var $ = function(e, t) {
                     return {
                         datasets: [{
                             data: [e, t, e || t ? 0 : 1],
@@ -4382,7 +4383,7 @@
                         }]
                     }
                 },
-                $ = function(e) {
+                ee = function(e) {
                     ! function(e, t) {
                         if ("function" != typeof t && null !== t) throw new TypeError("Super expression must either be null or a function");
                         e.prototype = Object.create(t && t.prototype, {
@@ -4393,9 +4394,9 @@
                             }
                         }), Object.defineProperty(e, "prototype", {
                             writable: !1
-                        }), t && U(e, t)
+                        }), t && J(e, t)
                     }(l, e);
-                    var t, a, n, r, s, i = J(l);
+                    var t, a, n, r, s, i = X(l);
 
                     function l(e) {
                         var t;
@@ -4420,13 +4421,13 @@
                             standingShown: {},
                             zoomedImage: "",
                             user: null
-                        }, t.here = !0, t.loading = !1, t.id = "", t.onDeleteConfirm = t.onDeleteConfirm.bind(K(t)), t.changeSort = t.changeSort.bind(K(t)), t.downloadResult = t.downloadResult.bind(K(t)), t
+                        }, t.here = !0, t.loading = !1, t.id = "", t.onDeleteConfirm = t.onDeleteConfirm.bind(V(t)), t.changeSort = t.changeSort.bind(V(t)), t.downloadResult = t.downloadResult.bind(V(t)), t
                     }
                     return t = l, (a = [{
                         key: "componentDidMount",
-                        value: (r = M().mark((function e() {
+                        value: (r = q().mark((function e() {
                             var t, a = this;
-                            return M().wrap((function(e) {
+                            return q().wrap((function(e) {
                                 for (;;) switch (e.prev = e.next) {
                                     case 0:
                                         if (this.props.match.params.id) {
@@ -4445,7 +4446,7 @@
                                     case 10:
                                         this.setState({
                                             user: t
-                                        }), P.a.get("/api/history/byid", {
+                                        }), D.a.get("/api/history/byid", {
                                             params: {
                                                 id: this.props.match.params.id
                                             }
@@ -4480,12 +4481,12 @@
                                                                     a = t[0],
                                                                     o = t[1];
                                                                 s += o, i[a][1] += o, l[a] += o, d += o, n += o
-                                                            })), u.push(H(H({}, t), {}, {
+                                                            })), u.push(A(A({}, t), {}, {
                                                                 place: e.place,
                                                                 numCorrects: c,
                                                                 numIncorrects: d
                                                             }))
-                                                        })), c.push(H(H({}, e), {}, {
+                                                        })), c.push(A(A({}, e), {}, {
                                                             corrects: o,
                                                             incorrects: l,
                                                             numCorrects: a,
@@ -4506,14 +4507,14 @@
                                                                 a = t[0],
                                                                 n = t[1];
                                                             s += n, i[a][1] += n, m += n
-                                                        })), c.push(H(H({}, e), {}, {
+                                                        })), c.push(A(A({}, e), {}, {
                                                             numCorrects: d,
                                                             numIncorrects: m
                                                         }))
                                                     }
                                                 }));
                                                 var u = t.questions.map((function(e) {
-                                                    return H(H({}, e), {}, {
+                                                    return A(A({}, e), {}, {
                                                         corrects: i[e.num][0],
                                                         incorrects: i[e.num][1]
                                                     })
@@ -4539,7 +4540,7 @@
                                             a.setState({
                                                 ready: !0
                                             }), Object(E.b)(e)
-                                        })), P.a.put("/api/users/plan").then((function(e) {
+                                        })), D.a.put("/api/users/plan").then((function(e) {
                                             "Starter" !== e.data.plan && a.here && a.setState({
                                                 plus: !0
                                             })
@@ -4558,11 +4559,11 @@
                                 var o = r.apply(e, t);
 
                                 function s(e) {
-                                    Y(o, a, n, s, i, "next", e)
+                                    W(o, a, n, s, i, "next", e)
                                 }
 
                                 function i(e) {
-                                    Y(o, a, n, s, i, "throw", e)
+                                    W(o, a, n, s, i, "throw", e)
                                 }
                                 s(void 0)
                             }))
@@ -4580,7 +4581,7 @@
                             var t = this;
                             this.loading || (this.loading = !0, e ? (this.setState({
                                 loading: !0
-                            }), P.a.delete("/api/history", {
+                            }), D.a.delete("/api/history", {
                                 params: {
                                     id: this.id,
                                     name: this.state.user.name
@@ -4691,7 +4692,7 @@
                             }, this.state.date)), o.a.createElement("div", {
                                 className: j.a.chartContainer
                             }, o.a.createElement(g.a, {
-                                data: Z(this.state.corrects, this.state.incorrects),
+                                data: $(this.state.corrects, this.state.incorrects),
                                 options: {
                                     maintainAspectRatio: !1,
                                     responsive: !0,
@@ -4729,14 +4730,14 @@
                                 style: {
                                     color: "#4bc22e"
                                 }
-                            }, "".concat(Object(D.k)(this.state.corrects), " Correct"))), o.a.createElement("div", {
+                            }, "".concat(Object(L.k)(this.state.corrects), " Correct"))), o.a.createElement("div", {
                                 className: j.a.correctContainer
                             }, o.a.createElement("div", {
                                 className: j.a.correctText,
                                 style: {
                                     color: "#c43a35"
                                 }
-                            }, "".concat(Object(D.k)(this.state.incorrects), " Incorrect"))), o.a.createElement("div", {
+                            }, "".concat(Object(L.k)(this.state.incorrects), " Incorrect"))), o.a.createElement("div", {
                                 className: j.a.deleteButton,
                                 role: "button",
                                 tabIndex: 0,
@@ -4813,36 +4814,36 @@
                                     className: j.a.cashText
                                 }, "".concat(t.wins, " ").concat(1 === t.wins ? "Win" : "Wins")) : "Classic" === e.state.type ? o.a.createElement("div", {
                                     className: j.a.cashText
-                                }, "".concat(Object(D.k)(t.points), " ").concat(1 === t.points ? "Point" : "Points")) : "Factory" === e.state.type || "Cafe" === e.state.type ? o.a.createElement("div", {
+                                }, "".concat(Object(L.k)(t.points), " ").concat(1 === t.points ? "Point" : "Points")) : "Factory" === e.state.type || "Cafe" === e.state.type ? o.a.createElement("div", {
                                     className: j.a.cashText
-                                }, "$".concat(Object(D.k)(t.cash))) : "Hack" === e.state.type ? o.a.createElement("div", {
+                                }, "$".concat(Object(L.k)(t.cash))) : "Hack" === e.state.type ? o.a.createElement("div", {
                                     className: j.a.cashText
-                                }, "₿ ".concat(Object(D.k)(t.crypto))) : "Fish" === e.state.type ? o.a.createElement("div", {
+                                }, "₿ ".concat(Object(L.k)(t.crypto))) : "Fish" === e.state.type ? o.a.createElement("div", {
                                     className: j.a.cashText
-                                }, "".concat(Object(D.k)(t.weight), " lbs")) : "Defense" === e.state.type ? o.a.createElement("div", {
+                                }, "".concat(Object(L.k)(t.weight), " lbs")) : "Defense" === e.state.type ? o.a.createElement("div", {
                                     className: j.a.scoreRow
                                 }, o.a.createElement("div", {
                                     className: j.a.pointsText
-                                }, Object(D.k)(t.dmg)), o.a.createElement("i", {
+                                }, Object(L.k)(t.dmg)), o.a.createElement("i", {
                                     className: h()(j.a.scoreIcon, "fas fa-splotch")
                                 })) : "Snow" === e.state.type ? o.a.createElement("div", {
                                     className: j.a.scoreRow
                                 }, o.a.createElement("div", {
                                     className: j.a.pointsText
-                                }, Object(D.k)(t.health)), o.a.createElement("i", {
+                                }, Object(L.k)(t.health)), o.a.createElement("i", {
                                     className: h()(j.a.scoreIcon, "far fa-snowflake")
                                 })) : "Dino" === e.state.type ? o.a.createElement("div", {
                                     className: j.a.scoreRow
                                 }, o.a.createElement("div", {
                                     className: j.a.pointsText
-                                }, Object(D.k)(t.fossils)), o.a.createElement("i", {
+                                }, Object(L.k)(t.fossils)), o.a.createElement("i", {
                                     className: h()(j.a.fossilIcon, "fas fa-bone")
                                 })) : "Shamrock" === e.state.type ? o.a.createElement("div", {
                                     className: j.a.scoreRow
                                 }, o.a.createElement("div", {
                                     className: j.a.pointsText
-                                }, Object(D.k)(t.shamrocks)), o.a.createElement("img", {
-                                    src: L.a.shamrock.shamrockBlack,
+                                }, Object(L.k)(t.shamrocks)), o.a.createElement("img", {
+                                    src: z.a.shamrock.shamrockBlack,
                                     alt: "Shamrock",
                                     className: j.a.candyImage,
                                     draggable: !1
@@ -4850,8 +4851,8 @@
                                     className: j.a.scoreRow
                                 }, o.a.createElement("div", {
                                     className: j.a.pointsText
-                                }, Object(D.k)(t.gold)), o.a.createElement("img", {
-                                    src: L.a.basic.gold,
+                                }, Object(L.k)(t.gold)), o.a.createElement("img", {
+                                    src: R.a ? z.a.basic.candy : z.a.basic.gold,
                                     alt: "Gold",
                                     className: j.a.candyImage,
                                     style: {
@@ -4862,8 +4863,8 @@
                                     className: j.a.scoreRow
                                 }, o.a.createElement("div", {
                                     className: j.a.pointsText
-                                }, Object(D.k)(t.xp)), o.a.createElement("img", {
-                                    src: L.a.basic.xp,
+                                }, Object(L.k)(t.xp)), o.a.createElement("img", {
+                                    src: z.a.basic.xp,
                                     alt: "Xp",
                                     className: j.a.candyImage,
                                     style: {
@@ -4874,8 +4875,8 @@
                                     className: j.a.scoreRow
                                 }, o.a.createElement("div", {
                                     className: j.a.pointsText
-                                }, Object(D.k)(t.toys)), o.a.createElement("img", {
-                                    src: L.a.basic.toy,
+                                }, Object(L.k)(t.toys)), o.a.createElement("img", {
+                                    src: z.a.basic.toy,
                                     alt: "Toy",
                                     className: j.a.candyImage,
                                     style: {
@@ -4886,15 +4887,15 @@
                                     className: j.a.scoreRow
                                 }, o.a.createElement("div", {
                                     className: j.a.pointsText
-                                }, Object(D.k)(t.numBlooks)), o.a.createElement(B.a, {
+                                }, Object(L.k)(t.numBlooks)), o.a.createElement(B.a, {
                                     name: t.blook,
                                     className: j.a.standingBlook
                                 })) : o.a.createElement("div", {
                                     className: j.a.scoreRow
                                 }, o.a.createElement("div", {
                                     className: j.a.pointsText
-                                }, Object(D.k)(t.candy)), o.a.createElement("img", {
-                                    src: L.a.basic.candyDark,
+                                }, Object(L.k)(t.candy)), o.a.createElement("img", {
+                                    src: z.a.basic.candyDark,
                                     alt: "Candy",
                                     className: j.a.candyImage,
                                     draggable: !1
@@ -4987,11 +4988,11 @@
                                     style: {
                                         cursor: t.image ? "cursor" : "default"
                                     }
-                                }, t.image ? o.a.createElement(_.a, {
+                                }, t.image ? o.a.createElement(f.a, {
                                     height: 130,
                                     width: 170
                                 }, o.a.createElement("img", {
-                                    src: Object(D.f)(t.image),
+                                    src: Object(L.f)(t.image),
                                     alt: "Question Background",
                                     className: j.a.questionImage
                                 })) : o.a.createElement("div", {
@@ -5001,7 +5002,7 @@
                                     }
                                 }, t.num)), t.audio ? o.a.createElement("div", {
                                     className: j.a.questionFunc
-                                }, o.a.createElement(z.a, {
+                                }, o.a.createElement(P.a, {
                                     audioUrl: t.audio,
                                     width: "45%"
                                 })) : t.text.includes("`*`") ? o.a.createElement("div", {
@@ -5009,15 +5010,15 @@
                                 }, o.a.createElement(C.StaticMathField, {
                                     className: j.a.qMathField
                                 }, t.text.slice(t.text.indexOf("`*`") + 3, t.text.length - 3))) : null, o.a.createElement("div", {
-                                    className: h()(j.a.questionCenterContainer, A({}, j.a.questionWithFunc, t.text.includes("`*`") || t.audio))
+                                    className: h()(j.a.questionCenterContainer, Q({}, j.a.questionWithFunc, t.text.includes("`*`") || t.audio))
                                 }, o.a.createElement("div", {
                                     className: j.a.questionText
                                 }, t.text.includes("`*`") ? t.text.slice(0, t.text.indexOf("`*`")) : t.text), o.a.createElement("div", {
                                     className: j.a.answerText
-                                }, "Answer: ", Object(D.e)(t.answers))), o.a.createElement("div", {
+                                }, "Answer: ", Object(L.e)(t.answers))), o.a.createElement("div", {
                                     className: j.a.questionStatsContainer
                                 }, o.a.createElement(g.a, {
-                                    data: Z(t.corrects, t.incorrects),
+                                    data: $(t.corrects, t.incorrects),
                                     options: {
                                         cutout: "75%",
                                         maintainAspectRatio: !1,
@@ -5064,7 +5065,7 @@
                                     })
                                 }
                             }, o.a.createElement("img", {
-                                src: Object(D.f)(this.state.zoomedImage, !0),
+                                src: Object(L.f)(this.state.zoomedImage, !0),
                                 alt: "Upload",
                                 className: N.a.bigImage,
                                 draggable: !1
@@ -5137,10 +5138,10 @@
                                 className: j.a.modalColumn
                             }, this.state.standingShown.name, o.a.createElement("div", {
                                 className: j.a.modalDesc
-                            }, "".concat(this.state.standingShown.place).concat(Object(D.g)(this.state.standingShown.place), " Place"))), o.a.createElement("div", {
+                            }, "".concat(this.state.standingShown.place).concat(Object(L.g)(this.state.standingShown.place), " Place"))), o.a.createElement("div", {
                                 className: j.a.modalStats
                             }, o.a.createElement(g.a, {
-                                data: Z(this.state.standingShown.numCorrects, this.state.standingShown.numIncorrects),
+                                data: $(this.state.standingShown.numCorrects, this.state.standingShown.numIncorrects),
                                 options: {
                                     cutout: "75%",
                                     maintainAspectRatio: !1,
@@ -5178,14 +5179,14 @@
                                     className: j.a.modalQuestionRow
                                 }, n.audio ? o.a.createElement("div", {
                                     className: j.a.modalFuncContainer
-                                }, o.a.createElement(z.a, {
+                                }, o.a.createElement(P.a, {
                                     audioUrl: n.audio,
                                     width: "55%"
-                                })) : n.image ? o.a.createElement(_.a, {
+                                })) : n.image ? o.a.createElement(f.a, {
                                     height: 70,
                                     width: 80
                                 }, o.a.createElement("img", {
-                                    src: Object(D.f)(n.image),
+                                    src: Object(L.f)(n.image),
                                     alt: "Question Background",
                                     className: j.a.modalQuestionImage
                                 })) : n.text.includes("`*`") ? o.a.createElement("div", {
@@ -5202,7 +5203,7 @@
                                 }, n.text.includes("`*`") ? n.text.slice(0, n.text.indexOf("`*`")) : n.text), o.a.createElement("div", {
                                     className: j.a.modalQuestionStats
                                 }, o.a.createElement(g.a, {
-                                    data: Z(Object.keys(t).includes(n.num.toString()) ? t[n.num] : 0, Object.keys(a).includes(n.num.toString()) ? ["Royale", "Classic"].includes(e.state.type) ? 1 : a[n.num] : 0),
+                                    data: $(Object.keys(t).includes(n.num.toString()) ? t[n.num] : 0, Object.keys(a).includes(n.num.toString()) ? ["Royale", "Classic"].includes(e.state.type) ? 1 : a[n.num] : 0),
                                     options: {
                                         cutout: "75%",
                                         maintainAspectRatio: !1,
@@ -5227,11 +5228,11 @@
                                 }, " ") : null)
                             })))) : null)
                         }
-                    }]) && W(t.prototype, a), n && W(t, n), Object.defineProperty(t, "prototype", {
+                    }]) && U(t.prototype, a), n && U(t, n), Object.defineProperty(t, "prototype", {
                         writable: !1
                     }), l
                 }(o.a.Component);
-            $.propTypes = {
+            ee.propTypes = {
                 match: l.a.object,
                 history: l.a.object.isRequired,
                 user: l.a.object
@@ -5240,7 +5241,7 @@
                 return {}
             }), (function(e) {
                 return Object(r.b)({}, e)
-            }))($)))
+            }))(ee)))
         },
         WssG: function(e, t, a) {
             var n = a("Dl1H");
@@ -5261,363 +5262,39 @@
                 o = a.n(n),
                 r = a("ANjH"),
                 s = a("/MKj"),
-                i = a("17x9"),
-                l = a.n(i),
-                c = a("55Ip"),
-                u = a("Ty5D"),
-                d = a("H1WH"),
-                m = a("FKJl"),
-                f = a("E8Bj"),
-                _ = a("Xst1"),
-                p = a.n(_),
-                h = a("cQcy"),
-                y = a.n(h),
-                g = a("i4/Q"),
-                x = a("XTAU");
+                i = a("55Ip"),
+                l = a("Ty5D"),
+                c = a("H1WH"),
+                u = a("E8Bj"),
+                d = a("Xst1"),
+                m = a.n(d),
+                _ = a("cQcy"),
+                f = a.n(_),
+                p = a("XTAU"),
+                h = a("oQ+7");
 
-            function b(e) {
-                return (b = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function(e) {
+            function y(e) {
+                return (y = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function(e) {
                     return typeof e
                 } : function(e) {
                     return e && "function" == typeof Symbol && e.constructor === Symbol && e !== Symbol.prototype ? "symbol" : typeof e
                 })(e)
             }
 
-            function v() {
-                /*! regenerator-runtime -- Copyright (c) 2014-present, Facebook, Inc. -- license (MIT): https://github.com/facebook/regenerator/blob/main/LICENSE */
-                v = function() {
-                    return e
-                };
-                var e = {},
-                    t = Object.prototype,
-                    a = t.hasOwnProperty,
-                    n = "function" == typeof Symbol ? Symbol : {},
-                    o = n.iterator || "@@iterator",
-                    r = n.asyncIterator || "@@asyncIterator",
-                    s = n.toStringTag || "@@toStringTag";
-
-                function i(e, t, a) {
-                    return Object.defineProperty(e, t, {
-                        value: a,
-                        enumerable: !0,
-                        configurable: !0,
-                        writable: !0
-                    }), e[t]
-                }
-                try {
-                    i({}, "")
-                } catch (e) {
-                    i = function(e, t, a) {
-                        return e[t] = a
-                    }
-                }
-
-                function l(e, t, a, n) {
-                    var o = t && t.prototype instanceof d ? t : d,
-                        r = Object.create(o.prototype),
-                        s = new k(n || []);
-                    return r._invoke = function(e, t, a) {
-                        var n = "suspendedStart";
-                        return function(o, r) {
-                            if ("executing" === n) throw new Error("Generator is already running");
-                            if ("completed" === n) {
-                                if ("throw" === o) throw r;
-                                return S()
-                            }
-                            for (a.method = o, a.arg = r;;) {
-                                var s = a.delegate;
-                                if (s) {
-                                    var i = w(s, a);
-                                    if (i) {
-                                        if (i === u) continue;
-                                        return i
-                                    }
-                                }
-                                if ("next" === a.method) a.sent = a._sent = a.arg;
-                                else if ("throw" === a.method) {
-                                    if ("suspendedStart" === n) throw n = "completed", a.arg;
-                                    a.dispatchException(a.arg)
-                                } else "return" === a.method && a.abrupt("return", a.arg);
-                                n = "executing";
-                                var l = c(e, t, a);
-                                if ("normal" === l.type) {
-                                    if (n = a.done ? "completed" : "suspendedYield", l.arg === u) continue;
-                                    return {
-                                        value: l.arg,
-                                        done: a.done
-                                    }
-                                }
-                                "throw" === l.type && (n = "completed", a.method = "throw", a.arg = l.arg)
-                            }
-                        }
-                    }(e, a, s), r
-                }
-
-                function c(e, t, a) {
-                    try {
-                        return {
-                            type: "normal",
-                            arg: e.call(t, a)
-                        }
-                    } catch (e) {
-                        return {
-                            type: "throw",
-                            arg: e
-                        }
-                    }
-                }
-                e.wrap = l;
-                var u = {};
-
-                function d() {}
-
-                function m() {}
-
-                function f() {}
-                var _ = {};
-                i(_, o, (function() {
-                    return this
-                }));
-                var p = Object.getPrototypeOf,
-                    h = p && p(p(N([])));
-                h && h !== t && a.call(h, o) && (_ = h);
-                var y = f.prototype = d.prototype = Object.create(_);
-
-                function g(e) {
-                    ["next", "throw", "return"].forEach((function(t) {
-                        i(e, t, (function(e) {
-                            return this._invoke(t, e)
-                        }))
-                    }))
-                }
-
-                function x(e, t) {
-                    var n;
-                    this._invoke = function(o, r) {
-                        function s() {
-                            return new t((function(n, s) {
-                                ! function n(o, r, s, i) {
-                                    var l = c(e[o], e, r);
-                                    if ("throw" !== l.type) {
-                                        var u = l.arg,
-                                            d = u.value;
-                                        return d && "object" == b(d) && a.call(d, "__await") ? t.resolve(d.__await).then((function(e) {
-                                            n("next", e, s, i)
-                                        }), (function(e) {
-                                            n("throw", e, s, i)
-                                        })) : t.resolve(d).then((function(e) {
-                                            u.value = e, s(u)
-                                        }), (function(e) {
-                                            return n("throw", e, s, i)
-                                        }))
-                                    }
-                                    i(l.arg)
-                                }(o, r, n, s)
-                            }))
-                        }
-                        return n = n ? n.then(s, s) : s()
-                    }
-                }
-
-                function w(e, t) {
-                    var a = e.iterator[t.method];
-                    if (void 0 === a) {
-                        if (t.delegate = null, "throw" === t.method) {
-                            if (e.iterator.return && (t.method = "return", t.arg = void 0, w(e, t), "throw" === t.method)) return u;
-                            t.method = "throw", t.arg = new TypeError("The iterator does not provide a 'throw' method")
-                        }
-                        return u
-                    }
-                    var n = c(a, e.iterator, t.arg);
-                    if ("throw" === n.type) return t.method = "throw", t.arg = n.arg, t.delegate = null, u;
-                    var o = n.arg;
-                    return o ? o.done ? (t[e.resultName] = o.value, t.next = e.nextLoc, "return" !== t.method && (t.method = "next", t.arg = void 0), t.delegate = null, u) : o : (t.method = "throw", t.arg = new TypeError("iterator result is not an object"), t.delegate = null, u)
-                }
-
-                function C(e) {
-                    var t = {
-                        tryLoc: e[0]
-                    };
-                    1 in e && (t.catchLoc = e[1]), 2 in e && (t.finallyLoc = e[2], t.afterLoc = e[3]), this.tryEntries.push(t)
-                }
-
-                function E(e) {
-                    var t = e.completion || {};
-                    t.type = "normal", delete t.arg, e.completion = t
-                }
-
-                function k(e) {
-                    this.tryEntries = [{
-                        tryLoc: "root"
-                    }], e.forEach(C, this), this.reset(!0)
-                }
-
-                function N(e) {
-                    if (e) {
-                        var t = e[o];
-                        if (t) return t.call(e);
-                        if ("function" == typeof e.next) return e;
-                        if (!isNaN(e.length)) {
-                            var n = -1,
-                                r = function t() {
-                                    for (; ++n < e.length;)
-                                        if (a.call(e, n)) return t.value = e[n], t.done = !1, t;
-                                    return t.value = void 0, t.done = !0, t
-                                };
-                            return r.next = r
-                        }
-                    }
-                    return {
-                        next: S
-                    }
-                }
-
-                function S() {
-                    return {
-                        value: void 0,
-                        done: !0
-                    }
-                }
-                return m.prototype = f, i(y, "constructor", f), i(f, "constructor", m), m.displayName = i(f, s, "GeneratorFunction"), e.isGeneratorFunction = function(e) {
-                    var t = "function" == typeof e && e.constructor;
-                    return !!t && (t === m || "GeneratorFunction" === (t.displayName || t.name))
-                }, e.mark = function(e) {
-                    return Object.setPrototypeOf ? Object.setPrototypeOf(e, f) : (e.__proto__ = f, i(e, s, "GeneratorFunction")), e.prototype = Object.create(y), e
-                }, e.awrap = function(e) {
-                    return {
-                        __await: e
-                    }
-                }, g(x.prototype), i(x.prototype, r, (function() {
-                    return this
-                })), e.AsyncIterator = x, e.async = function(t, a, n, o, r) {
-                    void 0 === r && (r = Promise);
-                    var s = new x(l(t, a, n, o), r);
-                    return e.isGeneratorFunction(a) ? s : s.next().then((function(e) {
-                        return e.done ? e.value : s.next()
-                    }))
-                }, g(y), i(y, s, "Generator"), i(y, o, (function() {
-                    return this
-                })), i(y, "toString", (function() {
-                    return "[object Generator]"
-                })), e.keys = function(e) {
-                    var t = [];
-                    for (var a in e) t.push(a);
-                    return t.reverse(),
-                        function a() {
-                            for (; t.length;) {
-                                var n = t.pop();
-                                if (n in e) return a.value = n, a.done = !1, a
-                            }
-                            return a.done = !0, a
-                        }
-                }, e.values = N, k.prototype = {
-                    constructor: k,
-                    reset: function(e) {
-                        if (this.prev = 0, this.next = 0, this.sent = this._sent = void 0, this.done = !1, this.delegate = null, this.method = "next", this.arg = void 0, this.tryEntries.forEach(E), !e)
-                            for (var t in this) "t" === t.charAt(0) && a.call(this, t) && !isNaN(+t.slice(1)) && (this[t] = void 0)
-                    },
-                    stop: function() {
-                        this.done = !0;
-                        var e = this.tryEntries[0].completion;
-                        if ("throw" === e.type) throw e.arg;
-                        return this.rval
-                    },
-                    dispatchException: function(e) {
-                        if (this.done) throw e;
-                        var t = this;
-
-                        function n(a, n) {
-                            return s.type = "throw", s.arg = e, t.next = a, n && (t.method = "next", t.arg = void 0), !!n
-                        }
-                        for (var o = this.tryEntries.length - 1; o >= 0; --o) {
-                            var r = this.tryEntries[o],
-                                s = r.completion;
-                            if ("root" === r.tryLoc) return n("end");
-                            if (r.tryLoc <= this.prev) {
-                                var i = a.call(r, "catchLoc"),
-                                    l = a.call(r, "finallyLoc");
-                                if (i && l) {
-                                    if (this.prev < r.catchLoc) return n(r.catchLoc, !0);
-                                    if (this.prev < r.finallyLoc) return n(r.finallyLoc)
-                                } else if (i) {
-                                    if (this.prev < r.catchLoc) return n(r.catchLoc, !0)
-                                } else {
-                                    if (!l) throw new Error("try statement without catch or finally");
-                                    if (this.prev < r.finallyLoc) return n(r.finallyLoc)
-                                }
-                            }
-                        }
-                    },
-                    abrupt: function(e, t) {
-                        for (var n = this.tryEntries.length - 1; n >= 0; --n) {
-                            var o = this.tryEntries[n];
-                            if (o.tryLoc <= this.prev && a.call(o, "finallyLoc") && this.prev < o.finallyLoc) {
-                                var r = o;
-                                break
-                            }
-                        }
-                        r && ("break" === e || "continue" === e) && r.tryLoc <= t && t <= r.finallyLoc && (r = null);
-                        var s = r ? r.completion : {};
-                        return s.type = e, s.arg = t, r ? (this.method = "next", this.next = r.finallyLoc, u) : this.complete(s)
-                    },
-                    complete: function(e, t) {
-                        if ("throw" === e.type) throw e.arg;
-                        return "break" === e.type || "continue" === e.type ? this.next = e.arg : "return" === e.type ? (this.rval = this.arg = e.arg, this.method = "return", this.next = "end") : "normal" === e.type && t && (this.next = t), u
-                    },
-                    finish: function(e) {
-                        for (var t = this.tryEntries.length - 1; t >= 0; --t) {
-                            var a = this.tryEntries[t];
-                            if (a.finallyLoc === e) return this.complete(a.completion, a.afterLoc), E(a), u
-                        }
-                    },
-                    catch: function(e) {
-                        for (var t = this.tryEntries.length - 1; t >= 0; --t) {
-                            var a = this.tryEntries[t];
-                            if (a.tryLoc === e) {
-                                var n = a.completion;
-                                if ("throw" === n.type) {
-                                    var o = n.arg;
-                                    E(a)
-                                }
-                                return o
-                            }
-                        }
-                        throw new Error("illegal catch attempt")
-                    },
-                    delegateYield: function(e, t, a) {
-                        return this.delegate = {
-                            iterator: N(e),
-                            resultName: t,
-                            nextLoc: a
-                        }, "next" === this.method && (this.arg = void 0), u
-                    }
-                }, e
-            }
-
-            function w(e, t, a, n, o, r, s) {
-                try {
-                    var i = e[r](s),
-                        l = i.value
-                } catch (e) {
-                    return void a(e)
-                }
-                i.done ? t(l) : Promise.resolve(l).then(n, o)
-            }
-
-            function C(e, t) {
+            function g(e, t) {
                 for (var a = 0; a < t.length; a++) {
                     var n = t[a];
                     n.enumerable = n.enumerable || !1, n.configurable = !0, "value" in n && (n.writable = !0), Object.defineProperty(e, n.key, n)
                 }
             }
 
-            function E(e, t) {
-                return (E = Object.setPrototypeOf ? Object.setPrototypeOf.bind() : function(e, t) {
+            function x(e, t) {
+                return (x = Object.setPrototypeOf ? Object.setPrototypeOf.bind() : function(e, t) {
                     return e.__proto__ = t, e
                 })(e, t)
             }
 
-            function k(e) {
+            function b(e) {
                 var t = function() {
                     if ("undefined" == typeof Reflect || !Reflect.construct) return !1;
                     if (Reflect.construct.sham) return !1;
@@ -5629,17 +5306,17 @@
                     }
                 }();
                 return function() {
-                    var a, n = S(e);
+                    var a, n = w(e);
                     if (t) {
-                        var o = S(this).constructor;
+                        var o = w(this).constructor;
                         a = Reflect.construct(n, arguments, o)
                     } else a = n.apply(this, arguments);
-                    return N(this, a)
+                    return v(this, a)
                 }
             }
 
-            function N(e, t) {
-                if (t && ("object" === b(t) || "function" == typeof t)) return t;
+            function v(e, t) {
+                if (t && ("object" === y(t) || "function" == typeof t)) return t;
                 if (void 0 !== t) throw new TypeError("Derived constructors may only return object or undefined");
                 return function(e) {
                     if (void 0 === e) throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
@@ -5647,12 +5324,12 @@
                 }(e)
             }
 
-            function S(e) {
-                return (S = Object.setPrototypeOf ? Object.getPrototypeOf.bind() : function(e) {
+            function w(e) {
+                return (w = Object.setPrototypeOf ? Object.getPrototypeOf.bind() : function(e) {
                     return e.__proto__ || Object.getPrototypeOf(e)
                 })(e)
             }
-            var j = function(e) {
+            var C = function(e) {
                 ! function(e, t) {
                     if ("function" != typeof t && null !== t) throw new TypeError("Super expression must either be null or a function");
                     e.prototype = Object.create(t && t.prototype, {
@@ -5663,166 +5340,118 @@
                         }
                     }), Object.defineProperty(e, "prototype", {
                         writable: !1
-                    }), t && E(e, t)
-                }(l, e);
-                var t, a, n, r, s, i = k(l);
+                    }), t && x(e, t)
+                }(s, e);
+                var t, a, n, r = b(s);
 
-                function l(e) {
+                function s(e) {
                     var t;
                     return function(e, t) {
                         if (!(e instanceof t)) throw new TypeError("Cannot call a class as a function")
-                    }(this, l), (t = i.call(this, e)).state = {
-                        user: null
-                    }, t
+                    }(this, s), (t = r.call(this, e)).state = {}, t
                 }
-                return t = l, (a = [{
-                    key: "componentDidMount",
-                    value: (r = v().mark((function e() {
-                        var t;
-                        return v().wrap((function(e) {
-                            for (;;) switch (e.prev = e.next) {
-                                case 0:
-                                    return e.next = 2, this.props.user.getData();
-                                case 2:
-                                    if (t = e.sent) {
-                                        e.next = 7;
-                                        break
-                                    }
-                                    return Object(m.b)("FAQPage cannot proceed without user"), window.location.href = "".concat("https://id.blooket.com", "/login"), e.abrupt("return");
-                                case 7:
-                                    this.setState({
-                                        user: t
-                                    });
-                                case 8:
-                                case "end":
-                                    return e.stop()
-                            }
-                        }), e, this)
-                    })), s = function() {
-                        var e = this,
-                            t = arguments;
-                        return new Promise((function(a, n) {
-                            var o = r.apply(e, t);
-
-                            function s(e) {
-                                w(o, a, n, s, i, "next", e)
-                            }
-
-                            function i(e) {
-                                w(o, a, n, s, i, "throw", e)
-                            }
-                            s(void 0)
-                        }))
-                    }, function() {
-                        return s.apply(this, arguments)
-                    })
-                }, {
+                return t = s, (a = [{
                     key: "render",
                     value: function() {
                         return o.a.createElement("div", {
-                            className: d.isMobile ? p.a.mBody : p.a.body
-                        }, o.a.createElement(x.a, {
+                            className: c.isMobile ? m.a.mBody : m.a.body
+                        }, o.a.createElement(p.a, {
                             title: "FAQ | Blooket",
                             desc: "Get answers to frequently asked questions including how to assign a homework or share a question set."
-                        }), o.a.createElement(g.a, {
-                            user: this.state.user,
-                            page: "Settings"
-                        }), o.a.createElement("div", {
-                            className: p.a.profileBody
+                        }), o.a.createElement(h.a, null), o.a.createElement("div", {
+                            className: m.a.regularBody
                         }, o.a.createElement("div", {
-                            className: y.a.header
+                            className: f.a.header
                         }, "FAQ"), o.a.createElement("div", {
-                            className: y.a.mainContainer
+                            className: f.a.mainContainer
                         }, o.a.createElement("div", {
-                            className: y.a.infoContainer
+                            className: f.a.infoContainer
                         }, o.a.createElement("div", {
-                            className: y.a.infoHeader
+                            className: f.a.infoHeader
                         }, "How do I assign a question set as homework for students to do on their own?"), o.a.createElement("div", {
-                            className: y.a.text
+                            className: f.a.text
                         }, "\n                First, choose a question set by finding one in the Discover tab or creating one in the Create tab\n                and then view it in your Dashboard. Now, click Host on this question set and select Tower of Doom,\n                Factory, Crazy Kingdom, Tower Defense, or Café mode (these modes currently have homework options). Then, click Assign HW and it\n                will walk you through the process. Finally, it will give you a link that students can click to\n                play the game on their own time. All they have to do is click the link, they don’t need an account.\n                ")), o.a.createElement("div", {
-                            className: y.a.infoContainer
+                            className: f.a.infoContainer
                         }, o.a.createElement("div", {
-                            className: y.a.infoHeader
+                            className: f.a.infoHeader
                         }, "How do I share a question set I’ve created with another teacher?"), o.a.createElement("div", {
-                            className: y.a.text
+                            className: f.a.text
                         }, "\n                Navigate to your dashboard and locate the set you would like to share. Then, click/hover over the Gear/Cog icon to the right\n                of the trash can. Once this happens, a few buttons should show up above it. One of them may say Link. If so,\n                click the Link button and it'll copy the link for you to share. If the Link button does not appear, your set is Private and\n                you must click the pencil icon to edit the set, then click Edit Info and change the privacy setting to Public.\n                ")), o.a.createElement("div", {
-                            className: y.a.infoContainer
+                            className: f.a.infoContainer
                         }, o.a.createElement("div", {
-                            className: y.a.infoHeader
+                            className: f.a.infoHeader
                         }, "How do I host a game?"), o.a.createElement("div", {
-                            className: y.a.text
+                            className: f.a.text
                         }, "\n                First, choose a question set by finding one in the Discover tab or creating one in the Create tab\n                and then view it in your Dashboard. Now, click Host on this question set and select a game mode.\n                From there, it will walk you through the process of creating a game. Once this is done, you'll\n                get a Game ID that you can share with students so they can join the game!\n                ")), o.a.createElement("div", {
-                            className: y.a.infoContainer
+                            className: f.a.infoContainer
                         }, o.a.createElement("div", {
-                            className: y.a.infoHeader
+                            className: f.a.infoHeader
                         }, "How do I change my profile Blook/banner/title on the Stats page?"), o.a.createElement("div", {
-                            className: y.a.text
+                            className: f.a.text
                         }, "\n                Just click on the Blook or banner/title that you want to change and it will open a pop up\n                where you can choose a new option! You can unlock new Blooks, banners, and titles in the Market.\n                ")), o.a.createElement("div", {
-                            className: y.a.infoContainer
+                            className: f.a.infoContainer
                         }, o.a.createElement("div", {
-                            className: y.a.infoHeader
+                            className: f.a.infoHeader
                         }, "Do students need an account to play?"), o.a.createElement("div", {
-                            className: y.a.text
+                            className: f.a.text
                         }, "\n                Nope! Only the teacher needs an account. You’ll be able to host a game and any student can use the Game ID to\n                join without logging in. However, students who do create accounts will have the ability to unlock new Blooks\n                and track their stats.\n                ")), o.a.createElement("div", {
-                            className: y.a.infoContainer
+                            className: f.a.infoContainer
                         }, o.a.createElement("div", {
-                            className: y.a.infoHeader
+                            className: f.a.infoHeader
                         }, "How can I debug connection issues?"), o.a.createElement("div", {
-                            className: y.a.text
-                        }, "Before trying anything else, run our debugger at: ", o.a.createElement(c.b, {
-                            className: y.a.link,
-                            to: "/debug"
-                        }, "blooket.com/debug"), o.a.createElement("br", null), "This will make sure all images load and you are not blocking any essential services for the live games.")), o.a.createElement("div", {
-                            className: y.a.infoContainer
+                            className: f.a.text
+                        }, "Before trying anything else, run our debugger at: ", o.a.createElement("a", {
+                            className: f.a.link,
+                            href: "https://debug.blooket.com/"
+                        }, "debug.blooket.com"), o.a.createElement("br", null), "This will make sure all images load and you are not blocking any essential services for the live games.")), o.a.createElement("div", {
+                            className: f.a.infoContainer
                         }, o.a.createElement("div", {
-                            className: y.a.infoHeader
+                            className: f.a.infoHeader
                         }, "The images/Blooks aren't showing up?"), o.a.createElement("div", {
-                            className: y.a.text
+                            className: f.a.text
                         }, "\n                This tends to be an issue with school networks and school-issued devices. The way to get the images to show\n                up is to simply get someone who can edit the school network to unblock res.cloudinary.com and images.unsplash.com.\n                These are the two services that deliver our images, so if they are being blocked then the images will not show up!\n                ")), o.a.createElement("div", {
-                            className: y.a.infoContainer
+                            className: f.a.infoContainer
                         }, o.a.createElement("div", {
-                            className: y.a.infoHeader
+                            className: f.a.infoHeader
                         }, "I can't login/join a game/host a game?"), o.a.createElement("div", {
-                            className: y.a.text
+                            className: f.a.text
                         }, "\n                These errors can occur for a few reasons. The main one is that a Chrome Extension such as an AdBlocker or other\n                service is blocking part of the site’s functionality. While we don’t run ads, these can still interfere with some\n                parts of the site. Second, if you still can’t join or host a game, you may need to make sure firebaseio.com is\n                unblocked on your device. We use this site for part of our backend, so if there is a firewall blocking it you may\n                not be able to use parts of the site (however, this will not affect your ability to log in).\n                ")), o.a.createElement("div", {
-                            className: y.a.infoContainer
+                            className: f.a.infoContainer
                         }, o.a.createElement("div", {
-                            className: y.a.infoHeader
+                            className: f.a.infoHeader
                         }, "Is this thing free?"), o.a.createElement("div", {
-                            className: y.a.text
-                        }, "\n                Yes! All of our essential features are free! You can create an unlimited number of questions set and host a game\n                with up to 60 people (300 people for Plus members (except Racing and team modes)). If you do want some extra features to enhance\n                your Blooket experience (or just to support us), you can upgrade at\n                ", o.a.createElement(c.b, {
-                            className: y.a.link,
+                            className: f.a.text
+                        }, "\n                Yes! All of our essential features are free! You can create an unlimited number of questions set and host a game\n                with up to 60 people (300 people for Plus members (except Racing and team modes)). If you do want some extra features to enhance\n                your Blooket experience (or just to support us), you can upgrade at\n                ", o.a.createElement(i.b, {
+                            className: f.a.link,
                             to: "/upgrade"
                         }, "blooket.com/upgrade"))), o.a.createElement("div", {
-                            className: y.a.infoContainer
+                            className: f.a.infoContainer
                         }, o.a.createElement("div", {
-                            className: y.a.infoHeader
+                            className: f.a.infoHeader
                         }, "How do I hide the notification asking students to create accounts?"), o.a.createElement("div", {
-                            className: y.a.text
+                            className: f.a.text
                         }, "\n                After finishing a game, students are asked to create accounts (if they don’t already have them) to track their stats\n                and unlock new Blooks. Creating an account is totally optional, but some may not want their students to see this. If\n                you would like to hide this notification, then before you host a game on the Host Settings page (after you select\n                a game mode) uncheck the option that says “Allow Student Accounts” and it won’t show the notification.\n                ")), o.a.createElement("div", {
-                            className: y.a.infoContainer
+                            className: f.a.infoContainer
                         }, o.a.createElement("div", {
-                            className: y.a.infoHeader
+                            className: f.a.infoHeader
                         }, "I have another question, how can I get help?"), o.a.createElement("div", {
-                            className: y.a.text
+                            className: f.a.text
                         }, "\n                The best way to get in touch is to email us at contact-us@blooket.com.\n                ")), o.a.createElement("div", {
                             style: {
                                 height: 20
                             }
                         }))))
                     }
-                }]) && C(t.prototype, a), n && C(t, n), Object.defineProperty(t, "prototype", {
+                }]) && g(t.prototype, a), n && g(t, n), Object.defineProperty(t, "prototype", {
                     writable: !1
-                }), l
+                }), s
             }(o.a.Component);
-            j.propTypes = {
-                user: l.a.object
-            };
-            t.a = Object(f.c)(Object(u.g)(Object(s.b)((function() {
+            C.propTypes = {};
+            t.a = Object(u.c)(Object(l.g)(Object(s.b)((function() {
                 return {}
             }), (function(e) {
                 return Object(r.b)({}, e)
-            }))(j)))
+            }))(C)))
         },
         cQcy: function(e, t, a) {
             var n = a("8uai");
@@ -5849,8 +5478,8 @@
                 u = a("Ty5D"),
                 d = a("wd/R"),
                 m = a.n(d),
-                f = a("JeI0"),
-                _ = a.n(f),
+                _ = a("JeI0"),
+                f = a.n(_),
                 p = a("TSYQ"),
                 h = a.n(p),
                 y = a("H1WH"),
@@ -5870,25 +5499,25 @@
                 I = a("ca/f"),
                 B = a("XTAU"),
                 F = a("0oXL"),
-                L = a("vCpj"),
-                P = a("Y018"),
-                z = a("liux"),
-                D = a("O+AO"),
+                z = a("vCpj"),
+                D = a("Y018"),
+                P = a("liux"),
+                L = a("O+AO"),
                 R = a("5Kqo"),
                 M = a("cQOM"),
                 q = a("/9rF"),
                 H = a("qnYv"),
                 A = a("74sb");
 
-            function G(e) {
-                return (G = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function(e) {
+            function Q(e) {
+                return (Q = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function(e) {
                     return typeof e
                 } : function(e) {
                     return e && "function" == typeof Symbol && e.constructor === Symbol && e !== Symbol.prototype ? "symbol" : typeof e
                 })(e)
             }
 
-            function Q(e, t) {
+            function G(e, t) {
                 var a = Object.keys(e);
                 if (Object.getOwnPropertySymbols) {
                     var n = Object.getOwnPropertySymbols(e);
@@ -5902,9 +5531,9 @@
             function Y(e) {
                 for (var t = 1; t < arguments.length; t++) {
                     var a = null != arguments[t] ? arguments[t] : {};
-                    t % 2 ? Q(Object(a), !0).forEach((function(t) {
+                    t % 2 ? G(Object(a), !0).forEach((function(t) {
                         W(e, t, a[t])
-                    })) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(a)) : Q(Object(a)).forEach((function(t) {
+                    })) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(a)) : G(Object(a)).forEach((function(t) {
                         Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(a, t))
                     }))
                 }
@@ -6036,15 +5665,15 @@
 
                 function m() {}
 
-                function f() {}
-                var _ = {};
-                i(_, o, (function() {
+                function _() {}
+                var f = {};
+                i(f, o, (function() {
                     return this
                 }));
                 var p = Object.getPrototypeOf,
                     h = p && p(p(E([])));
-                h && h !== t && a.call(h, o) && (_ = h);
-                var y = f.prototype = d.prototype = Object.create(_);
+                h && h !== t && a.call(h, o) && (f = h);
+                var y = _.prototype = d.prototype = Object.create(f);
 
                 function g(e) {
                     ["next", "throw", "return"].forEach((function(t) {
@@ -6064,7 +5693,7 @@
                                     if ("throw" !== l.type) {
                                         var u = l.arg,
                                             d = u.value;
-                                        return d && "object" == G(d) && a.call(d, "__await") ? t.resolve(d.__await).then((function(e) {
+                                        return d && "object" == Q(d) && a.call(d, "__await") ? t.resolve(d.__await).then((function(e) {
                                             n("next", e, s, i)
                                         }), (function(e) {
                                             n("throw", e, s, i)
@@ -6141,11 +5770,11 @@
                         done: !0
                     }
                 }
-                return m.prototype = f, i(y, "constructor", f), i(f, "constructor", m), m.displayName = i(f, s, "GeneratorFunction"), e.isGeneratorFunction = function(e) {
+                return m.prototype = _, i(y, "constructor", _), i(_, "constructor", m), m.displayName = i(_, s, "GeneratorFunction"), e.isGeneratorFunction = function(e) {
                     var t = "function" == typeof e && e.constructor;
                     return !!t && (t === m || "GeneratorFunction" === (t.displayName || t.name))
                 }, e.mark = function(e) {
-                    return Object.setPrototypeOf ? Object.setPrototypeOf(e, f) : (e.__proto__ = f, i(e, s, "GeneratorFunction")), e.prototype = Object.create(y), e
+                    return Object.setPrototypeOf ? Object.setPrototypeOf(e, _) : (e.__proto__ = _, i(e, s, "GeneratorFunction")), e.prototype = Object.create(y), e
                 }, e.awrap = function(e) {
                     return {
                         __await: e
@@ -6302,7 +5931,7 @@
             }
 
             function $(e, t) {
-                if (t && ("object" === G(t) || "function" == typeof t)) return t;
+                if (t && ("object" === Q(t) || "function" == typeof t)) return t;
                 if (void 0 !== t) throw new TypeError("Derived constructors may only return object or undefined");
                 return ee(e)
             }
@@ -6342,7 +5971,7 @@
                 return n
             }
             Object(C.addStyles)(), x.d.register(x.a);
-            var re = [].concat(ae(Object.keys(P.a)), ae(Object.keys(z.a)), ae(Object.keys(D.a)), ae(Object.keys(R.a)), ae(Object.keys(M.a)), ae(Object.keys(q.a))),
+            var re = [].concat(ae(Object.keys(D.a)), ae(Object.keys(P.a)), ae(Object.keys(L.a)), ae(Object.keys(R.a)), ae(Object.keys(M.a)), ae(Object.keys(q.a))),
                 se = function(e) {
                     e.sort((function(e, t) {
                         var a = e.corrects / Math.max(e.corrects + e.incorrects, 1),
@@ -6978,7 +6607,7 @@
                                     style: {
                                         cursor: t.image ? "cursor" : "default"
                                     }
-                                }, t.image ? o.a.createElement(_.a, {
+                                }, t.image ? o.a.createElement(f.a, {
                                     height: 130,
                                     width: 170
                                 }, o.a.createElement("img", {
@@ -6992,7 +6621,7 @@
                                     }
                                 }, t.number)), t.audio ? o.a.createElement("div", {
                                     className: T.a.questionFunc
-                                }, o.a.createElement(L.a, {
+                                }, o.a.createElement(z.a, {
                                     audioUrl: t.audio,
                                     width: "45%"
                                 })) : t.text.includes("`*`") ? o.a.createElement("div", {
@@ -7201,10 +6830,10 @@
                                     className: T.a.modalQuestionRow
                                 }, n.audio ? o.a.createElement("div", {
                                     className: T.a.modalFuncContainer
-                                }, o.a.createElement(L.a, {
+                                }, o.a.createElement(z.a, {
                                     audioUrl: n.audio,
                                     width: "55%"
-                                })) : n.image ? o.a.createElement(_.a, {
+                                })) : n.image ? o.a.createElement(f.a, {
                                     height: 70,
                                     width: 80
                                 }, o.a.createElement("img", {

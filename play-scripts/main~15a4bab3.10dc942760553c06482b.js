@@ -1,5 +1,5 @@
 (window.webpackJsonp = window.webpackJsonp || []).push([
-    [0], {
+    [1], {
         "+39q": function(e, t, i) {
             var s = i("ZXFw");
             "string" == typeof s && (s = [
@@ -27,11 +27,11 @@
                 d = i("FKJl"),
                 p = i("E8Bj"),
                 m = i("ZrUs"),
-                f = i("oQ+7"),
-                g = i("+39q"),
-                v = i.n(g),
-                b = i("Xst1"),
-                y = i.n(b),
+                g = i("oQ+7"),
+                f = i("+39q"),
+                v = i.n(f),
+                y = i("Xst1"),
+                b = i.n(y),
                 _ = i("XTAU"),
                 w = i("2ZNs"),
                 x = i("LHn/"),
@@ -143,12 +143,12 @@
                 o(m, a, (function() {
                     return this
                 }));
-                var f = Object.getPrototypeOf,
-                    g = f && f(f(j([])));
-                g && g !== t && i.call(g, a) && (m = g);
+                var g = Object.getPrototypeOf,
+                    f = g && g(g(j([])));
+                f && f !== t && i.call(f, a) && (m = f);
                 var v = p.prototype = u.prototype = Object.create(m);
 
-                function b(e) {
+                function y(e) {
                     ["next", "throw", "return"].forEach((function(t) {
                         o(e, t, (function(e) {
                             return this._invoke(t, e)
@@ -156,7 +156,7 @@
                     }))
                 }
 
-                function y(e, t) {
+                function b(e, t) {
                     var s;
                     this._invoke = function(a, r) {
                         function n() {
@@ -252,15 +252,15 @@
                     return {
                         __await: e
                     }
-                }, b(y.prototype), o(y.prototype, r, (function() {
+                }, y(b.prototype), o(b.prototype, r, (function() {
                     return this
-                })), e.AsyncIterator = y, e.async = function(t, i, s, a, r) {
+                })), e.AsyncIterator = b, e.async = function(t, i, s, a, r) {
                     void 0 === r && (r = Promise);
-                    var n = new y(l(t, i, s, a), r);
+                    var n = new b(l(t, i, s, a), r);
                     return e.isGeneratorFunction(i) ? n : n.next().then((function(e) {
                         return e.done ? e.value : n.next()
                     }))
-                }, b(v), o(v, n, "Generator"), o(v, a, (function() {
+                }, y(v), o(v, n, "Generator"), o(v, a, (function() {
                     return this
                 })), o(v, "toString", (function() {
                     return "[object Generator]"
@@ -426,9 +426,9 @@
                     }
                 }();
                 return function() {
-                    var i, s = L(e);
+                    var i, s = F(e);
                     if (t) {
-                        var a = L(this).constructor;
+                        var a = F(this).constructor;
                         i = Reflect.construct(s, arguments, a)
                     } else i = s.apply(this, arguments);
                     return N(this, i)
@@ -446,12 +446,12 @@
                 return e
             }
 
-            function L(e) {
-                return (L = Object.setPrototypeOf ? Object.getPrototypeOf.bind() : function(e) {
+            function F(e) {
+                return (F = Object.setPrototypeOf ? Object.getPrototypeOf.bind() : function(e) {
                     return e.__proto__ || Object.getPrototypeOf(e)
                 })(e)
             }
-            var F = function(e) {
+            var L = function(e) {
                     return a.a.createElement("div", {
                         className: v.a.statContainer
                     }, a.a.createElement("div", {
@@ -606,14 +606,14 @@
                         key: "render",
                         value: function() {
                             return this.props.client ? this.props.client.standing ? this.props.client.standing[0] ? a.a.createElement("div", {
-                                className: u.isMobile ? y.a.mBody : y.a.body,
+                                className: u.isMobile ? b.a.mBody : b.a.body,
                                 style: {
                                     backgroundColor: "#0bc2cf"
                                 }
                             }, a.a.createElement(_.a, {
                                 title: "Play Blooket",
                                 desc: "Join a game of Blooket to answer questions and compete in a fierce clash to determine who is the best and what Blook will come out victorious."
-                            }), a.a.createElement(f.a, {
+                            }), a.a.createElement(g.a, {
                                 leftText: this.props.client.name,
                                 rightText: "Play Again",
                                 rightLink: "/play"
@@ -626,7 +626,7 @@
                                 plus: this.state.plus,
                                 myStat: "".concat(Object(k.l)(this.state.me.xp), " XP"),
                                 saveStats: this.saveStats,
-                                renderStandingStat: F,
+                                renderStandingStat: L,
                                 renderStats: function() {},
                                 customMessage: this.state.message,
                                 corrects: this.props.client.corrects,
@@ -643,7 +643,7 @@
                                 plus: this.props.client.plus,
                                 myStat: "".concat(Object(k.l)(this.state.me.xp), " XP"),
                                 saveStats: this.saveStats,
-                                renderStandingStat: F,
+                                renderStandingStat: L,
                                 renderStats: function() {},
                                 corrects: this.props.client.corrects,
                                 incorrects: this.props.client.incorrects,
@@ -651,7 +651,7 @@
                                 blockAccounts: !this.props.client.allowAccounts,
                                 tokenMultiplier: .3
                             }) : null, this.state.isBlocked ? a.a.createElement("div", {
-                                className: y.a.blockedText
+                                className: b.a.blockedText
                             }, "You were blocked from this game.") : null) : (Object(d.b)("PlayBrawlFinalPage cannot be rendered without this.props.client.standing[0]"), a.a.createElement(h.a, {
                                 to: "/play"
                             })) : (Object(d.b)("PlayBrawlFinalPage cannot be rendered without this.props.client.standing"), a.a.createElement(h.a, {
@@ -749,11 +749,11 @@
                 d = i.n(u),
                 p = i("+3eq"),
                 m = i("TSYQ"),
-                f = i.n(m),
-                g = i("wd/R"),
-                v = i.n(g),
-                b = (i("RiPy"), i("FKJl")),
-                y = i("HbJ1"),
+                g = i.n(m),
+                f = i("wd/R"),
+                v = i.n(f),
+                y = (i("RiPy"), i("FKJl")),
+                b = i("HbJ1"),
                 _ = i("+xn+"),
                 w = i("VgyX"),
                 x = i("kQZX"),
@@ -767,19 +767,21 @@
                 E = i("0oXL"),
                 M = i("LHn/"),
                 I = i("Afl9"),
-                B = i("5BnW"),
-                A = i("74sb"),
-                R = i("KPA1");
+                B = i("FoB2"),
+                A = i("5BnW"),
+                R = i("74sb"),
+                N = i("KPA1"),
+                z = i("8qja");
 
-            function N(e) {
-                return (N = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function(e) {
+            function F(e) {
+                return (F = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function(e) {
                     return typeof e
                 } : function(e) {
                     return e && "function" == typeof Symbol && e.constructor === Symbol && e !== Symbol.prototype ? "symbol" : typeof e
                 })(e)
             }
 
-            function z(e, t) {
+            function L(e, t) {
                 var i = Object.keys(e);
                 if (Object.getOwnPropertySymbols) {
                     var s = Object.getOwnPropertySymbols(e);
@@ -790,19 +792,19 @@
                 return i
             }
 
-            function L(e) {
+            function D(e) {
                 for (var t = 1; t < arguments.length; t++) {
                     var i = null != arguments[t] ? arguments[t] : {};
-                    t % 2 ? z(Object(i), !0).forEach((function(t) {
-                        F(e, t, i[t])
-                    })) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(i)) : z(Object(i)).forEach((function(t) {
+                    t % 2 ? L(Object(i), !0).forEach((function(t) {
+                        V(e, t, i[t])
+                    })) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(i)) : L(Object(i)).forEach((function(t) {
                         Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(i, t))
                     }))
                 }
                 return e
             }
 
-            function F(e, t, i) {
+            function V(e, t, i) {
                 return t in e ? Object.defineProperty(e, t, {
                     value: i,
                     enumerable: !0,
@@ -811,17 +813,17 @@
                 }) : e[t] = i, e
             }
 
-            function D(e) {
+            function U(e) {
                 return function(e) {
-                    if (Array.isArray(e)) return G(e)
+                    if (Array.isArray(e)) return H(e)
                 }(e) || function(e) {
                     if ("undefined" != typeof Symbol && null != e[Symbol.iterator] || null != e["@@iterator"]) return Array.from(e)
-                }(e) || U(e) || function() {
+                }(e) || q(e) || function() {
                     throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.")
                 }()
             }
 
-            function V(e, t) {
+            function G(e, t) {
                 return function(e) {
                     if (Array.isArray(e)) return e
                 }(e) || function(e, t) {
@@ -842,39 +844,39 @@
                         }
                     }
                     return r
-                }(e, t) || U(e, t) || function() {
+                }(e, t) || q(e, t) || function() {
                     throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.")
                 }()
             }
 
-            function U(e, t) {
+            function q(e, t) {
                 if (e) {
-                    if ("string" == typeof e) return G(e, t);
+                    if ("string" == typeof e) return H(e, t);
                     var i = Object.prototype.toString.call(e).slice(8, -1);
-                    return "Object" === i && e.constructor && (i = e.constructor.name), "Map" === i || "Set" === i ? Array.from(e) : "Arguments" === i || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(i) ? G(e, t) : void 0
+                    return "Object" === i && e.constructor && (i = e.constructor.name), "Map" === i || "Set" === i ? Array.from(e) : "Arguments" === i || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(i) ? H(e, t) : void 0
                 }
             }
 
-            function G(e, t) {
+            function H(e, t) {
                 (null == t || t > e.length) && (t = e.length);
                 for (var i = 0, s = new Array(t); i < t; i++) s[i] = e[i];
                 return s
             }
 
-            function q(e, t) {
+            function X(e, t) {
                 for (var i = 0; i < t.length; i++) {
                     var s = t[i];
                     s.enumerable = s.enumerable || !1, s.configurable = !0, "value" in s && (s.writable = !0), Object.defineProperty(e, s.key, s)
                 }
             }
 
-            function H(e, t) {
-                return (H = Object.setPrototypeOf ? Object.setPrototypeOf.bind() : function(e, t) {
+            function Y(e, t) {
+                return (Y = Object.setPrototypeOf ? Object.setPrototypeOf.bind() : function(e, t) {
                     return e.__proto__ = t, e
                 })(e, t)
             }
 
-            function X(e) {
+            function W(e) {
                 var t = function() {
                     if ("undefined" == typeof Reflect || !Reflect.construct) return !1;
                     if (Reflect.construct.sham) return !1;
@@ -886,32 +888,32 @@
                     }
                 }();
                 return function() {
-                    var i, s = J(e);
+                    var i, s = Q(e);
                     if (t) {
-                        var a = J(this).constructor;
+                        var a = Q(this).constructor;
                         i = Reflect.construct(s, arguments, a)
                     } else i = s.apply(this, arguments);
-                    return Y(this, i)
+                    return J(this, i)
                 }
             }
 
-            function Y(e, t) {
-                if (t && ("object" === N(t) || "function" == typeof t)) return t;
+            function J(e, t) {
+                if (t && ("object" === F(t) || "function" == typeof t)) return t;
                 if (void 0 !== t) throw new TypeError("Derived constructors may only return object or undefined");
-                return W(e)
+                return K(e)
             }
 
-            function W(e) {
+            function K(e) {
                 if (void 0 === e) throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
                 return e
             }
 
-            function J(e) {
-                return (J = Object.setPrototypeOf ? Object.getPrototypeOf.bind() : function(e) {
+            function Q(e) {
+                return (Q = Object.setPrototypeOf ? Object.getPrototypeOf.bind() : function(e) {
                     return e.__proto__ || Object.getPrototypeOf(e)
                 })(e)
             }
-            var Q = function(e) {
+            var Z = function(e) {
                 ! function(e, t) {
                     if ("function" != typeof t && null !== t) throw new TypeError("Super expression must either be null or a function");
                     e.prototype = Object.create(t && t.prototype, {
@@ -922,9 +924,9 @@
                         }
                     }), Object.defineProperty(e, "prototype", {
                         writable: !1
-                    }), t && H(e, t)
+                    }), t && Y(e, t)
                 }(n, e);
-                var t, i, s, r = X(n);
+                var t, i, s, r = W(n);
 
                 function n(e) {
                     var t;
@@ -937,14 +939,14 @@
                         totalXp: 0,
                         muted: !!e.host && e.host.muted,
                         userToBlock: ""
-                    }, t.ok = !1, t.alertContainer = a.a.createRef(), t.getClients = t.getClients.bind(W(t)), t.goNext = t.goNext.bind(W(t)), t.addAlert = t.addAlert.bind(W(t)), t.scrollToBottom = t.scrollToBottom.bind(W(t)), t.changeMuted = t.changeMuted.bind(W(t)), t.blockUser = t.blockUser.bind(W(t)), t.audio = new Audio(I.a), t.audio.muted = t.state.muted, t
+                    }, t.ok = !1, t.alertContainer = a.a.createRef(), t.getClients = t.getClients.bind(K(t)), t.goNext = t.goNext.bind(K(t)), t.addAlert = t.addAlert.bind(K(t)), t.scrollToBottom = t.scrollToBottom.bind(K(t)), t.changeMuted = t.changeMuted.bind(K(t)), t.blockUser = t.blockUser.bind(K(t)), t.audio = new Audio(z.a ? B.a : I.a), t.audio.muted = t.state.muted, t
                 }
                 return t = n, (i = [{
                     key: "componentDidMount",
                     value: function() {
                         var e = this;
                         if (this.props.host && this.props.host.settings) {
-                            if (this.audio.volume = .65, this.audio.play(), this.audio.addEventListener("ended", (function() {
+                            if (this.audio.volume = z.a ? .4 : .65, this.audio.play(), this.audio.addEventListener("ended", (function() {
                                     e.audio.currentTime = 0, e.audio.play()
                                 }), !1), this.props.liveGameController.setStage({
                                     stage: "brawl"
@@ -983,7 +985,7 @@
                                     r = !1,
                                     n = [];
                                 Object.entries(s).forEach((function(e) {
-                                    var i = V(e, 2),
+                                    var i = G(e, 2),
                                         s = i[0],
                                         a = i[1];
                                     if (n.push({
@@ -992,7 +994,7 @@
                                             xp: a.xp || 0
                                         }), a.up) {
                                         var r = a.up.split(":");
-                                        2 === r.length && R.a[r[0]] && t.addAlert(s, a.b, "upgraded ".concat(R.a[r[0]].title, " to Level ").concat(r[1]), r[0])
+                                        2 === r.length && N.a[r[0]] && t.addAlert(s, a.b, "upgraded ".concat(N.a[r[0]].title, " to Level ").concat(r[1]), r[0])
                                     }
                                 })), n.sort((function(e, t) {
                                     return t.xp - e.xp
@@ -1033,7 +1035,7 @@
                     key: "addAlert",
                     value: function(e, t, i, s) {
                         var a = this,
-                            r = [].concat(D(this.state.alerts), [{
+                            r = [].concat(U(this.state.alerts), [{
                                 name: e,
                                 blook: t,
                                 msg: i,
@@ -1076,7 +1078,7 @@
                                 return e.name
                             })).indexOf(e),
                             s = t.length; - 1 !== i && (s = t[i].place, t.splice(i, 1)), t = t.map((function(e) {
-                            return L(L({}, e), {}, {
+                            return D(D({}, e), {}, {
                                 place: e.place > s ? e.place - 1 : e.place
                             })
                         })), this.setState({
@@ -1101,7 +1103,7 @@
                             desc: "Host a game of Blooket with any question set. Then, have players join and answer questions to compete in an action-packed activity."
                         }), a.a.createElement(x.a, {
                             left: "Blooket",
-                            center: "Time" === this.props.host.settings.mode ? this.state.timer : "Goal: ".concat(Object(A.l)(this.props.host.settings.amount)),
+                            center: "Time" === this.props.host.settings.mode ? this.state.timer : "Goal: ".concat(Object(R.l)(this.props.host.settings.amount)),
                             right: this.props.host.settings.lateJoin ? "ID: ".concat(this.props.host.id) : "",
                             muted: this.state.muted,
                             changeMuted: this.changeMuted,
@@ -1149,7 +1151,7 @@
                             }
                         }, (function(t) {
                             return a.a.createElement("div", {
-                                className: f()(S.a.left, S.a.invisibleScrollbar)
+                                className: g()(S.a.left, S.a.invisibleScrollbar)
                             }, t.map((function(t, i) {
                                 var s = t.key,
                                     r = t.data,
@@ -1193,10 +1195,10 @@
                                     mode: "single",
                                     forceSingleModeWidth: !1,
                                     min: 1,
-                                    max: Object(A.v)("5vw")
+                                    max: Object(R.v)("5vw")
                                 }, r.place), a.a.createElement("div", {
                                     className: S.a.superPlaceText
-                                }, Object(A.e)(r.place))), a.a.createElement(E.a, {
+                                }, Object(R.e)(r.place))), a.a.createElement(E.a, {
                                     name: r.blook,
                                     className: S.a.blookBox
                                 }), a.a.createElement(h.Textfit, {
@@ -1204,7 +1206,7 @@
                                     mode: "single",
                                     forceSingleModeWidth: !1,
                                     min: 1,
-                                    max: Object(A.v)("4vw")
+                                    max: Object(R.v)("4vw")
                                 }, r.name), a.a.createElement("div", {
                                     className: S.a.xpContainer
                                 }, a.a.createElement(h.Textfit, {
@@ -1212,8 +1214,8 @@
                                     mode: "single",
                                     forceSingleModeWidth: !1,
                                     min: 1,
-                                    max: Object(A.v)("5vw")
-                                }, r.xp < 1e4 ? Object(A.l)(r.xp) : Object(A.s)(r.xp)), a.a.createElement("img", {
+                                    max: Object(R.v)("5vw")
+                                }, r.xp < 1e4 ? Object(R.l)(r.xp) : Object(R.s)(r.xp)), a.a.createElement("img", {
                                     src: M.a.basic.xp,
                                     alt: "Xp",
                                     className: S.a.xpIcon,
@@ -1221,7 +1223,7 @@
                                 })))
                             })))
                         })), a.a.createElement("div", {
-                            className: f()(S.a.chatroom, S.a.invisibleScrollbar),
+                            className: g()(S.a.chatroom, S.a.invisibleScrollbar),
                             id: "alerts"
                         }, a.a.createElement("img", {
                             src: "https://media.blooket.com/image/upload/v1663052606/Media/survivor/LEADERBOARD_CRACKS_left.svg",
@@ -1244,7 +1246,7 @@
                         })) : a.a.createElement("div", {
                             className: S.a.noAlerts
                         }, a.a.createElement("i", {
-                            className: f()(S.a.noAlertsIcon, "fas fa-hourglass-start")
+                            className: g()(S.a.noAlertsIcon, "fas fa-hourglass-start")
                         }), a.a.createElement("div", {
                             className: S.a.noAlertsText
                         }, "Waiting To Brawl..."))), a.a.createElement("div", {
@@ -1261,7 +1263,7 @@
                             draggable: !1
                         }), a.a.createElement("div", {
                             className: S.a.totalXpText
-                        }, Object(A.l)(this.state.totalXp)), a.a.createElement("img", {
+                        }, Object(R.l)(this.state.totalXp)), a.a.createElement("img", {
                             src: M.a.basic.xp,
                             alt: "Xp",
                             className: S.a.totalXpIcon,
@@ -1282,13 +1284,13 @@
                                 },
                                 color: "blue"
                             }
-                        }) : null) : (Object(b.b)("HostBrawlPage cannot be rendered without this.props.host.settings"), void(window.location.href = "".concat("https://dashboard.blooket.com", "/"))) : (Object(b.b)("HostBrawlPage cannot be rendered without this.props.host"), void(window.location.href = "".concat("https://dashboard.blooket.com", "/")))
+                        }) : null) : (Object(y.b)("HostBrawlPage cannot be rendered without this.props.host.settings"), void(window.location.href = "".concat("https://dashboard.blooket.com", "/"))) : (Object(y.b)("HostBrawlPage cannot be rendered without this.props.host"), void(window.location.href = "".concat("https://dashboard.blooket.com", "/")))
                     }
-                }]) && q(t.prototype, i), s && q(t, s), Object.defineProperty(t, "prototype", {
+                }]) && X(t.prototype, i), s && X(t, s), Object.defineProperty(t, "prototype", {
                     writable: !1
                 }), n
             }(a.a.Component);
-            Q.propTypes = {
+            Z.propTypes = {
                 host: l.a.object,
                 liveGameController: l.a.object,
                 history: l.a.object,
@@ -1304,9 +1306,9 @@
                 return Object(r.b)({
                     updateStandings: _.b,
                     deleteHost: w.d,
-                    setMuted: y.a
+                    setMuted: b.a
                 }, e)
-            }))(Object(B.d)(Q)))
+            }))(Object(A.d)(Z)))
         },
         KPA1: function(e, t, i) {
             "use strict";
@@ -1497,10 +1499,10 @@
                     },
                     jesterBall: {
                         active: !0,
-                        title: "Juggling Balls",
+                        title: "Juggling Spheres",
                         img: "https://media.blooket.com/image/upload/v1655161323/Media/survivor/Jester_lvl1.svg",
                         levels: [{
-                            desc: "Throw arching Jester juggling balls",
+                            desc: "Throw arching Jester juggling spheres",
                             dmg: 10,
                             maxTargets: 3,
                             fireRate: 4e3,
@@ -1513,21 +1515,21 @@
                             evolution: 0,
                             knockback: .5
                         }, {
-                            desc: "Fire 1 more ball",
+                            desc: "Fire 1 more sphere",
                             numProjectiles: 1
                         }, {
                             desc: "Pass through 2 more enemies",
                             maxTargets: 2
                         }, {
-                            desc: "Fire 1 more ball",
+                            desc: "Fire 1 more sphere",
                             numProjectiles: 1
                         }, {
-                            desc: "Spiked Balls: +15 damage per ball",
+                            desc: "Spiked Spheres: +15 damage per sphere",
                             texture: "jesterBall-2",
                             width: 10,
                             dmg: 15
                         }, {
-                            desc: "Fire 1 more ball",
+                            desc: "Fire 1 more sphere",
                             numProjectiles: 1
                         }, {
                             desc: "Pass through 2 more enemies",
@@ -1536,10 +1538,10 @@
                             desc: "Pass through 2 more enemies",
                             maxTargets: 2
                         }, {
-                            desc: "+15 damage per ball",
+                            desc: "+15 damage per sphere",
                             dmg: 15
                         }, {
-                            desc: "Wheel of Balls: Fire balls in all directions",
+                            desc: "Wheel of Spheres: Fire spheres in all directions",
                             width: 15,
                             numProjectiles: 4,
                             evolution: 1,
@@ -2289,7 +2291,7 @@
                 p = i("FKJl"),
                 m = i("x6kE");
 
-            function f(e, t, i) {
+            function g(e, t, i) {
                 return {
                     type: m.b,
                     mode: e,
@@ -2298,15 +2300,15 @@
                 }
             }
 
-            function g(e) {
+            function f(e) {
                 return {
                     type: m.a,
                     resultId: e
                 }
             }
             var v = i("E8Bj"),
-                b = i("Xst1"),
-                y = i.n(b),
+                y = i("Xst1"),
+                b = i.n(y),
                 _ = i("77zJ"),
                 w = i.n(_),
                 x = i("Rnav"),
@@ -2314,19 +2316,20 @@
                 j = i("LHn/"),
                 C = i("0oXL"),
                 O = i("7X13"),
-                T = i("qnYv");
+                T = i("qnYv"),
+                P = i("8qja");
 
-            function P(e) {
-                return (P = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function(e) {
+            function S(e) {
+                return (S = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function(e) {
                     return typeof e
                 } : function(e) {
                     return e && "function" == typeof Symbol && e.constructor === Symbol && e !== Symbol.prototype ? "symbol" : typeof e
                 })(e)
             }
 
-            function S() {
+            function E() {
                 /*! regenerator-runtime -- Copyright (c) 2014-present, Facebook, Inc. -- license (MIT): https://github.com/facebook/regenerator/blob/main/LICENSE */
-                S = function() {
+                E = function() {
                     return e
                 };
                 var e = {},
@@ -2419,12 +2422,12 @@
                 o(m, a, (function() {
                     return this
                 }));
-                var f = Object.getPrototypeOf,
-                    g = f && f(f(j([])));
-                g && g !== t && i.call(g, a) && (m = g);
+                var g = Object.getPrototypeOf,
+                    f = g && g(g(j([])));
+                f && f !== t && i.call(f, a) && (m = f);
                 var v = p.prototype = u.prototype = Object.create(m);
 
-                function b(e) {
+                function y(e) {
                     ["next", "throw", "return"].forEach((function(t) {
                         o(e, t, (function(e) {
                             return this._invoke(t, e)
@@ -2432,7 +2435,7 @@
                     }))
                 }
 
-                function y(e, t) {
+                function b(e, t) {
                     var s;
                     this._invoke = function(a, r) {
                         function n() {
@@ -2442,7 +2445,7 @@
                                     if ("throw" !== l.type) {
                                         var h = l.arg,
                                             u = h.value;
-                                        return u && "object" == P(u) && i.call(u, "__await") ? t.resolve(u.__await).then((function(e) {
+                                        return u && "object" == S(u) && i.call(u, "__await") ? t.resolve(u.__await).then((function(e) {
                                             s("next", e, n, o)
                                         }), (function(e) {
                                             s("throw", e, n, o)
@@ -2528,15 +2531,15 @@
                     return {
                         __await: e
                     }
-                }, b(y.prototype), o(y.prototype, r, (function() {
+                }, y(b.prototype), o(b.prototype, r, (function() {
                     return this
-                })), e.AsyncIterator = y, e.async = function(t, i, s, a, r) {
+                })), e.AsyncIterator = b, e.async = function(t, i, s, a, r) {
                     void 0 === r && (r = Promise);
-                    var n = new y(l(t, i, s, a), r);
+                    var n = new b(l(t, i, s, a), r);
                     return e.isGeneratorFunction(i) ? n : n.next().then((function(e) {
                         return e.done ? e.value : n.next()
                     }))
-                }, b(v), o(v, n, "Generator"), o(v, a, (function() {
+                }, y(v), o(v, n, "Generator"), o(v, a, (function() {
                     return this
                 })), o(v, "toString", (function() {
                     return "[object Generator]"
@@ -2635,7 +2638,7 @@
                 }, e
             }
 
-            function E(e, t, i, s, a, r, n) {
+            function M(e, t, i, s, a, r, n) {
                 try {
                     var o = e[r](n),
                         l = o.value
@@ -2645,7 +2648,7 @@
                 o.done ? t(l) : Promise.resolve(l).then(s, a)
             }
 
-            function M(e) {
+            function I(e) {
                 return function() {
                     var t = this,
                         i = arguments;
@@ -2653,31 +2656,31 @@
                         var r = e.apply(t, i);
 
                         function n(e) {
-                            E(r, s, a, n, o, "next", e)
+                            M(r, s, a, n, o, "next", e)
                         }
 
                         function o(e) {
-                            E(r, s, a, n, o, "throw", e)
+                            M(r, s, a, n, o, "throw", e)
                         }
                         n(void 0)
                     }))
                 }
             }
 
-            function I(e, t) {
+            function B(e, t) {
                 for (var i = 0; i < t.length; i++) {
                     var s = t[i];
                     s.enumerable = s.enumerable || !1, s.configurable = !0, "value" in s && (s.writable = !0), Object.defineProperty(e, s.key, s)
                 }
             }
 
-            function B(e, t) {
-                return (B = Object.setPrototypeOf ? Object.setPrototypeOf.bind() : function(e, t) {
+            function A(e, t) {
+                return (A = Object.setPrototypeOf ? Object.setPrototypeOf.bind() : function(e, t) {
                     return e.__proto__ = t, e
                 })(e, t)
             }
 
-            function A(e) {
+            function R(e) {
                 var t = function() {
                     if ("undefined" == typeof Reflect || !Reflect.construct) return !1;
                     if (Reflect.construct.sham) return !1;
@@ -2689,28 +2692,28 @@
                     }
                 }();
                 return function() {
-                    var i, s = z(e);
+                    var i, s = F(e);
                     if (t) {
-                        var a = z(this).constructor;
+                        var a = F(this).constructor;
                         i = Reflect.construct(s, arguments, a)
                     } else i = s.apply(this, arguments);
-                    return R(this, i)
+                    return N(this, i)
                 }
             }
 
-            function R(e, t) {
-                if (t && ("object" === P(t) || "function" == typeof t)) return t;
+            function N(e, t) {
+                if (t && ("object" === S(t) || "function" == typeof t)) return t;
                 if (void 0 !== t) throw new TypeError("Derived constructors may only return object or undefined");
-                return N(e)
+                return z(e)
             }
 
-            function N(e) {
+            function z(e) {
                 if (void 0 === e) throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
                 return e
             }
 
-            function z(e) {
-                return (z = Object.setPrototypeOf ? Object.getPrototypeOf.bind() : function(e) {
+            function F(e) {
+                return (F = Object.setPrototypeOf ? Object.getPrototypeOf.bind() : function(e) {
                     return e.__proto__ || Object.getPrototypeOf(e)
                 })(e)
             }
@@ -2725,9 +2728,9 @@
                         }
                     }), Object.defineProperty(e, "prototype", {
                         writable: !1
-                    }), t && B(e, t)
+                    }), t && A(e, t)
                 }(l, e);
-                var t, i, s, r, n, o = A(l);
+                var t, i, s, r, n, o = R(l);
 
                 function l(e) {
                     var t;
@@ -2736,13 +2739,13 @@
                     }(this, l), (t = o.call(this, e)).state = {
                         questions: [],
                         ready: !1
-                    }, t.redirect = !1, t.here = !0, t.startGame = t.startGame.bind(N(t)), t
+                    }, t.redirect = !1, t.here = !0, t.startGame = t.startGame.bind(z(t)), t
                 }
                 return t = l, (i = [{
                     key: "componentDidMount",
-                    value: (n = M(S().mark((function e() {
+                    value: (n = I(E().mark((function e() {
                         var t = this;
-                        return S().wrap((function(e) {
+                        return E().wrap((function(e) {
                             for (;;) switch (e.prev = e.next) {
                                 case 0:
                                     if (this.props.id || this.props.client && this.props.client.hwId) {
@@ -2795,9 +2798,9 @@
                     }
                 }, {
                     key: "startGame",
-                    value: (r = M(S().mark((function e() {
+                    value: (r = I(E().mark((function e() {
                         var t = this;
-                        return S().wrap((function(e) {
+                        return E().wrap((function(e) {
                             for (;;) switch (e.prev = e.next) {
                                 case 0:
                                     if (this.state.ready) {
@@ -2841,7 +2844,7 @@
                         return this.props.client && this.props.client.hwId ? this.redirect = !1 : this.state.notLoggedIn && (Object(p.b)("PlayBrawlStartPage cannot render if this.state.notLoggedIn"), this.redirect = !0), (this.props.id || this.props.client && this.props.client.hwId) && (!this.state.ready || 0 !== this.state.questions.length) || (Object(p.b)("PlayBrawlStartPage cannot render without either a client and hwId or more than 0 questions"), this.redirect = !0), this.redirect ? a.a.createElement(c.c, {
                             to: "/play"
                         }) : a.a.createElement("div", {
-                            className: h.isMobile ? y.a.mBody : y.a.body
+                            className: h.isMobile ? b.a.mBody : b.a.body
                         }, a.a.createElement(k.a, {
                             title: "Start Monster Brawl | Blooket",
                             desc: "Start a new game of Blooket's Monster Brawl."
@@ -2849,7 +2852,7 @@
                             name: this.props.client && this.props.client.name ? this.props.client.name : "",
                             noRight: !0
                         }), a.a.createElement("div", {
-                            className: d()(y.a.regularBody, w.a.background),
+                            className: d()(b.a.regularBody, w.a.background),
                             style: {
                                 backgroundImage: "url(".concat(j.a.basic.snowTile, ")")
                             },
@@ -2869,11 +2872,11 @@
                             tabIndex: 0,
                             onClick: this.startGame
                         }, "Start Game"))), a.a.createElement(C.a, {
-                            name: "Yeti",
+                            name: (P.a, "Yeti"),
                             className: w.a.blook
                         })))
                     }
-                }]) && I(t.prototype, i), s && I(t, s), Object.defineProperty(t, "prototype", {
+                }]) && B(t.prototype, i), s && B(t, s), Object.defineProperty(t, "prototype", {
                     writable: !1
                 }), l
             }(a.a.Component);
@@ -2892,8 +2895,8 @@
                 }
             }), (function(e) {
                 return Object(r.b)({
-                    setSoloGame: f,
-                    addResultId: g
+                    setSoloGame: g,
+                    addResultId: f
                 }, e)
             }))(L)))
         },
@@ -2911,23 +2914,23 @@
                 d = i("TSYQ"),
                 p = i.n(d),
                 m = i("cpGi"),
-                f = i("FKJl"),
-                g = i("1O+K"),
-                v = i.n(g);
+                g = i("FKJl"),
+                f = i("1O+K"),
+                v = i.n(f);
 
-            function b(e, t) {
+            function y(e, t) {
                 for (var i = 0; i < t.length; i++) {
                     var s = t[i];
                     s.enumerable = s.enumerable || !1, s.configurable = !0, "value" in s && (s.writable = !0), Object.defineProperty(e, s.key, s)
                 }
             }
 
-            function y(e, t, i) {
-                return t && b(e.prototype, t), i && b(e, i), Object.defineProperty(e, "prototype", {
+            function b(e, t, i) {
+                return t && y(e.prototype, t), i && y(e, i), Object.defineProperty(e, "prototype", {
                     writable: !1
                 }), e
             }
-            var _ = window.MonsterBrawlPlayerVariable = new(y((function e() {
+            var _ = new(b((function e() {
                     ! function(e, t) {
                         if (!(e instanceof t)) throw new TypeError("Cannot call a class as a function")
                     }(this, e), this.player = null, this.scene = null, this.hp = 100, this.hpBar = null, this.playerDmgTimeout = null, this.abilities = {}, this.projectiles = {}, this.drops = {}, this.dmgCounts = {}, this.obstacles = null, this.enemies = null, this.allXP = null, this.texts = null, this.dir = {
@@ -3071,7 +3074,7 @@
                         this.lifespan -= t, this.lifespan <= 0 && (this.setActive(!1), this.setVisible(!1))
                     }
                 }),
-                L = new v.a.Class({
+                F = new v.a.Class({
                     Extends: v.a.GameObjects.Image,
                     initialize: function() {
                         v.a.GameObjects.Image.call(this, _.scene, 0, 0, "horseshoe-1"), this.setDepth(3), this.name = "horseshoe", this.lifespan = 0, this.targets = []
@@ -3098,7 +3101,7 @@
                         this.posAngle += i * t, this.setPosition(_.player.x, _.player.y), v.a.Math.RotateAroundDistance(this, _.player.x, _.player.y, v.a.Math.DegToRad(this.posAngle), T(150)), this.setRotation(v.a.Math.Angle.Between(_.player.x, _.player.y, this.x, this.y) - Math.PI / 2), this.lifespan <= 0 && (this.setActive(!1), this.setVisible(!1))
                     }
                 }),
-                F = function(e, t) {
+                L = function(e, t) {
                     t.body.velocity.normalize().scale(T(_.abilities.shell.speed)), 2 === _.abilities.shell.evolution && t.targets.length > 0 && (t.targets = t.targets.fill(null), t.targets[t.targets.length - 1] = e)
                 },
                 D = new v.a.Class({
@@ -3256,7 +3259,7 @@
                         this.lifespan -= t, this.lifespan <= 0 && (this.setActive(!1), this.setVisible(!1))
                     }
                 }),
-                Q = new v.a.Class({
+                K = new v.a.Class({
                     Extends: v.a.GameObjects.Image,
                     initialize: function() {
                         v.a.GameObjects.Image.call(this, _.scene, 0, 0, "laser-1"), this.setDepth(3), this.name = "laser", this.lifespan = 0, this.targets = []
@@ -3272,7 +3275,7 @@
                         this.lifespan -= t, this.lifespan <= 0 && (this.setActive(!1), this.setVisible(!1))
                     }
                 }),
-                K = new v.a.Class({
+                Q = new v.a.Class({
                     Extends: v.a.GameObjects.Image,
                     initialize: function() {
                         v.a.GameObjects.Image.call(this, _.scene, 0, 0, "darkEnergy-1"), this.setDepth(2), this.name = "darkEnergy", this.targets = []
@@ -3608,9 +3611,11 @@
                         this.dx = Math.cos(i), this.dy = Math.sin(i), this.backwardsTime = Math.max(0, this.backwardsTime - t), this.dmgCd -= t, this.body.setVelocity(this.dx * T(this.speed) * (this.backwardsTime ? -5 : 1), this.dy * T(this.speed) * (this.backwardsTime ? -5 : 1))
                     }
                 }),
-                le = window.MonsterBrawlImageData = {
+                le = i("LHn/"),
+                ce = i("8qja"),
+                he = {
                     tile: {
-                        url: i("LHn/").a.basic.snowTile,
+                        url: le.a.basic.snowTile,
                         width: 400,
                         nonVector: !0
                     },
@@ -3900,86 +3905,94 @@
                         height: 69
                     },
                     slime: {
-                        url: "https://media.blooket.com/image/upload/v1656549021/Media/survivor/blooks/Ice_Slime.svg",
+                        url: ce.a ? x.a.Zombie : "https://media.blooket.com/image/upload/v1656549021/Media/survivor/blooks/Ice_Slime.svg",
                         width: 50,
                         height: 58
                     },
                     bat: {
-                        url: "https://media.blooket.com/image/upload/v1656549023/Media/survivor/blooks/Ice_Bat.svg",
+                        url: ce.a ? x.a["Swamp Monster"] : "https://media.blooket.com/image/upload/v1656549023/Media/survivor/blooks/Ice_Bat.svg",
                         width: 60,
                         height: 69
                     },
                     fossil: {
-                        url: "https://media.blooket.com/image/upload/v1656549023/Media/survivor/blooks/Ice_Fossil.svg",
+                        url: ce.a ? x.a.Vampire : "https://media.blooket.com/image/upload/v1656549023/Media/survivor/blooks/Ice_Fossil.svg",
                         width: 80,
                         height: 92
                     },
                     bush: {
-                        url: "https://media.blooket.com/image/upload/v1656549021/Media/survivor/blooks/Bush_Monster.svg",
+                        url: ce.a ? x.a.Frankenstein : "https://media.blooket.com/image/upload/v1656549021/Media/survivor/blooks/Bush_Monster.svg",
                         width: 70,
                         height: 91
                     },
                     bug: {
-                        url: "https://media.blooket.com/image/upload/v1656549023/Media/survivor/blooks/Ice_Bug.svg",
+                        url: ce.a ? x.a.Pumpkin : "https://media.blooket.com/image/upload/v1656549023/Media/survivor/blooks/Ice_Bug.svg",
                         width: 60,
                         height: 69
                     },
                     crab: {
-                        url: "https://media.blooket.com/image/upload/v1656549023/Media/survivor/blooks/Ice_Crab.svg",
+                        url: ce.a ? x.a["Spooky Pumpkin"] : "https://media.blooket.com/image/upload/v1656549023/Media/survivor/blooks/Ice_Crab.svg",
                         width: 80,
                         height: 92
                     },
                     "giant-crab": {
-                        url: "https://media.blooket.com/image/upload/v1656549023/Media/survivor/blooks/Ice_Crab.svg",
+                        url: ce.a ? x.a["Spooky Pumpkin"] : "https://media.blooket.com/image/upload/v1656549023/Media/survivor/blooks/Ice_Crab.svg",
                         width: 140,
                         height: 161
                     },
                     "troll-1": {
-                        url: "https://media.blooket.com/image/upload/v1656549021/Media/survivor/blooks/Troll_2.svg",
+                        url: ce.a ? x.a.Mummy : "https://media.blooket.com/image/upload/v1656549021/Media/survivor/blooks/Troll_2.svg",
                         width: 70,
                         height: 91
                     },
                     "troll-2": {
-                        url: "https://media.blooket.com/image/upload/v1656549021/Media/survivor/blooks/Troll_1.svg",
+                        url: ce.a ? x.a["Spooky Mummy"] : "https://media.blooket.com/image/upload/v1656549021/Media/survivor/blooks/Troll_1.svg",
                         width: 90,
                         height: 104
                     },
                     "giant-troll": {
-                        url: "https://media.blooket.com/image/upload/v1656549021/Media/survivor/blooks/Troll_1.svg",
+                        url: ce.a ? x.a["Spooky Mummy"] : "https://media.blooket.com/image/upload/v1656549021/Media/survivor/blooks/Troll_1.svg",
                         width: 160,
                         height: 184
                     },
                     elemental: {
-                        url: "https://media.blooket.com/image/upload/v1656549023/Media/survivor/blooks/Ice_Elemental.svg",
+                        url: ce.a ? x.a.Werewolf : "https://media.blooket.com/image/upload/v1656549023/Media/survivor/blooks/Ice_Elemental.svg",
                         width: 80,
                         height: 92
                     },
                     rock: {
-                        url: "https://media.blooket.com/image/upload/v1656549021/Media/survivor/blooks/Rock_Monster.svg",
+                        url: ce.a ? x.a.Ghost : "https://media.blooket.com/image/upload/v1656549021/Media/survivor/blooks/Rock_Monster.svg",
                         width: 100,
                         height: 115
                     },
                     "giant-rock": {
-                        url: "https://media.blooket.com/image/upload/v1656549021/Media/survivor/blooks/Rock_Monster.svg",
+                        url: ce.a ? x.a["Spooky Ghost"] : "https://media.blooket.com/image/upload/v1656549021/Media/survivor/blooks/Rock_Monster.svg",
                         width: 180,
                         height: 207
                     },
                     yeti: {
-                        url: "https://media.blooket.com/image/upload/v1656549021/Media/survivor/blooks/Yeti.svg",
+                        url: ce.a ? "https://media.blooket.com/image/upload/v1666156441/Media/spooky/monsterBrawl/pumpkinKing.svg" : "https://media.blooket.com/image/upload/v1656549021/Media/survivor/blooks/Yeti.svg",
                         width: 140,
                         height: 161
                     },
                     "giant-yeti": {
-                        url: "https://media.blooket.com/image/upload/v1656549021/Media/survivor/blooks/Yeti.svg",
+                        url: ce.a ? "https://media.blooket.com/image/upload/v1666156441/Media/spooky/monsterBrawl/pumpkinKing.svg" : "https://media.blooket.com/image/upload/v1656549021/Media/survivor/blooks/Yeti.svg",
                         width: 220,
                         height: 253
                     },
                     "red-slime": {
-                        url: "https://media.blooket.com/image/upload/v1591739668/Blooks/redSlimeMonster.svg",
+                        url: ce.a ? x.a["Haunted Pumpkin"] : "https://media.blooket.com/image/upload/v1591739668/Blooks/redSlimeMonster.svg",
                         width: 120,
                         height: 138
                     },
-                    "obstacle-1": {
+                    "obstacle-1": ce.a ? {
+                        url: "https://media.blooket.com/image/upload/v1666156447/Media/spooky/monsterBrawl/Pumpkin_obstacle_v1.svg",
+                        width: 100,
+                        height: 89,
+                        hitbox: {
+                            x: 80,
+                            y: 60
+                        }
+                    } : {
                         url: "https://media.blooket.com/image/upload/v1660005083/Media/survivor/New_Obstacle_1.svg",
                         width: 100,
                         height: 78,
@@ -3988,7 +4001,15 @@
                             y: 50
                         }
                     },
-                    "obstacle-2": {
+                    "obstacle-2": ce.a ? {
+                        url: "https://media.blooket.com/image/upload/v1666156447/Media/spooky/monsterBrawl/Pumpkin_Face_obstacle_v1.svg",
+                        width: 100,
+                        height: 85,
+                        hitbox: {
+                            x: 80,
+                            y: 60
+                        }
+                    } : {
                         url: "https://media.blooket.com/image/upload/v1660005083/Media/survivor/New_Obstacle_2.svg",
                         width: 85,
                         height: 169,
@@ -3997,7 +4018,15 @@
                             y: 140
                         }
                     },
-                    "obstacle-3": {
+                    "obstacle-3": ce.a ? {
+                        url: "https://media.blooket.com/image/upload/v1666156447/Media/spooky/monsterBrawl/Treetrunk_1.svg",
+                        width: 120,
+                        height: 70,
+                        hitbox: {
+                            x: 110,
+                            y: 40
+                        }
+                    } : {
                         url: "https://media.blooket.com/image/upload/v1660005083/Media/survivor/New_Obstacle_3_v1.svg",
                         width: 100,
                         height: 105,
@@ -4006,7 +4035,15 @@
                             y: 75
                         }
                     },
-                    "obstacle-4": {
+                    "obstacle-4": ce.a ? {
+                        url: "https://media.blooket.com/image/upload/v1666156447/Media/spooky/monsterBrawl/Treetrunk_2.svg",
+                        width: 100,
+                        height: 90,
+                        hitbox: {
+                            x: 65,
+                            y: 60
+                        }
+                    } : {
                         url: "https://media.blooket.com/image/upload/v1660005083/Media/survivor/New_Obstacle_4.svg",
                         width: 100,
                         height: 88,
@@ -4015,7 +4052,15 @@
                             y: 63
                         }
                     },
-                    "obstacle-5": {
+                    "obstacle-5": ce.a ? {
+                        url: "https://media.blooket.com/image/upload/v1666156447/Media/spooky/monsterBrawl/Pumpkin_obstacle_v2.svg",
+                        width: 100,
+                        height: 91,
+                        hitbox: {
+                            x: 80,
+                            y: 65
+                        }
+                    } : {
                         url: "https://media.blooket.com/image/upload/v1660005083/Media/survivor/New_Obstacle_5.svg",
                         width: 100,
                         height: 70,
@@ -4025,18 +4070,18 @@
                         }
                     }
                 },
-                ce = new v.a.Class({
+                ue = new v.a.Class({
                     Extends: v.a.GameObjects.Image,
                     initialize: function() {
                         v.a.GameObjects.Image.call(this, _.scene, 0, 0, "obstacle-1"), this.setDepth(13)
                     },
                     spawn: function(e, t, i) {
-                        this.setTexture(e), this.setScale(O(this, le[e].width) * Object(w.n)(.95, 1.2));
-                        var s = le[e].hitbox;
+                        this.setTexture(e), this.setScale(O(this, he[e].width) * Object(w.n)(.95, 1.2));
+                        var s = he[e].hitbox;
                         this.body.setSize(s.x, s.y, !0), this.setPosition(t, i)
                     }
                 }),
-                he = [{
+                de = [{
                     enemies: ["slime"],
                     amounts: [10],
                     interval: 500
@@ -4273,7 +4318,7 @@
                     amounts: [50],
                     interval: 50
                 }],
-                ue = new v.a.Class({
+                pe = new v.a.Class({
                     Extends: v.a.GameObjects.Graphics,
                     initialize: function() {
                         v.a.GameObjects.Graphics.call(this, _.scene, 0, 0), this.setDepth(15)
@@ -4287,10 +4332,10 @@
                         this.setPosition(i - (e + t) / 2, s), this.fillStyle(0), this.fillRect(0, 0, e + t, T(10)), this.fillStyle(65280), this.fillRect(0, 0, (e + t) * (_.hp / 100), T(10))
                     }
                 }),
-                de = function(e, t) {
+                me = function(e, t) {
                     !0 === e.active && !0 === t.active && (t.setActive(!1), t.setVisible(!1), _.hp = Math.min(100, _.hp + 15))
                 },
-                pe = new v.a.Class({
+                ge = new v.a.Class({
                     Extends: v.a.GameObjects.Image,
                     initialize: function() {
                         v.a.GameObjects.Image.call(this, _.scene, 0, 0, "cheese"), this.setScale(O(this, 35)), this.setDepth(1)
@@ -4299,10 +4344,10 @@
                         this.setActive(!0), this.setVisible(!0), this.setPosition(e, t)
                     }
                 }),
-                me = function(e, t) {
+                fe = function(e, t) {
                     !0 === e.active && !0 === t.active && (t.setActive(!1), t.setVisible(!1), _.magnetTime = 1500)
                 },
-                fe = new v.a.Class({
+                ve = new v.a.Class({
                     Extends: v.a.GameObjects.Image,
                     initialize: function() {
                         v.a.GameObjects.Image.call(this, _.scene, 0, 0, "magnet"), this.setScale(O(this, 35)), this.setDepth(1)
@@ -4312,15 +4357,15 @@
                     }
                 });
 
-            function ge(e) {
-                return (ge = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function(e) {
+            function ye(e) {
+                return (ye = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function(e) {
                     return typeof e
                 } : function(e) {
                     return e && "function" == typeof Symbol && e.constructor === Symbol && e !== Symbol.prototype ? "symbol" : typeof e
                 })(e)
             }
 
-            function ve(e, t) {
+            function be(e, t) {
                 return function(e) {
                     if (Array.isArray(e)) return e
                 }(e) || function(e, t) {
@@ -4343,36 +4388,36 @@
                     return r
                 }(e, t) || function(e, t) {
                     if (!e) return;
-                    if ("string" == typeof e) return be(e, t);
+                    if ("string" == typeof e) return _e(e, t);
                     var i = Object.prototype.toString.call(e).slice(8, -1);
                     "Object" === i && e.constructor && (i = e.constructor.name);
                     if ("Map" === i || "Set" === i) return Array.from(e);
-                    if ("Arguments" === i || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(i)) return be(e, t)
+                    if ("Arguments" === i || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(i)) return _e(e, t)
                 }(e, t) || function() {
                     throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.")
                 }()
             }
 
-            function be(e, t) {
+            function _e(e, t) {
                 (null == t || t > e.length) && (t = e.length);
                 for (var i = 0, s = new Array(t); i < t; i++) s[i] = e[i];
                 return s
             }
 
-            function ye(e, t) {
+            function we(e, t) {
                 for (var i = 0; i < t.length; i++) {
                     var s = t[i];
                     s.enumerable = s.enumerable || !1, s.configurable = !0, "value" in s && (s.writable = !0), Object.defineProperty(e, s.key, s)
                 }
             }
 
-            function _e(e, t) {
-                return (_e = Object.setPrototypeOf ? Object.setPrototypeOf.bind() : function(e, t) {
+            function xe(e, t) {
+                return (xe = Object.setPrototypeOf ? Object.setPrototypeOf.bind() : function(e, t) {
                     return e.__proto__ = t, e
                 })(e, t)
             }
 
-            function we(e) {
+            function ke(e) {
                 var t = function() {
                     if ("undefined" == typeof Reflect || !Reflect.construct) return !1;
                     if (Reflect.construct.sham) return !1;
@@ -4384,17 +4429,17 @@
                     }
                 }();
                 return function() {
-                    var i, s = ke(e);
+                    var i, s = Ce(e);
                     if (t) {
-                        var a = ke(this).constructor;
+                        var a = Ce(this).constructor;
                         i = Reflect.construct(s, arguments, a)
                     } else i = s.apply(this, arguments);
-                    return xe(this, i)
+                    return je(this, i)
                 }
             }
 
-            function xe(e, t) {
-                if (t && ("object" === ge(t) || "function" == typeof t)) return t;
+            function je(e, t) {
+                if (t && ("object" === ye(t) || "function" == typeof t)) return t;
                 if (void 0 !== t) throw new TypeError("Derived constructors may only return object or undefined");
                 return function(e) {
                     if (void 0 === e) throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
@@ -4402,12 +4447,12 @@
                 }(e)
             }
 
-            function ke(e) {
-                return (ke = Object.setPrototypeOf ? Object.getPrototypeOf.bind() : function(e) {
+            function Ce(e) {
+                return (Ce = Object.setPrototypeOf ? Object.getPrototypeOf.bind() : function(e) {
                     return e.__proto__ || Object.getPrototypeOf(e)
                 })(e)
             }
-            var je = function(e) {
+            var Oe = function(e) {
                     ! function(e, t) {
                         if ("function" != typeof t && null !== t) throw new TypeError("Super expression must either be null or a function");
                         e.prototype = Object.create(t && t.prototype, {
@@ -4418,9 +4463,9 @@
                             }
                         }), Object.defineProperty(e, "prototype", {
                             writable: !1
-                        }), t && _e(e, t)
+                        }), t && xe(e, t)
                     }(r, e);
-                    var t, i, s, a = we(r);
+                    var t, i, s, a = ke(r);
 
                     function r(e) {
                         var t;
@@ -4432,8 +4477,8 @@
                         key: "preload",
                         value: function() {
                             var e = this;
-                            Object.entries(le).forEach((function(t) {
-                                var i = ve(t, 2),
+                            Object.entries(he).forEach((function(t) {
+                                var i = be(t, 2),
                                     s = i[0],
                                     a = i[1];
                                 a.nonVector ? e.load.image(s, a.url, a.width) : e.load.svg(s, "chick" === s ? x.a[e.blook] : a.url, {
@@ -4451,7 +4496,7 @@
                                 i = t,
                                 s = T(400);
                             this.cameras.main.setBounds(0, 0, t, i), this.physics.world.setBounds(0, 0, t, i), _.obstacles = this.physics.add.group({
-                                classType: ce,
+                                classType: ue,
                                 immovable: !0
                             });
                             for (var a = Object(w.o)(3, 6), r = 0; r < t / s; r++)
@@ -4461,7 +4506,7 @@
                                 }
                             this.cursors = this.input.keyboard.createCursorKeys(), this.cursors.keyW = this.input.keyboard.addKey(v.a.Input.Keyboard.KeyCodes.W), this.cursors.keyA = this.input.keyboard.addKey(v.a.Input.Keyboard.KeyCodes.A), this.cursors.keyS = this.input.keyboard.addKey(v.a.Input.Keyboard.KeyCodes.S), this.cursors.keyD = this.input.keyboard.addKey(v.a.Input.Keyboard.KeyCodes.D), _.player = this.physics.add.image(t / 2, i / 2, "chick"), _.player.setScale(O(_.player, 60)), _.player.setDepth(10), _.player.setCollideWorldBounds(!0), _.player.body.setSize(60, 60), _.player.body.setOffset(0, 10), _.hp = 100;
                             var l = this.physics.add.group({
-                                classType: ue,
+                                classType: pe,
                                 runChildUpdate: !0
                             });
                             _.hpBar = l.get(), _.hpBar.draw(), _.enemies = this.physics.add.group({
@@ -4487,7 +4532,7 @@
                                 classType: z,
                                 runChildUpdate: !0
                             }), this.physics.add.overlap(_.enemies, _.projectiles.jesterBall, M), _.projectiles.horseshoe = this.physics.add.group({
-                                classType: L,
+                                classType: F,
                                 runChildUpdate: !0
                             }), this.physics.add.overlap(_.enemies, _.projectiles.horseshoe, M), _.projectiles.shell = this.physics.add.group({
                                 classType: D,
@@ -4496,8 +4541,8 @@
                                 bounceX: 1,
                                 bounceY: 1
                             }), this.physics.add.overlap(_.enemies, _.projectiles.shell, M);
-                            var c = this.physics.add.collider(_.enemies, _.projectiles.shell, F);
-                            this.physics.add.collider(_.projectiles.shell, _.projectiles.shell, F), this.physics.add.collider(_.obstacles, _.projectiles.shell, F), _.projectiles.pizza = this.physics.add.group({
+                            var c = this.physics.add.collider(_.enemies, _.projectiles.shell, L);
+                            this.physics.add.collider(_.projectiles.shell, _.projectiles.shell, L), this.physics.add.collider(_.obstacles, _.projectiles.shell, L), _.projectiles.pizza = this.physics.add.group({
                                 classType: V,
                                 runChildUpdate: !0
                             }), this.physics.add.overlap(_.enemies, _.projectiles.pizza, M), _.projectiles.banana = this.physics.add.group({
@@ -4522,10 +4567,10 @@
                                 classType: J,
                                 runChildUpdate: !0
                             }), this.physics.add.overlap(_.enemies, _.projectiles.card, M), this.physics.add.overlap(_.obstacles, _.projectiles.card, B), _.projectiles.laser = this.physics.add.group({
-                                classType: Q,
+                                classType: K,
                                 runChildUpdate: !0
                             }), this.physics.add.overlap(_.enemies, _.projectiles.laser, M), this.physics.add.overlap(_.obstacles, _.projectiles.laser, B), _.projectiles.darkEnergy = this.physics.add.group({
-                                classType: K,
+                                classType: Q,
                                 runChildUpdate: !0
                             }), this.physics.add.overlap(_.enemies, _.projectiles.darkEnergy, M), _.projectiles.syrupBottle = this.physics.add.group({
                                 classType: $,
@@ -4546,10 +4591,10 @@
                                 classType: re,
                                 runChildUpdate: !0
                             }), this.physics.add.overlap(_.player, _.allXP, ae), _.drops.cheese = this.physics.add.group({
-                                classType: pe
-                            }), this.physics.add.overlap(_.player, _.drops.cheese, de), _.drops.magnet = this.physics.add.group({
-                                classType: fe
-                            }), this.physics.add.overlap(_.player, _.drops.magnet, me), this.physics.add.collider(_.player, _.obstacles), this.cameras.main.startFollow(_.player, !0), this.dmgCountRefresh = 1e4, this.game.events.on("level up", (function(t, i) {
+                                classType: ge
+                            }), this.physics.add.overlap(_.player, _.drops.cheese, me), _.drops.magnet = this.physics.add.group({
+                                classType: ve
+                            }), this.physics.add.overlap(_.player, _.drops.magnet, fe), this.physics.add.collider(_.player, _.obstacles), this.cameras.main.startFollow(_.player, !0), this.dmgCountRefresh = 1e4, this.game.events.on("level up", (function(t, i) {
                                 if (_.isPaused = !1, _.level += 1, 0 === i) e.ticks[t] = 0, _.abilities[t] = JSON.parse(JSON.stringify(k.a[t].levels[0])), _.dmgCounts[t] = 0, "egg" === t ? (e.ticks.miniEgg = 0, e.eggCount = 0) : "nut" === t ? (e.ticks.miniNut = 0, e.nutCount = 0) : "slime" === t ? (e.ticks.miniSlime = 0, e.slimeCount = 0) : "jesterBall" === t ? (e.ticks.miniJesterBall = 0, e.jesterBallCount = 0) : "shell" === t ? (e.ticks.miniShell = 0, e.shellCount = 0) : "pizza" === t ? (e.ticks.miniPizza = 0, e.pizzaCount = 0) : "banana" === t ? (e.ticks.miniBanana = 0, e.bananaCount = 0, e.bananaAngle = 0) : "peacock" === t ? (e.ticks.miniPeacock = 0, e.peacockCount = 0, e.ticks.peacockPullBack = _.abilities.peacock.pullBackRate) : "bee" === t ? (e.ticks.miniBee = 0, e.beeCount = 0, e.beeAngle = 0) : "bubble" === t ? (e.ticks.miniBubble = 0, e.bubbleCount = 0, e.bubbleAngle = 0) : "card" === t ? (e.ticks.miniCard = 0, e.cardCount = 0, e.cardAngle = 0) : "darkEnergy" === t ? S("darkEnergy") : "syrup" === t ? (e.ticks.miniSyrup = 0, e.syrupCount = 0) : "birdFeather" === t && S("bird", 0, 0);
                                 else {
                                     var s = k.a[t].levels[i];
@@ -4561,7 +4606,7 @@
                                     }
                                 }
                                 e.level += 1;
-                                var r = he[e.level - 1];
+                                var r = de[e.level - 1];
                                 r.amounts.forEach((function(t, i) {
                                     for (var s = 0; s < t; s++) e.enemyQueue.push(r.enemies[i])
                                 })), e.scene.resume()
@@ -4636,7 +4681,7 @@
                             }
                             if (this.ticks.laser <= 0) {
                                 this.ticks.laser = _.abilities.laser.fireRate;
-                                for (var f = 0; f < _.abilities.laser.numProjectiles; f++) S("laser", f)
+                                for (var g = 0; g < _.abilities.laser.numProjectiles; g++) S("laser", g)
                             }
                             if (this.ticks.syrup <= 0 && (this.syrupCount = _.abilities.syrup.numProjectiles, this.ticks.miniSyrup = 0, this.ticks.syrup = _.abilities.syrup.fireRate), this.syrupCount > 0 && this.ticks.miniSyrup <= 0 && (S("syrupBottle", {
                                     x: _.scene.cameras.main.worldView.x + Object(w.n)(20, _.scene.cameras.main.worldView.width - 20),
@@ -4645,10 +4690,10 @@
                                 if (_.enemies.getChildren().filter((function(e) {
                                         return e.active
                                     })).length > 140) return;
-                                var g = _.enemies.get();
-                                if (g) {
-                                    var b = this.enemyQueue.shift();
-                                    g.start(b), this.nextEnemy = he[this.level - 1].interval
+                                var f = _.enemies.get();
+                                if (f) {
+                                    var y = this.enemyQueue.shift();
+                                    f.start(y), this.nextEnemy = de[this.level - 1].interval
                                 }
                             }
                             _.magnetTime > 0 && (_.magnetTime -= t), _.invulnerableTime > 0 && (_.invulnerableTime -= t), e > this.dmgCountRefresh && (this.game.events.emit("dmgCounts", _.dmgCounts), Object.keys(_.dmgCounts).forEach((function(e) {
@@ -4660,11 +4705,11 @@
                         value: function(e) {
                             this.tweens.add(e)
                         }
-                    }]) && ye(t.prototype, i), s && ye(t, s), Object.defineProperty(t, "prototype", {
+                    }]) && we(t.prototype, i), s && we(t, s), Object.defineProperty(t, "prototype", {
                         writable: !1
                     }), r
                 }(v.a.Scene),
-                Ce = function(e) {
+                Te = function(e) {
                     return {
                         type: v.a.WEBGL,
                         parent: "phaser-monster-brawl",
@@ -4677,68 +4722,68 @@
                         physics: {
                             default: "arcade"
                         },
-                        scene: new je(e)
+                        scene: new Oe(e)
                     }
                 },
-                Oe = i("yiF6"),
-                Te = i("ZrUs"),
-                Pe = i("XTAU"),
-                Se = i("1pXr"),
-                Ee = i.n(Se),
-                Me = i("Xst1"),
+                Pe = i("yiF6"),
+                Se = i("ZrUs"),
+                Ee = i("XTAU"),
+                Me = i("1pXr"),
                 Ie = i.n(Me),
-                Be = i("lmLo"),
-                Ae = i("Rnav"),
-                Re = i("FVRk"),
-                Ne = i("4Zpe"),
-                ze = i("5BnW"),
-                Le = i("ca/f"),
-                Fe = i("9TPi"),
-                De = i("r07w"),
-                Ve = i.n(De),
-                Ue = [{
+                Be = i("Xst1"),
+                Ae = i.n(Be),
+                Re = i("lmLo"),
+                Ne = i("Rnav"),
+                ze = i("FVRk"),
+                Fe = i("4Zpe"),
+                Le = i("5BnW"),
+                De = i("ca/f"),
+                Ve = i("9TPi"),
+                Ue = i("r07w"),
+                Ge = i.n(Ue),
+                qe = [{
                     img: "https://media.blooket.com/image/upload/v1655233787/Media/survivor/xp/Blue_xp_2.svg",
                     text: "Your goal is to collect these XP crystals.",
                     nextButtonText: "Next",
-                    className: Ve.a.centered
+                    className: Ge.a.centered
                 }, {
                     img: "https://media.blooket.com/image/upload/v1656549021/Media/survivor/blooks/Ice_Slime.svg",
                     text: "To do this you'll need to eliminate monsters.",
                     nextButtonText: "Next",
-                    className: Ve.a.centered
+                    className: Ge.a.centered
                 }, {
                     img: "https://media.blooket.com/image/upload/v1655161189/Media/survivor/Pizza_lvl5.svg",
                     text: "Collect XP to level up and unlock new abilities to fight monsters.",
                     nextButtonText: "Next",
-                    className: Ve.a.centered
+                    className: Ge.a.centered
                 }, {
                     text: "Use your arrow keys or tap and drag to move around the map.",
                     nextButtonText: "Next",
-                    className: Ve.a.centered
+                    className: Ge.a.centered
                 }, {
                     img: "https://media.blooket.com/image/upload/v1658538627/Media/survivor/Cheese_Blook_2.svg",
                     text: "Avoid running into monsters to keep up your health. Cheese restores health.",
                     nextButtonText: "Next",
-                    className: Ve.a.centered
+                    className: Ge.a.centered
                 }, {
                     text: "That's all there is to it! Now go survive the Monster Brawl!",
                     nextButtonText: "Finish",
-                    className: Ve.a.centered
+                    className: Ge.a.centered
                 }],
-                Ge = i("19Ak"),
-                qe = i("qnYv");
+                He = i("19Ak"),
+                Xe = i("qnYv");
 
-            function He(e) {
-                return (He = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function(e) {
+            function Ye(e) {
+                return (Ye = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function(e) {
                     return typeof e
                 } : function(e) {
                     return e && "function" == typeof Symbol && e.constructor === Symbol && e !== Symbol.prototype ? "symbol" : typeof e
                 })(e)
             }
 
-            function Xe() {
+            function We() {
                 /*! regenerator-runtime -- Copyright (c) 2014-present, Facebook, Inc. -- license (MIT): https://github.com/facebook/regenerator/blob/main/LICENSE */
-                Xe = function() {
+                We = function() {
                     return e
                 };
                 var e = {},
@@ -4831,12 +4876,12 @@
                 o(m, a, (function() {
                     return this
                 }));
-                var f = Object.getPrototypeOf,
-                    g = f && f(f(j([])));
-                g && g !== t && i.call(g, a) && (m = g);
+                var g = Object.getPrototypeOf,
+                    f = g && g(g(j([])));
+                f && f !== t && i.call(f, a) && (m = f);
                 var v = p.prototype = u.prototype = Object.create(m);
 
-                function b(e) {
+                function y(e) {
                     ["next", "throw", "return"].forEach((function(t) {
                         o(e, t, (function(e) {
                             return this._invoke(t, e)
@@ -4844,7 +4889,7 @@
                     }))
                 }
 
-                function y(e, t) {
+                function b(e, t) {
                     var s;
                     this._invoke = function(a, r) {
                         function n() {
@@ -4854,7 +4899,7 @@
                                     if ("throw" !== l.type) {
                                         var h = l.arg,
                                             u = h.value;
-                                        return u && "object" == He(u) && i.call(u, "__await") ? t.resolve(u.__await).then((function(e) {
+                                        return u && "object" == Ye(u) && i.call(u, "__await") ? t.resolve(u.__await).then((function(e) {
                                             s("next", e, n, o)
                                         }), (function(e) {
                                             s("throw", e, n, o)
@@ -4940,15 +4985,15 @@
                     return {
                         __await: e
                     }
-                }, b(y.prototype), o(y.prototype, r, (function() {
+                }, y(b.prototype), o(b.prototype, r, (function() {
                     return this
-                })), e.AsyncIterator = y, e.async = function(t, i, s, a, r) {
+                })), e.AsyncIterator = b, e.async = function(t, i, s, a, r) {
                     void 0 === r && (r = Promise);
-                    var n = new y(l(t, i, s, a), r);
+                    var n = new b(l(t, i, s, a), r);
                     return e.isGeneratorFunction(i) ? n : n.next().then((function(e) {
                         return e.done ? e.value : n.next()
                     }))
-                }, b(v), o(v, n, "Generator"), o(v, a, (function() {
+                }, y(v), o(v, n, "Generator"), o(v, a, (function() {
                     return this
                 })), o(v, "toString", (function() {
                     return "[object Generator]"
@@ -5047,7 +5092,7 @@
                 }, e
             }
 
-            function Ye(e, t) {
+            function Je(e, t) {
                 return function(e) {
                     if (Array.isArray(e)) return e
                 }(e) || function(e, t) {
@@ -5070,23 +5115,23 @@
                     return r
                 }(e, t) || function(e, t) {
                     if (!e) return;
-                    if ("string" == typeof e) return We(e, t);
+                    if ("string" == typeof e) return Ke(e, t);
                     var i = Object.prototype.toString.call(e).slice(8, -1);
                     "Object" === i && e.constructor && (i = e.constructor.name);
                     if ("Map" === i || "Set" === i) return Array.from(e);
-                    if ("Arguments" === i || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(i)) return We(e, t)
+                    if ("Arguments" === i || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(i)) return Ke(e, t)
                 }(e, t) || function() {
                     throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.")
                 }()
             }
 
-            function We(e, t) {
+            function Ke(e, t) {
                 (null == t || t > e.length) && (t = e.length);
                 for (var i = 0, s = new Array(t); i < t; i++) s[i] = e[i];
                 return s
             }
 
-            function Je(e, t, i, s, a, r, n) {
+            function Qe(e, t, i, s, a, r, n) {
                 try {
                     var o = e[r](n),
                         l = o.value
@@ -5096,7 +5141,7 @@
                 o.done ? t(l) : Promise.resolve(l).then(s, a)
             }
 
-            function Qe(e) {
+            function Ze(e) {
                 return function() {
                     var t = this,
                         i = arguments;
@@ -5104,31 +5149,31 @@
                         var r = e.apply(t, i);
 
                         function n(e) {
-                            Je(r, s, a, n, o, "next", e)
+                            Qe(r, s, a, n, o, "next", e)
                         }
 
                         function o(e) {
-                            Je(r, s, a, n, o, "throw", e)
+                            Qe(r, s, a, n, o, "throw", e)
                         }
                         n(void 0)
                     }))
                 }
             }
 
-            function Ke(e, t) {
+            function $e(e, t) {
                 for (var i = 0; i < t.length; i++) {
                     var s = t[i];
                     s.enumerable = s.enumerable || !1, s.configurable = !0, "value" in s && (s.writable = !0), Object.defineProperty(e, s.key, s)
                 }
             }
 
-            function Ze(e, t) {
-                return (Ze = Object.setPrototypeOf ? Object.setPrototypeOf.bind() : function(e, t) {
+            function et(e, t) {
+                return (et = Object.setPrototypeOf ? Object.setPrototypeOf.bind() : function(e, t) {
                     return e.__proto__ = t, e
                 })(e, t)
             }
 
-            function $e(e) {
+            function tt(e) {
                 var t = function() {
                     if ("undefined" == typeof Reflect || !Reflect.construct) return !1;
                     if (Reflect.construct.sham) return !1;
@@ -5140,35 +5185,35 @@
                     }
                 }();
                 return function() {
-                    var i, s = it(e);
+                    var i, s = at(e);
                     if (t) {
-                        var a = it(this).constructor;
+                        var a = at(this).constructor;
                         i = Reflect.construct(s, arguments, a)
                     } else i = s.apply(this, arguments);
-                    return et(this, i)
+                    return it(this, i)
                 }
             }
 
-            function et(e, t) {
-                if (t && ("object" === He(t) || "function" == typeof t)) return t;
+            function it(e, t) {
+                if (t && ("object" === Ye(t) || "function" == typeof t)) return t;
                 if (void 0 !== t) throw new TypeError("Derived constructors may only return object or undefined");
-                return tt(e)
+                return st(e)
             }
 
-            function tt(e) {
+            function st(e) {
                 if (void 0 === e) throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
                 return e
             }
 
-            function it(e) {
-                return (it = Object.setPrototypeOf ? Object.getPrototypeOf.bind() : function(e) {
+            function at(e) {
+                return (at = Object.setPrototypeOf ? Object.getPrototypeOf.bind() : function(e) {
                     return e.__proto__ || Object.getPrototypeOf(e)
                 })(e)
             }
-            var st = function(e) {
+            var rt = function(e) {
                     return 1 === e ? 1 : e < 5 ? 5 : e < 10 ? 10 : e < 20 ? 20 : e < 30 ? 30 : e < 40 ? 40 : e < 50 ? 50 : 100
                 },
-                at = function(e) {
+                nt = function(e) {
                     ! function(e, t) {
                         if ("function" != typeof t && null !== t) throw new TypeError("Super expression must either be null or a function");
                         e.prototype = Object.create(t && t.prototype, {
@@ -5179,16 +5224,16 @@
                             }
                         }), Object.defineProperty(e, "prototype", {
                             writable: !1
-                        }), t && Ze(e, t)
+                        }), t && et(e, t)
                     }(h, e);
-                    var t, i, s, r, n, c = $e(h);
+                    var t, i, s, r, n, c = tt(h);
 
                     function h(e) {
                         var t;
                         return function(e, t) {
                             if (!(e instanceof t)) throw new TypeError("Cannot call a class as a function")
                         }(this, h), (t = c.call(this, e)).state = {
-                            game: Ce(e.client && e.client.blook ? e.client.blook : "Chick"),
+                            game: Te(e.client && e.client.blook ? e.client.blook : "Chick"),
                             xp: 0,
                             totalXp: 0,
                             level: 1,
@@ -5206,13 +5251,13 @@
                             askEnd: !1,
                             askHwEnd: !1,
                             canEndHw: !1
-                        }, t.dbRefStage = {}, t.xp = 0, t.totalXp = 0, t.lastXp = 0, t.corrects = {}, t.incorrects = {}, t.questions = [], t.freeQuestions = [], t.waiting = !1, t.picking = !1, t.nextReady = !0, t.here = !0, t.msg = {}, t.isReading = !1, t.onAnswer = t.onAnswer.bind(tt(t)), t.answerNext = t.answerNext.bind(tt(t)), t.randomQ = t.randomQ.bind(tt(t)), t.addXp = t.addXp.bind(tt(t)), t.levelUp = t.levelUp.bind(tt(t)), t.pause = t.pause.bind(tt(t)), t.endNow = t.endNow.bind(tt(t)), t.readQuestion = t.readQuestion.bind(tt(t)), t
+                        }, t.dbRefStage = {}, t.xp = 0, t.totalXp = 0, t.lastXp = 0, t.corrects = {}, t.incorrects = {}, t.questions = [], t.freeQuestions = [], t.waiting = !1, t.picking = !1, t.nextReady = !0, t.here = !0, t.msg = {}, t.isReading = !1, t.onAnswer = t.onAnswer.bind(st(t)), t.answerNext = t.answerNext.bind(st(t)), t.randomQ = t.randomQ.bind(st(t)), t.addXp = t.addXp.bind(st(t)), t.levelUp = t.levelUp.bind(st(t)), t.pause = t.pause.bind(st(t)), t.endNow = t.endNow.bind(st(t)), t.readQuestion = t.readQuestion.bind(st(t)), t
                     }
                     return t = h, (i = [{
                         key: "componentDidMount",
-                        value: (n = Qe(Xe().mark((function e() {
+                        value: (n = Ze(We().mark((function e() {
                             var t = this;
-                            return Xe().wrap((function(e) {
+                            return We().wrap((function(e) {
                                 for (;;) switch (e.prev = e.next) {
                                     case 0:
                                         if (this.props.client && this.props.client.questions && this.props.client.questions[0]) {
@@ -5272,7 +5317,7 @@
                                             t.addXp(e)
                                         })), this.state.game.instance.events.on("dmgCounts", (function(e) {
                                             var i = Object.entries(e).map((function(e) {
-                                                var t = Ye(e, 2);
+                                                var t = Je(e, 2);
                                                 return {
                                                     ability: t[0],
                                                     dmg: t[1]
@@ -5340,7 +5385,7 @@
                                     this.state.level + 1 === this.props.client.amount && this.setState({
                                         askHwEnd: !0,
                                         canEndHw: !0
-                                    }), this.props.client.resultId && qe.a.put("/api/results", {
+                                    }), this.props.client.resultId && Xe.a.put("/api/results", {
                                         id: this.props.client.resultId,
                                         data: {
                                             corrects: this.corrects,
@@ -5378,7 +5423,7 @@
                             this.xp += e, this.totalXp = Math.min(2466, this.totalXp + e), this.setState({
                                 xp: this.xp,
                                 totalXp: this.totalXp
-                            }), this.xp >= st(this.state.level) && (this.state.game.instance.events.emit("user-pause"), this.randomQ())
+                            }), this.xp >= rt(this.state.level) && (this.state.game.instance.events.emit("user-pause"), this.randomQ())
                         }
                     }, {
                         key: "levelUp",
@@ -5393,7 +5438,7 @@
                                         xp: this.totalXp,
                                         up: "".concat(e, ":").concat(t + 1)
                                     }
-                                }), this.xp -= this.state.isFirstLevel ? 0 : st(this.state.level), this.setState({
+                                }), this.xp -= this.state.isFirstLevel ? 0 : rt(this.state.level), this.setState({
                                     xp: 0,
                                     level: this.state.isFirstLevel ? 1 : this.state.level + 1,
                                     levelUpOptions: [],
@@ -5418,16 +5463,16 @@
                         value: function() {
                             this.props.setGoldFinal(this.corrects, this.incorrects, [{
                                 name: this.props.client.name || "You",
-                                blook: this.props.client.blook || Object(w.m)(Object.keys(Ge.a)),
+                                blook: this.props.client.blook || Object(w.m)(Object.keys(He.a)),
                                 xp: this.totalXp,
                                 place: Math.max((this.props.client.hwGoal ? this.props.client.hwGoal + 1 : 61) - this.state.level, 1)
                             }]), this.props.history.push("/play/brawl/final")
                         }
                     }, {
                         key: "readQuestion",
-                        value: (r = Qe(Xe().mark((function e() {
+                        value: (r = Ze(We().mark((function e() {
                             var t, i = this;
-                            return Xe().wrap((function(e) {
+                            return We().wrap((function(e) {
                                 for (;;) switch (e.prev = e.next) {
                                     case 0:
                                         if (!this.isReading && window.speechSynthesis) {
@@ -5488,19 +5533,19 @@
                         value: function() {
                             var e = this;
                             return this.props.client ? this.props.client.questions ? this.props.client.questions[0] ? a.a.createElement("div", {
-                                className: l.isMobile ? Ie.a.mBody : Ie.a.body,
+                                className: l.isMobile ? Ae.a.mBody : Ae.a.body,
                                 id: "body"
-                            }, a.a.createElement(Pe.a, {
+                            }, a.a.createElement(Ee.a, {
                                 title: "Play Monster Brawl | Blooket",
                                 desc: "Answer questions to fight off waves of enemies and become the ultimate Monster Brawler."
                             }), "question" === this.state.stage || "feedback" === this.state.stage ? a.a.createElement("div", {
-                                className: Ee.a.questionContainer
-                            }, a.a.createElement(Ae.a, {
+                                className: Ie.a.questionContainer
+                            }, a.a.createElement(Ne.a, {
                                 name: this.props.client.name,
                                 showRead: "question" === this.state.stage,
                                 readQuestion: this.readQuestion,
                                 xp: this.state.totalXp
-                            }), "question" === this.state.stage ? a.a.createElement(Re.a, {
+                            }), "question" === this.state.stage ? a.a.createElement(ze.a, {
                                 onAnswer: this.onAnswer,
                                 text: this.state.question.text,
                                 answers: this.state.question.answers,
@@ -5508,8 +5553,8 @@
                                 audio: this.state.question.audio,
                                 readId: this.state.readId
                             }) : "feedback" === this.state.stage ? a.a.createElement("div", {
-                                className: Ee.a.feedbackContainer
-                            }, a.a.createElement(Ne.a, {
+                                className: Ie.a.feedbackContainer
+                            }, a.a.createElement(Fe.a, {
                                 incorrectTime: 7,
                                 correctAnswers: this.state.question.correctAnswers,
                                 correct: this.state.correct,
@@ -5517,19 +5562,19 @@
                             })) : null) : null, a.a.createElement(u.a, {
                                 game: this.state.game
                             }), a.a.createElement("div", {
-                                className: Ee.a.phaserHolder,
+                                className: Ie.a.phaserHolder,
                                 id: "phaser-monster-brawl"
                             }), a.a.createElement(m.a, {
                                 place: "left",
                                 effect: "solid",
-                                className: Ie.a.tooltip
+                                className: Ae.a.tooltip
                             }), a.a.createElement("i", {
-                                className: p()(this.state.isPaused ? "fas fa-play" : "fas fa-pause", Ee.a.pauseButton),
+                                className: p()(this.state.isPaused ? "fas fa-play" : "fas fa-pause", Ie.a.pauseButton),
                                 role: "button",
                                 tabIndex: 0,
                                 onClick: this.pause
                             }), !this.props.client.isSolo || this.props.client.hwId && !this.state.canEndHw ? null : a.a.createElement("i", {
-                                className: p()("fas fa-fast-forward", Ee.a.endButton),
+                                className: p()("fas fa-fast-forward", Ie.a.endButton),
                                 role: "button",
                                 tabIndex: 0,
                                 "data-tip": "End Now",
@@ -5539,121 +5584,121 @@
                                     })
                                 }
                             }), this.state.debug ? a.a.createElement("div", {
-                                className: Ee.a.dmgHolder
+                                className: Ie.a.dmgHolder
                             }, this.state.dmgArray.map((function(t) {
                                 return a.a.createElement("div", {
-                                    className: Ee.a.dmgRow,
+                                    className: Ie.a.dmgRow,
                                     key: t.ability
                                 }, a.a.createElement("div", {
-                                    className: Ee.a.dmgBar,
+                                    className: Ie.a.dmgBar,
                                     style: {
                                         transform: "scaleX(".concat(t.dmg / e.state.dmgArray[0].dmg, ")")
                                     }
                                 }), a.a.createElement("div", null, t.ability), a.a.createElement("div", null, t.dmg))
                             }))) : null, a.a.createElement("div", {
-                                className: Ee.a.xpHolder
+                                className: Ie.a.xpHolder
                             }, a.a.createElement("div", {
-                                className: Ee.a.xpBar,
+                                className: Ie.a.xpBar,
                                 style: {
-                                    width: "".concat(Math.max(5, 100 * Math.min(this.state.xp / st(this.state.level), 1)), "%")
+                                    width: "".concat(Math.max(5, 100 * Math.min(this.state.xp / rt(this.state.level), 1)), "%")
                                 }
                             }, a.a.createElement("div", {
-                                className: Ee.a.xpHighlight
+                                className: Ie.a.xpHighlight
                             })), a.a.createElement("div", {
-                                className: Ee.a.levelText
+                                className: Ie.a.levelText
                             }, "Lvl ".concat(this.state.level))), this.state.levelUpOptions.length > 0 ? a.a.createElement("div", {
-                                className: Ee.a.levelUpHolder
+                                className: Ie.a.levelUpHolder
                             }, a.a.createElement("img", {
                                 src: "https://media.blooket.com/image/upload/v1657594446/Media/survivor/Right_Cracks.svg",
                                 alt: "Cracks",
-                                className: Ee.a.rightCracks,
+                                className: Ie.a.rightCracks,
                                 draggable: !1
                             }), a.a.createElement("img", {
                                 src: "https://media.blooket.com/image/upload/v1657594446/Media/survivor/Left_Cracks.svg",
                                 alt: "Cracks",
-                                className: Ee.a.leftCracks,
+                                className: Ie.a.leftCracks,
                                 draggable: !1
                             }), a.a.createElement("img", {
                                 src: "https://media.blooket.com/image/upload/v1658214641/Media/survivor/Text-02.svg",
                                 alt: "Level Up",
-                                className: Ee.a.levelUpImage,
+                                className: Ie.a.levelUpImage,
                                 draggable: !1
                             }), a.a.createElement("img", {
                                 src: "https://media.blooket.com/image/upload/v1658214641/Media/survivor/Text-01.svg",
                                 alt: "Choose an Upgrade",
-                                className: Ee.a.levelUpSubImage,
+                                className: Ie.a.levelUpSubImage,
                                 draggable: !1
                             }), a.a.createElement("img", {
                                 src: "https://media.blooket.com/image/upload/v1657594446/Media/survivor/UI_ARTBOARD-02.svg",
                                 alt: "Evil Blook",
-                                className: Ee.a.levelUpTopper,
+                                className: Ie.a.levelUpTopper,
                                 draggable: !1
                             }), this.state.levelUpOptions.map((function(t) {
-                                return a.a.createElement(Be.a, {
+                                return a.a.createElement(Re.a, {
                                     key: t.name,
-                                    outsideClass: Ee.a.levelUpOption,
+                                    outsideClass: Ie.a.levelUpOption,
                                     onClick: function() {
                                         return e.levelUp(t.name, t.level)
                                     },
                                     color: "#2d3343"
                                 }, a.a.createElement("div", {
-                                    className: Ee.a.levelUpInside
+                                    className: Ie.a.levelUpInside
                                 }, a.a.createElement("div", {
-                                    className: Ee.a.levelUpLeftContainer
+                                    className: Ie.a.levelUpLeftContainer
                                 }, a.a.createElement("img", {
                                     src: "https://media.blooket.com/image/upload/v1657594446/Media/survivor/UI_ARTBOARD-03.svg",
                                     alt: "Background",
-                                    className: Ee.a.levelUpImgBackground,
+                                    className: Ie.a.levelUpImgBackground,
                                     draggable: !1
                                 }), a.a.createElement("img", {
                                     src: t.img,
                                     alt: t.name,
-                                    className: Ee.a.levelUpImg,
+                                    className: Ie.a.levelUpImg,
                                     style: {
                                         transform: "rotate(".concat(t.imgAng || 225, "deg)")
                                     }
                                 }), a.a.createElement("div", {
-                                    className: Ee.a.levelUpLevel,
+                                    className: Ie.a.levelUpLevel,
                                     style: {
                                         color: 0 === t.level ? "#d3effc" : null
                                     }
                                 }, 0 === t.level ? "NEW!" : "Lvl ".concat(t.level + 1))), a.a.createElement("div", {
-                                    className: Ee.a.levelUpRight
+                                    className: Ie.a.levelUpRight
                                 }, a.a.createElement("div", {
-                                    className: Ee.a.levelUpAbility
+                                    className: Ie.a.levelUpAbility
                                 }, t.title), a.a.createElement("div", {
-                                    className: Ee.a.levelUpDesc
+                                    className: Ie.a.levelUpDesc
                                 }, t.data.desc))))
                             }))) : null, a.a.createElement("div", {
-                                className: Ee.a.abilitiesRow
+                                className: Ie.a.abilitiesRow
                             }, Object.entries(this.state.abilities).map((function(e) {
-                                var t = Ye(e, 2),
+                                var t = Je(e, 2),
                                     i = t[0],
                                     s = t[1];
                                 return a.a.createElement("div", {
                                     key: i,
-                                    className: Ee.a.abilityContainer
+                                    className: Ie.a.abilityContainer
                                 }, a.a.createElement("img", {
                                     src: k.a[i].img,
                                     alt: k.a[i].title,
-                                    className: Ee.a.abilityImg,
+                                    className: Ie.a.abilityImg,
                                     style: {
                                         transform: "rotate(".concat(k.a[i].rotation || 0, "deg)")
                                     }
                                 }), a.a.createElement("div", {
-                                    className: Ee.a.abilityLevel
+                                    className: Ie.a.abilityLevel
                                 }, s))
                             }))), this.state.gameWon ? a.a.createElement("div", {
-                                className: Ee.a.gameOverContainer
+                                className: Ie.a.gameOverContainer
                             }, a.a.createElement("div", {
-                                className: Ee.a.gameOverText
+                                className: Ie.a.gameOverText
                             }, "Victory")) : this.state.gameLost ? a.a.createElement("div", {
-                                className: Ee.a.gameOverContainer
+                                className: Ie.a.gameOverContainer
                             }, a.a.createElement("div", {
-                                className: Ee.a.gameOverText
+                                className: Ie.a.gameOverText
                             }, "Defeat"), a.a.createElement("div", {
-                                className: Ee.a.gameOverDesc
-                            }, "Answer 3 questions to respawn")) : null, this.state.askTour ? a.a.createElement(Le.a, {
+                                className: Ie.a.gameOverDesc
+                            }, "Answer 3 questions to respawn")) : null, this.state.askTour ? a.a.createElement(De.a, {
                                 text: "Would you like a quick tutorial?",
                                 buttonOne: {
                                     text: "Yes",
@@ -5675,14 +5720,14 @@
                                     },
                                     color: "blue"
                                 }
-                            }) : this.state.showTour ? a.a.createElement(Fe.a, {
-                                steps: Ue,
+                            }) : this.state.showTour ? a.a.createElement(Ve.a, {
+                                steps: qe,
                                 onExit: function() {
                                     return e.setState({
                                         showTour: !1
                                     })
                                 }
-                            }) : this.state.askEnd ? a.a.createElement(Le.a, {
+                            }) : this.state.askEnd ? a.a.createElement(De.a, {
                                 text: "Would you like to end now?",
                                 buttonOne: {
                                     text: "Yes",
@@ -5698,7 +5743,7 @@
                                     },
                                     color: "blue"
                                 }
-                            }) : this.state.askHwEnd ? a.a.createElement(Le.a, {
+                            }) : this.state.askHwEnd ? a.a.createElement(De.a, {
                                 text: "You completed the goal for this homework! You can now end the game or keep playing (your teacher will see the extra effort)!",
                                 buttonOne: {
                                     text: "Yes",
@@ -5714,19 +5759,19 @@
                                     },
                                     color: "blue"
                                 }
-                            }) : null) : (Object(f.b)("PlayBrawlPage cannot be rendered without this.props.client.questions[0]"), a.a.createElement(o.c, {
+                            }) : null) : (Object(g.b)("PlayBrawlPage cannot be rendered without this.props.client.questions[0]"), a.a.createElement(o.c, {
                                 to: "/play"
-                            })) : (Object(f.b)("PlayBrawlPage cannot be rendered without this.props.client.questions"), a.a.createElement(o.c, {
+                            })) : (Object(g.b)("PlayBrawlPage cannot be rendered without this.props.client.questions"), a.a.createElement(o.c, {
                                 to: "/play"
-                            })) : (Object(f.b)("PlayBrawlPage cannot be rendered without this.props.client"), a.a.createElement(o.c, {
+                            })) : (Object(g.b)("PlayBrawlPage cannot be rendered without this.props.client"), a.a.createElement(o.c, {
                                 to: "/play"
                             }))
                         }
-                    }]) && Ke(t.prototype, i), s && Ke(t, s), Object.defineProperty(t, "prototype", {
+                    }]) && $e(t.prototype, i), s && $e(t, s), Object.defineProperty(t, "prototype", {
                         writable: !1
                     }), h
                 }(a.a.Component);
-            at.propTypes = {
+            nt.propTypes = {
                 client: h.a.object,
                 history: h.a.object.isRequired,
                 liveGameController: h.a.object,
@@ -5739,10 +5784,10 @@
                 }
             }), (function(e) {
                 return Object(r.b)({
-                    deleteClient: Te.a,
-                    setGoldFinal: Oe.a
+                    deleteClient: Se.a,
+                    setGoldFinal: Pe.a
                 }, e)
-            }))(Object(ze.d)(at)))
+            }))(Object(Le.d)(nt)))
         },
         ODJL: function(e, t, i) {
             var s = i("8UQz");
@@ -5788,13 +5833,13 @@
                 d = i.n(u),
                 p = i("ZVoO"),
                 m = i("XTAU"),
-                f = i("74sb"),
-                g = i("5BnW"),
+                g = i("74sb"),
+                f = i("5BnW"),
                 v = i("qnYv"),
-                b = i("LHn/");
+                y = i("LHn/");
 
-            function y(e) {
-                return (y = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function(e) {
+            function b(e) {
+                return (b = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function(e) {
                     return typeof e
                 } : function(e) {
                     return e && "function" == typeof Symbol && e.constructor === Symbol && e !== Symbol.prototype ? "symbol" : typeof e
@@ -5875,7 +5920,7 @@
             }
 
             function C(e, t) {
-                if (t && ("object" === y(t) || "function" == typeof t)) return t;
+                if (t && ("object" === b(t) || "function" == typeof t)) return t;
                 if (void 0 !== t) throw new TypeError("Derived constructors may only return object or undefined");
                 return function(e) {
                     if (void 0 === e) throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
@@ -5992,7 +6037,7 @@
                             className: d.a.body,
                             style: {
                                 overflowY: this.state.ready ? "auto" : "hidden",
-                                backgroundImage: "url(".concat(b.a.basic.snowTile, ")"),
+                                backgroundImage: "url(".concat(y.a.basic.snowTile, ")"),
                                 backgroundSize: 400,
                                 backgroundPosition: "-100px -100px"
                             }
@@ -6002,7 +6047,7 @@
                         }), this.state.standings.length > 0 ? a.a.createElement(p.a, {
                             standings: this.state.standings,
                             stats: this.state.standings.map((function(e) {
-                                return "".concat(Object(f.l)(e.xp), " XP")
+                                return "".concat(Object(g.l)(e.xp), " XP")
                             })),
                             gameId: this.props.gameId,
                             historyId: this.state.historyId,
@@ -6030,7 +6075,7 @@
                 return Object(r.b)({
                     deleteHost: h.d
                 }, e)
-            }))(Object(g.d)(T)))
+            }))(Object(f.d)(T)))
         },
         qRPF: function(e, t, i) {
             (t = e.exports = i("JPst")(!1)).push([e.i, ".styles__phaserHolder___2taSj-camelCase{width:100%;height:100%;position:absolute;top:0;left:0;overflow:hidden}.styles__dmgHolder___GitHv-camelCase{width:250px;position:absolute;top:5px;left:5px;display:flex;flex-direction:column}.styles__dmgRow___3YJYO-camelCase{height:14px;margin:2px 0;display:flex;flex-direction:row;align-items:center;justify-content:space-between;position:relative;color:#3a3a3a;font-size:12px}.styles__dmgBar___3_Gz3-camelCase,.styles__dmgRow___3YJYO-camelCase{width:100%;transition:.2s}.styles__dmgBar___3_Gz3-camelCase{background-color:#0bc2cf;height:100%;position:absolute;top:0;left:0;opacity:.4;transform-origin:left center}.styles__endButton___1KWpr-camelCase,.styles__pauseButton___1OYOT-camelCase{color:#fff;-webkit-text-stroke:1px #3a3a3a;font-size:20px;position:absolute;top:10px;right:10px;-webkit-user-select:none;-moz-user-select:none;user-select:none;outline:none;cursor:pointer}.styles__endButton___1KWpr-camelCase{right:35px}.styles__xpHolder___2PMh_-camelCase{width:calc(100% - 20px);height:20px;bottom:5px;left:10px}.styles__xpBar___2BFKm-camelCase,.styles__xpHolder___2PMh_-camelCase{position:absolute}.styles__xpBar___2BFKm-camelCase{border-radius:10px;background-color:#0bc2cf;width:100%;height:100%;transition:.2s;top:0;left:0}.styles__xpHighlight___cW-pk-camelCase{border-radius:3px;height:6px;background-color:#6eeef7;width:calc(100% - 20px);position:absolute;top:4px;left:10px}.styles__levelText___3NLee-camelCase{font-size:18px;font-weight:700;color:#fff;right:10px;bottom:0;padding:2px 5px;background-color:rgba(0,0,0,.4);border-radius:5px}.styles__levelText___3NLee-camelCase,.styles__levelUpHolder___1Ewkg-camelCase{position:absolute;display:flex;justify-content:center;align-items:center}.styles__levelUpHolder___1Ewkg-camelCase{top:50%;left:50%;transform:translate(-50%,-50%);width:90%;max-width:400px;border-radius:10px;background-color:#4f5b74;background:linear-gradient(0deg,#374154,#4f5b74);color:#d3effc;box-shadow:inset 0 -7px rgba(0,0,0,.2),0 0 4px rgba(0,0,0,.25);padding:7px 20px 14px;box-sizing:border-box;flex-direction:column}.styles__levelUpTopper___2vvLw-camelCase{width:200px;left:50%;bottom:calc(100% - 25px);transform:translateX(-50%)}.styles__leftCracks___PBlm9-camelCase,.styles__levelUpTopper___2vvLw-camelCase,.styles__rightCracks___1IA4k-camelCase{position:absolute;-webkit-user-select:none;-moz-user-select:none;user-select:none}.styles__leftCracks___PBlm9-camelCase,.styles__rightCracks___1IA4k-camelCase{bottom:6px;left:0;height:calc(100% - 20px)}.styles__rightCracks___1IA4k-camelCase{left:unset;right:0}.styles__levelUpImage___3Wqrq-camelCase{width:150px;margin-top:20px}.styles__levelUpSubImage___3GT2C-camelCase{width:220px;margin-bottom:7px}.styles__levelUpOption___rMU2B-camelCase{margin:6px 0;width:100%}.styles__levelUpInside___FAr8h-camelCase{display:flex;flex-direction:row;align-items:center;width:100%;text-align:left;color:#d3effc}.styles__levelUpLeftContainer___3cpI0-camelCase{width:50px;height:53.5px;display:flex;flex-direction:column;justify-content:flex-end;align-items:center;-webkit-user-select:none;-moz-user-select:none;user-select:none;position:relative;margin-right:10px;margin-left:5px}.styles__levelUpImgBackground___2ari2-camelCase{width:100%;position:absolute;z-index:-1}.styles__levelUpImg___3KCIw-camelCase{width:45%;height:45%;-o-object-fit:contain;object-fit:contain;transform:rotate(225deg);filter:drop-shadow(0 0 4px rgba(0,0,0,.3))}.styles__levelUpRight___2kBQn-camelCase{width:calc(100% - 55px);display:flex;flex-direction:column}.styles__levelUpLevel___32TJk-camelCase{font-size:8px;color:#d3effc;font-weight:700;margin-top:5px;margin-bottom:4px}.styles__levelUpAbility___2dIR9-camelCase{font-size:18px;font-weight:700}.styles__levelUpDesc___HG13I-camelCase{font-size:16px;margin-top:3px}.styles__abilitiesRow___cTZq5-camelCase{position:absolute;bottom:30px;left:7px;width:300px;display:flex;flex-direction:row}.styles__abilityContainer___2lkXE-camelCase{width:25px;height:25px;margin:0 3px;display:flex;align-items:center;justify-content:center;position:relative}.styles__abilityImg___is0Nm-camelCase{width:80%;height:80%;-o-object-fit:contain;object-fit:contain;transform:rotate(225deg)}.styles__abilityLevel___34-02-camelCase{position:absolute;bottom:0;right:0;color:#3a3a3a;font-size:12px;font-weight:700}.styles__questionContainer___3jqqB-camelCase{position:absolute;top:0;left:0;width:100%;height:100%;z-index:1;animation:styles__growIn___m1-6h-camelCase .4s linear forwards}@keyframes styles__growIn___m1-6h-camelCase{0%{transform:scale(0)}to{transform:scale(1)}}.styles__feedbackContainer___19xZP-camelCase{background-color:#fff;z-index:1}.styles__feedbackContainer___19xZP-camelCase,.styles__gameOverContainer___11xEm-camelCase{position:absolute;top:0;left:0;width:100%;height:100%}.styles__gameOverContainer___11xEm-camelCase{background-color:rgba(0,0,0,.6);display:flex;flex-direction:column;justify-content:center;align-items:center;opacity:0;animation:styles__fadeIn___2pugN-camelCase .5s forwards}@keyframes styles__fadeIn___2pugN-camelCase{0%{opacity:0}to{opacity:1}}.styles__gameOverText___3mv9W-camelCase{font-family:Titan One,sans-serif;font-size:9vw}.styles__gameOverDesc___3NqL_-camelCase,.styles__gameOverText___3mv9W-camelCase{color:#fff;text-shadow:2px 2px 8px grey}.styles__gameOverDesc___3NqL_-camelCase{font-size:3vw;width:80%;text-align:center;margin:10px auto}@media only screen and (max-height:450px){.styles__levelUpTopper___2vvLw-camelCase{display:none}.styles__levelUpImage___3Wqrq-camelCase{margin-top:5px}}@media only screen and (max-width:600px){.styles__gameOverText___3mv9W-camelCase{font-size:15vw}.styles__gameOverDesc___3NqL_-camelCase{font-size:5vw}}", ""]), t.locals = {

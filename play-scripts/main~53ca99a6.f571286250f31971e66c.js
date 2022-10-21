@@ -18,7 +18,7 @@
     }
     var t = {},
         s = {
-            4: 0
+            6: 0
         },
         r = [];
 
@@ -44,13 +44,13 @@
                 var r, i = document.createElement("script");
                 i.charset = "utf-8", i.timeout = 120, l.nc && i.setAttribute("nonce", l.nc), i.src = function(o) {
                     return l.p + "" + ({
-                        22: "polyfills-dom~9aedfade",
-                        48: "vendors~polyfills-core-js~34a2b07d"
+                        23: "polyfills-dom~9aedfade",
+                        49: "vendors~polyfills-core-js~34a2b07d"
                     } [o] || o) + "." + {
-                        22: "ad281e1cf87a7b0f6768",
-                        48: "7598b8d6641f630ce2fb",
-                        49: "c7cef9d4896d67720b4d",
-                        50: "c113a7c8d87c694c0e01"
+                        23: "ad281e1cf87a7b0f6768",
+                        49: "7598b8d6641f630ce2fb",
+                        50: "c7cef9d4896d67720b4d",
+                        51: "c113a7c8d87c694c0e01"
                     } [o] + ".js"
                 }(o);
                 var m = new Error;
@@ -114,7 +114,7 @@
     i.push = e, i = i.slice();
     for (var n = 0; n < i.length; n++) e(i[n]);
     var c = m;
-    r.push([0, 23, 32, 30, 38, 43, 26, 45, 25, 36, 39, 37, 41, 42, 35, 28, 33, 40, 44, 24, 29, 31, 34, 46, 27, 47, 16, 1, 8, 0, 15, 18, 5, 21, 6, 10, 20, 7, 14, 3, 11, 12, 19, 17, 9, 2, 13]), a()
+    r.push([0, 24, 33, 31, 39, 44, 27, 46, 26, 37, 40, 38, 42, 43, 36, 29, 34, 41, 45, 25, 30, 32, 35, 47, 28, 48, 18, 2, 3, 10, 1, 17, 19, 7, 22, 8, 12, 21, 0, 9, 16, 5, 13, 14, 20, 11, 4, 15]), a()
 }({
     "/9rF": function(o, e, a) {
         "use strict";
@@ -296,7 +296,7 @@
     },
     "4otK": function(o, e, a) {
         "use strict";
-        e.a = ["Snow Globe", "Holiday Gift", "Hot Chocolate", "Holiday Wreath", "Gingerbread Man", "Gingerbread House", "Snowman", "Santa Claus", "Frost Wreath", "Tropical Globe", "Sandwich", "Light Blue", "Black", "Red", "Purple", "Pink", "Orange", "Lime", "Green", "Teal", "Tan", "Maroon", "Gray", "Mint", "Salmon", "Burgandy", "Baby Blue", "Dust", "Brown", "Dull Blue", "Yellow", "Blue", "Pumpkin", "Swamp Monster", "Frankenstein", "Vampire", "Zombie", "Mummy", "Werewolf", "Ghost", "Haunted Pumpkin", "Spooky Pumpkin", "Spooky Mummy", "Spooky Ghost", "Red Astronaut", "Blue Astronaut", "Green Astronaut", "Pink Astronaut", "Orange Astronaut", "Yellow Astronaut", "Black Astronaut", "Purple Astronaut", "Brown Astronaut", "Cyan Astronaut", "Lime Astronaut", "Tim the Alien", "Rainbow Astronaut", "Rainbow Jellyfish", "Blizzard Clownfish", "Lovely Frog", "Lucky Frog", "Spring Frog", "Poison Dart Frog", "Lemon Crab", "Pirate Pufferfish", "Donut Blobfish", "Crimson Octopus", "Rainbow Narwhal", "Agent Owl", "Master Elf", "Phantom King", "Rainbow Panda", "White Peacock", "Tiger Zebra", "Ice Slime", "Frozen Fossil", "Ice Crab"]
+        e.a = ["Snow Globe", "Holiday Gift", "Hot Chocolate", "Holiday Wreath", "Gingerbread Man", "Gingerbread House", "Snowman", "Santa Claus", "Frost Wreath", "Tropical Globe", "Sandwich", "Light Blue", "Black", "Red", "Purple", "Pink", "Orange", "Lime", "Green", "Teal", "Tan", "Maroon", "Gray", "Mint", "Salmon", "Burgandy", "Baby Blue", "Dust", "Brown", "Dull Blue", "Yellow", "Blue", "Haunted Pumpkin", "Pumpkin Cookie", "Ghost Cookie", "Spooky Pumpkin", "Spooky Mummy", "Spooky Ghost", "Red Astronaut", "Blue Astronaut", "Green Astronaut", "Pink Astronaut", "Orange Astronaut", "Yellow Astronaut", "Black Astronaut", "Purple Astronaut", "Brown Astronaut", "Cyan Astronaut", "Lime Astronaut", "Tim the Alien", "Rainbow Astronaut", "Rainbow Jellyfish", "Blizzard Clownfish", "Lovely Frog", "Lucky Frog", "Spring Frog", "Poison Dart Frog", "Lemon Crab", "Pirate Pufferfish", "Donut Blobfish", "Crimson Octopus", "Rainbow Narwhal", "Agent Owl", "Master Elf", "Phantom King", "Rainbow Panda", "White Peacock", "Tiger Zebra", "Ice Slime", "Frozen Fossil", "Ice Crab"]
     },
     "5Kqo": function(o, e, a) {
         "use strict";
@@ -446,9 +446,9 @@
         })), a.d(e, "a", (function() {
             return F
         })), a.d(e, "r", (function() {
-            return L
-        })), a.d(e, "p", (function() {
             return O
+        })), a.d(e, "p", (function() {
+            return L
         })), a.d(e, "j", (function() {
             return H
         })), a.d(e, "k", (function() {
@@ -983,10 +983,10 @@
             F = function() {
                 window.addEventListener("beforeunload", E)
             },
-            L = function() {
+            O = function() {
                 window.removeEventListener("beforeunload", E)
             },
-            O = function(o, e) {
+            L = function(o, e) {
                 for (var a = []; a.length < e;) {
                     for (var t = Math.random(), s = 0, r = null, l = 0; l < o.length; l++)
                         if ((s += o[l].rate) >= t) {
@@ -1178,6 +1178,14 @@
                 teamName: "Motivated Mummies",
                 color: "#e8d8c7"
             },
+            "Caramel Apple": {
+                url: "https://blooket.s3.us-east-2.amazonaws.com/blooks/halloween/caramelApple.svg",
+                mediaUrl: "https://media.blooket.com/image/upload/v1666248719/Blooks/caramelApple.svg",
+                set: "Spooky",
+                rarity: "Rare",
+                teamName: "Caring Caramels",
+                color: "#8d432a"
+            },
             Werewolf: {
                 url: "https://blooket.s3.us-east-2.amazonaws.com/blooks/halloween/werewolf.svg",
                 mediaUrl: "https://media.blooket.com/image/upload/v1601168912/Blooks/werewolf.svg",
@@ -1201,6 +1209,22 @@
                 rarity: "Chroma",
                 teamName: "Haunted Helpers",
                 color: "#939385"
+            },
+            "Pumpkin Cookie": {
+                url: "https://blooket.s3.us-east-2.amazonaws.com/blooks/bonus/halloween/pumpkinCookie.svg",
+                mediaUrl: "https://media.blooket.com/image/upload/v1666248719/Blooks/pumpkinCookie.svg",
+                set: "Spooky",
+                rarity: "Chroma",
+                teamName: "Cookie Monsters",
+                color: "#f7941d"
+            },
+            "Ghost Cookie": {
+                url: "https://blooket.s3.us-east-2.amazonaws.com/blooks/bonus/halloween/ghostCookie.svg",
+                mediaUrl: "https://media.blooket.com/image/upload/v1666248719/Blooks/ghostCookie.svg",
+                set: "Spooky",
+                rarity: "Chroma",
+                teamName: "COOKIES",
+                color: "#c2def4"
             },
             "Spooky Pumpkin": {
                 url: "https://blooket.s3.us-east-2.amazonaws.com/blooks/bonus/halloween/spookyPumpkin.svg",
@@ -2018,9 +2042,12 @@
             Vampire: "Valiant Vampires",
             Zombie: "Walking Dead",
             Mummy: "Motivated Mummies",
+            "Caramel Apple": "Caring Caramels",
             Werewolf: "Werewolf Warriors",
             Ghost: "BOO!",
             "Haunted Pumpkin": "Haunted Helpers",
+            "Pumpkin Cookie": "Cookie Monsters",
+            "Ghost Cookie": "COOKIES",
             "Spooky Pumpkin": "Ghostly Geniuses",
             "Spooky Mummy": "Spooky 'n' Scary",
             "Spooky Ghost": "Spooksters",
@@ -3009,9 +3036,12 @@
             Vampire: "https://media.blooket.com/image/upload/v1601168910/Blooks/vampire.svg",
             Zombie: "https://media.blooket.com/image/upload/v1601168912/Blooks/zombie.svg",
             Mummy: "https://media.blooket.com/image/upload/v1601168910/Blooks/mummy.svg",
+            "Caramel Apple": "https://media.blooket.com/image/upload/v1666248719/Blooks/caramelApple.svg",
             Werewolf: "https://media.blooket.com/image/upload/v1601168912/Blooks/werewolf.svg",
             Ghost: "https://media.blooket.com/image/upload/v1601168910/Blooks/ghost.svg",
             "Haunted Pumpkin": "https://media.blooket.com/image/upload/v1641935071/Blooks/hauntedPumpkin.svg",
+            "Pumpkin Cookie": "https://media.blooket.com/image/upload/v1666248719/Blooks/pumpkinCookie.svg",
+            "Ghost Cookie": "https://media.blooket.com/image/upload/v1666248719/Blooks/ghostCookie.svg",
             "Spooky Pumpkin": "https://media.blooket.com/image/upload/v1603679635/Blooks/spookyPumpkin.svg",
             "Spooky Mummy": "https://media.blooket.com/image/upload/v1603679635/Blooks/spookyMummy.svg",
             "Spooky Ghost": "https://media.blooket.com/image/upload/v1603684063/Blooks/spookyGhost.svg",
@@ -3175,12 +3205,15 @@
                     return "Uncommon";
                 case "Zombie":
                 case "Mummy":
+                case "Caramel Apple":
                     return "Rare";
                 case "Werewolf":
                     return "Epic";
                 case "Ghost":
                     return "Legendary";
                 case "Haunted Pumpkin":
+                case "Pumpkin Cookie":
+                case "Ghost Cookie":
                 case "Spooky Pumpkin":
                 case "Spooky Mummy":
                     return "Chroma";

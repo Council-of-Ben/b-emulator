@@ -18,7 +18,7 @@
     }
     var t = {},
         s = {
-            2: 0
+            3: 0
         },
         r = [];
 
@@ -114,7 +114,7 @@
     n.push = e, n = n.slice();
     for (var m = 0; m < n.length; m++) e(n[m]);
     var c = i;
-    r.push([2, 14, 11, 22, 29, 13, 23, 21, 25, 24, 27, 28, 20, 16, 30, 26, 12, 17, 18, 19, 31, 15, 4, 5, 9, 6, 8, 0, 3, 7, 1]), a()
+    r.push([2, 14, 11, 22, 29, 13, 23, 21, 25, 24, 27, 28, 20, 16, 30, 26, 12, 17, 18, 19, 31, 15, 4, 1, 5, 8, 9, 7, 0, 6, 2]), a()
 }({
     "/9rF": function(o, e, a) {
         "use strict";
@@ -277,12 +277,15 @@
                     return 5;
                 case "Zombie":
                 case "Mummy":
+                case "Caramel Apple":
                     return 20;
                 case "Werewolf":
                     return 75;
                 case "Ghost":
                     return 200;
                 case "Haunted Pumpkin":
+                case "Pumpkin Cookie":
+                case "Ghost Cookie":
                 case "Spooky Pumpkin":
                     return 300;
                 case "Spooky Mummy":
@@ -409,7 +412,7 @@
     },
     "4otK": function(o, e, a) {
         "use strict";
-        e.a = ["Snow Globe", "Holiday Gift", "Hot Chocolate", "Holiday Wreath", "Gingerbread Man", "Gingerbread House", "Snowman", "Santa Claus", "Frost Wreath", "Tropical Globe", "Sandwich", "Light Blue", "Black", "Red", "Purple", "Pink", "Orange", "Lime", "Green", "Teal", "Tan", "Maroon", "Gray", "Mint", "Salmon", "Burgandy", "Baby Blue", "Dust", "Brown", "Dull Blue", "Yellow", "Blue", "Pumpkin", "Swamp Monster", "Frankenstein", "Vampire", "Zombie", "Mummy", "Werewolf", "Ghost", "Haunted Pumpkin", "Spooky Pumpkin", "Spooky Mummy", "Spooky Ghost", "Red Astronaut", "Blue Astronaut", "Green Astronaut", "Pink Astronaut", "Orange Astronaut", "Yellow Astronaut", "Black Astronaut", "Purple Astronaut", "Brown Astronaut", "Cyan Astronaut", "Lime Astronaut", "Tim the Alien", "Rainbow Astronaut", "Rainbow Jellyfish", "Blizzard Clownfish", "Lovely Frog", "Lucky Frog", "Spring Frog", "Poison Dart Frog", "Lemon Crab", "Pirate Pufferfish", "Donut Blobfish", "Crimson Octopus", "Rainbow Narwhal", "Agent Owl", "Master Elf", "Phantom King", "Rainbow Panda", "White Peacock", "Tiger Zebra", "Ice Slime", "Frozen Fossil", "Ice Crab"]
+        e.a = ["Snow Globe", "Holiday Gift", "Hot Chocolate", "Holiday Wreath", "Gingerbread Man", "Gingerbread House", "Snowman", "Santa Claus", "Frost Wreath", "Tropical Globe", "Sandwich", "Light Blue", "Black", "Red", "Purple", "Pink", "Orange", "Lime", "Green", "Teal", "Tan", "Maroon", "Gray", "Mint", "Salmon", "Burgandy", "Baby Blue", "Dust", "Brown", "Dull Blue", "Yellow", "Blue", "Haunted Pumpkin", "Pumpkin Cookie", "Ghost Cookie", "Spooky Pumpkin", "Spooky Mummy", "Spooky Ghost", "Red Astronaut", "Blue Astronaut", "Green Astronaut", "Pink Astronaut", "Orange Astronaut", "Yellow Astronaut", "Black Astronaut", "Purple Astronaut", "Brown Astronaut", "Cyan Astronaut", "Lime Astronaut", "Tim the Alien", "Rainbow Astronaut", "Rainbow Jellyfish", "Blizzard Clownfish", "Lovely Frog", "Lucky Frog", "Spring Frog", "Poison Dart Frog", "Lemon Crab", "Pirate Pufferfish", "Donut Blobfish", "Crimson Octopus", "Rainbow Narwhal", "Agent Owl", "Master Elf", "Phantom King", "Rainbow Panda", "White Peacock", "Tiger Zebra", "Ice Slime", "Frozen Fossil", "Ice Crab"]
     },
     "5Kqo": function(o, e, a) {
         "use strict";
@@ -541,9 +544,9 @@
         })), a.d(e, "l", (function() {
             return B
         })), a.d(e, "o", (function() {
-            return U
-        })), a.d(e, "f", (function() {
             return C
+        })), a.d(e, "f", (function() {
+            return U
         })), a.d(e, "d", (function() {
             return z
         })), a.d(e, "e", (function() {
@@ -551,17 +554,17 @@
         })), a.d(e, "p", (function() {
             return N
         })), a.d(e, "r", (function() {
-            return M
-        })), a.d(e, "u", (function() {
             return P
+        })), a.d(e, "u", (function() {
+            return M
         })), a.d(e, "v", (function() {
             return E
         })), a.d(e, "b", (function() {
             return F
         })), a.d(e, "t", (function() {
-            return L
-        })), a.d(e, "a", (function() {
             return O
+        })), a.d(e, "a", (function() {
+            return L
         })), a.d(e, "s", (function() {
             return T
         })), a.d(e, "c", (function() {
@@ -734,14 +737,14 @@
                 return s ? s.done ? (e[o.resultName] = s.value, e.next = o.nextLoc, "return" !== e.method && (e.method = "next", e.arg = void 0), e.delegate = null, d) : s : (e.method = "throw", e.arg = new TypeError("iterator result is not an object"), e.delegate = null, d)
             }
 
-            function U(o) {
+            function C(o) {
                 var e = {
                     tryLoc: o[0]
                 };
                 1 in o && (e.catchLoc = o[1]), 2 in o && (e.finallyLoc = o[2], e.afterLoc = o[3]), this.tryEntries.push(e)
             }
 
-            function C(o) {
+            function U(o) {
                 var e = o.completion || {};
                 e.type = "normal", delete e.arg, o.completion = e
             }
@@ -749,7 +752,7 @@
             function z(o) {
                 this.tryEntries = [{
                     tryLoc: "root"
-                }], o.forEach(U, this), this.reset(!0)
+                }], o.forEach(C, this), this.reset(!0)
             }
 
             function A(o) {
@@ -813,7 +816,7 @@
             }, o.values = A, z.prototype = {
                 constructor: z,
                 reset: function(o) {
-                    if (this.prev = 0, this.next = 0, this.sent = this._sent = void 0, this.done = !1, this.delegate = null, this.method = "next", this.arg = void 0, this.tryEntries.forEach(C), !o)
+                    if (this.prev = 0, this.next = 0, this.sent = this._sent = void 0, this.done = !1, this.delegate = null, this.method = "next", this.arg = void 0, this.tryEntries.forEach(U), !o)
                         for (var e in this) "t" === e.charAt(0) && a.call(this, e) && !isNaN(+e.slice(1)) && (this[e] = void 0)
                 },
                 stop: function() {
@@ -867,7 +870,7 @@
                 finish: function(o) {
                     for (var e = this.tryEntries.length - 1; e >= 0; --e) {
                         var a = this.tryEntries[e];
-                        if (a.finallyLoc === o) return this.complete(a.completion, a.afterLoc), C(a), d
+                        if (a.finallyLoc === o) return this.complete(a.completion, a.afterLoc), U(a), d
                     }
                 },
                 catch: function(o) {
@@ -877,7 +880,7 @@
                             var t = a.completion;
                             if ("throw" === t.type) {
                                 var s = t.arg;
-                                C(a)
+                                U(a)
                             }
                             return s
                         }
@@ -980,7 +983,7 @@
             B = function(o) {
                 return o[Math.floor(Math.random() * o.length)]
             },
-            U = {
+            C = {
                 Common: "#ffffff",
                 Uncommon: "#4bc22e",
                 Rare: "#0a14fa",
@@ -989,7 +992,7 @@
                 Chroma: "#00ccff",
                 Mystical: "#a335ee"
             },
-            C = function(o, e) {
+            U = function(o, e) {
                 if (!o) return o;
                 var a = o.indexOf("upload/");
                 if (-1 === a || o.includes("images.unsplash.com")) return o;
@@ -1018,7 +1021,7 @@
                             marginLeft: "-5px"
                         }
                     }, "& ") : null, 2 === o.split("`~`").length ? r.a.createElement("img", {
-                        src: C(o.split("`~`")[1]),
+                        src: U(o.split("`~`")[1]),
                         alt: "Answer",
                         draggable: !1,
                         style: {
@@ -1044,12 +1047,12 @@
             N = function() {
                 window.removeEventListener("beforeunload", S)
             },
-            M = function(o) {
+            P = function(o) {
                 return o ? o.indexOf('"') >= 0 ? "Emails can't have quotations." : function(o) {
                     return /^(([^<>()\[\]\.,;:\s@\"]+(\.[^<>()\[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i.test(String(o).toLowerCase())
                 }(o) ? o.length > 50 ? "Ok, that email is a little too long." : null : "That's not a real email, silly." : "Where's the email?"
             },
-            P = function(o) {
+            M = function(o) {
                 return o ? o.indexOf(" ") >= 0 ? "Usernames can't have spaces." : o.indexOf("\t") >= 0 ? "Usernames can't have tabs." : o.indexOf('"') >= 0 ? "Usernames can't have quotations." : function(o) {
                     return /[^-\]_.~!*'();:@&+$,/%#[A-z0-9]/.test(o)
                 }(o) ? "Usernames can't have extra special characters." : Object(t.a)().test(o) ? "Sorry, no emojis allowed." : o.length > 15 ? "Sorry, that name is too long." : null : "Where's The Name?"
@@ -1058,12 +1061,12 @@
                 return o ? o.indexOf("\t") >= 0 ? "Usernames can't have tabs." : o.indexOf('"') >= 0 ? "Usernames can't have quotations." : o.length > 35 ? "Sorry, that name is too long." : null : "Where's The Name?"
             },
             F = 75,
-            L = function(o) {
+            O = function(o) {
                 return o ? o.length > F ? "Sorry, that title is too long." : null : "Where's The Title?"
             },
-            O = 300,
+            L = 300,
             T = function(o) {
-                return o.length > O ? "Sorry, that description is too long." : null
+                return o.length > L ? "Sorry, that description is too long." : null
             },
             R = function(o) {
                 var e = document.createElement("textarea");
@@ -1270,14 +1273,14 @@
                 return s ? s.done ? (e[o.resultName] = s.value, e.next = o.nextLoc, "return" !== e.method && (e.method = "next", e.arg = void 0), e.delegate = null, d) : s : (e.method = "throw", e.arg = new TypeError("iterator result is not an object"), e.delegate = null, d)
             }
 
-            function U(o) {
+            function C(o) {
                 var e = {
                     tryLoc: o[0]
                 };
                 1 in o && (e.catchLoc = o[1]), 2 in o && (e.finallyLoc = o[2], e.afterLoc = o[3]), this.tryEntries.push(e)
             }
 
-            function C(o) {
+            function U(o) {
                 var e = o.completion || {};
                 e.type = "normal", delete e.arg, o.completion = e
             }
@@ -1285,7 +1288,7 @@
             function z(o) {
                 this.tryEntries = [{
                     tryLoc: "root"
-                }], o.forEach(U, this), this.reset(!0)
+                }], o.forEach(C, this), this.reset(!0)
             }
 
             function A(o) {
@@ -1349,7 +1352,7 @@
             }, o.values = A, z.prototype = {
                 constructor: z,
                 reset: function(o) {
-                    if (this.prev = 0, this.next = 0, this.sent = this._sent = void 0, this.done = !1, this.delegate = null, this.method = "next", this.arg = void 0, this.tryEntries.forEach(C), !o)
+                    if (this.prev = 0, this.next = 0, this.sent = this._sent = void 0, this.done = !1, this.delegate = null, this.method = "next", this.arg = void 0, this.tryEntries.forEach(U), !o)
                         for (var e in this) "t" === e.charAt(0) && a.call(this, e) && !isNaN(+e.slice(1)) && (this[e] = void 0)
                 },
                 stop: function() {
@@ -1403,7 +1406,7 @@
                 finish: function(o) {
                     for (var e = this.tryEntries.length - 1; e >= 0; --e) {
                         var a = this.tryEntries[e];
-                        if (a.finallyLoc === o) return this.complete(a.completion, a.afterLoc), C(a), d
+                        if (a.finallyLoc === o) return this.complete(a.completion, a.afterLoc), U(a), d
                     }
                 },
                 catch: function(o) {
@@ -1413,7 +1416,7 @@
                             var t = a.completion;
                             if ("throw" === t.type) {
                                 var s = t.arg;
-                                C(a)
+                                U(a)
                             }
                             return s
                         }
@@ -2560,6 +2563,14 @@
                 teamName: "Motivated Mummies",
                 color: "#e8d8c7"
             },
+            "Caramel Apple": {
+                url: "https://blooket.s3.us-east-2.amazonaws.com/blooks/halloween/caramelApple.svg",
+                mediaUrl: "https://media.blooket.com/image/upload/v1666248719/Blooks/caramelApple.svg",
+                set: "Spooky",
+                rarity: "Rare",
+                teamName: "Caring Caramels",
+                color: "#8d432a"
+            },
             Werewolf: {
                 url: "https://blooket.s3.us-east-2.amazonaws.com/blooks/halloween/werewolf.svg",
                 mediaUrl: "https://media.blooket.com/image/upload/v1601168912/Blooks/werewolf.svg",
@@ -2583,6 +2594,22 @@
                 rarity: "Chroma",
                 teamName: "Haunted Helpers",
                 color: "#939385"
+            },
+            "Pumpkin Cookie": {
+                url: "https://blooket.s3.us-east-2.amazonaws.com/blooks/bonus/halloween/pumpkinCookie.svg",
+                mediaUrl: "https://media.blooket.com/image/upload/v1666248719/Blooks/pumpkinCookie.svg",
+                set: "Spooky",
+                rarity: "Chroma",
+                teamName: "Cookie Monsters",
+                color: "#f7941d"
+            },
+            "Ghost Cookie": {
+                url: "https://blooket.s3.us-east-2.amazonaws.com/blooks/bonus/halloween/ghostCookie.svg",
+                mediaUrl: "https://media.blooket.com/image/upload/v1666248719/Blooks/ghostCookie.svg",
+                set: "Spooky",
+                rarity: "Chroma",
+                teamName: "COOKIES",
+                color: "#c2def4"
             },
             "Spooky Pumpkin": {
                 url: "https://blooket.s3.us-east-2.amazonaws.com/blooks/bonus/halloween/spookyPumpkin.svg",
@@ -3048,11 +3075,13 @@
                     ["Swamp Monster", 18.5],
                     ["Frankenstein", 18.5],
                     ["Vampire", 18.5],
-                    ["Zombie", 10.15],
-                    ["Mummy", 10.15],
-                    ["Werewolf", 5],
+                    ["Zombie", 6.7],
+                    ["Mummy", 6.7],
+                    ["Caramel Apple", 6.7],
+                    ["Werewolf", 5.2],
                     ["Ghost", .65],
-                    ["Haunted Pumpkin", .05]
+                    ["Pumpkin Cookie", .03],
+                    ["Ghost Cookie", .02]
                 ] : "Space" === o ? [
                     ["Earth", 18.75],
                     ["Meteor", 18.75],
@@ -3123,6 +3152,7 @@
                 Medieval: 15,
                 Breakfast: 15,
                 Wonderland: 15,
+                Spooky: 25,
                 Space: 20,
                 Bot: 20,
                 Aquatic: 20,
@@ -3275,12 +3305,15 @@
                     return "Uncommon";
                 case "Zombie":
                 case "Mummy":
+                case "Caramel Apple":
                     return "Rare";
                 case "Werewolf":
                     return "Epic";
                 case "Ghost":
                     return "Legendary";
                 case "Haunted Pumpkin":
+                case "Pumpkin Cookie":
+                case "Ghost Cookie":
                 case "Spooky Pumpkin":
                 case "Spooky Mummy":
                     return "Chroma";

@@ -1,5 +1,5 @@
 (window.webpackJsonp = window.webpackJsonp || []).push([
-    [1], {
+    [3], {
         "+C1j": function(e, t, a) {
             (t = e.exports = a("JPst")(!1)).push([e.i, ".styles__header___22Ne2-camelCase{background-color:#9a49aa;width:100%;height:55px;padding-bottom:6px;box-shadow:inset 0 -6px rgba(0,0,0,.2);box-sizing:border-box;display:flex;flex-direction:row;justify-content:space-between;z-index:10;overflow:hidden;position:absolute;top:0;left:0}.styles__blooketText___1pMBG-camelCase{font-size:40px;text-align:left;margin-left:40px;font-family:Titan One,sans-serif;-webkit-user-select:none;-moz-user-select:none;user-select:none;text-decoration:none}.styles__blooketText___1pMBG-camelCase,.styles__headerRight___nPb83-camelCase{color:#fff;line-height:49px;outline:none;cursor:pointer}.styles__headerRight___nPb83-camelCase{font-size:24px;font-weight:700;font-family:Nunito,sans-serif;text-align:right;text-decoration:underline;padding-right:40px}.styles__expandIcon___ipwig-camelCase{font-size:22px;line-height:49px;margin-right:15px;cursor:pointer;outline:none}.styles__headerLeft___JPD7G-camelCase{font-size:28px;color:#fff;text-align:left;line-height:49px;padding-left:20px;font-family:Nunito,sans-serif;-webkit-user-select:none;-moz-user-select:none;user-select:none}", ""]), t.locals = {
                 header: "styles__header___22Ne2-camelCase",
@@ -2849,30 +2849,31 @@
                 _ = a("LHn/"),
                 m = a("QaKi"),
                 p = a.n(m),
-                f = a("74sb");
+                f = a("74sb"),
+                d = a("8qja");
 
-            function d(e) {
-                return (d = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function(e) {
+            function h(e) {
+                return (h = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function(e) {
                     return typeof e
                 } : function(e) {
                     return e && "function" == typeof Symbol && e.constructor === Symbol && e !== Symbol.prototype ? "symbol" : typeof e
                 })(e)
             }
 
-            function h(e, t) {
+            function y(e, t) {
                 for (var a = 0; a < t.length; a++) {
                     var n = t[a];
                     n.enumerable = n.enumerable || !1, n.configurable = !0, "value" in n && (n.writable = !0), Object.defineProperty(e, n.key, n)
                 }
             }
 
-            function y(e, t) {
-                return (y = Object.setPrototypeOf ? Object.setPrototypeOf.bind() : function(e, t) {
+            function b(e, t) {
+                return (b = Object.setPrototypeOf ? Object.setPrototypeOf.bind() : function(e, t) {
                     return e.__proto__ = t, e
                 })(e, t)
             }
 
-            function b(e) {
+            function g(e) {
                 var t = function() {
                     if ("undefined" == typeof Reflect || !Reflect.construct) return !1;
                     if (Reflect.construct.sham) return !1;
@@ -2884,32 +2885,32 @@
                     }
                 }();
                 return function() {
-                    var a, n = C(e);
+                    var a, n = v(e);
                     if (t) {
-                        var s = C(this).constructor;
+                        var s = v(this).constructor;
                         a = Reflect.construct(n, arguments, s)
                     } else a = n.apply(this, arguments);
-                    return g(this, a)
+                    return x(this, a)
                 }
             }
 
-            function g(e, t) {
-                if (t && ("object" === d(t) || "function" == typeof t)) return t;
+            function x(e, t) {
+                if (t && ("object" === h(t) || "function" == typeof t)) return t;
                 if (void 0 !== t) throw new TypeError("Derived constructors may only return object or undefined");
-                return x(e)
+                return C(e)
             }
 
-            function x(e) {
+            function C(e) {
                 if (void 0 === e) throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
                 return e
             }
 
-            function C(e) {
-                return (C = Object.setPrototypeOf ? Object.getPrototypeOf.bind() : function(e) {
+            function v(e) {
+                return (v = Object.setPrototypeOf ? Object.getPrototypeOf.bind() : function(e) {
                     return e.__proto__ || Object.getPrototypeOf(e)
                 })(e)
             }
-            var v = function(e) {
+            var w = function(e) {
                 ! function(e, t) {
                     if ("function" != typeof t && null !== t) throw new TypeError("Super expression must either be null or a function");
                     e.prototype = Object.create(t && t.prototype, {
@@ -2920,9 +2921,9 @@
                         }
                     }), Object.defineProperty(e, "prototype", {
                         writable: !1
-                    }), t && y(e, t)
+                    }), t && b(e, t)
                 }(r, e);
-                var t, a, n, o = b(r);
+                var t, a, n, o = g(r);
 
                 function r(e) {
                     var t;
@@ -2931,7 +2932,7 @@
                     }(this, r), (t = o.call(this, e)).state = {
                         link: e.link,
                         full: Object(f.i)()
-                    }, t.checkResize = t.checkResize.bind(x(t)), t
+                    }, t.checkResize = t.checkResize.bind(C(t)), t
                 }
                 return t = r, (a = [{
                     key: "componentDidMount",
@@ -3011,7 +3012,7 @@
                         }, s.a.createElement("div", {
                             className: p.a.playerEnergy
                         }, Object(f.l)(this.props.gold)), s.a.createElement("img", {
-                            src: _.a.basic.gold,
+                            src: d.a ? _.a.basic.candy : _.a.basic.gold,
                             alt: "Gold",
                             className: p.a.candy,
                             draggable: !1
@@ -3098,11 +3099,11 @@
                             to: this.props.linkRightTo
                         }, this.props.linkRightText) : null))
                     }
-                }]) && h(t.prototype, a), n && h(t, n), Object.defineProperty(t, "prototype", {
+                }]) && y(t.prototype, a), n && y(t, n), Object.defineProperty(t, "prototype", {
                     writable: !1
                 }), r
             }(s.a.Component);
-            v.propTypes = {
+            w.propTypes = {
                 link: r.a.bool,
                 name: r.a.string,
                 center: r.a.string,
@@ -3126,7 +3127,7 @@
                 numBlooks: r.a.number,
                 blook: r.a.string,
                 numDefense: r.a.number
-            }, t.a = v
+            }, t.a = w
         },
         WCD1: function(e, t, a) {
             "use strict";

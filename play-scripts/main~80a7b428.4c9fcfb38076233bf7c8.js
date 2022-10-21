@@ -1,15 +1,15 @@
 (window.webpackJsonp = window.webpackJsonp || []).push([
-    [8], {
+    [10], {
         "+3yP": function(e, t, a) {
             "use strict";
             var s = a("q1tI"),
                 o = a.n(s),
                 n = a("17x9"),
-                r = a.n(n),
-                l = a("4HzQ"),
+                l = a.n(n),
+                r = a("4HzQ"),
                 i = a("5gzV"),
-                c = a.n(i),
-                _ = a("0oXL"),
+                _ = a.n(i),
+                c = a("0oXL"),
                 m = a("74sb");
 
             function d(e) {
@@ -80,21 +80,21 @@
                     }), Object.defineProperty(e, "prototype", {
                         writable: !1
                     }), t && y(e, t)
-                }(r, e);
-                var t, a, s, n = p(r);
+                }(l, e);
+                var t, a, s, n = p(l);
 
-                function r(e) {
+                function l(e) {
                     var t;
                     return function(e, t) {
                         if (!(e instanceof t)) throw new TypeError("Cannot call a class as a function")
-                    }(this, r), (t = n.call(this, e)).state = {
+                    }(this, l), (t = n.call(this, e)).state = {
                         me: {},
                         opp: {},
                         myEnergyArray: [],
                         oppEnergyArray: []
                     }, t
                 }
-                return t = r, (a = [{
+                return t = l, (a = [{
                     key: "componentDidMount",
                     value: function() {
                         var e = this;
@@ -114,97 +114,97 @@
                     value: function() {
                         var e = this;
                         return o.a.createElement("div", {
-                            className: c.a.background
+                            className: _.a.background
                         }, o.a.createElement("div", {
-                            className: c.a.rightBackground
+                            className: _.a.rightBackground
                         }), o.a.createElement("img", {
                             src: "https://media.blooket.com/image/upload/v1662148586/Media/br/BG_Overlay2.svg",
                             alt: "Background",
-                            className: c.a.backgroundOverlay
+                            className: _.a.backgroundOverlay
                         }), o.a.createElement("img", {
                             src: "https://media.blooket.com/image/upload/v1655936179/Media/br/VS_Lightning_Bolt_Top.svg",
                             alt: "Lightning Top",
-                            className: c.a.lightningTop
+                            className: _.a.lightningTop
                         }), o.a.createElement("img", {
                             src: "https://media.blooket.com/image/upload/v1655936179/Media/br/VS_Lightning_Bolt_Bottom.svg",
                             alt: "Lightning Bottom",
-                            className: c.a.lightningBottom
-                        }), o.a.createElement(_.a, {
+                            className: _.a.lightningBottom
+                        }), o.a.createElement(c.a, {
                             name: this.state.me.blook,
-                            className: c.a.leftBlookShadow3
+                            className: _.a.leftBlookShadow3
                         }), o.a.createElement("img", {
                             src: "https://media.blooket.com/image/upload/v1662752040/Media/br/Resized_Orange_Nameplate_No_Tilt.svg",
                             alt: "Nameplate",
-                            className: c.a.leftNameplate
-                        }), o.a.createElement(l.Textfit, {
-                            className: c.a.leftName,
+                            className: _.a.leftNameplate
+                        }), o.a.createElement(r.Textfit, {
+                            className: _.a.leftName,
                             mode: "single",
                             min: 1,
                             max: Object(m.v)("8vw"),
                             forceSingleModeWidth: !1
-                        }, this.state.me.name), o.a.createElement(_.a, {
+                        }, this.state.me.name), o.a.createElement(c.a, {
                             name: this.state.me.blook,
-                            className: c.a.leftBlookShadow2
-                        }), o.a.createElement(_.a, {
+                            className: _.a.leftBlookShadow2
+                        }), o.a.createElement(c.a, {
                             name: this.state.me.blook,
-                            className: c.a.leftBlookShadow1
-                        }), o.a.createElement(_.a, {
+                            className: _.a.leftBlookShadow1
+                        }), o.a.createElement(c.a, {
                             name: this.state.me.blook,
-                            className: c.a.leftBlook
+                            className: _.a.leftBlook
                         }), o.a.createElement("div", {
-                            className: c.a.leftEnergyContainer
+                            className: _.a.leftEnergyContainer
                         }, o.a.createElement("img", {
                             src: "https://media.blooket.com/image/upload/v1662148586/Media/br/Energy_BG_No_Tilt.svg",
                             alt: "Energy Bar",
-                            className: c.a.leftEnergyBar
+                            className: _.a.leftEnergyBar
                         }), o.a.createElement("img", {
                             src: "https://media.blooket.com/image/upload/v1655936179/Media/br/Energy_Bolt_Blue.svg",
                             alt: "Energy Bolt",
-                            className: c.a.leftEnergyBolt
+                            className: _.a.leftEnergyBolt
                         }), this.state.myEnergyArray.map((function(t, a) {
                             return o.a.createElement("img", {
                                 key: a,
                                 src: t ? "https://media.blooket.com/image/upload/v1662148586/Media/br/Energy_Bar_No_Tilt_Blue.svg" : "https://media.blooket.com/image/upload/v1662148586/Media/br/Energy_Bar_No_Tilt_Empty.svg",
                                 alt: "Energy",
-                                className: c.a.leftEnergy,
+                                className: _.a.leftEnergy,
                                 style: {
                                     marginRight: a === e.state.myEnergyArray.length - 1 ? "17%" : null
                                 }
                             })
-                        }))), o.a.createElement(_.a, {
+                        }))), o.a.createElement(c.a, {
                             name: this.state.opp.blook,
-                            className: c.a.rightBlookShadow3
+                            className: _.a.rightBlookShadow3
                         }), o.a.createElement("img", {
                             src: "https://media.blooket.com/image/upload/v1662752040/Media/br/Resized_Blue_Nameplate_No_Tilt.svg",
                             alt: "Nameplate",
-                            className: c.a.rightNameplate
-                        }), o.a.createElement(l.Textfit, {
-                            className: c.a.rightName,
+                            className: _.a.rightNameplate
+                        }), o.a.createElement(r.Textfit, {
+                            className: _.a.rightName,
                             mode: "single",
                             min: 1,
                             max: Object(m.v)("8vw"),
                             forceSingleModeWidth: !1
-                        }, this.state.opp.name), o.a.createElement(_.a, {
+                        }, this.state.opp.name), o.a.createElement(c.a, {
                             name: this.state.opp.blook,
-                            className: c.a.rightBlookShadow2
-                        }), o.a.createElement(_.a, {
+                            className: _.a.rightBlookShadow2
+                        }), o.a.createElement(c.a, {
                             name: this.state.opp.blook,
-                            className: c.a.rightBlookShadow1
-                        }), o.a.createElement(_.a, {
+                            className: _.a.rightBlookShadow1
+                        }), o.a.createElement(c.a, {
                             name: this.state.opp.blook,
-                            className: c.a.rightBlook
+                            className: _.a.rightBlook
                         }), o.a.createElement("div", {
-                            className: c.a.rightEnergyContainer
+                            className: _.a.rightEnergyContainer
                         }, o.a.createElement("img", {
                             src: "https://media.blooket.com/image/upload/v1662148586/Media/br/Energy_BG_No_Tilt.svg",
                             alt: "Energy Bar",
-                            className: c.a.rightEnergyBar
+                            className: _.a.rightEnergyBar
                         }), this.state.oppEnergyArray.map((function(e, t) {
                             return o.a.createElement("img", {
                                 key: t,
                                 src: e ? "https://media.blooket.com/image/upload/v1662148586/Media/br/Energy_Bar_No_Tilt_Orange.svg" : "https://media.blooket.com/image/upload/v1662148586/Media/br/Energy_Bar_No_Tilt_Empty.svg",
                                 alt: "Energy",
-                                className: c.a.rightEnergy,
+                                className: _.a.rightEnergy,
                                 style: {
                                     marginLeft: 0 === t ? "17%" : null
                                 }
@@ -212,34 +212,34 @@
                         })), o.a.createElement("img", {
                             src: "https://media.blooket.com/image/upload/v1655936179/Media/br/Energy_Bolt_Orange.svg",
                             alt: "Energy Bolt",
-                            className: c.a.rightEnergyBolt
+                            className: _.a.rightEnergyBolt
                         })), 3 === this.props.timer ? o.a.createElement("img", {
                             src: "https://media.blooket.com/image/upload/v1662752328/Media/br/Countdown_3.png",
                             alt: "VS",
-                            className: c.a.numText
+                            className: _.a.numText
                         }) : 2 === this.props.timer ? o.a.createElement("img", {
                             src: "https://media.blooket.com/image/upload/v1662752328/Media/br/Countdown_2.png",
                             alt: "VS",
-                            className: c.a.numText
+                            className: _.a.numText
                         }) : this.props.timer <= 1 ? o.a.createElement("img", {
                             src: "https://media.blooket.com/image/upload/v1662752328/Media/br/Countdown_1.png",
                             alt: "VS",
-                            className: c.a.numText
+                            className: _.a.numText
                         }) : o.a.createElement("img", {
                             src: "https://media.blooket.com/image/upload/v1655936179/Media/br/VS.png",
                             alt: "VS",
-                            className: c.a.vs
+                            className: _.a.vs
                         }))
                     }
                 }]) && f(t.prototype, a), s && f(t, s), Object.defineProperty(t, "prototype", {
                     writable: !1
-                }), r
+                }), l
             }(o.a.Component);
             g.propTypes = {
-                name: r.a.string,
-                match: r.a.array,
-                maxEnergy: r.a.number,
-                timer: r.a.number
+                name: l.a.string,
+                match: l.a.array,
+                maxEnergy: l.a.number,
+                timer: l.a.number
             }, t.a = g
         },
         "+hd2": function(e, t, a) {
@@ -316,12 +316,12 @@
             var s = a("q1tI"),
                 o = a.n(s),
                 n = a("17x9"),
-                r = a.n(n),
-                l = a("TSYQ"),
-                i = a.n(l),
-                c = a("4HzQ"),
-                _ = a("y18I"),
-                m = a.n(_),
+                l = a.n(n),
+                r = a("TSYQ"),
+                i = a.n(r),
+                _ = a("4HzQ"),
+                c = a("y18I"),
+                m = a.n(c),
                 d = a("0oXL"),
                 f = a("74sb");
             var y = function(e) {
@@ -329,7 +329,7 @@
                     a = e.noEnergy,
                     s = e.selected,
                     n = e.onSelect,
-                    r = e.canClick;
+                    l = e.canClick;
                 return o.a.createElement("div", {
                     className: m.a.teamHolder
                 }, o.a.createElement("div", {
@@ -352,12 +352,12 @@
                     className: m.a.teamPlayersContainer
                 }, t.players.map((function(e) {
                     return o.a.createElement("div", {
-                        className: i()(r ? m.a.playerContainer : m.a.playerContainerNo, (t = {}, a = m.a.selected, l = s === e.name, a in t ? Object.defineProperty(t, a, {
-                            value: l,
+                        className: i()(l ? m.a.playerContainer : m.a.playerContainerNo, (t = {}, a = m.a.selected, r = s === e.name, a in t ? Object.defineProperty(t, a, {
+                            value: r,
                             enumerable: !0,
                             configurable: !0,
                             writable: !0
-                        }) : t[a] = l, t)),
+                        }) : t[a] = r, t)),
                         key: e.name,
                         role: "button",
                         tabIndex: 0,
@@ -367,22 +367,22 @@
                     }, o.a.createElement(d.a, {
                         name: e.blook,
                         className: m.a.playerBlook
-                    }), o.a.createElement(c.Textfit, {
+                    }), o.a.createElement(_.Textfit, {
                         className: m.a.playerText,
                         mode: "single",
                         forceSingleModeWidth: !1,
                         min: 1,
                         max: Object(f.v)("5vw")
                     }, e.name));
-                    var t, a, l
+                    var t, a, r
                 }))))
             };
             y.propTypes = {
-                team: r.a.object,
-                noEnergy: r.a.bool,
-                selected: r.a.string,
-                onSelect: r.a.func,
-                canClick: r.a.bool
+                team: l.a.object,
+                noEnergy: l.a.bool,
+                selected: l.a.string,
+                onSelect: l.a.func,
+                canClick: l.a.bool
             }, t.a = y
         },
         "2hgL": function(e, t, a) {
@@ -390,11 +390,11 @@
             var s = a("q1tI"),
                 o = a.n(s),
                 n = a("17x9"),
-                r = a.n(n),
-                l = a("SHTr"),
-                i = a.n(l),
-                c = a("0oXL"),
-                _ = a("74sb");
+                l = a.n(n),
+                r = a("SHTr"),
+                i = a.n(r),
+                _ = a("0oXL"),
+                c = a("74sb");
 
             function m(e) {
                 return (m = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function(e) {
@@ -464,34 +464,34 @@
                     }), Object.defineProperty(e, "prototype", {
                         writable: !1
                     }), t && f(e, t)
-                }(r, e);
-                var t, a, s, n = y(r);
+                }(l, e);
+                var t, a, s, n = y(l);
 
-                function r(e) {
+                function l(e) {
                     var t;
                     ! function(e, t) {
                         if (!(e instanceof t)) throw new TypeError("Cannot call a class as a function")
-                    }(this, r), t = n.call(this, e);
-                    for (var a = [], s = 0; s < Object(_.o)(5, 7); s++) a.push({
-                        top: "".concat(Object(_.o)(10, 90), "%"),
-                        left: "".concat(Object(_.o)(10, 90), "%"),
-                        width: "".concat(Object(_.o)(26, 36), "vh"),
-                        animationDuration: "".concat(Object(_.o)(2500, 6e3), "ms"),
-                        animationDelay: "".concat(Object(_.o)(1e3, 3e3), "ms"),
-                        transform: "translate(-50%, -50%) rotate(".concat(Object(_.o)(-90, 90), "deg)")
+                    }(this, l), t = n.call(this, e);
+                    for (var a = [], s = 0; s < Object(c.o)(5, 7); s++) a.push({
+                        top: "".concat(Object(c.o)(10, 90), "%"),
+                        left: "".concat(Object(c.o)(10, 90), "%"),
+                        width: "".concat(Object(c.o)(26, 36), "vh"),
+                        animationDuration: "".concat(Object(c.o)(2500, 6e3), "ms"),
+                        animationDelay: "".concat(Object(c.o)(1e3, 3e3), "ms"),
+                        transform: "translate(-50%, -50%) rotate(".concat(Object(c.o)(-90, 90), "deg)")
                     });
                     return t.state = {
                         blookStylings: a
                     }, t
                 }
-                return t = r, (a = [{
+                return t = l, (a = [{
                     key: "render",
                     value: function() {
                         var e = this;
                         return o.a.createElement("div", {
                             className: i.a.container
                         }, this.state.blookStylings.map((function(t, a) {
-                            return o.a.createElement(c.a, {
+                            return o.a.createElement(_.a, {
                                 name: e.props.blook,
                                 className: i.a.blook,
                                 style: t,
@@ -501,10 +501,10 @@
                     }
                 }]) && d(t.prototype, a), s && d(t, s), Object.defineProperty(t, "prototype", {
                     writable: !1
-                }), r
+                }), l
             }(o.a.Component);
             h.propTypes = {
-                blook: r.a.string
+                blook: l.a.string
             }, t.a = h
         },
         "2qfb": function(e, t, a) {
@@ -512,11 +512,11 @@
             var s = a("q1tI"),
                 o = a.n(s),
                 n = a("17x9"),
-                r = a.n(n),
-                l = a("TSYQ"),
-                i = a.n(l),
-                c = a("OA+j"),
-                _ = a.n(c),
+                l = a.n(n),
+                r = a("TSYQ"),
+                i = a.n(r),
+                _ = a("OA+j"),
+                c = a.n(_),
                 m = a("gvfT"),
                 d = a("lWrb");
 
@@ -650,20 +650,20 @@
                         }), Object.defineProperty(e, "prototype", {
                             writable: !1
                         }), t && h(e, t)
-                    }(r, e);
-                    var t, a, s, n = g(r);
+                    }(l, e);
+                    var t, a, s, n = g(l);
 
-                    function r(e) {
+                    function l(e) {
                         var t;
                         return function(e, t) {
                             if (!(e instanceof t)) throw new TypeError("Cannot call a class as a function")
-                        }(this, r), (t = n.call(this, e)).state = {
+                        }(this, l), (t = n.call(this, e)).state = {
                             cards: e.isTutorial ? E : Object(m.d)(e.type, 3, e.noArtifacts),
                             flippedArray: [!0, !0, !0],
                             showDeck: !1
                         }, t.hasSelected = !1, t.select = t.select.bind(b(t)), t
                     }
-                    return t = r, (a = [{
+                    return t = l, (a = [{
                         key: "componentDidMount",
                         value: function() {
                             var e = this,
@@ -690,11 +690,11 @@
                         value: function() {
                             var e = this;
                             return o.a.createElement("div", {
-                                className: _.a.container
+                                className: c.a.container
                             }, o.a.createElement("div", {
-                                className: _.a.header
+                                className: c.a.header
                             }, "Choose a Card!"), o.a.createElement("div", {
-                                className: i()(_.a.cardContainer, this.props.noThird ? _.a.card1Only : _.a.card1),
+                                className: i()(c.a.cardContainer, this.props.noThird ? c.a.card1Only : c.a.card1),
                                 role: "button",
                                 tabIndex: 0,
                                 onClick: function() {
@@ -706,7 +706,7 @@
                                 flipped: this.state.flippedArray[0],
                                 isArtifact: !this.state.cards[0].blook
                             })), o.a.createElement("div", {
-                                className: i()(_.a.cardContainer, this.props.noThird ? _.a.card2Only : _.a.card2),
+                                className: i()(c.a.cardContainer, this.props.noThird ? c.a.card2Only : c.a.card2),
                                 role: "button",
                                 tabIndex: 0,
                                 onClick: function() {
@@ -718,7 +718,7 @@
                                 flipped: this.state.flippedArray[1],
                                 isArtifact: !this.state.cards[1].blook
                             })), this.props.noThird ? null : o.a.createElement("div", {
-                                className: i()(_.a.cardContainer, _.a.card3),
+                                className: i()(c.a.cardContainer, c.a.card3),
                                 role: "button",
                                 tabIndex: 0,
                                 onClick: function() {
@@ -730,9 +730,9 @@
                                 flipped: this.state.flippedArray[2],
                                 isArtifact: !this.state.cards[2].blook
                             })), this.props.coins ? o.a.createElement("div", {
-                                className: _.a.coinsText
+                                className: c.a.coinsText
                             }, "+".concat(this.props.coins, " Coins")) : null, o.a.createElement("div", {
-                                className: _.a.deckButton,
+                                className: c.a.deckButton,
                                 role: "button",
                                 tabIndex: 0,
                                 onClick: function() {
@@ -741,14 +741,14 @@
                                     })
                                 }
                             }, o.a.createElement("i", {
-                                className: i()("fas fa-layer-group", _.a.deckIcon)
+                                className: i()("fas fa-layer-group", c.a.deckIcon)
                             }), o.a.createElement("div", {
-                                className: _.a.deckText
+                                className: c.a.deckText
                             }, "View Deck")), this.state.showDeck ? o.a.createElement("div", {
-                                className: _.a.deckContainer
+                                className: c.a.deckContainer
                             }, this.props.cards.map((function(e, t) {
                                 return o.a.createElement("div", {
-                                    className: _.a.deckCardContainer,
+                                    className: c.a.deckCardContainer,
                                     key: t
                                 }, o.a.createElement(d.a, {
                                     card: e,
@@ -756,7 +756,7 @@
                                     isArtifact: !e.blook
                                 }))
                             })), o.a.createElement("i", {
-                                className: i()("fas fa-times", _.a.closeIcon),
+                                className: i()("fas fa-times", c.a.closeIcon),
                                 role: "button",
                                 tabIndex: 0,
                                 onClick: function() {
@@ -768,16 +768,16 @@
                         }
                     }]) && u(t.prototype, a), s && u(t, s), Object.defineProperty(t, "prototype", {
                         writable: !1
-                    }), r
+                    }), l
                 }(o.a.Component);
             T.propTypes = {
-                type: r.a.string.isRequired,
-                onClick: r.a.func,
-                coins: r.a.number,
-                cards: r.a.array,
-                noArtifacts: r.a.bool,
-                noThird: r.a.bool,
-                isTutorial: r.a.bool
+                type: l.a.string.isRequired,
+                onClick: l.a.func,
+                coins: l.a.number,
+                cards: l.a.array,
+                noArtifacts: l.a.bool,
+                noThird: l.a.bool,
+                isTutorial: l.a.bool
             }, t.a = T
         },
         "3VbC": function(e, t, a) {
@@ -785,48 +785,48 @@
             var s = a("q1tI"),
                 o = a.n(s),
                 n = a("17x9"),
-                r = a.n(n),
-                l = a("TSYQ"),
-                i = a.n(l),
-                c = a("0LBQ"),
-                _ = a.n(c),
+                l = a.n(n),
+                r = a("TSYQ"),
+                i = a.n(r),
+                _ = a("0LBQ"),
+                c = a.n(_),
                 m = a("74sb"),
                 d = function(e) {
                     var t = e.amount;
                     return o.a.createElement("div", {
-                        className: _.a.container
+                        className: c.a.container
                     }, o.a.createElement("div", {
-                        className: i()(_.a.text, _.a.n1)
+                        className: i()(c.a.text, c.a.n1)
                     }, o.a.createElement("div", {
-                        className: _.a.textInside
+                        className: c.a.textInside
                     }, "The goal is to collect as many Blooks as you can")), o.a.createElement("div", {
-                        className: i()(_.a.text, _.a.n2)
+                        className: i()(c.a.text, c.a.n2)
                     }, o.a.createElement("div", {
-                        className: _.a.textInside
+                        className: c.a.textInside
                     }, "After answering correctly, you can either Attack or Defend")), o.a.createElement("div", {
-                        className: i()(_.a.text, _.a.n3)
+                        className: i()(c.a.text, c.a.n3)
                     }, o.a.createElement("div", {
-                        className: _.a.textInside
+                        className: c.a.textInside
                     }, "Defending will increase your shields by 1")), o.a.createElement("div", {
-                        className: i()(_.a.text, _.a.n4)
+                        className: i()(c.a.text, c.a.n4)
                     }, o.a.createElement("div", {
-                        className: _.a.textInside
+                        className: c.a.textInside
                     }, "Attacking will reduce enemy shields by 1")), o.a.createElement("div", {
-                        className: i()(_.a.text, _.a.n5)
+                        className: i()(c.a.text, c.a.n5)
                     }, o.a.createElement("div", {
-                        className: _.a.textInside
+                        className: c.a.textInside
                     }, "If they have no shields, you'll take one of their Blooks")), o.a.createElement("div", {
-                        className: i()(_.a.text, _.a.n6)
+                        className: i()(c.a.text, c.a.n6)
                     }, o.a.createElement("div", {
-                        className: _.a.textInside
+                        className: c.a.textInside
                     }, "Most Blooks after ".concat(Object(m.l)(t), " ").concat("1" === t ? "minute" : "minutes", " wins!"))), o.a.createElement("div", {
-                        className: i()(_.a.text, _.a.n7)
+                        className: i()(c.a.text, c.a.n7)
                     }, o.a.createElement("div", {
-                        className: _.a.textInside
+                        className: c.a.textInside
                     }, "Good Luck!")))
                 };
             d.propTypes = {
-                amount: r.a.any
+                amount: l.a.any
             }, t.a = d
         },
         "3lxn": function(e, t, a) {
@@ -843,12 +843,12 @@
             var s = a("q1tI"),
                 o = a.n(s),
                 n = a("17x9"),
-                r = a.n(n),
-                l = a("TSYQ"),
-                i = a.n(l),
-                c = a("4HzQ"),
-                _ = a("j0Ua"),
-                m = a.n(_),
+                l = a.n(n),
+                r = a("TSYQ"),
+                i = a.n(r),
+                _ = a("4HzQ"),
+                c = a("j0Ua"),
+                m = a.n(c),
                 d = a("Xst1"),
                 f = a.n(d),
                 y = a("74sb");
@@ -921,19 +921,19 @@
                     }), Object.defineProperty(e, "prototype", {
                         writable: !1
                     }), t && h(e, t)
-                }(r, e);
-                var t, a, s, n = g(r);
+                }(l, e);
+                var t, a, s, n = g(l);
 
-                function r(e) {
+                function l(e) {
                     var t;
                     return function(e, t) {
                         if (!(e instanceof t)) throw new TypeError("Cannot call a class as a function")
-                    }(this, r), (t = n.call(this, e)).state = {
+                    }(this, l), (t = n.call(this, e)).state = {
                         time: e.incorrectTime,
                         next: !1
                     }, t
                 }
-                return t = r, (a = [{
+                return t = l, (a = [{
                     key: "componentDidMount",
                     value: function() {
                         var e = this;
@@ -968,7 +968,7 @@
                             onClick: this.state.next ? this.props.onNext : null
                         }, "hacker" === this.props.theme ? o.a.createElement("div", {
                             className: m.a.overlay
-                        }) : null, this.props.reward ? o.a.createElement(c.Textfit, {
+                        }) : null, this.props.reward ? o.a.createElement(_.Textfit, {
                             className: m.a.rewardHeader,
                             mode: "multi",
                             forceSingleModeWidth: !1,
@@ -991,15 +991,15 @@
                     }
                 }]) && u(t.prototype, a), s && u(t, s), Object.defineProperty(t, "prototype", {
                     writable: !1
-                }), r
+                }), l
             }(o.a.Component);
             C.propTypes = {
-                incorrectTime: r.a.number,
-                correctAnswers: r.a.array,
-                correct: r.a.bool,
-                onNext: r.a.func,
-                reward: r.a.string,
-                theme: r.a.string
+                incorrectTime: l.a.number,
+                correctAnswers: l.a.array,
+                correct: l.a.bool,
+                onNext: l.a.func,
+                reward: l.a.string,
+                theme: l.a.string
             }, t.a = C
         },
         "5gzV": function(e, t, a) {
@@ -1040,11 +1040,11 @@
             var s = a("q1tI"),
                 o = a.n(s),
                 n = a("17x9"),
-                r = a.n(n),
-                l = a("Ruj+"),
-                i = a.n(l),
-                c = a("XOuL"),
-                _ = function(e) {
+                l = a.n(n),
+                r = a("Ruj+"),
+                i = a.n(r),
+                _ = a("XOuL"),
+                c = function(e) {
                     var t = e.header,
                         a = e.footer,
                         s = e.blook,
@@ -1055,18 +1055,18 @@
                         className: a ? i.a.containerBig : i.a.container
                     }, o.a.createElement("div", {
                         className: i.a.header
-                    }, t), o.a.createElement(c.a, {
+                    }, t), o.a.createElement(_.a, {
                         blook: s
                     }), a ? o.a.createElement("div", {
                         className: i.a.footer
                     }, a) : null))
                 };
-            _.propTypes = {
-                header: r.a.string,
-                footer: r.a.string,
-                blook: r.a.string,
-                transition: r.a.bool
-            }, t.a = _
+            c.propTypes = {
+                header: l.a.string,
+                footer: l.a.string,
+                blook: l.a.string,
+                transition: l.a.bool
+            }, t.a = c
         },
         "9BmH": function(e, t, a) {
             (t = e.exports = a("JPst")(!1)).push([e.i, ".styles__container___2Gxlh-camelCase{top:0;left:0;width:100%;height:100%;-webkit-user-select:none;-moz-user-select:none;user-select:none;overflow:hidden}.styles__container___2Gxlh-camelCase,.styles__text___1a41k-camelCase{position:absolute}.styles__text___1a41k-camelCase{width:80%;top:50%;left:10%;transform:translateY(-50%);text-align:center;font-family:Titan One,sans-serif;text-shadow:2px 2px 8px grey;color:#fff;font-size:6vw;opacity:0}.styles__n1___2zMcs-camelCase{animation:styles__fadeIn___2_sut-camelCase .15s linear 0ms forwards,styles__fadeOut___2Ni2R-camelCase .15s linear 2.5s forwards}.styles__n2___psMc4-camelCase{animation:styles__fadeIn___2_sut-camelCase .15s linear 2.5s forwards,styles__fadeOut___2Ni2R-camelCase .15s linear 4.5s forwards}.styles__n3___3sfdG-camelCase{animation:styles__fadeIn___2_sut-camelCase .15s linear 4.5s forwards,styles__fadeOut___2Ni2R-camelCase .15s linear 6.5s forwards}.styles__n4___3OOEn-camelCase{animation:styles__fadeIn___2_sut-camelCase .15s linear 6.5s forwards,styles__fadeOut___2Ni2R-camelCase .15s linear 9s forwards}.styles__n5___3aLc8-camelCase{animation:styles__fadeIn___2_sut-camelCase .15s linear 9s forwards,styles__fadeOut___2Ni2R-camelCase .15s linear 11.5s forwards}.styles__n6___39Nu0-camelCase{animation:styles__fadeIn___2_sut-camelCase .15s linear 11.5s forwards,styles__fadeOut___2Ni2R-camelCase .15s linear 14s forwards}@keyframes styles__fadeIn___2_sut-camelCase{0%{opacity:0;transform:scale(.5) translateY(-50%)}to{opacity:1;transform:scale(1) translateY(-50%)}}@keyframes styles__fadeOut___2Ni2R-camelCase{0%{opacity:1;transform:scale(1) translateY(-50%)}to{opacity:0;transform:scale(.5) translateY(-50%)}}", ""]), t.locals = {
@@ -1087,11 +1087,11 @@
             var s = a("q1tI"),
                 o = a.n(s),
                 n = a("17x9"),
-                r = a.n(n),
-                l = a("TSYQ"),
-                i = a.n(l),
-                c = a("L4GU"),
-                _ = a.n(c),
+                l = a.n(n),
+                r = a("TSYQ"),
+                i = a.n(r),
+                _ = a("L4GU"),
+                c = a.n(_),
                 m = a("lmLo");
 
             function d(e) {
@@ -1164,19 +1164,19 @@
                     }), Object.defineProperty(e, "prototype", {
                         writable: !1
                     }), t && y(e, t)
-                }(r, e);
-                var t, a, s, n = p(r);
+                }(l, e);
+                var t, a, s, n = p(l);
 
-                function r(e) {
+                function l(e) {
                     var t;
                     return function(e, t) {
                         if (!(e instanceof t)) throw new TypeError("Cannot call a class as a function")
-                    }(this, r), (t = n.call(this, e)).state = {
+                    }(this, l), (t = n.call(this, e)).state = {
                         step: {},
                         stepNum: 0
                     }, t.waiting = !1, t.lastElement = null, t.lastZIndex = 1, t.lastOnClick = null, t.lastColor = "", t.lastBorderRadius = 0, t.tourModalRef = o.a.createRef(), t.setStep = t.setStep.bind(h(t)), t.endTour = t.endTour.bind(h(t)), t
                 }
-                return t = r, (a = [{
+                return t = l, (a = [{
                     key: "componentDidMount",
                     value: function() {
                         this.parentNode = this.tourModalRef.current.parentNode.id, this.setStep(0)
@@ -1218,21 +1218,21 @@
                         return o.a.createElement("div", {
                             id: "tourModal",
                             ref: this.tourModalRef,
-                            className: _.a.modal,
+                            className: c.a.modal,
                             hidden: !(this.state.step && this.state.step.text)
                         }, this.state.step && this.state.step.text ? o.a.createElement("div", {
-                            className: i()(_.a.messageContainer, this.state.step.className)
+                            className: i()(c.a.messageContainer, this.state.step.className)
                         }, o.a.createElement("div", {
-                            className: _.a.textRow
+                            className: c.a.textRow
                         }, this.state.step.img ? o.a.createElement("img", {
                             src: this.state.step.img,
                             alt: "Step",
-                            className: _.a.messageImg,
+                            className: c.a.messageImg,
                             draggable: !1
                         }) : null, this.state.step.text), this.state.step.nextButtonText ? o.a.createElement(m.a, {
                             color: "#0bc2cf",
-                            outsideClass: _.a.nextButton,
-                            insideClass: _.a.nextButtonInside,
+                            outsideClass: c.a.nextButton,
+                            insideClass: c.a.nextButtonInside,
                             onClick: function() {
                                 return e.setStep(e.state.stepNum + 1)
                             }
@@ -1240,12 +1240,12 @@
                     }
                 }]) && f(t.prototype, a), s && f(t, s), Object.defineProperty(t, "prototype", {
                     writable: !1
-                }), r
+                }), l
             }(o.a.Component);
             w.propTypes = {
-                steps: r.a.array,
-                onExit: r.a.func,
-                functions: r.a.array
+                steps: l.a.array,
+                onExit: l.a.func,
+                functions: l.a.array
             }, t.a = w
         },
         "9WQd": function(e, t, a) {
@@ -1290,24 +1290,24 @@
             var s = a("q1tI"),
                 o = a.n(s),
                 n = a("17x9"),
-                r = a.n(n),
-                l = a("4HzQ"),
+                l = a.n(n),
+                r = a("4HzQ"),
                 i = a("TSYQ"),
-                c = a.n(i),
-                _ = a("fSAT"),
-                m = a.n(_),
+                _ = a.n(i),
+                c = a("fSAT"),
+                m = a.n(c),
                 d = a("74sb"),
                 f = function(e) {
                     var t = e.mode;
                     return o.a.createElement("div", {
                         className: m.a.container
-                    }, o.a.createElement(l.Textfit, {
+                    }, o.a.createElement(r.Textfit, {
                         className: m.a.headerOne,
                         mode: "multi",
                         forceSingleModeWidth: !1,
                         min: 1,
                         max: Object(d.v)("12vw")
-                    }, "Royale" === t || "Royale Teams" === t ? "Step Two:" : "Step One:"), o.a.createElement(l.Textfit, {
+                    }, "Royale" === t || "Royale Teams" === t ? "Step Two:" : "Step One:"), o.a.createElement(r.Textfit, {
                         className: m.a.headerTwo,
                         mode: "multi",
                         forceSingleModeWidth: !1,
@@ -1328,14 +1328,14 @@
                     })), o.a.createElement("div", {
                         className: m.a.arrowContainer
                     }, o.a.createElement("i", {
-                        className: c()(m.a.arrow, "fas fa-arrow-right")
+                        className: _()(m.a.arrow, "fas fa-arrow-right")
                     })), o.a.createElement("div", {
                         className: m.a.checkBoxBorder
                     }, o.a.createElement("div", {
                         className: m.a.checkBox
                     }, o.a.createElement("i", {
-                        className: c()(m.a.check, "fas fa-check")
-                    }))), o.a.createElement(l.Textfit, {
+                        className: _()(m.a.check, "fas fa-check")
+                    }))), o.a.createElement(r.Textfit, {
                         className: m.a.headerThree,
                         mode: "multi",
                         forceSingleModeWidth: !1,
@@ -1344,7 +1344,7 @@
                     }, "Royale" === t ? "Answer Quickly to Beat Your Opponent" : "Royale Teams" === t ? "Incorrect Answers Count For The Maximum Time" : "Random" === t ? "There's No Bonus For Answering Quickly" : "Flex" === t ? "Answer Quickly For Better Point Prizes" : "You Get More Points For Answering Quickly"))
                 };
             f.propTypes = {
-                mode: r.a.string
+                mode: l.a.string
             }, t.a = f
         },
         Ec9F: function(e, t, a) {
@@ -1352,38 +1352,38 @@
             var s = a("q1tI"),
                 o = a.n(s),
                 n = a("17x9"),
-                r = a.n(n),
-                l = a("4HzQ"),
+                l = a.n(n),
+                r = a("4HzQ"),
                 i = a("X/4e"),
-                c = a.n(i),
-                _ = a("0oXL"),
+                _ = a.n(i),
+                c = a("0oXL"),
                 m = a("74sb"),
                 d = function(e) {
                     var t = e.team;
                     return o.a.createElement("div", {
-                        className: c.a.container
-                    }, o.a.createElement(l.Textfit, {
-                        className: c.a.headerOne,
+                        className: _.a.container
+                    }, o.a.createElement(r.Textfit, {
+                        className: _.a.headerOne,
                         mode: "multi",
                         forceSingleModeWidth: !1,
                         min: 1,
                         max: Object(m.v)("12vw")
-                    }, "Step One:"), o.a.createElement(l.Textfit, {
-                        className: c.a.headerTwo,
+                    }, "Step One:"), o.a.createElement(r.Textfit, {
+                        className: _.a.headerTwo,
                         mode: "multi",
                         forceSingleModeWidth: !1,
                         min: 1,
                         max: Object(m.v)("10vw")
-                    }, "Prepare"), o.a.createElement(_.a, {
+                    }, "Prepare"), o.a.createElement(c.a, {
                         name: "Dog",
-                        className: c.a.leftBlook
+                        className: _.a.leftBlook
                     }), o.a.createElement("div", {
-                        className: c.a.vsText
-                    }, "VS"), o.a.createElement(_.a, {
+                        className: _.a.vsText
+                    }, "VS"), o.a.createElement(c.a, {
                         name: "Cat",
-                        className: c.a.rightBlook
-                    }), o.a.createElement(l.Textfit, {
-                        className: c.a.headerThree,
+                        className: _.a.rightBlook
+                    }), o.a.createElement(r.Textfit, {
+                        className: _.a.headerThree,
                         mode: "multi",
                         forceSingleModeWidth: !1,
                         min: 1,
@@ -1391,7 +1391,7 @@
                     }, "Each Round You'll Be Randomly Matched Up Against ".concat(t ? "A Team" : "Someone")))
                 };
             d.propTypes = {
-                team: r.a.bool
+                team: l.a.bool
             }, t.a = d
         },
         Ek9E: function(e, t, a) {
@@ -1399,22 +1399,22 @@
             var s = a("q1tI"),
                 o = a.n(s),
                 n = a("17x9"),
-                r = a.n(n),
-                l = a("b69p"),
+                l = a.n(n),
+                r = a("b69p"),
                 i = a("XYmZ"),
-                c = a.n(i),
-                _ = function(e) {
+                _ = a.n(i),
+                c = function(e) {
                     var t = e.title,
                         a = e.val,
                         s = e.max,
                         n = e.onSet;
                     return o.a.createElement("div", {
-                        className: c.a.container
+                        className: _.a.container
                     }, o.a.createElement("div", {
-                        className: c.a.text
+                        className: _.a.text
                     }, t), o.a.createElement("div", {
-                        className: c.a.sliderInputContainer
-                    }, o.a.createElement(l.a, {
+                        className: _.a.sliderInputContainer
+                    }, o.a.createElement(r.a, {
                         axis: "x",
                         x: a,
                         onChange: function(e) {
@@ -1442,7 +1442,7 @@
                             }
                         }
                     }), o.a.createElement("input", {
-                        className: c.a.qInput,
+                        className: _.a.qInput,
                         onChange: function(e) {
                             return n(e.target.value)
                         },
@@ -1451,37 +1451,37 @@
                         min: "1"
                     })))
                 };
-            _.propTypes = {
-                title: r.a.string,
-                val: r.a.number,
-                max: r.a.number,
-                onSet: r.a.func
-            }, t.a = _
+            c.propTypes = {
+                title: l.a.string,
+                val: l.a.number,
+                max: l.a.number,
+                onSet: l.a.func
+            }, t.a = c
         },
         Eogo: function(e, t, a) {
             "use strict";
             var s = a("q1tI"),
                 o = a.n(s),
                 n = a("17x9"),
-                r = a.n(n),
-                l = a("TSYQ"),
-                i = a.n(l),
-                c = a("+hd2"),
-                _ = a.n(c),
+                l = a.n(n),
+                r = a("TSYQ"),
+                i = a.n(r),
+                _ = a("+hd2"),
+                c = a.n(_),
                 m = function(e) {
                     var t = e.title,
                         a = e.choices,
                         s = e.selected,
                         n = e.onSelect;
                     return o.a.createElement("div", {
-                        className: _.a.container
+                        className: c.a.container
                     }, o.a.createElement("div", {
-                        className: _.a.text
+                        className: c.a.text
                     }, t), o.a.createElement("div", {
-                        className: _.a.choices
+                        className: c.a.choices
                     }, a.map((function(e) {
                         return o.a.createElement("div", {
-                            className: i()(_.a.choice, e === s ? _.a.checkYes : _.a.checkNo),
+                            className: i()(c.a.choice, e === s ? c.a.checkYes : c.a.checkNo),
                             role: "button",
                             tabIndex: 0,
                             key: e,
@@ -1489,15 +1489,15 @@
                                 return n(e)
                             }
                         }, o.a.createElement("div", {
-                            className: _.a.choiceText
+                            className: c.a.choiceText
                         }, e))
                     }))))
                 };
             m.propTypes = {
-                title: r.a.string,
-                choices: r.a.array,
-                selected: r.a.any,
-                onSelect: r.a.func
+                title: l.a.string,
+                choices: l.a.array,
+                selected: l.a.any,
+                onSelect: l.a.func
             }, t.a = m
         },
         EqiX: function(e, t, a) {
@@ -1505,68 +1505,68 @@
             var s = a("q1tI"),
                 o = a.n(s),
                 n = a("17x9"),
-                r = a.n(n),
-                l = a("TSYQ"),
-                i = a.n(l),
-                c = a("ZtAu"),
-                _ = a.n(c),
+                l = a.n(n),
+                r = a("TSYQ"),
+                i = a.n(r),
+                _ = a("ZtAu"),
+                c = a.n(_),
                 m = a("0oXL");
             var d = function(e) {
                 var t, a, s, n = e.icon,
-                    r = e.blook,
-                    l = e.color,
-                    c = e.name,
+                    l = e.blook,
+                    r = e.color,
+                    _ = e.name,
                     d = e.desc,
                     f = e.onYes,
                     y = e.yesText,
                     p = e.onNo,
                     u = e.noLeave;
                 return o.a.createElement("div", {
-                    className: i()(_.a.container, (t = {}, a = _.a.noLeave, s = u, a in t ? Object.defineProperty(t, a, {
+                    className: i()(c.a.container, (t = {}, a = c.a.noLeave, s = u, a in t ? Object.defineProperty(t, a, {
                         value: s,
                         enumerable: !0,
                         configurable: !0,
                         writable: !0
                     }) : t[a] = s, t)),
                     style: {
-                        backgroundColor: l
+                        backgroundColor: r
                     }
-                }, r ? o.a.createElement(m.a, {
-                    name: r,
-                    className: _.a.blook
+                }, l ? o.a.createElement(m.a, {
+                    name: l,
+                    className: c.a.blook
                 }) : o.a.createElement("i", {
-                    className: i()(n, _.a.icon),
+                    className: i()(n, c.a.icon),
                     style: {
-                        color: l
+                        color: r
                     }
                 }), o.a.createElement("div", {
-                    className: _.a.name
-                }, c), o.a.createElement("div", {
-                    className: _.a.desc
+                    className: c.a.name
+                }, _), o.a.createElement("div", {
+                    className: c.a.desc
                 }, d), f || p ? o.a.createElement("div", {
-                    className: _.a.buttonContainer
+                    className: c.a.buttonContainer
                 }, f ? o.a.createElement("div", {
-                    className: _.a.button,
+                    className: c.a.button,
                     role: "button",
                     tabIndex: 0,
                     onClick: f
                 }, y || "Yes") : null, p ? o.a.createElement("div", {
-                    className: _.a.button,
+                    className: c.a.button,
                     role: "button",
                     tabIndex: 0,
                     onClick: p
                 }, "No") : null) : null)
             };
             d.propTypes = {
-                icon: r.a.string,
-                blook: r.a.string,
-                color: r.a.string,
-                name: r.a.string,
-                desc: r.a.string,
-                onYes: r.a.func,
-                yesText: r.a.string,
-                onNo: r.a.func,
-                noLeave: r.a.bool
+                icon: l.a.string,
+                blook: l.a.string,
+                color: l.a.string,
+                name: l.a.string,
+                desc: l.a.string,
+                onYes: l.a.func,
+                yesText: l.a.string,
+                onNo: l.a.func,
+                noLeave: l.a.bool
             }, t.a = d
         },
         GmZ3: function(e, t, a) {
@@ -1587,11 +1587,11 @@
             var s = a("q1tI"),
                 o = a.n(s),
                 n = a("17x9"),
-                r = a.n(n),
-                l = a("ixhd"),
-                i = a.n(l),
-                c = a("TSYQ"),
-                _ = a.n(c),
+                l = a.n(n),
+                r = a("ixhd"),
+                i = a.n(r),
+                _ = a("TSYQ"),
+                c = a.n(_),
                 m = a("LHn/"),
                 d = a("Y018"),
                 f = a("xoUC"),
@@ -1753,8 +1753,8 @@
                 },
                 I = a("Skqv"),
                 S = a.n(I),
-                j = a("74sb"),
-                z = a("mkC0");
+                z = a("74sb"),
+                j = a("mkC0");
 
             function P(e, t) {
                 for (var a = 0; a < t.length; a++) {
@@ -1766,7 +1766,7 @@
                 function e(t, a, s, o) {
                     ! function(e, t) {
                         if (!(e instanceof t)) throw new TypeError("Cannot call a class as a function")
-                    }(this, e), this.p5 = o, this.pos = o.createVector(Object(j.n)(.22 * t, .75 * t), Object(j.n)(.25 * a, .75 * a)), this.vel = o.createVector(0, 0), this.img = o.loadImage(z.a[s]), this.speed = Object(j.n)(1, 3), this.onCreate(t, a)
+                    }(this, e), this.p5 = o, this.pos = o.createVector(Object(z.n)(.22 * t, .75 * t), Object(z.n)(.25 * a, .75 * a)), this.vel = o.createVector(0, 0), this.img = o.loadImage(j.a[s]), this.speed = Object(z.n)(1, 3), this.onCreate(t, a)
                 }
                 var t, a, s;
                 return t = e, (a = [{
@@ -1787,15 +1787,15 @@
                             o = 1.15 * a / 2;
                         this.pos.x - s < 0 && (this.vel.x = Math.abs(this.vel.x)), this.pos.x + s > e && (this.vel.x = -Math.abs(this.vel.x)), this.pos.y - o < 0 && (this.vel.y = Math.abs(this.vel.y)), this.pos.y + o > t && (this.vel.y = -Math.abs(this.vel.y));
                         var n = this.pxSpeed(a),
-                            r = this.vel.normalize();
-                        this.vel = this.p5.createVector(r.x * n, r.y * n), this.pos.add(this.vel), this.draw(a)
+                            l = this.vel.normalize();
+                        this.vel = this.p5.createVector(l.x * n, l.y * n), this.pos.add(this.vel), this.draw(a)
                     }
                 }, {
                     key: "onCreate",
                     value: function(e, t) {
                         var a = 0,
-                            s = Object(j.n)(0, t);
-                        0 === Object(j.o)(0, 2) && (a = Object(j.n)(0, e), s = 0);
+                            s = Object(z.n)(0, t);
+                        0 === Object(z.o)(0, 2) && (a = Object(z.n)(0, e), s = 0);
                         var o = this.p5.createVector(a, s).sub(this.pos).normalize();
                         this.vel = o.mult(this.speed)
                     }
@@ -1846,32 +1846,32 @@
                     }
                 }();
                 return function() {
-                    var a, s = W(e);
+                    var a, s = L(e);
                     if (t) {
-                        var o = W(this).constructor;
+                        var o = L(this).constructor;
                         a = Reflect.construct(s, arguments, o)
                     } else a = s.apply(this, arguments);
-                    return Y(this, a)
+                    return W(this, a)
                 }
             }
 
-            function Y(e, t) {
+            function W(e, t) {
                 if (t && ("object" === M(t) || "function" == typeof t)) return t;
                 if (void 0 !== t) throw new TypeError("Derived constructors may only return object or undefined");
-                return L(e)
+                return Y(e)
             }
 
-            function L(e) {
+            function Y(e) {
                 if (void 0 === e) throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
                 return e
             }
 
-            function W(e) {
-                return (W = Object.setPrototypeOf ? Object.getPrototypeOf.bind() : function(e) {
+            function L(e) {
+                return (L = Object.setPrototypeOf ? Object.getPrototypeOf.bind() : function(e) {
                     return e.__proto__ || Object.getPrototypeOf(e)
                 })(e)
             }
-            var D = function(e) {
+            var X = function(e) {
                 ! function(e, t) {
                     if ("function" != typeof t && null !== t) throw new TypeError("Super expression must either be null or a function");
                     e.prototype = Object.create(t && t.prototype, {
@@ -1883,16 +1883,16 @@
                     }), Object.defineProperty(e, "prototype", {
                         writable: !1
                     }), t && F(e, t)
-                }(r, e);
-                var t, a, s, n = Q(r);
+                }(l, e);
+                var t, a, s, n = Q(l);
 
-                function r(e) {
+                function l(e) {
                     var t;
                     return function(e, t) {
                         if (!(e instanceof t)) throw new TypeError("Cannot call a class as a function")
-                    }(this, r), (t = n.call(this, e)).state = {}, t.p5 = null, t.canvasParentRef = null, t.blooks = [], t.setup = t.setup.bind(L(t)), t.draw = t.draw.bind(L(t)), t
+                    }(this, l), (t = n.call(this, e)).state = {}, t.p5 = null, t.canvasParentRef = null, t.blooks = [], t.setup = t.setup.bind(Y(t)), t.draw = t.draw.bind(Y(t)), t
                 }
-                return t = r, (a = [{
+                return t = l, (a = [{
                     key: "setup",
                     value: function(e, t) {
                         if (t) {
@@ -1913,7 +1913,7 @@
                     value: function() {
                         var e, t, a = (t = this.props.blook, [].concat(N(Object.keys(d.a)), N(Object.keys(f.a))).includes(t) ? "Arctic" : Object.keys(y.a).includes(t) ? "Breakfast" : Object.keys(p.a).includes(t) ? "Space" : Object.keys(u.a).includes(t) ? "Spooky" : Object.keys(h.a).includes(t) ? "Aquatic" : Object.keys(g.a).includes(t) ? "Medieval" : Object.keys(w.a).includes(t) ? "Wonderland" : Object.keys(b.a).includes(t) ? "Bots" : Object.keys(C.a).includes(t) ? "Forest" : Object.keys(v.a).includes(t) ? "Pets" : Object.keys(x.a).includes(t) ? "Tropical" : Object.keys(k.a).includes(t) ? "Safari" : Object.keys(E.a).includes(t) ? "Dinos" : Object.keys(T.a).includes(t) ? "Ice Monster" : "Classic");
                         return o.a.createElement("div", {
-                            className: _()(S.a.wrapper, (e = {}, A(e, S.a.bigBox, this.props.bigBox), A(e, S.a.boxButton, this.props.onClick), A(e, S.a.hoverButton, !this.props.letMove && this.props.onClick), e)),
+                            className: c()(S.a.wrapper, (e = {}, A(e, S.a.bigBox, this.props.bigBox), A(e, S.a.boxButton, this.props.onClick), A(e, S.a.hoverButton, !this.props.letMove && this.props.onClick), e)),
                             style: {
                                 backgroundColor: O[a].base
                             },
@@ -1926,12 +1926,12 @@
                                 backgroundColor: O[a].fence
                             }
                         }, o.a.createElement("div", {
-                            className: _()(S.a.topWall, A({}, S.a.bigTopWall, this.props.bigBox)),
+                            className: c()(S.a.topWall, A({}, S.a.bigTopWall, this.props.bigBox)),
                             style: {
                                 backgroundColor: O[a].top
                             }
                         }), o.a.createElement("div", {
-                            className: _()(S.a.container, A({}, S.a.bigContainer, this.props.bigBox)),
+                            className: c()(S.a.container, A({}, S.a.bigContainer, this.props.bigBox)),
                             style: {
                                 backgroundColor: O[a].inside,
                                 backgroundImage: O[a].insideImg,
@@ -1946,12 +1946,12 @@
                         })))), o.a.createElement("div", {
                             className: S.a.textRow
                         }, o.a.createElement("div", {
-                            className: _()(S.a.text, A({}, S.a.bigText, this.props.bigBox)),
+                            className: c()(S.a.text, A({}, S.a.bigText, this.props.bigBox)),
                             style: {
                                 borderColor: O[a].border
                             }
                         }, this.props.name), o.a.createElement("div", {
-                            className: _()(S.a.text, A({}, S.a.bigText, this.props.bigBox)),
+                            className: c()(S.a.text, A({}, S.a.bigText, this.props.bigBox)),
                             style: {
                                 borderColor: O[a].border
                             }
@@ -1968,18 +1968,31 @@
                     }
                 }]) && H(t.prototype, a), s && H(t, s), Object.defineProperty(t, "prototype", {
                     writable: !1
-                }), r
+                }), l
             }(o.a.Component);
-            D.propTypes = {
-                name: r.a.string,
-                blook: r.a.string,
-                numBlooks: r.a.number,
-                numDefense: r.a.number,
-                bigBox: r.a.bool,
-                letMove: r.a.bool,
-                onClick: r.a.func
+            X.propTypes = {
+                name: l.a.string,
+                blook: l.a.string,
+                numBlooks: l.a.number,
+                numDefense: l.a.number,
+                bigBox: l.a.bool,
+                letMove: l.a.bool,
+                onClick: l.a.func
             };
-            t.a = D
+            t.a = X
+        },
+        Hggo: function(e, t, a) {
+            var s = a("yCFB");
+            "string" == typeof s && (s = [
+                [e.i, s, ""]
+            ]);
+            var o = {
+                hmr: !0,
+                transform: void 0,
+                insertInto: void 0
+            };
+            a("aET+")(s, o);
+            s.locals && (e.exports = s.locals)
         },
         Hq7Z: function(e, t, a) {
             (t = e.exports = a("JPst")(!1)).push([e.i, ".styles__headerOne___2_kIV-camelCase{color:#fff;position:absolute;text-align:center;width:40%;height:15%;top:5%;left:-40%;font-family:Titan One,sans-serif;text-shadow:2px 2px 8px grey;overflow:hidden;display:flex;justify-content:center;align-content:center;flex-direction:column;animation:styles__one___1SLJK-camelCase 8s linear}@keyframes styles__one___1SLJK-camelCase{0%{left:30%;opacity:0;transform:scale(.5)}6%{opacity:0;transform:scale(.5)}8%{opacity:1;transform:scale(1)}9%{transform:scale(1.2)}10.5%{transform:scale(1)}85%{left:30%}90%{left:-40%}to{left:-40%}}.styles__headerTwo___1sGw1-camelCase{color:#fff;position:absolute;text-align:center;width:70%;height:12%;top:21.5%;left:-70%;font-family:Titan One,sans-serif;text-shadow:2px 2px 8px grey;overflow:hidden;display:flex;justify-content:center;align-content:center;flex-direction:column;animation:styles__two___375r6-camelCase 8s linear}@keyframes styles__two___375r6-camelCase{0%{left:15%;opacity:0;transform:scale(.5)}15%{opacity:0;transform:scale(.5)}17%{opacity:1;transform:scale(1)}18%{transform:scale(1.2)}18.5%{transform:scale(1)}90%{left:15%}95%{left:-70%}to{left:-70%}}.styles__blookOne___2tbGF-camelCase{width:15vw;height:17.25vw;position:absolute;top:calc(60% - 8.625vw);left:100vw;animation:styles__blookOne___2tbGF-camelCase 8s linear}@keyframes styles__blookOne___2tbGF-camelCase{0%{left:100vw}25%{left:100vw}40%{left:4.5vw}55%{opacity:1}60%{opacity:0}to{left:4.5vw;opacity:0}}.styles__blookTwo___39B3h-camelCase{width:15vw;height:17.25vw;position:absolute;top:calc(60% - 8.625vw);left:100vw;animation:styles__blookTwo___39B3h-camelCase 8s linear}@keyframes styles__blookTwo___39B3h-camelCase{0%{left:100vw}25%{left:100vw}37.5%{left:23.5vw}92.5%{left:23.5vw}97.5%{left:-15vw}to{left:-15vw}}.styles__blookThree___1FsiH-camelCase{width:15vw;height:17.25vw;position:absolute;top:calc(60% - 8.625vw);left:100vw;animation:styles__blookThree___1FsiH-camelCase 8s linear}@keyframes styles__blookThree___1FsiH-camelCase{0%{left:100vw}25%{left:100vw}35%{left:42.5vw}65%{opacity:1}70%{opacity:0}to{left:42.5vw;opacity:0}}.styles__blookFour___FJrBH-camelCase{width:15vw;height:17.25vw;position:absolute;top:calc(60% - 8.625vw);left:100vw;animation:styles__blookFour___FJrBH-camelCase 8s linear}@keyframes styles__blookFour___FJrBH-camelCase{0%{left:100vw}25%{left:100vw}32.5%{left:61.5vw}60%{opacity:1}65%{opacity:0}to{left:61.5vw;opacity:0}}.styles__blookFive___29u6I-camelCase{width:15vw;height:17.25vw;position:absolute;top:calc(60% - 8.625vw);left:100vw;animation:styles__blookFive___29u6I-camelCase 8s linear}@keyframes styles__blookFive___29u6I-camelCase{0%{left:100vw}25%{left:100vw}30%{left:80.5vw}70%{opacity:1}75%{opacity:0}to{left:80.5vw;opacity:0}}.styles__headerThree___3MhE8-camelCase{color:#fff;position:absolute;text-align:center;width:80%;height:12%;top:84%;left:-80%;font-family:Titan One,sans-serif;text-shadow:2px 2px 8px grey;overflow:hidden;display:flex;justify-content:center;align-content:center;flex-direction:column;animation:styles__six___1vXn7-camelCase 8s linear}@keyframes styles__six___1vXn7-camelCase{0%{left:10%;top:100%}40%{top:100%}45%{top:84%}95%{left:10%}to{left:-80%}}.styles__container___1l_Bo-camelCase{width:100vw;height:calc(100vh - 65px);position:absolute;top:65px;left:0;-webkit-user-select:none;-moz-user-select:none;user-select:none}", ""]), t.locals = {
@@ -2027,19 +2040,19 @@
             var s = a("q1tI"),
                 o = a.n(s),
                 n = a("17x9"),
-                r = a.n(n),
-                l = a("jIL8"),
-                i = a.n(l);
+                l = a.n(n),
+                r = a("jIL8"),
+                i = a.n(r);
 
-            function c(e) {
-                return (c = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function(e) {
+            function _(e) {
+                return (_ = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function(e) {
                     return typeof e
                 } : function(e) {
                     return e && "function" == typeof Symbol && e.constructor === Symbol && e !== Symbol.prototype ? "symbol" : typeof e
                 })(e)
             }
 
-            function _(e, t) {
+            function c(e, t) {
                 for (var a = 0; a < t.length; a++) {
                     var s = t[a];
                     s.enumerable = s.enumerable || !1, s.configurable = !0, "value" in s && (s.writable = !0), Object.defineProperty(e, s.key, s)
@@ -2074,7 +2087,7 @@
             }
 
             function f(e, t) {
-                if (t && ("object" === c(t) || "function" == typeof t)) return t;
+                if (t && ("object" === _(t) || "function" == typeof t)) return t;
                 if (void 0 !== t) throw new TypeError("Derived constructors may only return object or undefined");
                 return function(e) {
                     if (void 0 === e) throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
@@ -2108,9 +2121,9 @@
                         this.div.style.transform = e, this.div.style.MozTransform = e, this.div.style.webkitTransform = e
                     }, a.init = function(o, n) {
                         e = [];
-                        for (var r = n; r--;) {
-                            var l = 12 * (Math.random() + .2) + 1,
-                                i = new a(l, Math.random() * window.innerWidth, Math.random() * window.innerHeight, Math.random() - .5, .3 * l);
+                        for (var l = n; l--;) {
+                            var r = 12 * (Math.random() + .2) + 1,
+                                i = new a(r, Math.random() * window.innerWidth, Math.random() * window.innerHeight, Math.random() - .5, .3 * r);
                             o.appendChild(i.div), e.push(i)
                         }
                         window.ondeviceorientation = function(e) {
@@ -2130,16 +2143,16 @@
                         }), Object.defineProperty(e, "prototype", {
                             writable: !1
                         }), t && m(e, t)
-                    }(r, e);
-                    var t, a, s, n = d(r);
+                    }(l, e);
+                    var t, a, s, n = d(l);
 
-                    function r(e) {
+                    function l(e) {
                         var t;
                         return function(e, t) {
                             if (!(e instanceof t)) throw new TypeError("Cannot call a class as a function")
-                        }(this, r), (t = n.call(this, e)).state = {}, t
+                        }(this, l), (t = n.call(this, e)).state = {}, t
                     }
-                    return t = r, (a = [{
+                    return t = l, (a = [{
                         key: "componentDidMount",
                         value: function() {
                             var e = this;
@@ -2166,14 +2179,68 @@
                                 }
                             })
                         }
-                    }]) && _(t.prototype, a), s && _(t, s), Object.defineProperty(t, "prototype", {
+                    }]) && c(t.prototype, a), s && c(t, s), Object.defineProperty(t, "prototype", {
                         writable: !1
-                    }), r
+                    }), l
                 }(o.a.Component);
             u.propTypes = {
-                zIndex: r.a.number,
-                count: r.a.number
+                zIndex: l.a.number,
+                count: l.a.number
             }, t.a = u
+        },
+        KqbR: function(e, t, a) {
+            "use strict";
+            var s = a("q1tI"),
+                o = a.n(s),
+                n = a("17x9"),
+                l = a.n(n),
+                r = a("TSYQ"),
+                i = a.n(r),
+                _ = a("Hggo"),
+                c = a.n(_),
+                m = function(e) {
+                    var t = e.isFaded;
+                    return o.a.createElement(o.a.Fragment, null, o.a.createElement("div", {
+                        className: i()(c.a.fog, c.a.fog1)
+                    }, o.a.createElement("div", {
+                        className: c.a.img1,
+                        style: {
+                            opacity: t ? .6 : null
+                        }
+                    }), o.a.createElement("div", {
+                        className: c.a.img2,
+                        style: {
+                            opacity: t ? .6 : null
+                        }
+                    })), o.a.createElement("div", {
+                        className: i()(c.a.fog, c.a.fog2)
+                    }, o.a.createElement("div", {
+                        className: c.a.img1,
+                        style: {
+                            opacity: t ? .6 : null
+                        }
+                    }), o.a.createElement("div", {
+                        className: c.a.img2,
+                        style: {
+                            opacity: t ? .6 : null
+                        }
+                    })), o.a.createElement("div", {
+                        className: i()(c.a.fog, c.a.fog3)
+                    }, o.a.createElement("div", {
+                        className: c.a.img1,
+                        style: {
+                            opacity: t ? .6 : null
+                        }
+                    }), o.a.createElement("div", {
+                        className: c.a.img2,
+                        style: {
+                            opacity: t ? .6 : null
+                        }
+                    })))
+                };
+            m.propTypes = {
+                isFaded: l.a.bool
+            }, t.a = m
         },
         L4GU: function(e, t, a) {
             var s = a("CTLQ");
@@ -2390,20 +2457,20 @@
             var s = a("q1tI"),
                 o = a.n(s),
                 n = a("17x9"),
-                r = a.n(n),
-                l = a("ySNN"),
-                i = a.n(l),
-                c = a("74sb"),
-                _ = function(e) {
+                l = a.n(n),
+                r = a("ySNN"),
+                i = a.n(r),
+                _ = a("74sb"),
+                c = function(e) {
                     var t = e.currentLife,
                         a = e.maxLife,
                         s = e.top,
                         n = e.left,
-                        r = e.scale,
-                        l = Object(c.v)("15vw"),
-                        _ = Object(c.v)("1.5vw"),
-                        m = .5 * l,
-                        d = m - .5 * _,
+                        l = e.scale,
+                        r = Object(_.v)("15vw"),
+                        c = Object(_.v)("1.5vw"),
+                        m = .5 * r,
+                        d = m - .5 * c,
                         f = 2 * Math.PI * d,
                         y = "".concat(t / a * 100 * f / 100, "px ").concat(f, "px");
                     return o.a.createElement("div", {
@@ -2411,25 +2478,25 @@
                         style: {
                             top: s,
                             left: n,
-                            width: "".concat(l, "px"),
-                            height: "".concat(l, "px"),
-                            transform: "scale(".concat(r || 1, ")")
+                            width: "".concat(r, "px"),
+                            height: "".concat(r, "px"),
+                            transform: "scale(".concat(l || 1, ")")
                         }
                     }, o.a.createElement("svg", {
-                        width: "".concat(l, "px"),
-                        height: "".concat(l, "px"),
+                        width: "".concat(r, "px"),
+                        height: "".concat(r, "px"),
                         className: i.a.donut
                     }, o.a.createElement("circle", {
                         r: "".concat(d, "px"),
                         cx: "".concat(m, "px"),
                         cy: "".concat(m, "px"),
-                        strokeWidth: "".concat(_, "px"),
+                        strokeWidth: "".concat(c, "px"),
                         className: i.a.track
                     }), o.a.createElement("circle", {
                         r: "".concat(d, "px"),
                         cx: "".concat(m, "px"),
                         cy: "".concat(m, "px"),
-                        strokeWidth: "".concat(_, "px"),
+                        strokeWidth: "".concat(c, "px"),
                         strokeDasharray: y,
                         className: i.a.indicator
                     }), o.a.createElement("text", {
@@ -2448,37 +2515,37 @@
                         }
                     }, " "), a)))
                 };
-            _.propTypes = {
-                currentLife: r.a.number,
-                maxLife: r.a.number,
-                top: r.a.string,
-                left: r.a.string,
-                scale: r.a.number
-            }, t.a = _
+            c.propTypes = {
+                currentLife: l.a.number,
+                maxLife: l.a.number,
+                top: l.a.string,
+                left: l.a.string,
+                scale: l.a.number
+            }, t.a = c
         },
         VLs0: function(e, t, a) {
             "use strict";
             var s = a("q1tI"),
                 o = a.n(s),
                 n = a("17x9"),
-                r = a.n(n),
-                l = a("TSYQ"),
-                i = a.n(l),
-                c = a("YMzV"),
-                _ = a.n(c),
+                l = a.n(n),
+                r = a("TSYQ"),
+                i = a.n(r),
+                _ = a("YMzV"),
+                c = a.n(_),
                 m = function(e) {
                     var t = e.icon,
                         a = e.title,
                         s = e.value,
                         n = e.onChange;
                     return o.a.createElement("div", {
-                        className: _.a.amountContainer
+                        className: c.a.amountContainer
                     }, o.a.createElement("i", {
-                        className: i()(_.a.amountIcon, t)
+                        className: i()(c.a.amountIcon, t)
                     }), o.a.createElement("div", {
-                        className: _.a.amountHeader
+                        className: c.a.amountHeader
                     }, a), o.a.createElement("input", {
-                        className: _.a.amountInput,
+                        className: c.a.amountInput,
                         onChange: n,
                         value: s,
                         type: "number",
@@ -2486,10 +2553,10 @@
                     }))
                 };
             m.propTypes = {
-                icon: r.a.string,
-                title: r.a.string,
-                value: r.a.any,
-                onChange: r.a.func
+                icon: l.a.string,
+                title: l.a.string,
+                value: l.a.any,
+                onChange: l.a.func
             }, t.a = m
         },
         Veel: function(e, t, a) {
@@ -2571,11 +2638,11 @@
             var s = a("q1tI"),
                 o = a.n(s),
                 n = a("17x9"),
-                r = a.n(n),
-                l = a("eMKS"),
-                i = a.n(l),
-                c = a("TSYQ"),
-                _ = a.n(c),
+                l = a.n(n),
+                r = a("eMKS"),
+                i = a.n(r),
+                _ = a("TSYQ"),
+                c = a.n(_),
                 m = a("4HzQ"),
                 d = a("ahDL"),
                 f = a.n(d),
@@ -2594,20 +2661,20 @@
                 var t, a = e.energy,
                     s = e.name,
                     n = e.blook,
-                    r = e.done,
-                    l = e.win,
+                    l = e.done,
+                    r = e.win,
                     i = e.left,
-                    c = e.ready,
+                    _ = e.ready,
                     d = e.safe;
                 return o.a.createElement("div", {
-                    className: _()(f.a.row, (t = {}, u(t, f.a.rowLose, !l && r), u(t, f.a.rowRight, !i), t))
+                    className: c()(f.a.row, (t = {}, u(t, f.a.rowLose, !r && l), u(t, f.a.rowRight, !i), t))
                 }, o.a.createElement("img", {
                     src: "https://media.blooket.com/image/upload/v1662596209/Media/br/Resize_Host_Lobby_Nameplate_Left.svg",
                     alt: "background",
-                    className: _()(f.a.background, u({}, f.a.backgroundRight, !i))
+                    className: c()(f.a.background, u({}, f.a.backgroundRight, !i))
                 }), o.a.createElement(y.a, {
                     name: n,
-                    className: _()(f.a.blook, u({}, f.a.blookRight, !i))
+                    className: c()(f.a.blook, u({}, f.a.blookRight, !i))
                 }), o.a.createElement(m.Textfit, {
                     className: f.a.name,
                     mode: "single",
@@ -2621,21 +2688,21 @@
                     style: {
                         color: i ? "#ff490f" : "#324cff"
                     }
-                }, r && c && !l && !d ? a - 1 : a), o.a.createElement("img", {
+                }, l && _ && !r && !d ? a - 1 : a), o.a.createElement("img", {
                     src: i ? "https://media.blooket.com/image/upload/v1655936179/Media/br/Energy_Bolt_Orange.svg" : "https://media.blooket.com/image/upload/v1655936179/Media/br/Energy_Bolt_Blue.svg",
                     alt: "Energy",
                     className: f.a.energyIcon
                 })))
             };
             h.propTypes = {
-                energy: r.a.number,
-                name: r.a.string,
-                blook: r.a.string,
-                done: r.a.bool,
-                win: r.a.bool,
-                left: r.a.bool,
-                ready: r.a.bool,
-                safe: r.a.bool
+                energy: l.a.number,
+                name: l.a.string,
+                blook: l.a.string,
+                done: l.a.bool,
+                win: l.a.bool,
+                left: l.a.bool,
+                ready: l.a.bool,
+                safe: l.a.bool
             };
             var g = h,
                 w = function(e) {
@@ -2669,9 +2736,9 @@
                     }))
                 };
             w.propTypes = {
-                match: r.a.array,
-                ready: r.a.bool,
-                safe: r.a.bool
+                match: l.a.array,
+                ready: l.a.bool,
+                safe: l.a.bool
             };
             t.a = w
         },
@@ -2706,20 +2773,20 @@
             var s = a("q1tI"),
                 o = a.n(s),
                 n = a("17x9"),
-                r = a.n(n),
-                l = a("TSYQ"),
-                i = a.n(l),
-                c = a("wcqC"),
-                _ = a.n(c);
+                l = a.n(n),
+                r = a("TSYQ"),
+                i = a.n(r),
+                _ = a("wcqC"),
+                c = a.n(_);
             var m = function(e) {
                 var t, a, s, n = e.title,
-                    r = e.icon,
-                    l = e.image,
-                    c = e.desc,
+                    l = e.icon,
+                    r = e.image,
+                    _ = e.desc,
                     m = e.onSelect,
                     d = e.selected;
                 return o.a.createElement("div", {
-                    className: i()(_.a.button, (t = {}, a = _.a.selected, s = d, a in t ? Object.defineProperty(t, a, {
+                    className: i()(c.a.button, (t = {}, a = c.a.selected, s = d, a in t ? Object.defineProperty(t, a, {
                         value: s,
                         enumerable: !0,
                         configurable: !0,
@@ -2730,26 +2797,26 @@
                     onClick: function() {
                         return m()
                     }
-                }, l ? o.a.createElement("img", {
-                    src: l,
+                }, r ? o.a.createElement("img", {
+                    src: r,
                     alt: "Setting",
-                    className: _.a.image,
+                    className: c.a.image,
                     draggable: !1
                 }) : o.a.createElement("i", {
-                    className: i()(_.a.icon, r)
+                    className: i()(c.a.icon, l)
                 }), o.a.createElement("div", {
-                    className: _.a.title
+                    className: c.a.title
                 }, n), o.a.createElement("div", {
-                    className: _.a.desc
-                }, c))
+                    className: c.a.desc
+                }, _))
             };
             m.propTypes = {
-                title: r.a.string,
-                icon: r.a.string,
-                image: r.a.string,
-                desc: r.a.string,
-                onSelect: r.a.func,
-                selected: r.a.bool
+                title: l.a.string,
+                icon: l.a.string,
+                image: l.a.string,
+                desc: l.a.string,
+                onSelect: l.a.func,
+                selected: l.a.bool
             }, t.a = m
         },
         aKVx: function(e, t, a) {
@@ -2757,38 +2824,38 @@
             var s = a("q1tI"),
                 o = a.n(s),
                 n = a("17x9"),
-                r = a.n(n),
-                l = a("4HzQ"),
+                l = a.n(n),
+                r = a("4HzQ"),
                 i = a("rtQy"),
-                c = a.n(i),
-                _ = a("0oXL"),
+                _ = a.n(i),
+                c = a("0oXL"),
                 m = a("74sb"),
                 d = function(e) {
                     var t = e.team;
                     return o.a.createElement("div", {
-                        className: c.a.container
-                    }, o.a.createElement(l.Textfit, {
-                        className: c.a.headerOne,
+                        className: _.a.container
+                    }, o.a.createElement(r.Textfit, {
+                        className: _.a.headerOne,
                         mode: "multi",
                         forceSingleModeWidth: !1,
                         min: 1,
                         max: Object(m.v)("12vw")
-                    }, "Step Three:"), o.a.createElement(l.Textfit, {
-                        className: c.a.headerTwo,
+                    }, "Step Three:"), o.a.createElement(r.Textfit, {
+                        className: _.a.headerTwo,
                         mode: "multi",
                         forceSingleModeWidth: !1,
                         min: 1,
                         max: Object(m.v)("10vw")
-                    }, "Showdown"), o.a.createElement(_.a, {
+                    }, "Showdown"), o.a.createElement(c.a, {
                         name: "Dog",
-                        className: c.a.leftBlook
+                        className: _.a.leftBlook
                     }), o.a.createElement("div", {
-                        className: c.a.vsText
-                    }, "VS"), o.a.createElement(_.a, {
+                        className: _.a.vsText
+                    }, "VS"), o.a.createElement(c.a, {
                         name: "Cat",
-                        className: c.a.rightBlook
-                    }), o.a.createElement(l.Textfit, {
-                        className: c.a.headerThree,
+                        className: _.a.rightBlook
+                    }), o.a.createElement(r.Textfit, {
+                        className: _.a.headerThree,
                         mode: "multi",
                         forceSingleModeWidth: !1,
                         min: 1,
@@ -2796,7 +2863,7 @@
                     }, t ? "The Team With The Lowest Average Time Will Keep Their Energy" : "Answer Correctly and More Quickly To Keep Your Energy"))
                 };
             d.propTypes = {
-                team: r.a.bool
+                team: l.a.bool
             }, t.a = d
         },
         ahDL: function(e, t, a) {
@@ -2817,38 +2884,38 @@
             var s = a("q1tI"),
                 o = a.n(s),
                 n = a("17x9"),
-                r = a.n(n),
-                l = a("TSYQ"),
-                i = a.n(l),
-                c = a("JP1n"),
-                _ = a.n(c),
+                l = a.n(n),
+                r = a("TSYQ"),
+                i = a.n(r),
+                _ = a("JP1n"),
+                c = a.n(_),
                 m = function(e) {
                     var t = e.title,
                         a = e.desc,
                         s = e.checked,
                         n = e.onCheck;
                     return o.a.createElement("div", {
-                        className: _.a.container
+                        className: c.a.container
                     }, o.a.createElement("div", null, o.a.createElement("div", {
-                        className: _.a.text
+                        className: c.a.text
                     }, t), o.a.createElement("div", {
-                        className: _.a.desc
+                        className: c.a.desc
                     }, a)), o.a.createElement("div", {
-                        className: i()(_.a.checkBox, s ? _.a.checkYes : _.a.checkNo),
+                        className: i()(c.a.checkBox, s ? c.a.checkYes : c.a.checkNo),
                         role: "button",
                         tabIndex: 0,
                         onClick: function() {
                             return n()
                         }
                     }, o.a.createElement("i", {
-                        className: i()(_.a.checkIcon, "fas fa-check")
+                        className: i()(c.a.checkIcon, "fas fa-check")
                     })))
                 };
             m.propTypes = {
-                title: r.a.string,
-                desc: r.a.string,
-                checked: r.a.bool,
-                onCheck: r.a.func
+                title: l.a.string,
+                desc: l.a.string,
+                checked: l.a.bool,
+                onCheck: l.a.func
             }, t.a = m
         },
         "ca/f": function(e, t, a) {
@@ -2856,12 +2923,12 @@
             var s = a("q1tI"),
                 o = a.n(s),
                 n = a("17x9"),
-                r = a.n(n),
-                l = a("H1WH"),
+                l = a.n(n),
+                r = a("H1WH"),
                 i = a("TSYQ"),
-                c = a.n(i),
-                _ = a("O/BK"),
-                m = a.n(_),
+                _ = a.n(i),
+                c = a("O/BK"),
+                m = a.n(c),
                 d = a("Xst1"),
                 f = a.n(d),
                 y = a("lmLo"),
@@ -2884,9 +2951,9 @@
                         a = e.content,
                         s = e.buttonOne,
                         n = e.buttonTwo,
-                        r = e.loading,
+                        l = e.loading,
                         i = e.numValue,
-                        _ = e.numChange,
+                        c = e.numChange,
                         d = e.numTotal,
                         C = e.priceValue,
                         v = e.priceChange,
@@ -2899,8 +2966,8 @@
                         O = e.stringChange2,
                         I = e.stringPlaceholder2,
                         S = e.colorValue,
-                        j = e.colorChange,
-                        z = e.error,
+                        z = e.colorChange,
+                        j = e.error,
                         P = e.onSubmit,
                         R = e.isDark,
                         M = e.blook;
@@ -2924,12 +2991,12 @@
                     }, M ? o.a.createElement(h.a, {
                         name: M,
                         className: m.a.blook
-                    }) : null, t || a), r ? o.a.createElement(p.a, null) : o.a.createElement("div", {
+                    }) : null, t || a), l ? o.a.createElement(p.a, null) : o.a.createElement("div", {
                         className: m.a.holder
                     }, void 0 !== i ? o.a.createElement("div", {
                         className: m.a.numRow
                     }, o.a.createElement("div", {
-                        className: c()(m.a.inputContainer, w({}, m.a.inputFilled, i)),
+                        className: _()(m.a.inputContainer, w({}, m.a.inputFilled, i)),
                         style: {
                             width: 80,
                             margin: 0
@@ -2940,39 +3007,39 @@
                             width: 60
                         },
                         placeholder: "",
-                        onChange: _,
+                        onChange: c,
                         value: i,
                         type: "tel",
-                        autoFocus: l.isMobile ? "" : "autofocus"
+                        autoFocus: r.isMobile ? "" : "autofocus"
                     })), o.a.createElement("div", {
                         className: m.a.numTotal
                     }, "/ ".concat(Object(g.l)(d)))) : null, void 0 !== C ? o.a.createElement("div", {
-                        className: c()(m.a.inputContainer, w({}, m.a.inputFilled, C))
+                        className: _()(m.a.inputContainer, w({}, m.a.inputFilled, C))
                     }, o.a.createElement("input", {
                         className: m.a.input,
                         placeholder: "Price",
                         onChange: v,
                         value: C,
                         type: "number",
-                        autoFocus: l.isMobile ? "" : "autofocus"
+                        autoFocus: r.isMobile ? "" : "autofocus"
                     }), o.a.createElement("img", {
                         src: u.a.basic.token,
                         alt: "Token",
                         className: m.a.token,
                         draggable: !1
                     })) : null, void 0 !== x ? o.a.createElement("div", {
-                        className: c()(m.a.inputContainer, w({}, m.a.inputFilled, x))
+                        className: _()(m.a.inputContainer, w({}, m.a.inputFilled, x))
                     }, o.a.createElement("input", {
                         className: m.a.input,
                         placeholder: "Time",
                         onChange: k,
                         value: x,
                         type: "number",
-                        autoFocus: l.isMobile || void 0 !== C ? "" : "autofocus"
+                        autoFocus: r.isMobile || void 0 !== C ? "" : "autofocus"
                     }), o.a.createElement("i", {
-                        className: c()(m.a.icon, "far fa-clock")
+                        className: _()(m.a.icon, "far fa-clock")
                     })) : null, void 0 !== E ? o.a.createElement("div", {
-                        className: c()(m.a.inputContainer, w({}, m.a.inputFilled, E)),
+                        className: _()(m.a.inputContainer, w({}, m.a.inputFilled, E)),
                         style: {
                             width: "80%"
                         }
@@ -2982,9 +3049,9 @@
                         onChange: T,
                         value: E,
                         type: "text",
-                        autoFocus: l.isMobile || void 0 !== E ? "" : "autofocus"
+                        autoFocus: r.isMobile || void 0 !== E ? "" : "autofocus"
                     })) : null, void 0 !== B ? o.a.createElement("div", {
-                        className: c()(m.a.inputContainer, w({}, m.a.inputFilled, B)),
+                        className: _()(m.a.inputContainer, w({}, m.a.inputFilled, B)),
                         style: {
                             width: "80%"
                         }
@@ -2994,7 +3061,7 @@
                         onChange: O,
                         value: B,
                         type: "text",
-                        autoFocus: l.isMobile || void 0 !== B ? "" : "autofocus"
+                        autoFocus: r.isMobile || void 0 !== B ? "" : "autofocus"
                     })) : null, void 0 !== S ? o.a.createElement("div", {
                         className: m.a.colorsHolder
                     }, b.map((function(e) {
@@ -3003,7 +3070,7 @@
                             role: "button",
                             tabIndex: 0,
                             onClick: function() {
-                                return j(e)
+                                return z(e)
                             },
                             key: e,
                             style: {
@@ -3012,13 +3079,13 @@
                         }, e === S ? o.a.createElement("i", {
                             className: "fas fa-check"
                         }) : null)
-                    }))) : null, z ? o.a.createElement("div", {
+                    }))) : null, j ? o.a.createElement("div", {
                         className: m.a.errorContainer
                     }, o.a.createElement("i", {
-                        className: c()(m.a.errorIcon, "fas fa-times-circle")
+                        className: _()(m.a.errorIcon, "fas fa-times-circle")
                     }), o.a.createElement("div", {
                         className: m.a.errorText
-                    }, z)) : null, o.a.createElement("div", {
+                    }, j)) : null, o.a.createElement("div", {
                         className: m.a.buttonContainer
                     }, s ? o.a.createElement(y.a, {
                         onClick: s.click,
@@ -3039,38 +3106,38 @@
                     })))
                 };
             C.propTypes = {
-                text: r.a.string,
-                content: r.a.element,
-                buttonOne: r.a.shape({
-                    text: r.a.string,
-                    click: r.a.func,
-                    color: r.a.string
+                text: l.a.string,
+                content: l.a.element,
+                buttonOne: l.a.shape({
+                    text: l.a.string,
+                    click: l.a.func,
+                    color: l.a.string
                 }),
-                buttonTwo: r.a.shape({
-                    text: r.a.string,
-                    click: r.a.func,
-                    color: r.a.string
+                buttonTwo: l.a.shape({
+                    text: l.a.string,
+                    click: l.a.func,
+                    color: l.a.string
                 }),
-                loading: r.a.bool,
-                numValue: r.a.number,
-                numChange: r.a.func,
-                numTotal: r.a.number,
-                priceValue: r.a.any,
-                priceChange: r.a.func,
-                timeValue: r.a.any,
-                timeChange: r.a.func,
-                stringValue: r.a.string,
-                stringChange: r.a.func,
-                stringPlaceholder: r.a.string,
-                stringValue2: r.a.string,
-                stringChange2: r.a.func,
-                stringPlaceholder2: r.a.string,
-                colorValue: r.a.string,
-                colorChange: r.a.func,
-                error: r.a.string,
-                onSubmit: r.a.func,
-                isDark: r.a.bool,
-                blook: r.a.string
+                loading: l.a.bool,
+                numValue: l.a.number,
+                numChange: l.a.func,
+                numTotal: l.a.number,
+                priceValue: l.a.any,
+                priceChange: l.a.func,
+                timeValue: l.a.any,
+                timeChange: l.a.func,
+                stringValue: l.a.string,
+                stringChange: l.a.func,
+                stringPlaceholder: l.a.string,
+                stringValue2: l.a.string,
+                stringChange2: l.a.func,
+                stringPlaceholder2: l.a.string,
+                colorValue: l.a.string,
+                colorChange: l.a.func,
+                error: l.a.string,
+                onSubmit: l.a.func,
+                isDark: l.a.bool,
+                blook: l.a.string
             }, t.a = C
         },
         ctjG: function(e, t, a) {
@@ -3078,45 +3145,45 @@
             var s = a("q1tI"),
                 o = a.n(s),
                 n = a("17x9"),
-                r = a.n(n),
-                l = a("4HzQ"),
+                l = a.n(n),
+                r = a("4HzQ"),
                 i = a("cyLU"),
-                c = a.n(i),
-                _ = a("0oXL"),
+                _ = a.n(i),
+                c = a("0oXL"),
                 m = a("74sb"),
                 d = function(e) {
                     var t = e.team;
                     return o.a.createElement("div", {
-                        className: c.a.container
-                    }, o.a.createElement(l.Textfit, {
-                        className: c.a.headerOne,
+                        className: _.a.container
+                    }, o.a.createElement(r.Textfit, {
+                        className: _.a.headerOne,
                         mode: "multi",
                         forceSingleModeWidth: !1,
                         min: 1,
                         max: Object(m.v)("12vw")
-                    }, "Step Four:"), o.a.createElement(l.Textfit, {
-                        className: c.a.headerTwo,
+                    }, "Step Four:"), o.a.createElement(r.Textfit, {
+                        className: _.a.headerTwo,
                         mode: "multi",
                         forceSingleModeWidth: !1,
                         min: 1,
                         max: Object(m.v)("10vw")
-                    }, "Survive"), o.a.createElement(_.a, {
+                    }, "Survive"), o.a.createElement(c.a, {
                         name: "Chicken",
-                        className: c.a.blookOne
-                    }), o.a.createElement(_.a, {
+                        className: _.a.blookOne
+                    }), o.a.createElement(c.a, {
                         name: "Dog",
-                        className: c.a.blookTwo
-                    }), o.a.createElement(_.a, {
+                        className: _.a.blookTwo
+                    }), o.a.createElement(c.a, {
                         name: "Fox",
-                        className: c.a.blookThree
-                    }), o.a.createElement(_.a, {
+                        className: _.a.blookThree
+                    }), o.a.createElement(c.a, {
                         name: "Pig",
-                        className: c.a.blookFour
-                    }), o.a.createElement(_.a, {
+                        className: _.a.blookFour
+                    }), o.a.createElement(c.a, {
                         name: "Sheep",
-                        className: c.a.blookFive
-                    }), o.a.createElement(l.Textfit, {
-                        className: c.a.headerThree,
+                        className: _.a.blookFive
+                    }), o.a.createElement(r.Textfit, {
+                        className: _.a.headerThree,
                         mode: "multi",
                         forceSingleModeWidth: !1,
                         min: 1,
@@ -3124,7 +3191,7 @@
                     }, "The Last ".concat(t ? "Team" : "Player", " With Energy Remaining Wins")))
                 };
             d.propTypes = {
-                team: r.a.bool
+                team: l.a.bool
             }, t.a = d
         },
         cyLU: function(e, t, a) {
@@ -3232,11 +3299,11 @@
         gvfT: function(e, t, a) {
             "use strict";
             a.d(t, "c", (function() {
-                return l
+                return r
             })), a.d(t, "b", (function() {
                 return i
             })), a.d(t, "a", (function() {
-                return c
+                return _
             })), a.d(t, "e", (function() {
                 return f
             })), a.d(t, "d", (function() {
@@ -3259,7 +3326,7 @@
                 for (var t = 1; t < arguments.length; t++) {
                     var a = null != arguments[t] ? arguments[t] : {};
                     t % 2 ? o(Object(a), !0).forEach((function(t) {
-                        r(e, t, a[t])
+                        l(e, t, a[t])
                     })) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(a)) : o(Object(a)).forEach((function(t) {
                         Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(a, t))
                     }))
@@ -3267,7 +3334,7 @@
                 return e
             }
 
-            function r(e, t, a) {
+            function l(e, t, a) {
                 return t in e ? Object.defineProperty(e, t, {
                     value: a,
                     enumerable: !0,
@@ -3275,7 +3342,7 @@
                     writable: !0
                 }) : e[t] = a, e
             }
-            var l = window.TowerBlookStats = {
+            var r = window.TowerBlookStats = {
                     Chick: {
                         strength: 1,
                         charisma: 16,
@@ -3704,7 +3771,7 @@
                     epic: ["Unicorn", "Snowman", "Caterpillar", "Mad Hatter"],
                     legendary: ["King", "Santa Claus", "King of Hearts"]
                 },
-                c = {
+                _ = {
                     "Medical Kit": {
                         desc: "Heal for +3 health after combat",
                         icon: "fas fa-medkit",
@@ -3874,7 +3941,7 @@
                         rarity: "Common"
                     }
                 },
-                _ = window.TowerArtifacts = {
+                c = window.TowerArtifacts = {
                     common: ["Fury Relic", "Steel Socks", "Piggy Bank", "Tasty Egg", "Training Weights", "Cursed Hourglass", "Farm Tractor", "Just A Bone", "King's Crown", "Sacred Scroll"],
                     uncommon: ["Lucky Feather", "Coupon", "Lifeline Totem", "Band-Aid", "Chess Pieces"],
                     rare: ["Medical Kit", "Survival Guide", "Cheese", "Magic Seedling", "Cozy Igloo"],
@@ -3929,25 +3996,25 @@
                 },
                 f = n({
                     blook: "Chick"
-                }, l.Chick),
+                }, r.Chick),
                 y = function(e, t, a) {
-                    for (var o = [], r = [], c = [], f = d[e], y = m[e]; o.length < (t || 3);) {
+                    for (var o = [], l = [], _ = [], f = d[e], y = m[e]; o.length < (t || 3);) {
                         var p = 100 * Math.random(),
                             u = 0;
                         if (Math.random() <= ("boss" === e ? .2 : .05) && !a) {
                             for (var h = 0; h < y.length; h++)
                                 if ((u += y[h][1]) >= p) {
-                                    var g = Object(s.m)(_[y[h][0]]);
-                                    c.includes(g) || (o.push(g), c.push(g));
+                                    var g = Object(s.m)(c[y[h][0]]);
+                                    _.includes(g) || (o.push(g), _.push(g));
                                     break
                                 }
                         } else
                             for (var w = 0; w < f.length; w++)
                                 if ((u += f[w][1]) >= p) {
                                     var b = Object(s.m)(i[f[w][0]]);
-                                    r.includes(b) || (o.push(n({
+                                    l.includes(b) || (o.push(n({
                                         blook: b
-                                    }, l[b])), r.push(b));
+                                    }, r[b])), l.push(b));
                                     break
                                 }
                     }
@@ -4037,11 +4104,11 @@
             var s = a("q1tI"),
                 o = a.n(s),
                 n = a("17x9"),
-                r = a.n(n),
-                l = a("TSYQ"),
-                i = a.n(l),
-                c = a("GmZ3"),
-                _ = a.n(c),
+                l = a.n(n),
+                r = a("TSYQ"),
+                i = a.n(r),
+                _ = a("GmZ3"),
+                c = a.n(_),
                 m = a("0oXL"),
                 d = a("pMTK"),
                 f = a("74sb"),
@@ -4060,146 +4127,146 @@
                     a = e.flipped,
                     s = e.onClick,
                     n = e.attribute,
-                    r = e.content,
-                    l = e.isArtifact;
+                    l = e.content,
+                    r = e.isArtifact;
                 return o.a.createElement("div", {
-                    className: _.a.card
+                    className: c.a.card
                 }, o.a.createElement("div", {
-                    className: i()(_.a.innerCard, p({}, _.a.flipped, a))
+                    className: i()(c.a.innerCard, p({}, c.a.flipped, a))
                 }, o.a.createElement("div", {
-                    className: _.a.cardBack
-                }, "B"), r ? o.a.createElement("div", {
-                    className: _.a.cardFront
-                }, r) : l ? o.a.createElement("div", {
-                    className: _.a.cardFront
+                    className: c.a.cardBack
+                }, "B"), l ? o.a.createElement("div", {
+                    className: c.a.cardFront
+                }, l) : r ? o.a.createElement("div", {
+                    className: c.a.cardFront
                 }, o.a.createElement("div", {
-                    className: _.a.headerContainer
+                    className: c.a.headerContainer
                 }, o.a.createElement("div", {
-                    className: _.a.nameText
+                    className: c.a.nameText
                 }, t), o.a.createElement("div", {
-                    className: _.a.rarityText,
+                    className: c.a.rarityText,
                     style: {
                         color: f.q[y.a[t].rarity]
                     }
                 }, y.a[t].rarity)), o.a.createElement("i", {
-                    className: i()(y.a[t].icon, _.a.artifactIcon),
+                    className: i()(y.a[t].icon, c.a.artifactIcon),
                     style: {
                         color: y.a[t].color
                     }
                 }), o.a.createElement("div", {
-                    className: _.a.artifactDesc
+                    className: c.a.artifactDesc
                 }, y.a[t].desc)) : o.a.createElement("div", {
-                    className: _.a.cardFront
+                    className: c.a.cardFront
                 }, t.blook ? o.a.createElement("div", {
-                    className: _.a.blookHolder
+                    className: c.a.blookHolder
                 }, o.a.createElement(m.a, {
                     name: t.blook,
-                    className: _.a.blook
+                    className: c.a.blook
                 })) : null, o.a.createElement("div", {
-                    className: _.a.headerContainer
+                    className: c.a.headerContainer
                 }, o.a.createElement("div", {
-                    className: _.a.nameText
+                    className: c.a.nameText
                 }, t.blook), o.a.createElement("div", {
-                    className: _.a.rarityText,
+                    className: c.a.rarityText,
                     style: {
                         color: f.q[Object(d.a)(t.blook)]
                     }
                 }, Object(d.a)(t.blook)), o.a.createElement("div", {
-                    className: _.a.classText
+                    className: c.a.classText
                 }, t.class || "")), o.a.createElement("div", {
-                    className: _.a.powerContainer
+                    className: c.a.powerContainer
                 }, o.a.createElement("div", {
-                    className: i()(_.a.powerRow, p({}, _.a.powerSelect, s), p({}, _.a.powerSelected, "strength" === n)),
+                    className: i()(c.a.powerRow, p({}, c.a.powerSelect, s), p({}, c.a.powerSelected, "strength" === n)),
                     role: "button",
                     tabIndex: 0,
                     onClick: void 0 !== s ? function() {
                         return s("strength")
                     } : function() {}
                 }, o.a.createElement("div", {
-                    className: _.a.outerPower
+                    className: c.a.outerPower
                 }, o.a.createElement("div", {
-                    className: _.a.innerPower,
+                    className: c.a.innerPower,
                     style: {
                         width: "".concat(t.strength / 20 * 100, "%"),
                         backgroundColor: "rgb(151, 15, 5)"
                     }
                 }), o.a.createElement("div", {
-                    className: _.a.powerInfo
+                    className: c.a.powerInfo
                 }, o.a.createElement("i", {
-                    className: i()("fas fa-fist-raised", _.a.powerIcon)
+                    className: i()("fas fa-fist-raised", c.a.powerIcon)
                 }), o.a.createElement("div", {
-                    className: _.a.powerText
+                    className: c.a.powerText
                 }, "Strength"))), o.a.createElement("div", {
-                    className: _.a.powerBox,
+                    className: c.a.powerBox,
                     style: {
                         backgroundColor: "rgb(151, 15, 5)"
                     }
                 }, t.strength)), o.a.createElement("div", {
-                    className: i()(_.a.powerRow, p({}, _.a.powerSelect, s), p({}, _.a.powerSelected, "charisma" === n)),
+                    className: i()(c.a.powerRow, p({}, c.a.powerSelect, s), p({}, c.a.powerSelected, "charisma" === n)),
                     role: "button",
                     tabIndex: 0,
                     onClick: void 0 !== s ? function() {
                         return s("charisma")
                     } : function() {}
                 }, o.a.createElement("div", {
-                    className: _.a.outerPower
+                    className: c.a.outerPower
                 }, o.a.createElement("div", {
-                    className: _.a.innerPower,
+                    className: c.a.innerPower,
                     style: {
                         width: "".concat(t.charisma / 20 * 100, "%"),
                         backgroundColor: "rgb(7, 21, 93)"
                     }
                 }), o.a.createElement("div", {
-                    className: _.a.powerInfo
+                    className: c.a.powerInfo
                 }, o.a.createElement("i", {
-                    className: i()("fas fa-heart", _.a.powerIcon)
+                    className: i()("fas fa-heart", c.a.powerIcon)
                 }), o.a.createElement("div", {
-                    className: _.a.powerText
+                    className: c.a.powerText
                 }, "Charisma"))), o.a.createElement("div", {
-                    className: _.a.powerBox,
+                    className: c.a.powerBox,
                     style: {
                         backgroundColor: "rgb(7, 21, 93)"
                     }
                 }, t.charisma)), o.a.createElement("div", {
-                    className: i()(_.a.powerRow, p({}, _.a.powerSelect, s), p({}, _.a.powerSelected, "wisdom" === n)),
+                    className: i()(c.a.powerRow, p({}, c.a.powerSelect, s), p({}, c.a.powerSelected, "wisdom" === n)),
                     role: "button",
                     tabIndex: 0,
                     onClick: void 0 !== s ? function() {
                         return s("wisdom")
                     } : function() {}
                 }, o.a.createElement("div", {
-                    className: _.a.outerPower
+                    className: c.a.outerPower
                 }, o.a.createElement("div", {
-                    className: _.a.innerPower,
+                    className: c.a.innerPower,
                     style: {
                         width: "".concat(t.wisdom / 20 * 100, "%"),
                         backgroundColor: "rgb(148, 12, 128)"
                     }
                 }), o.a.createElement("div", {
-                    className: _.a.powerInfo
+                    className: c.a.powerInfo
                 }, o.a.createElement("i", {
-                    className: i()("fas fa-question", _.a.powerIcon)
+                    className: i()("fas fa-question", c.a.powerIcon)
                 }), o.a.createElement("div", {
-                    className: _.a.powerText
+                    className: c.a.powerText
                 }, "Wisdom"))), o.a.createElement("div", {
-                    className: _.a.powerBox,
+                    className: c.a.powerBox,
                     style: {
                         backgroundColor: "rgb(148, 12, 128)"
                     }
                 }, t.wisdom))))))
             };
             u.propTypes = {
-                card: r.a.oneOfType([r.a.shape({
-                    blook: r.a.string,
-                    strength: r.a.number,
-                    charisma: r.a.number,
-                    wisdom: r.a.number
-                }), r.a.string]),
-                flipped: r.a.bool,
-                onClick: r.a.func,
-                attribute: r.a.string,
-                content: r.a.element,
-                isArtifact: r.a.bool
+                card: l.a.oneOfType([l.a.shape({
+                    blook: l.a.string,
+                    strength: l.a.number,
+                    charisma: l.a.number,
+                    wisdom: l.a.number
+                }), l.a.string]),
+                flipped: l.a.bool,
+                onClick: l.a.func,
+                attribute: l.a.string,
+                content: l.a.element,
+                isArtifact: l.a.bool
             }, t.a = u
         },
         ozTy: function(e, t, a) {
@@ -4248,19 +4315,19 @@
             var s = a("q1tI"),
                 o = a.n(s),
                 n = a("17x9"),
-                r = a.n(n),
-                l = a("7t86"),
-                i = a.n(l);
+                l = a.n(n),
+                r = a("7t86"),
+                i = a.n(r);
 
-            function c(e) {
-                return (c = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function(e) {
+            function _(e) {
+                return (_ = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function(e) {
                     return typeof e
                 } : function(e) {
                     return e && "function" == typeof Symbol && e.constructor === Symbol && e !== Symbol.prototype ? "symbol" : typeof e
                 })(e)
             }
 
-            function _(e, t) {
+            function c(e, t) {
                 for (var a = 0; a < t.length; a++) {
                     var s = t[a];
                     s.enumerable = s.enumerable || !1, s.configurable = !0, "value" in s && (s.writable = !0), Object.defineProperty(e, s.key, s)
@@ -4295,7 +4362,7 @@
             }
 
             function f(e, t) {
-                if (t && ("object" === c(t) || "function" == typeof t)) return t;
+                if (t && ("object" === _(t) || "function" == typeof t)) return t;
                 if (void 0 !== t) throw new TypeError("Derived constructors may only return object or undefined");
                 return function(e) {
                     if (void 0 === e) throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
@@ -4329,9 +4396,9 @@
                         this.div.style.transform = e, this.div.style.MozTransform = e, this.div.style.webkitTransform = e
                     }, a.init = function(o, n) {
                         e = [];
-                        for (var r = n; r--;) {
-                            var l = 12 * (Math.random() + .2) + 1,
-                                i = new a(l, Math.random() * window.innerWidth, Math.random() * window.innerHeight, Math.random() - .5, .3 * l);
+                        for (var l = n; l--;) {
+                            var r = 12 * (Math.random() + .2) + 1,
+                                i = new a(r, Math.random() * window.innerWidth, Math.random() * window.innerHeight, Math.random() - .5, .3 * r);
                             o.appendChild(i.div), e.push(i)
                         }
                         window.ondeviceorientation = function(e) {
@@ -4351,16 +4418,16 @@
                         }), Object.defineProperty(e, "prototype", {
                             writable: !1
                         }), t && m(e, t)
-                    }(r, e);
-                    var t, a, s, n = d(r);
+                    }(l, e);
+                    var t, a, s, n = d(l);
 
-                    function r(e) {
+                    function l(e) {
                         var t;
                         return function(e, t) {
                             if (!(e instanceof t)) throw new TypeError("Cannot call a class as a function")
-                        }(this, r), (t = n.call(this, e)).state = {}, t
+                        }(this, l), (t = n.call(this, e)).state = {}, t
                     }
-                    return t = r, (a = [{
+                    return t = l, (a = [{
                         key: "componentDidMount",
                         value: function() {
                             var e = this;
@@ -4387,13 +4454,13 @@
                                 }
                             })
                         }
-                    }]) && _(t.prototype, a), s && _(t, s), Object.defineProperty(t, "prototype", {
+                    }]) && c(t.prototype, a), s && c(t, s), Object.defineProperty(t, "prototype", {
                         writable: !1
-                    }), r
+                    }), l
                 }(o.a.Component);
             u.propTypes = {
-                zIndex: r.a.number,
-                count: r.a.number
+                zIndex: l.a.number,
+                count: l.a.number
             }, t.a = u
         },
         rtQy: function(e, t, a) {
@@ -4414,33 +4481,33 @@
             var s = a("q1tI"),
                 o = a.n(s),
                 n = a("17x9"),
-                r = a.n(n),
-                l = a("4HzQ"),
+                l = a.n(n),
+                r = a("4HzQ"),
                 i = a("yUSY"),
-                c = a.n(i),
-                _ = a("74sb"),
+                _ = a.n(i),
+                c = a("74sb"),
                 m = function(e) {
                     var t = e.noExpand;
                     return o.a.createElement("div", {
-                        className: c.a.container
+                        className: _.a.container
                     }, t ? null : o.a.createElement("div", {
-                        className: c.a.expandBackground
-                    }), o.a.createElement(l.Textfit, {
-                        className: c.a.headerOne,
+                        className: _.a.expandBackground
+                    }), o.a.createElement(r.Textfit, {
+                        className: _.a.headerOne,
                         mode: "multi",
                         forceSingleModeWidth: !1,
                         min: 1,
-                        max: Object(_.v)("15vw")
-                    }, "Good Luck"), o.a.createElement(l.Textfit, {
-                        className: c.a.headerTwo,
+                        max: Object(c.v)("15vw")
+                    }, "Good Luck"), o.a.createElement(r.Textfit, {
+                        className: _.a.headerTwo,
                         mode: "multi",
                         forceSingleModeWidth: !1,
                         min: 1,
-                        max: Object(_.v)("15vw")
+                        max: Object(c.v)("15vw")
                     }, "& Let's Go!"))
                 };
             m.propTypes = {
-                noExpand: r.a.bool
+                noExpand: l.a.bool
             }, t.a = m
         },
         t5EX: function(e, t, a) {
@@ -4471,25 +4538,25 @@
             var s = a("q1tI"),
                 o = a.n(s),
                 n = a("17x9"),
-                r = a.n(n),
-                l = a("TSYQ"),
-                i = a.n(l),
-                c = a("kOqK"),
-                _ = a.n(c),
+                l = a.n(n),
+                r = a("TSYQ"),
+                i = a.n(r),
+                _ = a("kOqK"),
+                c = a.n(_),
                 m = a("LHn/"),
                 d = a("74sb"),
                 f = function(e) {
                     var t = e.mode,
                         a = e.amount;
                     return o.a.createElement("div", {
-                        className: _.a.container,
+                        className: c.a.container,
                         style: {
                             backgroundImage: "linear-gradient(#31aae0, #bdf)"
                         }
                     }, o.a.createElement("div", {
-                        className: i()(_.a.text, _.a.n1)
+                        className: i()(c.a.text, c.a.n1)
                     }, "Answer Questions"), o.a.createElement("div", {
-                        className: i()(_.a.text, _.a.n2)
+                        className: i()(c.a.text, c.a.n2)
                     }, "Build Toys (", o.a.createElement("img", {
                         src: m.a.basic.toy,
                         alt: "Toy",
@@ -4498,18 +4565,18 @@
                         },
                         draggable: !1
                     }), ")"), o.a.createElement("div", {
-                        className: i()(_.a.text, _.a.n3)
+                        className: i()(c.a.text, c.a.n3)
                     }, "Choose Helpers"), o.a.createElement("div", {
-                        className: i()(_.a.text, _.a.n4)
+                        className: i()(c.a.text, c.a.n4)
                     }, "Sabotage, Steal, and Multiply Toys"), o.a.createElement("div", {
-                        className: i()(_.a.text, _.a.n5)
+                        className: i()(c.a.text, c.a.n5)
                     }, "Time" === t ? "Most toys after ".concat(Object(d.l)(a), " ").concat("1" === a ? "minute" : "minutes", " wins!") : "First player to have ".concat(Object(d.l)(a), " Toys wins!")), o.a.createElement("div", {
-                        className: i()(_.a.text, _.a.n6)
+                        className: i()(c.a.text, c.a.n6)
                     }, "Good Luck & Happy Holidays!"))
                 };
             f.propTypes = {
-                mode: r.a.string,
-                amount: r.a.any
+                mode: l.a.string,
+                amount: l.a.any
             }, t.a = f
         },
         wcqC: function(e, t, a) {
@@ -4544,26 +4611,40 @@
             a("aET+")(s, o);
             s.locals && (e.exports = s.locals)
         },
+        yCFB: function(e, t, a) {
+            (t = e.exports = a("JPst")(!1)).push([e.i, ".styles__fog___2SFuQ-camelCase{width:100%;filter:blur(1px) grayscale(.2) saturate(1.2) sepia(.2);pointer-events:none;z-index:50}.styles__fog___2SFuQ-camelCase,.styles__fog1___bM3Ry-camelCase,.styles__fog2___1gUb8-camelCase,.styles__fog3___3TX8W-camelCase{position:absolute;height:100%}.styles__fog1___bM3Ry-camelCase,.styles__fog2___1gUb8-camelCase,.styles__fog3___3TX8W-camelCase{width:200%}.styles__fog1___bM3Ry-camelCase .styles__img1___37Xso-camelCase,.styles__fog1___bM3Ry-camelCase .styles__img2___3kzAl-camelCase,.styles__fog2___1gUb8-camelCase .styles__img1___37Xso-camelCase,.styles__fog2___1gUb8-camelCase .styles__img2___3kzAl-camelCase,.styles__fog3___3TX8W-camelCase .styles__img1___37Xso-camelCase,.styles__fog3___3TX8W-camelCase .styles__img2___3kzAl-camelCase{float:left;height:100%;width:50%}.styles__fog1___bM3Ry-camelCase{animation:styles__fog1_opacity___IBbH9-camelCase 10s linear infinite,styles__foglayer_moveme___1rb7W-camelCase 15s linear infinite}.styles__fog2___1gUb8-camelCase,.styles__fog3___3TX8W-camelCase{animation:styles__fog2_opacity___29myw-camelCase 21s linear infinite,styles__foglayer_moveme___1rb7W-camelCase 13s linear infinite}.styles__fog1___bM3Ry-camelCase .styles__img1___37Xso-camelCase,.styles__fog1___bM3Ry-camelCase .styles__img2___3kzAl-camelCase{background:url(https://media.blooket.com/image/upload/v1665986863/Media/spooky/fog1.png) 50%/cover no-repeat transparent}.styles__fog2___1gUb8-camelCase .styles__img1___37Xso-camelCase,.styles__fog2___1gUb8-camelCase .styles__img2___3kzAl-camelCase,.styles__fog3___3TX8W-camelCase .styles__img1___37Xso-camelCase,.styles__fog3___3TX8W-camelCase .styles__img2___3kzAl-camelCase{background:url(https://media.blooket.com/image/upload/v1665986869/Media/spooky/fog2.png) 50%/cover no-repeat transparent}@keyframes styles__fog1_opacity___IBbH9-camelCase{0%{opacity:.1}22%{opacity:.5}40%{opacity:.28}58%{opacity:.4}80%{opacity:.16}to{opacity:.1}}@keyframes styles__fog2_opacity___29myw-camelCase{0%{opacity:.5}25%{opacity:.2}50%{opacity:.1}80%{opacity:.3}to{opacity:.5}}@keyframes styles__fog3_opacity___1RQXQ-camelCase{0%{opacity:.8}27%{opacity:.2}52%{opacity:.6}68%{opacity:.3}to{opacity:.8}}@keyframes styles__foglayer_moveme___1rb7W-camelCase{0%{left:0}to{left:-100%}}@media only screen and (min-width:280px) and (max-width:1130px){.styles__fog1___bM3Ry-camelCase .styles__img1___37Xso-camelCase,.styles__fog1___bM3Ry-camelCase .styles__img2___3kzAl-camelCase,.styles__fog2___1gUb8-camelCase .styles__img1___37Xso-camelCase,.styles__fog2___1gUb8-camelCase .styles__img2___3kzAl-camelCase,.styles__fog3___3TX8W-camelCase .styles__img1___37Xso-camelCase,.styles__fog3___3TX8W-camelCase .styles__img2___3kzAl-camelCase{width:100%}}", ""]), t.locals = {
+                fog: "styles__fog___2SFuQ-camelCase",
+                fog1: "styles__fog1___bM3Ry-camelCase",
+                fog2: "styles__fog2___1gUb8-camelCase",
+                fog3: "styles__fog3___3TX8W-camelCase",
+                img1: "styles__img1___37Xso-camelCase",
+                img2: "styles__img2___3kzAl-camelCase",
+                fog1_opacity: "styles__fog1_opacity___IBbH9-camelCase",
+                foglayer_moveme: "styles__foglayer_moveme___1rb7W-camelCase",
+                fog2_opacity: "styles__fog2_opacity___29myw-camelCase",
+                fog3_opacity: "styles__fog3_opacity___1RQXQ-camelCase"
+            }
+        },
         yCIc: function(e, t, a) {
             "use strict";
             var s = a("q1tI"),
                 o = a.n(s),
                 n = a("9WQd"),
-                r = a.n(n),
-                l = function() {
+                l = a.n(n),
+                r = function() {
                     return o.a.createElement("div", {
-                        className: r.a.container
+                        className: l.a.container
                     }, o.a.createElement("div", {
-                        className: r.a.starWars
+                        className: l.a.starWars
                     }, o.a.createElement("div", {
-                        className: r.a.crawl
+                        className: l.a.crawl
                     }, o.a.createElement("div", {
-                        className: r.a.titleOne
+                        className: l.a.titleOne
                     }, "Episode VIII.2"), o.a.createElement("div", {
-                        className: r.a.titleTwo
+                        className: l.a.titleTwo
                     }, "The Last Blook"), o.a.createElement("div", null, "\n              The FIRST ORDER reigns. Having decimated the peaceful Republic of Blooks,\n              Supreme Leader King Blook now deploys the merciless Unicorns to seize the\n              remaining Medieval boxes in the galaxy.\n            ", o.a.createElement("br", null), o.a.createElement("br", null), "\n              Only General Panther Blook’s band of RESISTANCE fighters stand against the\n              rising tyranny, certain that Jedi Master Tiger Blook will return and restore\n              a spark of hope to the fight.\n            ", o.a.createElement("br", null), o.a.createElement("br", null), "\n              Howdy folks, it’s Ben from Blooket! Sorry about this little interruption. You’ll\n              get back to learning in just a second. Thanks for playing and Happy Holidays!\n            "))))
                 };
-            l.propTypes = {}, t.a = l
+            r.propTypes = {}, t.a = r
         },
         ySNN: function(e, t, a) {
             var s = a("r+wn");
@@ -4596,12 +4677,12 @@
             var s = a("q1tI"),
                 o = a.n(s),
                 n = a("17x9"),
-                r = a.n(n),
-                l = a("4HzQ"),
+                l = a.n(n),
+                r = a("4HzQ"),
                 i = a("TSYQ"),
-                c = a.n(i),
-                _ = a("T7Yb"),
-                m = a.n(_),
+                _ = a.n(i),
+                c = a("T7Yb"),
+                m = a.n(c),
                 d = a("0oXL"),
                 f = a("74sb");
 
@@ -4618,14 +4699,14 @@
                     a = e.loser,
                     s = e.bothWin,
                     n = e.bothLose,
-                    r = e.win,
+                    l = e.win,
                     i = e.safe,
-                    _ = e.isPlayer,
-                    p = !r && _ ? a : t,
-                    u = !r && _ ? t : a;
+                    c = e.isPlayer,
+                    p = !l && c ? a : t,
+                    u = !l && c ? t : a;
                 return o.a.createElement("div", {
                     className: m.a.background
-                }, r ? o.a.createElement(o.a.Fragment, null, o.a.createElement("div", {
+                }, l ? o.a.createElement(o.a.Fragment, null, o.a.createElement("div", {
                     className: m.a.winnerBackground
                 }), o.a.createElement("img", {
                     src: "https://media.blooket.com/image/upload/v1662148586/Media/br/BG_Overlay2.svg",
@@ -4653,8 +4734,8 @@
                     alt: "Nameplate",
                     className: m.a.victoryTextBg
                 }), o.a.createElement("img", {
-                    src: r ? "https://media.blooket.com/image/upload/v1663059931/Media/br/Victory_Text.png" : "https://media.blooket.com/image/upload/v1662400412/Media/br/Defeated_Text.svg",
-                    alt: r ? "Victory" : "Defeat",
+                    src: l ? "https://media.blooket.com/image/upload/v1663059931/Media/br/Victory_Text.png" : "https://media.blooket.com/image/upload/v1662400412/Media/br/Defeated_Text.svg",
+                    alt: l ? "Victory" : "Defeat",
                     className: m.a.victoryText
                 }), o.a.createElement("div", {
                     className: m.a.winnerBlookContainer
@@ -4693,12 +4774,12 @@
                     className: m.a.winnerBlookShadow1
                 }), o.a.createElement(d.a, {
                     name: p.blook,
-                    className: c()(m.a.winnerBlook, y({}, m.a.grayBlook, s || !r && _))
+                    className: _()(m.a.winnerBlook, y({}, m.a.grayBlook, s || !l && c))
                 })), o.a.createElement("img", {
                     src: "https://media.blooket.com/image/upload/v1662148586/Media/br/Orange_Nameplate_No_Tilt.svg",
                     alt: "Nameplate",
                     className: m.a.winnerNameplate
-                }), o.a.createElement(l.Textfit, {
+                }), o.a.createElement(r.Textfit, {
                     className: m.a.winnerName,
                     mode: "single",
                     min: 1,
@@ -4712,8 +4793,8 @@
                     alt: "Nameplate",
                     className: m.a.defeatTextBg
                 }), o.a.createElement("img", {
-                    src: (s || !r && _) && !n ? "https://media.blooket.com/image/upload/v1663059931/Media/br/Victory_Text.png" : "https://media.blooket.com/image/upload/v1662400412/Media/br/Defeated_Text.svg",
-                    alt: (s || !r && _) && !n ? "Victory" : "Defeat",
+                    src: (s || !l && c) && !n ? "https://media.blooket.com/image/upload/v1663059931/Media/br/Victory_Text.png" : "https://media.blooket.com/image/upload/v1662400412/Media/br/Defeated_Text.svg",
+                    alt: (s || !l && c) && !n ? "Victory" : "Defeat",
                     className: m.a.defeatText
                 }), o.a.createElement("div", {
                     className: m.a.loserBlookContainer
@@ -4752,12 +4833,12 @@
                     className: m.a.loserBlookShadow1
                 }), o.a.createElement(d.a, {
                     name: u.blook,
-                    className: c()(m.a.loserBlook, y({}, m.a.grayBlook, n || !(s || !r && _)))
+                    className: _()(m.a.loserBlook, y({}, m.a.grayBlook, n || !(s || !l && c)))
                 })), o.a.createElement("img", {
                     src: "https://media.blooket.com/image/upload/v1655936180/Media/br/Blue_Nameplate.svg",
                     alt: "Nameplate",
                     className: m.a.loserNameplate
-                }), o.a.createElement(l.Textfit, {
+                }), o.a.createElement(r.Textfit, {
                     className: m.a.loserName,
                     mode: "single",
                     min: 1,
@@ -4768,13 +4849,13 @@
                 }, i ? "You Can't All Lose" : n ? "You Both Lose" : s ? "You Both Win" : "") : null)
             };
             p.propTypes = {
-                winner: r.a.object,
-                loser: r.a.object,
-                bothWin: r.a.bool,
-                bothLose: r.a.bool,
-                win: r.a.bool,
-                safe: r.a.bool,
-                isPlayer: r.a.bool
+                winner: l.a.object,
+                loser: l.a.object,
+                bothWin: l.a.bool,
+                bothLose: l.a.bool,
+                win: l.a.bool,
+                safe: l.a.bool,
+                isPlayer: l.a.bool
             }, t.a = p
         },
         zogk: function(e, t, a) {

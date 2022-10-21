@@ -21,8 +21,8 @@
                 b = a("FKJl"),
                 v = a("E8Bj"),
                 w = a("XTAU"),
-                x = a("ca/f"),
-                k = a("3k2l"),
+                k = a("ca/f"),
+                x = a("3k2l"),
                 C = a("DPg2"),
                 O = a.n(C),
                 E = a("Xst1"),
@@ -98,7 +98,7 @@
                 function l(e, t, a, n) {
                     var o = t && t.prototype instanceof d ? t : d,
                         r = Object.create(o.prototype),
-                        i = new k(n || []);
+                        i = new x(n || []);
                     return r._invoke = function(e, t, a) {
                         var n = "suspendedStart";
                         return function(o, r) {
@@ -224,12 +224,12 @@
                     1 in e && (t.catchLoc = e[1]), 2 in e && (t.finallyLoc = e[2], t.afterLoc = e[3]), this.tryEntries.push(t)
                 }
 
-                function x(e) {
+                function k(e) {
                     var t = e.completion || {};
                     t.type = "normal", delete t.arg, e.completion = t
                 }
 
-                function k(e) {
+                function x(e) {
                     this.tryEntries = [{
                         tryLoc: "root"
                     }], e.forEach(w, this), this.reset(!0)
@@ -293,10 +293,10 @@
                             }
                             return a.done = !0, a
                         }
-                }, e.values = C, k.prototype = {
-                    constructor: k,
+                }, e.values = C, x.prototype = {
+                    constructor: x,
                     reset: function(e) {
-                        if (this.prev = 0, this.next = 0, this.sent = this._sent = void 0, this.done = !1, this.delegate = null, this.method = "next", this.arg = void 0, this.tryEntries.forEach(x), !e)
+                        if (this.prev = 0, this.next = 0, this.sent = this._sent = void 0, this.done = !1, this.delegate = null, this.method = "next", this.arg = void 0, this.tryEntries.forEach(k), !e)
                             for (var t in this) "t" === t.charAt(0) && a.call(this, t) && !isNaN(+t.slice(1)) && (this[t] = void 0)
                     },
                     stop: function() {
@@ -350,7 +350,7 @@
                     finish: function(e) {
                         for (var t = this.tryEntries.length - 1; t >= 0; --t) {
                             var a = this.tryEntries[t];
-                            if (a.finallyLoc === e) return this.complete(a.completion, a.afterLoc), x(a), u
+                            if (a.finallyLoc === e) return this.complete(a.completion, a.afterLoc), k(a), u
                         }
                     },
                     catch: function(e) {
@@ -360,7 +360,7 @@
                                 var n = a.completion;
                                 if ("throw" === n.type) {
                                     var o = n.arg;
-                                    x(a)
+                                    k(a)
                                 }
                                 return o
                             }
@@ -411,7 +411,7 @@
 
             function z(e) {
                 return function(e) {
-                    if (Array.isArray(e)) return R(e)
+                    if (Array.isArray(e)) return A(e)
                 }(e) || function(e) {
                     if ("undefined" != typeof Symbol && null != e[Symbol.iterator] || null != e["@@iterator"]) return Array.from(e)
                 }(e) || G(e) || function() {
@@ -421,19 +421,19 @@
 
             function G(e, t) {
                 if (e) {
-                    if ("string" == typeof e) return R(e, t);
+                    if ("string" == typeof e) return A(e, t);
                     var a = Object.prototype.toString.call(e).slice(8, -1);
-                    return "Object" === a && e.constructor && (a = e.constructor.name), "Map" === a || "Set" === a ? Array.from(e) : "Arguments" === a || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(a) ? R(e, t) : void 0
+                    return "Object" === a && e.constructor && (a = e.constructor.name), "Map" === a || "Set" === a ? Array.from(e) : "Arguments" === a || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(a) ? A(e, t) : void 0
                 }
             }
 
-            function R(e, t) {
+            function A(e, t) {
                 (null == t || t > e.length) && (t = e.length);
                 for (var a = 0, n = new Array(t); a < t; a++) n[a] = e[a];
                 return n
             }
 
-            function A(e, t, a, n, o, r, i) {
+            function R(e, t, a, n, o, r, i) {
                 try {
                     var s = e[r](i),
                         l = s.value
@@ -451,11 +451,11 @@
                         var r = e.apply(t, a);
 
                         function i(e) {
-                            A(r, n, o, i, s, "next", e)
+                            R(r, n, o, i, s, "next", e)
                         }
 
                         function s(e) {
-                            A(r, n, o, i, s, "throw", e)
+                            R(r, n, o, i, s, "throw", e)
                         }
                         i(void 0)
                     }))
@@ -1437,7 +1437,7 @@
                                 style: {
                                     height: 30
                                 }
-                            }), this.state.deleting ? o.a.createElement(x.a, {
+                            }), this.state.deleting ? o.a.createElement(k.a, {
                                 text: "Do you really want to delete this ".concat(this.state.deleteFolder ? "folder (this will not delete the sets inside)" : "set", "?"),
                                 loading: this.state.loading,
                                 buttonOne: {
@@ -1459,7 +1459,7 @@
                                     },
                                     color: "blue"
                                 }
-                            }) : this.state.copying || this.state.noFolder ? this.state.copyGame.title ? o.a.createElement(x.a, {
+                            }) : this.state.copying || this.state.noFolder ? this.state.copyGame.title ? o.a.createElement(k.a, {
                                 text: this.state.loading ? "Copying..." : 'Do you want to create a copy of "'.concat(this.state.copyGame.title, '"?'),
                                 loading: this.state.loading,
                                 buttonOne: {
@@ -1478,7 +1478,7 @@
                                     },
                                     color: "blue"
                                 }
-                            }) : o.a.createElement(x.a, {
+                            }) : o.a.createElement(k.a, {
                                 text: this.state.noFolder ? "Get Blooket Plus to Create Folders" : "Get Blooket Plus to Copy Sets",
                                 buttonOne: {
                                     text: "Upgrade",
@@ -1498,7 +1498,7 @@
                                     },
                                     color: "blue"
                                 }
-                            }) : this.state.creatingFolder || this.state.editingFolder ? o.a.createElement(x.a, {
+                            }) : this.state.creatingFolder || this.state.editingFolder ? o.a.createElement(k.a, {
                                 text: this.state.creatingFolder ? "Enter a folder name and select a color:" : "You can change the folder name and color below:",
                                 loading: this.state.loading,
                                 stringValue: this.state.folderName,
@@ -1532,7 +1532,7 @@
                                     },
                                     color: "blue"
                                 }
-                            }) : this.state.noMerge ? o.a.createElement(x.a, {
+                            }) : this.state.noMerge ? o.a.createElement(k.a, {
                                 text: "Get Blooket Plus to Merge Sets",
                                 buttonOne: {
                                     text: "Upgrade",
@@ -1550,7 +1550,7 @@
                                     },
                                     color: "blue"
                                 }
-                            }) : this.state.mergeGame2._id ? o.a.createElement(x.a, {
+                            }) : this.state.mergeGame2._id ? o.a.createElement(k.a, {
                                 text: this.state.loading ? "Merging..." : "Do you want to merge these two sets?",
                                 loading: this.state.loading,
                                 buttonOne: {
@@ -1568,7 +1568,7 @@
                                     },
                                     color: "blue"
                                 }
-                            }) : this.state.movingGame ? o.a.createElement(x.a, {
+                            }) : this.state.movingGame ? o.a.createElement(k.a, {
                                 loading: this.state.loading,
                                 buttonOne: this.state.moveLocation !== this.state.oldMoveLocation ? {
                                     text: "Move",
@@ -1611,7 +1611,7 @@
                                 }, "No Folders Created")), o.a.createElement("div", {
                                     className: O.a.moveLocation
                                 }, "Location: ".concat("" === this.state.moveLocation ? "No Folder" : this.state.moveLocation)))
-                            }) : this.state.ready && this.state.noRole ? o.a.createElement(x.a, {
+                            }) : this.state.ready && this.state.noRole ? o.a.createElement(k.a, {
                                 text: this.state.loadingRole ? "Saving..." : "Who are you?",
                                 loading: this.state.loadingRole,
                                 buttonOne: {
@@ -1628,7 +1628,7 @@
                                     },
                                     color: "blue"
                                 }
-                            }) : this.state.ready && !g.isMobile && this.state.tour ? o.a.createElement(k.a, {
+                            }) : this.state.ready && !g.isMobile && this.state.tour ? o.a.createElement(x.a, {
                                 done: this.endTour
                             }) : null))
                         }
@@ -1805,6 +1805,16 @@
                     name: "Star Student",
                     price: 250,
                     rarity: "Uncommon"
+                },
+                creative: {
+                    name: "Creative",
+                    price: 100,
+                    rarity: "Uncommon"
+                },
+                pumpkinSpice: {
+                    name: "Pumpkin Spice",
+                    price: 500,
+                    rarity: "Rare"
                 }
             }
         },
@@ -1835,7 +1845,7 @@
             n.locals && (e.exports = n.locals)
         },
         KYQD: function(e, t, a) {
-            (t = e.exports = a("JPst")(!1)).push([e.i, ".styles__header___153FZ-camelCase{font-family:Nunito,sans-serif;font-size:44px;font-weight:700;margin:15px 5% 10px;color:#3a3a3a}.styles__rateIcon___11Qwv-camelCase{font-size:28px;line-height:35px;margin:auto 10px;color:#3a3a3a;outline:none;cursor:pointer;transition:all .1s linear}.styles__rateIcon___11Qwv-camelCase:hover{color:#0bc2cf}.styles__tooltip___21a_3-camelCase{font-family:Nunito,sans-serif!important;font-size:15px!important;line-height:19px!important;padding:6px 13px!important;text-align:center!important}.styles__tokenBalance___1FHgT-camelCase{margin:0 10px;display:flex}.styles__mTokenBalance___2dSI3-camelCase,.styles__tokenBalance___1FHgT-camelCase{height:55px;background-color:#fff;border-bottom-left-radius:10px;border-bottom-right-radius:10px;box-sizing:border-box;padding:0 10px 6px;box-shadow:inset 0 -6px rgba(0,0,0,.2),0 0 4px rgba(0,0,0,.15);justify-content:center;align-items:center;font-size:22px;font-weight:700;color:#3a3a3a}.styles__mTokenBalance___2dSI3-camelCase{position:absolute;top:0;right:10px;display:none}.styles__tokenBalanceIcon___3MGhs-camelCase{width:30px;height:30px;margin-right:7px}.styles__leftColumn___2MTgv-camelCase{margin:25px 0 35px 5%;width:calc(90% - 250px);padding-bottom:20px}.styles__packsWrapper___2hBF4-camelCase{display:grid;grid-template-columns:repeat(auto-fill,210px);grid-gap:25px;width:100%}.styles__packContainer___3RwSU-camelCase{width:210px;height:210px;-webkit-user-select:none;-moz-user-select:none;user-select:none;outline:none;cursor:pointer;position:relative;background-color:#0bc2cf;border-radius:10px;overflow:hidden;padding-bottom:7px;box-shadow:inset 0 -7px rgba(0,0,0,.2);box-sizing:border-box;will-change:transform;transition:.2s}.styles__packContainer___3RwSU-camelCase:hover{transform:scale(.95)}.styles__packImgContainer___3NABW-camelCase{height:100%;position:relative}.styles__packShadow___2TA17-camelCase{width:70%;filter:brightness(0) invert(100%);opacity:.5}.styles__packImg___3to1S-camelCase,.styles__packShadow___2TA17-camelCase{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%) rotate(10deg)}.styles__packImg___3to1S-camelCase{width:65%}.styles__packBottom___37drt-camelCase{display:flex;flex-direction:row;align-items:center;justify-content:center;height:24px;padding:0 12px;background-color:rgba(0,0,0,.2);font-family:Titan One,sans-serif;font-size:18px;color:#fff;text-shadow:1px 1px 0 grey;border-top-right-radius:10px;border-bottom-right-radius:10px;position:absolute;bottom:12px;left:0}.styles__packPriceImg___1FaDF-camelCase{width:16px;height:16px;margin-right:7px}.styles__subheader___GVBz_-camelCase{font-size:34px;font-weight:700;margin:20px 0}.styles__weeklyWrapper___1N5wN-camelCase{display:flex;flex-flow:row wrap;width:100%;margin:-12.5px}.styles__weeklyContainer___I6YST-camelCase{width:270px;height:190px;margin:12.5px;-webkit-user-select:none;-moz-user-select:none;user-select:none;outline:none;cursor:pointer;position:relative;background:linear-gradient(#0bc2cf,#146cd2);border-radius:10px;overflow:hidden;box-shadow:inset 0 -7px rgba(0,0,0,.2);display:flex;flex-direction:column;align-items:center;justify-content:center;will-change:transform;transition:.2s}.styles__weeklyContainer___I6YST-camelCase:hover{transform:scale(.95)}.styles__weeklyName___1-QhF-camelCase{font-size:22px;text-align:center;position:absolute;width:100%;left:0;top:10px}.styles__weeklyName___1-QhF-camelCase,.styles__weeklyTitle___2PwID-camelCase{font-family:Titan One,sans-serif;color:#fff;text-shadow:1px 1px 0 grey}.styles__weeklyTitle___2PwID-camelCase{font-size:28px;padding:5px 10px;background-color:rgba(0,0,0,.2);border-radius:10px}.styles__weeklyBanner___318lh-camelCase{width:90%}.styles__weeklyBottom___2Xhbw-camelCase{justify-content:center;padding:0 12px;background-color:rgba(0,0,0,.2);font-family:Titan One,sans-serif;font-size:18px;text-shadow:1px 1px 0 grey;border-top-right-radius:10px;border-bottom-right-radius:10px;left:0}.styles__weeklyBottom___2Xhbw-camelCase,.styles__weeklyRarity___1sPj5-camelCase{display:flex;flex-direction:row;align-items:center;height:24px;color:#fff;position:absolute;bottom:15px}.styles__weeklyRarity___1sPj5-camelCase{font-family:Nunito,sans-serif;font-weight:700;font-size:14px;padding:0 7px 0 12px;right:0;border-top-left-radius:10px;border-bottom-left-radius:10px}.styles__storeContainer___FgOVv-camelCase{position:fixed;right:2.5%;width:250px;height:375px;top:50%;transform:translateY(-50%);-webkit-user-select:none;-moz-user-select:none;user-select:none;pointer-events:none}.styles__storeImg___2c3cG-camelCase{position:absolute;top:0;left:0;width:100%;height:100%}.styles__cashierBlook___iI1UH-camelCase{position:absolute;bottom:110px;right:60px;width:70px;transform:rotate(10deg)}.styles__instantButton___2ezEk-camelCase{position:absolute;bottom:-30px;left:50%;transform:translateX(-50%);background-color:rgba(0,0,0,.1);color:#3a3a3a;border-radius:5px;font-size:12px;height:20px;padding:0 10px;display:flex;flex-direction:row;align-items:center;justify-content:center;-webkit-user-select:none;-moz-user-select:none;user-select:none;outline:none;cursor:pointer;pointer-events:all}.styles__instantButton___2ezEk-camelCase:hover{background-color:rgba(0,0,0,.2)}.styles__openBackground___-U4oX-camelCase{position:fixed;top:0;left:0;width:100%;height:100%;z-index:25;overflow:hidden}.styles__openContainer___3paFG-camelCase{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%) scale(0);width:400px;border-radius:10px;box-sizing:border-box;display:flex;flex-direction:column;align-items:center;justify-content:space-between;text-align:center;overflow:hidden;-webkit-user-select:none;-moz-user-select:none;user-select:none;box-shadow:0 0 4px rgba(0,0,0,.15);background-color:#fff}.styles__openingContainer___2OmG9-camelCase{animation:styles__growIn___1R3Nj-camelCase .2s linear .5s forwards}@keyframes styles__growIn___1R3Nj-camelCase{0%{transform:translate(-50%,-50%) scale(0)}to{transform:translate(-50%,-50%) scale(1)}}.styles__openingContainerEpic___3TzCR-camelCase{animation:styles__epicOpen___1Ajao-camelCase 1.5s linear .5s forwards}@keyframes styles__epicOpen___1Ajao-camelCase{0%{transform:translate(calc(-50% - 25vw),calc(-50% - 25vh)) rotate(15deg) scale(.1)}25%{transform:translate(calc(-50% - 25vw),calc(-50% - 25vh)) rotate(15deg) scale(.1)}25.1%{transform:translate(calc(-50% + 25vw),calc(-50% + 25vh)) rotate(-15deg) scale(.2)}50%{transform:translate(calc(-50% + 25vw),calc(-50% + 25vh)) rotate(-15deg) scale(.2)}50.1%{transform:translate(calc(-50% - 25vw),calc(-50% + 25vh)) rotate(15deg) scale(.3)}75%{transform:translate(calc(-50% - 25vw),calc(-50% + 25vh)) rotate(15deg) scale(.3)}75.1%{transform:translate(calc(-50% + 25vw),calc(-50% - 25vh)) rotate(-15deg) scale(.4)}99.9%{transform:translate(calc(-50% + 25vw),calc(-50% - 25vh)) rotate(-15deg) scale(.4)}to{transform:translate(-50%,-50%) rotate(0) scale(1)}}.styles__openingContainerLegendary___RbJZ_-camelCase{animation:styles__legendaryOpen___1ihkU-camelCase 2.5s ease-in 1s forwards}@keyframes styles__legendaryOpen___1ihkU-camelCase{0%{transform:translate(calc(-50% - 25vw),calc(-50% - 100vh)) scale(.1)}35%{transform:translate(calc(-50% - 25vw),calc(-50% + 100vh)) scale(.1)}35.1%{transform:translate(calc(-50% + 25vw),calc(-50% - 100vh)) scale(.3)}70%{transform:translate(calc(-50% + 25vw),calc(-50% + 100vh)) scale(.3)}70.1%{transform:translate(-50%,calc(-50% - 100vh)) scale(1)}to{transform:translate(-50%,-50%) scale(1)}}.styles__openingContainerChroma___3VBd5-camelCase{animation:styles__chromaOpen___2_fhq-camelCase 2s linear 1.5s forwards}@keyframes styles__chromaOpen___2_fhq-camelCase{0%{transform:translate(-50%,-50%) rotate(0deg) scale(0)}10%{transform:translate(-50%,-50%) rotate(180deg) scale(.1)}20%{transform:translate(-50%,-50%) rotate(1turn) scale(.2)}30%{transform:translate(-50%,-50%) rotate(540deg) scale(.3)}40%{transform:translate(-50%,-50%) rotate(2turn) scale(.4)}50%{transform:translate(-50%,-50%) rotate(900deg) scale(.5)}60%{transform:translate(-50%,-50%) rotate(3turn) scale(.6)}70%{transform:translate(-50%,-50%) rotate(1260deg) scale(.7)}80%{transform:translate(-50%,-50%) rotate(4turn) scale(.8)}90%{transform:translate(-50%,-50%) rotate(1620deg) scale(.9)}to{transform:translate(-50%,-50%) rotate(5turn) scale(1)}}.styles__blookBackground___3rt4N-camelCase{width:100%;height:100%}.styles__openingPackContainer___1ZQzY-camelCase,.styles__openPackContainer___2m4Yf-camelCase{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:400px;height:667px;overflow:hidden;-webkit-user-select:none;-moz-user-select:none;user-select:none}.styles__openPackContainer___2m4Yf-camelCase{outline:none;cursor:pointer}.styles__openingPackContainer___1ZQzY-camelCase{animation:styles__dropPack___12OV_-camelCase .2s linear .4s forwards}@keyframes styles__dropPack___12OV_-camelCase{0%{transform:translate(-50%,-50%)}to{transform:translate(-50%,50vh)}}.styles__openPack___3QxCP-camelCase{width:400px;height:667px;background-size:4400px 667px;background-repeat:no-repeat}.styles__isOpeningPack___1qY5t-camelCase{animation:styles__open___1v-ch-camelCase .4s steps(10) forwards}@keyframes styles__open___1v-ch-camelCase{0%{background-position:0}to{background-position:-4000px}}.styles__unlockedBlookImage___wC4gr-camelCase{position:absolute;bottom:85px;left:105px;width:190px}.styles__unlockedText___1diat-camelCase{position:absolute;top:15px;left:5%;width:90%;font-family:Titan One,sans-serif;color:#fff;text-align:center}.styles__unlockedBlook___2pr1Z-camelCase{text-shadow:0 3px 3px rgba(0,0,0,.2);width:100%;height:50px;text-align:center}.styles__rarityText___1PfSA-camelCase{font-size:30px;-webkit-text-stroke:#3a3a3a 1.5px}.styles__bottomText___3_k10-camelCase{position:absolute;bottom:15px;left:5%;width:90%;font-family:Titan One,sans-serif;color:#fff;text-align:center;font-size:30px;text-shadow:0 0 4px rgba(0,0,0,.4)}.styles__bottomShadow___10ZLG-camelCase{width:100%;position:absolute;bottom:0;left:0;height:50px;box-shadow:inset 0 -9px rgba(0,0,0,.2);border-bottom-left-radius:10px;border-bottom-right-radius:10px}.styles__cornerIcon___24o3Z-camelCase{width:400px;position:absolute;bottom:-20px;right:-20px;-webkit-user-select:none;-moz-user-select:none;user-select:none;opacity:.2;transform:rotate(-35deg)}.styles__openBigButton___3KmDM-camelCase,.styles__phaserContainer___1Ffxs-camelCase{width:100%;height:100%;position:absolute;top:0;left:0}.styles__openBigButton___3KmDM-camelCase{outline:none;-webkit-user-select:none;-moz-user-select:none;user-select:none;z-index:100}.styles__canOpen___2znG2-camelCase{cursor:pointer}.styles__mInstantButton___3lgNk-camelCase{display:none;background-color:rgba(0,0,0,.1);color:#3a3a3a;border-radius:5px;font-size:12px;height:20px;padding:0 10px;margin:0 5%;flex-direction:row;align-items:center;justify-content:center;-webkit-user-select:none;-moz-user-select:none;user-select:none;outline:none;cursor:pointer}.styles__mInstantButton___3lgNk-camelCase:hover{background-color:rgba(0,0,0,.2)}@media only screen and (max-width:1010px){.styles__storeContainer___FgOVv-camelCase{display:none}.styles__mInstantButton___3lgNk-camelCase{display:flex}.styles__leftColumn___2MTgv-camelCase{margin:25px 5% 35px;width:90%}.styles__packsWrapper___2hBF4-camelCase,.styles__weeklyWrapper___1N5wN-camelCase{justify-content:center}.styles__weeklyWrapper___1N5wN-camelCase{margin:0 -12.5px;width:unset}}@media only screen and (max-width:850px){.styles__mTokenBalance___2dSI3-camelCase{display:flex}}@media only screen and (max-width:600px){.styles__openContainer___3paFG-camelCase{width:300px}.styles__openingPackContainer___1ZQzY-camelCase,.styles__openPack___3QxCP-camelCase,.styles__openPackContainer___2m4Yf-camelCase{width:300px;height:500px}.styles__openPack___3QxCP-camelCase{background-size:3300px 500px}@keyframes styles__open___1v-ch-camelCase{0%{background-position:0}to{background-position:-3000px}}.styles__unlockedBlookImage___wC4gr-camelCase{position:absolute;bottom:64px;left:78.5px;width:143px}.styles__unlockedText___1diat-camelCase{top:5px;left:2.5%;width:95%}.styles__unlockedBlook___2pr1Z-camelCase{width:100%;height:30px}.styles__bottomText___3_k10-camelCase,.styles__rarityText___1PfSA-camelCase{font-size:20px}.styles__bottomText___3_k10-camelCase{bottom:15px}.styles__cornerIcon___24o3Z-camelCase{width:270px}}", ""]), t.locals = {
+            (t = e.exports = a("JPst")(!1)).push([e.i, ".styles__header___153FZ-camelCase{font-family:Nunito,sans-serif;font-size:44px;font-weight:700;margin:15px 5% 10px;color:#3a3a3a}.styles__rateIcon___11Qwv-camelCase{font-size:28px;line-height:35px;margin:auto 10px;color:#3a3a3a;outline:none;cursor:pointer;transition:all .1s linear}.styles__rateIcon___11Qwv-camelCase:hover{color:#0bc2cf}.styles__tooltip___21a_3-camelCase{font-family:Nunito,sans-serif!important;font-size:15px!important;line-height:19px!important;padding:6px 13px!important;text-align:center!important}.styles__tokenBalance___1FHgT-camelCase{margin:0 10px;display:flex}.styles__mTokenBalance___2dSI3-camelCase,.styles__tokenBalance___1FHgT-camelCase{height:55px;background-color:#fff;border-bottom-left-radius:10px;border-bottom-right-radius:10px;box-sizing:border-box;padding:0 10px 6px;box-shadow:inset 0 -6px rgba(0,0,0,.2),0 0 4px rgba(0,0,0,.15);justify-content:center;align-items:center;font-size:22px;font-weight:700;color:#3a3a3a}.styles__mTokenBalance___2dSI3-camelCase{position:absolute;top:0;right:10px;display:none}.styles__tokenBalanceIcon___3MGhs-camelCase{width:30px;height:30px;margin-right:7px}.styles__leftColumn___2MTgv-camelCase{margin:25px 0 35px 5%;width:calc(90% - 250px);padding-bottom:20px}.styles__packsWrapper___2hBF4-camelCase{display:grid;grid-template-columns:repeat(auto-fill,210px);grid-gap:25px;width:100%}.styles__packContainer___3RwSU-camelCase{width:210px;height:210px;-webkit-user-select:none;-moz-user-select:none;user-select:none;outline:none;cursor:pointer;position:relative;background-color:#0bc2cf;border-radius:10px;overflow:hidden;padding-bottom:7px;box-shadow:inset 0 -7px rgba(0,0,0,.2);box-sizing:border-box;will-change:transform;transition:.2s}.styles__packContainer___3RwSU-camelCase:hover{transform:scale(.95)}.styles__packImgContainer___3NABW-camelCase{height:100%;position:relative}.styles__packShadow___2TA17-camelCase{width:70%;filter:brightness(0) invert(100%);opacity:.5}.styles__packImg___3to1S-camelCase,.styles__packShadow___2TA17-camelCase{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%) rotate(10deg)}.styles__packImg___3to1S-camelCase{width:65%}.styles__packBottom___37drt-camelCase{display:flex;flex-direction:row;align-items:center;justify-content:center;height:24px;padding:0 12px;background-color:rgba(0,0,0,.2);font-family:Titan One,sans-serif;font-size:18px;color:#fff;text-shadow:1px 1px 0 grey;border-top-right-radius:10px;border-bottom-right-radius:10px;position:absolute;bottom:12px;left:0}.styles__packPriceImg___1FaDF-camelCase{width:16px;height:16px;margin-right:7px}.styles__subheader___GVBz_-camelCase{font-size:34px;font-weight:700;margin:20px 0}.styles__weeklyWrapper___1N5wN-camelCase{display:flex;flex-flow:row wrap;width:100%;margin:-12.5px}.styles__weeklyContainer___I6YST-camelCase{width:270px;height:190px;margin:12.5px;-webkit-user-select:none;-moz-user-select:none;user-select:none;outline:none;cursor:pointer;position:relative;background:linear-gradient(#0bc2cf,#146cd2);border-radius:10px;overflow:hidden;box-shadow:inset 0 -7px rgba(0,0,0,.2);display:flex;flex-direction:column;align-items:center;justify-content:center;will-change:transform;transition:.2s}.styles__weeklyContainer___I6YST-camelCase:hover{transform:scale(.95)}.styles__weeklyName___1-QhF-camelCase{font-size:22px;text-align:center;position:absolute;width:100%;left:0;top:10px}.styles__weeklyName___1-QhF-camelCase,.styles__weeklyTitle___2PwID-camelCase{font-family:Titan One,sans-serif;color:#fff;text-shadow:1px 1px 0 grey}.styles__weeklyTitle___2PwID-camelCase{font-size:28px;padding:5px 10px;background-color:rgba(0,0,0,.2);border-radius:10px}.styles__weeklyBanner___318lh-camelCase{width:90%}.styles__weeklyBottom___2Xhbw-camelCase{justify-content:center;padding:0 12px;background-color:rgba(0,0,0,.2);font-family:Titan One,sans-serif;font-size:18px;text-shadow:1px 1px 0 grey;border-top-right-radius:10px;border-bottom-right-radius:10px;left:0}.styles__weeklyBottom___2Xhbw-camelCase,.styles__weeklyRarity___1sPj5-camelCase{display:flex;flex-direction:row;align-items:center;height:24px;color:#fff;position:absolute;bottom:15px}.styles__weeklyRarity___1sPj5-camelCase{font-family:Nunito,sans-serif;font-weight:700;font-size:14px;padding:0 7px 0 12px;right:0;border-top-left-radius:10px;border-bottom-left-radius:10px}.styles__storeContainer___FgOVv-camelCase{position:fixed;right:2.5%;width:250px;height:375px;top:50%;transform:translateY(-50%);-webkit-user-select:none;-moz-user-select:none;user-select:none;pointer-events:none}.styles__storeImg___2c3cG-camelCase{position:absolute;top:0;left:0;width:100%;height:100%}.styles__cashierBlook___iI1UH-camelCase{bottom:110px}.styles__cashierBlook___iI1UH-camelCase,.styles__spookyCashierBlook___3dZAC-camelCase{position:absolute;right:60px;width:70px;transform:rotate(10deg)}.styles__spookyCashierBlook___3dZAC-camelCase{bottom:85px}.styles__instantButton___2ezEk-camelCase{position:absolute;bottom:-30px;left:50%;transform:translateX(-50%);background-color:rgba(0,0,0,.1);color:#3a3a3a;border-radius:5px;font-size:12px;height:20px;padding:0 10px;display:flex;flex-direction:row;align-items:center;justify-content:center;-webkit-user-select:none;-moz-user-select:none;user-select:none;outline:none;cursor:pointer;pointer-events:all}.styles__instantButton___2ezEk-camelCase:hover{background-color:rgba(0,0,0,.2)}.styles__openBackground___-U4oX-camelCase{position:fixed;top:0;left:0;width:100%;height:100%;z-index:25;overflow:hidden}.styles__openContainer___3paFG-camelCase{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%) scale(0);width:400px;border-radius:10px;box-sizing:border-box;display:flex;flex-direction:column;align-items:center;justify-content:space-between;text-align:center;overflow:hidden;-webkit-user-select:none;-moz-user-select:none;user-select:none;box-shadow:0 0 4px rgba(0,0,0,.15);background-color:#fff}.styles__openingContainer___2OmG9-camelCase{animation:styles__growIn___1R3Nj-camelCase .2s linear .5s forwards}@keyframes styles__growIn___1R3Nj-camelCase{0%{transform:translate(-50%,-50%) scale(0)}to{transform:translate(-50%,-50%) scale(1)}}.styles__openingContainerEpic___3TzCR-camelCase{animation:styles__epicOpen___1Ajao-camelCase 1.5s linear .5s forwards}@keyframes styles__epicOpen___1Ajao-camelCase{0%{transform:translate(calc(-50% - 25vw),calc(-50% - 25vh)) rotate(15deg) scale(.1)}25%{transform:translate(calc(-50% - 25vw),calc(-50% - 25vh)) rotate(15deg) scale(.1)}25.1%{transform:translate(calc(-50% + 25vw),calc(-50% + 25vh)) rotate(-15deg) scale(.2)}50%{transform:translate(calc(-50% + 25vw),calc(-50% + 25vh)) rotate(-15deg) scale(.2)}50.1%{transform:translate(calc(-50% - 25vw),calc(-50% + 25vh)) rotate(15deg) scale(.3)}75%{transform:translate(calc(-50% - 25vw),calc(-50% + 25vh)) rotate(15deg) scale(.3)}75.1%{transform:translate(calc(-50% + 25vw),calc(-50% - 25vh)) rotate(-15deg) scale(.4)}99.9%{transform:translate(calc(-50% + 25vw),calc(-50% - 25vh)) rotate(-15deg) scale(.4)}to{transform:translate(-50%,-50%) rotate(0) scale(1)}}.styles__openingContainerLegendary___RbJZ_-camelCase{animation:styles__legendaryOpen___1ihkU-camelCase 2.5s ease-in 1s forwards}@keyframes styles__legendaryOpen___1ihkU-camelCase{0%{transform:translate(calc(-50% - 25vw),calc(-50% - 100vh)) scale(.1)}35%{transform:translate(calc(-50% - 25vw),calc(-50% + 100vh)) scale(.1)}35.1%{transform:translate(calc(-50% + 25vw),calc(-50% - 100vh)) scale(.3)}70%{transform:translate(calc(-50% + 25vw),calc(-50% + 100vh)) scale(.3)}70.1%{transform:translate(-50%,calc(-50% - 100vh)) scale(1)}to{transform:translate(-50%,-50%) scale(1)}}.styles__openingContainerChroma___3VBd5-camelCase{animation:styles__chromaOpen___2_fhq-camelCase 2s linear 1.5s forwards}@keyframes styles__chromaOpen___2_fhq-camelCase{0%{transform:translate(-50%,-50%) rotate(0deg) scale(0)}10%{transform:translate(-50%,-50%) rotate(180deg) scale(.1)}20%{transform:translate(-50%,-50%) rotate(1turn) scale(.2)}30%{transform:translate(-50%,-50%) rotate(540deg) scale(.3)}40%{transform:translate(-50%,-50%) rotate(2turn) scale(.4)}50%{transform:translate(-50%,-50%) rotate(900deg) scale(.5)}60%{transform:translate(-50%,-50%) rotate(3turn) scale(.6)}70%{transform:translate(-50%,-50%) rotate(1260deg) scale(.7)}80%{transform:translate(-50%,-50%) rotate(4turn) scale(.8)}90%{transform:translate(-50%,-50%) rotate(1620deg) scale(.9)}to{transform:translate(-50%,-50%) rotate(5turn) scale(1)}}.styles__blookBackground___3rt4N-camelCase{width:100%;height:100%}.styles__openingPackContainer___1ZQzY-camelCase,.styles__openPackContainer___2m4Yf-camelCase{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:400px;height:667px;overflow:hidden;-webkit-user-select:none;-moz-user-select:none;user-select:none}.styles__openPackContainer___2m4Yf-camelCase{outline:none;cursor:pointer}.styles__openingPackContainer___1ZQzY-camelCase{animation:styles__dropPack___12OV_-camelCase .2s linear .4s forwards}@keyframes styles__dropPack___12OV_-camelCase{0%{transform:translate(-50%,-50%)}to{transform:translate(-50%,50vh)}}.styles__openPack___3QxCP-camelCase{width:400px;height:667px;background-size:4400px 667px;background-repeat:no-repeat}.styles__isOpeningPack___1qY5t-camelCase{animation:styles__open___1v-ch-camelCase .4s steps(10) forwards}@keyframes styles__open___1v-ch-camelCase{0%{background-position:0}to{background-position:-4000px}}.styles__unlockedBlookImage___wC4gr-camelCase{position:absolute;bottom:85px;left:105px;width:190px}.styles__unlockedText___1diat-camelCase{position:absolute;top:15px;left:5%;width:90%;font-family:Titan One,sans-serif;color:#fff;text-align:center}.styles__unlockedBlook___2pr1Z-camelCase{text-shadow:0 3px 3px rgba(0,0,0,.2);width:100%;height:50px;text-align:center}.styles__rarityText___1PfSA-camelCase{font-size:30px;-webkit-text-stroke:#3a3a3a 1.5px}.styles__bottomText___3_k10-camelCase{position:absolute;bottom:15px;left:5%;width:90%;font-family:Titan One,sans-serif;color:#fff;text-align:center;font-size:30px;text-shadow:0 0 4px rgba(0,0,0,.4)}.styles__bottomShadow___10ZLG-camelCase{width:100%;position:absolute;bottom:0;left:0;height:50px;box-shadow:inset 0 -9px rgba(0,0,0,.2);border-bottom-left-radius:10px;border-bottom-right-radius:10px}.styles__cornerIcon___24o3Z-camelCase{width:400px;position:absolute;bottom:-20px;right:-20px;-webkit-user-select:none;-moz-user-select:none;user-select:none;opacity:.2;transform:rotate(-35deg)}.styles__openBigButton___3KmDM-camelCase,.styles__phaserContainer___1Ffxs-camelCase{width:100%;height:100%;position:absolute;top:0;left:0}.styles__openBigButton___3KmDM-camelCase{outline:none;-webkit-user-select:none;-moz-user-select:none;user-select:none;z-index:100}.styles__canOpen___2znG2-camelCase{cursor:pointer}.styles__mInstantButton___3lgNk-camelCase{display:none;background-color:rgba(0,0,0,.1);color:#3a3a3a;border-radius:5px;font-size:12px;height:20px;padding:0 10px;margin:0 5%;flex-direction:row;align-items:center;justify-content:center;-webkit-user-select:none;-moz-user-select:none;user-select:none;outline:none;cursor:pointer}.styles__mInstantButton___3lgNk-camelCase:hover{background-color:rgba(0,0,0,.2)}@media only screen and (max-width:1010px){.styles__storeContainer___FgOVv-camelCase{display:none}.styles__mInstantButton___3lgNk-camelCase{display:flex}.styles__leftColumn___2MTgv-camelCase{margin:25px 5% 35px;width:90%}.styles__packsWrapper___2hBF4-camelCase,.styles__weeklyWrapper___1N5wN-camelCase{justify-content:center}.styles__weeklyWrapper___1N5wN-camelCase{margin:0 -12.5px;width:unset}}@media only screen and (max-width:850px){.styles__mTokenBalance___2dSI3-camelCase{display:flex}}@media only screen and (max-width:600px){.styles__openContainer___3paFG-camelCase{width:300px}.styles__openingPackContainer___1ZQzY-camelCase,.styles__openPack___3QxCP-camelCase,.styles__openPackContainer___2m4Yf-camelCase{width:300px;height:500px}.styles__openPack___3QxCP-camelCase{background-size:3300px 500px}@keyframes styles__open___1v-ch-camelCase{0%{background-position:0}to{background-position:-3000px}}.styles__unlockedBlookImage___wC4gr-camelCase{position:absolute;bottom:64px;left:78.5px;width:143px}.styles__unlockedText___1diat-camelCase{top:5px;left:2.5%;width:95%}.styles__unlockedBlook___2pr1Z-camelCase{width:100%;height:30px}.styles__bottomText___3_k10-camelCase,.styles__rarityText___1PfSA-camelCase{font-size:20px}.styles__bottomText___3_k10-camelCase{bottom:15px}.styles__cornerIcon___24o3Z-camelCase{width:270px}}", ""]), t.locals = {
                 header: "styles__header___153FZ-camelCase",
                 rateIcon: "styles__rateIcon___11Qwv-camelCase",
                 tooltip: "styles__tooltip___21a_3-camelCase",
@@ -1861,6 +1871,7 @@
                 storeContainer: "styles__storeContainer___FgOVv-camelCase",
                 storeImg: "styles__storeImg___2c3cG-camelCase",
                 cashierBlook: "styles__cashierBlook___iI1UH-camelCase",
+                spookyCashierBlook: "styles__spookyCashierBlook___3dZAC-camelCase",
                 instantButton: "styles__instantButton___2ezEk-camelCase",
                 openBackground: "styles__openBackground___-U4oX-camelCase",
                 openContainer: "styles__openContainer___3paFG-camelCase",
@@ -1927,13 +1938,13 @@
                 }
             }
 
-            function x(e, t) {
-                return (x = Object.setPrototypeOf ? Object.setPrototypeOf.bind() : function(e, t) {
+            function k(e, t) {
+                return (k = Object.setPrototypeOf ? Object.setPrototypeOf.bind() : function(e, t) {
                     return e.__proto__ = t, e
                 })(e, t)
             }
 
-            function k(e) {
+            function x(e) {
                 var t = function() {
                     if ("undefined" == typeof Reflect || !Reflect.construct) return !1;
                     if (Reflect.construct.sham) return !1;
@@ -1979,9 +1990,9 @@
                         }
                     }), Object.defineProperty(e, "prototype", {
                         writable: !1
-                    }), t && x(e, t)
+                    }), t && k(e, t)
                 }(i, e);
-                var t, a, n, r = k(i);
+                var t, a, n, r = x(i);
 
                 function i(e) {
                     var t;
@@ -2143,9 +2154,9 @@
                 b = a("E8Bj"),
                 v = a("fGzD"),
                 w = a("0oXL"),
-                x = a("pMTK"),
-                k = a("Xst1"),
-                C = a.n(k),
+                k = a("pMTK"),
+                x = a("Xst1"),
+                C = a.n(x),
                 O = a("Gnp4"),
                 E = a.n(O),
                 j = a("XTAU"),
@@ -2352,7 +2363,7 @@
                         height: 25
                     }
                 },
-                R = new D.a.Class({
+                A = new D.a.Class({
                     Extends: D.a.GameObjects.Image,
                     initialize: function() {
                         D.a.GameObjects.Image.call(this, z.scene, 0, 0, "uncommon-1"), this.setDepth(3), this.lifespan = 0
@@ -2365,8 +2376,8 @@
                     }
                 });
 
-            function A(e) {
-                return (A = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function(e) {
+            function R(e) {
+                return (R = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function(e) {
                     return typeof e
                 } : function(e) {
                     return e && "function" == typeof Symbol && e.constructor === Symbol && e !== Symbol.prototype ? "symbol" : typeof e
@@ -2458,7 +2469,7 @@
             }
 
             function X(e, t) {
-                if (t && ("object" === A(t) || "function" == typeof t)) return t;
+                if (t && ("object" === R(t) || "function" == typeof t)) return t;
                 if (void 0 !== t) throw new TypeError("Derived constructors may only return object or undefined");
                 return function(e) {
                     if (void 0 === e) throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
@@ -2634,7 +2645,7 @@
                         value: function() {
                             var e = this;
                             z.scene = this, z.rarity = "", z.particles = this.physics.add.group({
-                                classType: R,
+                                classType: A,
                                 runChildUpdate: !0
                             }), this.nextParticle = 0, this.numExplosions = 0, this.game.events.on("start-particles", (function(t) {
                                 z.rarity = t, e.numExplosions = "Uncommon" === t ? 75 : "Rare" === t ? 100 : -1
@@ -2691,17 +2702,18 @@
                 },
                 ee = a("LHn/"),
                 te = a("gISs"),
-                ae = a("Dzm6");
+                ae = a("Dzm6"),
+                ne = a("8qja");
 
-            function ne(e) {
-                return (ne = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function(e) {
+            function oe(e) {
+                return (oe = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function(e) {
                     return typeof e
                 } : function(e) {
                     return e && "function" == typeof Symbol && e.constructor === Symbol && e !== Symbol.prototype ? "symbol" : typeof e
                 })(e)
             }
 
-            function oe(e, t, a) {
+            function re(e, t, a) {
                 return t in e ? Object.defineProperty(e, t, {
                     value: a,
                     enumerable: !0,
@@ -2710,7 +2722,7 @@
                 }) : e[t] = a, e
             }
 
-            function re(e, t) {
+            function ie(e, t) {
                 return function(e) {
                     if (Array.isArray(e)) return e
                 }(e) || function(e, t) {
@@ -2733,25 +2745,25 @@
                     return r
                 }(e, t) || function(e, t) {
                     if (!e) return;
-                    if ("string" == typeof e) return ie(e, t);
+                    if ("string" == typeof e) return se(e, t);
                     var a = Object.prototype.toString.call(e).slice(8, -1);
                     "Object" === a && e.constructor && (a = e.constructor.name);
                     if ("Map" === a || "Set" === a) return Array.from(e);
-                    if ("Arguments" === a || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(a)) return ie(e, t)
+                    if ("Arguments" === a || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(a)) return se(e, t)
                 }(e, t) || function() {
                     throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.")
                 }()
             }
 
-            function ie(e, t) {
+            function se(e, t) {
                 (null == t || t > e.length) && (t = e.length);
                 for (var a = 0, n = new Array(t); a < t; a++) n[a] = e[a];
                 return n
             }
 
-            function se() {
+            function le() {
                 /*! regenerator-runtime -- Copyright (c) 2014-present, Facebook, Inc. -- license (MIT): https://github.com/facebook/regenerator/blob/main/LICENSE */
-                se = function() {
+                le = function() {
                     return e
                 };
                 var e = {},
@@ -2781,7 +2793,7 @@
                 function l(e, t, a, n) {
                     var o = t && t.prototype instanceof d ? t : d,
                         r = Object.create(o.prototype),
-                        i = new k(n || []);
+                        i = new x(n || []);
                     return r._invoke = function(e, t, a) {
                         var n = "suspendedStart";
                         return function(o, r) {
@@ -2867,7 +2879,7 @@
                                     if ("throw" !== l.type) {
                                         var u = l.arg,
                                             d = u.value;
-                                        return d && "object" == ne(d) && a.call(d, "__await") ? t.resolve(d.__await).then((function(e) {
+                                        return d && "object" == oe(d) && a.call(d, "__await") ? t.resolve(d.__await).then((function(e) {
                                             n("next", e, i, s)
                                         }), (function(e) {
                                             n("throw", e, i, s)
@@ -2907,12 +2919,12 @@
                     1 in e && (t.catchLoc = e[1]), 2 in e && (t.finallyLoc = e[2], t.afterLoc = e[3]), this.tryEntries.push(t)
                 }
 
-                function x(e) {
+                function k(e) {
                     var t = e.completion || {};
                     t.type = "normal", delete t.arg, e.completion = t
                 }
 
-                function k(e) {
+                function x(e) {
                     this.tryEntries = [{
                         tryLoc: "root"
                     }], e.forEach(w, this), this.reset(!0)
@@ -2976,10 +2988,10 @@
                             }
                             return a.done = !0, a
                         }
-                }, e.values = C, k.prototype = {
-                    constructor: k,
+                }, e.values = C, x.prototype = {
+                    constructor: x,
                     reset: function(e) {
-                        if (this.prev = 0, this.next = 0, this.sent = this._sent = void 0, this.done = !1, this.delegate = null, this.method = "next", this.arg = void 0, this.tryEntries.forEach(x), !e)
+                        if (this.prev = 0, this.next = 0, this.sent = this._sent = void 0, this.done = !1, this.delegate = null, this.method = "next", this.arg = void 0, this.tryEntries.forEach(k), !e)
                             for (var t in this) "t" === t.charAt(0) && a.call(this, t) && !isNaN(+t.slice(1)) && (this[t] = void 0)
                     },
                     stop: function() {
@@ -3033,7 +3045,7 @@
                     finish: function(e) {
                         for (var t = this.tryEntries.length - 1; t >= 0; --t) {
                             var a = this.tryEntries[t];
-                            if (a.finallyLoc === e) return this.complete(a.completion, a.afterLoc), x(a), u
+                            if (a.finallyLoc === e) return this.complete(a.completion, a.afterLoc), k(a), u
                         }
                     },
                     catch: function(e) {
@@ -3043,7 +3055,7 @@
                                 var n = a.completion;
                                 if ("throw" === n.type) {
                                     var o = n.arg;
-                                    x(a)
+                                    k(a)
                                 }
                                 return o
                             }
@@ -3060,7 +3072,7 @@
                 }, e
             }
 
-            function le(e, t, a, n, o, r, i) {
+            function ce(e, t, a, n, o, r, i) {
                 try {
                     var s = e[r](i),
                         l = s.value
@@ -3070,7 +3082,7 @@
                 s.done ? t(l) : Promise.resolve(l).then(n, o)
             }
 
-            function ce(e) {
+            function ue(e) {
                 return function() {
                     var t = this,
                         a = arguments;
@@ -3078,31 +3090,31 @@
                         var r = e.apply(t, a);
 
                         function i(e) {
-                            le(r, n, o, i, s, "next", e)
+                            ce(r, n, o, i, s, "next", e)
                         }
 
                         function s(e) {
-                            le(r, n, o, i, s, "throw", e)
+                            ce(r, n, o, i, s, "throw", e)
                         }
                         i(void 0)
                     }))
                 }
             }
 
-            function ue(e, t) {
+            function de(e, t) {
                 for (var a = 0; a < t.length; a++) {
                     var n = t[a];
                     n.enumerable = n.enumerable || !1, n.configurable = !0, "value" in n && (n.writable = !0), Object.defineProperty(e, n.key, n)
                 }
             }
 
-            function de(e, t) {
-                return (de = Object.setPrototypeOf ? Object.setPrototypeOf.bind() : function(e, t) {
+            function pe(e, t) {
+                return (pe = Object.setPrototypeOf ? Object.setPrototypeOf.bind() : function(e, t) {
                     return e.__proto__ = t, e
                 })(e, t)
             }
 
-            function pe(e) {
+            function me(e) {
                 var t = function() {
                     if ("undefined" == typeof Reflect || !Reflect.construct) return !1;
                     if (Reflect.construct.sham) return !1;
@@ -3114,49 +3126,54 @@
                     }
                 }();
                 return function() {
-                    var a, n = fe(e);
+                    var a, n = he(e);
                     if (t) {
-                        var o = fe(this).constructor;
+                        var o = he(this).constructor;
                         a = Reflect.construct(n, arguments, o)
                     } else a = n.apply(this, arguments);
-                    return me(this, a)
+                    return _e(this, a)
                 }
             }
 
-            function me(e, t) {
-                if (t && ("object" === ne(t) || "function" == typeof t)) return t;
+            function _e(e, t) {
+                if (t && ("object" === oe(t) || "function" == typeof t)) return t;
                 if (void 0 !== t) throw new TypeError("Derived constructors may only return object or undefined");
-                return _e(e)
+                return fe(e)
             }
 
-            function _e(e) {
+            function fe(e) {
                 if (void 0 === e) throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
                 return e
             }
 
-            function fe(e) {
-                return (fe = Object.setPrototypeOf ? Object.getPrototypeOf.bind() : function(e) {
+            function he(e) {
+                return (he = Object.setPrototypeOf ? Object.getPrototypeOf.bind() : function(e) {
                     return e.__proto__ || Object.getPrototypeOf(e)
                 })(e)
             }
-            var he = window.ShopData = [{
-                    id: "theater",
+            var ye = window.ShopData = [{
+                    id: "workbench",
                     type: "banner",
-                    data: te.a.theater
+                    data: te.a.workbench
                 }, {
-                    id: "sushi",
+                    id: "slime",
                     type: "banner",
-                    data: te.a.sushi
+                    data: te.a.slime
                 }, {
-                    id: "thoughtful",
+                    id: "creative",
                     type: "title",
-                    data: ae.a.thoughtful
+                    data: ae.a.creative
                 }, {
-                    id: "starStudent",
+                    id: "pumpkinSpice",
                     type: "title",
-                    data: ae.a.starStudent
+                    data: ae.a.pumpkinSpice
                 }],
-                ye = {
+                ge = {
+                    Spooky: {
+                        url: "https://media.blooket.com/image/upload/v1666216071/Media/market/Spooky_pack.png",
+                        animUrl: "https://media.blooket.com/image/upload/v1666216073/Media/market/animation_spooky_pack.png",
+                        background: "radial-gradient(circle, rgba(82,82,82,1) 0%, rgba(26,26,26,1) 100%)"
+                    },
                     "Ice Monster": {
                         url: "https://media.blooket.com/image/upload/v1663063471/Media/market/ice_monsters_pack.png",
                         animUrl: "https://media.blooket.com/image/upload/v1663063472/Media/market/animation_ice_monsters_pack.png",
@@ -3203,7 +3220,7 @@
                         background: "radial-gradient(circle, rgba(0,170,255,1) 0%, rgba(97,32,87,1) 100%)"
                     }
                 },
-                ge = function(e) {
+                be = function(e) {
                     ! function(e, t) {
                         if ("function" != typeof t && null !== t) throw new TypeError("Super expression must either be null or a function");
                         e.prototype = Object.create(t && t.prototype, {
@@ -3214,9 +3231,9 @@
                             }
                         }), Object.defineProperty(e, "prototype", {
                             writable: !1
-                        }), t && de(e, t)
+                        }), t && pe(e, t)
                     }(s, e);
-                    var t, a, n, r, i = pe(s);
+                    var t, a, n, r, i = me(s);
 
                     function s(e) {
                         var t;
@@ -3238,13 +3255,13 @@
                             loadingItem: !1,
                             banners: [],
                             titles: []
-                        }, t.here = !0, t.handleBigClick = t.handleBigClick.bind(_e(t)), t.viewPack = t.viewPack.bind(_e(t)), t.buyPack = t.buyPack.bind(_e(t)), t.startOpening = t.startOpening.bind(_e(t)), t.buyItem = t.buyItem.bind(_e(t)), t
+                        }, t.here = !0, t.handleBigClick = t.handleBigClick.bind(fe(t)), t.viewPack = t.viewPack.bind(fe(t)), t.buyPack = t.buyPack.bind(fe(t)), t.startOpening = t.startOpening.bind(fe(t)), t.buyItem = t.buyItem.bind(fe(t)), t
                     }
                     return t = s, (a = [{
                         key: "componentDidMount",
-                        value: (r = ce(se().mark((function e() {
+                        value: (r = ue(le().mark((function e() {
                             var t, a = this;
-                            return se().wrap((function(e) {
+                            return le().wrap((function(e) {
                                 for (;;) switch (e.prev = e.next) {
                                     case 0:
                                         return e.next = 2, this.props.user.getData();
@@ -3318,7 +3335,7 @@
                                     unlockedBlook: e.data.unlockedBlook,
                                     tokens: e.data.tokens,
                                     newUnlock: e.data.isNewBlook,
-                                    game: $(Object(x.a)(e.data.unlockedBlook)),
+                                    game: $(Object(k.a)(e.data.unlockedBlook)),
                                     canOpen: !1
                                 }, (function() {
                                     a.canOpenTimeout = setTimeout((function() {
@@ -3339,11 +3356,11 @@
                         value: function() {
                             var e = this;
                             if (!this.state.opening) {
-                                var t = Object(x.a)(this.state.unlockedBlook);
+                                var t = Object(k.a)(this.state.unlockedBlook);
                                 this.setState({
                                     opening: !0
-                                }, ce(se().mark((function a() {
-                                    return se().wrap((function(a) {
+                                }, ue(le().mark((function a() {
+                                    return le().wrap((function(a) {
                                         for (;;) switch (a.prev = a.next) {
                                             case 0:
                                                 if (e.state.game.instance) {
@@ -3362,7 +3379,7 @@
                                                         doneOpening: !0
                                                     })
                                                 }), ["Uncommon", "Rare"].includes(t) ? 750 : "Chroma" === t ? 2e3 : 1250), e.particleTimeout = setTimeout((function() {
-                                                    e.state.game.instance.events.emit("start-particles", Object(x.a)(e.state.unlockedBlook))
+                                                    e.state.game.instance.events.emit("start-particles", Object(k.a)(e.state.unlockedBlook))
                                                 }), 100);
                                             case 7:
                                             case "end":
@@ -3441,7 +3458,17 @@
                                 }
                             }, "Instant Open: ".concat(this.state.instantOpen ? "On" : "Off"))), o.a.createElement("div", {
                                 className: E.a.storeContainer
-                            }, o.a.createElement("img", {
+                            }, ne.a ? o.a.createElement(o.a.Fragment, null, o.a.createElement("img", {
+                                src: "https://media.blooket.com/image/upload/v1666250408/Media/spooky/blook_cashier_halloween_1.svg",
+                                alt: "Mark the Cashier",
+                                className: E.a.spookyCashierBlook,
+                                draggable: !1
+                            }), o.a.createElement("img", {
+                                src: "https://media.blooket.com/image/upload/v1666220384/Media/spooky/Mini_halloween_market_250x375.png",
+                                alt: "Store",
+                                className: E.a.storeImg,
+                                draggable: !1
+                            })) : o.a.createElement(o.a.Fragment, null, o.a.createElement("img", {
                                 src: "https://media.blooket.com/image/upload/v1657064190/Media/market/blook_cashier.svg",
                                 alt: "Mark the Cashier",
                                 className: E.a.cashierBlook,
@@ -3451,7 +3478,7 @@
                                 alt: "Store",
                                 className: E.a.storeImg,
                                 draggable: !1
-                            }), o.a.createElement("div", {
+                            })), o.a.createElement("div", {
                                 className: E.a.instantButton,
                                 role: "button",
                                 tabIndex: 0,
@@ -3464,8 +3491,8 @@
                                 className: E.a.leftColumn
                             }, o.a.createElement("div", {
                                 className: E.a.packsWrapper
-                            }, Object.entries(ye).map((function(e) {
-                                var t = re(e, 2),
+                            }, Object.entries(ge).map((function(e) {
+                                var t = ie(e, 2),
                                     a = t[0],
                                     n = t[1];
                                 return o.a.createElement("div", {
@@ -3505,7 +3532,7 @@
                                 className: E.a.subheader
                             }, "Weekly Shop"), o.a.createElement("div", {
                                 className: E.a.weeklyWrapper
-                            }, he.map((function(e) {
+                            }, ye.map((function(e) {
                                 return o.a.createElement("div", {
                                     key: e.id,
                                     className: E.a.weeklyContainer,
@@ -3605,7 +3632,7 @@
                             }) : null, this.state.openPack ? o.a.createElement("div", {
                                 className: E.a.openBackground,
                                 style: {
-                                    background: ye[I.a[this.state.unlockedBlook].set].background
+                                    background: ge[I.a[this.state.unlockedBlook].set].background
                                 }
                             }, o.a.createElement("img", {
                                 src: T.c[I.a[this.state.unlockedBlook].set],
@@ -3618,7 +3645,7 @@
                                 className: E.a.phaserContainer,
                                 id: "phaser-market"
                             }), o.a.createElement("div", {
-                                className: f()(E.a.openContainer, (e = {}, oe(e, E.a.openingContainer, this.state.opening), oe(e, E.a.openingContainerEpic, this.state.opening && "Epic" === Object(x.a)(this.state.unlockedBlook)), oe(e, E.a.openingContainerLegendary, this.state.opening && "Legendary" === Object(x.a)(this.state.unlockedBlook)), oe(e, E.a.openingContainerChroma, this.state.opening && "Chroma" === Object(x.a)(this.state.unlockedBlook)), e))
+                                className: f()(E.a.openContainer, (e = {}, re(e, E.a.openingContainer, this.state.opening), re(e, E.a.openingContainerEpic, this.state.opening && "Epic" === Object(k.a)(this.state.unlockedBlook)), re(e, E.a.openingContainerLegendary, this.state.opening && "Legendary" === Object(k.a)(this.state.unlockedBlook)), re(e, E.a.openingContainerChroma, this.state.opening && "Chroma" === Object(k.a)(this.state.unlockedBlook)), e))
                             }, o.a.createElement("img", {
                                 src: Object(S.d)(T.b[I.a[this.state.unlockedBlook].set]),
                                 alt: "Background",
@@ -3638,9 +3665,9 @@
                             }, this.state.unlockedBlook), o.a.createElement("div", {
                                 className: E.a.rarityText,
                                 style: {
-                                    color: S.o[Object(x.a)(this.state.unlockedBlook)]
+                                    color: S.o[Object(k.a)(this.state.unlockedBlook)]
                                 }
-                            }, Object(x.a)(this.state.unlockedBlook))), o.a.createElement("div", {
+                            }, Object(k.a)(this.state.unlockedBlook))), o.a.createElement("div", {
                                 className: E.a.bottomText
                             }, "".concat((t = this.state.unlockedBlook, a = Object(v.b)(I.a[t].set), n = 0, a.forEach((function(e) {
                                 e[0] === t && (n = e[1])
@@ -3652,29 +3679,29 @@
                                 tabIndex: 0,
                                 onClick: this.startOpening
                             }, o.a.createElement("div", {
-                                className: f()(E.a.openPack, oe({}, E.a.isOpeningPack, this.state.opening)),
+                                className: f()(E.a.openPack, re({}, E.a.isOpeningPack, this.state.opening)),
                                 style: {
-                                    backgroundImage: "url(".concat(Object(S.d)(ye[I.a[this.state.unlockedBlook].set].animUrl), ")")
+                                    backgroundImage: "url(".concat(Object(S.d)(ge[I.a[this.state.unlockedBlook].set].animUrl), ")")
                                 }
                             })), o.a.createElement("div", {
-                                className: f()(E.a.openBigButton, oe({}, E.a.canOpen, !this.state.opening && this.state.canOpen || this.state.opening && this.state.doneOpening)),
+                                className: f()(E.a.openBigButton, re({}, E.a.canOpen, !this.state.opening && this.state.canOpen || this.state.opening && this.state.doneOpening)),
                                 role: "button",
                                 tabIndex: 0,
                                 onClick: this.handleBigClick
                             })) : null)
                         }
-                    }]) && ue(t.prototype, a), n && ue(t, n), Object.defineProperty(t, "prototype", {
+                    }]) && de(t.prototype, a), n && de(t, n), Object.defineProperty(t, "prototype", {
                         writable: !1
                     }), s
                 }(o.a.Component);
-            ge.propTypes = {
+            be.propTypes = {
                 user: l.a.object
             };
             t.a = Object(b.c)(Object(c.g)(Object(i.b)((function() {
                 return {}
             }), (function(e) {
                 return Object(r.b)({}, e)
-            }))(ge)))
+            }))(be)))
         },
         VWYR: function(e, t, a) {
             "use strict";
@@ -3792,7 +3819,7 @@
                             for (a.method = o, a.arg = r;;) {
                                 var i = a.delegate;
                                 if (i) {
-                                    var s = x(i, a);
+                                    var s = k(i, a);
                                     if (s) {
                                         if (s === d) continue;
                                         return s
@@ -3884,11 +3911,11 @@
                     }
                 }
 
-                function x(e, t) {
+                function k(e, t) {
                     var a = e.iterator[t.method];
                     if (void 0 === a) {
                         if (t.delegate = null, "throw" === t.method) {
-                            if (e.iterator.return && (t.method = "return", t.arg = void 0, x(e, t), "throw" === t.method)) return d;
+                            if (e.iterator.return && (t.method = "return", t.arg = void 0, k(e, t), "throw" === t.method)) return d;
                             t.method = "throw", t.arg = new TypeError("The iterator does not provide a 'throw' method")
                         }
                         return d
@@ -3899,7 +3926,7 @@
                     return o ? o.done ? (t[e.resultName] = o.value, t.next = e.nextLoc, "return" !== t.method && (t.method = "next", t.arg = void 0), t.delegate = null, d) : o : (t.method = "throw", t.arg = new TypeError("iterator result is not an object"), t.delegate = null, d)
                 }
 
-                function k(e) {
+                function x(e) {
                     var t = {
                         tryLoc: e[0]
                     };
@@ -3914,7 +3941,7 @@
                 function O(e) {
                     this.tryEntries = [{
                         tryLoc: "root"
-                    }], e.forEach(k, this), this.reset(!0)
+                    }], e.forEach(x, this), this.reset(!0)
                 }
 
                 function E(e) {
@@ -4191,6 +4218,12 @@
                     url: "https://media.blooket.com/image/upload/v1665549438/Banners/sushi.svg",
                     price: 500,
                     rarity: "Rare"
+                },
+                workbench: {
+                    name: "Workbench",
+                    url: "https://media.blooket.com/image/upload/v1666065519/Banners/workbench.svg",
+                    price: 100,
+                    rarity: "Uncommon"
                 }
             }
         },

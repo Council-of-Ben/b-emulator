@@ -1,5 +1,5 @@
 (window.webpackJsonp = window.webpackJsonp || []).push([
-    [19], {
+    [20], {
         "/+s7": function(e, t, r) {
             (t = e.exports = r("JPst")(!1)).push([e.i, ".tourSteps__centered___3uhxe-camelCase{top:50%;left:50%;transform:translate(-50%,-50%)}.tourSteps__card1___3KwCn-camelCase{left:calc(50% - 15vw)}.tourSteps__card1___3KwCn-camelCase,.tourSteps__card2___11s6f-camelCase{top:60%;transform:translateY(-50%)}.tourSteps__card2___11s6f-camelCase{left:calc(50% + 15vw)}@media only screen and (max-width:800px){.tourSteps__card1___3KwCn-camelCase,.tourSteps__card2___11s6f-camelCase{left:50%;top:calc(50% + 23vw);transform:translateX(-50%)}}", ""]), t.locals = {
                 centered: "tourSteps__centered___3uhxe-camelCase",
