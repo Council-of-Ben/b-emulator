@@ -1,5 +1,5 @@
 (window.webpackJsonp = window.webpackJsonp || []).push([
-    [3], {
+    [4], {
         "+C1j": function(e, t, a) {
             (t = e.exports = a("JPst")(!1)).push([e.i, ".styles__header___22Ne2-camelCase{background-color:#9a49aa;width:100%;height:55px;padding-bottom:6px;box-shadow:inset 0 -6px rgba(0,0,0,.2);box-sizing:border-box;display:flex;flex-direction:row;justify-content:space-between;z-index:10;overflow:hidden;position:absolute;top:0;left:0}.styles__blooketText___1pMBG-camelCase{font-size:40px;text-align:left;margin-left:40px;font-family:Titan One,sans-serif;-webkit-user-select:none;-moz-user-select:none;user-select:none;text-decoration:none}.styles__blooketText___1pMBG-camelCase,.styles__headerRight___nPb83-camelCase{color:#fff;line-height:49px;outline:none;cursor:pointer}.styles__headerRight___nPb83-camelCase{font-size:24px;font-weight:700;font-family:Nunito,sans-serif;text-align:right;text-decoration:underline;padding-right:40px}.styles__expandIcon___ipwig-camelCase{font-size:22px;line-height:49px;margin-right:15px;cursor:pointer;outline:none}.styles__headerLeft___JPD7G-camelCase{font-size:28px;color:#fff;text-align:left;line-height:49px;padding-left:20px;font-family:Nunito,sans-serif;-webkit-user-select:none;-moz-user-select:none;user-select:none}", ""]), t.locals = {
                 header: "styles__header___22Ne2-camelCase",
@@ -99,7 +99,7 @@
                 k = a("vCpj"),
                 T = a("LHn/"),
                 E = a("HRwi"),
-                O = a("qnYv"),
+                O = a("t3SV"),
                 N = a("74sb");
 
             function S(e) {
@@ -501,14 +501,14 @@
                 })(e)
             }
             Object(p.addStyles)(), u.d.register(u.a);
-            var L = function() {
+            var q = function() {
                     for (var e = [1, 2, 3], t = []; e.length > 0;) {
                         var a = Math.floor(Math.random() * e.length);
                         t.push(e[a]), e.splice(a, 1)
                     }
                     return t
                 },
-                q = function(e) {
+                L = function(e) {
                     ! function(e, t) {
                         if ("function" != typeof t && null !== t) throw new TypeError("Super expression must either be null or a function");
                         e.prototype = Object.create(t && t.prototype, {
@@ -554,7 +554,7 @@
                         value: function() {
                             var e = this;
                             this.username = this.props.username, this.final = !1, this.prizePicked = !1, this.setState({
-                                tokenChoices: L()
+                                tokenChoices: q()
                             });
                             var t, a, n = this.props.standings,
                                 s = n.map((function(e) {
@@ -589,7 +589,7 @@
                                 return j().wrap((function(e) {
                                     for (;;) switch (e.prev = e.next) {
                                         case 0:
-                                            O.a.get("/api/users/verify-session").then((function(e) {
+                                            O.a.get("/api/users/me").then((function(e) {
                                                 t.addNewUserStats(e.data.name)
                                             })).catch((function() {
                                                 t.addNewUserStats()
@@ -1098,7 +1098,7 @@
                         writable: !1
                     }), u
                 }(s.a.Component);
-            q.propTypes = {
+            L.propTypes = {
                 standings: r.a.array,
                 name: r.a.string,
                 numCorrect: r.a.number,
@@ -1118,7 +1118,7 @@
                 questions: r.a.array,
                 blockAccounts: r.a.bool
             };
-            t.a = q
+            t.a = L
         },
         "2se6": function(e, t, a) {
             (t = e.exports = a("JPst")(!1)).push([e.i, ".styles__questionContainer___3u_c9-camelCase{width:90%;height:40%;background-color:#fff;position:absolute;top:2.5%;left:5%;display:flex;flex-direction:row;align-items:center;z-index:12}.styles__questionText___2MlSZ-camelCase{color:#3a3a3a;width:80%;height:80%;font-family:Nunito,sans-serif;text-align:center;overflow:hidden;float:left;word-wrap:break-word;flex-grow:1;white-space:pre-line}.styles__imageContainer___1GSWa-camelCase,.styles__questionText___2MlSZ-camelCase{display:flex;justify-content:center;align-items:center}.styles__imageContainer___1GSWa-camelCase{width:30%;height:85%;margin-right:5%;background-color:#fff;outline:none;-webkit-user-select:none;-moz-user-select:none;user-select:none;cursor:pointer}.styles__image___7idfJ-camelCase{margin:auto;width:100%;height:100%;-o-object-fit:contain;object-fit:contain}.styles__funcContainer___PXGh_-camelCase{cursor:default}.styles__qMathField___hJzag-camelCase{-webkit-user-select:none;-moz-user-select:none;user-select:none;cursor:pointer!important;color:#3a3a3a;border-color:#3a3a3a;font-size:28px!important}.styles__answersHolder___3LYNs-camelCase{display:flex;flex-flow:row wrap;justify-content:space-evenly;align-items:space-evenly;position:absolute;top:45%;left:0;height:calc(55% - 5px);width:calc(100% - 10px);padding:0 5px 5px}.styles__answerWrapper___51Q0g-camelCase{margin:auto;width:calc(50% - 6px);height:calc(50% - 6px);overflow:hidden}.styles__answerTwo___Fba6u-camelCase{height:calc(100% - 6px)}.styles__answerThree___2CGv7-camelCase{width:calc(100% - 6px)}.styles__answerContainer___3WS-k-camelCase{margin:auto;width:100%;height:calc(100% - .9vh);border-radius:5px;overflow:hidden;cursor:pointer;outline:none;-webkit-user-select:none;-moz-user-select:none;user-select:none;display:flex;justify-content:center;align-items:center;padding-bottom:.9vh;box-shadow:inset 0 -.9vh 0 0 rgba(0,0,0,.2);transition:all .2s cubic-bezier(.39,.5,.15,1.36)}.styles__answerContainer___3WS-k-camelCase:focus,.styles__answerContainer___3WS-k-camelCase:hover{filter:brightness(.96);box-shadow:none;padding-bottom:0;height:100%}.styles__answerContainer___3WS-k-camelCase:focus>.styles__answerText___2eIBw-camelCase,.styles__answerContainer___3WS-k-camelCase:hover>.styles__answerText___2eIBw-camelCase{height:calc(80% - .72vh)}.styles__answerTextTowerContainer___1iiGR-camelCase{box-shadow:inset 0 0 0 .9vh rgba(0,0,0,.13);height:calc(100% + .1vh)}.styles__answerTextContainer___3YgCT-camelCase,.styles__answerTextTowerContainer___1iiGR-camelCase{width:100%;border-radius:inherit;display:flex;justify-content:center;align-items:center;margin:0;padding:0}.styles__answerTextContainer___3YgCT-camelCase{height:100%}.styles__answerText___2eIBw-camelCase{color:#fff;height:80%;width:80%;font-family:Nunito,sans-serif;text-align:center;overflow:hidden;float:left;word-wrap:break-word;transition:height .2s cubic-bezier(.39,.5,.15,1.36)}.styles__answerImgContainer___3DGFJ-camelCase,.styles__answerText___2eIBw-camelCase{display:flex;justify-content:center;align-items:center}.styles__answerImgContainer___3DGFJ-camelCase{height:90%;width:90%}.styles__answerImg___3pt4H-camelCase{margin:auto;width:100%;height:100%;-o-object-fit:contain;object-fit:contain}.styles__answerImg___3pt4H-camelCase,.styles__mathField___1t-S_-camelCase{-webkit-user-select:none;-moz-user-select:none;user-select:none}.styles__mathField___1t-S_-camelCase{cursor:pointer!important;color:#fff;border-color:#fff;font-size:26px!important}.styles__overlay___1eUqZ-camelCase{top:0;left:0;width:100%;height:100%;background:repeating-linear-gradient(180deg,transparent,rgba(0,0,0,.175) 50%,transparent);background-size:auto 4px;z-index:1}.styles__overlay___1eUqZ-camelCase,.styles__zoomMathField___3pUn9-camelCase{pointer-events:none;position:absolute}.styles__zoomMathField___3pUn9-camelCase{-webkit-user-select:none;-moz-user-select:none;user-select:none;cursor:default!important;color:#3a3a3a;border-color:#3a3a3a;font-size:36px!important;top:50%;left:50%;transform:translate(-50%,-50%);width:90%;max-width:700px;min-width:300px;height:250px;background-color:#fff;border-radius:5px;display:flex;justify-content:center;align-items:center;text-align:center}@media only screen and (max-width:800px){.styles__questionText___2MlSZ-camelCase{width:85%;height:90%}.styles__imageContainer___1GSWa-camelCase{height:90%;width:40%}.styles__qMathField___hJzag-camelCase{font-size:14px!important}.styles__zoomMathField___3pUn9-camelCase{font-size:26px!important}.styles__answerText___2eIBw-camelCase{height:85%;width:90%}.styles__answerContainer___3WS-k-camelCase:focus>.styles__answerText___2eIBw-camelCase,.styles__answerContainer___3WS-k-camelCase:hover>.styles__answerText___2eIBw-camelCase{height:85%}.styles__answersHolder___3LYNs-camelCase{flex-direction:column}.styles__answerWrapper___51Q0g-camelCase{margin:3px auto;width:calc(100% - 6px);height:calc(25% - 6px);flex-grow:1}.styles__answerContainer___3WS-k-camelCase:focus,.styles__answerContainer___3WS-k-camelCase:hover{filter:brightness(1);box-shadow:inset 0 -.9vh 0 0 rgba(0,0,0,.2);padding-bottom:.9vh;height:calc(100% - .9vh)}.styles__answerTwo___Fba6u-camelCase{height:calc(25% - 6px)}}", ""]), t.locals = {
@@ -1424,7 +1424,7 @@
                             className: f.a.questionText,
                             mode: "multi",
                             min: 1,
-                            max: Object(g.v)("3vw")
+                            max: Object(g.t)("3vw")
                         }, this.props.text.includes("`*`") ? this.props.text.slice(0, this.props.text.indexOf("`*`")) : this.props.text)), s.a.createElement("div", {
                             className: c()(f.a.mediaButton, k({}, f.a.spooky, t)),
                             role: "button",
@@ -1444,7 +1444,7 @@
                             className: f.a.questionText,
                             mode: "multi",
                             min: 1,
-                            max: Object(g.v)("3vw")
+                            max: Object(g.t)("3vw")
                         }, this.props.text.includes("`*`") ? this.props.text.slice(0, this.props.text.indexOf("`*`")) : this.props.text)), s.a.createElement("div", {
                             className: c()(f.a.centerContainer, k({}, f.a.spooky, t))
                         }, s.a.createElement("div", {
@@ -1577,7 +1577,7 @@
                                 className: c()(f.a.answerText, k({}, f.a.selectedText, e.state.ready && e.props.correctAnswers.includes(a))),
                                 mode: "multi",
                                 min: 1,
-                                max: Object(g.v)("2.5vw"),
+                                max: Object(g.t)("2.5vw"),
                                 style: {
                                     color: y.b[t ? "spooky" : "default"].answers[n].text
                                 }
@@ -1791,10 +1791,10 @@
                     ! function(e, t) {
                         if (!(e instanceof t)) throw new TypeError("Cannot call a class as a function")
                     }(this, r), t = o.call(this, e);
-                    var a = Object(_.o)(50, 150);
+                    var a = Object(_.m)(50, 150);
                     return t.state = {
                         goalTemp: a,
-                        temp: a + Object(_.o)(10, 25) * (0 === Object(_.o)(0, 2) ? 1 : -1)
+                        temp: a + Object(_.m)(10, 25) * (0 === Object(_.m)(0, 2) ? 1 : -1)
                     }, t.done = !1, t.changeTemp = t.changeTemp.bind(y(t)), t
                 }
                 return t = r, (a = [{
@@ -1832,7 +1832,7 @@
                             className: l.a.overlay
                         }), s.a.createElement("div", {
                             className: l.a.header
-                        }, "HACKED: ".concat(this.props.name, " (-").concat(Object(_.s)(this.props.amount), ")")), s.a.createElement("div", {
+                        }, "HACKED: ".concat(this.props.name, " (-").concat(Object(_.q)(this.props.amount), ")")), s.a.createElement("div", {
                             className: l.a.desc
                         }, "Set the temperature to ".concat(this.state.goalTemp, "°")), s.a.createElement("div", {
                             className: l.a.buttonContainer
@@ -2013,7 +2013,7 @@
                     }(this, r), (t = o.call(this, e)).state = {
                         cards: (a = Object(d.h)(Object.keys(p.a), 4), n = [], a.forEach((function(e) {
                             n.push(e), n.push(e)
-                        })), Object(d.t)(n)),
+                        })), Object(d.r)(n)),
                         flippedCards: [],
                         cardChosen: -1,
                         cardChosen2: -1
@@ -2072,7 +2072,7 @@
                             className: u.a.overlay
                         }), s.a.createElement("div", {
                             className: u.a.header
-                        }, "HACKED: ".concat(this.props.name, " (-").concat(Object(d.s)(this.props.amount), ")")), s.a.createElement("div", {
+                        }, "HACKED: ".concat(this.props.name, " (-").concat(Object(d.q)(this.props.amount), ")")), s.a.createElement("div", {
                             className: u.a.desc
                         }, "Find the matching cards"), s.a.createElement("div", {
                             className: u.a.buttonContainer
@@ -2735,7 +2735,7 @@
                         var e = this;
                         this.startTimeout = setTimeout((function() {
                             e.revealInterval = setInterval((function() {
-                                var t = Object(p.o)(0, e.state.buttons.length),
+                                var t = Object(p.m)(0, e.state.buttons.length),
                                     a = d(e.state.buttons);
                                 a[t] = !0, e.setState({
                                     buttons: a
@@ -2777,7 +2777,7 @@
                             className: u.a.overlay
                         }), s.a.createElement("div", {
                             className: u.a.header
-                        }, "HACKED: ".concat(this.props.name, " (-").concat(Object(p.s)(this.props.amount), ")")), s.a.createElement("div", {
+                        }, "HACKED: ".concat(this.props.name, " (-").concat(Object(p.q)(this.props.amount), ")")), s.a.createElement("div", {
                             className: u.a.desc
                         }, "Click ".concat(this.state.buttonsLeft, " ").concat(1 === this.state.buttonsLeft ? "Button" : "Buttons")), s.a.createElement("div", {
                             className: u.a.buttonContainer
@@ -2972,7 +2972,7 @@
                             tabIndex: 0,
                             onClick: function() {
                                 return n.setState({
-                                    full: Object(f.u)()
+                                    full: Object(f.s)()
                                 })
                             }
                         }), this.props.readQuestion ? s.a.createElement("i", {
@@ -2993,7 +2993,7 @@
                             className: p.a.energyContainer
                         }, s.a.createElement("div", {
                             className: p.a.playerEnergy
-                        }, Object(f.l)(this.props.candy)), s.a.createElement("img", {
+                        }, Object(f.j)(this.props.candy)), s.a.createElement("img", {
                             src: _.a.basic.candy,
                             alt: "Candy",
                             className: p.a.candy,
@@ -3002,7 +3002,7 @@
                             className: p.a.energyContainer
                         }, s.a.createElement("div", {
                             className: p.a.playerEnergy
-                        }, Object(f.l)(this.props.shamrocks)), s.a.createElement("img", {
+                        }, Object(f.j)(this.props.shamrocks)), s.a.createElement("img", {
                             src: _.a.shamrock.shamrockWhite,
                             alt: "Shamrock",
                             className: p.a.candy,
@@ -3011,7 +3011,7 @@
                             className: p.a.energyContainer
                         }, s.a.createElement("div", {
                             className: p.a.playerEnergy
-                        }, Object(f.l)(this.props.gold)), s.a.createElement("img", {
+                        }, Object(f.j)(this.props.gold)), s.a.createElement("img", {
                             src: d.a ? _.a.basic.candy : _.a.basic.gold,
                             alt: "Gold",
                             className: p.a.candy,
@@ -3020,7 +3020,7 @@
                             className: p.a.energyContainer
                         }, s.a.createElement("div", {
                             className: p.a.playerEnergy
-                        }, Object(f.l)(this.props.toys)), s.a.createElement("img", {
+                        }, Object(f.j)(this.props.toys)), s.a.createElement("img", {
                             src: _.a.basic.toy,
                             alt: "Toy",
                             className: p.a.candy,
@@ -3039,7 +3039,7 @@
                             id: "coinsText"
                         }, s.a.createElement("div", {
                             className: p.a.playerEnergy
-                        }, Object(f.l)(this.props.coins)), s.a.createElement("i", {
+                        }, Object(f.j)(this.props.coins)), s.a.createElement("i", {
                             className: c()(p.a.energyIcon, "fas fa-coins")
                         })) : this.props.cash || 0 === this.props.cash ? s.a.createElement("div", {
                             className: p.a.energyContainer
@@ -3048,7 +3048,7 @@
                             style: {
                                 marginRight: 10
                             }
-                        }, "$".concat(Object(f.l)(this.props.cash)))) : this.props.customers || 0 === this.props.customers ? s.a.createElement("div", {
+                        }, "$".concat(Object(f.j)(this.props.cash)))) : this.props.customers || 0 === this.props.customers ? s.a.createElement("div", {
                             className: p.a.energyContainer,
                             style: {
                                 paddingLeft: 20
@@ -3056,19 +3056,19 @@
                             id: "customersText"
                         }, s.a.createElement("div", {
                             className: p.a.playerEnergy
-                        }, Object(f.l)(this.props.customers)), s.a.createElement("i", {
+                        }, Object(f.j)(this.props.customers)), s.a.createElement("i", {
                             className: c()(p.a.energyIcon, "fas fa-users")
                         })) : this.props.fossils || 0 === this.props.fossils ? s.a.createElement("div", {
                             className: p.a.energyContainer
                         }, s.a.createElement("div", {
                             className: p.a.playerEnergy
-                        }, Object(f.l)(this.props.fossils)), s.a.createElement("i", {
+                        }, Object(f.j)(this.props.fossils)), s.a.createElement("i", {
                             className: c()(p.a.fossilIcon, "fas fa-bone")
                         })) : this.props.xp || 0 === this.props.xp ? s.a.createElement("div", {
                             className: p.a.energyContainer
                         }, s.a.createElement("div", {
                             className: p.a.playerEnergy
-                        }, Object(f.l)(this.props.xp)), s.a.createElement("img", {
+                        }, Object(f.j)(this.props.xp)), s.a.createElement("img", {
                             src: _.a.basic.xp,
                             alt: "XP",
                             className: p.a.candy,
@@ -3077,7 +3077,7 @@
                             className: p.a.energyContainer
                         }, s.a.createElement("div", {
                             className: p.a.playerEnergy
-                        }, Object(f.l)(this.props.numBlooks)), s.a.createElement(u.a, {
+                        }, Object(f.j)(this.props.numBlooks)), s.a.createElement(u.a, {
                             name: this.props.blook,
                             className: p.a.blook
                         }), s.a.createElement("div", {
@@ -3249,7 +3249,7 @@
                                     }), 1e3)
                                 })) : e.progressTimeout = setTimeout((function() {
                                     a()
-                                }), Object(_.o)(50, 350))
+                                }), Object(_.m)(50, 350))
                             }()
                         }
                     }
@@ -3264,7 +3264,7 @@
                             className: l.a.overlay
                         }), s.a.createElement("div", {
                             className: l.a.header
-                        }, "HACKED: ".concat(this.props.name, " (-").concat(Object(_.s)(this.props.amount), ")")), s.a.createElement("div", {
+                        }, "HACKED: ".concat(this.props.name, " (-").concat(Object(_.q)(this.props.amount), ")")), s.a.createElement("div", {
                             className: l.a.desc
                         }, "Complete the upload"), s.a.createElement("div", {
                             className: l.a.progressHolder
@@ -3652,7 +3652,7 @@
                                 className: u.a.overlay
                             }), s.a.createElement("div", {
                                 className: u.a.header
-                            }, "HACKED: ".concat(this.props.name, " (-").concat(Object(p.s)(this.props.amount), ")")), s.a.createElement("div", {
+                            }, "HACKED: ".concat(this.props.name, " (-").concat(Object(p.q)(this.props.amount), ")")), s.a.createElement("div", {
                                 className: u.a.desc
                             }, "Repeat the pattern"), s.a.createElement("div", {
                                 className: u.a.buttonContainer
@@ -3792,7 +3792,7 @@
                 E = function(e) {
                     for (var t = []; 0 === t.length || T(t);) {
                         t = [];
-                        for (var a = 0; a < 8; a++) t.push(Object(p.m)(e))
+                        for (var a = 0; a < 8; a++) t.push(Object(p.k)(e))
                     }
                     return t
                 },
@@ -3815,7 +3815,7 @@
                         var t;
                         return function(e, t) {
                             if (!(e instanceof t)) throw new TypeError("Cannot call a class as a function")
-                        }(this, r), (t = o.call(this, e)).stdColors = Object(p.t)(w), t.state = {
+                        }(this, r), (t = o.call(this, e)).stdColors = Object(p.r)(w), t.state = {
                             colors: E(t.stdColors)
                         }, t.done = !1, t.clickButton = t.clickButton.bind(C(t)), t
                     }
@@ -3855,7 +3855,7 @@
                                 className: u.a.overlay
                             }), s.a.createElement("div", {
                                 className: u.a.header
-                            }, "HACKED: ".concat(this.props.name, " (-").concat(Object(p.s)(this.props.amount), ")")), s.a.createElement("div", {
+                            }, "HACKED: ".concat(this.props.name, " (-").concat(Object(p.q)(this.props.amount), ")")), s.a.createElement("div", {
                                 className: u.a.desc
                             }, "Make all buttons the same color"), s.a.createElement("div", {
                                 className: u.a.buttonContainer
@@ -4145,7 +4145,7 @@
                             timer: e.timeLimit,
                             timerChange: !0,
                             isZoomed: !1
-                        }, t.audio = new Audio(Object(y.m)(S)), t.audio.muted = e.muted, t.readingAloud = !1, t.onReadAloud = t.onReadAloud.bind(O(t)), t.onReadAloudEnd = t.onReadAloudEnd.bind(O(t)), t
+                        }, t.audio = new Audio(Object(y.k)(S)), t.audio.muted = e.muted, t.readingAloud = !1, t.onReadAloud = t.onReadAloud.bind(O(t)), t.onReadAloudEnd = t.onReadAloudEnd.bind(O(t)), t
                     }
                     return t = r, (a = [{
                         key: "componentDidMount",
@@ -4235,7 +4235,7 @@
                                 className: this.props.image || this.props.audio || this.props.text.includes("`*`") ? m.a.questionTextImage : m.a.questionTextNoImage,
                                 mode: "multi",
                                 min: 1,
-                                max: Object(y.v)("4vw")
+                                max: Object(y.t)("4vw")
                             }, this.props.text.includes("`*`") ? this.props.text.slice(0, this.props.text.indexOf("`*`")) : this.props.text)), s.a.createElement("div", {
                                 className: c()(m.a.upperRightContainer, v({}, m.a.spooky, t))
                             }, s.a.createElement("div", {
@@ -4303,7 +4303,7 @@
                                     className: m.a.answerText,
                                     mode: "multi",
                                     min: 1,
-                                    max: Object(y.v)("2.5vw"),
+                                    max: Object(y.t)("2.5vw"),
                                     style: {
                                         color: d.b[t ? "spooky" : "default"].answers[n].text
                                     }
@@ -4475,7 +4475,7 @@
                             tabIndex: 0,
                             onClick: function() {
                                 return e.setState({
-                                    full: Object(f.u)()
+                                    full: Object(f.s)()
                                 })
                             }
                         }), void 0 !== this.props.muted ? s.a.createElement("i", {
@@ -4623,7 +4623,7 @@
                         timer: 3,
                         loops: 3,
                         timerChange: !1,
-                        phrase: t.props.normal ? "Get Ready" : Object(u.m)(["Get Ready", "Get Ready", "Get Ready", "Get Ready", "Get Ready", "Get Ready", "Get Ready", "Get Ready", "Get Ready", "Get Ready", "Get Ready", "Get Ready", "Get Ready", "Get Ready", "Get Ready", "Get Ready", "Get Ready", "Get Ready", "Get Ready", "Get Ready", "Get Ready", "Get Ready", "Get Ready", "Get Ready", "Get Ready", "Get Ready", "Get Ready", "Get Ready", "Get Ready", "Get Ready", "Get Ready", "Get Ready", "Get Ready", "Getting Ready...", "Getting Ready...", "Getting Ready...", "Getting Ready...", "Getting Ready...", "Getting Ready...", "Getting Ready...", "Ready Up", "Ready Up", "Ready Up", "Ready Up", "Ready Up", "Ready Up", "Ready Up", "Ready Up", "Ready Up", "Ready Up", "Ready Up", "On Your Mark", "On Your Mark", "On Your Mark", "On Your Mark", "On Your Mark", "On Your Mark", "Get Set", "Get Set", "Get Set", "Get Set", "Get Set", "Get Set", "Focus", "Focus", "Focus", "Ready Your Cannons", "Ready Your Cannons", "Initializing...", "Initializing...", "Generating Question...", "Generating Question...", "Baking a Cake...", "Searching for Question...", "Looking for Lost Question...", "Losing the Clicker...", "Writing the Question...", "Loading...", "Loading...", "Loading...", "Loading...", "Loading...", "Waiting for You...", "Counting Down From 3...", "Entering Warp Drive...", "Dusting Off Question...", "Dusting Off Question...", "Dusting Off Question...", "Prepare for Battle", "Start Your Engines", "Start Your Engines", "Anyone Reading This?", "Waiting for Question...", "Ready Your Pointer", "Ready Your Mouse", "Activate Focus Mode", "Ordering Pizza...", "Taking a Nap...", "Brushing Off Cobwebs...", "Typing Question...", "Prepare for Victory", "Get Your Game Face On", "Time to Pop Off", "Get Ready to Win", "Learning Spanish...", "Learning French...", "Learning Japanese...", "Learning German...", "Learning Sign Language...", "Learning Chinese...", "Studying Blooks...", "Hacking Into The System...", "Looking For My Keys...", "Writing an Essay...", "Taking the Derivative...", "Finding the Integral...", "Reading a Book...", "Waiting in Line...", "Encrypting the Question...", "Reacting Chemicals...", "Waiting for the Weekend...", "Coding...", "Playing Fortnite...", "Collecting Prizes...", "Checking Stats...", "Eating Pi...", "Reading the Textbook...", "Waiting for Brian...", "Ready Player One", "Loading Questions in 2022 LUL", "Is this thing on...?", "Spinning to Win...", "Activating Cheat Codes...", "Pressing Random Buttons...", "Googling Answers...", "Doing a Barrel Roll...", "Making Toast...", "Maybe Loading...", "Probably Not Loading...", "Mining Tokens...", "Not Crashing..."])
+                        phrase: t.props.normal ? "Get Ready" : Object(u.k)(["Get Ready", "Get Ready", "Get Ready", "Get Ready", "Get Ready", "Get Ready", "Get Ready", "Get Ready", "Get Ready", "Get Ready", "Get Ready", "Get Ready", "Get Ready", "Get Ready", "Get Ready", "Get Ready", "Get Ready", "Get Ready", "Get Ready", "Get Ready", "Get Ready", "Get Ready", "Get Ready", "Get Ready", "Get Ready", "Get Ready", "Get Ready", "Get Ready", "Get Ready", "Get Ready", "Get Ready", "Get Ready", "Get Ready", "Getting Ready...", "Getting Ready...", "Getting Ready...", "Getting Ready...", "Getting Ready...", "Getting Ready...", "Getting Ready...", "Ready Up", "Ready Up", "Ready Up", "Ready Up", "Ready Up", "Ready Up", "Ready Up", "Ready Up", "Ready Up", "Ready Up", "Ready Up", "On Your Mark", "On Your Mark", "On Your Mark", "On Your Mark", "On Your Mark", "On Your Mark", "Get Set", "Get Set", "Get Set", "Get Set", "Get Set", "Get Set", "Focus", "Focus", "Focus", "Ready Your Cannons", "Ready Your Cannons", "Initializing...", "Initializing...", "Generating Question...", "Generating Question...", "Baking a Cake...", "Searching for Question...", "Looking for Lost Question...", "Losing the Clicker...", "Writing the Question...", "Loading...", "Loading...", "Loading...", "Loading...", "Loading...", "Waiting for You...", "Counting Down From 3...", "Entering Warp Drive...", "Dusting Off Question...", "Dusting Off Question...", "Dusting Off Question...", "Prepare for Battle", "Start Your Engines", "Start Your Engines", "Anyone Reading This?", "Waiting for Question...", "Ready Your Pointer", "Ready Your Mouse", "Activate Focus Mode", "Ordering Pizza...", "Taking a Nap...", "Brushing Off Cobwebs...", "Typing Question...", "Prepare for Victory", "Get Your Game Face On", "Time to Pop Off", "Get Ready to Win", "Learning Spanish...", "Learning French...", "Learning Japanese...", "Learning German...", "Learning Sign Language...", "Learning Chinese...", "Studying Blooks...", "Hacking Into The System...", "Looking For My Keys...", "Writing an Essay...", "Taking the Derivative...", "Finding the Integral...", "Reading a Book...", "Waiting in Line...", "Encrypting the Question...", "Reacting Chemicals...", "Waiting for the Weekend...", "Coding...", "Playing Fortnite...", "Collecting Prizes...", "Checking Stats...", "Eating Pi...", "Reading the Textbook...", "Waiting for Brian...", "Ready Player One", "Loading Questions in 2022 LUL", "Is this thing on...?", "Spinning to Win...", "Activating Cheat Codes...", "Pressing Random Buttons...", "Googling Answers...", "Doing a Barrel Roll...", "Making Toast...", "Maybe Loading...", "Probably Not Loading...", "Mining Tokens...", "Not Crashing..."])
                     }, t
                 }
                 return t = r, (a = [{
@@ -4661,7 +4661,7 @@
                             mode: "multi",
                             forceSingleModeWidth: !1,
                             min: 1,
-                            max: Object(u.v)("10vw")
+                            max: Object(u.t)("10vw")
                         }, this.state.phrase), s.a.createElement("div", {
                             className: c.a.timerHolder
                         }, s.a.createElement("div", {
@@ -4836,7 +4836,7 @@
                         return function(e, t) {
                             if (!(e instanceof t)) throw new TypeError("Cannot call a class as a function")
                         }(this, r), (t = o.call(this, e)).state = {
-                            numbers: Object(p.t)(w),
+                            numbers: Object(p.r)(w),
                             numbersChosen: []
                         }, t.chooseNumber = t.chooseNumber.bind(C(t)), t
                     }
@@ -4870,7 +4870,7 @@
                                 className: u.a.overlay
                             }), s.a.createElement("div", {
                                 className: u.a.header
-                            }, "HACKED: ".concat(this.props.name, " (-").concat(Object(p.s)(this.props.amount), ")")), s.a.createElement("div", {
+                            }, "HACKED: ".concat(this.props.name, " (-").concat(Object(p.q)(this.props.amount), ")")), s.a.createElement("div", {
                                 className: u.a.desc
                             }, "Click the numbers from 1 to 10"), s.a.createElement("div", {
                                 className: u.a.buttonContainer
@@ -5033,7 +5033,7 @@
                             tabIndex: 0,
                             onClick: function() {
                                 return e.setState({
-                                    full: Object(p.u)()
+                                    full: Object(p.s)()
                                 })
                             }
                         }), this.state.leftText) : s.a.createElement("a", {
@@ -5193,7 +5193,7 @@
                     "fas fa-heart": "#ff3333"
                 },
                 T = function(e) {
-                    for (var t = Object(p.t)(w); t[0] === e[0] || t[1] === e[1] || t[2] === e[2] || t[3] === e[3];) t = Object(p.t)(w);
+                    for (var t = Object(p.r)(w); t[0] === e[0] || t[1] === e[1] || t[2] === e[2] || t[3] === e[3];) t = Object(p.r)(w);
                     return t
                 },
                 E = function(e) {
@@ -5216,7 +5216,7 @@
                         ! function(e, t) {
                             if (!(e instanceof t)) throw new TypeError("Cannot call a class as a function")
                         }(this, r), t = o.call(this, e);
-                        var a = Object(p.t)(w);
+                        var a = Object(p.r)(w);
                         return t.state = {
                             leftWires: a,
                             rightWires: T(a),
@@ -5265,7 +5265,7 @@
                                 className: u.a.overlay
                             }), s.a.createElement("div", {
                                 className: u.a.header
-                            }, "HACKED: ".concat(this.props.name, " (-").concat(Object(p.s)(this.props.amount), ")")), s.a.createElement("div", {
+                            }, "HACKED: ".concat(this.props.name, " (-").concat(Object(p.q)(this.props.amount), ")")), s.a.createElement("div", {
                                 className: u.a.desc
                             }, "Reorder the right colors to match left (click to swap right colors)"), s.a.createElement("div", {
                                 className: u.a.buttonContainer

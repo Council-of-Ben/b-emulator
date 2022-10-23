@@ -140,7 +140,7 @@
                             className: _.a.leftName,
                             mode: "single",
                             min: 1,
-                            max: Object(m.v)("8vw"),
+                            max: Object(m.t)("8vw"),
                             forceSingleModeWidth: !1
                         }, this.state.me.name), o.a.createElement(c.a, {
                             name: this.state.me.blook,
@@ -182,7 +182,7 @@
                             className: _.a.rightName,
                             mode: "single",
                             min: 1,
-                            max: Object(m.v)("8vw"),
+                            max: Object(m.t)("8vw"),
                             forceSingleModeWidth: !1
                         }, this.state.opp.name), o.a.createElement(c.a, {
                             name: this.state.opp.blook,
@@ -372,7 +372,7 @@
                         mode: "single",
                         forceSingleModeWidth: !1,
                         min: 1,
-                        max: Object(f.v)("5vw")
+                        max: Object(f.t)("5vw")
                     }, e.name));
                     var t, a, r
                 }))))
@@ -472,13 +472,13 @@
                     ! function(e, t) {
                         if (!(e instanceof t)) throw new TypeError("Cannot call a class as a function")
                     }(this, l), t = n.call(this, e);
-                    for (var a = [], s = 0; s < Object(c.o)(5, 7); s++) a.push({
-                        top: "".concat(Object(c.o)(10, 90), "%"),
-                        left: "".concat(Object(c.o)(10, 90), "%"),
-                        width: "".concat(Object(c.o)(26, 36), "vh"),
-                        animationDuration: "".concat(Object(c.o)(2500, 6e3), "ms"),
-                        animationDelay: "".concat(Object(c.o)(1e3, 3e3), "ms"),
-                        transform: "translate(-50%, -50%) rotate(".concat(Object(c.o)(-90, 90), "deg)")
+                    for (var a = [], s = 0; s < Object(c.m)(5, 7); s++) a.push({
+                        top: "".concat(Object(c.m)(10, 90), "%"),
+                        left: "".concat(Object(c.m)(10, 90), "%"),
+                        width: "".concat(Object(c.m)(26, 36), "vh"),
+                        animationDuration: "".concat(Object(c.m)(2500, 6e3), "ms"),
+                        animationDelay: "".concat(Object(c.m)(1e3, 3e3), "ms"),
+                        transform: "translate(-50%, -50%) rotate(".concat(Object(c.m)(-90, 90), "deg)")
                     });
                     return t.state = {
                         blookStylings: a
@@ -819,7 +819,7 @@
                         className: i()(c.a.text, c.a.n6)
                     }, o.a.createElement("div", {
                         className: c.a.textInside
-                    }, "Most Blooks after ".concat(Object(m.l)(t), " ").concat("1" === t ? "minute" : "minutes", " wins!"))), o.a.createElement("div", {
+                    }, "Most Blooks after ".concat(Object(m.j)(t), " ").concat("1" === t ? "minute" : "minutes", " wins!"))), o.a.createElement("div", {
                         className: i()(c.a.text, c.a.n7)
                     }, o.a.createElement("div", {
                         className: c.a.textInside
@@ -1306,13 +1306,13 @@
                         mode: "multi",
                         forceSingleModeWidth: !1,
                         min: 1,
-                        max: Object(d.v)("12vw")
+                        max: Object(d.t)("12vw")
                     }, "Royale" === t || "Royale Teams" === t ? "Step Two:" : "Step One:"), o.a.createElement(r.Textfit, {
                         className: m.a.headerTwo,
                         mode: "multi",
                         forceSingleModeWidth: !1,
                         min: 1,
-                        max: Object(d.v)("10vw")
+                        max: Object(d.t)("10vw")
                     }, "Answer Questions Correctly"), o.a.createElement("div", {
                         className: m.a.answerBox
                     }, o.a.createElement("div", {
@@ -1340,7 +1340,7 @@
                         mode: "multi",
                         forceSingleModeWidth: !1,
                         min: 1,
-                        max: Object(d.v)("8vw")
+                        max: Object(d.t)("8vw")
                     }, "Royale" === t ? "Answer Quickly to Beat Your Opponent" : "Royale Teams" === t ? "Incorrect Answers Count For The Maximum Time" : "Random" === t ? "There's No Bonus For Answering Quickly" : "Flex" === t ? "Answer Quickly For Better Point Prizes" : "You Get More Points For Answering Quickly"))
                 };
             f.propTypes = {
@@ -1367,13 +1367,13 @@
                         mode: "multi",
                         forceSingleModeWidth: !1,
                         min: 1,
-                        max: Object(m.v)("12vw")
+                        max: Object(m.t)("12vw")
                     }, "Step One:"), o.a.createElement(r.Textfit, {
                         className: _.a.headerTwo,
                         mode: "multi",
                         forceSingleModeWidth: !1,
                         min: 1,
-                        max: Object(m.v)("10vw")
+                        max: Object(m.t)("10vw")
                     }, "Prepare"), o.a.createElement(c.a, {
                         name: "Dog",
                         className: _.a.leftBlook
@@ -1387,7 +1387,7 @@
                         mode: "multi",
                         forceSingleModeWidth: !1,
                         min: 1,
-                        max: Object(m.v)("8vw")
+                        max: Object(m.t)("8vw")
                     }, "Each Round You'll Be Randomly Matched Up Against ".concat(t ? "A Team" : "Someone")))
                 };
             d.propTypes = {
@@ -1766,7 +1766,7 @@
                 function e(t, a, s, o) {
                     ! function(e, t) {
                         if (!(e instanceof t)) throw new TypeError("Cannot call a class as a function")
-                    }(this, e), this.p5 = o, this.pos = o.createVector(Object(z.n)(.22 * t, .75 * t), Object(z.n)(.25 * a, .75 * a)), this.vel = o.createVector(0, 0), this.img = o.loadImage(j.a[s]), this.speed = Object(z.n)(1, 3), this.onCreate(t, a)
+                    }(this, e), this.p5 = o, this.pos = o.createVector(Object(z.l)(.22 * t, .75 * t), Object(z.l)(.25 * a, .75 * a)), this.vel = o.createVector(0, 0), this.img = o.loadImage(j.a[s]), this.speed = Object(z.l)(1, 3), this.onCreate(t, a)
                 }
                 var t, a, s;
                 return t = e, (a = [{
@@ -1794,8 +1794,8 @@
                     key: "onCreate",
                     value: function(e, t) {
                         var a = 0,
-                            s = Object(z.n)(0, t);
-                        0 === Object(z.o)(0, 2) && (a = Object(z.n)(0, e), s = 0);
+                            s = Object(z.l)(0, t);
+                        0 === Object(z.m)(0, 2) && (a = Object(z.l)(0, e), s = 0);
                         var o = this.p5.createVector(a, s).sub(this.pos).normalize();
                         this.vel = o.mult(this.speed)
                     }
@@ -2467,8 +2467,8 @@
                         s = e.top,
                         n = e.left,
                         l = e.scale,
-                        r = Object(_.v)("15vw"),
-                        c = Object(_.v)("1.5vw"),
+                        r = Object(_.t)("15vw"),
+                        c = Object(_.t)("1.5vw"),
                         m = .5 * r,
                         d = m - .5 * c,
                         f = 2 * Math.PI * d,
@@ -2680,7 +2680,7 @@
                     mode: "single",
                     forceSingleModeWidth: !1,
                     min: 1,
-                    max: Object(p.v)("5vw")
+                    max: Object(p.t)("5vw")
                 }, s), o.a.createElement("div", {
                     className: f.a.energyContainer
                 }, o.a.createElement("div", {
@@ -2839,13 +2839,13 @@
                         mode: "multi",
                         forceSingleModeWidth: !1,
                         min: 1,
-                        max: Object(m.v)("12vw")
+                        max: Object(m.t)("12vw")
                     }, "Step Three:"), o.a.createElement(r.Textfit, {
                         className: _.a.headerTwo,
                         mode: "multi",
                         forceSingleModeWidth: !1,
                         min: 1,
-                        max: Object(m.v)("10vw")
+                        max: Object(m.t)("10vw")
                     }, "Showdown"), o.a.createElement(c.a, {
                         name: "Dog",
                         className: _.a.leftBlook
@@ -2859,7 +2859,7 @@
                         mode: "multi",
                         forceSingleModeWidth: !1,
                         min: 1,
-                        max: Object(m.v)("8vw")
+                        max: Object(m.t)("8vw")
                     }, t ? "The Team With The Lowest Average Time Will Keep Their Energy" : "Answer Correctly and More Quickly To Keep Your Energy"))
                 };
             d.propTypes = {
@@ -3013,7 +3013,7 @@
                         autoFocus: r.isMobile ? "" : "autofocus"
                     })), o.a.createElement("div", {
                         className: m.a.numTotal
-                    }, "/ ".concat(Object(g.l)(d)))) : null, void 0 !== C ? o.a.createElement("div", {
+                    }, "/ ".concat(Object(g.j)(d)))) : null, void 0 !== C ? o.a.createElement("div", {
                         className: _()(m.a.inputContainer, w({}, m.a.inputFilled, C))
                     }, o.a.createElement("input", {
                         className: m.a.input,
@@ -3160,13 +3160,13 @@
                         mode: "multi",
                         forceSingleModeWidth: !1,
                         min: 1,
-                        max: Object(m.v)("12vw")
+                        max: Object(m.t)("12vw")
                     }, "Step Four:"), o.a.createElement(r.Textfit, {
                         className: _.a.headerTwo,
                         mode: "multi",
                         forceSingleModeWidth: !1,
                         min: 1,
-                        max: Object(m.v)("10vw")
+                        max: Object(m.t)("10vw")
                     }, "Survive"), o.a.createElement(c.a, {
                         name: "Chicken",
                         className: _.a.blookOne
@@ -3187,7 +3187,7 @@
                         mode: "multi",
                         forceSingleModeWidth: !1,
                         min: 1,
-                        max: Object(m.v)("8vw")
+                        max: Object(m.t)("8vw")
                     }, "The Last ".concat(t ? "Team" : "Player", " With Energy Remaining Wins")))
                 };
             d.propTypes = {
@@ -4004,14 +4004,14 @@
                         if (Math.random() <= ("boss" === e ? .2 : .05) && !a) {
                             for (var h = 0; h < y.length; h++)
                                 if ((u += y[h][1]) >= p) {
-                                    var g = Object(s.m)(c[y[h][0]]);
+                                    var g = Object(s.k)(c[y[h][0]]);
                                     _.includes(g) || (o.push(g), _.push(g));
                                     break
                                 }
                         } else
                             for (var w = 0; w < f.length; w++)
                                 if ((u += f[w][1]) >= p) {
-                                    var b = Object(s.m)(i[f[w][0]]);
+                                    var b = Object(s.k)(i[f[w][0]]);
                                     l.includes(b) || (o.push(n({
                                         blook: b
                                     }, r[b])), l.push(b));
@@ -4146,7 +4146,7 @@
                 }, t), o.a.createElement("div", {
                     className: c.a.rarityText,
                     style: {
-                        color: f.q[y.a[t].rarity]
+                        color: f.o[y.a[t].rarity]
                     }
                 }, y.a[t].rarity)), o.a.createElement("i", {
                     className: i()(y.a[t].icon, c.a.artifactIcon),
@@ -4169,7 +4169,7 @@
                 }, t.blook), o.a.createElement("div", {
                     className: c.a.rarityText,
                     style: {
-                        color: f.q[Object(d.a)(t.blook)]
+                        color: f.o[Object(d.a)(t.blook)]
                     }
                 }, Object(d.a)(t.blook)), o.a.createElement("div", {
                     className: c.a.classText
@@ -4274,7 +4274,7 @@
             var s = a("74sb"),
                 o = ["Unlock new Blooks in the Market!", "Tokens can be used to unlock Blooks in the Market!", "In Factory, match Blooks of the same class for bonuses!", "Check your lifetime Stats on the Stats page!", "Anyone can create a Question Set on the Create page!", "You can sell duplicate Blooks on the Blooks page!", "Follow us on social media @PlayBlooket for updates!", "In Factory, make sure to keep upgrading your Blooks!", "Use the Discover page to find new question sets!", "Create or login to an account to unlock more Blooks!", "Create or login to an account to participate in events!", "Create or login to an account to track your stats!", "Yes, we are always working on new game modes and Blooks!", "Having fun while you learn can help you remember information!", "Never give up in a game, comebacks happen all the time!"];
             t.a = function() {
-                return Object(s.m)(o)
+                return Object(s.k)(o)
             }
         },
         qRUB: function(e, t, a) {
@@ -4497,13 +4497,13 @@
                         mode: "multi",
                         forceSingleModeWidth: !1,
                         min: 1,
-                        max: Object(c.v)("15vw")
+                        max: Object(c.t)("15vw")
                     }, "Good Luck"), o.a.createElement(r.Textfit, {
                         className: _.a.headerTwo,
                         mode: "multi",
                         forceSingleModeWidth: !1,
                         min: 1,
-                        max: Object(c.v)("15vw")
+                        max: Object(c.t)("15vw")
                     }, "& Let's Go!"))
                 };
             m.propTypes = {
@@ -4570,7 +4570,7 @@
                         className: i()(c.a.text, c.a.n4)
                     }, "Sabotage, Steal, and Multiply Toys"), o.a.createElement("div", {
                         className: i()(c.a.text, c.a.n5)
-                    }, "Time" === t ? "Most toys after ".concat(Object(d.l)(a), " ").concat("1" === a ? "minute" : "minutes", " wins!") : "First player to have ".concat(Object(d.l)(a), " Toys wins!")), o.a.createElement("div", {
+                    }, "Time" === t ? "Most toys after ".concat(Object(d.j)(a), " ").concat("1" === a ? "minute" : "minutes", " wins!") : "First player to have ".concat(Object(d.j)(a), " Toys wins!")), o.a.createElement("div", {
                         className: i()(c.a.text, c.a.n6)
                     }, "Good Luck & Happy Holidays!"))
                 };
@@ -4783,7 +4783,7 @@
                     className: m.a.winnerName,
                     mode: "single",
                     min: 1,
-                    max: Object(f.v)("8vw"),
+                    max: Object(f.t)("8vw"),
                     forceSingleModeWidth: !1
                 }, p.clone ? "".concat(p.name, " 👾") : p.name), o.a.createElement(d.a, {
                     name: u.blook,
@@ -4842,7 +4842,7 @@
                     className: m.a.loserName,
                     mode: "single",
                     min: 1,
-                    max: Object(f.v)("8vw"),
+                    max: Object(f.t)("8vw"),
                     forceSingleModeWidth: !1
                 }, u.clone ? "".concat(u.name, " 👾") : u.name), n || s ? o.a.createElement("div", {
                     className: m.a.rightText

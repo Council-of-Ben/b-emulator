@@ -389,8 +389,8 @@
                     }
                 };
             var o = g("ZXWq"),
-                a = g("IuJg"),
-                B = g("0Oxh"),
+                B = g("IuJg"),
+                a = g("0Oxh"),
                 b = g("oIDt"),
                 m = g("mOsA"),
                 Z = g("v/ol"),
@@ -398,45 +398,42 @@
                 n = g("qitz"),
                 d = g("EygS"),
                 e = g("mpcV"),
-                P = g("6Zcq"),
-                p = g("kyLa"),
-                h = g("RLYa"),
-                X = g("SyH+"),
-                F = g("ouvC"),
-                K = g("oq/Q"),
-                W = g("N3JU"),
-                R = g("SB7+"),
-                J = g("xP+p"),
-                r = g("4Ao/"),
-                v = g("p64V"),
-                H = g("No5I"),
-                V = g("pkaE"),
-                f = g("YuoD"),
-                _ = g("VWYR"),
-                q = g("5Eab"),
-                $ = g("/gDf"),
-                II = g("D4er"),
-                MI = g("C/JS"),
-                gI = g("GmRr"),
-                CI = g("GnGQ"),
-                AI = g("Mgwj"),
-                NI = g("fLDY"),
-                LI = g("57Jf"),
-                jI = g("kVNV"),
-                DI = g("kAC4"),
-                TI = g("fuSh"),
-                zI = g("Lcud"),
-                yI = g("E8Bj"),
-                wI = (g("35eG"), g("qspi"), g("qnYv"));
-            z.a.logConsoleSuspensionWarning(), wI.a.get("/api/config").then((function(I) {
+                P = g("kyLa"),
+                p = g("RLYa"),
+                h = g("SyH+"),
+                X = g("ouvC"),
+                F = g("oq/Q"),
+                K = g("N3JU"),
+                W = g("SB7+"),
+                R = g("xP+p"),
+                J = g("4Ao/"),
+                r = g("p64V"),
+                v = g("No5I"),
+                H = g("pkaE"),
+                V = g("YuoD"),
+                f = g("/gDf"),
+                _ = g("D4er"),
+                q = g("C/JS"),
+                $ = g("GmRr"),
+                II = g("GnGQ"),
+                MI = g("Mgwj"),
+                gI = g("fLDY"),
+                CI = g("57Jf"),
+                AI = g("kVNV"),
+                NI = g("kAC4"),
+                LI = g("fuSh"),
+                jI = g("Lcud"),
+                DI = g("E8Bj"),
+                TI = (g("35eG"), g("qspi"), g("qnYv"));
+            z.a.logConsoleSuspensionWarning(), TI.a.get("/api/config").then((function(I) {
                 var M = I.data.securityBase;
                 z.a.securityBaseURL = M
             }));
-            var iI, uI, cI, YI, SI = (uI = [Q, u()()], cI = [w.a.apply(void 0, uI), k()], (YI = Object(w.e)(t, iI, w.d.apply(void 0, cI))).runSaga = Q.run(G), YI);
+            var zI, yI, wI, iI, uI = (yI = [Q, u()()], wI = [w.a.apply(void 0, yI), k()], (iI = Object(w.e)(t, zI, w.d.apply(void 0, wI))).runSaga = Q.run(G), iI);
             L.a.render(A.a.createElement(y.a, null, A.a.createElement(j.a, {
-                store: SI
-            }, A.a.createElement(yI.a.Provider, {
-                value: new yI.b
+                store: uI
+            }, A.a.createElement(DI.a.Provider, {
+                value: new DI.b
             }, A.a.createElement(D.a, null, A.a.createElement("div", null, A.a.createElement(T.d, null, A.a.createElement(T.b, {
                 exact: !0,
                 path: "/upgrade",
@@ -444,11 +441,11 @@
             }), A.a.createElement(T.b, {
                 exact: !0,
                 path: "/upgrade/checkout/:plan",
-                component: a.b
+                component: B.b
             }), A.a.createElement(T.b, {
                 exact: !0,
                 path: "/upgrade/success",
-                component: B.a
+                component: a.a
             }), A.a.createElement(T.b, {
                 exact: !0,
                 path: "/upgrade/cancel",
@@ -479,112 +476,100 @@
                 component: e.a
             }), A.a.createElement(T.b, {
                 exact: !0,
-                path: "/signup",
+                path: "/discover",
                 component: P.a
             }), A.a.createElement(T.b, {
                 exact: !0,
-                path: "/discover",
+                path: "/set/:id",
                 component: p.a
             }), A.a.createElement(T.b, {
                 exact: !0,
-                path: "/set/:id",
+                path: "/history/game/:id",
                 component: h.a
             }), A.a.createElement(T.b, {
                 exact: !0,
-                path: "/history/game/:id",
+                path: "/homework/:id",
                 component: X.a
             }), A.a.createElement(T.b, {
                 exact: !0,
-                path: "/homework/:id",
+                path: "/class/:id",
                 component: F.a
             }), A.a.createElement(T.b, {
                 exact: !0,
-                path: "/class/:id",
+                path: "/stats",
                 component: K.a
             }), A.a.createElement(T.b, {
                 exact: !0,
-                path: "/stats",
+                path: "/market",
                 component: W.a
             }), A.a.createElement(T.b, {
                 exact: !0,
-                path: "/market",
+                path: "/blooks",
                 component: R.a
             }), A.a.createElement(T.b, {
                 exact: !0,
-                path: "/blooks",
+                path: "/settings",
                 component: J.a
             }), A.a.createElement(T.b, {
                 exact: !0,
-                path: "/settings",
+                path: "/create",
                 component: r.a
             }), A.a.createElement(T.b, {
                 exact: !0,
-                path: "/create",
+                path: "/edit",
                 component: v.a
             }), A.a.createElement(T.b, {
                 exact: !0,
-                path: "/edit",
+                path: "/edit/info",
                 component: H.a
             }), A.a.createElement(T.b, {
                 exact: !0,
-                path: "/edit/info",
+                path: "/faq",
                 component: V.a
             }), A.a.createElement(T.b, {
                 exact: !0,
-                path: "/faq",
+                path: "/my-sets",
                 component: f.a
             }), A.a.createElement(T.b, {
                 exact: !0,
-                path: "/login",
-                component: q.a
-            }), A.a.createElement(T.b, {
-                exact: !0,
-                path: "/logout",
+                path: "/favorites",
                 component: _.a
             }), A.a.createElement(T.b, {
                 exact: !0,
-                path: "/my-sets",
-                component: $.a
-            }), A.a.createElement(T.b, {
-                exact: !0,
-                path: "/favorites",
-                component: II.a
-            }), A.a.createElement(T.b, {
-                exact: !0,
                 path: "/classes",
-                component: MI.a
+                component: q.a
             }), A.a.createElement(T.b, {
                 exact: !0,
                 path: "/history",
-                component: gI.a
+                component: $.a
             }), A.a.createElement(T.b, {
                 exact: !0,
                 path: "/homeworks",
-                component: CI.a
+                component: II.a
             }), A.a.createElement(T.b, {
                 exact: !0,
                 path: "/group-plan",
-                component: AI.a
+                component: MI.a
             }), A.a.createElement(T.b, {
                 exact: !0,
                 path: "/change/email",
-                component: NI.a
+                component: gI.a
             }), A.a.createElement(T.b, {
                 exact: !0,
                 path: "/change/name",
-                component: LI.a
+                component: CI.a
             }), A.a.createElement(T.b, {
                 exact: !0,
                 path: "/add-password",
-                component: jI.a
+                component: AI.a
             }), A.a.createElement(T.b, {
                 exact: !0,
                 path: "/delete",
-                component: DI.a
+                component: NI.a
             }), A.a.createElement(T.b, {
                 exact: !0,
                 path: "/unsubscribe",
-                component: TI.a
+                component: LI.a
             }), A.a.createElement(T.a, {
                 exact: !0,
                 from: "/dashboard",
@@ -594,7 +579,7 @@
                 from: "/profile",
                 to: "/my-sets"
             }), A.a.createElement(T.b, {
-                component: zI.a
+                component: jI.a
             }))))))), document.getElementById("app"))
         }
     }

@@ -1,5 +1,5 @@
 (window.webpackJsonp = window.webpackJsonp || []).push([
-    [24], {
+    [22], {
         "+M5X": function(t, n, r) {
             var e = r("/wKJ"),
                 o = r("9yug");

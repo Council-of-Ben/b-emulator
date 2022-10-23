@@ -1,5 +1,5 @@
 (window.webpackJsonp = window.webpackJsonp || []).push([
-    [26], {
+    [24], {
         "2mql": function(t, e, r) {
             "use strict";
             var n = r("TOwV"),
