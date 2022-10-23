@@ -420,7 +420,7 @@ let e = setInterval(() => {
 			
 		};});
 		for (let s of scripts) {
-			addMod(s.name, s.image, [sc[s.name]]);
+			addMod(s.name, s.image, [sc[s.name]])();
 		};
 		document.head.insertBefore(styles, document.head.children[1]);
 		document.body.appendChild(EMLGUI);
