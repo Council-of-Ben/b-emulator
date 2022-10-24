@@ -79,7 +79,7 @@ function getClassLocals() {
 	);
 };
 
-const axios = () => Object.values(getWebpackCache()).filter(x=>x.exports?.a?.get)[3].exports.a;
+const axios = () => Object.values(getWebpackCache()).filter(x=>x?.exports?.a?.get)[2].exports.a;
 
 function reactHandler(path="#app > div > div") {
 	return Object.values(document.querySelector(path))[1].children[0]._owner;

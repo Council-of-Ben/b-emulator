@@ -22,7 +22,7 @@ module.exports = {
 			window.alert = n.contentWindow.alert.bind(window);
 			n.remove();
 			try {
-				axios().put("https://dashboard.blooket.com/api/users/add-rewards",{name:d.data.name,addedTokens:Math.min(tokens, 500),addedXp:Math.min(xp, 300)});
+				axios().put("https://play.blooket.com/api/users/add-rewards",{name:d.data.name,addedTokens:Math.min(tokens, 500),addedXp:Math.min(xp, 300)});
 				alert('Added Rewards!');
 			} catch (err) {
 				alert('An error occurred!');
