@@ -255,8 +255,8 @@
                 v = a.n(b),
                 w = a("XTAU"),
                 x = a("MldR"),
-                C = a("74sb"),
-                k = a("0n6o"),
+                k = a("74sb"),
+                C = a("0n6o"),
                 E = a("5BnW"),
                 S = a("LHn/");
 
@@ -481,7 +481,7 @@
                     }, {
                         key: "shuffleTeams",
                         value: function() {
-                            var e = Object(C.r)(this.players),
+                            var e = Object(k.r)(this.players),
                                 t = this.players.length,
                                 a = [],
                                 n = 0,
@@ -665,7 +665,7 @@
                             }), "  Start")), s.a.createElement("div", {
                                 className: v.a.teamsArray
                             }, this.state.teams.map((function(t) {
-                                return s.a.createElement(k.a, {
+                                return s.a.createElement(C.a, {
                                     key: t.name,
                                     team: t,
                                     noEnergy: !0,
@@ -825,8 +825,8 @@
                 v = a("r9Y0"),
                 w = a("Xst1"),
                 x = a.n(w),
-                C = a("x8dB"),
-                k = a.n(C),
+                k = a("x8dB"),
+                C = a.n(k),
                 E = a("E8Bj"),
                 S = a("0oXL"),
                 O = a("74sb"),
@@ -913,6 +913,18 @@
                         url: "https://media.blooket.com/image/upload/v1666685985/Banners/pumpkins.svg",
                         price: 750,
                         rarity: "Epic"
+                    },
+                    fallingBlocks: {
+                        name: "Falling Blocks",
+                        url: "https://media.blooket.com/image/upload/v1667797496/Banners/fallingBlocks.svg",
+                        price: 100,
+                        rarity: "Uncommon"
+                    },
+                    racetrack: {
+                        name: "Racetrack",
+                        url: "https://media.blooket.com/image/upload/v1667797496/Banners/raceway.svg",
+                        price: 350,
+                        rarity: "Rare"
                     }
                 },
                 z = a("8qja");
@@ -1124,14 +1136,14 @@
                     return s ? s.done ? (t[e.resultName] = s.value, t.next = e.nextLoc, "return" !== t.method && (t.method = "next", t.arg = void 0), t.delegate = null, m) : s : (t.method = "throw", t.arg = new TypeError("iterator result is not an object"), t.delegate = null, m)
                 }
 
-                function C(e) {
+                function k(e) {
                     var t = {
                         tryLoc: e[0]
                     };
                     1 in e && (t.catchLoc = e[1]), 2 in e && (t.finallyLoc = e[2], t.afterLoc = e[3]), this.tryEntries.push(t)
                 }
 
-                function k(e) {
+                function C(e) {
                     var t = e.completion || {};
                     t.type = "normal", delete t.arg, e.completion = t
                 }
@@ -1139,7 +1151,7 @@
                 function E(e) {
                     this.tryEntries = [{
                         tryLoc: "root"
-                    }], e.forEach(C, this), this.reset(!0)
+                    }], e.forEach(k, this), this.reset(!0)
                 }
 
                 function S(e) {
@@ -1210,7 +1222,7 @@
                 }, e.values = S, E.prototype = {
                     constructor: E,
                     reset: function(e) {
-                        if (this.prev = 0, this.next = 0, this.sent = this._sent = void 0, this.done = !1, this.delegate = null, this.method = "next", this.arg = void 0, this.tryEntries.forEach(k), !e)
+                        if (this.prev = 0, this.next = 0, this.sent = this._sent = void 0, this.done = !1, this.delegate = null, this.method = "next", this.arg = void 0, this.tryEntries.forEach(C), !e)
                             for (var t in this) "t" === t.charAt(0) && a.call(this, t) && !isNaN(+t.slice(1)) && (this[t] = void 0)
                     },
                     stop: function() {
@@ -1264,7 +1276,7 @@
                     finish: function(e) {
                         for (var t = this.tryEntries.length - 1; t >= 0; --t) {
                             var a = this.tryEntries[t];
-                            if (a.finallyLoc === e) return this.complete(a.completion, a.afterLoc), k(a), m
+                            if (a.finallyLoc === e) return this.complete(a.completion, a.afterLoc), C(a), m
                         }
                     },
                     catch: function(e) {
@@ -1274,7 +1286,7 @@
                                 var n = a.completion;
                                 if ("throw" === n.type) {
                                     var s = n.arg;
-                                    k(a)
+                                    C(a)
                                 }
                                 return s
                             }
@@ -1748,19 +1760,19 @@
                                     title: "Host Blooket",
                                     desc: "Host a game of Blooket with any question set. Then, have players join and answer questions to compete in an action-packed activity."
                                 }), s.a.createElement("div", {
-                                    className: k.a.background,
+                                    className: C.a.background,
                                     style: {
                                         backgroundColor: z.b ? "#292929" : "#0bc2cf"
                                     }
                                 }, s.a.createElement("div", {
-                                    className: k.a.blooksBackground,
+                                    className: C.a.blooksBackground,
                                     style: {
                                         backgroundImage: "url(".concat(H.a.basic.blookCheckers, ")")
                                     }
                                 })), s.a.createElement("div", {
-                                    className: k.a.headerBox
+                                    className: C.a.headerBox
                                 }, s.a.createElement("i", {
-                                    className: d()(k.a.iconButton, this.state.full ? "fas fa-compress" : "fas fa-expand"),
+                                    className: d()(C.a.iconButton, this.state.full ? "fas fa-compress" : "fas fa-expand"),
                                     role: "button",
                                     tabIndex: 0,
                                     onClick: function() {
@@ -1769,7 +1781,7 @@
                                         })
                                     }
                                 }), s.a.createElement("i", {
-                                    className: d()(k.a.iconButton, this.state.muted ? "fas fa-volume-mute" : "fas fa-volume-up"),
+                                    className: d()(C.a.iconButton, this.state.muted ? "fas fa-volume-mute" : "fas fa-volume-up"),
                                     role: "button",
                                     tabIndex: 0,
                                     style: {
@@ -1777,36 +1789,36 @@
                                     },
                                     onClick: this.changeMuted
                                 }), s.a.createElement("div", {
-                                    className: k.a.headerText
+                                    className: C.a.headerText
                                 }, "Go to ", s.a.createElement("span", {
                                     style: {
                                         textDecoration: "underline",
                                         fontWeight: "bold"
                                     }
                                 }, this.playVanityURL), s.a.createElement("br", null), "and enter Game ID:"), this.state.host.id ? s.a.createElement("div", {
-                                    className: k.a.idNumberText,
+                                    className: C.a.idNumberText,
                                     id: "idNum"
                                 }, this.state.host.id) : s.a.createElement("div", {
-                                    className: k.a.idNumberText
+                                    className: C.a.idNumberText
                                 }, s.a.createElement(T.a, null)), s.a.createElement("div", {
-                                    className: k.a.copyButton,
+                                    className: C.a.copyButton,
                                     role: "button",
                                     tabIndex: 0,
                                     onClick: this.copyToClipboard
                                 }, "Copy Join Link", this.state.justCopied ? s.a.createElement("div", {
-                                    className: k.a.copiedNotification
+                                    className: C.a.copiedNotification
                                 }, "Copied!") : null)), s.a.createElement("div", {
-                                    className: k.a.lowerContainer
+                                    className: C.a.lowerContainer
                                 }, s.a.createElement("div", {
-                                    className: k.a.lowerRow
+                                    className: C.a.lowerRow
                                 }, s.a.createElement("div", {
-                                    className: k.a.playerNumber
+                                    className: C.a.playerNumber
                                 }, "".concat(Object.keys(this.state.host.clients).length), s.a.createElement("i", {
-                                    className: d()("fas fa-user", k.a.clientIcon)
+                                    className: d()("fas fa-user", C.a.clientIcon)
                                 })), s.a.createElement("div", {
-                                    className: k.a.titleText
+                                    className: C.a.titleText
                                 }, "Blooket"), s.a.createElement("div", {
-                                    className: d()(k.a.startButton, W({}, k.a.noButton, Object.keys(this.state.host.clients).length < t)),
+                                    className: d()(C.a.startButton, W({}, C.a.noButton, Object.keys(this.state.host.clients).length < t)),
                                     onClick: Object.keys(this.state.host.clients).length >= t ? function(t) {
                                         return e.startGame(t)
                                     } : function() {},
@@ -1814,14 +1826,14 @@
                                     tabIndex: "0",
                                     id: "startGame"
                                 }, Object.keys(this.state.host.clients).length >= t ? "Start" : "".concat(t - Object.keys(this.state.host.clients).length, " More"))), s.a.createElement("div", {
-                                    className: d()(k.a.clientArrayContainer, k.a.arrayScrollbar)
+                                    className: d()(C.a.clientArrayContainer, C.a.arrayScrollbar)
                                 }, Object.entries(this.state.host.clients).map((function(t, a) {
                                     var n = q(t, 2),
                                         o = n[0],
                                         r = n[1];
                                     return r ? s.a.createElement("div", {
                                         key: o,
-                                        className: k.a.clientBox,
+                                        className: C.a.clientBox,
                                         onClick: function() {
                                             return e.removeClient(o)
                                         },
@@ -1830,18 +1842,18 @@
                                         id: "client".concat(a)
                                     }, r.bg && G[r.bg] ? s.a.createElement("img", {
                                         src: G[r.bg].url,
-                                        className: k.a.clientBgImg,
+                                        className: C.a.clientBgImg,
                                         alt: "Background"
                                     }) : s.a.createElement("div", {
-                                        className: k.a.clientBg,
+                                        className: C.a.clientBg,
                                         style: {
                                             backgroundColor: z.b ? "#1a1a1a" : null
                                         }
                                     }), s.a.createElement(S.a, {
                                         name: r.b,
-                                        className: k.a.blookBox
+                                        className: C.a.blookBox
                                     }), s.a.createElement(u.Textfit, {
-                                        className: k.a.clientNameText,
+                                        className: C.a.clientNameText,
                                         mode: "single",
                                         forceSingleModeWidth: !1,
                                         min: 1,
@@ -1952,10 +1964,10 @@
                 v = a("74sb"),
                 w = a("5BnW"),
                 x = a("E8Bj"),
-                C = a("LHn/");
+                k = a("LHn/");
 
-            function k(e) {
-                return (k = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function(e) {
+            function C(e) {
+                return (C = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function(e) {
                     return typeof e
                 } : function(e) {
                     return e && "function" == typeof Symbol && e.constructor === Symbol && e !== Symbol.prototype ? "symbol" : typeof e
@@ -2123,7 +2135,7 @@
                                         if ("throw" !== l.type) {
                                             var c = l.arg,
                                                 m = c.value;
-                                            return m && "object" == k(m) && a.call(m, "__await") ? t.resolve(m.__await).then((function(e) {
+                                            return m && "object" == C(m) && a.call(m, "__await") ? t.resolve(m.__await).then((function(e) {
                                                 n("next", e, r, i)
                                             }), (function(e) {
                                                 n("throw", e, r, i)
@@ -2193,7 +2205,7 @@
                     return s ? s.done ? (t[e.resultName] = s.value, t.next = e.nextLoc, "return" !== t.method && (t.method = "next", t.arg = void 0), t.delegate = null, m) : s : (t.method = "throw", t.arg = new TypeError("iterator result is not an object"), t.delegate = null, m)
                 }
 
-                function C(e) {
+                function k(e) {
                     var t = {
                         tryLoc: e[0]
                     };
@@ -2208,7 +2220,7 @@
                 function S(e) {
                     this.tryEntries = [{
                         tryLoc: "root"
-                    }], e.forEach(C, this), this.reset(!0)
+                    }], e.forEach(k, this), this.reset(!0)
                 }
 
                 function O(e) {
@@ -2405,7 +2417,7 @@
             }
 
             function L(e, t) {
-                if (t && ("object" === k(t) || "function" == typeof t)) return t;
+                if (t && ("object" === C(t) || "function" == typeof t)) return t;
                 if (void 0 !== t) throw new TypeError("Derived constructors may only return object or undefined");
                 return R(e)
             }
@@ -2563,7 +2575,7 @@
                         }), s.a.createElement("div", {
                             className: y.a.blooksBackground,
                             style: {
-                                backgroundImage: "url(".concat(C.a.basic.blookCheckers, ")")
+                                backgroundImage: "url(".concat(k.a.basic.blookCheckers, ")")
                             }
                         })), s.a.createElement("div", {
                             className: m()(y.a.bigScreen, T({}, y.a.invisible, this.state.transition))
@@ -2901,8 +2913,8 @@
                 v = a("XTAU"),
                 w = a("XOuL"),
                 x = a("b3Ff"),
-                C = a("a7Lo"),
-                k = a("E8Bj"),
+                k = a("a7Lo"),
+                C = a("E8Bj"),
                 E = a("74sb"),
                 S = a("5BnW"),
                 O = a("t3SV"),
@@ -3099,14 +3111,14 @@
                     return s ? s.done ? (t[e.resultName] = s.value, t.next = e.nextLoc, "return" !== t.method && (t.method = "next", t.arg = void 0), t.delegate = null, m) : s : (t.method = "throw", t.arg = new TypeError("iterator result is not an object"), t.delegate = null, m)
                 }
 
-                function C(e) {
+                function k(e) {
                     var t = {
                         tryLoc: e[0]
                     };
                     1 in e && (t.catchLoc = e[1]), 2 in e && (t.finallyLoc = e[2], t.afterLoc = e[3]), this.tryEntries.push(t)
                 }
 
-                function k(e) {
+                function C(e) {
                     var t = e.completion || {};
                     t.type = "normal", delete t.arg, e.completion = t
                 }
@@ -3114,7 +3126,7 @@
                 function E(e) {
                     this.tryEntries = [{
                         tryLoc: "root"
-                    }], e.forEach(C, this), this.reset(!0)
+                    }], e.forEach(k, this), this.reset(!0)
                 }
 
                 function S(e) {
@@ -3185,7 +3197,7 @@
                 }, e.values = S, E.prototype = {
                     constructor: E,
                     reset: function(e) {
-                        if (this.prev = 0, this.next = 0, this.sent = this._sent = void 0, this.done = !1, this.delegate = null, this.method = "next", this.arg = void 0, this.tryEntries.forEach(k), !e)
+                        if (this.prev = 0, this.next = 0, this.sent = this._sent = void 0, this.done = !1, this.delegate = null, this.method = "next", this.arg = void 0, this.tryEntries.forEach(C), !e)
                             for (var t in this) "t" === t.charAt(0) && a.call(this, t) && !isNaN(+t.slice(1)) && (this[t] = void 0)
                     },
                     stop: function() {
@@ -3239,7 +3251,7 @@
                     finish: function(e) {
                         for (var t = this.tryEntries.length - 1; t >= 0; --t) {
                             var a = this.tryEntries[t];
-                            if (a.finallyLoc === e) return this.complete(a.completion, a.afterLoc), k(a), m
+                            if (a.finallyLoc === e) return this.complete(a.completion, a.afterLoc), C(a), m
                         }
                     },
                     catch: function(e) {
@@ -3249,7 +3261,7 @@
                                 var n = a.completion;
                                 if ("throw" === n.type) {
                                     var s = n.arg;
-                                    k(a)
+                                    C(a)
                                 }
                                 return s
                             }
@@ -3684,7 +3696,7 @@
                             className: b.a.settingsText
                         }, "Settings:"), "Factory" === this.state.settings.type ? s.a.createElement(s.a.Fragment, null, s.a.createElement("div", {
                             className: b.a.modeContainer
-                        }, s.a.createElement(C.a, {
+                        }, s.a.createElement(k.a, {
                             title: "Time",
                             desc: "The game ends after the set time has passed",
                             icon: "fas fa-stopwatch",
@@ -3701,7 +3713,7 @@
                             style: {
                                 width: "2vw"
                             }
-                        }), s.a.createElement(C.a, {
+                        }), s.a.createElement(k.a, {
                             title: "Cash",
                             desc: "The game ends after a player reaches the set cash amount",
                             icon: "fas fa-dollar-sign",
@@ -3848,7 +3860,7 @@
                 liveGameController: l.a.object,
                 user: l.a.object
             };
-            t.a = Object(k.c)(Object(c.f)(Object(r.b)((function(e) {
+            t.a = Object(C.c)(Object(c.f)(Object(r.b)((function(e) {
                 return {
                     host: e.hosts.host,
                     id: e.hosts.id
@@ -3895,8 +3907,8 @@
                 v = a("XTAU"),
                 w = a("XOuL"),
                 x = a("b3Ff"),
-                C = a("Eogo"),
-                k = a("Ek9E"),
+                k = a("Eogo"),
+                C = a("Ek9E"),
                 E = a("a7Lo"),
                 S = a("VLs0"),
                 O = a("LHn/"),
@@ -4101,14 +4113,14 @@
                     return s ? s.done ? (t[e.resultName] = s.value, t.next = e.nextLoc, "return" !== t.method && (t.method = "next", t.arg = void 0), t.delegate = null, m) : s : (t.method = "throw", t.arg = new TypeError("iterator result is not an object"), t.delegate = null, m)
                 }
 
-                function C(e) {
+                function k(e) {
                     var t = {
                         tryLoc: e[0]
                     };
                     1 in e && (t.catchLoc = e[1]), 2 in e && (t.finallyLoc = e[2], t.afterLoc = e[3]), this.tryEntries.push(t)
                 }
 
-                function k(e) {
+                function C(e) {
                     var t = e.completion || {};
                     t.type = "normal", delete t.arg, e.completion = t
                 }
@@ -4116,7 +4128,7 @@
                 function E(e) {
                     this.tryEntries = [{
                         tryLoc: "root"
-                    }], e.forEach(C, this), this.reset(!0)
+                    }], e.forEach(k, this), this.reset(!0)
                 }
 
                 function S(e) {
@@ -4187,7 +4199,7 @@
                 }, e.values = S, E.prototype = {
                     constructor: E,
                     reset: function(e) {
-                        if (this.prev = 0, this.next = 0, this.sent = this._sent = void 0, this.done = !1, this.delegate = null, this.method = "next", this.arg = void 0, this.tryEntries.forEach(k), !e)
+                        if (this.prev = 0, this.next = 0, this.sent = this._sent = void 0, this.done = !1, this.delegate = null, this.method = "next", this.arg = void 0, this.tryEntries.forEach(C), !e)
                             for (var t in this) "t" === t.charAt(0) && a.call(this, t) && !isNaN(+t.slice(1)) && (this[t] = void 0)
                     },
                     stop: function() {
@@ -4241,7 +4253,7 @@
                     finish: function(e) {
                         for (var t = this.tryEntries.length - 1; t >= 0; --t) {
                             var a = this.tryEntries[t];
-                            if (a.finallyLoc === e) return this.complete(a.completion, a.afterLoc), k(a), m
+                            if (a.finallyLoc === e) return this.complete(a.completion, a.afterLoc), C(a), m
                         }
                     },
                     catch: function(e) {
@@ -4251,7 +4263,7 @@
                                 var n = a.completion;
                                 if ("throw" === n.type) {
                                     var s = n.arg;
-                                    k(a)
+                                    C(a)
                                 }
                                 return s
                             }
@@ -4701,7 +4713,7 @@
                             }
                         }), s.a.createElement("div", {
                             className: b.a.settingDivider
-                        }), s.a.createElement(k.a, {
+                        }), s.a.createElement(C.a, {
                             title: "Number of Questions",
                             val: this.state.settings.amount,
                             max: 70,
@@ -4761,7 +4773,7 @@
                             }
                         }), s.a.createElement("div", {
                             className: b.a.settingDivider
-                        }), s.a.createElement(k.a, {
+                        }), s.a.createElement(C.a, {
                             title: "Number of Questions",
                             val: this.state.numQ,
                             max: this.state.maxQ,
@@ -5257,7 +5269,7 @@
                             }
                         }), s.a.createElement("div", {
                             className: b.a.settingDivider
-                        }), s.a.createElement(C.a, {
+                        }), s.a.createElement(k.a, {
                             title: "Starting Energy For Each ".concat("Solo" === this.state.settings.mode ? "Player" : "Team"),
                             choices: [1, 3, 5, 7, 10],
                             selected: this.state.settings.energy,

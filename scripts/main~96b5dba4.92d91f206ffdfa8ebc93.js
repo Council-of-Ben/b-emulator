@@ -485,13 +485,13 @@
                 }
             }
 
-            function U(e, t) {
-                return (U = Object.setPrototypeOf ? Object.setPrototypeOf.bind() : function(e, t) {
+            function Y(e, t) {
+                return (Y = Object.setPrototypeOf ? Object.setPrototypeOf.bind() : function(e, t) {
                     return e.__proto__ = t, e
                 })(e, t)
             }
 
-            function Y(e) {
+            function Q(e) {
                 var t = function() {
                     if ("undefined" == typeof Reflect || !Reflect.construct) return !1;
                     if (Reflect.construct.sham) return !1;
@@ -508,17 +508,17 @@
                         var o = J(this).constructor;
                         a = Reflect.construct(n, arguments, o)
                     } else a = n.apply(this, arguments);
-                    return Q(this, a)
+                    return V(this, a)
                 }
             }
 
-            function Q(e, t) {
+            function V(e, t) {
                 if (t && ("object" === T(t) || "function" == typeof t)) return t;
                 if (void 0 !== t) throw new TypeError("Derived constructors may only return object or undefined");
-                return V(e)
+                return U(e)
             }
 
-            function V(e) {
+            function U(e) {
                 if (void 0 === e) throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
                 return e
             }
@@ -542,9 +542,9 @@
                             }
                         }), Object.defineProperty(e, "prototype", {
                             writable: !1
-                        }), t && U(e, t)
+                        }), t && Y(e, t)
                     }(_, e);
-                    var t, a, n, r, s, i, l, u, d = Y(_);
+                    var t, a, n, r, s, i, l, u, d = Q(_);
 
                     function _(e) {
                         var t;
@@ -577,7 +577,7 @@
                             noRole: !1,
                             loadingRole: !1,
                             showNews: !1
-                        }, t.loading = !1, t.gotPlus = !1, t.plus = !1, t.here = !0, t.onEdit = t.onEdit.bind(V(t)), t.onDelete = t.onDelete.bind(V(t)), t.onDeleteConfirm = t.onDeleteConfirm.bind(V(t)), t.onCopy = t.onCopy.bind(V(t)), t.onCopyConfirm = t.onCopyConfirm.bind(V(t)), t.onMerge = t.onMerge.bind(V(t)), t.onMergeConfirm = t.onMergeConfirm.bind(V(t)), t.onHost = t.onHost.bind(V(t)), t.onSolo = t.onSolo.bind(V(t)), t.getIsPlus = t.getIsPlus.bind(V(t)), t.setDisplay = t.setDisplay.bind(V(t)), t.setRole = t.setRole.bind(V(t)), t.openFolder = t.openFolder.bind(V(t)), t.newFolder = t.newFolder.bind(V(t)), t.createFolder = t.createFolder.bind(V(t)), t.editFolder = t.editFolder.bind(V(t)), t.addToFolder = t.addToFolder.bind(V(t)), t.removeFromFolder = t.removeFromFolder.bind(V(t)), t.deleteFolder = t.deleteFolder.bind(V(t)), t.shouldShowFolder = t.shouldShowFolder.bind(V(t)), t.copyToClipboard = t.copyToClipboard.bind(V(t)), t.endTour = t.endTour.bind(V(t)), t
+                        }, t.loading = !1, t.gotPlus = !1, t.plus = !1, t.here = !0, t.onEdit = t.onEdit.bind(U(t)), t.onDelete = t.onDelete.bind(U(t)), t.onDeleteConfirm = t.onDeleteConfirm.bind(U(t)), t.onCopy = t.onCopy.bind(U(t)), t.onCopyConfirm = t.onCopyConfirm.bind(U(t)), t.onMerge = t.onMerge.bind(U(t)), t.onMergeConfirm = t.onMergeConfirm.bind(U(t)), t.onHost = t.onHost.bind(U(t)), t.onSolo = t.onSolo.bind(U(t)), t.getIsPlus = t.getIsPlus.bind(U(t)), t.setDisplay = t.setDisplay.bind(U(t)), t.setRole = t.setRole.bind(U(t)), t.openFolder = t.openFolder.bind(U(t)), t.newFolder = t.newFolder.bind(U(t)), t.createFolder = t.createFolder.bind(U(t)), t.editFolder = t.editFolder.bind(U(t)), t.addToFolder = t.addToFolder.bind(U(t)), t.removeFromFolder = t.removeFromFolder.bind(U(t)), t.deleteFolder = t.deleteFolder.bind(U(t)), t.shouldShowFolder = t.shouldShowFolder.bind(U(t)), t.copyToClipboard = t.copyToClipboard.bind(U(t)), t.endTour = t.endTour.bind(U(t)), t
                     }
                     return t = _, (a = [{
                         key: "componentDidMount",
@@ -2525,7 +2525,7 @@
             n.locals && (e.exports = n.locals)
         },
         KYQD: function(e, t, a) {
-            (t = e.exports = a("JPst")(!1)).push([e.i, ".styles__header___153FZ-camelCase{font-family:Nunito,sans-serif;font-size:44px;font-weight:700;margin:15px 5% 10px;color:#3a3a3a}.styles__rateIcon___11Qwv-camelCase{font-size:28px;line-height:35px;margin:auto 10px;color:#3a3a3a;outline:none;cursor:pointer;transition:all .1s linear}.styles__rateIcon___11Qwv-camelCase:hover{color:#0bc2cf}.styles__tooltip___21a_3-camelCase{font-family:Nunito,sans-serif!important;font-size:15px!important;line-height:19px!important;padding:6px 13px!important;text-align:center!important}.styles__tokenBalance___1FHgT-camelCase{margin:0 10px;display:flex}.styles__mTokenBalance___2dSI3-camelCase,.styles__tokenBalance___1FHgT-camelCase{height:55px;background-color:#fff;border-bottom-left-radius:10px;border-bottom-right-radius:10px;box-sizing:border-box;padding:0 10px 6px;box-shadow:inset 0 -6px rgba(0,0,0,.2),0 0 4px rgba(0,0,0,.15);justify-content:center;align-items:center;font-size:22px;font-weight:700;color:#3a3a3a}.styles__mTokenBalance___2dSI3-camelCase{position:absolute;top:0;right:10px;display:none}.styles__tokenBalanceIcon___3MGhs-camelCase{width:30px;height:30px;margin-right:7px}.styles__leftColumn___2MTgv-camelCase{margin:25px 0 35px 5%;width:calc(90% - 250px);padding-bottom:20px}.styles__packsWrapper___2hBF4-camelCase{display:grid;grid-template-columns:repeat(auto-fill,210px);grid-gap:25px;width:100%}.styles__packContainer___3RwSU-camelCase{width:210px;height:210px;-webkit-user-select:none;-moz-user-select:none;user-select:none;outline:none;cursor:pointer;position:relative;background-color:#0bc2cf;border-radius:10px;overflow:hidden;padding-bottom:7px;box-shadow:inset 0 -7px rgba(0,0,0,.2);box-sizing:border-box;will-change:transform;transition:.2s}.styles__packContainer___3RwSU-camelCase:hover{transform:scale(.95)}.styles__packImgContainer___3NABW-camelCase{height:100%;position:relative}.styles__packShadow___2TA17-camelCase{width:70%;filter:brightness(0) invert(100%);opacity:.5}.styles__packImg___3to1S-camelCase,.styles__packShadow___2TA17-camelCase{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%) rotate(10deg)}.styles__packImg___3to1S-camelCase{width:65%}.styles__packBottom___37drt-camelCase{display:flex;flex-direction:row;align-items:center;justify-content:center;height:24px;padding:0 12px;background-color:rgba(0,0,0,.2);font-family:Titan One,sans-serif;font-size:18px;color:#fff;text-shadow:1px 1px 0 grey;border-top-right-radius:10px;border-bottom-right-radius:10px;position:absolute;bottom:12px;left:0}.styles__packPriceImg___1FaDF-camelCase{width:16px;height:16px;margin-right:7px}.styles__subheader___GVBz_-camelCase{font-size:34px;font-weight:700;margin:20px 0}.styles__weeklyWrapper___1N5wN-camelCase{display:flex;flex-flow:row wrap;width:100%;margin:-12.5px}.styles__weeklyContainer___I6YST-camelCase{width:270px;height:190px;margin:12.5px;-webkit-user-select:none;-moz-user-select:none;user-select:none;outline:none;cursor:pointer;position:relative;background:linear-gradient(#0bc2cf,#146cd2);border-radius:10px;overflow:hidden;box-shadow:inset 0 -7px rgba(0,0,0,.2);display:flex;flex-direction:column;align-items:center;justify-content:center;will-change:transform;transition:.2s}.styles__weeklyContainer___I6YST-camelCase:hover{transform:scale(.95)}.styles__weeklyName___1-QhF-camelCase{font-size:20px;text-align:center;position:absolute;width:100%;left:0;top:10px}.styles__weeklyName___1-QhF-camelCase,.styles__weeklyTitle___2PwID-camelCase{font-family:Titan One,sans-serif;color:#fff;text-shadow:1px 1px 0 grey}.styles__weeklyTitle___2PwID-camelCase{font-size:28px;padding:5px 10px;background-color:rgba(0,0,0,.2);border-radius:10px}.styles__weeklyBanner___318lh-camelCase{width:90%}.styles__weeklyPart___2Icho-camelCase{width:40%}.styles__weeklyBottom___2Xhbw-camelCase{justify-content:center;padding:0 12px;background-color:rgba(0,0,0,.2);font-family:Titan One,sans-serif;font-size:18px;text-shadow:1px 1px 0 grey;border-top-right-radius:10px;border-bottom-right-radius:10px;left:0}.styles__weeklyBottom___2Xhbw-camelCase,.styles__weeklyRarity___1sPj5-camelCase{display:flex;flex-direction:row;align-items:center;height:24px;color:#fff;position:absolute;bottom:15px}.styles__weeklyRarity___1sPj5-camelCase{font-family:Nunito,sans-serif;font-weight:700;font-size:14px;padding:0 7px 0 12px;right:0;border-top-left-radius:10px;border-bottom-left-radius:10px}.styles__storeContainer___FgOVv-camelCase{position:fixed;right:2.5%;width:250px;height:375px;top:50%;transform:translateY(-50%);-webkit-user-select:none;-moz-user-select:none;user-select:none;pointer-events:none}.styles__storeImg___2c3cG-camelCase{position:absolute;top:0;left:0;width:100%;height:100%}.styles__cashierBlook___iI1UH-camelCase{position:absolute;bottom:110px;right:60px;width:70px;transform:rotate(10deg)}.styles__fallStoreImg___2NvMw-camelCase{position:absolute;top:50%;left:0;width:250px;height:267px;transform:translateY(-50%)}.styles__fallCashierBlook___3dIaO-camelCase{bottom:172px;right:40px;width:65px}.styles__fallCashierBlook___3dIaO-camelCase,.styles__spookyCashierBlook___3dZAC-camelCase{position:absolute;transform:rotate(10deg)}.styles__spookyCashierBlook___3dZAC-camelCase{bottom:85px;right:60px;width:70px}.styles__instantButton___2ezEk-camelCase{position:absolute;bottom:-30px;left:50%;transform:translateX(-50%);background-color:rgba(0,0,0,.1);color:#3a3a3a;border-radius:5px;font-size:12px;height:20px;padding:0 10px;display:flex;flex-direction:row;align-items:center;justify-content:center;-webkit-user-select:none;-moz-user-select:none;user-select:none;outline:none;cursor:pointer;pointer-events:all}.styles__instantButton___2ezEk-camelCase:hover{background-color:rgba(0,0,0,.2)}.styles__openBackground___-U4oX-camelCase{position:fixed;top:0;left:0;width:100%;height:100%;z-index:25;overflow:hidden}.styles__openContainer___3paFG-camelCase{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%) scale(0);width:400px;border-radius:10px;box-sizing:border-box;display:flex;flex-direction:column;align-items:center;justify-content:space-between;text-align:center;overflow:hidden;-webkit-user-select:none;-moz-user-select:none;user-select:none;box-shadow:0 0 4px rgba(0,0,0,.15);background-color:#fff}.styles__openingContainer___2OmG9-camelCase{animation:styles__growIn___1R3Nj-camelCase .2s linear .5s forwards}@keyframes styles__growIn___1R3Nj-camelCase{0%{transform:translate(-50%,-50%) scale(0)}to{transform:translate(-50%,-50%) scale(1)}}.styles__openingContainerEpic___3TzCR-camelCase{animation:styles__epicOpen___1Ajao-camelCase 1.5s linear .5s forwards}@keyframes styles__epicOpen___1Ajao-camelCase{0%{transform:translate(calc(-50% - 25vw),calc(-50% - 25vh)) rotate(15deg) scale(.1)}25%{transform:translate(calc(-50% - 25vw),calc(-50% - 25vh)) rotate(15deg) scale(.1)}25.1%{transform:translate(calc(-50% + 25vw),calc(-50% + 25vh)) rotate(-15deg) scale(.2)}50%{transform:translate(calc(-50% + 25vw),calc(-50% + 25vh)) rotate(-15deg) scale(.2)}50.1%{transform:translate(calc(-50% - 25vw),calc(-50% + 25vh)) rotate(15deg) scale(.3)}75%{transform:translate(calc(-50% - 25vw),calc(-50% + 25vh)) rotate(15deg) scale(.3)}75.1%{transform:translate(calc(-50% + 25vw),calc(-50% - 25vh)) rotate(-15deg) scale(.4)}99.9%{transform:translate(calc(-50% + 25vw),calc(-50% - 25vh)) rotate(-15deg) scale(.4)}to{transform:translate(-50%,-50%) rotate(0) scale(1)}}.styles__openingContainerLegendary___RbJZ_-camelCase{animation:styles__legendaryOpen___1ihkU-camelCase 2.5s ease-in 1s forwards}@keyframes styles__legendaryOpen___1ihkU-camelCase{0%{transform:translate(calc(-50% - 25vw),calc(-50% - 100vh)) scale(.1)}35%{transform:translate(calc(-50% - 25vw),calc(-50% + 100vh)) scale(.1)}35.1%{transform:translate(calc(-50% + 25vw),calc(-50% - 100vh)) scale(.3)}70%{transform:translate(calc(-50% + 25vw),calc(-50% + 100vh)) scale(.3)}70.1%{transform:translate(-50%,calc(-50% - 100vh)) scale(1)}to{transform:translate(-50%,-50%) scale(1)}}.styles__openingContainerChroma___3VBd5-camelCase{animation:styles__chromaOpen___2_fhq-camelCase 2s linear 1.5s forwards}@keyframes styles__chromaOpen___2_fhq-camelCase{0%{transform:translate(-50%,-50%) rotate(0deg) scale(0)}10%{transform:translate(-50%,-50%) rotate(180deg) scale(.1)}20%{transform:translate(-50%,-50%) rotate(1turn) scale(.2)}30%{transform:translate(-50%,-50%) rotate(540deg) scale(.3)}40%{transform:translate(-50%,-50%) rotate(2turn) scale(.4)}50%{transform:translate(-50%,-50%) rotate(900deg) scale(.5)}60%{transform:translate(-50%,-50%) rotate(3turn) scale(.6)}70%{transform:translate(-50%,-50%) rotate(1260deg) scale(.7)}80%{transform:translate(-50%,-50%) rotate(4turn) scale(.8)}90%{transform:translate(-50%,-50%) rotate(1620deg) scale(.9)}to{transform:translate(-50%,-50%) rotate(5turn) scale(1)}}.styles__blookBackground___3rt4N-camelCase{width:100%;height:100%}.styles__openingPackContainer___1ZQzY-camelCase,.styles__openPackContainer___2m4Yf-camelCase{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:400px;height:667px;overflow:hidden;-webkit-user-select:none;-moz-user-select:none;user-select:none}.styles__openPackContainer___2m4Yf-camelCase{outline:none;cursor:pointer}.styles__openingPackContainer___1ZQzY-camelCase{animation:styles__dropPack___12OV_-camelCase .2s linear .4s forwards}@keyframes styles__dropPack___12OV_-camelCase{0%{transform:translate(-50%,-50%)}to{transform:translate(-50%,50vh)}}.styles__openPack___3QxCP-camelCase{width:400px;height:667px;background-size:4400px 667px;background-repeat:no-repeat}.styles__isOpeningPack___1qY5t-camelCase{animation:styles__open___1v-ch-camelCase .4s steps(10) forwards}@keyframes styles__open___1v-ch-camelCase{0%{background-position:0}to{background-position:-4000px}}.styles__unlockedBlookImage___wC4gr-camelCase{position:absolute;bottom:85px;left:105px;width:190px}.styles__unlockedText___1diat-camelCase{position:absolute;top:15px;left:5%;width:90%;font-family:Titan One,sans-serif;color:#fff;text-align:center}.styles__unlockedBlook___2pr1Z-camelCase{text-shadow:0 3px 3px rgba(0,0,0,.2);width:100%;height:50px;text-align:center}.styles__rarityText___1PfSA-camelCase{font-size:30px;-webkit-text-stroke:#3a3a3a 1.5px}.styles__bottomText___3_k10-camelCase{position:absolute;bottom:15px;left:5%;width:90%;font-family:Titan One,sans-serif;color:#fff;text-align:center;font-size:30px;text-shadow:0 0 4px rgba(0,0,0,.4)}.styles__bottomShadow___10ZLG-camelCase{width:100%;position:absolute;bottom:0;left:0;height:50px;box-shadow:inset 0 -9px rgba(0,0,0,.2);border-bottom-left-radius:10px;border-bottom-right-radius:10px}.styles__cornerIcon___24o3Z-camelCase{width:400px;position:absolute;bottom:-20px;right:-20px;-webkit-user-select:none;-moz-user-select:none;user-select:none;opacity:.2;transform:rotate(-35deg)}.styles__openBigButton___3KmDM-camelCase,.styles__phaserContainer___1Ffxs-camelCase{width:100%;height:100%;position:absolute;top:0;left:0}.styles__openBigButton___3KmDM-camelCase{outline:none;-webkit-user-select:none;-moz-user-select:none;user-select:none;z-index:100}.styles__canOpen___2znG2-camelCase{cursor:pointer}.styles__mInstantButton___3lgNk-camelCase{display:none;background-color:rgba(0,0,0,.1);color:#3a3a3a;border-radius:5px;font-size:12px;height:20px;padding:0 10px;margin:0 5%;flex-direction:row;align-items:center;justify-content:center;-webkit-user-select:none;-moz-user-select:none;user-select:none;outline:none;cursor:pointer}.styles__mInstantButton___3lgNk-camelCase:hover{background-color:rgba(0,0,0,.2)}@media only screen and (max-width:1010px){.styles__storeContainer___FgOVv-camelCase{display:none}.styles__mInstantButton___3lgNk-camelCase{display:flex}.styles__leftColumn___2MTgv-camelCase{margin:25px 5% 35px;width:90%}.styles__packsWrapper___2hBF4-camelCase,.styles__weeklyWrapper___1N5wN-camelCase{justify-content:center}.styles__weeklyWrapper___1N5wN-camelCase{margin:0 -12.5px;width:unset}}@media only screen and (max-width:850px){.styles__mTokenBalance___2dSI3-camelCase{display:flex}}@media only screen and (max-width:600px){.styles__openContainer___3paFG-camelCase{width:300px}.styles__openingPackContainer___1ZQzY-camelCase,.styles__openPack___3QxCP-camelCase,.styles__openPackContainer___2m4Yf-camelCase{width:300px;height:500px}.styles__openPack___3QxCP-camelCase{background-size:3300px 500px}@keyframes styles__open___1v-ch-camelCase{0%{background-position:0}to{background-position:-3000px}}.styles__unlockedBlookImage___wC4gr-camelCase{position:absolute;bottom:64px;left:78.5px;width:143px}.styles__unlockedText___1diat-camelCase{top:5px;left:2.5%;width:95%}.styles__unlockedBlook___2pr1Z-camelCase{width:100%;height:30px}.styles__bottomText___3_k10-camelCase,.styles__rarityText___1PfSA-camelCase{font-size:20px}.styles__bottomText___3_k10-camelCase{bottom:15px}.styles__cornerIcon___24o3Z-camelCase{width:270px}}", ""]), t.locals = {
+            (t = e.exports = a("JPst")(!1)).push([e.i, ".styles__header___153FZ-camelCase{font-family:Nunito,sans-serif;font-size:44px;font-weight:700;margin:15px 5% 10px;color:#3a3a3a}.styles__rateIcon___11Qwv-camelCase{font-size:28px;line-height:35px;margin:auto 10px;color:#3a3a3a;outline:none;cursor:pointer;transition:all .1s linear}.styles__rateIcon___11Qwv-camelCase:hover{color:#0bc2cf}.styles__tooltip___21a_3-camelCase{font-family:Nunito,sans-serif!important;font-size:15px!important;line-height:19px!important;padding:6px 13px!important;text-align:center!important}.styles__tokenBalance___1FHgT-camelCase{margin:0 10px;display:flex}.styles__mTokenBalance___2dSI3-camelCase,.styles__tokenBalance___1FHgT-camelCase{height:55px;background-color:#fff;border-bottom-left-radius:10px;border-bottom-right-radius:10px;box-sizing:border-box;padding:0 10px 6px;box-shadow:inset 0 -6px rgba(0,0,0,.2),0 0 4px rgba(0,0,0,.15);justify-content:center;align-items:center;font-size:22px;font-weight:700;color:#3a3a3a}.styles__mTokenBalance___2dSI3-camelCase{position:absolute;top:0;right:10px;display:none}.styles__tokenBalanceIcon___3MGhs-camelCase{width:30px;height:30px;margin-right:7px}.styles__leftColumn___2MTgv-camelCase{margin:25px 0 35px 5%;width:calc(90% - 250px);padding-bottom:20px}.styles__packsWrapper___2hBF4-camelCase{display:grid;grid-template-columns:repeat(auto-fill,210px);grid-gap:25px;width:100%}.styles__packContainer___3RwSU-camelCase{width:210px;height:210px;-webkit-user-select:none;-moz-user-select:none;user-select:none;outline:none;cursor:pointer;position:relative;background-color:#0bc2cf;border-radius:10px;overflow:hidden;padding-bottom:7px;box-shadow:inset 0 -7px rgba(0,0,0,.2);box-sizing:border-box;will-change:transform;transition:.2s}.styles__packContainer___3RwSU-camelCase:hover{transform:scale(.95)}.styles__packImgContainer___3NABW-camelCase{height:100%;position:relative}.styles__packShadow___2TA17-camelCase{width:70%;filter:brightness(0) invert(100%);opacity:.5}.styles__packImg___3to1S-camelCase,.styles__packShadow___2TA17-camelCase{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%) rotate(10deg)}.styles__packImg___3to1S-camelCase{width:65%}.styles__packBottom___37drt-camelCase{display:flex;flex-direction:row;align-items:center;justify-content:center;height:24px;padding:0 12px;background-color:rgba(0,0,0,.2);font-family:Titan One,sans-serif;font-size:18px;color:#fff;text-shadow:1px 1px 0 grey;border-top-right-radius:10px;border-bottom-right-radius:10px;position:absolute;bottom:12px;left:0}.styles__packPriceImg___1FaDF-camelCase{width:16px;height:16px;margin-right:7px}.styles__subheader___GVBz_-camelCase{font-size:34px;font-weight:700;margin:20px 0}.styles__weeklyWrapper___1N5wN-camelCase{display:flex;flex-flow:row wrap;width:100%;margin:-12.5px}.styles__weeklyContainer___I6YST-camelCase{width:270px;height:190px;margin:12.5px;-webkit-user-select:none;-moz-user-select:none;user-select:none;outline:none;cursor:pointer;position:relative;background:linear-gradient(#0bc2cf,#146cd2);border-radius:10px;overflow:hidden;box-shadow:inset 0 -7px rgba(0,0,0,.2);display:flex;flex-direction:column;align-items:center;justify-content:center;will-change:transform;transition:.2s}.styles__weeklyContainer___I6YST-camelCase:hover{transform:scale(.95)}.styles__weeklyName___1-QhF-camelCase{font-size:22px;text-align:center;position:absolute;width:100%;left:0;top:10px}.styles__weeklyName___1-QhF-camelCase,.styles__weeklyTitle___2PwID-camelCase{font-family:Titan One,sans-serif;color:#fff;text-shadow:1px 1px 0 grey}.styles__weeklyTitle___2PwID-camelCase{font-size:28px;padding:5px 10px;background-color:rgba(0,0,0,.2);border-radius:10px}.styles__weeklyBanner___318lh-camelCase{width:90%}.styles__weeklyPart___2Icho-camelCase{width:40%}.styles__weeklyBottom___2Xhbw-camelCase{justify-content:center;padding:0 12px;background-color:rgba(0,0,0,.2);font-family:Titan One,sans-serif;font-size:18px;text-shadow:1px 1px 0 grey;border-top-right-radius:10px;border-bottom-right-radius:10px;left:0}.styles__weeklyBottom___2Xhbw-camelCase,.styles__weeklyRarity___1sPj5-camelCase{display:flex;flex-direction:row;align-items:center;height:24px;color:#fff;position:absolute;bottom:15px}.styles__weeklyRarity___1sPj5-camelCase{font-family:Nunito,sans-serif;font-weight:700;font-size:14px;padding:0 7px 0 12px;right:0;border-top-left-radius:10px;border-bottom-left-radius:10px}.styles__storeContainer___FgOVv-camelCase{position:fixed;right:2.5%;width:250px;height:375px;top:50%;transform:translateY(-50%);-webkit-user-select:none;-moz-user-select:none;user-select:none;pointer-events:none}.styles__storeImg___2c3cG-camelCase{position:absolute;top:0;left:0;width:100%;height:100%}.styles__cashierBlook___iI1UH-camelCase{position:absolute;bottom:110px;right:60px;width:70px;transform:rotate(10deg)}.styles__fallStoreImg___2NvMw-camelCase{position:absolute;top:50%;left:0;width:250px;height:267px;transform:translateY(-50%)}.styles__fallCashierBlook___3dIaO-camelCase{bottom:172px;right:40px;width:65px}.styles__fallCashierBlook___3dIaO-camelCase,.styles__spookyCashierBlook___3dZAC-camelCase{position:absolute;transform:rotate(10deg)}.styles__spookyCashierBlook___3dZAC-camelCase{bottom:85px;right:60px;width:70px}.styles__instantButton___2ezEk-camelCase{position:absolute;bottom:-30px;left:50%;transform:translateX(-50%);background-color:rgba(0,0,0,.1);color:#3a3a3a;border-radius:5px;font-size:12px;height:20px;padding:0 10px;display:flex;flex-direction:row;align-items:center;justify-content:center;-webkit-user-select:none;-moz-user-select:none;user-select:none;outline:none;cursor:pointer;pointer-events:all}.styles__instantButton___2ezEk-camelCase:hover{background-color:rgba(0,0,0,.2)}.styles__openBackground___-U4oX-camelCase{position:fixed;top:0;left:0;width:100%;height:100%;z-index:25;overflow:hidden}.styles__openContainer___3paFG-camelCase{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%) scale(0);width:400px;border-radius:10px;box-sizing:border-box;display:flex;flex-direction:column;align-items:center;justify-content:space-between;text-align:center;overflow:hidden;-webkit-user-select:none;-moz-user-select:none;user-select:none;box-shadow:0 0 4px rgba(0,0,0,.15);background-color:#fff}.styles__openingContainer___2OmG9-camelCase{animation:styles__growIn___1R3Nj-camelCase .2s linear .5s forwards}@keyframes styles__growIn___1R3Nj-camelCase{0%{transform:translate(-50%,-50%) scale(0)}to{transform:translate(-50%,-50%) scale(1)}}.styles__openingContainerEpic___3TzCR-camelCase{animation:styles__epicOpen___1Ajao-camelCase 1.5s linear .5s forwards}@keyframes styles__epicOpen___1Ajao-camelCase{0%{transform:translate(calc(-50% - 25vw),calc(-50% - 25vh)) rotate(15deg) scale(.1)}25%{transform:translate(calc(-50% - 25vw),calc(-50% - 25vh)) rotate(15deg) scale(.1)}25.1%{transform:translate(calc(-50% + 25vw),calc(-50% + 25vh)) rotate(-15deg) scale(.2)}50%{transform:translate(calc(-50% + 25vw),calc(-50% + 25vh)) rotate(-15deg) scale(.2)}50.1%{transform:translate(calc(-50% - 25vw),calc(-50% + 25vh)) rotate(15deg) scale(.3)}75%{transform:translate(calc(-50% - 25vw),calc(-50% + 25vh)) rotate(15deg) scale(.3)}75.1%{transform:translate(calc(-50% + 25vw),calc(-50% - 25vh)) rotate(-15deg) scale(.4)}99.9%{transform:translate(calc(-50% + 25vw),calc(-50% - 25vh)) rotate(-15deg) scale(.4)}to{transform:translate(-50%,-50%) rotate(0) scale(1)}}.styles__openingContainerLegendary___RbJZ_-camelCase{animation:styles__legendaryOpen___1ihkU-camelCase 2.5s ease-in 1s forwards}@keyframes styles__legendaryOpen___1ihkU-camelCase{0%{transform:translate(calc(-50% - 25vw),calc(-50% - 100vh)) scale(.1)}35%{transform:translate(calc(-50% - 25vw),calc(-50% + 100vh)) scale(.1)}35.1%{transform:translate(calc(-50% + 25vw),calc(-50% - 100vh)) scale(.3)}70%{transform:translate(calc(-50% + 25vw),calc(-50% + 100vh)) scale(.3)}70.1%{transform:translate(-50%,calc(-50% - 100vh)) scale(1)}to{transform:translate(-50%,-50%) scale(1)}}.styles__openingContainerChroma___3VBd5-camelCase{animation:styles__chromaOpen___2_fhq-camelCase 2s linear 1.5s forwards}@keyframes styles__chromaOpen___2_fhq-camelCase{0%{transform:translate(-50%,-50%) rotate(0deg) scale(0)}10%{transform:translate(-50%,-50%) rotate(180deg) scale(.1)}20%{transform:translate(-50%,-50%) rotate(1turn) scale(.2)}30%{transform:translate(-50%,-50%) rotate(540deg) scale(.3)}40%{transform:translate(-50%,-50%) rotate(2turn) scale(.4)}50%{transform:translate(-50%,-50%) rotate(900deg) scale(.5)}60%{transform:translate(-50%,-50%) rotate(3turn) scale(.6)}70%{transform:translate(-50%,-50%) rotate(1260deg) scale(.7)}80%{transform:translate(-50%,-50%) rotate(4turn) scale(.8)}90%{transform:translate(-50%,-50%) rotate(1620deg) scale(.9)}to{transform:translate(-50%,-50%) rotate(5turn) scale(1)}}.styles__blookBackground___3rt4N-camelCase{width:100%;height:100%}.styles__openingPackContainer___1ZQzY-camelCase,.styles__openPackContainer___2m4Yf-camelCase{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:400px;height:667px;overflow:hidden;-webkit-user-select:none;-moz-user-select:none;user-select:none}.styles__openPackContainer___2m4Yf-camelCase{outline:none;cursor:pointer}.styles__openingPackContainer___1ZQzY-camelCase{animation:styles__dropPack___12OV_-camelCase .2s linear .4s forwards}@keyframes styles__dropPack___12OV_-camelCase{0%{transform:translate(-50%,-50%)}to{transform:translate(-50%,50vh)}}.styles__openPack___3QxCP-camelCase{width:400px;height:667px;background-size:4400px 667px;background-repeat:no-repeat}.styles__isOpeningPack___1qY5t-camelCase{animation:styles__open___1v-ch-camelCase .4s steps(10) forwards}@keyframes styles__open___1v-ch-camelCase{0%{background-position:0}to{background-position:-4000px}}.styles__unlockedBlookImage___wC4gr-camelCase{position:absolute;bottom:85px;left:105px;width:190px}.styles__unlockedText___1diat-camelCase{position:absolute;top:15px;left:5%;width:90%;font-family:Titan One,sans-serif;color:#fff;text-align:center}.styles__unlockedBlook___2pr1Z-camelCase{text-shadow:0 3px 3px rgba(0,0,0,.2);width:100%;height:50px;text-align:center}.styles__rarityText___1PfSA-camelCase{font-size:30px;-webkit-text-stroke:#3a3a3a 1.5px}.styles__bottomText___3_k10-camelCase{position:absolute;bottom:15px;left:5%;width:90%;font-family:Titan One,sans-serif;color:#fff;text-align:center;font-size:30px;text-shadow:0 0 4px rgba(0,0,0,.4)}.styles__bottomShadow___10ZLG-camelCase{width:100%;position:absolute;bottom:0;left:0;height:50px;box-shadow:inset 0 -9px rgba(0,0,0,.2);border-bottom-left-radius:10px;border-bottom-right-radius:10px}.styles__cornerIcon___24o3Z-camelCase{width:400px;position:absolute;bottom:-20px;right:-20px;-webkit-user-select:none;-moz-user-select:none;user-select:none;opacity:.2;transform:rotate(-35deg)}.styles__openBigButton___3KmDM-camelCase,.styles__phaserContainer___1Ffxs-camelCase{width:100%;height:100%;position:absolute;top:0;left:0}.styles__openBigButton___3KmDM-camelCase{outline:none;-webkit-user-select:none;-moz-user-select:none;user-select:none;z-index:100}.styles__canOpen___2znG2-camelCase{cursor:pointer}.styles__mInstantButton___3lgNk-camelCase{display:none;background-color:rgba(0,0,0,.1);color:#3a3a3a;border-radius:5px;font-size:12px;height:20px;padding:0 10px;margin:0 5%;flex-direction:row;align-items:center;justify-content:center;-webkit-user-select:none;-moz-user-select:none;user-select:none;outline:none;cursor:pointer}.styles__mInstantButton___3lgNk-camelCase:hover{background-color:rgba(0,0,0,.2)}@media only screen and (max-width:1010px){.styles__storeContainer___FgOVv-camelCase{display:none}.styles__mInstantButton___3lgNk-camelCase{display:flex}.styles__leftColumn___2MTgv-camelCase{margin:25px 5% 35px;width:90%}.styles__packsWrapper___2hBF4-camelCase,.styles__weeklyWrapper___1N5wN-camelCase{justify-content:center}.styles__weeklyWrapper___1N5wN-camelCase{margin:0 -12.5px;width:unset}}@media only screen and (max-width:850px){.styles__mTokenBalance___2dSI3-camelCase{display:flex}}@media only screen and (max-width:600px){.styles__openContainer___3paFG-camelCase{width:300px}.styles__openingPackContainer___1ZQzY-camelCase,.styles__openPack___3QxCP-camelCase,.styles__openPackContainer___2m4Yf-camelCase{width:300px;height:500px}.styles__openPack___3QxCP-camelCase{background-size:3300px 500px}@keyframes styles__open___1v-ch-camelCase{0%{background-position:0}to{background-position:-3000px}}.styles__unlockedBlookImage___wC4gr-camelCase{position:absolute;bottom:64px;left:78.5px;width:143px}.styles__unlockedText___1diat-camelCase{top:5px;left:2.5%;width:95%}.styles__unlockedBlook___2pr1Z-camelCase{width:100%;height:30px}.styles__bottomText___3_k10-camelCase,.styles__rarityText___1PfSA-camelCase{font-size:20px}.styles__bottomText___3_k10-camelCase{bottom:15px}.styles__cornerIcon___24o3Z-camelCase{width:270px}}", ""]), t.locals = {
                 header: "styles__header___153FZ-camelCase",
                 rateIcon: "styles__rateIcon___11Qwv-camelCase",
                 tooltip: "styles__tooltip___21a_3-camelCase",
@@ -3069,10 +3069,10 @@
 
             function H(e) {
                 return function(e) {
-                    if (Array.isArray(e)) return Y(e)
+                    if (Array.isArray(e)) return Q(e)
                 }(e) || function(e) {
                     if ("undefined" != typeof Symbol && null != e[Symbol.iterator] || null != e["@@iterator"]) return Array.from(e)
-                }(e) || U(e) || function() {
+                }(e) || Y(e) || function() {
                     throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.")
                 }()
             }
@@ -3098,34 +3098,34 @@
                         }
                     }
                     return r
-                }(e, t) || U(e, t) || function() {
+                }(e, t) || Y(e, t) || function() {
                     throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.")
                 }()
             }
 
-            function U(e, t) {
+            function Y(e, t) {
                 if (e) {
-                    if ("string" == typeof e) return Y(e, t);
+                    if ("string" == typeof e) return Q(e, t);
                     var a = Object.prototype.toString.call(e).slice(8, -1);
-                    return "Object" === a && e.constructor && (a = e.constructor.name), "Map" === a || "Set" === a ? Array.from(e) : "Arguments" === a || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(a) ? Y(e, t) : void 0
+                    return "Object" === a && e.constructor && (a = e.constructor.name), "Map" === a || "Set" === a ? Array.from(e) : "Arguments" === a || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(a) ? Q(e, t) : void 0
                 }
             }
 
-            function Y(e, t) {
+            function Q(e, t) {
                 (null == t || t > e.length) && (t = e.length);
                 for (var a = 0, n = new Array(t); a < t; a++) n[a] = e[a];
                 return n
             }
 
-            function Q(e, t) {
+            function V(e, t) {
                 for (var a = 0; a < t.length; a++) {
                     var n = t[a];
                     n.enumerable = n.enumerable || !1, n.configurable = !0, "value" in n && (n.writable = !0), Object.defineProperty(e, n.key, n)
                 }
             }
 
-            function V(e, t) {
-                return (V = Object.setPrototypeOf ? Object.setPrototypeOf.bind() : function(e, t) {
+            function U(e, t) {
+                return (U = Object.setPrototypeOf ? Object.setPrototypeOf.bind() : function(e, t) {
                     return e.__proto__ = t, e
                 })(e, t)
             }
@@ -3297,7 +3297,7 @@
                             }
                         }), Object.defineProperty(e, "prototype", {
                             writable: !1
-                        }), t && V(e, t)
+                        }), t && U(e, t)
                     }(r, e);
                     var t, a, n, o = J(r);
 
@@ -3362,7 +3362,7 @@
                                 this.nextParticle = 20, this.numExplosions > 0 && (this.numExplosions = Math.max(this.numExplosions - 1, 0))
                             }
                         }
-                    }]) && Q(t.prototype, a), n && Q(t, n), Object.defineProperty(t, "prototype", {
+                    }]) && V(t.prototype, a), n && V(t, n), Object.defineProperty(t, "prototype", {
                         writable: !1
                     }), r
                 }(F.a.Scene),
@@ -3386,90 +3386,18 @@
                 ee = a("LHn/"),
                 te = a("gISs"),
                 ae = a("Dzm6"),
-                ne = {
-                    hat37: {
-                        name: "Bunny Costume Head",
-                        price: 100,
-                        rarity: "Uncommon",
-                        type: "hat",
-                        num: 37
-                    },
-                    clothing44: {
-                        name: "Bunny Costume Body",
-                        price: 100,
-                        rarity: "Uncommon",
-                        type: "clothing",
-                        num: 44
-                    },
-                    nose8: {
-                        name: "Bunny Costume Nose",
-                        price: 100,
-                        rarity: "Uncommon",
-                        type: "nose",
-                        num: 8
-                    },
-                    hat38: {
-                        name: "Gator Costume Head",
-                        price: 200,
-                        rarity: "Rare",
-                        type: "hat",
-                        num: 38
-                    },
-                    clothing45: {
-                        name: "Gator Costume Body",
-                        price: 200,
-                        rarity: "Rare",
-                        type: "clothing",
-                        num: 45
-                    },
-                    hat39: {
-                        name: "Unicorn Costume Head",
-                        price: 300,
-                        rarity: "Epic",
-                        type: "hat",
-                        num: 39
-                    },
-                    clothing46: {
-                        name: "Unicorn Costume Body",
-                        price: 300,
-                        rarity: "Epic",
-                        type: "clothing",
-                        num: 46
-                    },
-                    hat40: {
-                        name: "Cardboard Robot",
-                        price: 300,
-                        rarity: "Epic",
-                        type: "hat",
-                        num: 40
-                    },
-                    item33: {
-                        name: "Candy Bag",
-                        price: 100,
-                        rarity: "Uncommon",
-                        type: "item",
-                        num: 33
-                    },
-                    item32: {
-                        name: "Candy Pumpkin",
-                        price: 250,
-                        rarity: "Rare",
-                        type: "item",
-                        num: 32
-                    }
-                },
-                oe = a("8qja"),
-                re = a("ZbWA");
+                ne = a("8qja"),
+                oe = a("ZbWA");
 
-            function se(e) {
-                return (se = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function(e) {
+            function re(e) {
+                return (re = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function(e) {
                     return typeof e
                 } : function(e) {
                     return e && "function" == typeof Symbol && e.constructor === Symbol && e !== Symbol.prototype ? "symbol" : typeof e
                 })(e)
             }
 
-            function ie(e, t, a) {
+            function se(e, t, a) {
                 return t in e ? Object.defineProperty(e, t, {
                     value: a,
                     enumerable: !0,
@@ -3478,7 +3406,7 @@
                 }) : e[t] = a, e
             }
 
-            function le(e, t) {
+            function ie(e, t) {
                 return function(e) {
                     if (Array.isArray(e)) return e
                 }(e) || function(e, t) {
@@ -3501,25 +3429,25 @@
                     return r
                 }(e, t) || function(e, t) {
                     if (!e) return;
-                    if ("string" == typeof e) return ce(e, t);
+                    if ("string" == typeof e) return le(e, t);
                     var a = Object.prototype.toString.call(e).slice(8, -1);
                     "Object" === a && e.constructor && (a = e.constructor.name);
                     if ("Map" === a || "Set" === a) return Array.from(e);
-                    if ("Arguments" === a || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(a)) return ce(e, t)
+                    if ("Arguments" === a || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(a)) return le(e, t)
                 }(e, t) || function() {
                     throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.")
                 }()
             }
 
-            function ce(e, t) {
+            function le(e, t) {
                 (null == t || t > e.length) && (t = e.length);
                 for (var a = 0, n = new Array(t); a < t; a++) n[a] = e[a];
                 return n
             }
 
-            function ue() {
+            function ce() {
                 /*! regenerator-runtime -- Copyright (c) 2014-present, Facebook, Inc. -- license (MIT): https://github.com/facebook/regenerator/blob/main/LICENSE */
-                ue = function() {
+                ce = function() {
                     return e
                 };
                 var e = {},
@@ -3607,7 +3535,7 @@
                                         if ("throw" !== l.type) {
                                             var c = l.arg,
                                                 d = c.value;
-                                            return d && "object" == se(d) && a.call(d, "__await") ? t.resolve(d.__await).then((function(e) {
+                                            return d && "object" == re(d) && a.call(d, "__await") ? t.resolve(d.__await).then((function(e) {
                                                 n("next", e, s, i)
                                             }), (function(e) {
                                                 n("throw", e, s, i)
@@ -3844,7 +3772,7 @@
                 }, e
             }
 
-            function de(e, t, a, n, o, r, s) {
+            function ue(e, t, a, n, o, r, s) {
                 try {
                     var i = e[r](s),
                         l = i.value
@@ -3854,7 +3782,7 @@
                 i.done ? t(l) : Promise.resolve(l).then(n, o)
             }
 
-            function me(e) {
+            function de(e) {
                 return function() {
                     var t = this,
                         a = arguments;
@@ -3862,31 +3790,31 @@
                         var r = e.apply(t, a);
 
                         function s(e) {
-                            de(r, n, o, s, i, "next", e)
+                            ue(r, n, o, s, i, "next", e)
                         }
 
                         function i(e) {
-                            de(r, n, o, s, i, "throw", e)
+                            ue(r, n, o, s, i, "throw", e)
                         }
                         s(void 0)
                     }))
                 }
             }
 
-            function _e(e, t) {
+            function me(e, t) {
                 for (var a = 0; a < t.length; a++) {
                     var n = t[a];
                     n.enumerable = n.enumerable || !1, n.configurable = !0, "value" in n && (n.writable = !0), Object.defineProperty(e, n.key, n)
                 }
             }
 
-            function pe(e, t) {
-                return (pe = Object.setPrototypeOf ? Object.setPrototypeOf.bind() : function(e, t) {
+            function _e(e, t) {
+                return (_e = Object.setPrototypeOf ? Object.setPrototypeOf.bind() : function(e, t) {
                     return e.__proto__ = t, e
                 })(e, t)
             }
 
-            function fe(e) {
+            function pe(e) {
                 var t = function() {
                     if ("undefined" == typeof Reflect || !Reflect.construct) return !1;
                     if (Reflect.construct.sham) return !1;
@@ -3898,102 +3826,55 @@
                     }
                 }();
                 return function() {
-                    var a, n = ge(e);
+                    var a, n = ye(e);
                     if (t) {
-                        var o = ge(this).constructor;
+                        var o = ye(this).constructor;
                         a = Reflect.construct(n, arguments, o)
                     } else a = n.apply(this, arguments);
-                    return he(this, a)
+                    return fe(this, a)
                 }
             }
 
-            function he(e, t) {
-                if (t && ("object" === se(t) || "function" == typeof t)) return t;
+            function fe(e, t) {
+                if (t && ("object" === re(t) || "function" == typeof t)) return t;
                 if (void 0 !== t) throw new TypeError("Derived constructors may only return object or undefined");
-                return ye(e)
+                return he(e)
             }
 
-            function ye(e) {
+            function he(e) {
                 if (void 0 === e) throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
                 return e
             }
 
-            function ge(e) {
-                return (ge = Object.setPrototypeOf ? Object.getPrototypeOf.bind() : function(e) {
+            function ye(e) {
+                return (ye = Object.setPrototypeOf ? Object.getPrototypeOf.bind() : function(e) {
                     return e.__proto__ || Object.getPrototypeOf(e)
                 })(e)
             }
-            var be = window.ShopData = [{
-                    id: "spooky",
+            var ge = window.ShopData = [{
+                    id: "fallingBlocks",
                     type: "banner",
-                    data: te.a.spooky
+                    data: te.a.fallingBlocks
                 }, {
-                    id: "spiders",
+                    id: "racetrack",
                     type: "banner",
-                    data: te.a.spiders
+                    data: te.a.racetrack
                 }, {
-                    id: "coffin",
-                    type: "banner",
-                    data: te.a.coffin
-                }, {
-                    id: "pumpkins",
-                    type: "banner",
-                    data: te.a.pumpkins
-                }, {
-                    id: "spooky",
+                    id: "smartyPants",
                     type: "title",
-                    data: ae.a.spooky
+                    data: ae.a.smartyPants
                 }, {
-                    id: "trickOrTreat",
-                    type: "title",
-                    data: ae.a.trickOrTreat
-                }, {
-                    id: "hat37",
+                    id: "clothing12",
                     type: "part",
-                    data: ne.hat37
-                }, {
-                    id: "clothing44",
-                    type: "part",
-                    data: ne.clothing44
-                }, {
-                    id: "nose8",
-                    type: "part",
-                    data: ne.nose8
-                }, {
-                    id: "hat38",
-                    type: "part",
-                    data: ne.hat38
-                }, {
-                    id: "clothing45",
-                    type: "part",
-                    data: ne.clothing45
-                }, {
-                    id: "hat39",
-                    type: "part",
-                    data: ne.hat39
-                }, {
-                    id: "clothing46",
-                    type: "part",
-                    data: ne.clothing46
-                }, {
-                    id: "hat40",
-                    type: "part",
-                    data: ne.hat40
-                }, {
-                    id: "item33",
-                    type: "part",
-                    data: ne.item33
-                }, {
-                    id: "item32",
-                    type: "part",
-                    data: ne.item32
+                    data: {
+                        name: "Tuxedo",
+                        price: 750,
+                        rarity: "Epic",
+                        type: "clothing",
+                        num: 12
+                    }
                 }],
-                xe = {
-                    Spooky: {
-                        url: "https://media.blooket.com/image/upload/v1666216071/Media/market/Spooky_pack.png",
-                        animUrl: "https://media.blooket.com/image/upload/v1666216073/Media/market/animation_spooky_pack.png",
-                        background: "radial-gradient(circle, rgba(82,82,82,1) 0%, rgba(26,26,26,1) 100%)"
-                    },
+                be = {
                     "Ice Monster": {
                         url: "https://media.blooket.com/image/upload/v1663063471/Media/market/ice_monsters_pack.png",
                         animUrl: "https://media.blooket.com/image/upload/v1663063472/Media/market/animation_ice_monsters_pack.png",
@@ -4040,7 +3921,7 @@
                         background: "radial-gradient(circle, rgba(0,170,255,1) 0%, rgba(97,32,87,1) 100%)"
                     }
                 },
-                ve = function(e) {
+                xe = function(e) {
                     ! function(e, t) {
                         if ("function" != typeof t && null !== t) throw new TypeError("Super expression must either be null or a function");
                         e.prototype = Object.create(t && t.prototype, {
@@ -4051,9 +3932,9 @@
                             }
                         }), Object.defineProperty(e, "prototype", {
                             writable: !1
-                        }), t && pe(e, t)
+                        }), t && _e(e, t)
                     }(i, e);
-                    var t, a, n, r, s = fe(i);
+                    var t, a, n, r, s = pe(i);
 
                     function i(e) {
                         var t;
@@ -4076,13 +3957,13 @@
                             banners: [],
                             titles: [],
                             blookParts: {}
-                        }, t.here = !0, t.handleBigClick = t.handleBigClick.bind(ye(t)), t.viewPack = t.viewPack.bind(ye(t)), t.buyPack = t.buyPack.bind(ye(t)), t.startOpening = t.startOpening.bind(ye(t)), t.buyItem = t.buyItem.bind(ye(t)), t
+                        }, t.here = !0, t.handleBigClick = t.handleBigClick.bind(he(t)), t.viewPack = t.viewPack.bind(he(t)), t.buyPack = t.buyPack.bind(he(t)), t.startOpening = t.startOpening.bind(he(t)), t.buyItem = t.buyItem.bind(he(t)), t
                     }
                     return t = i, (a = [{
                         key: "componentDidMount",
-                        value: (r = me(ue().mark((function e() {
+                        value: (r = de(ce().mark((function e() {
                             var t, a = this;
-                            return ue().wrap((function(e) {
+                            return ce().wrap((function(e) {
                                 for (;;) switch (e.prev = e.next) {
                                     case 0:
                                         return e.next = 2, this.props.user.getData();
@@ -4181,8 +4062,8 @@
                                 var t = Object(w.a)(this.state.unlockedBlook);
                                 this.setState({
                                     opening: !0
-                                }, me(ue().mark((function a() {
-                                    return ue().wrap((function(a) {
+                                }, de(ce().mark((function a() {
+                                    return ce().wrap((function(a) {
                                         for (;;) switch (a.prev = a.next) {
                                             case 0:
                                                 if (e.state.game.instance) {
@@ -4281,7 +4162,7 @@
                                 }
                             }, "Instant Open: ".concat(this.state.instantOpen ? "On" : "Off"))), o.a.createElement("div", {
                                 className: O.a.storeContainer
-                            }, oe.a ? o.a.createElement(o.a.Fragment, null, o.a.createElement("img", {
+                            }, ne.a ? o.a.createElement(o.a.Fragment, null, o.a.createElement("img", {
                                 src: "https://media.blooket.com/image/upload/v1667603304/Media/fall/blook_cashier_fall.svg",
                                 alt: "Mark the Cashier",
                                 className: O.a.fallCashierBlook,
@@ -4291,7 +4172,7 @@
                                 alt: "Store",
                                 className: O.a.fallStoreImg,
                                 draggable: !1
-                            })) : oe.b ? o.a.createElement(o.a.Fragment, null, o.a.createElement("img", {
+                            })) : ne.b ? o.a.createElement(o.a.Fragment, null, o.a.createElement("img", {
                                 src: "https://media.blooket.com/image/upload/v1666250408/Media/spooky/blook_cashier_halloween_1.svg",
                                 alt: "Mark the Cashier",
                                 className: O.a.spookyCashierBlook,
@@ -4324,8 +4205,8 @@
                                 className: O.a.leftColumn
                             }, o.a.createElement("div", {
                                 className: O.a.packsWrapper
-                            }, Object.entries(xe).map((function(e) {
-                                var t = le(e, 2),
+                            }, Object.entries(be).map((function(e) {
+                                var t = ie(e, 2),
                                     a = t[0],
                                     n = t[1];
                                 return o.a.createElement("div", {
@@ -4363,19 +4244,12 @@
                                 }), x.a[a]))
                             }))), o.a.createElement("div", {
                                 className: O.a.subheader
-                            }, "Spooky Shop", o.a.createElement("span", {
-                                style: {
-                                    fontSize: 12
-                                }
-                            }, "   Ends 11/6")), o.a.createElement("div", {
+                            }, "Weekly Shop"), o.a.createElement("div", {
                                 className: O.a.weeklyWrapper
-                            }, be.map((function(e, t) {
+                            }, ge.map((function(e, t) {
                                 return o.a.createElement("div", {
                                     key: t,
                                     className: O.a.weeklyContainer,
-                                    style: {
-                                        background: xe.Spooky.background
-                                    },
                                     role: "button",
                                     tabIndex: 0,
                                     onClick: "title" === e.type && r.state.titles.includes(e.id) || "banner" === e.type && r.state.banners.includes(e.id) || "part" === e.type && r.state.blookParts[e.data.type] && r.state.blookParts[e.data.type].includes(e.data.num) ? function() {} : function() {
@@ -4391,7 +4265,7 @@
                                     className: O.a.weeklyBanner,
                                     draggable: !1
                                 }) : "part" === e.type ? o.a.createElement("img", {
-                                    src: re.a[e.data.type][e.data.num].url,
+                                    src: oe.a[e.data.type][e.data.num].url,
                                     alt: e.data.name,
                                     className: O.a.weeklyPart,
                                     draggable: !1
@@ -4477,7 +4351,7 @@
                             }) : null, this.state.openPack ? o.a.createElement("div", {
                                 className: O.a.openBackground,
                                 style: {
-                                    background: xe[S.a[this.state.unlockedBlook].set].background
+                                    background: be[S.a[this.state.unlockedBlook].set].background
                                 }
                             }, o.a.createElement("img", {
                                 src: P.c[S.a[this.state.unlockedBlook].set],
@@ -4490,7 +4364,7 @@
                                 className: O.a.phaserContainer,
                                 id: "phaser-market"
                             }), o.a.createElement("div", {
-                                className: f()(O.a.openContainer, (e = {}, ie(e, O.a.openingContainer, this.state.opening), ie(e, O.a.openingContainerEpic, this.state.opening && "Epic" === Object(w.a)(this.state.unlockedBlook)), ie(e, O.a.openingContainerLegendary, this.state.opening && "Legendary" === Object(w.a)(this.state.unlockedBlook)), ie(e, O.a.openingContainerChroma, this.state.opening && "Chroma" === Object(w.a)(this.state.unlockedBlook)), e))
+                                className: f()(O.a.openContainer, (e = {}, se(e, O.a.openingContainer, this.state.opening), se(e, O.a.openingContainerEpic, this.state.opening && "Epic" === Object(w.a)(this.state.unlockedBlook)), se(e, O.a.openingContainerLegendary, this.state.opening && "Legendary" === Object(w.a)(this.state.unlockedBlook)), se(e, O.a.openingContainerChroma, this.state.opening && "Chroma" === Object(w.a)(this.state.unlockedBlook)), e))
                             }, o.a.createElement("img", {
                                 src: Object(I.d)(P.b[S.a[this.state.unlockedBlook].set]),
                                 alt: "Background",
@@ -4524,29 +4398,29 @@
                                 tabIndex: 0,
                                 onClick: this.startOpening
                             }, o.a.createElement("div", {
-                                className: f()(O.a.openPack, ie({}, O.a.isOpeningPack, this.state.opening)),
+                                className: f()(O.a.openPack, se({}, O.a.isOpeningPack, this.state.opening)),
                                 style: {
-                                    backgroundImage: "url(".concat(Object(I.d)(xe[S.a[this.state.unlockedBlook].set].animUrl), ")")
+                                    backgroundImage: "url(".concat(Object(I.d)(be[S.a[this.state.unlockedBlook].set].animUrl), ")")
                                 }
                             })), o.a.createElement("div", {
-                                className: f()(O.a.openBigButton, ie({}, O.a.canOpen, !this.state.opening && this.state.canOpen || this.state.opening && this.state.doneOpening)),
+                                className: f()(O.a.openBigButton, se({}, O.a.canOpen, !this.state.opening && this.state.canOpen || this.state.opening && this.state.doneOpening)),
                                 role: "button",
                                 tabIndex: 0,
                                 onClick: this.handleBigClick
                             })) : null)
                         }
-                    }]) && _e(t.prototype, a), n && _e(t, n), Object.defineProperty(t, "prototype", {
+                    }]) && me(t.prototype, a), n && me(t, n), Object.defineProperty(t, "prototype", {
                         writable: !1
                     }), i
                 }(o.a.Component);
-            ve.propTypes = {
+            xe.propTypes = {
                 user: l.a.object
             };
             t.a = Object(b.c)(Object(c.g)(Object(s.b)((function() {
                 return {}
             }), (function(e) {
                 return Object(r.b)({}, e)
-            }))(ve)))
+            }))(xe)))
         },
         gISs: function(e, t, a) {
             "use strict";
@@ -4622,6 +4496,18 @@
                     url: "https://media.blooket.com/image/upload/v1666685985/Banners/pumpkins.svg",
                     price: 750,
                     rarity: "Epic"
+                },
+                fallingBlocks: {
+                    name: "Falling Blocks",
+                    url: "https://media.blooket.com/image/upload/v1667797496/Banners/fallingBlocks.svg",
+                    price: 100,
+                    rarity: "Uncommon"
+                },
+                racetrack: {
+                    name: "Racetrack",
+                    url: "https://media.blooket.com/image/upload/v1667797496/Banners/raceway.svg",
+                    price: 350,
+                    rarity: "Rare"
                 }
             }
         },
@@ -4684,7 +4570,7 @@
                 })(e)
             }
 
-            function U(e, t) {
+            function Y(e, t) {
                 var a = Object.keys(e);
                 if (Object.getOwnPropertySymbols) {
                     var n = Object.getOwnPropertySymbols(e);
@@ -4695,19 +4581,19 @@
                 return a
             }
 
-            function Y(e) {
+            function Q(e) {
                 for (var t = 1; t < arguments.length; t++) {
                     var a = null != arguments[t] ? arguments[t] : {};
-                    t % 2 ? U(Object(a), !0).forEach((function(t) {
-                        Q(e, t, a[t])
-                    })) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(a)) : U(Object(a)).forEach((function(t) {
+                    t % 2 ? Y(Object(a), !0).forEach((function(t) {
+                        V(e, t, a[t])
+                    })) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(a)) : Y(Object(a)).forEach((function(t) {
                         Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(a, t))
                     }))
                 }
                 return e
             }
 
-            function Q(e, t, a) {
+            function V(e, t, a) {
                 return t in e ? Object.defineProperty(e, t, {
                     value: a,
                     enumerable: !0,
@@ -4716,7 +4602,7 @@
                 }) : e[t] = a, e
             }
 
-            function V(e, t) {
+            function U(e, t) {
                 return function(e) {
                     if (Array.isArray(e)) return e
                 }(e) || function(e, t) {
@@ -5355,20 +5241,20 @@
                                             if (e.data) {
                                                 var t = 0;
                                                 e.data && e.data.corrects && Object.entries(e.data.corrects).forEach((function(e) {
-                                                    var a = V(e, 2),
+                                                    var a = U(e, 2),
                                                         n = a[0],
                                                         r = a[1];
                                                     o += r, s[n] && (s[n][0] += r), t += r
                                                 }));
                                                 var a = 0;
                                                 e.data && e.data.incorrects && Object.entries(e.data.incorrects).forEach((function(e) {
-                                                    var t = V(e, 2),
+                                                    var t = U(e, 2),
                                                         n = t[0],
                                                         o = t[1];
                                                     r += o, s[n] && (s[n][1] += o), a += o
                                                 }));
                                                 var n = Object(H.k)(re);
-                                                l.push(Y(Y({}, e), {}, {
+                                                l.push(Q(Q({}, e), {}, {
                                                     blook: n,
                                                     numCorrects: t,
                                                     numIncorrects: a
@@ -5376,7 +5262,7 @@
                                             }
                                         }));
                                         var c = a.questions.map((function(e) {
-                                            return Y(Y({}, e), {}, {
+                                            return Q(Q({}, e), {}, {
                                                 corrects: s[e.number][0],
                                                 incorrects: s[e.number][1]
                                             })
@@ -5812,7 +5698,7 @@
                                 }, o.a.createElement(C.StaticMathField, {
                                     className: S.a.qMathField
                                 }, t.text.slice(t.text.indexOf("`*`") + 3, t.text.length - 3))) : null, o.a.createElement("div", {
-                                    className: h()(S.a.questionCenterContainer, Q({}, S.a.questionWithFunc, t.text.includes("`*`") || t.audio))
+                                    className: h()(S.a.questionCenterContainer, V({}, S.a.questionWithFunc, t.text.includes("`*`") || t.audio))
                                 }, o.a.createElement("div", {
                                     className: S.a.questionText
                                 }, t.text.includes("`*`") ? t.text.slice(0, t.text.indexOf("`*`")) : t.text), o.a.createElement("div", {
