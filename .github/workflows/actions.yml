@@ -14,6 +14,7 @@ jobs:
         with:
          persist-credentials: false
          fetch-depth: 0
+         branch: master
 
       - name: setup python
         uses: actions/setup-python@v4
@@ -35,7 +36,6 @@ jobs:
           git pull origin master
           git add -A
           git diff-index --quiet HEAD || (git commit -a -m "Housekeeping: update scripts" --allow-empty)
-          
       - name: push changes
         uses: ad-m/github-push-action@v0.6.0
         with:
