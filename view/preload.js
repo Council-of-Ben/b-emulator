@@ -343,7 +343,7 @@ let e = setInterval(() => {
 							input.classList.add("modInput");
 							if (type == "number") {
 								input.type = "number";
-								input.value = min != null ? min : 0;
+								input.value = min !== null ? min : 0;
 								input.min = min;
 								input.max = max;
 							}
