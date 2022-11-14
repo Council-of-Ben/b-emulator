@@ -36,7 +36,7 @@ def fileThing(file, url):
 		src = script["src"]
 		ss = src.replace('/', '').split('?')[0]
 		open(f"{thing}{ss}", "w", encoding="utf-8").write(jsbeautifier.beautify(runReplaces(requests.get(url + src).text)))
-			
+
 fileThing("index", "https://dashboard.blooket.com/")
 fileThing("id", "https://id.blooket.com/")
 fileThing("play", "https://play.blooket.com/")
